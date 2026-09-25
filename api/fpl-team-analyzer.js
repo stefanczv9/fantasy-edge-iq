@@ -1,25 +1,326 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FPL Transfer IQ — Fantasy Edge IQ</title>
-<meta name="description" content="Analyze your Fantasy Premier League team by team ID. Get a compact team summary, transfer-out risks, affordable replacements and captain shortlist.">
-<link rel="canonical" href="https://www.fantasyedgeiq.com/premier-league/team-analyzer"><meta name="robots" content="index,follow">
-<style>
-:root{--bg:#07101d;--panel:#0f2139;--line:rgba(255,255,255,.11);--txt:#eef6ff;--mut:#a9bad2;--blue:#5bbcff;--green:#22c55e;--yellow:#ffd166;--red:#fb7185}*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#07101d,#0e2744 60%,#07101d);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;font-size:14px}a{color:#8ed6ff;text-decoration:none}header{padding:24px;border-bottom:1px solid var(--line);background:rgba(7,16,29,.9)}.nav{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:18px}.brand{font-weight:950;font-size:19px}.brand span{color:var(--blue)}.links{display:flex;gap:14px;color:var(--mut);font-size:13px}h1{margin:0 0 8px;font-size:clamp(30px,4vw,48px);letter-spacing:-.05em}.sub{color:var(--mut);font-size:16px;max-width:900px;line-height:1.45}main{padding:22px 24px 60px;max-width:1180px;margin:0 auto}.box{background:rgba(15,33,57,.88);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 18px 60px rgba(0,0,0,.22);margin-bottom:14px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:end}label{display:grid;gap:5px;color:var(--mut)}input,select{background:#0a192c;border:1px solid rgba(255,255,255,.13);color:var(--txt);border-radius:12px;padding:10px 12px;min-width:130px}button,.btn{background:#14345a;color:#fff;border:1px solid rgba(91,188,255,.28);border-radius:12px;padding:10px 13px;font-weight:850;cursor:pointer}button:hover,.btn:hover{border-color:#7bd3ff}.primary{background:linear-gradient(135deg,#1588d2,#22c55e);color:#06111f;border:0}.mut{color:var(--mut)}.note{background:rgba(255,209,102,.08);border:1px solid rgba(255,209,102,.25);border-radius:16px;padding:13px;color:#ffe8a3;line-height:1.45}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;margin:12px 0}.metric{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:14px;padding:12px}.metric b{display:block;font-size:25px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}.item{background:#0a192c;border:1px solid var(--line);border-radius:14px;padding:12px;line-height:1.45;margin:8px 0}.good{color:#86efac;font-weight:900}.warn{color:#fde68a;font-weight:900}.bad{color:#fda4af;font-weight:900}.tag{display:inline-flex;border-radius:999px;padding:2px 7px;background:rgba(91,188,255,.12);border:1px solid rgba(91,188,255,.22);margin:3px 4px 0 0;color:#cbefff;font-size:12px}.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:#0a192c;max-height:520px}table{border-collapse:collapse;width:100%;font-size:12px}th,td{padding:8px 9px;border-bottom:1px solid rgba(255,255,255,.08);white-space:nowrap;text-align:left}th{position:sticky;top:0;background:#193b63;z-index:2}details{margin-top:10px;color:var(--mut)}summary{cursor:pointer;color:#cfeeff}@media(max-width:760px){.links{display:none}main,header{padding-left:14px;padding-right:14px}input{width:100%}}
-</style></head><body><header><div class="nav"><a class="brand" href="/">Fantasy Edge <span>IQ</span></a><nav class="links"><a href="/premier-league">FPL dashboard</a><a href="/euroleague">EuroLeague</a><a href="/methodology">Methodology</a></nav></div><h1>FPL Transfer IQ</h1><div class="sub">Enter your FPL team ID to get a compact transfer check: risks, affordable upgrades and captain shortlist.</div></header><main>
-<section class="box"><div class="toolbar"><label>FPL Team ID<input id="teamId" placeholder="e.g. 123456" inputmode="numeric"></label><label>Bank override £m<input id="bank" type="number" min="0" step="0.1" placeholder="optional"></label><label>Free transfers<select id="ft"><option>1</option><option>2</option><option>3</option></select></label><label>Style<select id="style"><option value="balanced">Balanced</option><option value="safe">Safe</option><option value="aggressive">Aggressive</option></select></label><button class="primary" onclick="analyze()">Analyze team</button></div><p class="mut">Uses the latest publicly available FPL squad. Private transfers made before the next deadline may not be visible.</p><details><summary>How do I find my FPL Team ID?</summary><p>Open your FPL team page. If the URL is <code>fantasy.premierleague.com/entry/6744933/event/5</code>, your Team ID is <b>6744933</b>.</p></details></section>
-<section id="status" class="note">Paste your team ID and click Analyze team.</section>
-<section id="results" style="display:none"><div id="summary" class="box"></div><div class="grid"><div class="box"><h2>Priority sells</h2><div id="sells"></div></div><div class="box"><h2>Best 1-transfer ideas</h2><div id="moves"></div></div><div class="box"><h2>Captain shortlist</h2><div id="caps"></div></div></div><div class="box"><h2>Your squad</h2><div class="tablewrap"><table id="squad"></table></div></div></section>
-</main><script>
-function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function fmt(v,d=1){v=Number(v);return Number.isFinite(v)?v.toFixed(d):'–'}
-function cls(v){v=Number(v)||0;return v>=6?'good':v>=4?'warn':'bad'}
-function item(html){return `<div class="item">${html}</div>`}
-function loadSaved(){teamId.value=localStorage.getItem('feiq_fpl_team_id')||''; bank.value=localStorage.getItem('feiq_fpl_bank')||''; style.value=localStorage.getItem('feiq_fpl_style')||'balanced'}
-async function analyze(){let id=teamId.value.trim();if(!/^\d+$/.test(id)){status.textContent='Enter a valid numeric FPL Team ID.';return}localStorage.setItem('feiq_fpl_team_id',id);localStorage.setItem('feiq_fpl_bank',bank.value);localStorage.setItem('feiq_fpl_style',style.value);results.style.display='none';status.textContent='Analyzing team...';let qs=new URLSearchParams({teamId:id,ft:ft.value,style:style.value});if(bank.value!=='')qs.set('bank',bank.value);try{let r=await fetch('/api/fpl-team-analyzer?'+qs.toString());let data=await r.json();if(!r.ok||!data.ok)throw new Error(data.error||'Analyzer failed');render(data);status.textContent=`Analyzed team ${data.teamId} · Gameweek ${data.event} · generated ${data.generated}`;results.style.display='block'}catch(e){status.textContent='Error: '+e.message}}
-function render(d){let s=d.summary;summary.innerHTML=`<h2>${esc(d.manager?.name||'FPL team')}</h2><div class="cards"><div class="metric"><b>${fmt(s.startingProjection)}</b><span class="mut">starting XI projection</span></div><div class="metric"><b>${fmt(s.bank)}</b><span class="mut">bank £m used</span></div><div class="metric"><b class="${s.injuryFlags?'bad':'good'}">${s.injuryFlags}</b><span class="mut">injury/news flags</span></div><div class="metric"><b class="${s.hardFixturePlayers?'warn':'good'}">${s.hardFixturePlayers}</b><span class="mut">hard fixture players</span></div><div class="metric"><b class="${s.lowSecurityPlayers?'warn':'good'}">${s.lowSecurityPlayers}</b><span class="mut">low security players</span></div></div>${d.warnings?.length?'<p class="warn">'+d.warnings.map(esc).join(' · ')+'</p>':''}`;
-sells.innerHTML=d.sellCandidates.length?d.sellCandidates.map(x=>item(`<b>${esc(x.player.web_name)}</b> <span class="mut">${x.player.team_short} · ${x.player.pos} · £${fmt(x.player.price)}m · security ${x.player.reliability}</span><br><span class="bad">Sell pressure ${fmt(x.sellPressure,0)}</span> — ${esc(x.reason)}`)).join(''):'<p class="mut">No urgent sells found.</p>';
-moves.innerHTML=d.transferIdeas.length?d.transferIdeas.map(m=>item(`<b>OUT:</b> ${esc(m.out.web_name)} <span class="mut">${m.out.team_short} · £${fmt(m.out.price)}m</span><br><b>IN:</b> ${esc(m.in.web_name)} <span class="mut">${m.in.team_short} · £${fmt(m.in.price)}m · security ${m.in.reliability}</span><br><span class="good">+${fmt(m.gain)} projected pts</span> · ${m.priceDiff>0?'uses £'+fmt(m.priceDiff)+'m bank':'frees £'+fmt(-m.priceDiff)+'m'} · bank after £${fmt(m.bankAfter)}m<br>${(m.reasons||[]).map(r=>`<span class="tag">${esc(r)}</span>`).join('')}`)).join(''):'<p class="mut">No affordable same-position upgrade found with current bank.</p>';
-caps.innerHTML=d.captaincy.map((p,i)=>item(`${i+1}. <b>${esc(p.web_name)}</b> <span class="mut">${p.team_short} · ${p.pos} · projection ${fmt(p.projection)} · FDR5 ${fmt(p.fdr_next5,2)} · security ${p.reliability}</span>`)).join('');
-squad.innerHTML='<thead><tr><th>Player</th><th>Pos</th><th>Team</th><th>£m</th><th>Proj</th><th>FDR5</th><th>Security</th><th>Status</th><th>News</th></tr></thead><tbody>'+d.squad.map(p=>`<tr><td>${esc(p.web_name)}</td><td>${p.pos}</td><td>${p.team_short}</td><td>${fmt(p.price)}</td><td class="${cls(p.projection)}">${fmt(p.projection)}</td><td>${fmt(p.fdr_next5,2)}</td><td>${p.reliability}</td><td>${p.status==='a'?'OK':esc(p.status)}</td><td>${esc(p.news||'')}</td></tr>`).join('')+'</tbody>'}
-loadSaved();
-</script></body></html>
+const BASE = 'https://fantasy.premierleague.com/api';
+const headers = { 'user-agent': 'Fantasy Edge IQ beta analyzer', 'accept': 'application/json' };
+
+async function getJson(path) {
+  const res = await fetch(BASE + path, { headers });
+  if (!res.ok) throw new Error(`${path} returned ${res.status}`);
+  return await res.json();
+}
+
+function num(v, d = null) {
+  const n = Number(v);
+  return Number.isFinite(n) ? n : d;
+}
+
+function price(e) {
+  return num(e.now_cost, 0) / 10;
+}
+
+function posName(t) {
+  return ({ 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' })[t] || String(t);
+}
+
+function currentEvent(events) {
+  return (
+    events.find(e => e.is_current)?.id ||
+    events.find(e => e.is_next)?.id ||
+    events.filter(e => e.finished).slice(-1)[0]?.id ||
+    1
+  );
+}
+
+async function getPicks(teamId, preferredEvent, events) {
+  const start = preferredEvent || currentEvent(events);
+  const tries = [];
+
+  for (let e = start; e >= Math.max(1, start - 5); e--) {
+    tries.push(e);
+  }
+
+  for (const e of tries) {
+    try {
+      return {
+        event: e,
+        picks: await getJson(`/entry/${teamId}/event/${e}/picks/`)
+      };
+    } catch (err) {}
+  }
+
+  throw new Error('Could not load public picks for this team ID');
+}
+
+function nextFixtures(teamId, fixtures, teams, n = 5) {
+  return fixtures
+    .filter(f => !f.finished && (f.team_h === teamId || f.team_a === teamId))
+    .sort((a, b) => String(a.kickoff_time || '').localeCompare(String(b.kickoff_time || '')))
+    .slice(0, n)
+    .map(f => {
+      const home = f.team_h === teamId;
+      const oppId = home ? f.team_a : f.team_h;
+      const opp = teams.find(t => t.id === oppId)?.short_name || String(oppId);
+      const diff = home ? f.team_h_difficulty : f.team_a_difficulty;
+
+      return {
+        opp,
+        ha: home ? 'H' : 'A',
+        difficulty: num(diff, 3)
+      };
+    });
+}
+
+function reliability(e) {
+  const minutes = num(e.minutes, 0);
+  const starts = num(e.starts, 0);
+  const selected = num(e.selected_by_percent, 0);
+
+  const minutesScore = Math.min(55, minutes / 9);
+  const startsScore = Math.min(25, starts * 5);
+  const ownershipScore = Math.min(20, selected / 2);
+
+  return Math.round(minutesScore + startsScore + ownershipScore);
+}
+
+function enrich(e, maps, fixtures) {
+  const team = maps.teams.get(e.team) || {};
+  const nf = nextFixtures(e.team, fixtures, [...maps.teams.values()], 5);
+  const fdr = nf.length ? nf.reduce((s, x) => s + x.difficulty, 0) / nf.length : 3;
+
+  let base = num(e.ep_next, null);
+
+  if (base === null || base <= 0) base = num(e.form, 0);
+  if (base <= 0) base = num(e.points_per_game, 0);
+
+  let projection = base + (3 - fdr) * 0.35;
+
+  if (e.status !== 'a') {
+    projection *= ((num(e.chance_of_playing_next_round, 0) || 0) / 100);
+  }
+
+  projection = Math.max(0, projection);
+
+  const p = price(e);
+
+  return {
+    id: e.id,
+    web_name: e.web_name,
+    full_name: `${e.first_name || ''} ${e.second_name || ''}`.trim(),
+    team_short: team.short_name || '',
+    team_name: team.name || '',
+    pos: posName(e.element_type),
+    element_type: e.element_type,
+    price: p,
+    form: num(e.form, 0),
+    ep_next: num(e.ep_next, 0),
+    points_per_game: num(e.points_per_game, 0),
+    total_points: num(e.total_points, 0),
+    selected_by_percent: num(e.selected_by_percent, 0),
+    transfers_in_event: num(e.transfers_in_event, 0),
+    transfers_out_event: num(e.transfers_out_event, 0),
+    status: e.status,
+    news: e.news || '',
+    chance_next: e.chance_of_playing_next_round,
+    minutes: num(e.minutes, 0),
+    starts: num(e.starts, 0),
+    reliability: reliability(e),
+    fdr_next5: Math.round(fdr * 100) / 100,
+    next5: nf.map(x => `${x.opp}(${x.ha},${x.difficulty})`).join(' · '),
+    projection: Math.round(projection * 10) / 10,
+    value: p ? projection / p : 0
+  };
+}
+
+function reasonSell(p) {
+  const r = [];
+
+  if (p.status !== 'a' || p.news) r.push('injury/news risk');
+  if (p.fdr_next5 >= 3.6) r.push('hard fixture run');
+  if (p.projection < 3.5) r.push('low projection');
+  if (p.reliability < 35) r.push('low minutes/security');
+  if (p.price >= 7.5 && p.value < 0.55) r.push('weak value for price');
+
+  if (!r.length) r.push('lower projection than available alternatives');
+
+  return r.join(', ');
+}
+
+function sellPressure(p) {
+  let s = Math.max(0, 7 - p.projection) * 7;
+
+  if (p.status !== 'a' || p.news) s += 30;
+  if (p.fdr_next5 >= 3.6) s += 10;
+  if (p.reliability < 35) s += 12;
+  if (p.price >= 7.5 && p.value < 0.55) s += 10;
+
+  s += Math.min(8, (p.transfers_out_event || 0) / 100000);
+
+  return Math.round(s);
+}
+
+function buyReasons(out, cand, priceDiff) {
+  const r = [];
+
+  if (cand.projection >= out.projection + 1.5) r.push('higher projection');
+  if (cand.fdr_next5 <= out.fdr_next5 - 0.35) r.push('better fixtures');
+  if (cand.reliability >= out.reliability + 15) r.push('stronger minutes/security');
+  if (cand.form >= out.form + 1.5) r.push('better form');
+  if (priceDiff < -0.2) r.push('frees budget');
+
+  if (!r.length) r.push('better overall model score');
+
+  return r;
+}
+
+module.exports = async (req, res) => {
+  try {
+    const teamId = String(req.query.teamId || '').trim();
+
+    if (!/^\d+$/.test(teamId)) {
+      return res.status(400).json({
+        ok: false,
+        error: 'Invalid FPL Team ID'
+      });
+    }
+
+    const [bootstrap, fixtures, entry] = await Promise.all([
+      getJson('/bootstrap-static/'),
+      getJson('/fixtures/'),
+      getJson(`/entry/${teamId}/`)
+    ]);
+
+    const preferred = req.query.event ? Number(req.query.event) : currentEvent(bootstrap.events);
+    const { event, picks } = await getPicks(teamId, preferred, bootstrap.events);
+
+    const teamMap = new Map(bootstrap.teams.map(t => [t.id, t]));
+    const maps = { teams: teamMap };
+
+    const enriched = bootstrap.elements.map(e => enrich(e, maps, fixtures));
+    const byId = new Map(enriched.map(p => [p.id, p]));
+
+    const selectedIds = new Set((picks.picks || []).map(p => p.element));
+
+    const squad = (picks.picks || [])
+      .map(pk => ({
+        ...byId.get(pk.element),
+        pick_position: pk.position,
+        multiplier: pk.multiplier
+      }))
+      .filter(p => p.id);
+
+    const starting = squad.filter(p => (p.multiplier || 0) > 0 || (p.pick_position || 99) <= 11);
+
+    const endpointBank =
+      picks.entry_history && Number.isFinite(Number(picks.entry_history.bank))
+        ? Number(picks.entry_history.bank) / 10
+        : 0;
+
+    const bank = Number.isFinite(Number(req.query.bank))
+      ? Math.max(0, Number(req.query.bank))
+      : endpointBank;
+
+    const style = String(req.query.style || 'balanced');
+
+    const sells = squad
+      .map(p => ({
+        player: p,
+        sellPressure: sellPressure(p),
+        reason: reasonSell(p)
+      }))
+      .sort((a, b) => b.sellPressure - a.sellPressure)
+      .slice(0, 4);
+
+    const ideas = [];
+
+    for (const s of sells) {
+      const out = s.player;
+
+      for (const cand of enriched) {
+        if (selectedIds.has(cand.id)) continue;
+        if (cand.element_type !== out.element_type) continue;
+        if (cand.status !== 'a') continue;
+
+        if (cand.reliability < 25 && cand.projection < 4.5) continue;
+
+        const priceDiff = Math.round((cand.price - out.price) * 10) / 10;
+        const bankAfter = Math.round((bank - priceDiff) * 10) / 10;
+
+        if (bankAfter < -0.001) continue;
+
+        const gain = Math.round((cand.projection - out.projection) * 10) / 10;
+
+        if (gain <= 0.3) continue;
+
+        let rank =
+          gain * 11 +
+          cand.projection * 1.5 +
+          cand.value * 2 +
+          (3 - cand.fdr_next5) * 2 +
+          cand.reliability * 0.035;
+
+        if (style === 'safe') rank += cand.reliability * 0.08;
+        if (style === 'aggressive') rank += cand.form * 0.65;
+
+        ideas.push({
+          out,
+          in: cand,
+          gain,
+          priceDiff,
+          bankAfter,
+          reasons: buyReasons(out, cand, priceDiff),
+          rank
+        });
+      }
+    }
+
+    ideas.sort((a, b) => b.rank - a.rank);
+
+    const captaincy = starting
+      .slice()
+      .sort((a, b) => b.projection - a.projection)
+      .slice(0, 5);
+
+    const warnings = [];
+
+    const injuryFlags = squad.filter(p => p.status !== 'a' || p.news).length;
+    const hardFixturePlayers = squad.filter(p => p.fdr_next5 >= 3.6).length;
+    const lowSecurityPlayers = squad.filter(p => p.reliability < 35).length;
+
+    if (injuryFlags) warnings.push(`${injuryFlags} player(s) have injury/news flags`);
+    if (hardFixturePlayers) warnings.push(`${hardFixturePlayers} player(s) have difficult next-five fixtures`);
+    if (lowSecurityPlayers) warnings.push(`${lowSecurityPlayers} player(s) have low minutes/security`);
+
+    const startingProjection = starting.reduce(
+      (sum, p) => sum + p.projection * (p.multiplier || 1),
+      0
+    );
+
+    res.setHeader('Cache-Control', 's-maxage=300, stale-while-revalidate=600');
+
+    return res.status(200).json({
+      ok: true,
+      teamId,
+      event,
+      generated: new Date().toISOString().slice(0, 16).replace('T', ' '),
+      manager: {
+        name: entry.name,
+        player_name: [entry.player_first_name, entry.player_last_name].filter(Boolean).join(' ')
+      },
+      summary: {
+        bank,
+        startingProjection: Math.round(startingProjection * 10) / 10,
+        injuryFlags,
+        hardFixturePlayers,
+        lowSecurityPlayers
+      },
+      squad,
+      sellCandidates: sells,
+      transferIdeas: ideas.slice(0, 6),
+      captaincy,
+      warnings
+    });
+  } catch (err) {
+    return res.status(500).json({
+      ok: false,
+      error: err.message || 'Analyzer failed'
+    });
+  }
+};
