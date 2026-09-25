@@ -5,28 +5,15 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
-  ],
-  "rewrites": [
-    { "source": "/euroleague", "destination": "/euroleague-dashboard.html" },
-    { "source": "/euroleague/dashboard", "destination": "/euroleague-dashboard.html" },
-    { "source": "/euroleague/players", "destination": "/euroleague-dashboard.html" },
-    { "source": "/euroleague/teams", "destination": "/euroleague-dashboard.html" },
-    { "source": "/euroleague/schedule", "destination": "/euroleague-dashboard.html" },
-    { "source": "/premier-league", "destination": "/premier-league-dashboard.html" },
-    { "source": "/premier-league/dashboard", "destination": "/premier-league-dashboard.html" },
-    { "source": "/premier-league/players", "destination": "/premier-league-dashboard.html" },
-    { "source": "/premier-league/fixtures", "destination": "/premier-league-dashboard.html" },
-    { "source": "/premier-league/transfers", "destination": "/premier-league-dashboard.html" },
-    { "source": "/premier-league/injuries", "destination": "/premier-league-dashboard.html" },
-    { "source": "/pricing", "destination": "/pricing.html" },
-    { "source": "/methodology", "destination": "/methodology.html" },
-    { "source": "/about", "destination": "/about.html" },
-    { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/disclaimer", "destination": "/disclaimer.html" }
   ]
 }

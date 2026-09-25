@@ -1,20 +1,12 @@
-# Fantasy Edge IQ — Flat upload version
+# Fantasy Edge IQ v2 upload package
 
-This version is made for GitHub web upload. It has no folders, so there will be no `index (1).html` duplicate problem.
+Upload all files in this folder to the GitHub repository root and commit.
 
-Upload these files to the GitHub repository root:
+This version includes:
+- stronger homepage copy and SEO metadata
+- robots.txt and sitemap.xml
+- enhanced EuroLeague dashboard with a Full Player Stats tab
+- CSV downloads for EuroLeague full player table, team context and next-five schedule
+- package.json build script that creates the public output and clean route folders for Vercel
 
-- `index.html`
-- `euroleague-dashboard.html`
-- `premier-league-dashboard.html`
-- `pricing.html`
-- `methodology.html`
-- `about.html`
-- `privacy.html`
-- `terms.html`
-- `disclaimer.html`
-- `vercel.json`
-- `package.json`
-- `README_DEPLOY.md`
-
-Then import the GitHub repo in Vercel and connect `fantasyedgeiq.com`.
+After commit, Vercel will automatically redeploy.
