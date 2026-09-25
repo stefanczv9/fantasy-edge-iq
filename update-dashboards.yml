@@ -1,0 +1,59 @@
+name: Update fantasy dashboards
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Daily morning refresh for Europe/Zagreb users. GitHub cron uses UTC.
+    - cron: '15 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Refresh EuroLeague known fantasy profiles
+        run: python scripts/refresh_euro_profiles_known.py
+
+      - name: Build EuroLeague base data
+        run: python scripts/create_euroleague_fantasy_dashboard.py
+
+      - name: Build EuroLeague player value table
+        run: python scripts/create_fantasheet_style_dashboard.py
+
+      - name: Build EuroLeague advanced matchup context
+        run: python scripts/create_euroleague_advanced_context.py
+
+      - name: Build FPL dashboard data
+        run: python scripts/create_fpl_fantasy_dashboard.py
+
+      - name: Build static website pages
+        run: python scripts/build_static_site.py
+
+      - name: Test Vercel static build
+        run: npm run build
+
+      - name: Commit refreshed data and pages
+        run: |
+          git config user.name "fantasy-edge-iq-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Automated fantasy data refresh"
+            git push
+          fi

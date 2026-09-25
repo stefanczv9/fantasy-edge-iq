@@ -1,0 +1,7 @@
+public/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+node_modules/
+fpl_fantasy_data/*.json

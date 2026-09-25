@@ -1,0 +1,8397 @@
+[
+  {
+    "id": 3765,
+    "first_name": "Mike",
+    "last_name": "James",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "55",
+    "face_path": null,
+    "quotation": 16,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.3000000000000007,
+    "popularity": 0.021,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3766,
+    "first_name": "Sasha",
+    "last_name": "Vezenkov",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "14",
+    "face_path": null,
+    "quotation": 17,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.6000000000000014,
+    "popularity": 0.384,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3767,
+    "first_name": "Shane",
+    "last_name": "Larkin",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 13.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.015,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3768,
+    "first_name": "Mathias",
+    "last_name": "Lessort",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "26",
+    "face_path": null,
+    "quotation": 14.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.5999999999999996,
+    "popularity": 0.094,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3769,
+    "first_name": "Walter",
+    "last_name": "Tavares",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "22",
+    "face_path": null,
+    "quotation": 14.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3999999999999986,
+    "popularity": 0.03,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3770,
+    "first_name": "Chima",
+    "last_name": "Moneke",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "95",
+    "face_path": null,
+    "quotation": 15.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.032,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3771,
+    "first_name": "Wade",
+    "last_name": "Baldwin",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 14.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.028,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3772,
+    "first_name": "Facundo",
+    "last_name": "Campazzo",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 13.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.29999999999999893,
+    "popularity": 0.024,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3773,
+    "first_name": "Nikola",
+    "last_name": "Mirotic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "33",
+    "face_path": null,
+    "quotation": 11.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3774,
+    "first_name": "Tornike",
+    "last_name": "Shengelia",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 13.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5,
+    "popularity": 0.019,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3775,
+    "first_name": "Shavon",
+    "last_name": "Shields",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "31",
+    "face_path": null,
+    "quotation": 12.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.028,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3776,
+    "first_name": "Wenyen",
+    "last_name": "Gabriel",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "32",
+    "face_path": null,
+    "quotation": 8.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.011,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3777,
+    "first_name": "Will",
+    "last_name": "Clyburn",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 12.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.033,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3779,
+    "first_name": "Kostas",
+    "last_name": "Sloukas",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 10.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3780,
+    "first_name": "Furkan",
+    "last_name": "Korkmaz",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "30",
+    "face_path": null,
+    "quotation": 8.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3782,
+    "first_name": "Nikola",
+    "last_name": "Milutinov",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "33",
+    "face_path": null,
+    "quotation": 15.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5,
+    "popularity": 0.026,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3785,
+    "first_name": "Josh",
+    "last_name": "Nebo",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "32",
+    "face_path": null,
+    "quotation": 12.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.025,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3787,
+    "first_name": "Nigel",
+    "last_name": "Hayes-davis",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 13.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3790,
+    "first_name": "Dzanan",
+    "last_name": "Musa",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 13.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000142,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3791,
+    "first_name": "Carlik",
+    "last_name": "Jones",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 13.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.275,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3792,
+    "first_name": "Jordan",
+    "last_name": "Loyd",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 10.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5999999999999996,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3793,
+    "first_name": "Jordan",
+    "last_name": "Nwora",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "33",
+    "face_path": null,
+    "quotation": 13,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.187,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3794,
+    "first_name": "Kevin",
+    "last_name": "Punter",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 13.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.40000000000000036,
+    "popularity": 0.033,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3795,
+    "first_name": "TJ",
+    "last_name": "Shorts",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 14.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.117,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3797,
+    "first_name": "Moustapha",
+    "last_name": "Fall",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 8.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3799,
+    "first_name": "Zach",
+    "last_name": "Leday",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "16",
+    "face_path": null,
+    "quotation": 13.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000142,
+    "popularity": 0.041,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3801,
+    "first_name": "Nicolo",
+    "last_name": "Melli",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 8.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.029,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3803,
+    "first_name": "Gabriel",
+    "last_name": "Deck",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "14",
+    "face_path": null,
+    "quotation": 9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5,
+    "popularity": 0.011,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3804,
+    "first_name": "Tadas",
+    "last_name": "Sedekerskis",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 10.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3805,
+    "first_name": "Kendrick",
+    "last_name": "Nunn",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "25",
+    "face_path": null,
+    "quotation": 14.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3806,
+    "first_name": "Duane",
+    "last_name": "Washington",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 10.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.026,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3807,
+    "first_name": "Elie",
+    "last_name": "Okobo",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 12.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.038,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3808,
+    "first_name": "Codi",
+    "last_name": "Miller-Mcintyre",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 11,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.053,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3810,
+    "first_name": "Bonzie",
+    "last_name": "Colson",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "50",
+    "face_path": null,
+    "quotation": 11.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5,
+    "popularity": 0.028,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3812,
+    "first_name": "Jaylen",
+    "last_name": "Hoard",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 14.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.1999999999999993,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3815,
+    "first_name": "Trent",
+    "last_name": "Forrest",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 10.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.02,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3816,
+    "first_name": "Markus",
+    "last_name": "Howard",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 8.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3818,
+    "first_name": "Bruno",
+    "last_name": "Caboclo",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "51",
+    "face_path": null,
+    "quotation": 7.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3820,
+    "first_name": "Alec",
+    "last_name": "Peters",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "25",
+    "face_path": null,
+    "quotation": 11.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.13,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3821,
+    "first_name": "Donta",
+    "last_name": "Hall",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "45",
+    "face_path": null,
+    "quotation": 10.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.063,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3822,
+    "first_name": "Joel",
+    "last_name": "Bolomboy",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 10.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.20000000000000107,
+    "popularity": 0.073,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3824,
+    "first_name": "Luca",
+    "last_name": "Vildoza",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 7.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.062,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3825,
+    "first_name": "Juancho",
+    "last_name": "Hernangomez",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "41",
+    "face_path": null,
+    "quotation": 11.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.02,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3826,
+    "first_name": "Frank",
+    "last_name": "Ntilikina",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 7.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3828,
+    "first_name": "Georgios",
+    "last_name": "Papagiannis",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3830,
+    "first_name": "Deividas",
+    "last_name": "Sirvydis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "91",
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.023,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3831,
+    "first_name": "Darius",
+    "last_name": "Thompson",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 8.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3833,
+    "first_name": "Armoni",
+    "last_name": "Brooks",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 10.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.055,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3834,
+    "first_name": "Nadir",
+    "last_name": "Hifi",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 14.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.029,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3835,
+    "first_name": "Usman",
+    "last_name": "Garuba",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "16",
+    "face_path": null,
+    "quotation": 6.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3836,
+    "first_name": "Konstantinos",
+    "last_name": "Mitoglou",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "44",
+    "face_path": null,
+    "quotation": 5.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.40000000000000036,
+    "popularity": 0.111,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3838,
+    "first_name": "Collin",
+    "last_name": "Malcolm",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 8.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.006,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3841,
+    "first_name": "Tomas",
+    "last_name": "Satoransky",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 9.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3842,
+    "first_name": "Scottie",
+    "last_name": "Wilbekin",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.045,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3843,
+    "first_name": "Moses",
+    "last_name": "Wright",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 14,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.196,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3845,
+    "first_name": "Joffrey",
+    "last_name": "Lauvergne",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "77",
+    "face_path": null,
+    "quotation": 9.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.011,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3846,
+    "first_name": "Tyson",
+    "last_name": "Ward",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.20000000000000018,
+    "popularity": 0.063,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3850,
+    "first_name": "Theo",
+    "last_name": "Maledon",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 9.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.1999999999999993,
+    "popularity": 0.077,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3851,
+    "first_name": "Andres",
+    "last_name": "Feliz",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 6.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.124,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3852,
+    "first_name": "Edgaras",
+    "last_name": "Ulanovas",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "92",
+    "face_path": null,
+    "quotation": 6.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3853,
+    "first_name": "Jerian",
+    "last_name": "Grant",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "22",
+    "face_path": null,
+    "quotation": 8.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.019,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3856,
+    "first_name": "Isaia",
+    "last_name": "Cordinier",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 9.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3857,
+    "first_name": "Dan",
+    "last_name": "Oturu",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "25",
+    "face_path": null,
+    "quotation": 14.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.7000000000000011,
+    "popularity": 0.069,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3859,
+    "first_name": "Vladimir",
+    "last_name": "Lucic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.011,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3860,
+    "first_name": "Devin",
+    "last_name": "Booker",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "31",
+    "face_path": null,
+    "quotation": 9.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.015,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3861,
+    "first_name": "Thomas",
+    "last_name": "Walkup",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 8.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.39999999999999947,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3862,
+    "first_name": "Jasiel",
+    "last_name": "Rivero",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "41",
+    "face_path": null,
+    "quotation": 7.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3864,
+    "first_name": "Timothé",
+    "last_name": "Luwawu-Cabarrot",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 12.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.098,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3867,
+    "first_name": "Kostas",
+    "last_name": "Papanikolaou",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "16",
+    "face_path": null,
+    "quotation": 4.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.08,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3868,
+    "first_name": "Zeljko",
+    "last_name": "Obradovic",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 10,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.3000000000000007,
+    "popularity": 0.122,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3869,
+    "first_name": "Mikael",
+    "last_name": "Jantunen",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "20",
+    "face_path": null,
+    "quotation": 6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.046,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3870,
+    "first_name": "Tyrique",
+    "last_name": "Jones",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "88",
+    "face_path": null,
+    "quotation": 12,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3872,
+    "first_name": "Pedro",
+    "last_name": "Martinez",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.015,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3874,
+    "first_name": "Tyler",
+    "last_name": "Dorsey",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "22",
+    "face_path": null,
+    "quotation": 12.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.7000000000000011,
+    "popularity": 0.037,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3875,
+    "first_name": "Marko",
+    "last_name": "Guduric",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 9.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.029,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3880,
+    "first_name": "Derek ",
+    "last_name": "Willis",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "35",
+    "face_path": null,
+    "quotation": 8.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3881,
+    "first_name": "Leandro",
+    "last_name": "Bolmaro",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 8.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3883,
+    "first_name": "Johannes",
+    "last_name": "Voigtmann",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.40000000000000036,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3884,
+    "first_name": "Neal",
+    "last_name": "Sako",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 8.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3885,
+    "first_name": "Georgios",
+    "last_name": "Bartzokas",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 10,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.3000000000000007,
+    "popularity": 0.046,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3886,
+    "first_name": "Daniel",
+    "last_name": "Hackett",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 4.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.025,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3887,
+    "first_name": "Sylvain",
+    "last_name": "Francisco",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 14.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.233,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3888,
+    "first_name": "Sterling",
+    "last_name": "Brown",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 10.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.036,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3891,
+    "first_name": "Vitto",
+    "last_name": "Brown",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "33",
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3892,
+    "first_name": "Rokas",
+    "last_name": "Jokubaitis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "31",
+    "face_path": null,
+    "quotation": 8.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.027,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3896,
+    "first_name": "Juan",
+    "last_name": "Nunez",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 4.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.022,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3897,
+    "first_name": "Saras",
+    "last_name": "Jasikevicius",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.175,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3898,
+    "first_name": "Ante",
+    "last_name": "Zizic",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "41",
+    "face_path": null,
+    "quotation": 12,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3899,
+    "first_name": "Carsen",
+    "last_name": "Edwards",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 11.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.062,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3903,
+    "first_name": "Elijah",
+    "last_name": "Bryant",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 15.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.053,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3904,
+    "first_name": "Justin",
+    "last_name": "Anderson",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.015,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3905,
+    "first_name": "Iffe",
+    "last_name": "Lundberg",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 8.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5000000000000009,
+    "popularity": 0.075,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3907,
+    "first_name": "Jaron",
+    "last_name": "Blossomgame",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 9.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.026,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3909,
+    "first_name": "Aleksander",
+    "last_name": "Sekulic",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3910,
+    "first_name": "Roman",
+    "last_name": "Sorkin",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 13.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.022,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3911,
+    "first_name": "Kevarrius",
+    "last_name": "Hayes",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 7.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.083,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3914,
+    "first_name": "Nigel",
+    "last_name": "Williams-Goss",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 9.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.20000000000000107,
+    "popularity": 0.055,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3915,
+    "first_name": "Matteo",
+    "last_name": "Spagnolo",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 6.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.126,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3916,
+    "first_name": "Gabriele",
+    "last_name": "Procida",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 4.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.067,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3917,
+    "first_name": "Kamar",
+    "last_name": "Baldwin",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "44",
+    "face_path": null,
+    "quotation": 7.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.006,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3918,
+    "first_name": "Marius",
+    "last_name": "Grigonis",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "40",
+    "face_path": null,
+    "quotation": 6.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.029,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3921,
+    "first_name": "Pablo",
+    "last_name": "Laso",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.015,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3924,
+    "first_name": "Giuseppe",
+    "last_name": "Poeta",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3925,
+    "first_name": "Devon",
+    "last_name": "Hall",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "22",
+    "face_path": null,
+    "quotation": 8.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3926,
+    "first_name": "Filip",
+    "last_name": "Petrusev",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "30",
+    "face_path": null,
+    "quotation": 12.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.023,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3927,
+    "first_name": "Daulton",
+    "last_name": "Hommes",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "34",
+    "face_path": null,
+    "quotation": 6.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.20000000000000018,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3930,
+    "first_name": "Yam",
+    "last_name": "Madar",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "26",
+    "face_path": null,
+    "quotation": 8.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.29999999999999893,
+    "popularity": 0.085,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3933,
+    "first_name": "Leopold",
+    "last_name": "Cavaliere",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 4.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3934,
+    "first_name": "Isaac",
+    "last_name": "Bonga",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 11.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5,
+    "popularity": 0.093,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3936,
+    "first_name": "Nikos",
+    "last_name": "Rogkavopoulos",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.052,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3938,
+    "first_name": "Ibon",
+    "last_name": "Navarro",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.062,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3940,
+    "first_name": "Nick",
+    "last_name": "Weiler-Babb",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 10,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5999999999999996,
+    "popularity": 0.025,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3942,
+    "first_name": "Maodo",
+    "last_name": "Lo",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 7.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.02,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3943,
+    "first_name": "Joan",
+    "last_name": "Penarroya",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.063,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3946,
+    "first_name": "Andreas",
+    "last_name": "Obst",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 10.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.40000000000000036,
+    "popularity": 0.036,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3948,
+    "first_name": "Mbaye",
+    "last_name": "Ndiaye",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.20000000000000018,
+    "popularity": 0.023,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3950,
+    "first_name": "Ognjen",
+    "last_name": "Dobric",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.073,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3952,
+    "first_name": "Mam",
+    "last_name": "Jaiteh",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "14",
+    "face_path": null,
+    "quotation": 6.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3954,
+    "first_name": "Khalifa",
+    "last_name": "Diop",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "18",
+    "face_path": null,
+    "quotation": 5.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3955,
+    "first_name": "Paolo",
+    "last_name": "Galbiati",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3957,
+    "first_name": "Oscar",
+    "last_name": "Da Silva",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 7.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3960,
+    "first_name": "Tamir",
+    "last_name": "Blatt",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "45",
+    "face_path": null,
+    "quotation": 7.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3961,
+    "first_name": "Oded",
+    "last_name": "Kattash",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.239,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3962,
+    "first_name": "Mario",
+    "last_name": "Nakic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 5.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3963,
+    "first_name": "Alessandro",
+    "last_name": "Pajola",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "66",
+    "face_path": null,
+    "quotation": 7.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.011,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3964,
+    "first_name": "Alex",
+    "last_name": "Mumbru",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3967,
+    "first_name": "Dario",
+    "last_name": "Brizuela",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 6.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.39999999999999947,
+    "popularity": 0.044,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3971,
+    "first_name": "Vanja",
+    "last_name": "Marinkovic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3972,
+    "first_name": "Justus",
+    "last_name": "Hollatz",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 5.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3973,
+    "first_name": "Joel",
+    "last_name": "Parra",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "44",
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.303,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3974,
+    "first_name": "Anton",
+    "last_name": "Gavel",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3975,
+    "first_name": "Sebastian",
+    "last_name": "Herrera",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.027,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3976,
+    "first_name": "Arijan",
+    "last_name": "Lakic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "19",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.296,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3977,
+    "first_name": "Sergio",
+    "last_name": "Llull",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.03,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3978,
+    "first_name": "Eli",
+    "last_name": "Ndiaye",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "44",
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 3979,
+    "first_name": "Giannoulis",
+    "last_name": "Larentzakis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 4.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3980,
+    "first_name": "Aleksander",
+    "last_name": "Balcerowski",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.3000000000000007,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3981,
+    "first_name": "Mouhamet",
+    "last_name": "Diouf",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "35",
+    "face_path": null,
+    "quotation": 9.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3983,
+    "first_name": "Dejan",
+    "last_name": "Davidovac",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 4.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.019,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3984,
+    "first_name": "Sertac",
+    "last_name": "Sanli",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.117,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3985,
+    "first_name": "David",
+    "last_name": "Lighty",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 4.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.2999999999999998,
+    "popularity": 0.015,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3986,
+    "first_name": "Niels",
+    "last_name": "Giffey",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 4.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.019,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3988,
+    "first_name": "John",
+    "last_name": "Dibartolomeo",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.028,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3991,
+    "first_name": "Alberto",
+    "last_name": "Abalde",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "6",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.20000000000000018,
+    "popularity": 0.073,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3992,
+    "first_name": "Terry",
+    "last_name": "Tarpey",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3993,
+    "first_name": "Matthew",
+    "last_name": "Strazel",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "32",
+    "face_path": null,
+    "quotation": 10.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.019,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3994,
+    "first_name": "Yakuba",
+    "last_name": "Ouattara",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 4.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3995,
+    "first_name": "Maxime",
+    "last_name": "Lefevre",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.006,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 3997,
+    "first_name": "Stefano",
+    "last_name": "Tonut",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 4.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.021,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 3998,
+    "first_name": "Dovydas",
+    "last_name": "Giedraitis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.20000000000000018,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4000,
+    "first_name": "Melih",
+    "last_name": "Mahmutoglu",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.044,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4003,
+    "first_name": "Enzo",
+    "last_name": "Shahrvin",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "18",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4005,
+    "first_name": "Edwin",
+    "last_name": "Jackson",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 4.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.052,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4006,
+    "first_name": "Tomas",
+    "last_name": "Masiulis",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.033,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4007,
+    "first_name": "Erkan",
+    "last_name": "Yilmaz",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "33",
+    "face_path": null,
+    "quotation": 4.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.006,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4008,
+    "first_name": "Metecan",
+    "last_name": "Birsen",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 5.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4009,
+    "first_name": "Ousmane",
+    "last_name": "Diop",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "6",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.224,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4012,
+    "first_name": "Giampaolo",
+    "last_name": "Ricci",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.03,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4013,
+    "first_name": "Diego",
+    "last_name": "Flaccadori",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.039,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4014,
+    "first_name": "Tony",
+    "last_name": "Parker",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.018,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4016,
+    "first_name": "Nicola",
+    "last_name": "Akele",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "45",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.05,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4019,
+    "first_name": "Panagiotis",
+    "last_name": "Kalaitzakis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.084,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4023,
+    "first_name": "Mitar",
+    "last_name": "Bosnjakovic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4026,
+    "first_name": "Burakcan",
+    "last_name": "Yildizli",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "19",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4036,
+    "first_name": "Mert",
+    "last_name": "Eksioglu",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4038,
+    "first_name": "Dimitris",
+    "last_name": "Moraitis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "6",
+    "face_path": null,
+    "quotation": 4.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4051,
+    "first_name": "Georgios",
+    "last_name": "Kalaitzakis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4061,
+    "first_name": "Eleftherios",
+    "last_name": "Mantzoukas",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "72",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.2999999999999998,
+    "popularity": 0.075,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4073,
+    "first_name": "Tai",
+    "last_name": "Odiase",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 6.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.20000000000000018,
+    "popularity": 0.04,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4081,
+    "first_name": "Conor",
+    "last_name": "Morgan",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 8.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4084,
+    "first_name": "Dustin",
+    "last_name": "Sleva",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "14",
+    "face_path": null,
+    "quotation": 6.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4086,
+    "first_name": "Dusan",
+    "last_name": "Alimpijevic",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.055,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4088,
+    "first_name": "Berk",
+    "last_name": "Ugurlu",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "6",
+    "face_path": null,
+    "quotation": 4.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4094,
+    "first_name": "Kenan",
+    "last_name": "Kamenjas",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "34",
+    "face_path": null,
+    "quotation": 5.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.024,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4096,
+    "first_name": "Mckinley",
+    "last_name": "Wright",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "25",
+    "face_path": null,
+    "quotation": 13.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.017,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4097,
+    "first_name": "Nikola",
+    "last_name": "Tanaskovic",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 7.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.037,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4108,
+    "first_name": "Dj",
+    "last_name": "Stewart",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 8.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4124,
+    "first_name": "Kevin",
+    "last_name": "Kokila",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 8.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 4129,
+    "first_name": "Myles",
+    "last_name": "Cale",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 7.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.39999999999999947,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4156,
+    "first_name": "Jeremy",
+    "last_name": "Morgan",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "20",
+    "face_path": null,
+    "quotation": 6.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.39999999999999947,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4159,
+    "first_name": "Khadeen",
+    "last_name": "Carrington",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4164,
+    "first_name": "Johnathan",
+    "last_name": "Motley",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 11,
+    "avg_fantasy_pts": 0,
+    "total_plus": -1,
+    "popularity": 0.025,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4165,
+    "first_name": "Tomer",
+    "last_name": "Ginat",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "41",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4167,
+    "first_name": "Ish",
+    "last_name": "Wainright",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4172,
+    "first_name": "Dimitris",
+    "last_name": "Itoudis",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 8.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.064,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4174,
+    "first_name": "Guy",
+    "last_name": "Palatin",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4175,
+    "first_name": "Oz",
+    "last_name": "Blayzer",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "14",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4180,
+    "first_name": "Devon",
+    "last_name": "Dotson",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 9.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4195,
+    "first_name": "Justinian",
+    "last_name": "Jessup",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 7.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4210,
+    "first_name": "Anthony",
+    "last_name": "Brown",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 9.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4212,
+    "first_name": "Yoan",
+    "last_name": "Makoundou",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "55",
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 4215,
+    "first_name": "Max",
+    "last_name": "Heidegger",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "33",
+    "face_path": null,
+    "quotation": 5.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4233,
+    "first_name": "Mfiondu",
+    "last_name": "Kabengele",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 14.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.032,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4234,
+    "first_name": "Tyler",
+    "last_name": "Ennis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 5.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 4242,
+    "first_name": "Davide",
+    "last_name": "Casarin",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 5.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4246,
+    "first_name": "Semi",
+    "last_name": "Ojeleye",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "37",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4247,
+    "first_name": "Chris",
+    "last_name": "Jones",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 12.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.5,
+    "popularity": 0.026,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4251,
+    "first_name": "Brancou",
+    "last_name": "Badio",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 8.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000142,
+    "popularity": 0.11,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4252,
+    "first_name": "Jean",
+    "last_name": "Montero",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 12.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.29999999999999893,
+    "popularity": 0.121,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4255,
+    "first_name": "Xavier",
+    "last_name": "Albert",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.027,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4257,
+    "first_name": "Jaime",
+    "last_name": "Pradilla",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 8.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.027,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4258,
+    "first_name": "Josep",
+    "last_name": "Puerto",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 5.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4280,
+    "first_name": "Marek",
+    "last_name": "Blazevic",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "22",
+    "face_path": null,
+    "quotation": 9.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4340,
+    "first_name": "Kyle",
+    "last_name": "Allman",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 10.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.006,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4360,
+    "first_name": "Evan",
+    "last_name": "Fournier",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "94",
+    "face_path": null,
+    "quotation": 9.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.108,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4375,
+    "first_name": "Arnas",
+    "last_name": "Butkevicius",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "51",
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4378,
+    "first_name": "William",
+    "last_name": "Rayman",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 4.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.021,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4546,
+    "first_name": "Joel",
+    "last_name": "Ayayi",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4551,
+    "first_name": "Bar",
+    "last_name": "Timor",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4670,
+    "first_name": "Saben",
+    "last_name": "Lee",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 8.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4675,
+    "first_name": "Antonio",
+    "last_name": "Blakeney",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 9.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4698,
+    "first_name": "Onuralp",
+    "last_name": "Bitim",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4712,
+    "first_name": "Marcus",
+    "last_name": "Bingham",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "30",
+    "face_path": null,
+    "quotation": 11.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4758,
+    "first_name": "Perry",
+    "last_name": "Dozier",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "15",
+    "face_path": null,
+    "quotation": 7.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4808,
+    "first_name": "Bruno",
+    "last_name": "Fernando",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "20",
+    "face_path": null,
+    "quotation": 10.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.102,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 4882,
+    "first_name": "Daniel",
+    "last_name": "Theis",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 12.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.022,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 4884,
+    "first_name": "Jimmy",
+    "last_name": "Clark III",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 9.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7193,
+    "first_name": "Vasilije",
+    "last_name": "Micic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "22",
+    "face_path": null,
+    "quotation": 12,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.047,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7194,
+    "first_name": "Chuma",
+    "last_name": "Okeke",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7197,
+    "first_name": "Oshae",
+    "last_name": "Brissett",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 10.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7201,
+    "first_name": "Dwayne",
+    "last_name": "Bacon",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 12.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.8000000000000007,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7202,
+    "first_name": "Justin",
+    "last_name": "Robinson",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 12.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.019,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7203,
+    "first_name": "Miles",
+    "last_name": "Norris",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 8.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7204,
+    "first_name": "TJ",
+    "last_name": "Leaf",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "22",
+    "face_path": null,
+    "quotation": 10.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7209,
+    "first_name": "Lamar",
+    "last_name": "Stevens",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.055,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7210,
+    "first_name": "Omari",
+    "last_name": "Moore",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 8.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7212,
+    "first_name": "Derrick",
+    "last_name": "Alston Jr.",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 8.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.027,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7215,
+    "first_name": "Dylan",
+    "last_name": "Osetkowski",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7216,
+    "first_name": "Davis",
+    "last_name": "Bertans",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 5.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.20000000000000018,
+    "popularity": 0.037,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7217,
+    "first_name": "Tyson",
+    "last_name": "Carter",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 6.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.20000000000000018,
+    "popularity": 0.021,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7218,
+    "first_name": "Kameron",
+    "last_name": "Taylor",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 12.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.037,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7219,
+    "first_name": "Amath",
+    "last_name": "M'baye",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "22",
+    "face_path": null,
+    "quotation": 6.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7220,
+    "first_name": "Ebuka",
+    "last_name": "Izundu",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "15",
+    "face_path": null,
+    "quotation": 9.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7221,
+    "first_name": "Azuolas",
+    "last_name": "Tubelis",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 11.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.5,
+    "popularity": 0.065,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7223,
+    "first_name": "Clement",
+    "last_name": "Frisch",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "25",
+    "face_path": null,
+    "quotation": 5.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7225,
+    "first_name": "David",
+    "last_name": "Kramer",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "44",
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.043,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7226,
+    "first_name": "Allan",
+    "last_name": "Dokossi",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7228,
+    "first_name": "Klemen",
+    "last_name": "Prepelic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.015,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7229,
+    "first_name": "Mouhamed",
+    "last_name": "Faye",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "15",
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.011,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7230,
+    "first_name": "Awudu",
+    "last_name": "Abass",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 4.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7231,
+    "first_name": "Brice",
+    "last_name": "Dessert",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 5.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7232,
+    "first_name": "Bodian",
+    "last_name": "Massa",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 6.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7234,
+    "first_name": "Yankuba",
+    "last_name": "Sima",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "77",
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7235,
+    "first_name": "Xavi",
+    "last_name": "Pascual",
+    "position": {
+      "id": 31,
+      "name": "Head Coach"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": null,
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7237,
+    "first_name": "Nathan",
+    "last_name": "Reuvers",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 10.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.015,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7238,
+    "first_name": "Rodions",
+    "last_name": "Kurucs",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7239,
+    "first_name": "Izan",
+    "last_name": "Almansa",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7241,
+    "first_name": "Gur",
+    "last_name": "Lavi",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7243,
+    "first_name": "Nathan",
+    "last_name": "Sestina",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "77",
+    "face_path": null,
+    "quotation": 7.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7245,
+    "first_name": "David",
+    "last_name": "Mutaf",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7246,
+    "first_name": "Stefan",
+    "last_name": "Miljenovic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.082,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7248,
+    "first_name": "Nemanja",
+    "last_name": "Dangubic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.054,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7250,
+    "first_name": "Ioannis",
+    "last_name": "Kouzeloglou",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7254,
+    "first_name": "Itay",
+    "last_name": "Segev",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "6",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.018,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7255,
+    "first_name": "Omiros",
+    "last_name": "Netzipoglou",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "21",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7258,
+    "first_name": "Daron",
+    "last_name": "Russell",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 10.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3999999999999986,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7268,
+    "first_name": "Rj",
+    "last_name": "Cole",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 8.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7269,
+    "first_name": "Austin",
+    "last_name": "Wiley",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "50",
+    "face_path": null,
+    "quotation": 11,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7328,
+    "first_name": "Kaodirichi",
+    "last_name": "Akobundu-Ehiogu",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 6.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7338,
+    "first_name": "Both",
+    "last_name": "Gach",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "14",
+    "face_path": null,
+    "quotation": 8.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.29999999999999893,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7362,
+    "first_name": "Umoja",
+    "last_name": "Gibson",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 10.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.20000000000000107,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7378,
+    "first_name": "Agustin",
+    "last_name": "Ubal",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 6.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7390,
+    "first_name": "Tobias",
+    "last_name": "Jensen",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 6.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7422,
+    "first_name": "Ercan",
+    "last_name": "Osmani",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 9.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.02,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 7424,
+    "first_name": "Aliou",
+    "last_name": "Diarra",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "31",
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 7867,
+    "first_name": "Armando",
+    "last_name": "Bacot",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 7.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8368,
+    "first_name": "Mamadi",
+    "last_name": "Diakite",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 10.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8463,
+    "first_name": "Kai",
+    "last_name": "Jones",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "88",
+    "face_path": null,
+    "quotation": 8.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000142,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8567,
+    "first_name": "Talen",
+    "last_name": "Horton-Tucker",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 12.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.095,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 8623,
+    "first_name": "Kosta",
+    "last_name": "Kondic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 4.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8644,
+    "first_name": "Stefan",
+    "last_name": "Joksimovic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "77",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.112,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8677,
+    "first_name": "Pedro",
+    "last_name": "Souza",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8681,
+    "first_name": "Aleksej",
+    "last_name": "Nedeljkovic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 8714,
+    "first_name": "Kobi",
+    "last_name": "Simmons",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 9.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 8721,
+    "first_name": "Jared",
+    "last_name": "Butler",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "6",
+    "face_path": null,
+    "quotation": 10.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.086,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 8727,
+    "first_name": "Braxton",
+    "last_name": "Key",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.165,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8728,
+    "first_name": "Alex",
+    "last_name": "Len",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "27",
+    "face_path": null,
+    "quotation": 7.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8730,
+    "first_name": "Kenneth",
+    "last_name": "Faried",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "35",
+    "face_path": null,
+    "quotation": 9.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.017,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 8762,
+    "first_name": "Jared",
+    "last_name": "Rhoden",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.1999999999999993,
+    "popularity": 0.006,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8769,
+    "first_name": "Uros",
+    "last_name": "Danilovic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "44",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8770,
+    "first_name": "Ruzgar",
+    "last_name": "Fenemen",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "6",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8808,
+    "first_name": "Eugene",
+    "last_name": "Omoruyi",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "20",
+    "face_path": null,
+    "quotation": 10.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.024,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 8830,
+    "first_name": "Francesco",
+    "last_name": "Ferrari",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 5.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8834,
+    "first_name": "Chris",
+    "last_name": "Silva",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "30",
+    "face_path": null,
+    "quotation": 7.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8846,
+    "first_name": "Tonye",
+    "last_name": "Jekiri",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 8.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 8993,
+    "first_name": "Cory",
+    "last_name": "Joseph",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "34",
+    "face_path": null,
+    "quotation": 7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.40000000000000036,
+    "popularity": 0.029,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 9006,
+    "first_name": "Caspar",
+    "last_name": "Vossenberg",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "37",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 9061,
+    "first_name": "Matteo",
+    "last_name": "Baiocchi",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 9062,
+    "first_name": "Kilian",
+    "last_name": "Fischer",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.032,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 9063,
+    "first_name": "Amit",
+    "last_name": "Ebo",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 9064,
+    "first_name": "Kessler",
+    "last_name": "Edwards",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 10,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11487,
+    "first_name": "Dario",
+    "last_name": "Saric",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 14.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.40000000000000036,
+    "popularity": 0.031,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11488,
+    "first_name": "Santi",
+    "last_name": "Yusta",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 8.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.29999999999999893,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11489,
+    "first_name": "Jason",
+    "last_name": "Burnell",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 9.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11490,
+    "first_name": "Garrison",
+    "last_name": "Mathews",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 145,
+      "name": "Armani Olimpia Milan",
+      "abbreviation": "MIL"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 11491,
+    "first_name": "David",
+    "last_name": "Dejulius",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 9.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.017,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11492,
+    "first_name": "Jaylen",
+    "last_name": "Nowell",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 9.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11493,
+    "first_name": "Mady",
+    "last_name": "Sissoko",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "44",
+    "face_path": null,
+    "quotation": 8.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11494,
+    "first_name": "Patrick",
+    "last_name": "Baldwin Jr",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 10.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11495,
+    "first_name": "Nikola",
+    "last_name": "Djurisic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 4.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 11496,
+    "first_name": "Andrej",
+    "last_name": "Bjelic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "30",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.021,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11497,
+    "first_name": "Vojin",
+    "last_name": "Medarevic",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 144,
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "abbreviation": "CZV"
+    },
+    "jersey": "25",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.057,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11498,
+    "first_name": "Davion",
+    "last_name": "Mintz",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 311,
+      "name": "Dubai Basketball",
+      "abbreviation": "DUB"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 6.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11499,
+    "first_name": "Tosan",
+    "last_name": "Evbuomwan",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "20",
+    "face_path": null,
+    "quotation": 9.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 11500,
+    "first_name": "Stanley",
+    "last_name": "Umude",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 9.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11501,
+    "first_name": "Tyrese",
+    "last_name": "Martin",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 8.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5,
+    "popularity": 0.018,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11502,
+    "first_name": "Olivier",
+    "last_name": "Nkamhoua",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "13",
+    "face_path": null,
+    "quotation": 7.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.016,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11503,
+    "first_name": "Marjon",
+    "last_name": "Beauchamp",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 11.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.01,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11504,
+    "first_name": "Johannes",
+    "last_name": "Thiemann",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "32",
+    "face_path": null,
+    "quotation": 10.6,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.40000000000000036,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11505,
+    "first_name": "Johnny",
+    "last_name": "Juzang",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 10,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11506,
+    "first_name": "Ignas",
+    "last_name": "Sargiunas",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 147,
+      "name": "Fenerbahce Tarfin Istanbul",
+      "abbreviation": "FBT"
+    },
+    "jersey": "43",
+    "face_path": null,
+    "quotation": 6.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11507,
+    "first_name": "Amir",
+    "last_name": "Coffey",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 12.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11508,
+    "first_name": "Jacob",
+    "last_name": "Toppin",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 9.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11509,
+    "first_name": "Eugene",
+    "last_name": "German",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.2999999999999998,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11510,
+    "first_name": "Frederic",
+    "last_name": "Bourdillon",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 165,
+      "name": "Hapoel IBI Tel Aviv",
+      "abbreviation": "HTA"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11511,
+    "first_name": "Chris",
+    "last_name": "Duarte",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "27",
+    "face_path": null,
+    "quotation": 10,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11512,
+    "first_name": "Aj",
+    "last_name": "Lawson",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "00",
+    "face_path": null,
+    "quotation": 8.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.29999999999999893,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11513,
+    "first_name": "Damion",
+    "last_name": "Baugh",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "29",
+    "face_path": null,
+    "quotation": 8.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11514,
+    "first_name": "Patty",
+    "last_name": "Mills",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 12.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.29999999999999893,
+    "popularity": 0.026,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11515,
+    "first_name": "Tremont",
+    "last_name": "Waters",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "51",
+    "face_path": null,
+    "quotation": 9.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.5,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11516,
+    "first_name": "Jae",
+    "last_name": "Crowder",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "99",
+    "face_path": null,
+    "quotation": 9.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.6999999999999993,
+    "popularity": 0.012,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11517,
+    "first_name": "Tyty",
+    "last_name": "Washington",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "3",
+    "face_path": null,
+    "quotation": 9.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000142,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11518,
+    "first_name": "Mathis",
+    "last_name": "Dossou-yovo",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 9.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": true,
+    "started_from_bench": false
+  },
+  {
+    "id": 11519,
+    "first_name": "Hugo",
+    "last_name": "Besson",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "25",
+    "face_path": null,
+    "quotation": 8.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000142,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11520,
+    "first_name": "Yves",
+    "last_name": "Pons",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "35",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.20000000000000018,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11521,
+    "first_name": "Marc-owen",
+    "last_name": "Fodzo Dada",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 139,
+      "name": "LDLC ASVEL Villeurbanne",
+      "abbreviation": "ASV"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 4.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.5,
+    "popularity": 0.011,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11522,
+    "first_name": "Keaton",
+    "last_name": "Wallace",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 10.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.6000000000000014,
+    "popularity": 0.013,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11523,
+    "first_name": "Shane",
+    "last_name": "Hunter",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 148,
+      "name": "Maccabi Rapyd Tel Aviv",
+      "abbreviation": "MTA"
+    },
+    "jersey": "40",
+    "face_path": null,
+    "quotation": 5.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.007,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11524,
+    "first_name": "Nikolaos",
+    "last_name": "Plotas",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 4.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11525,
+    "first_name": "Antonis",
+    "last_name": "Karagiannidis",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "29",
+    "face_path": null,
+    "quotation": 6.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11526,
+    "first_name": "Guerschon",
+    "last_name": "Yabusele",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "7",
+    "face_path": null,
+    "quotation": 14.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000142,
+    "popularity": 0.07,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11527,
+    "first_name": "Tj",
+    "last_name": "Warren",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 11.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.017,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11528,
+    "first_name": "Tyson",
+    "last_name": "Etienne",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "9",
+    "face_path": null,
+    "quotation": 11.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.005,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11529,
+    "first_name": "Alize",
+    "last_name": "Johnson",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "24",
+    "face_path": null,
+    "quotation": 9.8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.3000000000000007,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11530,
+    "first_name": "Maozinha",
+    "last_name": "Pereira",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "45",
+    "face_path": null,
+    "quotation": 9.3,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000142,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11531,
+    "first_name": "Nobel",
+    "last_name": "Boungou-colo",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 150,
+      "name": "Paris Basketball",
+      "abbreviation": "PBB"
+    },
+    "jersey": "16",
+    "face_path": null,
+    "quotation": 5.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.10000000000000053,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11532,
+    "first_name": "Ethan",
+    "last_name": "Thompson",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "5",
+    "face_path": null,
+    "quotation": 10.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.014,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11533,
+    "first_name": "Uros",
+    "last_name": "Mijailovic",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 152,
+      "name": "Partizan Mozzart Bet Belgrade",
+      "abbreviation": "PAR"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.048,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11534,
+    "first_name": "Olivier",
+    "last_name": "Sarr",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "33",
+    "face_path": null,
+    "quotation": 9.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11535,
+    "first_name": "Max",
+    "last_name": "Shulga",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 8,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11536,
+    "first_name": "Damian",
+    "last_name": "Jones",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "30",
+    "face_path": null,
+    "quotation": 9.1,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11537,
+    "first_name": "Gonzalo",
+    "last_name": "Corbalan",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "15",
+    "face_path": null,
+    "quotation": 9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11538,
+    "first_name": "Mo",
+    "last_name": "Gueye",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "18",
+    "face_path": null,
+    "quotation": 8.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11539,
+    "first_name": "Elias",
+    "last_name": "Valtonen",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "19",
+    "face_path": null,
+    "quotation": 7.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11540,
+    "first_name": "Mario",
+    "last_name": "Saint-supery",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 4.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.218,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11541,
+    "first_name": "Alvaro",
+    "last_name": "Cardenas",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "23",
+    "face_path": null,
+    "quotation": 4.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.018,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11542,
+    "first_name": "Lucas",
+    "last_name": "Mari",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 174,
+      "name": "Valencia Basket",
+      "abbreviation": "VBC"
+    },
+    "jersey": "6",
+    "face_path": null,
+    "quotation": 4.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11543,
+    "first_name": "Rasheed",
+    "last_name": "Bello",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "0",
+    "face_path": null,
+    "quotation": 11,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11544,
+    "first_name": "Trent",
+    "last_name": "Frazier",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "1",
+    "face_path": null,
+    "quotation": 10.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11545,
+    "first_name": "Marcus",
+    "last_name": "Carr",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 9.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11546,
+    "first_name": "Bobi",
+    "last_name": "Klintman",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "34",
+    "face_path": null,
+    "quotation": 9.9,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11547,
+    "first_name": "Wendell",
+    "last_name": "Moore",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 8.7,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11548,
+    "first_name": "Tommaso",
+    "last_name": "Baldasso",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 154,
+      "name": "Virtus Bologna",
+      "abbreviation": "VIR"
+    },
+    "jersey": "11",
+    "face_path": null,
+    "quotation": 4.4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 11549,
+    "first_name": "Jonas",
+    "last_name": "Valanciunas",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 155,
+      "name": "Zalgiris Kaunas",
+      "abbreviation": "ZAL"
+    },
+    "jersey": "17",
+    "face_path": null,
+    "quotation": 15.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0.40000000000000036,
+    "popularity": 0.254,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": false
+  },
+  {
+    "id": 11558,
+    "first_name": "Justin",
+    "last_name": "Minaya",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "15",
+    "face_path": null,
+    "quotation": 7.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12145,
+    "first_name": "Nick",
+    "last_name": "Smith Jr",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 153,
+      "name": "Real Madrid",
+      "abbreviation": "RMB"
+    },
+    "jersey": "8",
+    "face_path": null,
+    "quotation": 8.5,
+    "avg_fantasy_pts": 0,
+    "total_plus": -0.09999999999999964,
+    "popularity": 0.002,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12460,
+    "first_name": "DaQuan",
+    "last_name": "Jeffries",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 8.2,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.001,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12465,
+    "first_name": "Darius",
+    "last_name": "Karutasu",
+    "position": {
+      "id": 29,
+      "name": "Forward"
+    },
+    "team": {
+      "id": 146,
+      "name": "Anadolu Efes Istanbul",
+      "abbreviation": "EFS"
+    },
+    "jersey": "2",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.025,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12466,
+    "first_name": "Yagiz",
+    "last_name": "Aksu",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 158,
+      "name": "Besiktas Istanbul",
+      "abbreviation": "BJK"
+    },
+    "jersey": "10",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.003,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12467,
+    "first_name": "Andrija",
+    "last_name": "Susic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "42",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12468,
+    "first_name": "Niko",
+    "last_name": "Jerkic",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 141,
+      "name": "FC Bayern Munich",
+      "abbreviation": "BAY"
+    },
+    "jersey": "39",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.004,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12469,
+    "first_name": "Thierry Henry",
+    "last_name": "Alves de Souza",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 143,
+      "name": "Kosner Baskonia Vitoria-Gasteiz",
+      "abbreviation": "KBA"
+    },
+    "jersey": "16",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.019,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12470,
+    "first_name": "Georgios",
+    "last_name": "Bourneles",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 149,
+      "name": "Olympiacos Piraeus",
+      "abbreviation": "OLY"
+    },
+    "jersey": "4",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.008,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12471,
+    "first_name": "Iason",
+    "last_name": "Varvaritis",
+    "position": {
+      "id": 28,
+      "name": "Guard"
+    },
+    "team": {
+      "id": 151,
+      "name": "Panathinaikos AKTOR Athens",
+      "abbreviation": "PAO"
+    },
+    "jersey": "12",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.017,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  },
+  {
+    "id": 12517,
+    "first_name": "Abdu",
+    "last_name": "Kone",
+    "position": {
+      "id": 30,
+      "name": "Center"
+    },
+    "team": {
+      "id": 140,
+      "name": "FC Barcelona",
+      "abbreviation": "BAR"
+    },
+    "jersey": "41",
+    "face_path": null,
+    "quotation": 4,
+    "avg_fantasy_pts": 0,
+    "total_plus": 0,
+    "popularity": 0.009,
+    "is_on_fire": null,
+    "is_injured": false,
+    "started_from_bench": true
+  }
+]
