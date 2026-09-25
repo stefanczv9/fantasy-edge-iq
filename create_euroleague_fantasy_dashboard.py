@@ -23,7 +23,7 @@ SEASON = 2026
 LOCAL_TZ = ZoneInfo("Europe/Zagreb")
 NOW_LOCAL = datetime.now(LOCAL_TZ)
 NOW_UTC = NOW_LOCAL.astimezone(timezone.utc)
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 OUT_DIR = ROOT / "euroleague_fantasy_data"
 OUT_DIR.mkdir(exist_ok=True)
 

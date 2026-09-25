@@ -10,7 +10,7 @@ import pandas as pd
 from rapidfuzz import process, fuzz
 
 LOCAL_TZ = ZoneInfo("Europe/Zagreb")
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 DATA_DIR = ROOT / 'euroleague_fantasy_data'
 OUT_XLSX = ROOT / 'euroleague_fantasy_pregled_fantasheet.xlsx'
 OUT_HTML = ROOT / 'euroleague_fantasheet_style_dashboard.html'

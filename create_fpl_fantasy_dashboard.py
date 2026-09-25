@@ -9,7 +9,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 import requests
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 OUT_DIR = ROOT / 'fpl_fantasy_data'
 OUT_DIR.mkdir(exist_ok=True)
 HTML_OUT = ROOT / 'fpl_fantasy_dashboard.html'

@@ -1,0 +1,20 @@
+{
+  "generated": "2026-09-25 19:28 CEST",
+  "total_fpl_managers": 10977747,
+  "current_gw": 5,
+  "current_gw_name": "Gameweek 5",
+  "current_avg_score": 48,
+  "current_highest_score": 126,
+  "next_gw": 6,
+  "next_deadline_utc": "2026-10-10T10:00:00Z",
+  "next_deadline_local": "2026-10-10 12:00",
+  "previous_gw": 4,
+  "top_element": "Brobbey",
+  "top_element_points": 17,
+  "most_selected": "Haaland",
+  "most_transferred_in": "Gibbs-White",
+  "most_captained": "Haaland",
+  "transfers_made_current": 18907524,
+  "players_count": 667,
+  "fixtures_count": 380
+}

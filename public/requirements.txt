@@ -1,0 +1,8 @@
+aiohttp
+requests
+pandas
+numpy
+rapidfuzz
+openpyxl
+xlsxwriter
+euroleague-api

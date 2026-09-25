@@ -3,7 +3,7 @@ import aiohttp
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 BASE = 'https://fantaking-api.dunkest.com/api/v1'
 HEADERS = {
     'origin': 'https://euroleaguefantasy.euroleaguebasketball.net',

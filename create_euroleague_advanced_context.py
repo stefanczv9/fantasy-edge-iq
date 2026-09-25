@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 from euroleague_api.team_stats import TeamStats
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 DATA = ROOT / 'euroleague_fantasy_data'
 DATA.mkdir(exist_ok=True)
 LOCAL_TZ = ZoneInfo('Europe/Zagreb')

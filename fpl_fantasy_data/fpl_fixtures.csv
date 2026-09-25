@@ -1,0 +1,381 @@
+fixture_id,event,kickoff_utc,kickoff_local,started,finished,minutes,home_team,home_short,away_team,away_short,home_score,away_score,result,winner,home_difficulty,away_difficulty
+1,1,2026-08-21T19:00:00Z,2026-08-21 21:00,True,True,90,Arsenal,ARS,Coventry City,COV,3.0,0.0,3-0,ARS,2,5
+4,1,2026-08-22T11:30:00Z,2026-08-22 13:30,True,True,90,Hull City,HUL,Man Utd,MUN,2.0,0.0,2-0,HUL,4,2
+3,1,2026-08-22T14:00:00Z,2026-08-22 16:00,True,True,90,Everton,EVE,Crystal Palace,CRY,2.0,0.0,2-0,EVE,2,3
+5,1,2026-08-22T14:00:00Z,2026-08-22 16:00,True,True,90,Ipswich Town,IPS,Sunderland,SUN,2.0,1.0,2-1,IPS,3,2
+6,1,2026-08-22T14:00:00Z,2026-08-22 16:00,True,True,90,Nott'm Forest,NFO,Leeds,LEE,0.0,1.0,0-1,LEE,3,3
+2,1,2026-08-22T16:30:00Z,2026-08-22 18:30,True,True,90,Brentford,BRE,Spurs,TOT,3.0,0.0,3-0,BRE,2,3
+7,1,2026-08-23T13:00:00Z,2026-08-23 15:00,True,True,90,Brighton,BHA,Aston Villa,AVL,4.0,0.0,4-0,BHA,3,4
+8,1,2026-08-23T13:00:00Z,2026-08-23 15:00,True,True,90,Man City,MCI,Bournemouth,BOU,2.0,1.0,2-1,MCI,3,5
+9,1,2026-08-23T15:30:00Z,2026-08-23 17:30,True,True,90,Newcastle,NEW,Liverpool,LIV,2.0,2.0,2-2,DRAW,4,3
+10,1,2026-08-24T19:00:00Z,2026-08-24 21:00,True,True,90,Fulham,FUL,Chelsea,CHE,2.0,3.0,2-3,CHE,4,3
+11,2,2026-08-28T19:00:00Z,2026-08-28 21:00,True,True,90,Crystal Palace,CRY,Man City,MCI,1.0,4.0,1-4,MCI,4,3
+14,2,2026-08-29T11:30:00Z,2026-08-29 13:30,True,True,90,Liverpool,LIV,Nott'm Forest,NFO,2.0,2.0,2-2,DRAW,3,4
+12,2,2026-08-29T14:00:00Z,2026-08-29 16:00,True,True,90,Bournemouth,BOU,Everton,EVE,1.0,1.0,1-1,DRAW,3,3
+13,2,2026-08-29T14:00:00Z,2026-08-29 16:00,True,True,90,Coventry City,COV,Hull City,HUL,0.0,1.0,0-1,HUL,2,2
+15,2,2026-08-29T16:30:00Z,2026-08-29 18:30,True,True,90,Spurs,TOT,Newcastle,NEW,0.0,2.0,0-2,NEW,3,3
+16,2,2026-08-30T13:00:00Z,2026-08-30 15:00,True,True,90,Chelsea,CHE,Brighton,BHA,4.0,3.0,4-3,CHE,3,4
+17,2,2026-08-30T13:00:00Z,2026-08-30 15:00,True,True,90,Leeds,LEE,Brentford,BRE,1.0,1.0,1-1,DRAW,3,3
+19,2,2026-08-30T13:00:00Z,2026-08-30 15:00,True,True,90,Sunderland,SUN,Fulham,FUL,1.0,0.0,1-0,SUN,2,3
+18,2,2026-08-30T15:30:00Z,2026-08-30 17:30,True,True,90,Man Utd,MUN,Ipswich Town,IPS,5.0,2.0,5-2,MUN,2,4
+20,2,2026-08-31T19:00:00Z,2026-08-31 21:00,True,True,90,Aston Villa,AVL,Arsenal,ARS,0.0,1.0,0-1,ARS,4,3
+21,3,2026-09-04T19:00:00Z,2026-09-04 21:00,True,True,90,Ipswich Town,IPS,Liverpool,LIV,0.0,2.0,0-2,LIV,4,2
+27,3,2026-09-05T11:30:00Z,2026-09-05 13:30,True,True,90,Newcastle,NEW,Bournemouth,BOU,2.0,2.0,2-2,DRAW,3,3
+22,3,2026-09-05T14:00:00Z,2026-09-05 16:00,True,True,90,Brentford,BRE,Sunderland,SUN,1.0,1.0,1-1,DRAW,3,3
+23,3,2026-09-05T14:00:00Z,2026-09-05 16:00,True,True,90,Brighton,BHA,Leeds,LEE,1.0,1.0,1-1,DRAW,3,4
+24,3,2026-09-05T14:00:00Z,2026-09-05 16:00,True,True,90,Fulham,FUL,Crystal Palace,CRY,2.0,3.0,2-3,CRY,2,3
+26,3,2026-09-05T14:00:00Z,2026-09-05 16:00,True,True,90,Man City,MCI,Coventry City,COV,1.0,0.0,1-0,MCI,2,5
+28,3,2026-09-05T14:00:00Z,2026-09-05 16:00,True,True,90,Nott'm Forest,NFO,Spurs,TOT,0.0,0.0,0-0,DRAW,2,3
+25,3,2026-09-05T16:30:00Z,2026-09-05 18:30,True,True,90,Hull City,HUL,Aston Villa,AVL,0.0,0.0,0-0,DRAW,3,2
+30,3,2026-09-06T13:00:00Z,2026-09-06 15:00,True,True,90,Everton,EVE,Man Utd,MUN,2.0,2.0,2-2,DRAW,4,3
+29,3,2026-09-06T15:30:00Z,2026-09-06 17:30,True,True,90,Arsenal,ARS,Chelsea,CHE,2.0,1.0,2-1,ARS,4,5
+31,4,2026-09-12T14:00:00Z,2026-09-12 16:00,True,True,90,Aston Villa,AVL,Nott'm Forest,NFO,1.0,2.0,1-2,NFO,3,3
+32,4,2026-09-12T14:00:00Z,2026-09-12 16:00,True,True,90,Bournemouth,BOU,Brentford,BRE,2.0,2.0,2-2,DRAW,3,3
+33,4,2026-09-12T14:00:00Z,2026-09-12 16:00,True,True,90,Chelsea,CHE,Hull City,HUL,2.0,2.0,2-2,DRAW,2,4
+34,4,2026-09-12T14:00:00Z,2026-09-12 16:00,True,True,90,Crystal Palace,CRY,Ipswich Town,IPS,2.0,3.0,2-3,IPS,2,3
+35,4,2026-09-12T14:00:00Z,2026-09-12 16:00,True,True,90,Liverpool,LIV,Fulham,FUL,0.0,0.0,0-0,DRAW,2,4
+37,4,2026-09-12T16:30:00Z,2026-09-12 18:30,True,True,90,Spurs,TOT,Everton,EVE,0.0,0.0,0-0,DRAW,3,3
+36,4,2026-09-12T19:00:00Z,2026-09-12 21:00,True,True,90,Sunderland,SUN,Arsenal,ARS,0.0,2.0,0-2,ARS,4,3
+38,4,2026-09-13T13:00:00Z,2026-09-13 15:00,True,True,90,Coventry City,COV,Brighton,BHA,0.0,5.0,0-5,BHA,3,2
+39,4,2026-09-13T15:30:00Z,2026-09-13 17:30,True,True,90,Man Utd,MUN,Man City,MCI,0.0,1.0,0-1,MCI,4,4
+40,4,2026-09-14T19:00:00Z,2026-09-14 21:00,True,True,90,Leeds,LEE,Newcastle,NEW,4.0,1.0,4-1,LEE,3,3
+41,5,2026-09-18T19:00:00Z,2026-09-18 21:00,True,True,90,Brentford,BRE,Chelsea,CHE,3.0,0.0,3-0,BRE,4,3
+48,5,2026-09-19T11:30:00Z,2026-09-19 13:30,True,True,90,Spurs,TOT,Aston Villa,AVL,2.0,3.0,2-3,AVL,3,3
+42,5,2026-09-19T14:00:00Z,2026-09-19 16:00,True,True,90,Brighton,BHA,Arsenal,ARS,3.0,0.0,3-0,BHA,4,4
+43,5,2026-09-19T14:00:00Z,2026-09-19 16:00,True,True,90,Everton,EVE,Ipswich Town,IPS,1.0,0.0,1-0,EVE,2,3
+46,5,2026-09-19T14:00:00Z,2026-09-19 16:00,True,True,90,Newcastle,NEW,Hull City,HUL,2.0,1.0,2-1,NEW,2,3
+47,5,2026-09-19T16:30:00Z,2026-09-19 18:30,True,True,90,Nott'm Forest,NFO,Coventry City,COV,0.0,1.0,0-1,COV,2,3
+44,5,2026-09-20T13:00:00Z,2026-09-20 15:00,True,True,90,Leeds,LEE,Crystal Palace,CRY,0.0,0.0,0-0,DRAW,2,3
+45,5,2026-09-20T13:00:00Z,2026-09-20 15:00,True,True,90,Man City,MCI,Sunderland,SUN,5.0,3.0,5-3,MCI,3,5
+49,5,2026-09-20T13:00:00Z,2026-09-20 15:00,True,True,90,Bournemouth,BOU,Liverpool,LIV,0.0,1.0,0-1,LIV,4,3
+50,5,2026-09-20T15:30:00Z,2026-09-20 17:30,True,True,90,Fulham,FUL,Man Utd,MUN,1.0,1.0,1-1,DRAW,4,3
+51,6,2026-10-10T11:30:00Z,2026-10-10 13:30,False,False,0,Arsenal,ARS,Leeds,LEE,,,,,3,5
+52,6,2026-10-10T14:00:00Z,2026-10-10 16:00,False,False,0,Aston Villa,AVL,Brentford,BRE,,,,,3,3
+53,6,2026-10-10T14:00:00Z,2026-10-10 16:00,False,False,0,Chelsea,CHE,Bournemouth,BOU,,,,,3,4
+57,6,2026-10-10T14:00:00Z,2026-10-10 16:00,False,False,0,Ipswich Town,IPS,Fulham,FUL,,,,,2,2
+60,6,2026-10-10T14:00:00Z,2026-10-10 16:00,False,False,0,Sunderland,SUN,Brighton,BHA,,,,,3,3
+59,6,2026-10-10T16:30:00Z,2026-10-10 18:30,False,False,0,Man Utd,MUN,Spurs,TOT,,,,,2,4
+55,6,2026-10-11T13:00:00Z,2026-10-11 15:00,False,False,0,Crystal Palace,CRY,Nott'm Forest,NFO,,,,,3,3
+56,6,2026-10-11T13:00:00Z,2026-10-11 15:00,False,False,0,Hull City,HUL,Everton,EVE,,,,,3,2
+58,6,2026-10-11T15:30:00Z,2026-10-11 17:30,False,False,0,Liverpool,LIV,Man City,MCI,,,,,4,4
+54,6,2026-10-12T19:00:00Z,2026-10-12 21:00,False,False,0,Coventry City,COV,Newcastle,NEW,,,,,3,2
+64,7,2026-10-17T11:30:00Z,2026-10-17 13:30,False,False,0,Everton,EVE,Chelsea,CHE,,,,,4,3
+62,7,2026-10-17T14:00:00Z,2026-10-17 16:00,False,False,0,Brentford,BRE,Liverpool,LIV,,,,,4,3
+65,7,2026-10-17T14:00:00Z,2026-10-17 16:00,False,False,0,Fulham,FUL,Hull City,HUL,,,,,2,3
+67,7,2026-10-17T14:00:00Z,2026-10-17 16:00,False,False,0,Man City,MCI,Ipswich Town,IPS,,,,,2,5
+68,7,2026-10-17T16:30:00Z,2026-10-17 18:30,False,False,0,Newcastle,NEW,Aston Villa,AVL,,,,,3,3
+61,7,2026-10-18T13:00:00Z,2026-10-18 15:00,False,False,0,Bournemouth,BOU,Sunderland,SUN,,,,,3,3
+63,7,2026-10-18T13:00:00Z,2026-10-18 15:00,False,False,0,Brighton,BHA,Crystal Palace,CRY,,,,,2,4
+66,7,2026-10-18T13:00:00Z,2026-10-18 15:00,False,False,0,Leeds,LEE,Man Utd,MUN,,,,,4,3
+69,7,2026-10-18T15:30:00Z,2026-10-18 17:30,False,False,0,Nott'm Forest,NFO,Arsenal,ARS,,,,,4,3
+70,7,2026-10-19T19:00:00Z,2026-10-19 21:00,False,False,0,Spurs,TOT,Coventry City,COV,,,,,2,3
+77,8,2026-10-23T19:00:00Z,2026-10-23 21:00,False,False,0,Ipswich Town,IPS,Nott'm Forest,NFO,,,,,3,2
+72,8,2026-10-24T11:30:00Z,2026-10-24 13:30,False,False,0,Aston Villa,AVL,Man City,MCI,,,,,4,3
+71,8,2026-10-24T14:00:00Z,2026-10-24 16:00,False,False,0,Arsenal,ARS,Everton,EVE,,,,,3,5
+74,8,2026-10-24T14:00:00Z,2026-10-24 16:00,False,False,0,Coventry City,COV,Fulham,FUL,,,,,2,2
+73,8,2026-10-24T16:30:00Z,2026-10-24 18:30,False,False,0,Chelsea,CHE,Spurs,TOT,,,,,2,4
+75,8,2026-10-25T14:00:00Z,2026-10-25 15:00,False,False,0,Crystal Palace,CRY,Newcastle,NEW,,,,,3,3
+76,8,2026-10-25T14:00:00Z,2026-10-25 15:00,False,False,0,Hull City,HUL,Brentford,BRE,,,,,3,2
+78,8,2026-10-25T14:00:00Z,2026-10-25 15:00,False,False,0,Liverpool,LIV,Brighton,BHA,,,,,3,4
+79,8,2026-10-25T14:00:00Z,2026-10-25 15:00,False,False,0,Man Utd,MUN,Bournemouth,BOU,,,,,3,4
+80,8,2026-10-25T16:30:00Z,2026-10-25 17:30,False,False,0,Sunderland,SUN,Leeds,LEE,,,,,3,3
+84,9,2026-10-31T12:30:00Z,2026-10-31 13:30,False,False,0,Chelsea,CHE,Man Utd,MUN,,,,,4,4
+82,9,2026-10-31T15:00:00Z,2026-10-31 16:00,False,False,0,Bournemouth,BOU,Leeds,LEE,,,,,3,3
+83,9,2026-10-31T15:00:00Z,2026-10-31 16:00,False,False,0,Brentford,BRE,Nott'm Forest,NFO,,,,,3,3
+85,9,2026-10-31T15:00:00Z,2026-10-31 16:00,False,False,0,Coventry City,COV,Sunderland,SUN,,,,,3,2
+86,9,2026-10-31T15:00:00Z,2026-10-31 16:00,False,False,0,Hull City,HUL,Ipswich Town,IPS,,,,,2,2
+88,9,2026-10-31T15:00:00Z,2026-10-31 16:00,False,False,0,Man City,MCI,Brighton,BHA,,,,,3,5
+90,9,2026-10-31T17:30:00Z,2026-10-31 18:30,False,False,0,Spurs,TOT,Crystal Palace,CRY,,,,,2,3
+81,9,2026-10-31T20:00:00Z,2026-10-31 21:00,False,False,0,Aston Villa,AVL,Fulham,FUL,,,,,2,3
+87,9,2026-11-01T16:30:00Z,2026-11-01 17:30,False,False,0,Liverpool,LIV,Arsenal,ARS,,,,,4,4
+89,9,2026-11-02T20:00:00Z,2026-11-02 21:00,False,False,0,Newcastle,NEW,Everton,EVE,,,,,3,3
+94,10,2026-11-06T20:00:00Z,2026-11-06 21:00,False,False,0,Everton,EVE,Coventry City,COV,,,,,2,3
+97,10,2026-11-07T12:30:00Z,2026-11-07 13:30,False,False,0,Leeds,LEE,Spurs,TOT,,,,,2,3
+91,10,2026-11-07T15:00:00Z,2026-11-07 16:00,False,False,0,Arsenal,ARS,Hull City,HUL,,,,,2,5
+95,10,2026-11-07T15:00:00Z,2026-11-07 16:00,False,False,0,Fulham,FUL,Newcastle,NEW,,,,,3,3
+99,10,2026-11-07T17:30:00Z,2026-11-07 18:30,False,False,0,Nott'm Forest,NFO,Man City,MCI,,,,,4,3
+92,10,2026-11-08T14:00:00Z,2026-11-08 15:00,False,False,0,Brighton,BHA,Brentford,BRE,,,,,3,4
+93,10,2026-11-08T14:00:00Z,2026-11-08 15:00,False,False,0,Crystal Palace,CRY,Liverpool,LIV,,,,,4,3
+96,10,2026-11-08T14:00:00Z,2026-11-08 15:00,False,False,0,Ipswich Town,IPS,Bournemouth,BOU,,,,,3,2
+100,10,2026-11-08T14:00:00Z,2026-11-08 15:00,False,False,0,Sunderland,SUN,Chelsea,CHE,,,,,4,3
+98,10,2026-11-08T16:30:00Z,2026-11-08 17:30,False,False,0,Man Utd,MUN,Aston Villa,AVL,,,,,3,4
+108,11,2026-11-21T12:30:00Z,2026-11-21 13:30,False,False,0,Man City,MCI,Fulham,FUL,,,,,2,5
+101,11,2026-11-21T15:00:00Z,2026-11-21 16:00,False,False,0,Aston Villa,AVL,Sunderland,SUN,,,,,3,3
+102,11,2026-11-21T15:00:00Z,2026-11-21 16:00,False,False,0,Bournemouth,BOU,Nott'm Forest,NFO,,,,,3,3
+104,11,2026-11-21T15:00:00Z,2026-11-21 16:00,False,False,0,Chelsea,CHE,Leeds,LEE,,,,,3,4
+105,11,2026-11-21T15:00:00Z,2026-11-21 16:00,False,False,0,Coventry City,COV,Crystal Palace,CRY,,,,,2,2
+110,11,2026-11-21T15:00:00Z,2026-11-21 16:00,False,False,0,Spurs,TOT,Ipswich Town,IPS,,,,,2,3
+109,11,2026-11-21T17:30:00Z,2026-11-21 18:30,False,False,0,Newcastle,NEW,Arsenal,ARS,,,,,4,3
+106,11,2026-11-22T14:00:00Z,2026-11-22 15:00,False,False,0,Hull City,HUL,Brighton,BHA,,,,,3,2
+107,11,2026-11-22T16:30:00Z,2026-11-22 17:30,False,False,0,Liverpool,LIV,Man Utd,MUN,,,,,4,4
+103,11,2026-11-23T20:00:00Z,2026-11-23 21:00,False,False,0,Brentford,BRE,Everton,EVE,,,,,3,3
+119,12,2026-11-27T20:00:00Z,2026-11-27 21:00,False,False,0,Nott'm Forest,NFO,Chelsea,CHE,,,,,4,3
+117,12,2026-11-28T15:00:00Z,2026-11-28 16:00,False,False,0,Leeds,LEE,Coventry City,COV,,,,,2,3
+118,12,2026-11-28T15:00:00Z,2026-11-28 16:00,False,False,0,Man Utd,MUN,Brentford,BRE,,,,,3,4
+116,12,2026-11-28T17:30:00Z,2026-11-28 18:30,False,False,0,Ipswich Town,IPS,Aston Villa,AVL,,,,,3,2
+114,12,2026-11-29T12:00:00Z,2026-11-29 13:00,False,False,0,Everton,EVE,Liverpool,LIV,,,,,4,3
+112,12,2026-11-29T14:05:00Z,2026-11-29 15:05,False,False,0,Brighton,BHA,Newcastle,NEW,,,,,3,4
+113,12,2026-11-29T14:05:00Z,2026-11-29 15:05,False,False,0,Crystal Palace,CRY,Hull City,HUL,,,,,2,3
+115,12,2026-11-29T14:05:00Z,2026-11-29 15:05,False,False,0,Fulham,FUL,Bournemouth,BOU,,,,,3,3
+120,12,2026-11-29T14:05:00Z,2026-11-29 15:05,False,False,0,Sunderland,SUN,Spurs,TOT,,,,,2,3
+111,12,2026-11-29T16:30:00Z,2026-11-29 17:30,False,False,0,Arsenal,ARS,Man City,MCI,,,,,4,5
+121,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Aston Villa,AVL,Everton,EVE,,,,,3,3
+122,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Bournemouth,BOU,Brighton,BHA,,,,,3,3
+123,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Brentford,BRE,Arsenal,ARS,,,,,4,3
+124,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Chelsea,CHE,Crystal Palace,CRY,,,,,2,4
+125,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Coventry City,COV,Ipswich Town,IPS,,,,,2,2
+126,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Hull City,HUL,Nott'm Forest,NFO,,,,,3,2
+127,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Liverpool,LIV,Sunderland,SUN,,,,,3,4
+128,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Man City,MCI,Leeds,LEE,,,,,3,5
+129,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Newcastle,NEW,Man Utd,MUN,,,,,4,3
+130,13,2026-12-02T20:00:00Z,2026-12-02 21:00,False,False,0,Spurs,TOT,Fulham,FUL,,,,,2,3
+131,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Aston Villa,AVL,Crystal Palace,CRY,,,,,2,3
+132,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Bournemouth,BOU,Hull City,HUL,,,,,2,3
+133,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Brentford,BRE,Man City,MCI,,,,,4,3
+134,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Chelsea,CHE,Liverpool,LIV,,,,,4,4
+135,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Everton,EVE,Fulham,FUL,,,,,2,3
+136,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Leeds,LEE,Ipswich Town,IPS,,,,,2,3
+137,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Man Utd,MUN,Coventry City,COV,,,,,2,4
+138,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Newcastle,NEW,Sunderland,SUN,,,,,3,3
+139,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Nott'm Forest,NFO,Brighton,BHA,,,,,3,3
+140,14,2026-12-05T15:00:00Z,2026-12-05 16:00,False,False,0,Spurs,TOT,Arsenal,ARS,,,,,4,3
+141,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Arsenal,ARS,Bournemouth,BOU,,,,,3,5
+142,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Brighton,BHA,Everton,EVE,,,,,3,4
+143,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Coventry City,COV,Aston Villa,AVL,,,,,3,2
+144,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Crystal Palace,CRY,Man Utd,MUN,,,,,4,3
+145,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Fulham,FUL,Brentford,BRE,,,,,3,3
+146,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Hull City,HUL,Spurs,TOT,,,,,2,2
+147,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Ipswich Town,IPS,Newcastle,NEW,,,,,3,2
+148,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Liverpool,LIV,Leeds,LEE,,,,,3,4
+149,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Man City,MCI,Chelsea,CHE,,,,,4,5
+150,15,2026-12-12T15:00:00Z,2026-12-12 16:00,False,False,0,Sunderland,SUN,Nott'm Forest,NFO,,,,,3,3
+151,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Arsenal,ARS,Man Utd,MUN,,,,,4,5
+152,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Bournemouth,BOU,Coventry City,COV,,,,,2,3
+153,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Brentford,BRE,Newcastle,NEW,,,,,3,3
+154,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Brighton,BHA,Ipswich Town,IPS,,,,,2,4
+155,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Chelsea,CHE,Aston Villa,AVL,,,,,3,4
+156,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Leeds,LEE,Fulham,FUL,,,,,2,3
+157,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Liverpool,LIV,Spurs,TOT,,,,,2,4
+158,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Man City,MCI,Hull City,HUL,,,,,2,5
+159,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Nott'm Forest,NFO,Everton,EVE,,,,,3,3
+160,16,2026-12-19T15:00:00Z,2026-12-19 16:00,False,False,0,Sunderland,SUN,Crystal Palace,CRY,,,,,2,3
+161,17,2026-12-26T12:30:00Z,2026-12-26 13:30,False,False,0,Aston Villa,AVL,Leeds,LEE,,,,,3,3
+164,17,2026-12-26T15:00:00Z,2026-12-26 16:00,False,False,0,Everton,EVE,Sunderland,SUN,,,,,3,3
+165,17,2026-12-26T15:00:00Z,2026-12-26 16:00,False,False,0,Fulham,FUL,Brighton,BHA,,,,,3,3
+167,17,2026-12-26T15:00:00Z,2026-12-26 16:00,False,False,0,Ipswich Town,IPS,Brentford,BRE,,,,,3,2
+170,17,2026-12-26T15:00:00Z,2026-12-26 16:00,False,False,0,Spurs,TOT,Bournemouth,BOU,,,,,3,3
+166,17,2026-12-26T17:30:00Z,2026-12-26 18:30,False,False,0,Hull City,HUL,Liverpool,LIV,,,,,4,2
+169,17,2026-12-26T20:00:00Z,2026-12-26 21:00,False,False,0,Newcastle,NEW,Man City,MCI,,,,,4,3
+162,17,2026-12-27T14:00:00Z,2026-12-27 15:00,False,False,0,Coventry City,COV,Chelsea,CHE,,,,,4,2
+168,17,2026-12-27T16:30:00Z,2026-12-27 17:30,False,False,0,Man Utd,MUN,Nott'm Forest,NFO,,,,,3,4
+163,17,2026-12-27T19:00:00Z,2026-12-27 20:00,False,False,0,Crystal Palace,CRY,Arsenal,ARS,,,,,4,3
+176,18,2026-12-29T19:30:00Z,2026-12-29 20:30,False,False,0,Hull City,HUL,Leeds,LEE,,,,,3,2
+180,18,2026-12-29T19:30:00Z,2026-12-29 20:30,False,False,0,Spurs,TOT,Brighton,BHA,,,,,3,3
+174,18,2026-12-29T20:15:00Z,2026-12-29 21:15,False,False,0,Everton,EVE,Man City,MCI,,,,,4,3
+172,18,2026-12-30T19:30:00Z,2026-12-30 20:30,False,False,0,Coventry City,COV,Brentford,BRE,,,,,3,2
+173,18,2026-12-30T19:30:00Z,2026-12-30 20:30,False,False,0,Crystal Palace,CRY,Bournemouth,BOU,,,,,3,3
+175,18,2026-12-30T19:30:00Z,2026-12-30 20:30,False,False,0,Fulham,FUL,Arsenal,ARS,,,,,4,3
+178,18,2026-12-30T19:30:00Z,2026-12-30 20:30,False,False,0,Man Utd,MUN,Sunderland,SUN,,,,,3,4
+179,18,2026-12-30T19:30:00Z,2026-12-30 20:30,False,False,0,Newcastle,NEW,Nott'm Forest,NFO,,,,,3,3
+171,18,2026-12-30T20:15:00Z,2026-12-30 21:15,False,False,0,Aston Villa,AVL,Liverpool,LIV,,,,,4,3
+177,18,2026-12-30T20:15:00Z,2026-12-30 21:15,False,False,0,Ipswich Town,IPS,Chelsea,CHE,,,,,4,2
+186,19,2027-01-01T20:00:00Z,2027-01-01 21:00,False,False,0,Leeds,LEE,Everton,EVE,,,,,3,3
+184,19,2027-01-02T12:30:00Z,2027-01-02 13:30,False,False,0,Brighton,BHA,Man Utd,MUN,,,,,4,4
+181,19,2027-01-02T15:00:00Z,2027-01-02 16:00,False,False,0,Arsenal,ARS,Ipswich Town,IPS,,,,,2,5
+183,19,2027-01-02T15:00:00Z,2027-01-02 16:00,False,False,0,Brentford,BRE,Crystal Palace,CRY,,,,,2,3
+187,19,2027-01-02T15:00:00Z,2027-01-02 16:00,False,False,0,Liverpool,LIV,Coventry City,COV,,,,,2,4
+189,19,2027-01-02T15:00:00Z,2027-01-02 16:00,False,False,0,Nott'm Forest,NFO,Fulham,FUL,,,,,2,3
+190,19,2027-01-02T15:00:00Z,2027-01-02 16:00,False,False,0,Sunderland,SUN,Hull City,HUL,,,,,2,3
+182,19,2027-01-02T17:30:00Z,2027-01-02 18:30,False,False,0,Bournemouth,BOU,Aston Villa,AVL,,,,,3,3
+185,19,2027-01-03T14:00:00Z,2027-01-03 15:00,False,False,0,Chelsea,CHE,Newcastle,NEW,,,,,3,4
+188,19,2027-01-03T16:30:00Z,2027-01-03 17:30,False,False,0,Man City,MCI,Spurs,TOT,,,,,2,5
+191,20,2027-01-05T19:30:00Z,2027-01-05 20:30,False,False,0,Arsenal,ARS,Brentford,BRE,,,,,3,5
+192,20,2027-01-05T19:30:00Z,2027-01-05 20:30,False,False,0,Brighton,BHA,Bournemouth,BOU,,,,,3,4
+194,20,2027-01-05T19:30:00Z,2027-01-05 20:30,False,False,0,Everton,EVE,Aston Villa,AVL,,,,,3,3
+199,20,2027-01-05T19:30:00Z,2027-01-05 20:30,False,False,0,Nott'm Forest,NFO,Hull City,HUL,,,,,2,3
+200,20,2027-01-05T20:15:00Z,2027-01-05 21:15,False,False,0,Sunderland,SUN,Liverpool,LIV,,,,,4,3
+193,20,2027-01-06T19:30:00Z,2027-01-06 20:30,False,False,0,Crystal Palace,CRY,Chelsea,CHE,,,,,4,3
+195,20,2027-01-06T19:30:00Z,2027-01-06 20:30,False,False,0,Fulham,FUL,Spurs,TOT,,,,,2,3
+196,20,2027-01-06T19:30:00Z,2027-01-06 20:30,False,False,0,Ipswich Town,IPS,Coventry City,COV,,,,,2,2
+197,20,2027-01-06T20:15:00Z,2027-01-06 21:15,False,False,0,Leeds,LEE,Man City,MCI,,,,,4,3
+198,20,2027-01-07T20:00:00Z,2027-01-07 21:00,False,False,0,Man Utd,MUN,Newcastle,NEW,,,,,3,4
+201,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Aston Villa,AVL,Man Utd,MUN,,,,,4,3
+202,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Bournemouth,BOU,Ipswich Town,IPS,,,,,2,3
+203,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Brentford,BRE,Brighton,BHA,,,,,3,3
+204,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Chelsea,CHE,Sunderland,SUN,,,,,3,4
+205,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Coventry City,COV,Everton,EVE,,,,,3,2
+206,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Hull City,HUL,Arsenal,ARS,,,,,4,2
+207,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Liverpool,LIV,Crystal Palace,CRY,,,,,2,4
+208,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Man City,MCI,Nott'm Forest,NFO,,,,,3,5
+209,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Newcastle,NEW,Fulham,FUL,,,,,2,3
+210,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Spurs,TOT,Leeds,LEE,,,,,3,3
+211,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Arsenal,ARS,Newcastle,NEW,,,,,3,5
+212,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Brighton,BHA,Man City,MCI,,,,,4,4
+213,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Crystal Palace,CRY,Spurs,TOT,,,,,2,3
+214,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Everton,EVE,Brentford,BRE,,,,,3,3
+215,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Fulham,FUL,Aston Villa,AVL,,,,,3,3
+216,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Ipswich Town,IPS,Hull City,HUL,,,,,2,2
+217,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Leeds,LEE,Chelsea,CHE,,,,,4,3
+218,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Man Utd,MUN,Liverpool,LIV,,,,,4,4
+219,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Nott'm Forest,NFO,Bournemouth,BOU,,,,,3,3
+220,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Sunderland,SUN,Coventry City,COV,,,,,2,3
+221,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Aston Villa,AVL,Ipswich Town,IPS,,,,,2,3
+222,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Bournemouth,BOU,Fulham,FUL,,,,,2,3
+223,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Brentford,BRE,Man Utd,MUN,,,,,4,3
+224,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Chelsea,CHE,Nott'm Forest,NFO,,,,,3,4
+225,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Coventry City,COV,Leeds,LEE,,,,,3,2
+226,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Hull City,HUL,Crystal Palace,CRY,,,,,2,2
+227,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Liverpool,LIV,Everton,EVE,,,,,3,4
+228,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Man City,MCI,Arsenal,ARS,,,,,4,5
+229,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Newcastle,NEW,Brighton,BHA,,,,,3,3
+230,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Spurs,TOT,Sunderland,SUN,,,,,3,3
+231,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Arsenal,ARS,Liverpool,LIV,,,,,4,5
+232,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Brighton,BHA,Hull City,HUL,,,,,2,4
+233,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Crystal Palace,CRY,Coventry City,COV,,,,,2,3
+234,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Everton,EVE,Newcastle,NEW,,,,,3,3
+235,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Fulham,FUL,Man City,MCI,,,,,4,3
+236,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Ipswich Town,IPS,Spurs,TOT,,,,,2,2
+237,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Leeds,LEE,Bournemouth,BOU,,,,,3,3
+238,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Man Utd,MUN,Chelsea,CHE,,,,,4,4
+239,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Nott'm Forest,NFO,Brentford,BRE,,,,,3,3
+240,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Sunderland,SUN,Aston Villa,AVL,,,,,3,3
+241,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Aston Villa,AVL,Bournemouth,BOU,,,,,3,3
+242,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Coventry City,COV,Liverpool,LIV,,,,,4,2
+243,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Crystal Palace,CRY,Brentford,BRE,,,,,3,3
+244,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Everton,EVE,Leeds,LEE,,,,,3,3
+245,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Fulham,FUL,Nott'm Forest,NFO,,,,,3,3
+246,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Hull City,HUL,Sunderland,SUN,,,,,3,2
+247,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Ipswich Town,IPS,Arsenal,ARS,,,,,4,2
+248,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Man Utd,MUN,Brighton,BHA,,,,,3,4
+249,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Newcastle,NEW,Chelsea,CHE,,,,,4,3
+250,25,2027-02-10T20:00:00Z,2027-02-10 21:00,False,False,0,Spurs,TOT,Man City,MCI,,,,,4,3
+251,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Arsenal,ARS,Fulham,FUL,,,,,2,5
+252,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Bournemouth,BOU,Crystal Palace,CRY,,,,,2,3
+253,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Brentford,BRE,Coventry City,COV,,,,,2,3
+254,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Brighton,BHA,Spurs,TOT,,,,,2,4
+255,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Chelsea,CHE,Ipswich Town,IPS,,,,,2,4
+256,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Leeds,LEE,Aston Villa,AVL,,,,,3,3
+257,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Liverpool,LIV,Hull City,HUL,,,,,2,4
+258,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Man City,MCI,Newcastle,NEW,,,,,3,5
+259,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Nott'm Forest,NFO,Man Utd,MUN,,,,,4,3
+260,26,2027-02-20T15:00:00Z,2027-02-20 16:00,False,False,0,Sunderland,SUN,Everton,EVE,,,,,3,3
+261,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Aston Villa,AVL,Chelsea,CHE,,,,,4,3
+262,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Coventry City,COV,Bournemouth,BOU,,,,,3,2
+263,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Crystal Palace,CRY,Sunderland,SUN,,,,,3,3
+264,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Everton,EVE,Nott'm Forest,NFO,,,,,3,3
+265,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Fulham,FUL,Leeds,LEE,,,,,3,3
+266,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Hull City,HUL,Man City,MCI,,,,,4,2
+267,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Ipswich Town,IPS,Brighton,BHA,,,,,3,2
+268,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Man Utd,MUN,Arsenal,ARS,,,,,4,4
+269,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Newcastle,NEW,Brentford,BRE,,,,,3,3
+270,27,2027-02-27T15:00:00Z,2027-02-27 16:00,False,False,0,Spurs,TOT,Liverpool,LIV,,,,,4,3
+271,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Arsenal,ARS,Crystal Palace,CRY,,,,,2,5
+272,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Bournemouth,BOU,Spurs,TOT,,,,,2,3
+273,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Brentford,BRE,Ipswich Town,IPS,,,,,2,3
+274,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Brighton,BHA,Fulham,FUL,,,,,2,4
+275,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Chelsea,CHE,Coventry City,COV,,,,,2,4
+276,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Leeds,LEE,Hull City,HUL,,,,,2,3
+277,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Liverpool,LIV,Aston Villa,AVL,,,,,3,4
+278,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Man City,MCI,Everton,EVE,,,,,3,5
+279,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Nott'm Forest,NFO,Newcastle,NEW,,,,,3,3
+280,28,2027-03-03T20:00:00Z,2027-03-03 21:00,False,False,0,Sunderland,SUN,Man Utd,MUN,,,,,4,3
+281,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Aston Villa,AVL,Hull City,HUL,,,,,2,3
+282,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Bournemouth,BOU,Newcastle,NEW,,,,,3,3
+283,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Chelsea,CHE,Arsenal,ARS,,,,,4,4
+284,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Coventry City,COV,Man City,MCI,,,,,4,2
+285,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Crystal Palace,CRY,Fulham,FUL,,,,,2,3
+286,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Leeds,LEE,Brighton,BHA,,,,,3,3
+287,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Liverpool,LIV,Ipswich Town,IPS,,,,,2,4
+288,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Man Utd,MUN,Everton,EVE,,,,,3,4
+289,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Sunderland,SUN,Brentford,BRE,,,,,3,3
+290,29,2027-03-13T15:00:00Z,2027-03-13 16:00,False,False,0,Spurs,TOT,Nott'm Forest,NFO,,,,,3,3
+291,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Arsenal,ARS,Sunderland,SUN,,,,,3,5
+292,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Brentford,BRE,Bournemouth,BOU,,,,,3,3
+293,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Brighton,BHA,Coventry City,COV,,,,,2,4
+294,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Everton,EVE,Spurs,TOT,,,,,2,3
+295,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Fulham,FUL,Liverpool,LIV,,,,,4,3
+296,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Hull City,HUL,Chelsea,CHE,,,,,4,2
+297,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Ipswich Town,IPS,Crystal Palace,CRY,,,,,2,2
+298,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Man City,MCI,Man Utd,MUN,,,,,4,5
+299,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Newcastle,NEW,Leeds,LEE,,,,,3,3
+300,30,2027-03-20T15:00:00Z,2027-03-20 16:00,False,False,0,Nott'm Forest,NFO,Aston Villa,AVL,,,,,3,3
+301,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Aston Villa,AVL,Brighton,BHA,,,,,3,3
+302,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Bournemouth,BOU,Man City,MCI,,,,,4,3
+303,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Chelsea,CHE,Fulham,FUL,,,,,2,4
+304,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Coventry City,COV,Arsenal,ARS,,,,,4,2
+305,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Crystal Palace,CRY,Everton,EVE,,,,,3,3
+306,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Leeds,LEE,Nott'm Forest,NFO,,,,,3,3
+307,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Liverpool,LIV,Newcastle,NEW,,,,,3,4
+308,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Man Utd,MUN,Hull City,HUL,,,,,2,4
+309,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Sunderland,SUN,Ipswich Town,IPS,,,,,2,3
+310,31,2027-04-10T14:00:00Z,2027-04-10 16:00,False,False,0,Spurs,TOT,Brentford,BRE,,,,,3,3
+311,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Arsenal,ARS,Aston Villa,AVL,,,,,3,5
+312,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Brentford,BRE,Leeds,LEE,,,,,3,3
+313,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Brighton,BHA,Chelsea,CHE,,,,,4,4
+314,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Everton,EVE,Bournemouth,BOU,,,,,3,3
+315,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Fulham,FUL,Sunderland,SUN,,,,,3,3
+316,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Hull City,HUL,Coventry City,COV,,,,,2,2
+317,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Ipswich Town,IPS,Man Utd,MUN,,,,,4,2
+318,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Man City,MCI,Crystal Palace,CRY,,,,,2,5
+319,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Newcastle,NEW,Spurs,TOT,,,,,2,3
+320,32,2027-04-17T14:00:00Z,2027-04-17 16:00,False,False,0,Nott'm Forest,NFO,Liverpool,LIV,,,,,4,3
+321,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Aston Villa,AVL,Coventry City,COV,,,,,2,3
+322,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Bournemouth,BOU,Arsenal,ARS,,,,,4,3
+323,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Brentford,BRE,Fulham,FUL,,,,,2,3
+324,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Chelsea,CHE,Man City,MCI,,,,,4,4
+325,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Everton,EVE,Brighton,BHA,,,,,3,3
+326,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Leeds,LEE,Liverpool,LIV,,,,,4,3
+327,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Man Utd,MUN,Crystal Palace,CRY,,,,,2,4
+328,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Newcastle,NEW,Ipswich Town,IPS,,,,,2,3
+329,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Nott'm Forest,NFO,Sunderland,SUN,,,,,3,3
+330,33,2027-04-24T14:00:00Z,2027-04-24 16:00,False,False,0,Spurs,TOT,Hull City,HUL,,,,,2,3
+331,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Arsenal,ARS,Spurs,TOT,,,,,2,5
+332,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Brighton,BHA,Nott'm Forest,NFO,,,,,3,4
+333,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Coventry City,COV,Man Utd,MUN,,,,,4,2
+334,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Crystal Palace,CRY,Aston Villa,AVL,,,,,3,3
+335,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Fulham,FUL,Everton,EVE,,,,,3,3
+336,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Hull City,HUL,Bournemouth,BOU,,,,,3,2
+337,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Ipswich Town,IPS,Leeds,LEE,,,,,3,2
+338,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Liverpool,LIV,Chelsea,CHE,,,,,4,4
+339,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Man City,MCI,Brentford,BRE,,,,,3,5
+340,34,2027-05-01T14:00:00Z,2027-05-01 16:00,False,False,0,Sunderland,SUN,Newcastle,NEW,,,,,3,3
+341,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Bournemouth,BOU,Man Utd,MUN,,,,,4,3
+342,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Brentford,BRE,Aston Villa,AVL,,,,,3,3
+343,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Brighton,BHA,Sunderland,SUN,,,,,3,4
+344,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Everton,EVE,Hull City,HUL,,,,,2,3
+345,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Fulham,FUL,Ipswich Town,IPS,,,,,2,3
+346,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Leeds,LEE,Arsenal,ARS,,,,,4,3
+347,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Man City,MCI,Liverpool,LIV,,,,,4,5
+348,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Newcastle,NEW,Coventry City,COV,,,,,2,3
+349,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Nott'm Forest,NFO,Crystal Palace,CRY,,,,,2,3
+350,35,2027-05-08T14:00:00Z,2027-05-08 16:00,False,False,0,Spurs,TOT,Chelsea,CHE,,,,,4,3
+351,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Arsenal,ARS,Nott'm Forest,NFO,,,,,3,5
+352,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Aston Villa,AVL,Newcastle,NEW,,,,,3,3
+353,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Chelsea,CHE,Everton,EVE,,,,,3,4
+354,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Coventry City,COV,Spurs,TOT,,,,,2,2
+355,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Crystal Palace,CRY,Brighton,BHA,,,,,3,3
+356,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Hull City,HUL,Fulham,FUL,,,,,2,2
+357,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Ipswich Town,IPS,Man City,MCI,,,,,4,2
+358,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Liverpool,LIV,Brentford,BRE,,,,,3,4
+359,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Man Utd,MUN,Leeds,LEE,,,,,3,4
+360,36,2027-05-15T14:00:00Z,2027-05-15 16:00,False,False,0,Sunderland,SUN,Bournemouth,BOU,,,,,3,3
+361,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Bournemouth,BOU,Chelsea,CHE,,,,,4,3
+362,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Brentford,BRE,Hull City,HUL,,,,,2,3
+363,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Brighton,BHA,Liverpool,LIV,,,,,4,4
+364,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Everton,EVE,Arsenal,ARS,,,,,4,3
+365,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Fulham,FUL,Coventry City,COV,,,,,2,3
+366,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Leeds,LEE,Sunderland,SUN,,,,,3,3
+367,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Man City,MCI,Aston Villa,AVL,,,,,3,5
+368,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Newcastle,NEW,Crystal Palace,CRY,,,,,2,3
+369,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Nott'm Forest,NFO,Ipswich Town,IPS,,,,,2,3
+370,37,2027-05-23T14:00:00Z,2027-05-23 16:00,False,False,0,Spurs,TOT,Man Utd,MUN,,,,,4,3
+371,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Arsenal,ARS,Brighton,BHA,,,,,3,5
+372,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Aston Villa,AVL,Spurs,TOT,,,,,2,3
+373,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Chelsea,CHE,Brentford,BRE,,,,,3,4
+374,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Coventry City,COV,Nott'm Forest,NFO,,,,,3,2
+375,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Crystal Palace,CRY,Leeds,LEE,,,,,3,3
+376,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Hull City,HUL,Newcastle,NEW,,,,,3,2
+377,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Ipswich Town,IPS,Everton,EVE,,,,,3,2
+378,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Liverpool,LIV,Bournemouth,BOU,,,,,3,4
+379,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Man Utd,MUN,Fulham,FUL,,,,,2,4
+380,38,2027-05-30T15:00:00Z,2027-05-30 17:00,False,False,0,Sunderland,SUN,Man City,MCI,,,,,4,3
