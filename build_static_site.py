@@ -522,6 +522,146 @@ def add_vercel_analytics():
             path.write_text(text.replace('</head>', snippet + '</head>', 1), encoding='utf-8')
 
 
+def make_brand_assets():
+    """Create first-party brand assets used for browser tabs and social link previews."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except Exception as exc:
+        print('Brand asset generation skipped:', exc)
+        return
+
+    font_bold = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+    font_regular = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+
+    def get_font(size, bold=False):
+        try:
+            return ImageFont.truetype(font_bold if bold else font_regular, size)
+        except Exception:
+            return ImageFont.load_default()
+
+    # Social preview image: 1200x630, the recommended Open Graph size.
+    W, H = 1200, 630
+    img = Image.new('RGB', (W, H), '#07101d')
+    pix = img.load()
+    for y in range(H):
+        for x in range(W):
+            r1 = max(0, 1 - math.sqrt(((x - 180) / W) ** 2 * 2.2 + ((y - 40) / H) ** 2 * 3.1))
+            r2 = max(0, 1 - math.sqrt(((x - 1040) / W) ** 2 * 3.0 + ((y - 560) / H) ** 2 * 3.0))
+            pix[x, y] = (int(7 + 28 * r1 + 5 * r2), int(16 + 70 * r1 + 34 * r2), int(29 + 112 * r1 + 60 * r2))
+    d = ImageDraw.Draw(img, 'RGBA')
+    for x in range(0, W, 60):
+        d.line([(x, 0), (x, H)], fill=(255, 255, 255, 12), width=1)
+    for y in range(0, H, 60):
+        d.line([(0, y), (W, y)], fill=(255, 255, 255, 10), width=1)
+    d.ellipse((730, -165, 1330, 440), fill=(34, 197, 94, 30))
+    d.ellipse((-160, 310, 430, 850), fill=(91, 188, 255, 26))
+    d.rounded_rectangle((68, 74, 1132, 556), radius=42, fill=(13, 27, 47, 222), outline=(255, 255, 255, 34), width=2)
+    d.rounded_rectangle((96, 104, 294, 112), radius=4, fill=(91, 188, 255, 255))
+    d.rounded_rectangle((306, 104, 410, 112), radius=4, fill=(34, 197, 94, 230))
+    d.rounded_rectangle((96, 134, 180, 218), radius=22, fill=(91, 188, 255, 35), outline=(91, 188, 255, 125), width=2)
+    d.line((116, 196, 150, 154, 168, 176), fill=(34, 197, 94, 255), width=8, joint='curve')
+    brand_font = get_font(50, True)
+    d.text((204, 128), 'Fantasy Edge', font=brand_font, fill=(238, 246, 255, 255))
+    edge_w = d.textlength('Fantasy Edge', font=brand_font)
+    d.text((204 + edge_w + 14, 128), 'IQ', font=brand_font, fill=(91, 188, 255, 255))
+    d.text((96, 245), 'EuroLeague + FPL', font=get_font(66, True), fill=(255, 255, 255, 255))
+    d.text((96, 318), 'Fantasy Analytics', font=get_font(66, True), fill=(255, 255, 255, 255))
+    subtitle = 'Public-data dashboards for value, fixtures, injuries, pace, usage and transfer decisions before every deadline.'
+    words = subtitle.split()
+    lines, cur = [], ''
+    for word in words:
+        test = (cur + ' ' + word).strip()
+        if d.textlength(test, font=get_font(27)) > 940:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = test
+    if cur:
+        lines.append(cur)
+    y = 404
+    for line in lines[:2]:
+        d.text((96, y), line, font=get_font(27), fill=(185, 203, 226, 255))
+        y += 38
+    badges = ['Free beta', 'Transfer IQ', 'Fixture runs', 'Value models']
+    x, y = 96, 489
+    for badge in badges:
+        bf = get_font(22, True)
+        tw = d.textlength(badge, font=bf)
+        pad = 22
+        d.rounded_rectangle((x, y, x + tw + pad * 2, y + 48), radius=24, fill=(255, 255, 255, 18), outline=(255, 255, 255, 42), width=1)
+        d.text((x + pad, y + 10), badge, font=bf, fill=(224, 241, 255, 255))
+        x += tw + pad * 2 + 14
+    d.text((820, 150), 'fantasyedgeiq.com', font=get_font(24, True), fill=(128, 212, 255, 255))
+    img.save(OUT / 'og-image.png', optimize=True)
+
+    # Browser/mobile icon.
+    S = 180
+    icon = Image.new('RGB', (S, S), '#07101d')
+    pix = icon.load()
+    for y in range(S):
+        for x in range(S):
+            r = max(0, 1 - math.sqrt(((x - 35) / S) ** 2 * 3 + ((y - 25) / S) ** 2 * 3))
+            pix[x, y] = (int(7 + 38 * r), int(16 + 78 * r), int(29 + 126 * r))
+    di = ImageDraw.Draw(icon, 'RGBA')
+    di.rounded_rectangle((18, 18, 162, 162), radius=36, fill=(255, 255, 255, 16), outline=(91, 188, 255, 150), width=3)
+    di.line((46, 124, 84, 62, 112, 94, 136, 48), fill=(34, 197, 94, 255), width=13, joint='curve')
+    di.text((43, 105), 'IQ', font=get_font(42, True), fill=(238, 246, 255, 255))
+    icon.save(OUT / 'apple-touch-icon.png', optimize=True)
+
+    favicon = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5bbcff"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs>
+  <rect width="64" height="64" rx="15" fill="#07101d"/>
+  <path d="M14 45 27 20l10 15 13-22" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="16" y="54" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#eef6ff">IQ</text>
+</svg>
+"""
+    (OUT / 'favicon.svg').write_text(favicon, encoding='utf-8')
+    manifest = {
+        'name': 'Fantasy Edge IQ',
+        'short_name': 'Edge IQ',
+        'start_url': '/',
+        'display': 'standalone',
+        'background_color': '#07101d',
+        'theme_color': '#07101d',
+        'icons': [{'src': '/apple-touch-icon.png', 'sizes': '180x180', 'type': 'image/png'}]
+    }
+    (OUT / 'site.webmanifest').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
+
+
+def add_brand_meta():
+    """Inject favicon, web manifest, theme color and social preview image tags into every HTML page."""
+    tags = [
+        '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
+        '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+        '<link rel="manifest" href="/site.webmanifest">',
+        '<meta name="theme-color" content="#07101d">',
+        f'<meta property="og:image" content="{SITE}/og-image.png">',
+        '<meta property="og:image:width" content="1200">',
+        '<meta property="og:image:height" content="630">',
+        '<meta property="og:image:alt" content="Fantasy Edge IQ fantasy analytics dashboard preview">',
+        '<meta name="twitter:card" content="summary_large_image">',
+        f'<meta name="twitter:image" content="{SITE}/og-image.png">',
+    ]
+    markers = [
+        'rel="icon"',
+        'rel="apple-touch-icon"',
+        'rel="manifest"',
+        'name="theme-color"',
+        'property="og:image"',
+        'property="og:image:width"',
+        'property="og:image:height"',
+        'property="og:image:alt"',
+        'name="twitter:card"',
+        'name="twitter:image"',
+    ]
+    for path in OUT.glob('*.html'):
+        text = path.read_text(encoding='utf-8')
+        missing = [tag for tag, marker in zip(tags, markers) if marker not in text]
+        if missing and '</head>' in text:
+            text = text.replace('</head>', ''.join(missing) + '</head>', 1)
+            path.write_text(text, encoding='utf-8')
+
+
 def make_robots_sitemap_package():
     urls = ['','euroleague','euroleague/dashboard','euroleague/team-analyzer','premier-league','premier-league/dashboard','premier-league/team-analyzer','pricing','methodology','about','privacy','terms','disclaimer']
     (OUT / 'robots.txt').write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n", encoding='utf-8')
@@ -536,7 +676,7 @@ def make_robots_sitemap_package():
         'name':'fantasy-edge-iq','version':'0.2.0','private':True,
         'description':'Fantasy Edge IQ free beta dashboards for EuroLeague Fantasy and Fantasy Premier League.',
         'scripts':{
-            'build':'rm -rf public && mkdir -p public/euroleague/dashboard public/euroleague/team-analyzer public/premier-league/dashboard public/premier-league/team-analyzer public/pricing public/methodology public/about public/privacy public/terms public/disclaimer && cp *.html public/ && cp -f *.csv public/ 2>/dev/null || true && cp -f *.xml public/ 2>/dev/null || true && cp -f *.txt public/ 2>/dev/null || true && cp euroleague-dashboard.html public/euroleague/index.html && cp euroleague-dashboard.html public/euroleague/dashboard/index.html && cp euroleague-team-analyzer.html public/euroleague/team-analyzer/index.html && cp premier-league-dashboard.html public/premier-league/index.html && cp premier-league-dashboard.html public/premier-league/dashboard/index.html && cp premier-league-team-analyzer.html public/premier-league/team-analyzer/index.html && cp pricing.html public/pricing/index.html && cp methodology.html public/methodology/index.html && cp about.html public/about/index.html && cp privacy.html public/privacy/index.html && cp terms.html public/terms/index.html && cp disclaimer.html public/disclaimer/index.html',
+            'build':'rm -rf public && mkdir -p public/euroleague/dashboard public/euroleague/team-analyzer public/premier-league/dashboard public/premier-league/team-analyzer public/pricing public/methodology public/about public/privacy public/terms public/disclaimer && cp *.html public/ && cp -f *.csv public/ 2>/dev/null || true && cp -f *.xml public/ 2>/dev/null || true && cp -f *.txt public/ 2>/dev/null || true && cp -f *.png public/ 2>/dev/null || true && cp -f *.svg public/ 2>/dev/null || true && cp -f *.webmanifest public/ 2>/dev/null || true && cp euroleague-dashboard.html public/euroleague/index.html && cp euroleague-dashboard.html public/euroleague/dashboard/index.html && cp euroleague-team-analyzer.html public/euroleague/team-analyzer/index.html && cp premier-league-dashboard.html public/premier-league/index.html && cp premier-league-dashboard.html public/premier-league/dashboard/index.html && cp premier-league-team-analyzer.html public/premier-league/team-analyzer/index.html && cp pricing.html public/pricing/index.html && cp methodology.html public/methodology/index.html && cp about.html public/about/index.html && cp privacy.html public/privacy/index.html && cp terms.html public/terms/index.html && cp disclaimer.html public/disclaimer/index.html',
             'dev':'python3 -m http.server 3000'
         }
     }
@@ -575,6 +715,8 @@ def main():
     write_trust_pages()
     add_vercel_analytics()
     make_robots_sitemap_package()
+    make_brand_assets()
+    add_brand_meta()
     # Optional FPL exports for download/SEO freshness
     for name in ['fpl_players.csv','fpl_fixtures.csv','fpl_player_history.csv','fpl_upcoming_player_fixtures.csv']:
         src = FPL_DATA / name

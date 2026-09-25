@@ -6,3 +6,4 @@ rapidfuzz
 openpyxl
 xlsxwriter
 euroleague-api
+pillow
