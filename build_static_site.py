@@ -655,6 +655,49 @@ def add_brand_meta():
             path.write_text(text, encoding='utf-8')
 
 
+def add_mobile_qa_polish():
+    # Improve mobile usability for dashboards, analyzers and large stat tables.
+    css = """<style id=\"mobile-qa-polish\">
+.tablewrap{position:relative;scrollbar-color:#5bbcff #0b1b30}
+button,.btn,input,select{min-height:44px}
+@media(max-width:760px){
+  header,main{padding-left:14px!important;padding-right:14px!important}
+  .navlinks,.links{display:none!important}
+  h1{font-size:clamp(28px,9vw,42px)!important;line-height:1.05!important}
+  .sub,.lead{font-size:15px!important;line-height:1.5!important}
+  .tabs{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;gap:8px!important;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+  .tabs button,.tabs .btn{flex:0 0 auto;white-space:nowrap}
+  .filters,.toolbar{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;align-items:stretch!important}
+  label{width:100%}
+  input,select{width:100%;max-width:100%;font-size:16px!important}
+  button,.btn{max-width:100%;font-size:16px!important;justify-content:center;text-align:center}
+  .toolbar button,.toolbar .btn,.filters button,.filters .btn,.cta>.btn{width:100%}
+  .tabs button,.tabs .btn{width:auto!important}
+  .layout,.grid{grid-template-columns:1fr!important}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .card,.box,.metric,.note{border-radius:16px!important}
+  .tablewrap{max-height:68vh!important;overflow:auto!important;-webkit-overflow-scrolling:touch!important;border-radius:14px!important}
+  .tablewrap:before{content:'Swipe sideways to see all columns';display:block;position:sticky;left:0;top:0;z-index:6;background:#0b1b30;color:#9fd8ff;border-bottom:1px solid rgba(255,255,255,.1);padding:8px 10px;font-size:12px;font-weight:800;letter-spacing:.01em}
+  table{min-width:760px;font-size:12px!important}
+  th,td{padding:8px 9px!important}
+  .tablewrap table th:first-child,.tablewrap table td:first-child{position:sticky!important;left:0;z-index:3;background:#0b1b30;box-shadow:1px 0 0 rgba(255,255,255,.08)}
+  .tablewrap table th:first-child{z-index:7;background:#193b63!important}
+}
+@media(max-width:480px){
+  .cards{grid-template-columns:1fr!important}
+  table{font-size:11px!important;min-width:720px}
+  th,td{padding:7px 8px!important}
+  .metric b,.card b{font-size:22px!important}
+}
+</style>"""
+    for path in OUT.glob('*.html'):
+        text = path.read_text(encoding='utf-8')
+        if 'id="mobile-qa-polish"' in text:
+            continue
+        if '</head>' in text:
+            path.write_text(text.replace('</head>', css + '</head>', 1), encoding='utf-8')
+
+
 def make_robots_sitemap_package():
     urls = ['','euroleague','euroleague/dashboard','euroleague/team-analyzer','premier-league','premier-league/dashboard','premier-league/team-analyzer','methodology','about','privacy','terms','disclaimer']
     (OUT / 'robots.txt').write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n", encoding='utf-8')
@@ -714,6 +757,7 @@ def main():
     make_robots_sitemap_package()
     make_brand_assets()
     add_brand_meta()
+    add_mobile_qa_polish()
     # Optional FPL exports for download/SEO freshness
     for name in ['fpl_players.csv','fpl_fixtures.csv','fpl_player_history.csv','fpl_upcoming_player_fixtures.csv']:
         src = FPL_DATA / name

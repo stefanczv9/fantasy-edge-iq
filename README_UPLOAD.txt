@@ -1,14 +1,26 @@
-Fantasy Edge IQ homepage beta polish update
+Fantasy Edge IQ mobile QA polish update
 
-This update improves the homepage after removing Pricing:
-- stronger free public beta positioning
-- clear no-payment / no-password message
-- trust bar: Free during beta, No passwords, Independent project
-- better mobile CTA behavior
-- keeps Pricing removed from sitemap/build output
+This update improves mobile usability across the live site:
+- better dashboard/analyzer spacing on phones
+- horizontal tab scrolling without broken wrapping
+- full-width filters/forms where useful on mobile
+- large stat tables show a "Swipe sideways" hint
+- first table column stays visible while horizontally scrolling
+- safer touch target height for buttons/inputs
+- Pricing remains removed and redirected
+- Vercel Analytics and brand/social tags remain in all pages
 
 Upload/replace these files in the GitHub repository root:
 - index.html
+- euroleague-dashboard.html
+- euroleague-team-analyzer.html
+- premier-league-dashboard.html
+- premier-league-team-analyzer.html
+- about.html
+- methodology.html
+- privacy.html
+- terms.html
+- disclaimer.html
 - sitemap.xml
 - robots.txt
 - package.json
