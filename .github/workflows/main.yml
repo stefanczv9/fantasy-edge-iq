@@ -1,0 +1,101 @@
+name: Update fantasy dashboards
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 6 * * *'
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          else
+            pip install aiohttp requests pandas numpy rapidfuzz openpyxl xlsxwriter euroleague-api
+          fi
+
+      - name: Make root-uploaded scripts compatible
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          # If Python files were uploaded directly to repository root instead of /scripts,
+          # make them use the repository root as ROOT.
+          for p in Path('.').glob('*.py'):
+              s = p.read_text(encoding='utf-8')
+
+              s = s.replace("Path(__file__).resolve().parents[1]", "Path(__file__).resolve().parent")
+              s = s.replace("ROOT = Path('/home/user')", "ROOT = Path(__file__).resolve().parent")
+              s = s.replace('ROOT = Path("/home/user")', 'ROOT = Path(__file__).resolve().parent')
+
+              s = s.replace(
+                  'OUT_DIR = Path("/home/user/euroleague_fantasy_data")',
+                  'ROOT = Path(__file__).resolve().parent\nOUT_DIR = ROOT / "euroleague_fantasy_data"'
+              )
+              s = s.replace(
+                  'profiles_path = Path("/home/user/fantasy_profiles_active.json")',
+                  'profiles_path = ROOT / "fantasy_profiles_active.json"'
+              )
+              s = s.replace(
+                  'xlsx_path = "/home/user/euroleague_fantasy_pregled.xlsx"',
+                  'xlsx_path = str(ROOT / "euroleague_fantasy_pregled.xlsx")'
+              )
+              s = s.replace(
+                  'html_path = "/home/user/euroleague_fantasy_dashboard.html"',
+                  'html_path = str(ROOT / "euroleague_fantasy_dashboard.html")'
+              )
+
+              p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Run data refresh pipeline
+        run: |
+          run_py () {
+            if [ -f "scripts/$1" ]; then
+              python "scripts/$1"
+            elif [ -f "$1" ]; then
+              python "$1"
+            else
+              echo "Missing script: $1"
+              exit 1
+            fi
+          }
+
+          run_py refresh_euro_profiles_known.py
+          run_py create_euroleague_fantasy_dashboard.py
+          run_py create_fantasheet_style_dashboard.py
+          run_py create_euroleague_advanced_context.py
+          run_py create_fpl_fantasy_dashboard.py
+          run_py build_static_site.py
+
+      - name: Test Vercel static build
+        run: npm run build
+
+      - name: Commit refreshed data and pages
+        run: |
+          git config user.name "fantasy-edge-iq-bot"
+          git config user.email "actions@github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Automated fantasy data refresh"
+            git push
+          fi
