@@ -4,7 +4,7 @@
   "private": true,
   "description": "Fantasy Edge IQ free beta dashboards for EuroLeague Fantasy and Fantasy Premier League.",
   "scripts": {
-    "build": "echo static site ready",
+    "build": "mkdir -p public && cp *.html public/",
     "dev": "python3 -m http.server 3000"
   }
 }
