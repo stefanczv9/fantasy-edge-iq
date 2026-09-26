@@ -155,61 +155,61 @@
         "matches": [
           {
             "id": 11932,
-            "status": "playing",
+            "status": "played",
             "ot": false,
             "started_at": "2026-09-25T17:00:00.000000Z",
             "home_team": {
               "id": 158,
               "name": "Besiktas Istanbul",
               "abbreviation": "BJK",
-              "score": 27,
+              "score": 94,
               "is_valid": true
             },
             "away_team": {
               "id": 174,
               "name": "Valencia Basket",
               "abbreviation": "VBC",
-              "score": 28,
+              "score": 96,
               "is_valid": true
             }
           },
           {
             "id": 11933,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-09-25T17:45:00.000000Z",
             "home_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
               "abbreviation": "FBT",
-              "score": null,
+              "score": 78,
               "is_valid": true
             },
             "away_team": {
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": null,
+              "score": 68,
               "is_valid": true
             }
           },
           {
             "id": 11934,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-09-25T18:45:00.000000Z",
             "home_team": {
               "id": 152,
               "name": "Partizan Mozzart Bet Belgrade",
               "abbreviation": "PAR",
-              "score": null,
+              "score": 92,
               "is_valid": true
             },
             "away_team": {
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
-              "score": null,
+              "score": 76,
               "is_valid": true
             }
           }

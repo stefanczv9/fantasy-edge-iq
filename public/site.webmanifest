@@ -1,0 +1,15 @@
+{
+  "name": "Fantasy Edge IQ",
+  "short_name": "Edge IQ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07101d",
+  "theme_color": "#07101d",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
