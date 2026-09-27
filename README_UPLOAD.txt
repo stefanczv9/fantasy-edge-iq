@@ -1,31 +1,29 @@
-Fantasy Edge IQ language/mobile update
+Fantasy Edge IQ DvP translation update
 
-This update fixes two things:
-1. Language selector is visible on mobile as a top EN / SR / EL bar.
-2. Visible "free during beta" / beta emphasis has been removed from the included pages.
+This update translates the Defense vs Position page too.
 
-Languages:
-- English/default: /
-- Serbian: /sr
-- Greek: /el
+Routes after deploy:
+- /euroleague/defense-vs-position
+- /sr/euroleague/defense-vs-position
+- /el/euroleague/defense-vs-position
+
+Included:
+- English DvP page with mobile EN/SR/EL selector
+- Serbian DvP page
+- Greek DvP page
+- updated Serbian/Greek EuroLeague landing pages with DvP link
+- updated package.json no-scripts build to publish these routes
+- updated sitemap.xml with localized DvP URLs
+- DvP CSV + validation matchlog
 
 Upload/replace the CONTENTS of this folder in the GitHub repository root.
-Do NOT upload the parent folder as a new folder.
+Do NOT upload the parent folder as a folder.
 No scripts folder is needed.
 
-Included pages:
-- English homepage, trust pages, EuroLeague/FPL dashboards and analyzers
-- Serbian pages
-- Greek pages
-- package.json no-scripts build
-- sitemap/robots/assets
-
 Commit message:
-Update language selector and remove beta wording
+Add translated defense vs position pages
 
-After deploy, check on phone:
-- https://www.fantasyedgeiq.com/
-- https://www.fantasyedgeiq.com/sr
-- https://www.fantasyedgeiq.com/el
-
-You should see EN / SR / EL at the top on mobile.
+After deploy, check:
+- https://www.fantasyedgeiq.com/euroleague/defense-vs-position
+- https://www.fantasyedgeiq.com/sr/euroleague/defense-vs-position
+- https://www.fantasyedgeiq.com/el/euroleague/defense-vs-position

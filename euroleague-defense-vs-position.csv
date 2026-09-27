@@ -1,15 +1,15 @@
-team_abbr,team_name,games_sample,sample_confidence,validation_ok,validation_diff_total,validation_diff_pg,box_score_pts_allowed_pg,position_pts_allowed_pg,guard_pts_allowed_pg,guard_fantasy_allowed_pg,guard_matchup_fdr_1_easy_5_hard,guard_matchup_grade,guard_reb_allowed_pg,guard_ast_allowed_pg,guard_stl_allowed_pg,guard_blk_allowed_pg,guard_tov_forced_pg,forward_pts_allowed_pg,forward_fantasy_allowed_pg,forward_matchup_fdr_1_easy_5_hard,forward_matchup_grade,forward_reb_allowed_pg,forward_ast_allowed_pg,forward_stl_allowed_pg,forward_blk_allowed_pg,forward_tov_forced_pg,center_pts_allowed_pg,center_fantasy_allowed_pg,center_matchup_fdr_1_easy_5_hard,center_matchup_grade,center_reb_allowed_pg,center_ast_allowed_pg,center_stl_allowed_pg,center_blk_allowed_pg,center_tov_forced_pg
-EFS,Anadolu Efes Istanbul,1,very low,True,0.0,0.0,89.0,89.0,66.0,75.9,1.0,Easy,14.0,6.0,4.0,1.0,7.0,13.0,9.2,5.0,Hard,10.0,6.0,0.0,1.0,3.0,10.0,15.4,3.42,Neutral,4.0,2.0,0.0,1.0,1.0
-KBA,Baskonia Vitoria-Gasteiz,1,very low,True,0.0,0.0,106.0,106.0,51.0,60.9,1.97,Easy,10.0,15.0,3.0,0.0,8.0,37.0,53.9,1.36,Easy,11.0,4.0,2.0,2.0,4.0,18.0,33.0,1.99,Easy,17.0,1.0,1.0,1.0,2.0
-OLY,Olympiacos Piraeus,1,very low,True,0.0,0.0,89.0,89.0,64.0,55.0,2.35,Neutral,18.0,17.0,4.0,0.0,5.0,20.0,22.0,3.96,Hard,6.0,8.0,5.0,0.0,5.0,5.0,3.0,4.43,Hard,3.0,0.0,0.0,0.0,0.0
-HTA,Hapoel Tel Aviv,1,very low,True,0.0,0.0,86.0,86.0,43.0,45.3,2.98,Neutral,4.0,12.0,5.0,0.0,3.0,12.0,9.9,4.94,Hard,8.0,4.0,4.0,1.0,5.0,31.0,45.1,1.0,Easy,17.0,4.0,1.0,0.0,4.0
-ZAL,Zalgiris Kaunas,1,very low,True,0.0,0.0,77.0,77.0,40.0,44.0,3.06,Neutral,14.0,16.0,5.0,1.0,6.0,28.0,26.0,3.63,Neutral,16.0,3.0,0.0,1.0,2.0,9.0,-4.0,5.0,Hard,4.0,2.0,2.0,1.0,6.0
-MTA,Maccabi Rapyd Tel Aviv,1,very low,True,0.0,0.0,84.0,84.0,39.0,41.7,3.21,Neutral,7.0,14.0,3.0,2.0,10.0,43.0,53.0,1.43,Easy,9.0,6.0,2.0,1.0,3.0,2.0,5.5,4.23,Hard,6.0,0.0,3.0,0.0,2.0
-PBB,Paris Basketball,1,very low,True,0.0,0.0,91.0,91.0,32.0,39.6,3.35,Neutral,9.0,11.0,3.0,2.0,6.0,44.0,58.3,1.0,Easy,23.0,3.0,5.0,3.0,5.0,15.0,30.8,2.16,Easy,9.0,2.0,2.0,3.0,4.0
-CZV,Crvena Zvezda Meridianbet Belgrade,1,very low,True,0.0,0.0,83.0,83.0,40.0,36.3,3.56,Neutral,8.0,9.0,4.0,1.0,8.0,25.0,46.2,1.99,Easy,22.0,7.0,4.0,2.0,3.0,18.0,26.4,2.52,Neutral,10.0,2.0,0.0,3.0,4.0
-PAO,Panathinaikos AKTOR Athens,1,very low,True,0.0,0.0,72.0,72.0,48.0,33.0,3.77,Hard,10.0,12.0,2.0,1.0,8.0,20.0,11.0,4.85,Hard,12.0,2.0,3.0,0.0,5.0,4.0,10.0,3.86,Hard,7.0,5.0,2.0,1.0,2.0
-BAR,FC Barcelona,1,very low,True,0.0,0.0,82.0,82.0,42.0,32.0,3.84,Hard,10.0,9.0,3.0,1.0,8.0,32.0,44.0,2.16,Easy,12.0,6.0,1.0,0.0,2.0,8.0,10.0,3.86,Hard,8.0,1.0,1.0,0.0,1.0
-DUB,Dubai Basketball,1,very low,True,0.0,0.0,77.0,77.0,26.0,31.0,3.9,Hard,11.0,12.0,2.0,2.0,3.0,29.0,19.0,4.2,Hard,5.0,1.0,2.0,1.0,1.0,22.0,24.0,2.72,Neutral,11.0,0.0,1.0,2.0,3.0
-BAY,FC Bayern Munich,1,very low,True,0.0,0.0,84.0,84.0,43.0,28.0,4.1,Hard,8.0,9.0,0.0,0.0,8.0,21.0,31.0,3.22,Neutral,11.0,1.0,4.0,2.0,2.0,20.0,33.0,1.99,Easy,13.0,3.0,3.0,2.0,4.0
-RMB,Real Madrid,1,very low,True,0.0,0.0,78.0,78.0,28.0,19.3,4.66,Hard,10.0,7.0,1.0,1.0,7.0,35.0,50.6,1.63,Easy,20.0,6.0,1.0,1.0,3.0,15.0,20.9,2.97,Neutral,9.0,4.0,1.0,3.0,2.0
-ASV,LDLC ASVEL Villeurbanne,1,very low,True,0.0,0.0,74.0,74.0,29.0,14.0,5.0,Hard,11.0,16.0,2.0,0.0,12.0,23.0,32.0,3.14,Neutral,15.0,0.0,6.0,0.0,1.0,22.0,26.0,2.56,Neutral,8.0,3.0,2.0,0.0,5.0
+team_abbr,team_name,games_sample,sample_confidence,validation_ok,validation_diff_pg,box_score_pts_allowed_pg,position_pts_allowed_pg,guard_pts_allowed_pg,guard_real_pts_fdr_1_easy_5_hard,guard_reb_allowed_pg,guard_ast_allowed_pg,guard_stl_allowed_pg,guard_blk_allowed_pg,guard_tov_forced_pg,forward_pts_allowed_pg,forward_real_pts_fdr_1_easy_5_hard,forward_reb_allowed_pg,forward_ast_allowed_pg,forward_stl_allowed_pg,forward_blk_allowed_pg,forward_tov_forced_pg,center_pts_allowed_pg,center_real_pts_fdr_1_easy_5_hard,center_reb_allowed_pg,center_ast_allowed_pg,center_stl_allowed_pg,center_blk_allowed_pg,center_tov_forced_pg
+EFS,Anadolu Efes Istanbul,1,very low,True,0.0,89.0,89.0,66.0,1.0,14.0,6.0,4.0,1.0,7.0,13.0,4.88,10.0,6.0,0.0,1.0,3.0,10.0,3.9,4.0,2.0,0.0,1.0,1.0
+OLY,Olympiacos Piraeus,1,very low,True,0.0,89.0,89.0,64.0,1.2,18.0,17.0,4.0,0.0,5.0,20.0,4.0,6.0,8.0,5.0,0.0,5.0,5.0,4.59,3.0,0.0,0.0,0.0,0.0
+KBA,Baskonia Vitoria-Gasteiz,1,very low,True,0.0,106.0,106.0,51.0,2.5,10.0,15.0,3.0,0.0,8.0,37.0,1.88,11.0,4.0,2.0,2.0,4.0,18.0,2.79,17.0,1.0,1.0,1.0,2.0
+PAO,Panathinaikos AKTOR Athens,1,very low,True,0.0,72.0,72.0,48.0,2.8,10.0,12.0,2.0,1.0,8.0,20.0,4.0,12.0,2.0,3.0,0.0,5.0,4.0,4.72,7.0,5.0,2.0,1.0,2.0
+BAY,FC Bayern Munich,1,very low,True,0.0,84.0,84.0,43.0,3.3,8.0,9.0,0.0,0.0,8.0,21.0,3.88,11.0,1.0,4.0,2.0,2.0,20.0,2.52,13.0,3.0,3.0,2.0,4.0
+HTA,Hapoel Tel Aviv,1,very low,True,0.0,86.0,86.0,43.0,3.3,4.0,12.0,5.0,0.0,3.0,12.0,5.0,8.0,4.0,4.0,1.0,5.0,31.0,1.0,17.0,4.0,1.0,0.0,4.0
+BAR,FC Barcelona,1,very low,True,0.0,82.0,82.0,42.0,3.4,10.0,9.0,3.0,1.0,8.0,32.0,2.5,12.0,6.0,1.0,0.0,2.0,8.0,4.17,8.0,1.0,1.0,0.0,1.0
+CZV,Crvena Zvezda Meridianbet Belgrade,1,very low,True,0.0,83.0,83.0,40.0,3.6,8.0,9.0,4.0,1.0,8.0,25.0,3.38,22.0,7.0,4.0,2.0,3.0,18.0,2.79,10.0,2.0,0.0,3.0,4.0
+ZAL,Zalgiris Kaunas,1,very low,True,0.0,77.0,77.0,40.0,3.6,14.0,16.0,5.0,1.0,6.0,28.0,3.0,16.0,3.0,0.0,1.0,2.0,9.0,4.03,4.0,2.0,2.0,1.0,6.0
+MTA,Maccabi Rapyd Tel Aviv,1,very low,True,0.0,84.0,84.0,39.0,3.7,7.0,14.0,3.0,2.0,10.0,43.0,1.12,9.0,6.0,2.0,1.0,3.0,2.0,5.0,6.0,0.0,3.0,0.0,2.0
+PBB,Paris Basketball,1,very low,True,0.0,91.0,91.0,32.0,4.4,9.0,11.0,3.0,2.0,6.0,44.0,1.0,23.0,3.0,5.0,3.0,5.0,15.0,3.21,9.0,2.0,2.0,3.0,4.0
+ASV,LDLC ASVEL Villeurbanne,1,very low,True,0.0,74.0,74.0,29.0,4.7,11.0,16.0,2.0,0.0,12.0,23.0,3.62,15.0,0.0,6.0,0.0,1.0,22.0,2.24,8.0,3.0,2.0,0.0,5.0
+RMB,Real Madrid,1,very low,True,0.0,78.0,78.0,28.0,4.8,10.0,7.0,1.0,1.0,7.0,35.0,2.12,20.0,6.0,1.0,1.0,3.0,15.0,3.21,9.0,4.0,1.0,3.0,2.0
+DUB,Dubai Basketball,1,very low,True,0.0,77.0,77.0,26.0,5.0,11.0,12.0,2.0,2.0,3.0,29.0,2.88,5.0,1.0,2.0,1.0,1.0,22.0,2.24,11.0,0.0,1.0,2.0,3.0
