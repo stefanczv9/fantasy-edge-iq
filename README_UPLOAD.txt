@@ -1,38 +1,13 @@
-Fantasy Edge IQ EuroLeague dashboard translation update
+Projected PIR current-season update
 
-This update translates the EuroLeague dashboard UI into Serbian and Greek.
+Upload these files to the root of the GitHub repository and commit.
 
-Routes after deployment:
-- /euroleague/dashboard
-- /sr/euroleague/dashboard
-- /el/euroleague/dashboard
+Changed:
+- EuroLeague dashboard Proj PIR now uses only the current EuroLeague season PIR average.
+- Previous-season PIR is no longer blended into Proj PIR.
+- The column name remains Proj PIR.
+- Floor, ceiling, price gap and option score were recalculated from the updated Proj PIR.
+- English, Serbian and Greek dashboard pages were updated.
+- EuroLeague Lineup IQ embedded player data was updated too.
 
-Included:
-- euroleague-dashboard.html with EN/SR/EL selector pointing to dashboard routes
-- sr-euroleague-dashboard.html
-- el-euroleague-dashboard.html
-- sr-euroleague.html and el-euroleague.html updated with localized dashboard links
-- package.json no-scripts build updated to publish localized dashboard routes
-- sitemap.xml updated with localized dashboard URLs
-
-What is translated:
-- page title/description
-- navigation and language selector
-- tabs
-- section titles
-- notes/download buttons/search placeholders
-- table column labels inside the dashboard
-
-Player names, team names and basketball abbreviations stay as original data.
-
-Upload/replace the CONTENTS of this folder in the GitHub repository root.
-Do NOT upload the parent folder as a folder.
-No scripts folder is needed.
-
-Commit message:
-Add translated EuroLeague dashboards
-
-After deploy, check:
-- https://www.fantasyedgeiq.com/euroleague/dashboard
-- https://www.fantasyedgeiq.com/sr/euroleague/dashboard
-- https://www.fantasyedgeiq.com/el/euroleague/dashboard
+No scripts folder is required for this package.
