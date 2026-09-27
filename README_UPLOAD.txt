@@ -1,40 +1,31 @@
-Fantasy Edge IQ language update: English + Serbian + Greek
+Fantasy Edge IQ language/mobile update
 
-This update adds Serbian and Greek versions while keeping English as the default version.
+This update fixes two things:
+1. Language selector is visible on mobile as a top EN / SR / EL bar.
+2. Visible "free during beta" / beta emphasis has been removed from the included pages.
 
-New Serbian routes:
-- /sr
-- /sr/euroleague
-- /sr/premier-league
-- /sr/about
-- /sr/methodology
-- /sr/privacy
-- /sr/terms
-- /sr/disclaimer
+Languages:
+- English/default: /
+- Serbian: /sr
+- Greek: /el
 
-New Greek routes:
-- /el
-- /el/euroleague
-- /el/premier-league
-- /el/about
-- /el/methodology
-- /el/privacy
-- /el/terms
-- /el/disclaimer
+Upload/replace the CONTENTS of this folder in the GitHub repository root.
+Do NOT upload the parent folder as a new folder.
+No scripts folder is needed.
 
-What is included:
-- Serbian Latin pages
+Included pages:
+- English homepage, trust pages, EuroLeague/FPL dashboards and analyzers
+- Serbian pages
 - Greek pages
-- English pages with language links and hreflang tags
-- sitemap.xml with language URLs
-- package.json build that does NOT need a scripts folder and skips missing optional files
-
-Important:
-- Upload the contents of this folder into the GitHub repository root.
-- Do NOT upload this parent folder as a folder.
-- No scripts folder is needed for this package.
-- The main analytics dashboards remain in English for now; localized pages explain the tools and link to them.
-- Greek copy should be reviewed by a native Greek speaker before major paid promotion.
+- package.json no-scripts build
+- sitemap/robots/assets
 
 Commit message:
-Add Serbian and Greek language pages
+Update language selector and remove beta wording
+
+After deploy, check on phone:
+- https://www.fantasyedgeiq.com/
+- https://www.fantasyedgeiq.com/sr
+- https://www.fantasyedgeiq.com/el
+
+You should see EN / SR / EL at the top on mobile.
