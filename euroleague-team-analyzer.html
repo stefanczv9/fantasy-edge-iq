@@ -42,6 +42,12 @@ button,.btn,input,select{min-height:44px}
 .feiq-language-switcher a{color:#d8f1ff;text-decoration:none;border:1px solid rgba(91,188,255,.35);border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900;background:rgba(91,188,255,.08)}
 .feiq-language-switcher a:hover{background:rgba(91,188,255,.18)}
 @media(min-width:900px){.feiq-language-switcher{padding-right:24px}}
+</style><style id="mobile-domestic-nav-fix">
+@media(max-width:760px){
+  .topnav{display:block!important}
+  .navlinks,.links{display:flex!important;gap:8px!important;overflow-x:auto!important;white-space:nowrap!important;margin-top:10px!important;padding-bottom:6px!important;-webkit-overflow-scrolling:touch}
+  .navlinks a,.links a{flex:0 0 auto;border:1px solid rgba(91,188,255,.25);border-radius:999px;padding:7px 10px;background:rgba(91,188,255,.08)}
+}
 </style></head><body><div class="feiq-language-switcher"><a href="/euroleague/team-analyzer">EN</a><a href="/sr/euroleague">SR</a><a href="/el/euroleague">EL</a></div><header><div class="nav"><a class="brand" href="/">Fantasy Edge <span>IQ</span></a><nav class="links"><a href="/euroleague">EuroLeague dashboard</a><a href="/premier-league">FPL</a><a href="/methodology">Methodology</a></nav></div><h1>EuroLeague Lineup IQ</h1><div class="sub">Select your squad, set bank credits and get budget-safe transfer ideas. <b>EuroLeague numbers only.</b></div></header><main>
 <div class="note">No login required. Suggestions only show same-position moves that fit your bank.</div>
 <div class="layout"><section class="box"><h2>Player pool</h2><div class="toolbar"><input id="search" placeholder="Search player or team..." oninput="renderPool()"><select id="team" onchange="renderPool()"><option value="">All teams</option></select><select id="pos" onchange="renderPool()"><option value="">All positions</option></select></div><div class="tablewrap"><table id="pool"></table></div></section>
