@@ -1,26 +1,30 @@
-Fantasy Edge IQ — Realistic Proj PIR full upload package
+Fantasy Edge IQ — Role/Usage Projected PIR full upload package
 
 Upload everything in this folder to the GitHub repository root and commit.
 
-This package updates Proj PIR to be more realistic early in the season:
-Proj PIR = stabilized base PIR × matchup factor × risk factor
+Projected PIR model:
+Projected PIR = Projected Minutes × Base PIR/min × Matchup Factor × Risk Factor
 
-Stabilized base PIR:
-- current role PIR = current PIR/min × projected minutes
-- market baseline = player price × 1.35
-- sample weight = current games played / 5, capped at 1.0
-- stabilized base = sample weight × current role PIR + (1 - sample weight) × market baseline
+Base PIR/min model:
+- Season PIR/min is regressed for small samples.
+- Last10 and Last5 are included as model fields; until enough reliable game-level PIR/min data exists, they fall back to the regressed season PIR/min.
+- Role/Usage PIR/min adjusts the regressed rate with FGA/min usage, capped so one hot game does not dominate.
+- Formula structure: 0.40 Season + 0.25 L10 + 0.15 L5 + 0.20 Role/Usage.
 
-This means a player with 30 PIR in Round 1 is NOT projected for 30 again automatically.
-After one game, only 20% of the projection comes from that game and 80% comes from the market/price baseline.
-As more rounds are played, current-season performance gets more weight.
+Small sample realism:
+- One game does not become the full projection.
+- Raw PIR/min is regressed toward a prior built from player price and position league average.
+- After 1 game, sample weight is 20%; after 5+ games, current-season data gets full weight.
 
-Matchup/risk factors:
-- next opponent PIR allowed
-- opponent pace
-- home/away
-- Defense vs Position using real points by position only, not fantasy points
-- injury flag, bench flag and low-minute volatility
+Projected minutes:
+- Uses current minutes plus a price-based minutes baseline, also sample weighted.
+- Starter/bench signal applies a mild adjustment.
+
+Matchup context:
+- Opponent PIR allowed / league average.
+- Pace factor.
+- Home/away factor.
+- Real-points-only Defense vs Position by player position. No fantasy-points-allowed DvP is used.
 
 Also included:
 - Column name remains Proj PIR.
