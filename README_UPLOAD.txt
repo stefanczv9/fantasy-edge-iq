@@ -1,13 +1,18 @@
-Projected PIR current-season update
+Fantasy Edge IQ — FULL latest upload package
 
-Upload these files to the root of the GitHub repository and commit.
+Upload everything in this folder to the GitHub repository root and commit.
 
-Changed:
-- EuroLeague dashboard Proj PIR now uses only the current EuroLeague season PIR average.
-- Previous-season PIR is no longer blended into Proj PIR.
-- The column name remains Proj PIR.
-- Floor, ceiling, price gap and option score were recalculated from the updated Proj PIR.
-- English, Serbian and Greek dashboard pages were updated.
-- EuroLeague Lineup IQ embedded player data was updated too.
+Includes the latest combined state:
+- EuroLeague Proj PIR uses ONLY this EuroLeague season current PIR average.
+- Column name remains Proj PIR.
+- Recalculated EuroLeague Option score, floor, ceiling and price gap.
+- EuroLeague Dashboard in EN / SR / EL.
+- Defense vs Position in EN / SR / EL, real points only by position.
+- Mobile language selector EN / SR / EL.
+- No visible Pricing page/links.
+- No visible “free during beta” emphasis.
+- FPL analyzer API function included in /api/fpl-team-analyzer.js.
+- package.json uses inline bash build; no /scripts folder is required.
 
-No scripts folder is required for this package.
+Do NOT upload the old public/ build output or scripts/ folder from older packages.
+Vercel will build public/ automatically after commit.
