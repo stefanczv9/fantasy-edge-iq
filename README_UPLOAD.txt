@@ -1,29 +1,24 @@
-Fantasy Edge IQ Defense vs Position update
+Fantasy Edge IQ build fix WITHOUT scripts folder
 
-This update adds a validated EuroLeague Defense vs Position page:
-- /euroleague/defense-vs-position
+Use this because GitHub browser upload did not keep the scripts folder.
 
-Files included:
+Upload/replace ONLY these files in the GitHub repository root:
+- package.json
+- euroleague-dashboard.html
 - euroleague-defense-vs-position.html
 - euroleague-defense-vs-position.csv
 - euroleague-defense-vs-position-matchlog.csv
-- euroleague-dashboard.html
 - sitemap.xml
-- package.json
-- scripts/build_static_site.py
-
-What the feature does:
-- Real PTS allowed by position: Guards / Forwards / Centers
-- Fantasy PTS allowed by position: Guards / Forwards / Centers
-- Validation: real position points are checked against the official box-score points allowed
-- Matchlog CSV is included so validation can be audited
-- Early sample / beta warning is shown because the season sample is still small
 
 Important:
-- Do not upload this parent folder as a folder. Upload the contents into the repository root.
-- Keep scripts/build_static_site.py inside the existing scripts folder.
+- This fix does NOT need a scripts folder.
+- Serbian/Greek language files are optional and can be uploaded later.
+- The new package.json build command skips missing optional language files, so Vercel will not fail if you have not uploaded them yet.
 - Do not delete api, data, public, or workflow files.
-- This keeps Pricing removed.
 
-After deployment, check:
+Commit message:
+Fix build without scripts folder
+
+After commit, Vercel should deploy. If it does not start automatically, click Redeploy.
+Then check:
 https://www.fantasyedgeiq.com/euroleague/defense-vs-position
