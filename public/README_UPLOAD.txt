@@ -1,38 +1,17 @@
-Fantasy Edge IQ mobile QA polish update
+UPLOAD INSTRUCTIONS — Fantasy Edge IQ domestic played-so-far update
 
-This update improves mobile usability across the live site:
-- better dashboard/analyzer spacing on phones
-- horizontal tab scrolling without broken wrapping
-- full-width filters/forms where useful on mobile
-- large stat tables show a "Swipe sideways" hint
-- first table column stays visible while horizontally scrolling
-- safer touch target height for buttons/inputs
-- Pricing remains removed and redirected
-- Vercel Analytics and brand/social tags remain in all pages
+Upload the CONTENTS of this ZIP to the GitHub repository root, then commit.
+Do not upload an old public/ folder and do not upload scripts/.
+Vercel will run npm run build and recreate public/ from these root files.
 
-Upload/replace these files in the GitHub repository root:
-- index.html
-- euroleague-dashboard.html
-- euroleague-team-analyzer.html
-- premier-league-dashboard.html
-- premier-league-team-analyzer.html
-- about.html
-- methodology.html
-- privacy.html
-- terms.html
-- disclaimer.html
-- sitemap.xml
-- robots.txt
-- package.json
-- vercel.json
-- requirements.txt
-- og-image.png
-- apple-touch-icon.png
-- favicon.svg
-- site.webmanifest
-- scripts/build_static_site.py
+This package includes:
+- Expanded Domestic Competitions page/data for completed domestic games so far.
+- Greece: Super Cup completed games only.
+- Lithuania/Spain/Italy/Turkey: domestic league games that were final at extraction time.
+- Domestic stats remain separate from EuroLeague stats/projections.
+- Existing Top Projected PIR / role-usage Proj PIR / EN-SR-EL dashboard and DvP work is preserved.
 
-Important:
-- Do not upload this parent folder as a new folder. Upload the contents into the repository root.
-- Keep scripts/build_static_site.py inside the existing scripts folder.
-- Do not delete api, data, public, or workflow files.
+Routes:
+- /euroleague/domestic-competitions
+- /sr/euroleague/domestic-competitions
+- /el/euroleague/domestic-competitions
