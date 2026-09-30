@@ -1,5 +1,5 @@
 {
-  "status_id": 1,
+  "status_id": 3,
   "maintenance": false,
   "players_list_limitations_enabled": false,
   "denied_free_agent_trade_creation_offset": 180,
@@ -13,9 +13,9 @@
     "num_rounds": 2
   },
   "current_round": {
-    "id": 2526,
-    "number": 1,
-    "started_at": "2026-09-29T15:59:00.000000Z"
+    "id": 2527,
+    "number": 2,
+    "started_at": "2026-09-30T18:04:00.000000Z"
   },
   "previous_matchday": {
     "id": 1528,
