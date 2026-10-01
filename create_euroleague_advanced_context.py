@@ -8,12 +8,12 @@ import numpy as np
 import pandas as pd
 from euroleague_api.team_stats import TeamStats
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / 'euroleague_fantasy_data'
 DATA.mkdir(exist_ok=True)
 LOCAL_TZ = ZoneInfo('Europe/Zagreb')
-HTML_OUT = ROOT / 'euroleague_fantasheet_style_dashboard.html'
-XLSX_OUT = ROOT / 'euroleague_fantasy_pregled_fantasheet.xlsx'
+HTML_OUT = DATA / 'euroleague_fantasheet_style_dashboard.html'
+XLSX_OUT = DATA / 'euroleague_fantasy_pregled_fantasheet.xlsx'
 
 CODE_MAP = {
     # Official EuroLeague TV codes -> Fantasy/schedule abbreviations
@@ -243,7 +243,7 @@ def percentile(series):
 
 
 def build_player_options(fanta: pd.DataFrame, team_ctx: pd.DataFrame, next5: pd.DataFrame) -> pd.DataFrame:
-    ctx_cols = ['team_abbr','pace_possessions_pg','for_fga_pg','allowed_fga_pg','allowed_oreb_pg','allowed_dreb_pg','allowed_pir_pg','team_defense_weakness_score']
+    ctx_cols = ['team_abbr','team_name','pace_possessions_pg','for_fga_pg','allowed_fga_pg','allowed_oreb_pg','allowed_dreb_pg','allowed_pir_pg','team_defense_weakness_score']
     ctx = team_ctx[[c for c in ctx_cols if c in team_ctx.columns]].rename(columns={
         'pace_possessions_pg':'team_pace_possessions_pg',
         'for_fga_pg':'team_fga_for_pg',

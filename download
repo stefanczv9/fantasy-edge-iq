@@ -1,7 +1,10 @@
-public/
+# Generated only during scheduled EuroLeague refresh
+/euroleague_fantasy_data/
+*.xlsx
+
+# Local dependencies / caches
+node_modules/
+.cache/
+.next/
 __pycache__/
 *.pyc
-.pytest_cache/
-.DS_Store
-node_modules/
-fpl_fantasy_data/*.json

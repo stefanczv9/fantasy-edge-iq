@@ -1,0 +1,80 @@
+name: EuroLeague auto refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub cron uses UTC. These runs cover late-night / early-morning Europe/Zagreb,
+    # so the site refreshes automatically after EuroLeague game nights and after a round finishes.
+    - cron: "20 23 * * *"
+    - cron: "20 2 * * *"
+    - cron: "20 5 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: euroleague-auto-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Python dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Refresh EuroLeague data, dashboard and real-points DvP
+        run: python scripts/run_euroleague_auto_refresh.py
+
+      - name: Build static routes
+        run: npm run build
+
+      - name: Show changed files
+        run: git status --short
+
+      - name: Commit refreshed site files
+        shell: bash
+        run: |
+          set -e
+          git config user.name "fantasy-edge-iq-bot"
+          git config user.email "actions@github.com"
+          git add \
+            BUILD_VERSION.txt \
+            data/fantasy_profiles_active.json \
+            euroleague-dashboard.html sr-euroleague-dashboard.html el-euroleague-dashboard.html \
+            euroleague-team-analyzer.html \
+            euroleague-defense-vs-position.html sr-euroleague-defense-vs-position.html el-euroleague-defense-vs-position.html \
+            euroleague-players-full.csv euroleague-team-context.csv euroleague-next5-schedule.csv \
+            euroleague-defense-vs-position.csv euroleague-defense-vs-position-matchlog.csv \
+            public/BUILD_VERSION.txt \
+            public/euroleague/index.html public/euroleague/dashboard/index.html public/euroleague/team-analyzer/index.html public/euroleague/defense-vs-position/index.html \
+            public/sr/euroleague/dashboard/index.html public/sr/euroleague/defense-vs-position/index.html \
+            public/el/euroleague/dashboard/index.html public/el/euroleague/defense-vs-position/index.html \
+            public/euroleague-players-full.csv public/euroleague-team-context.csv public/euroleague-next5-schedule.csv \
+            public/euroleague-defense-vs-position.csv public/euroleague-defense-vs-position-matchlog.csv
+          if git diff --cached --quiet; then
+            echo "No EuroLeague changes to commit."
+            exit 0
+          fi
+          git commit -m "Auto refresh EuroLeague dashboard and DvP"
+          git push
+
+      - name: Optional Vercel deploy hook
+        if: ${{ secrets.VERCEL_DEPLOY_HOOK_URL != '' }}
+        run: curl -fsS -X POST "${{ secrets.VERCEL_DEPLOY_HOOK_URL }}"

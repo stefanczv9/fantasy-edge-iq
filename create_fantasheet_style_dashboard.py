@@ -10,10 +10,10 @@ import pandas as pd
 from rapidfuzz import process, fuzz
 
 LOCAL_TZ = ZoneInfo("Europe/Zagreb")
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / 'euroleague_fantasy_data'
-OUT_XLSX = ROOT / 'euroleague_fantasy_pregled_fantasheet.xlsx'
-OUT_HTML = ROOT / 'euroleague_fantasheet_style_dashboard.html'
+OUT_XLSX = DATA_DIR / 'euroleague_fantasy_pregled_fantasheet.xlsx'
+OUT_HTML = DATA_DIR / 'euroleague_fantasheet_style_dashboard.html'
 
 
 def norm_name(s):
@@ -49,14 +49,15 @@ def fmt_made_attempt(made, att):
 
 
 def load_players():
-    profiles = json.load(open(ROOT / 'fantasy_profiles_active.json', encoding='utf-8'))
+    profiles = json.load(open(ROOT / 'data' / 'fantasy_profiles_active.json', encoding='utf-8'))
     rows = []
     for p in profiles:
-        base = p.get('quotation')
+        # API profile field `quotation` is the CURRENT fantasy price.
+        # `total_plus` is the change from opening price, not something to add
+        # again. Previous code double-counted price changes after Round 1.
+        current_price = p.get('quotation')
         change = p.get('total_plus')
-        current_price = None
-        if base is not None:
-            current_price = base + (change or 0)
+        base = None if current_price is None else current_price - (change or 0)
         rows.append({
             'player_id': p.get('id'),
             'name': f"{p.get('first_name') or ''} {p.get('last_name') or ''}".strip(),
@@ -83,10 +84,25 @@ def load_players():
 def fetch_official_traditional(season, current=False):
     from euroleague_api.player_stats import PlayerStats
     ps = PlayerStats('E')
-    if current:
-        df = ps.get_player_stats_single_season('traditional', season, phase_type_code='RS', statistic_mode='Accumulated')
-    else:
-        df = ps.get_player_stats_single_season('traditional', season, phase_type_code='RS', statistic_mode='Accumulated')
+    # The EuroLeague stats endpoint can temporarily return an empty table when
+    # phase_type_code='RS' is requested right after a round. Try that first, but
+    # fall back to the unfiltered endpoint before using any cached CSV. This
+    # prevents missing completed Round 1 games (PAR-MIL, FBT-VIR, BJK-VBC).
+    attempts = [
+        dict(phase_type_code='RS', statistic_mode='Accumulated'),
+        dict(phase_type_code=None, statistic_mode='Accumulated'),
+        dict(phase_type_code='RS', statistic_mode='PerGame'),
+        dict(phase_type_code=None, statistic_mode='PerGame'),
+    ]
+    df = pd.DataFrame()
+    for params in attempts:
+        try:
+            cand = ps.get_player_stats_single_season('traditional', season, **params)
+            if cand is not None and not cand.empty:
+                df = cand.copy()
+                break
+        except Exception as e:
+            print(f'Official player stats attempt failed {season} {params}: {e}')
     if df.empty:
         cache = DATA_DIR / ('official_current_raw.csv' if current else 'official_2025_26_raw.csv')
         if cache.exists():
@@ -201,8 +217,12 @@ def build():
     logs = pd.read_csv(DATA_DIR / 'fantasy_poeni_log.csv')
     matches = pd.read_csv(DATA_DIR / 'utakmice.csv')
 
-    # Current fantasy line: one row per player for current MD.
-    current_logs = logs.sort_values('matchday').groupby('player_id').tail(1)
+    # Current fantasy line: most recent PLAYED row per player. The Fantasy API
+    # also returns the next scheduled matchday; using tail(1) would select that
+    # scheduled row and blank out Round 1 values for players such as Carlik Jones,
+    # Lamar Stevens and Braxton Key.
+    played_logs = logs[logs.get('match_status').astype(str).str.lower().eq('played')].copy() if 'match_status' in logs.columns else logs.copy()
+    current_logs = played_logs.sort_values(['matchday','round','start_local']).groupby('player_id').tail(1)
     cur_cols = ['player_id', 'fantasy_pts', 'match_status', 'opponent_abbr', 'home_away', 'start_local', 'pts', 'reb', 'ast', 'stl', 'blk', 'tov', 'fd', 'pf', 'fg_missed', 'ft_missed']
     current_logs = current_logs[[c for c in cur_cols if c in current_logs.columns]].rename(columns={
         'fantasy_pts':'fantasy_pts_current_md',
@@ -262,7 +282,9 @@ def build():
     # Fantasheet-style derived metrics.
     players['value_pir_per_credit'] = (players['pir_avg_current'] / players['price']).round(2)
     players['value_fantasy_per_credit'] = (players['fantasy_pts_current_md'] / players['price']).round(2)
-    players['proj_pir_est'] = players.apply(lambda r: round(0.65*r['pir_25_26'] + 0.35*r['pir_avg_current'], 1) if pd.notna(r.get('pir_25_26')) and pd.notna(r.get('pir_avg_current')) else (round(r['pir_25_26'],1) if pd.notna(r.get('pir_25_26')) else (round(r['pir_avg_current']*0.75,1) if pd.notna(r.get('pir_avg_current')) else None)), axis=1)
+    # User-requested v2: Proj PIR uses this EuroLeague season only.
+    # No previous-season PIR fallback/blend is used in this column.
+    players['proj_pir_est'] = players['pir_avg_current'].apply(lambda x: None if pd.isna(x) else round(x, 1))
     players['form_pir'] = players['pir_avg_current']
     players['floor_est'] = players['proj_pir_est'].apply(lambda x: None if pd.isna(x) else round(max(-5, x*0.55), 1))
     players['ceiling_est'] = players['proj_pir_est'].apply(lambda x: None if pd.isna(x) else round(x*1.45 + 2, 1))
@@ -305,7 +327,7 @@ def write_excel(fanta, players, matches, logs, current_off, previous_off):
         ['Generated', datetime.now(LOCAL_TZ).strftime('%Y-%m-%d %H:%M %Z')],
         ['Important', 'Price current = EuroLeague Fantasy quotation + total_plus (after price move).'],
         ['MIN avg', 'Uses current EuroLeague season if the player has official stats; otherwise previous EuroLeague season 2025-26; N/A if no EuroLeague minute sample was available.'],
-        ['Projection columns', 'Proj/Floor/Ceiling/Price gap are simple estimates for overview, not paid FantaSheet model outputs.'],
+        ['Projection columns', 'Proj PIR now uses only this EuroLeague season official PIR average; no previous-season PIR blend. Floor/Ceiling/Price gap are simple overview estimates, not paid FantaSheet model outputs.'],
         ['Source', 'EuroLeague Fantasy Challenge API + public EuroLeague Basketball stats API.'],
     ], columns=['Field','Value'])
     with pd.ExcelWriter(OUT_XLSX, engine='xlsxwriter') as writer:

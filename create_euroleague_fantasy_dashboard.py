@@ -23,7 +23,7 @@ SEASON = 2026
 LOCAL_TZ = ZoneInfo("Europe/Zagreb")
 NOW_LOCAL = datetime.now(LOCAL_TZ)
 NOW_UTC = NOW_LOCAL.astimezone(timezone.utc)
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "euroleague_fantasy_data"
 OUT_DIR.mkdir(exist_ok=True)
 
@@ -271,12 +271,18 @@ def fetch_official_stats():
         # stats only when phaseTypeCode=RS is supplied, while advanced/misc work
         # more reliably without phase filtering. Keep this defensive.
         trad = ps.get_player_stats_single_season("traditional", SEASON, phase_type_code="RS", statistic_mode="Accumulated")
+        if trad is None or trad.empty:
+            trad = ps.get_player_stats_single_season("traditional", SEASON, phase_type_code=None, statistic_mode="Accumulated")
+        if trad is None or trad.empty:
+            trad = ps.get_player_stats_single_season("traditional", SEASON, phase_type_code="RS", statistic_mode="PerGame")
+        if trad is None or trad.empty:
+            trad = ps.get_player_stats_single_season("traditional", SEASON, phase_type_code=None, statistic_mode="PerGame")
         adv = ps.get_player_stats_single_season("advanced", SEASON, phase_type_code=None, statistic_mode="PerGame")
         misc = ps.get_player_stats_single_season("misc", SEASON, phase_type_code=None, statistic_mode="PerGame")
     except Exception as e:
         print("Official stats fetch failed:", e)
         return pd.DataFrame()
-    if trad.empty:
+    if trad is None or trad.empty:
         return pd.DataFrame()
     # Keep useful advanced/misc columns and avoid repeated player/team cols.
     idcol = "player.code"
@@ -343,7 +349,7 @@ def build_datasets():
     with open(OUT_DIR / "schedule_raw.json", "w", encoding="utf-8") as f:
         json.dump(schedule_raw, f, ensure_ascii=False, indent=2)
 
-    profiles_path = ROOT / "fantasy_profiles_active.json"
+    profiles_path = ROOT / "data" / "fantasy_profiles_active.json"
     players_df = profiles_df_from_json(profiles_path)
     players_df = add_next_matches(players_df, matches_df)
 
@@ -635,8 +641,8 @@ init();
 
 if __name__ == "__main__":
     config, matches_df, players_df, logs_df, official_df = build_datasets()
-    xlsx_path = str(ROOT / "euroleague_fantasy_pregled.xlsx")
-    html_path = str(ROOT / "euroleague_fantasy_dashboard.html")
+    xlsx_path = str(OUT_DIR / "euroleague_fantasy_pregled.xlsx")
+    html_path = str(OUT_DIR / "euroleague_fantasy_dashboard.html")
     write_excel(config, matches_df, players_df, logs_df, official_df, xlsx_path)
     write_html(config, matches_df, players_df, logs_df, official_df, html_path)
     print("Wrote", xlsx_path, html_path)
