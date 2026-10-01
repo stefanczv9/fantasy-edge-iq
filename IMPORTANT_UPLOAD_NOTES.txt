@@ -1,13 +1,12 @@
-UPLOAD THIS PACKAGE INSTEAD OF THE PREVIOUS EUROCUP ZIP.
+USE THIS PACKAGE AS THE LATEST SAFE UPDATE.
 
-What this package fixes:
-- Restores homepage/root as landing page, not EuroCup dashboard.
-- Adds EuroCup link/card on EN/SR/EL homepages.
-- Keeps EuroCup under /eurocup/dashboard, /sr/eurocup/dashboard, /el/eurocup/dashboard.
-- Includes public/index.html, public/sr/index.html, public/el/index.html to overwrite a bad homepage deploy.
+Includes:
+- Homepage restored as homepage, not EuroCup dashboard.
+- Homepage has EuroLeague, EuroCup and FPL links/cards in EN/SR/EL.
+- EuroCup remains under /eurocup/dashboard, /sr/eurocup/dashboard, /el/eurocup/dashboard.
+- EuroLeague dashboards in EN/SR/EL now include a new Shot Share table.
+- Shot Share formula: player FGA/G divided by team FGA/G times 100.
+- New CSV: euroleague-shot-share.csv.
 - No .github/workflows files included.
 
-If you need to undo the previous bad upload manually:
-1) GitHub repo -> Code -> Commits -> open the last bad commit -> Revert, OR
-2) Re-upload this package to repo root and let Vercel/GitHub Pages redeploy, OR
-3) In Vercel -> Deployments -> choose previous good deployment -> Promote/Rollback.
+Do not upload older ZIP packages after this one.
