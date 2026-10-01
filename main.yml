@@ -3,11 +3,8 @@ name: Update fantasy dashboards
 on:
   workflow_dispatch:
   schedule:
-    # GitHub cron is UTC.
-    # These times run after EuroLeague game finishes in Europe/Zagreb during both CEST and CET.
-    # It may run more than once after game-night because the fantasy/API data can arrive late.
+    # GitHub cron is UTC. Runs after EuroLeague game-night finishes and again as backup.
     - cron: "55 18,19,20,21,22,23 * * 2-5"
-    # Late/early backup refreshes if the API posts final data during the night/morning.
     - cron: "20 0,2,5 * * *"
 
 permissions:
@@ -32,18 +29,27 @@ jobs:
           python-version: "3.11"
           cache: "pip"
 
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp requests pandas numpy rapidfuzz openpyxl xlsxwriter euroleague-api pillow
+
+      - name: Check runner file
+        shell: bash
+        run: |
+          if [ ! -f scripts/run_euroleague_auto_refresh.py ]; then
+            echo "::error::Missing scripts/run_euroleague_auto_refresh.py. Upload RUNNER_UPLOAD.zip contents into the scripts folder."
+            exit 1
+          fi
+
       - name: Sync latest branch before generating
-        run: git pull --ff-only origin "${GITHUB_REF_NAME}"
+        shell: bash
+        run: git pull --ff-only origin "${GITHUB_REF_NAME:-main}"
 
       - name: Refresh EuroLeague dashboard, Projected PIR and real-points DvP
         run: python scripts/run_euroleague_auto_refresh.py
@@ -58,33 +64,41 @@ jobs:
         shell: bash
         run: |
           set -e
+          BRANCH="${GITHUB_REF_NAME:-main}"
           git config user.name "fantasy-edge-iq-bot"
           git config user.email "actions@github.com"
 
-          git add \
-            BUILD_VERSION.txt \
-            data/fantasy_profiles_active.json \
-            euroleague-dashboard.html sr-euroleague-dashboard.html el-euroleague-dashboard.html \
-            euroleague-team-analyzer.html \
-            euroleague-defense-vs-position.html sr-euroleague-defense-vs-position.html el-euroleague-defense-vs-position.html \
-            euroleague-players-full.csv euroleague-team-context.csv euroleague-next5-schedule.csv \
-            euroleague-defense-vs-position.csv euroleague-defense-vs-position-matchlog.csv \
-            public/BUILD_VERSION.txt \
-            public/euroleague/index.html public/euroleague/dashboard/index.html public/euroleague/team-analyzer/index.html public/euroleague/defense-vs-position/index.html \
-            public/sr/euroleague/dashboard/index.html public/sr/euroleague/defense-vs-position/index.html \
-            public/el/euroleague/dashboard/index.html public/el/euroleague/defense-vs-position/index.html \
-            public/euroleague-players-full.csv public/euroleague-team-context.csv public/euroleague-next5-schedule.csv \
-            public/euroleague-defense-vs-position.csv public/euroleague-defense-vs-position-matchlog.csv
+          git add BUILD_VERSION.txt || true
+          git add data/fantasy_profiles_active.json || true
+          git add scripts/*.py || true
+          git add euroleague-dashboard.html sr-euroleague-dashboard.html el-euroleague-dashboard.html || true
+          git add euroleague-team-analyzer.html || true
+          git add euroleague-defense-vs-position.html sr-euroleague-defense-vs-position.html el-euroleague-defense-vs-position.html || true
+          git add euroleague-players-full.csv euroleague-team-context.csv euroleague-next5-schedule.csv || true
+          git add euroleague-defense-vs-position.csv euroleague-defense-vs-position-matchlog.csv || true
+          git add public/BUILD_VERSION.txt || true
+          git add public/euroleague/index.html public/euroleague/dashboard/index.html public/euroleague/team-analyzer/index.html public/euroleague/defense-vs-position/index.html || true
+          git add public/sr/euroleague/dashboard/index.html public/sr/euroleague/defense-vs-position/index.html || true
+          git add public/el/euroleague/dashboard/index.html public/el/euroleague/defense-vs-position/index.html || true
+          git add public/euroleague-players-full.csv public/euroleague-team-context.csv public/euroleague-next5-schedule.csv || true
+          git add public/euroleague-defense-vs-position.csv public/euroleague-defense-vs-position-matchlog.csv || true
 
           if git diff --cached --quiet; then
             echo "No EuroLeague changes to commit."
             exit 0
           fi
 
-          git commit -m "Auto refresh EuroLeague dashboard and DvP"
-          git fetch origin "${GITHUB_REF_NAME}"
-          git rebase "origin/${GITHUB_REF_NAME}"
-          git push
+          git commit -m "Automated fantasy data refresh [skip ci]"
+
+          for attempt in 1 2 3; do
+            git fetch origin "$BRANCH"
+            git rebase -X theirs "origin/$BRANCH"
+            if git push origin "HEAD:$BRANCH"; then
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1
 
       - name: Optional Vercel deploy hook
         shell: bash
