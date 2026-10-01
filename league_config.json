@@ -1,5 +1,5 @@
 {
-  "status_id": 3,
+  "status_id": 4,
   "maintenance": false,
   "players_list_limitations_enabled": false,
   "denied_free_agent_trade_creation_offset": 180,
@@ -8,16 +8,19 @@
   "current_players_list_id": 49,
   "allows_head_to_head_tournaments": true,
   "current_matchday": {
-    "id": 1528,
-    "number": 1,
+    "id": 1530,
+    "number": 3,
     "num_rounds": 2
   },
   "current_round": {
-    "id": 2525,
-    "number": 2,
-    "started_at": "2026-09-25T16:59:00.000000Z"
+    "id": 2528,
+    "number": 1,
+    "started_at": "2026-10-01T15:59:00.000000Z"
   },
-  "previous_matchday": null,
+  "previous_matchday": {
+    "id": 1529,
+    "number": 2
+  },
   "current_bracket": null,
   "teams": [
     {
@@ -540,7 +543,7 @@
   ],
   "predictions": null,
   "match_predictor": {
-    "starts_at": "2026-09-24T16:00:00.000000Z",
+    "starts_at": "2026-10-01T16:00:00.000000Z",
     "configs": {
       "add_matchups": true,
       "predictions": [

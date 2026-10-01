@@ -26,6 +26,7 @@ PIPELINE = [
     "create_trilingual_dvp_pages.py",
     "apply_advanced_proj_pir_formula.py",
     "patch_top_projected_pir_card.py",
+    "add_minutes_and_pirmin_cards.py",
     "finalize_euroleague_refresh.py",
 ]
 
@@ -43,8 +44,7 @@ def main() -> None:
         path = ROOT / "scripts" / script
         if not path.exists():
             raise SystemExit(f"Missing required support script after restore: {path}")
-        print(f"
-=== Running {script} ===", flush=True)
+        print(f"\n=== Running {script} ===", flush=True)
         subprocess.run([sys.executable, str(path)], cwd=str(ROOT), check=True)
     print("
 EuroLeague auto-refresh pipeline finished.")
