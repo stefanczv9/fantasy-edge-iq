@@ -1,5 +1,9 @@
 Fantasy Edge IQ EuroLeague auto-refresh
-Generated: 2026-10-01 15:42 CEST
+Generated: 2026-10-01 23:21 CEST
 Dashboard: current prices/next opponents; Top Projected PIR uses proj_pir_est.
-DvP: real-points-only by Guard/Forward/Center; Sample: 20 completed games, Matchdays 1–2.
+DvP: real-points-only by Guard/Forward/Center; Sample: 24 completed games, Matchdays 1–3.
 No EuroCup site routes/files included.
+Dashboard update: added PIR/min column and PIR per minute overview card (min 10 MIN/G).
+Dashboard update: added MIN/G column and minutes-per-game overview card.
+EuroLeague data refreshed after Oct 1 completed games: 24 completed games through Matchday 3.
+Fix: MIN/G and minutes leaders are current-season only (min_avg_current/gp_current required; no 2025-26 fallback).
