@@ -1,0 +1,4 @@
+Fantasy Edge IQ EuroLeague refresh generated 2026-10-01 15:24 CEST
+Dashboard: current Matchday 3 prices/next opponents; Projected PIR card uses proj_pir_est.
+DvP: real-points-only, regenerated from 20 completed EuroLeague games through Round 2.
+No EuroCup site routes/files included.

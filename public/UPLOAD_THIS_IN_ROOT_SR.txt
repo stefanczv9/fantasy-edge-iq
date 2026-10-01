@@ -1,0 +1,10 @@
+UPLOAD OVAJ SADRZAJ U ROOT REPO-a, NE U SCRIPTS FOLDER.
+
+Poslije uploada repo mora imati:
+
+fantasy-edge-iq/package.json
+fantasy-edge-iq/requirements.txt
+fantasy-edge-iq/scripts/run_euroleague_auto_refresh.py
+fantasy-edge-iq/data/fantasy_profiles_active.json
+
+Ovo je samo da prodje workflow step "Check required files".

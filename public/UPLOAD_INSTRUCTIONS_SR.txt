@@ -1,0 +1,14 @@
+OVO JE MALI HOTFIX PAKET ISPOD 100 FAJLOVA.
+
+Koraci za GitHub web upload:
+1. Raspakuj ZIP.
+2. U GitHub repo root /fantasy-edge-iq/ prevuci SADRZAJ foldera, ne ZIP fajl.
+3. Ako GitHub pita za overwrite/replace, prihvati.
+4. Commit message: EuroLeague dashboard and DvP refresh 2026-10-01
+5. Sacekaj Vercel deployment.
+6. Provjeri:
+   /BUILD_VERSION.txt
+   /euroleague/dashboard?v=20261001-1524
+   /euroleague/defense-vs-position?v=20261001-1524
+
+Ako i dalje vidis stari datum 2026-09-28, problem je deployment branch/folder/cache, ne ovaj paket.

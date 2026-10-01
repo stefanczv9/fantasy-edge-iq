@@ -1,0 +1,5 @@
+Fantasy Edge IQ EuroLeague auto-refresh
+Generated: 2026-10-01 15:42 CEST
+Dashboard: current prices/next opponents; Top Projected PIR uses proj_pir_est.
+DvP: real-points-only by Guard/Forward/Center; Sample: 20 completed games, Matchdays 1–2.
+No EuroCup site routes/files included.
