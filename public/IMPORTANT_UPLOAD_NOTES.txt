@@ -1,0 +1,12 @@
+USE THIS PACKAGE AS THE LATEST SAFE UPDATE.
+
+Includes:
+- Homepage restored as homepage, not EuroCup dashboard.
+- Homepage has EuroLeague, EuroCup and FPL links/cards in EN/SR/EL.
+- EuroCup remains under /eurocup/dashboard, /sr/eurocup/dashboard, /el/eurocup/dashboard.
+- EuroLeague dashboards in EN/SR/EL now include a new Shot Share table.
+- Shot Share formula: player FGA/G divided by team FGA/G times 100.
+- New CSV: euroleague-shot-share.csv.
+- No .github/workflows files included.
+
+Do not upload older ZIP packages after this one.

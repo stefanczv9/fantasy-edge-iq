@@ -1,28 +1,22 @@
-EUROLEAGUE MD3 CURRENT-SEASON ONLY UPDATE
+EUROLEAGUE MD3 OVERVIEW FIXED — CURRENT SEASON ONLY
 
-Uploaduj SADRZAJ ovog foldera u root GitHub repo-a fantasy-edge-iq.
-Ako GitHub pita overwrite/replace, prihvati.
+Uploaduj SADRZAJ ovog foldera u root GitHub repo-a.
+Ako pita overwrite/replace, prihvati.
+Workflow ne diraj.
 
-NE DIRAJ workflow / .github.
-Ovaj ZIP ne sadrzi .github i ne mijenja GitHub Actions.
+Popravljeno:
+- Overview kartice vise nisu prazne
+- Vraca Top Projected PIR karticu
+- Vraca Best value PIR/kredit karticu
+- Dodaje PIR/min karticu
+- Dodaje MIN/G karticu
+- Zadrzava Highest shot usage, Easiest next-five, Fastest environments
 
-Sta je unutra:
-- EuroLeague dashboard EN/SR/EL poslije 24 odigrane utakmice kroz Matchday 3
-- 4 utakmice od 2026-10-01 su ukljucene:
-  HTA-RMB, CZV-EFS, VIR-OLY, PBB-ZAL
-- Top Projected PIR ostaje
-- Proj PIR ostaje
-- PIR/min kolona i overview kartica
-- MIN/G kolona i overview kartica
-- MIN/G je SAMO ova sezona: min_avg_current/gp_current required
-- Shane Larkin nije u MIN/G liderima jer nema current-season minute
-- DvP je real-points-only Guard/Forward/Center
-- DvP validation_diff_pg = 0.0
+Podaci:
+- Generated: 2026-10-01 23:21 CEST
+- 24 completed games through Matchday 3
+- DvP real-points-only, validation diff 0.0
+- MIN/G je samo ova sezona: min_avg_current/gp_current required
+- Shane Larkin nije u MIN/G liderima
+- Nema .github/workflow fajlova
 - Nema EuroCup fajlova
-- Nema workflow fajlova
-
-Provjera prije upload-a:
-- BUILD_VERSION.txt pokazuje 2026-10-01 23:21 CEST
-- dashboard pokazuje Top Proj PIR Sasha Vezenkov 26.0
-- top PIR/min Carlik Jones 1.177
-- top MIN/G Elijah Bryant 32.5
