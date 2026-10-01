@@ -1,0 +1,13 @@
+UPLOAD THIS PACKAGE INSTEAD OF THE PREVIOUS EUROCUP ZIP.
+
+What this package fixes:
+- Restores homepage/root as landing page, not EuroCup dashboard.
+- Adds EuroCup link/card on EN/SR/EL homepages.
+- Keeps EuroCup under /eurocup/dashboard, /sr/eurocup/dashboard, /el/eurocup/dashboard.
+- Includes public/index.html, public/sr/index.html, public/el/index.html to overwrite a bad homepage deploy.
+- No .github/workflows files included.
+
+If you need to undo the previous bad upload manually:
+1) GitHub repo -> Code -> Commits -> open the last bad commit -> Revert, OR
+2) Re-upload this package to repo root and let Vercel/GitHub Pages redeploy, OR
+3) In Vercel -> Deployments -> choose previous good deployment -> Promote/Rollback.
