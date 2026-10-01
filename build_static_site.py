@@ -7,7 +7,7 @@ from datetime import datetime
 import pandas as pd
 import numpy as np
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT
 FLAT = ROOT
 EURO_DATA = ROOT / 'euroleague_fantasy_data'
