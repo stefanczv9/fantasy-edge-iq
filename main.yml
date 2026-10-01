@@ -39,17 +39,41 @@ jobs:
           python -m pip install --upgrade pip
           pip install aiohttp requests pandas numpy rapidfuzz openpyxl xlsxwriter euroleague-api pillow
 
-      - name: Check runner file
-        shell: bash
-        run: |
-          if [ ! -f scripts/run_euroleague_auto_refresh.py ]; then
-            echo "::error::Missing scripts/run_euroleague_auto_refresh.py. Upload RUNNER_UPLOAD.zip contents into the scripts folder."
-            exit 1
-          fi
-
       - name: Sync latest branch before generating
         shell: bash
         run: git pull --ff-only origin "${GITHUB_REF_NAME:-main}"
+
+      - name: Repair runner syntax if GitHub editor broke it
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("scripts/run_euroleague_auto_refresh.py")
+          if not p.exists():
+              raise SystemExit("Missing scripts/run_euroleague_auto_refresh.py")
+          text = p.read_text(encoding="utf-8")
+          marker = "def main() -> None:"
+          if marker not in text:
+              raise SystemExit("Could not find def main() in runner")
+          head = text.split(marker, 1)[0]
+          tail = '''def main() -> None:
+    restore_support_files()
+    for script in PIPELINE:
+        path = ROOT / "scripts" / script
+        if not path.exists():
+            raise SystemExit(f"Missing required support script after restore: {path}")
+        print(f"Running {script}", flush=True)
+        subprocess.run([sys.executable, str(path)], cwd=str(ROOT), check=True)
+    print("EuroLeague auto-refresh pipeline finished.")
+
+
+if __name__ == "__main__":
+    main()
+'''
+          p.write_text(head + tail, encoding="utf-8")
+          print("Runner tail repaired successfully.")
+          PY
+          python -m py_compile scripts/run_euroleague_auto_refresh.py
 
       - name: Refresh EuroLeague dashboard, Projected PIR and real-points DvP
         run: python scripts/run_euroleague_auto_refresh.py
