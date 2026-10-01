@@ -17,9 +17,9 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1529,2,2526,1,11939,played,False,2026-09-29T18:30:00.000000Z,2026-09-29 20:30,174,Valencia Basket,VBC,111.0,143,Kosner Baskonia Vitoria-Gasteiz,KBA,88.0,VBC,111-88
 1529,2,2526,1,11940,played,False,2026-09-29T18:30:00.000000Z,2026-09-29 20:30,145,Armani Olimpia Milan,MIL,87.0,154,Virtus Bologna,VIR,85.0,MIL,87-85
 1529,2,2526,1,11942,played,False,2026-09-29T18:45:00.000000Z,2026-09-29 20:45,150,Paris Basketball,PBB,79.0,152,Partizan Mozzart Bet Belgrade,PAR,92.0,PAR,79-92
-1529,2,2527,2,11943,scheduled,False,2026-09-30T18:05:00.000000Z,2026-09-30 20:05,148,Maccabi Rapyd Tel Aviv,MTA,,158,Besiktas Istanbul,BJK,,,
-1529,2,2527,2,11944,scheduled,False,2026-09-30T18:15:00.000000Z,2026-09-30 20:15,151,Panathinaikos AKTOR Athens,PAO,,139,LDLC ASVEL Villeurbanne,ASV,,,
-1530,3,2528,1,11946,scheduled,False,2026-10-01T17:00:00.000000Z,2026-10-01 19:00,165,Hapoel IBI Tel Aviv,HTA,,153,Real Madrid,RMB,,,
+1529,2,2527,2,11943,played,False,2026-09-30T18:05:00.000000Z,2026-09-30 20:05,148,Maccabi Rapyd Tel Aviv,MTA,93.0,158,Besiktas Istanbul,BJK,109.0,BJK,93-109
+1529,2,2527,2,11944,played,False,2026-09-30T18:15:00.000000Z,2026-09-30 20:15,151,Panathinaikos AKTOR Athens,PAO,102.0,139,LDLC ASVEL Villeurbanne,ASV,79.0,PAO,102-79
+1530,3,2528,1,11946,scheduled,False,2026-10-01T16:00:00.000000Z,2026-10-01 18:00,165,Hapoel IBI Tel Aviv,HTA,,153,Real Madrid,RMB,,,
 1530,3,2528,1,11945,scheduled,False,2026-10-01T18:00:00.000000Z,2026-10-01 20:00,144,Crvena Zvezda Meridianbet Belgrade,CZV,,146,Anadolu Efes Istanbul,EFS,,,
 1530,3,2528,1,11947,scheduled,False,2026-10-01T18:30:00.000000Z,2026-10-01 20:30,154,Virtus Bologna,VIR,,149,Olympiacos Piraeus,OLY,,,
 1530,3,2528,1,11948,scheduled,False,2026-10-01T18:45:00.000000Z,2026-10-01 20:45,150,Paris Basketball,PBB,,155,Zalgiris Kaunas,ZAL,,,
