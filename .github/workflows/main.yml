@@ -81,7 +81,10 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Auto refresh EuroLeague dashboard and DvP"
+        git commit -m "Automated fantasy data refresh" || echo "No changes to commit"
+git fetch origin main
+git rebase -X theirs origin/main
+git push origin HEAD:main
           git fetch origin "${GITHUB_REF_NAME}"
           git rebase "origin/${GITHUB_REF_NAME}"
           git push
