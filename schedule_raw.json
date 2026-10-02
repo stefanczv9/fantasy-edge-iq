@@ -533,121 +533,121 @@
         "matches": [
           {
             "id": 11949,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-02T17:00:00.000000Z",
             "home_team": {
               "id": 158,
               "name": "Besiktas Istanbul",
               "abbreviation": "BJK",
-              "score": null,
+              "score": 82,
               "is_valid": true
             },
             "away_team": {
               "id": 140,
               "name": "FC Barcelona",
               "abbreviation": "BAR",
-              "score": null,
+              "score": 95,
               "is_valid": true
             }
           },
           {
             "id": 11953,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-02T17:45:00.000000Z",
             "home_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
               "abbreviation": "FBT",
-              "score": null,
+              "score": 76,
               "is_valid": true
             },
             "away_team": {
               "id": 311,
               "name": "Dubai Basketball",
               "abbreviation": "DUB",
-              "score": null,
+              "score": 66,
               "is_valid": true
             }
           },
           {
             "id": 11950,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-02T18:00:00.000000Z",
             "home_team": {
               "id": 139,
               "name": "LDLC ASVEL Villeurbanne",
               "abbreviation": "ASV",
-              "score": null,
+              "score": 92,
               "is_valid": true
             },
             "away_team": {
               "id": 174,
               "name": "Valencia Basket",
               "abbreviation": "VBC",
-              "score": null,
+              "score": 105,
               "is_valid": true
             }
           },
           {
             "id": 11952,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-02T18:00:00.000000Z",
             "home_team": {
               "id": 141,
               "name": "FC Bayern Munich",
               "abbreviation": "BAY",
-              "score": null,
+              "score": 84,
               "is_valid": true
             },
             "away_team": {
               "id": 152,
               "name": "Partizan Mozzart Bet Belgrade",
               "abbreviation": "PAR",
-              "score": null,
+              "score": 86,
               "is_valid": true
             }
           },
           {
             "id": 11954,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-02T18:15:00.000000Z",
             "home_team": {
               "id": 151,
               "name": "Panathinaikos AKTOR Athens",
               "abbreviation": "PAO",
-              "score": null,
+              "score": 90,
               "is_valid": true
             },
             "away_team": {
               "id": 148,
               "name": "Maccabi Rapyd Tel Aviv",
               "abbreviation": "MTA",
-              "score": null,
+              "score": 67,
               "is_valid": true
             }
           },
           {
             "id": 11951,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-02T18:30:00.000000Z",
             "home_team": {
               "id": 143,
               "name": "Kosner Baskonia Vitoria-Gasteiz",
               "abbreviation": "KBA",
-              "score": null,
+              "score": 86,
               "is_valid": true
             },
             "away_team": {
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
-              "score": null,
+              "score": 76,
               "is_valid": true
             }
           }

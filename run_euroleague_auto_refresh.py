@@ -20,6 +20,7 @@ H4sIAJtvvmoC/+y9y3bjSJIomGt+BYpxMwFkgBRJvSKooOoq45EZU/E6IdXjlkrDBAmQQggEmADIkEKh
 PIPELINE = [
     "update_active_profiles_prices.py",
     "create_euroleague_fantasy_dashboard.py",
+    "patch_log_from_official_boxscore.py",
     "create_fantasheet_style_dashboard.py",
     "create_euroleague_advanced_context.py",
     "create_real_dvp_fix.py",
