@@ -1,35 +1,32 @@
-UPLOAD UPUTSTVO — EuroLeague refresh (Matchday 3, current-season MIN/G)
-=====================================================================
+UPLOAD UPUTSTVO — EuroLeague refresh (kola 1-3 kompletna, current-season MIN/G)
+================================================================================
 Stanje u ovom paketu:
-  Generated: 2026-10-02 00:55 CEST
-  Odigranih utakmica: 24  (kola 1-3, DvP matchlog 48 redova, validation_diff 0.0)
-  Top Projected PIR: Sasha Vezenkov 26.0
-  PIR/min lider:     Carlik Jones 1.177
+  Generated: 2026-10-02 23:25 CEST
+  Odigrane utakmice: 30  (kola 1-3 zavrsena)
+  DvP: svih 30 utakmica validirano (validation_diff = 0.0), svi timovi imaju uzorak 3 utakmice
+  Top Projected PIR: Elijah Bryant 26.2
+  PIR/min lider:     Nikola Mirotic 1.218
   MIN/G lider:       Elijah Bryant 32.5   (samo ova sezona)
   Shane Larkin:      NIJE u MIN/G ni u PIR/min listi (nema minuta ove sezone)
 
 Sta je u paketu:
-  - 3 dashboarda (EN/SR/EL) + team-analyzer + 3 DvP stranice + 5 CSV fajlova
-  - public/ kopije (Vercel rute) - iste te stranice
-  - scripts/add_minutes_and_pirmin_cards.py  (nova skripta: MIN/G + PIR/min kartica)
+  - 3 dashboarda (EN/SR/EL) + team-analyzer + 3 DvP stranice
+  - 5 CSV fajlova (players-full sad ima minutes_per_game)
+  - public/ kopije (Vercel rute) — iste te stranice
+  - euroleague_fantasy_data/ — svjezi podaci (log, official feed, team context)
   - scripts/run_euroleague_auto_refresh.py + run_euroleague_auto_refresh.py
-    (fix za Python sintaksu + nova skripta ubacena u pipeline)
-  - euroleague_fantasy_data/ (osvjezeni podaci)
+  - scripts/add_minutes_and_pirmin_cards.py  (MIN/G + PIR/min kartica)
+  - scripts/patch_log_from_official_boxscore.py  (popunjava rupe iz zvanicnog box scorea)
 
 Sta NIJE dirano:
-  - .github/workflows  (workflow je netaknut)
+  - .github/workflows (workflow je netaknut)
 
 KAKO UPLOADOVATI (GitHub web, ~2 minute):
   1. Raspakuj ovaj ZIP na racunar.
-  2. Otvori repo na github.com -> dugme "Add file" -> "Upload files".
-  3. Prevuci SADRZAJ foldera (a ne sam ZIP): fajlove iz roota + foldere
-     public/ i scripts/ i euroleague_fantasy_data/.
-     GitHub sam spoji foldere i pita overwrite za postojece fajlove -> potvrdi.
-  4. Dole klikni "Commit changes".
-  5. Vercel automatski pokrece build i deploy (npm run build).
-  6. Poslije deploya provjeri: /euroleague/dashboard, /sr/euroleague/dashboard,
-     /el/euroleague/dashboard i /euroleague/defense-vs-position.
-
-Napomena: pratiti da se pri uploadu zadrzi struktura foldera (public/... i scripts/...).
-Ako GitHub ne dozvoli vise od 100 fajlova odjednom, uploaduj u dva commita:
-prvo root fajlove, pa public/ i scripts/.
+  2. Otvori repo na github.com -> "Add file" -> "Upload files".
+  3. Prevuci SADRZAJ foldera (ne sam ZIP): root fajlove + foldere public/,
+     scripts/ i euroleague_fantasy_data/. GitHub pita overwrite -> potvrdi.
+  4. Dole "Commit changes".
+  5. Vercel automatski builda i deploya.
+  6. Provjeri: /euroleague/dashboard, /sr/euroleague/dashboard, /el/euroleague/dashboard,
+     /euroleague/defense-vs-position — gore treba da pise "2026-10-02 23:25 CEST".

@@ -23,12 +23,12 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1530,3,2528,1,11945,played,False,2026-10-01T18:00:00.000000Z,2026-10-01 20:00,144,Crvena Zvezda Meridianbet Belgrade,CZV,77.0,146,Anadolu Efes Istanbul,EFS,72.0,CZV,77-72
 1530,3,2528,1,11947,played,False,2026-10-01T18:30:00.000000Z,2026-10-01 20:30,154,Virtus Bologna,VIR,96.0,149,Olympiacos Piraeus,OLY,94.0,VIR,96-94
 1530,3,2528,1,11948,played,False,2026-10-01T18:45:00.000000Z,2026-10-01 20:45,150,Paris Basketball,PBB,82.0,155,Zalgiris Kaunas,ZAL,78.0,PBB,82-78
-1530,3,2529,2,11949,scheduled,False,2026-10-02T17:00:00.000000Z,2026-10-02 19:00,158,Besiktas Istanbul,BJK,,140,FC Barcelona,BAR,,,
-1530,3,2529,2,11953,scheduled,False,2026-10-02T17:45:00.000000Z,2026-10-02 19:45,147,Fenerbahce Tarfin Istanbul,FBT,,311,Dubai Basketball,DUB,,,
-1530,3,2529,2,11950,scheduled,False,2026-10-02T18:00:00.000000Z,2026-10-02 20:00,139,LDLC ASVEL Villeurbanne,ASV,,174,Valencia Basket,VBC,,,
-1530,3,2529,2,11952,scheduled,False,2026-10-02T18:00:00.000000Z,2026-10-02 20:00,141,FC Bayern Munich,BAY,,152,Partizan Mozzart Bet Belgrade,PAR,,,
-1530,3,2529,2,11954,scheduled,False,2026-10-02T18:15:00.000000Z,2026-10-02 20:15,151,Panathinaikos AKTOR Athens,PAO,,148,Maccabi Rapyd Tel Aviv,MTA,,,
-1530,3,2529,2,11951,scheduled,False,2026-10-02T18:30:00.000000Z,2026-10-02 20:30,143,Kosner Baskonia Vitoria-Gasteiz,KBA,,145,Armani Olimpia Milan,MIL,,,
+1530,3,2529,2,11949,played,False,2026-10-02T17:00:00.000000Z,2026-10-02 19:00,158,Besiktas Istanbul,BJK,82.0,140,FC Barcelona,BAR,95.0,BAR,82-95
+1530,3,2529,2,11953,played,False,2026-10-02T17:45:00.000000Z,2026-10-02 19:45,147,Fenerbahce Tarfin Istanbul,FBT,76.0,311,Dubai Basketball,DUB,66.0,FBT,76-66
+1530,3,2529,2,11950,played,False,2026-10-02T18:00:00.000000Z,2026-10-02 20:00,139,LDLC ASVEL Villeurbanne,ASV,92.0,174,Valencia Basket,VBC,105.0,VBC,92-105
+1530,3,2529,2,11952,played,False,2026-10-02T18:00:00.000000Z,2026-10-02 20:00,141,FC Bayern Munich,BAY,84.0,152,Partizan Mozzart Bet Belgrade,PAR,86.0,PAR,84-86
+1530,3,2529,2,11954,played,False,2026-10-02T18:15:00.000000Z,2026-10-02 20:15,151,Panathinaikos AKTOR Athens,PAO,90.0,148,Maccabi Rapyd Tel Aviv,MTA,67.0,PAO,90-67
+1530,3,2529,2,11951,played,False,2026-10-02T18:30:00.000000Z,2026-10-02 20:30,143,Kosner Baskonia Vitoria-Gasteiz,KBA,86.0,145,Armani Olimpia Milan,MIL,76.0,KBA,86-76
 1531,4,2530,1,11955,scheduled,False,2026-10-07T18:45:00.000000Z,2026-10-07 20:45,150,Paris Basketball,PBB,,139,LDLC ASVEL Villeurbanne,ASV,,,
 1531,4,2531,2,11961,scheduled,False,2026-10-08T16:00:00.000000Z,2026-10-08 18:00,311,Dubai Basketball,DUB,,144,Crvena Zvezda Meridianbet Belgrade,CZV,,,
 1531,4,2531,2,11956,scheduled,False,2026-10-08T18:00:00.000000Z,2026-10-08 20:00,148,Maccabi Rapyd Tel Aviv,MTA,,145,Armani Olimpia Milan,MIL,,,
