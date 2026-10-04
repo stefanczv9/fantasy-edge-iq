@@ -1,4 +1,17 @@
 country,league,team_abbr,team_name,player,games_played,rank_games,avg_minutes,avg_pir,avg_pts,avg_reb,avg_ast,avg_fg_att,avg_fga_per_min,avg_pir_per_min,last_game_date
+France,Betclic Elite,ASV,ASVEL,Jae Crowder,1,1,22.08,19.0,16.0,3.0,4.0,11.0,0.498,0.861,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Tremont Waters,2,2,19.55,17.5,15.0,1.0,4.5,7.0,0.358,0.895,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Patty Mills,1,1,21.43,16.0,17.0,1.0,0.0,9.0,0.42,0.747,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Joel Bolomboy,2,2,24.22,15.0,6.0,7.0,2.5,2.5,0.103,0.619,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Hugo Besson,2,2,21.27,10.0,10.5,2.0,5.5,8.0,0.376,0.47,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Marc-Owen Fodzo Dada,2,2,21.5,9.5,8.5,6.0,2.5,6.0,0.279,0.442,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Both Gach,2,2,23.08,7.5,8.5,3.5,1.0,7.0,0.303,0.325,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Bodian Massa,2,2,12.77,6.5,4.5,3.0,0.5,3.0,0.235,0.509,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Yves Pons,2,2,13.73,5.5,4.5,2.0,0.0,2.5,0.182,0.401,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Nate Sestina,2,2,18.25,3.0,6.5,1.5,0.0,6.5,0.356,0.164,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Myles Cale,1,1,11.95,2.0,4.0,2.0,0.0,4.0,0.335,0.167,2026-10-04
+France,Betclic Elite,ASV,ASVEL,David Lighty,1,1,6.77,1.0,2.0,0.0,0.0,1.0,0.148,0.148,2026-10-04
+France,Betclic Elite,ASV,ASVEL,Edwin Jackson,2,2,14.55,-1.0,0.0,2.0,1.5,4.0,0.275,-0.069,2026-10-04
 Spain,ACB,BAR,Barça,O. Balcerowski,2,2,19.33,23.0,16.5,6.0,1.0,6.5,0.336,1.19,2026-10-04
 Spain,ACB,BAR,Barça,K. Punter,2,2,20.94,14.5,14.0,2.5,2.5,8.5,0.406,0.692,2026-10-04
 Spain,ACB,BAR,Barça,O. Nkamhoua,2,2,20.67,14.5,12.0,2.5,1.5,5.5,0.266,0.702,2026-10-04
@@ -166,6 +179,20 @@ Greece,GBL,PAO,Panathinaikos AKTOR,Bonga Isaac,2,2,19.39,7.0,3.5,6.0,0.0,4.0,0.2
 Greece,GBL,PAO,Panathinaikos AKTOR,Kalaitzakis Panagiotis,2,2,16.41,7.0,5.5,1.5,0.5,2.5,0.152,0.427,2026-10-04 13:00
 Greece,GBL,PAO,Panathinaikos AKTOR,Mantzoukas Lefteris,2,2,21.87,4.5,5.0,1.5,0.0,4.0,0.183,0.206,2026-10-04 13:00
 Greece,GBL,PAO,Panathinaikos AKTOR,Varvaritis Iasonas,1,1,0.0,0.0,0.0,0.0,0.0,0.0,,,2026-09-26 21:00
+France,Betclic Elite,PBB,Paris Basketball,Nadir Hifi,2,2,26.08,25.0,28.0,2.0,5.5,18.5,0.709,0.959,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Tyson Etienne,1,1,22.82,20.0,23.0,2.0,2.0,15.0,0.657,0.876,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Jared Rhoden,1,1,23.63,17.0,15.0,3.0,2.0,9.0,0.381,0.719,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,T.J. Warren,1,1,19.32,13.0,14.0,6.0,1.0,14.0,0.725,0.673,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Allan Dokossi,2,2,18.9,13.0,5.0,8.5,2.5,3.0,0.159,0.688,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Terry Tarpey,2,2,18.55,12.0,4.5,6.5,2.0,3.0,0.162,0.647,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Sebastian Herrera,2,2,21.63,9.0,10.0,1.5,2.0,8.0,0.37,0.416,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Alize Johnson,2,2,15.33,6.5,5.0,6.0,2.0,6.0,0.391,0.424,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Léopold Cavaliere,2,2,22.57,5.0,4.0,3.5,0.0,3.5,0.155,0.222,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Daulton Hommes,1,1,16.42,5.0,7.0,1.0,1.0,5.0,0.305,0.305,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Joël Ayayi,2,2,8.82,4.0,3.0,1.5,1.0,1.5,0.17,0.454,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Mouhamed Faye,1,1,9.67,1.0,0.0,1.0,0.0,1.0,0.103,0.103,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Mãozinha Pereira,2,2,7.33,0.0,1.0,0.0,0.0,2.0,0.273,0.0,2026-10-04
+France,Betclic Elite,PBB,Paris Basketball,Frank Ntilikina,2,2,14.9,-1.5,0.5,1.5,1.0,3.0,0.201,-0.101,2026-10-04
 Spain,ACB,RMB,Real Madrid,T. Maledon,2,2,25.96,30.5,21.0,2.5,7.0,9.0,0.347,1.175,2026-10-04
 Spain,ACB,RMB,Real Madrid,Luwawu-Cabarrot,2,2,27.6,16.0,19.5,4.5,1.0,15.0,0.543,0.58,2026-10-04
 Spain,ACB,RMB,Real Madrid,F. Campazzo,1,1,20.8,15.0,15.0,2.0,5.0,10.0,0.481,0.721,2026-09-27
