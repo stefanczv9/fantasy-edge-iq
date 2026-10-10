@@ -8,14 +8,14 @@
   "current_players_list_id": 49,
   "allows_head_to_head_tournaments": true,
   "current_matchday": {
-    "id": 1530,
-    "number": 3,
+    "id": 1531,
+    "number": 4,
     "num_rounds": 2
   },
   "current_round": {
     "id": 2529,
     "number": 2,
-    "started_at": "2026-10-02T16:59:00.000000Z"
+    "started_at": "2026-10-07T16:00:00.000000Z"
   },
   "previous_matchday": {
     "id": 1529,
