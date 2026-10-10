@@ -54,7 +54,10 @@ const routes = [
   ['el-premier-league.html', 'el/premier-league/index.html'],
   ['el-about.html', 'el/about/index.html'],
   ['el-methodology.html', 'el/methodology/index.html'],
-  ['el-privacy.html', 'el/privacy/index.html'],
+  ['el-privacy.html', 'el/privacy/index.html'],  ['eurocup-dashboard.html', 'eurocup/index.html'],
+  ['eurocup-dashboard.html', 'eurocup/dashboard/index.html'],
+  ['eurocup-defense-vs-position.html', 'eurocup/defense-vs-position/index.html'],
+  ['eurocup-domestic-competitions.html', 'eurocup/domestic-competitions/index.html'],
   ['el-terms.html', 'el/terms/index.html'],
   ['el-disclaimer.html', 'el/disclaimer/index.html'],
 ];
