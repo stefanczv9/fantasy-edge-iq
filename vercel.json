@@ -1,30 +1,30 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    { "source": "/eurocup", "destination": "/eurocup-dashboard.html" },
+    { "source": "/eurocup/dashboard", "destination": "/eurocup-dashboard.html" },
+    { "source": "/eurocup/defense-vs-position", "destination": "/eurocup-defense-vs-position.html" },
+    { "source": "/eurocup/domestic-competitions", "destination": "/eurocup-domestic-competitions.html" },
+    { "source": "/sr/eurocup", "destination": "/sr-eurocup-dashboard.html" },
+    { "source": "/sr/eurocup/dashboard", "destination": "/sr-eurocup-dashboard.html" },
+    { "source": "/sr/eurocup/defense-vs-position", "destination": "/sr-eurocup-defense-vs-position.html" },
+    { "source": "/sr/eurocup/domestic-competitions", "destination": "/sr-eurocup-domestic-competitions.html" },
+    { "source": "/el/eurocup", "destination": "/el-eurocup-dashboard.html" },
+    { "source": "/el/eurocup/dashboard", "destination": "/el-eurocup-dashboard.html" },
+    { "source": "/el/eurocup/defense-vs-position", "destination": "/el-eurocup-defense-vs-position.html" },
+    { "source": "/el/eurocup/domestic-competitions", "destination": "/el-eurocup-domestic-competitions.html" }
+  ],
   "redirects": [
-    {
-      "source": "/pricing",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/pricing.html",
-      "destination": "/",
-      "permanent": true
-    }
+    { "source": "/pricing", "destination": "/", "permanent": true },
+    { "source": "/pricing.html", "destination": "/", "permanent": true }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "X-Content-Type-Options",
-          "value": "nosniff"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "strict-origin-when-cross-origin"
-        }
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
   ]
