@@ -1,10 +1,10 @@
 {
   "name": "fantasy-edge-iq",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
-  "description": "Fantasy Edge IQ free beta dashboards for EuroLeague Fantasy and Fantasy Premier League.",
+  "description": "Fantasy Edge IQ free fantasy analytics dashboards for EuroLeague Fantasy, EuroCup Fantasy and Fantasy Premier League.",
   "scripts": {
-    "build": "node scripts/build.js",
+    "build": "node build.js",
     "dev": "python3 -m http.server 3000"
   }
 }
