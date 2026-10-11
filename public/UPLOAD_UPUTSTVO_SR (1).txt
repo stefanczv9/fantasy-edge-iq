@@ -1,0 +1,36 @@
+UPLOAD UPUTSTVO — EuroLeague poslije 4. kola + rubrika Domaća takmičenja (EN/SR/EL)
+==================================================================================
+Stanje u ovom paketu
+  EuroLeague (dashboard, DvP, Lineup IQ, CSV):  2026-10-10 12:09 CEST
+  Odigrano: 40 utakmica (kola 1-4), DvP svih 40 validirano (validation_diff = 0.0)
+  Top Projected PIR: Elijah Bryant 28.4 | PIR/min: Nikos Rogkavopoulos 1.069 | MIN/G: Elijah Bryant 32.2
+  Domaća takmičenja:  50 utakmica 20 klubova u 9 zemalja (bilo 38), 631 red igrača, svi timski zbirovi = zvanični rezultat
+
+Šta je novo
+  1. Domaća takmičenja: dodato 12 propuštenih utakmica (Supercopa Endesa x3, Supercoppa LBA x2, izraelski Supercup,
+     LNB Supercup x3, turski Predsjednički kup, Bayern u BBL x2). Francuske utakmice sada imaju box score.
+     Vremena su ispravljena i prikazana po srednjoevropskom vremenu (CET/CEST).
+  2. Shot Share (udio šuteva igrača u FGA tima) sada postoji u EN, SR i EL dashboardu + euroleague-shot-share.csv.
+  3. EN dashboard i EN DvP vraćeni na punu verziju (Top Projected PIR, MIN/G, PIR/min, DvP samo stvarni poeni,
+     prekidač jezika, link na Domestic). Na sajtu je bila starija verzija bez toga.
+  4. Ispravljen mrtav link "Lineup IQ" na SR/EL stranicama domaćih takmičenja (vodio na 404).
+  5. Ispravljena sintaksna greška u run_euroleague_auto_refresh.py (korijenski fajl).
+  6. SR/EL stranice EuroLeague: ispravljena tvrdnja da je dashboard samo na engleskom + datum ažuriranja.
+
+KAKO UPLOADOVATI (GitHub web, ~2 minute)
+  1. Raspakuj ZIP na računar.
+  2. Repo na github.com -> "Add file" -> "Upload files".
+  3. Prevuci SADRŽAJ foldera (root fajlove + foldere public/, scripts/ i euroleague_fantasy_data/), ne sam ZIP.
+     GitHub pita za overwrite -> potvrdi.
+  4. Dole "Commit changes". Vercel sam builda i deploya.
+  5. Provjeri: /euroleague/dashboard, /sr/euroleague/dashboard, /el/euroleague/dashboard,
+     /euroleague/defense-vs-position, /euroleague/domestic-competitions (+ /sr, /el) — gore treba da piše
+     "2026-10-10 12:09 CEST" (domaća: 12:08).
+
+NAPOMENE
+  - Paket NE sadrži početne stranice, sitemap.xml, package.json, vercel.json, EuroCup stranice ni .github — ništa od toga nije mijenjano.
+  - domestic-*.csv su zajednički sa EuroCup rubrikom: u njima su ostali svi postojeći redovi, dodane su samo utakmice EuroLeague klubova.
+  - Poznato (van ovog paketa): SR i EL EuroCup stranice domaćih takmičenja linkuju /sr|el/euroleague/team-analyzer (404).
+    Rješenje: u vercel.json dodati redirects  /sr/euroleague/team-analyzer -> /euroleague/team-analyzer  i isto za /el/...
+  - Sljedeći refresh: python3 scripts/run_euroleague_auto_refresh.py ; python3 scripts/domestic/update_domestic.py ;
+    python3 scripts/domestic/build_pages.py ; python3 scripts/site_audit.py <URL>

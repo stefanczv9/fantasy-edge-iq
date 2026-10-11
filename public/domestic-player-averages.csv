@@ -48,17 +48,16 @@ Turkey,BSL,BJK,Beşiktaş,Furkan Korkmaz,2,2,21.57,7.0,5.5,4.0,2.0,7.0,0.325,0.3
 Turkey,BSL,BJK,Beşiktaş,Devon Dotson,1,1,25.05,6.0,6.0,1.0,2.0,5.0,0.2,0.24,2026-10-05
 Turkey,BSL,BJK,Beşiktaş,Jaylen Nowell,2,2,20.18,2.5,9.5,0.0,1.0,9.5,0.471,0.124,2026-10-05
 Turkey,BSL,BJK,Beşiktaş,Scottie Wilbekin,2,2,8.34,-2.0,1.0,0.0,0.5,3.5,0.42,-0.24,2026-10-05
-Turkey,BSL,BKS,Bahçeşehir Koleji,Trevion Williams,2,2,27.08,33.5,18.0,14.5,2.5,10.0,0.369,1.237,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Malachi Flynn,2,2,27.9,14.5,15.5,2.0,5.0,13.0,0.466,0.52,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Tyler Cavanaugh,2,2,19.09,12.5,11.5,2.5,1.0,4.5,0.236,0.655,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Furkan Haltali,2,2,12.57,12.0,7.0,4.5,1.0,4.0,0.318,0.955,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Marcquise Reed,2,2,20.82,9.5,11.5,1.0,3.0,9.0,0.432,0.456,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Damien Inglis,2,2,20.67,7.0,7.0,4.0,2.0,6.0,0.29,0.339,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Kenan Sipahi,2,2,18.03,6.5,8.5,0.5,2.5,6.5,0.36,0.36,2026-10-04
+Turkey,BSL,BKS,Bahçeşehir Koleji,Trevion Williams,1,1,26.95,38.0,20.0,15.0,2.0,9.0,0.334,1.41,2026-10-04
+Turkey,BSL,BKS,Bahçeşehir Koleji,Malachi Flynn,1,1,28.62,12.0,14.0,3.0,5.0,13.0,0.454,0.419,2026-10-04
+Turkey,BSL,BKS,Bahçeşehir Koleji,Tyler Cavanaugh,1,1,21.98,11.0,13.0,1.0,1.0,7.0,0.318,0.5,2026-10-04
+Turkey,BSL,BKS,Bahçeşehir Koleji,Kenan Sipahi,1,1,24.05,10.0,12.0,1.0,4.0,8.0,0.333,0.416,2026-10-04
+Turkey,BSL,BKS,Bahçeşehir Koleji,Furkan Haltali,1,1,12.88,10.0,5.0,4.0,1.0,3.0,0.233,0.776,2026-10-04
 Turkey,BSL,BKS,Bahçeşehir Koleji,Ismet Akpinar,1,1,10.95,6.0,6.0,1.0,0.0,3.0,0.274,0.548,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Mateusz Ponitka,2,2,20.76,5.5,4.0,1.0,2.0,1.5,0.072,0.265,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Isiaha Mike,2,2,19.58,3.5,2.5,2.5,0.0,3.0,0.153,0.179,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Aleksa Avramovic,1,1,16.03,2.0,5.0,0.0,4.0,9.0,0.561,0.125,2026-09-27 11:00
+Turkey,BSL,BKS,Bahçeşehir Koleji,Mateusz Ponitka,1,1,21.23,4.0,2.0,1.0,3.0,1.0,0.047,0.188,2026-10-04
+Turkey,BSL,BKS,Bahçeşehir Koleji,Isiaha Mike,1,1,19.05,4.0,0.0,4.0,0.0,2.0,0.105,0.21,2026-10-04
+Turkey,BSL,BKS,Bahçeşehir Koleji,Damien Inglis,1,1,17.53,1.0,5.0,3.0,1.0,6.0,0.342,0.057,2026-10-04
+Turkey,BSL,BKS,Bahçeşehir Koleji,Marcquise Reed,1,1,16.75,1.0,7.0,0.0,1.0,7.0,0.418,0.06,2026-10-04
 Regional,ABA,BOS,Bosna BH Telecom,Darko Talic,1,1,22.35,20.0,18.0,3.0,3.0,9.0,0.403,0.895,2026-10-03 19:00
 Regional,ABA,BOS,Bosna BH Telecom,Reginald Jordan Perry,1,1,24.3,15.0,14.0,6.0,1.0,9.0,0.37,0.617,2026-10-03 19:00
 Regional,ABA,BOS,Bosna BH Telecom,Adin Vrabac,1,1,24.8,13.0,10.0,2.0,1.0,4.0,0.161,0.524,2026-10-03 19:00
@@ -149,34 +148,27 @@ Regional,ABA,DUB,Dubai Basketball,Filip Petrusev,1,1,20.32,1.0,5.0,2.0,1.0,6.0,0
 Regional,ABA,DUB,Dubai Basketball,Jaron Samuel Blossomgame,1,1,10.0,1.0,3.0,4.0,0.0,4.0,0.4,0.1,2026-10-04 20:00
 Regional,ABA,DUB,Dubai Basketball,Klemen Prepelic,1,1,6.88,1.0,3.0,0.0,0.0,2.0,0.291,0.145,2026-10-04 20:00
 Regional,ABA,DUB,Dubai Basketball,Nemanja Dangubic,1,1,30.32,0.0,3.0,1.0,1.0,3.0,0.099,0.0,2026-10-04 20:00
-Turkey,BSL,EFS,Anadolu Efes,Kai Jones,1,1,28.18,23.0,11.0,10.0,0.0,5.0,0.177,0.816,2026-10-04 11:00
-Turkey,BSL,EFS,Anadolu Efes,Collin Malcolm,1,1,24.27,17.0,13.0,2.0,3.0,9.0,0.371,0.701,2026-10-04 11:00
-Turkey,BSL,EFS,Anadolu Efes,Dario Šarić,2,2,22.2,17.0,13.0,5.0,1.0,8.5,0.383,0.766,2026-10-04 11:00
-Turkey,BSL,EFS,Anadolu Efes,Matthew Strazel,2,2,22.13,15.5,12.0,4.0,5.0,8.0,0.361,0.7,2026-10-04 11:00
+Turkey,BSL,EFS,Anadolu Efes,Dario Šarić,1,1,25.03,19.0,16.0,4.0,0.0,10.0,0.399,0.759,2026-09-27 13:30
+Turkey,BSL,EFS,Anadolu Efes,Matthew Strazel,1,1,18.1,13.0,10.0,4.0,1.0,4.0,0.221,0.718,2026-09-27 13:30
 Turkey,BSL,EFS,Anadolu Efes,Mike James,1,1,26.22,12.0,11.0,1.0,6.0,9.0,0.343,0.458,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Jordan Loyd,2,2,24.63,12.0,13.0,2.0,2.0,10.0,0.406,0.487,2026-10-04 11:00
-Turkey,BSL,EFS,Anadolu Efes,Ercan Osmani,2,2,13.27,8.5,6.5,4.0,0.0,4.5,0.339,0.641,2026-10-04 11:00
-Turkey,BSL,EFS,Anadolu Efes,Erkan Yılmaz,2,2,14.56,7.5,5.5,3.5,1.0,5.0,0.343,0.515,2026-10-04 11:00
+Turkey,BSL,EFS,Anadolu Efes,Ercan Osmani,1,1,15.38,12.0,9.0,6.0,0.0,6.0,0.39,0.78,2026-09-27 13:30
+Turkey,BSL,EFS,Anadolu Efes,Bruno Fernando,1,1,22.12,10.0,7.0,5.0,0.0,5.0,0.226,0.452,2026-09-27 13:30
+Turkey,BSL,EFS,Anadolu Efes,Jordan Loyd,1,1,21.12,10.0,11.0,1.0,2.0,8.0,0.379,0.474,2026-09-27 13:30
+Turkey,BSL,EFS,Anadolu Efes,David Mutaf,1,1,17.42,9.0,9.0,5.0,1.0,9.0,0.517,0.517,2026-09-27 13:30
+Turkey,BSL,EFS,Anadolu Efes,Daron Russell,1,1,18.73,7.0,9.0,1.0,3.0,8.0,0.427,0.374,2026-09-27 13:30
 Turkey,BSL,EFS,Anadolu Efes,Santi Yusta,1,1,16.32,7.0,8.0,1.0,1.0,5.0,0.306,0.429,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Daron Russell,2,2,16.79,6.5,9.0,0.5,2.5,7.0,0.417,0.387,2026-10-04 11:00
-Turkey,BSL,EFS,Anadolu Efes,Bruno Fernando,2,2,16.97,4.5,3.5,3.5,0.0,3.5,0.206,0.265,2026-10-04 11:00
-Turkey,BSL,EFS,Anadolu Efes,David Mutaf,2,2,19.1,4.0,6.0,3.0,0.5,7.5,0.393,0.209,2026-10-04 11:00
+Turkey,BSL,EFS,Anadolu Efes,Erkan Yılmaz,1,1,13.83,6.0,5.0,3.0,1.0,4.0,0.289,0.434,2026-09-27 13:30
 Turkey,BSL,EFS,Anadolu Efes,Burak Yıldızlı,1,1,3.27,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-09-27 13:30
 Turkey,BSL,EFS,Anadolu Efes,Darius Karutaşu,1,1,2.47,-1.0,0.0,0.0,0.0,1.0,0.405,-0.405,2026-09-27 13:30
 Turkey,BSL,FBT,Fenerbahçe,Johnny Juzang,1,1,26.92,30.0,21.0,7.0,2.0,6.0,0.223,1.115,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Talen Horton-Tucker,2,2,21.84,22.0,19.0,4.0,4.0,11.5,0.527,1.007,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Shavon Shields,1,1,22.62,19.0,13.0,7.0,1.0,6.0,0.265,0.84,2026-09-27 11:00
-Turkey,BSL,FBT,Fenerbahçe,Braxton Key,1,1,24.37,18.0,12.0,2.0,5.0,11.0,0.451,0.739,2026-09-27 11:00
-Turkey,BSL,FBT,Fenerbahçe,Wade Baldwin,1,1,18.03,9.0,4.0,2.0,6.0,6.0,0.333,0.499,2026-09-27 11:00
-Turkey,BSL,FBT,Fenerbahçe,Trent Forrest,2,2,20.51,6.5,8.5,2.5,1.5,6.5,0.317,0.317,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Chris Silva,2,2,15.4,6.5,3.0,4.0,1.0,2.0,0.13,0.422,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Nicolò Melli,2,2,22.68,6.0,6.5,4.5,1.0,6.0,0.265,0.265,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Melih Mahmutoğlu,1,1,17.48,5.0,8.0,0.0,0.0,6.0,0.343,0.286,2026-09-27 11:00
-Turkey,BSL,FBT,Fenerbahçe,Sertaç Şanlı,2,2,15.78,4.0,4.0,3.0,0.5,4.0,0.254,0.254,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Onuralp Bitim,2,2,22.42,3.5,9.0,2.0,1.0,10.0,0.446,0.156,2026-10-04 08:30
+Turkey,BSL,FBT,Fenerbahçe,Talen Horton-Tucker,1,1,21.63,27.0,22.0,5.0,3.0,10.0,0.462,1.248,2026-10-04 08:30
+Turkey,BSL,FBT,Fenerbahçe,Onuralp Bitim,1,1,23.95,8.0,13.0,3.0,1.0,14.0,0.585,0.334,2026-10-04 08:30
+Turkey,BSL,FBT,Fenerbahçe,Chris Silva,1,1,17.18,7.0,2.0,5.0,2.0,1.0,0.058,0.407,2026-10-04 08:30
+Turkey,BSL,FBT,Fenerbahçe,Nicolò Melli,1,1,22.8,6.0,7.0,3.0,1.0,3.0,0.132,0.263,2026-10-04 08:30
+Turkey,BSL,FBT,Fenerbahçe,Trent Forrest,1,1,21.7,5.0,7.0,4.0,1.0,7.0,0.323,0.23,2026-10-04 08:30
 Turkey,BSL,FBT,Fenerbahçe,Will Clyburn,1,1,16.3,2.0,3.0,2.0,1.0,5.0,0.307,0.123,2026-10-04 08:30
+Turkey,BSL,FBT,Fenerbahçe,Sertaç Şanlı,1,1,15.62,2.0,3.0,3.0,1.0,5.0,0.32,0.128,2026-10-04 08:30
 Turkey,BSL,FBT,Fenerbahçe,Ignas Sargiunas,1,1,17.13,1.0,4.0,1.0,1.0,4.0,0.233,0.058,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Kadir Yancı,1,1,3.13,1.0,0.0,1.0,0.0,0.0,0.0,0.319,2026-09-27 11:00
 Turkey,BSL,FBT,Fenerbahçe,Shane Larkin,1,1,16.77,-3.0,3.0,1.0,0.0,6.0,0.358,-0.179,2026-10-04 08:30
 Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Antonio Blakeney,1,1,25.0,20.0,21.0,2.0,3.0,15.0,0.6,0.8,2026-10-03 20:55
 Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Tai Odiase,2,2,21.5,19.5,11.0,7.0,0.5,4.0,0.186,0.907,2026-10-03 20:55

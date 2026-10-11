@@ -37,18 +37,7 @@ button,.btn,input,select{min-height:44px}
   th,td{padding:7px 8px!important}
   .metric b,.card b{font-size:22px!important}
 }
-</style><style id="feiq-language-switcher-style">
-.feiq-language-switcher{position:sticky;top:0;z-index:9999;display:flex;justify-content:flex-end;gap:8px;padding:8px 14px;background:rgba(7,16,29,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif}
-.feiq-language-switcher a{color:#d8f1ff;text-decoration:none;border:1px solid rgba(91,188,255,.35);border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900;background:rgba(91,188,255,.08)}
-.feiq-language-switcher a:hover{background:rgba(91,188,255,.18)}
-@media(min-width:900px){.feiq-language-switcher{padding-right:24px}}
-</style><style id="mobile-domestic-nav-fix">
-@media(max-width:760px){
-  .topnav{display:block!important}
-  .navlinks,.links{display:flex!important;gap:8px!important;overflow-x:auto!important;white-space:nowrap!important;margin-top:10px!important;padding-bottom:6px!important;-webkit-overflow-scrolling:touch}
-  .navlinks a,.links a{flex:0 0 auto;border:1px solid rgba(91,188,255,.25);border-radius:999px;padding:7px 10px;background:rgba(91,188,255,.08)}
-}
-</style></head><body><div class="feiq-language-switcher"><a href="/premier-league/team-analyzer">EN</a><a href="/sr/premier-league">SR</a><a href="/el/premier-league">EL</a></div><header><div class="nav"><a class="brand" href="/">Fantasy Edge <span>IQ</span></a><nav class="links"><a href="/premier-league">FPL dashboard</a><a href="/euroleague">EuroLeague</a><a href="/methodology">Methodology</a></nav></div><h1>FPL Transfer IQ</h1><div class="sub">Enter your FPL team ID to get a compact transfer check: risks, affordable upgrades and captain shortlist.</div></header><main>
+</style></head><body><header><div class="nav"><a class="brand" href="/">Fantasy Edge <span>IQ</span></a><nav class="links"><a href="/premier-league">FPL dashboard</a><a href="/euroleague">EuroLeague</a><a href="/methodology">Methodology</a></nav></div><h1>FPL Transfer IQ</h1><div class="sub">Enter your FPL team ID to get a compact transfer check: risks, affordable upgrades and captain shortlist.</div></header><main>
 <section class="box"><div class="toolbar"><label>FPL Team ID<input id="teamId" placeholder="e.g. 123456" inputmode="numeric"></label><label>Bank override £m<input id="bank" type="number" min="0" step="0.1" placeholder="optional"></label><label>Free transfers<select id="ft"><option>1</option><option>2</option><option>3</option></select></label><label>Style<select id="style"><option value="balanced">Balanced</option><option value="safe">Safe</option><option value="aggressive">Aggressive</option></select></label><button class="primary" onclick="analyze()">Analyze team</button></div><p class="mut">Uses the latest publicly available FPL squad. Private transfers made before the next deadline may not be visible.</p></section>
 <section id="status" class="note">Paste your team ID and click Analyze team.</section>
 <section id="results" style="display:none"><div id="summary" class="box"></div><div class="grid"><div class="box"><h2>Priority sells</h2><div id="sells"></div></div><div class="box"><h2>Best 1-transfer ideas</h2><div id="moves"></div></div><div class="box"><h2>Captain shortlist</h2><div id="caps"></div></div></div><div class="box"><h2>Your squad</h2><div class="tablewrap"><table id="squad"></table></div></div></section>
