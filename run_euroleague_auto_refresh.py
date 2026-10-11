@@ -30,6 +30,7 @@ PIPELINE = [
     "add_minutes_and_pirmin_cards.py",
     "add_shot_share_section.py",
     "finalize_euroleague_refresh.py",
+    "patch_average_pir_card.py",
 ]
 
 
