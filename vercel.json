@@ -16,15 +16,29 @@
     { "source": "/el/eurocup/domestic-competitions", "destination": "/el-eurocup-domestic-competitions.html" }
   ],
   "redirects": [
-    { "source": "/pricing", "destination": "/", "permanent": true },
-    { "source": "/pricing.html", "destination": "/", "permanent": true }
+    {
+      "source": "/pricing",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/pricing.html",
+      "destination": "/",
+      "permanent": true
+    }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ]
