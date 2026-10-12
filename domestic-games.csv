@@ -84,3 +84,15 @@ Latvia/Estonia,Lat-Est BL,Latvian-Estonian Basketball League,2026-27,Regular Sea
 Bulgaria,Super Cup,Bulgarian Super Cup,2026-27,Final,Final,BGR-SC-BLK-CHM-20261003,2026-10-03,,Balkan Botevgrad,BLK,Cherno More Ticha,CHM,94,71,,,,,,,,,played,official_result_only,Final Super Cup result verified on official Balkan Botevgrad site; domestic league starts later. No player rows fabricated.,https://balkan-basket.com/
 United Kingdom,SLB,Super League Basketball,2026-27,Regular Season,Regular Season,SLB-LDN-LEI-20261002,2026-10-02 18:30,Copper Box Arena,London Lions,LDN,Leicester Riders,LEI,71,66,,,,,,,,,played,third_party_result_only,Final SLB result verified via SofaScore. No player rows fabricated.,https://www.sofascore.com/basketball/match/leicester-riders-london-lions/qxbsuxb
 Poland,PLK,Orlen Basket Liga,2026-27,Regular Season,01,PLK-ARK-WKS-20261004,2026-10-04 17:30,Gdynia Arena,AMW Arka Gdynia,ARK,Śląsk Wrocław,WKS,95,70,26.0,17.0,27.0,19.0,24.0,14.0,18.0,20.0,played,third_party_partial_boxscore_no_pir,Final PLK result and partial player minutes/PTS/REB/AST table verified from Polish report; no shooting/PIR fabricated.,https://strefabasketu.pl/arka-gdynia-slask-wroclaw-95-70/
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-10,,COR,COR,CAZ,CAZ,71,92,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-10,,UNI,UNI,MBA,MBA,92,84,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-10,,BRE,BRE,GIR,GIR,115,92,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-11,,MOB,MOB,ILE,ILE,91,89,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-11,,RMB,RMB,MAN,MAN,120,83,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-11,,UCM,UCM,LLT,LLT,77,90,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-11,,BKN,BKN,JOV,JOV,93,73,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-11,,BLB,BLB,BUR,BUR,96,87,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Spain,Liga Endesa,Liga Endesa,2026-27,Regular Season,03,,2026-10-12,,BAR,BAR,VBC,VBC,89,86,,,,,,,,,played,web_search,ACB R3 from marca.com/gigantes.com,
+Italy,LBA Serie A,LBA Serie A,2026-27,Regular Season,03,,2026-10-11,,MIL,MIL,TRE,TRE,106,77,,,,,,,,,played,web_search,LBA R3 from sportando/olimpiamilano,
+Italy,LBA Serie A,LBA Serie A,2026-27,Regular Season,03,,2026-10-10,,VAR,VAR,REG,REG,81,86,,,,,,,,,played,web_search,LBA R3 from sportando/olimpiamilano,
+Italy,LBA Serie A,LBA Serie A,2026-27,Regular Season,03,,2026-10-10,,BRE,BRE,TRI,TRI,86,67,,,,,,,,,played,web_search,LBA R3 from sportando/olimpiamilano,
