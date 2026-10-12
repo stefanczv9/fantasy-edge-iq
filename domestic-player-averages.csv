@@ -1,571 +1,727 @@
 country,league,team_abbr,team_name,player,games_played,rank_games,avg_minutes,avg_pir,avg_pts,avg_reb,avg_ast,avg_fg_att,avg_fga_per_min,avg_pir_per_min,last_game_date
-France,Betclic Elite,ASV,ASVEL,Jae Crowder,1,1,22.08,19.0,16.0,3.0,4.0,11.0,0.498,0.861,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Tremont Waters,2,2,19.55,17.5,15.0,1.0,4.5,7.0,0.358,0.895,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Patty Mills,1,1,21.43,16.0,17.0,1.0,0.0,9.0,0.42,0.747,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Joel Bolomboy,2,2,24.22,15.0,6.0,7.0,2.5,2.5,0.103,0.619,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Hugo Besson,2,2,21.27,10.0,10.5,2.0,5.5,8.0,0.376,0.47,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Marc-Owen Fodzo Dada,2,2,21.5,9.5,8.5,6.0,2.5,6.0,0.279,0.442,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Both Gach,2,2,23.08,7.5,8.5,3.5,1.0,7.0,0.303,0.325,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Bodian Massa,2,2,12.77,6.5,4.5,3.0,0.5,3.0,0.235,0.509,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Yves Pons,2,2,13.73,5.5,4.5,2.0,0.0,2.5,0.182,0.401,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Nate Sestina,2,2,18.25,3.0,6.5,1.5,0.0,6.5,0.356,0.164,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Myles Cale,1,1,11.95,2.0,4.0,2.0,0.0,4.0,0.335,0.167,2026-10-04
-France,Betclic Elite,ASV,ASVEL,David Lighty,1,1,6.77,1.0,2.0,0.0,0.0,1.0,0.148,0.148,2026-10-04
-France,Betclic Elite,ASV,ASVEL,Edwin Jackson,2,2,14.55,-1.0,0.0,2.0,1.5,4.0,0.275,-0.069,2026-10-04
-Spain,ACB,BAR,Barça,O. Balcerowski,2,2,19.33,23.0,16.5,6.0,1.0,6.5,0.336,1.19,2026-10-04
-Spain,ACB,BAR,Barça,K. Punter,2,2,20.94,14.5,14.0,2.5,2.5,8.5,0.406,0.692,2026-10-04
-Spain,ACB,BAR,Barça,O. Nkamhoua,2,2,20.67,14.5,12.0,2.5,1.5,5.5,0.266,0.702,2026-10-04
-Spain,ACB,BAR,Barça,J. Parra,2,2,22.94,12.0,10.0,3.5,1.5,8.0,0.349,0.523,2026-10-04
-Spain,ACB,BAR,Barça,T. Martin,2,2,21.52,12.0,11.0,4.5,1.0,9.5,0.441,0.557,2026-10-04
-Spain,ACB,BAR,Barça,J. Robinson,2,2,18.55,10.0,13.5,0.5,2.5,9.5,0.512,0.539,2026-10-04
-Spain,ACB,BAR,Barça,D. Brizuela,2,2,18.97,9.5,11.0,1.5,1.5,7.5,0.395,0.501,2026-10-04
-Spain,ACB,BAR,Barça,J. Núñez,2,2,6.91,6.5,1.5,0.0,3.0,1.0,0.145,0.941,2026-10-04
-Spain,ACB,BAR,Barça,S. Umude,2,2,17.06,4.0,5.0,3.0,1.0,4.5,0.264,0.234,2026-10-04
-Spain,ACB,BAR,Barça,U. Gibson,2,2,14.88,2.0,9.0,1.5,1.5,7.0,0.47,0.134,2026-10-04
-Spain,ACB,BAR,Barça,J. Minaya,2,2,14.37,2.0,1.0,2.0,0.5,2.0,0.139,0.139,2026-10-04
-Spain,ACB,BAR,Barça,A. Ubal,2,2,3.86,2.0,2.0,0.5,0.0,0.5,0.13,0.518,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Oscar Da Silva,1,1,26.0,25.0,17.0,7.0,2.0,10.0,0.385,0.962,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Johannes Thiemann,1,1,13.0,21.0,15.0,4.0,3.0,4.0,0.308,1.615,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Duane Washington,1,1,15.0,20.0,19.0,3.0,1.0,11.0,0.733,1.333,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Johannes Voigtmann,1,1,14.0,17.0,7.0,9.0,2.0,5.0,0.357,1.214,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Justinian Jessup,1,1,18.0,13.0,10.0,3.0,3.0,9.0,0.5,0.722,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Tobias Jensen,1,1,15.0,12.0,6.0,2.0,3.0,2.0,0.133,0.8,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Vladimir Lucic,1,1,14.0,12.0,7.0,2.0,3.0,3.0,0.214,0.857,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Rokas Jokubaitis,1,1,15.0,9.0,10.0,1.0,3.0,6.0,0.4,0.6,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Kamar Baldwin,1,1,13.0,9.0,2.0,3.0,3.0,0.0,0.0,0.692,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Niels Giffey,1,1,22.0,7.0,10.0,0.0,0.0,6.0,0.273,0.318,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Justus Hollatz,1,1,16.0,7.0,5.0,1.0,3.0,5.0,0.312,0.438,2026-10-04
-Germany,BBL,BAY,FC Bayern Munich,Andreas Obst,1,1,18.0,4.0,5.0,1.0,3.0,6.0,0.333,0.222,2026-10-04
-Turkey,BSL,BJK,Beşiktaş,Anthony Brown,2,2,22.73,15.5,12.5,3.5,2.0,6.5,0.286,0.682,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,Wenyen Gabriel,1,1,16.68,13.0,9.0,2.0,1.0,4.0,0.24,0.779,2026-09-27 13:30
-Turkey,BSL,BJK,Beşiktaş,Berk Uğurlu,2,2,22.36,11.5,10.5,2.5,3.5,9.0,0.403,0.514,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,Eugene Omoruyi,2,2,19.71,10.5,7.0,5.0,2.5,3.5,0.178,0.533,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,Conor Morgan,2,2,17.5,10.5,7.0,4.0,2.0,4.5,0.257,0.6,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,David DeJulius,2,2,16.23,10.5,9.0,1.5,3.0,6.0,0.37,0.647,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,James Metecan Birsen,2,2,16.3,10.0,9.0,5.5,2.0,7.0,0.429,0.613,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,Ante Žižić,2,2,14.22,8.0,7.0,4.0,0.5,4.5,0.317,0.563,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,Furkan Korkmaz,2,2,21.57,7.0,5.5,4.0,2.0,7.0,0.325,0.325,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,Devon Dotson,1,1,25.05,6.0,6.0,1.0,2.0,5.0,0.2,0.24,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,Jaylen Nowell,2,2,20.18,2.5,9.5,0.0,1.0,9.5,0.471,0.124,2026-10-05
-Turkey,BSL,BJK,Beşiktaş,Scottie Wilbekin,2,2,8.34,-2.0,1.0,0.0,0.5,3.5,0.42,-0.24,2026-10-05
-Turkey,BSL,BKS,Bahçeşehir Koleji,Trevion Williams,1,1,26.95,38.0,20.0,15.0,2.0,9.0,0.334,1.41,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Malachi Flynn,1,1,28.62,12.0,14.0,3.0,5.0,13.0,0.454,0.419,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Tyler Cavanaugh,1,1,21.98,11.0,13.0,1.0,1.0,7.0,0.318,0.5,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Kenan Sipahi,1,1,24.05,10.0,12.0,1.0,4.0,8.0,0.333,0.416,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Furkan Haltali,1,1,12.88,10.0,5.0,4.0,1.0,3.0,0.233,0.776,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Ismet Akpinar,1,1,10.95,6.0,6.0,1.0,0.0,3.0,0.274,0.548,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Mateusz Ponitka,1,1,21.23,4.0,2.0,1.0,3.0,1.0,0.047,0.188,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Isiaha Mike,1,1,19.05,4.0,0.0,4.0,0.0,2.0,0.105,0.21,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Damien Inglis,1,1,17.53,1.0,5.0,3.0,1.0,6.0,0.342,0.057,2026-10-04
-Turkey,BSL,BKS,Bahçeşehir Koleji,Marcquise Reed,1,1,16.75,1.0,7.0,0.0,1.0,7.0,0.418,0.06,2026-10-04
-Regional,ABA,BOS,Bosna BH Telecom,Darko Talic,1,1,22.35,20.0,18.0,3.0,3.0,9.0,0.403,0.895,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Reginald Jordan Perry,1,1,24.3,15.0,14.0,6.0,1.0,9.0,0.37,0.617,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Adin Vrabac,1,1,24.8,13.0,10.0,2.0,1.0,4.0,0.161,0.524,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Gary Browne Ramirez,1,1,17.82,13.0,7.0,4.0,3.0,3.0,0.168,0.73,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Shawn O Neal Pipes Jr,1,1,22.32,12.0,11.0,1.0,4.0,5.0,0.224,0.538,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Deandre Gholston,1,1,28.1,7.0,10.0,3.0,2.0,9.0,0.32,0.249,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Marcus Dane Domask,1,1,10.63,7.0,6.0,2.0,0.0,4.0,0.376,0.658,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Nikola Popovic,1,1,15.53,5.0,9.0,1.0,2.0,6.0,0.386,0.322,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Ryan Andrew Hawkins,1,1,15.37,5.0,3.0,3.0,0.0,2.0,0.13,0.325,2026-10-03 19:00
-Regional,ABA,BOS,Bosna BH Telecom,Edin Atic,1,1,18.8,2.0,7.0,3.0,1.0,8.0,0.426,0.106,2026-10-03 19:00
-Regional,ABA,BUD,Budućnost VOLI,Juwan Morgan,1,1,22.1,23.0,11.0,13.0,2.0,4.0,0.181,1.041,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Kevin Duane Ferrell Jr,1,1,27.57,18.0,17.0,0.0,5.0,11.0,0.399,0.653,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Jerry Franck Boutsiele,1,1,25.57,18.0,12.0,4.0,0.0,4.0,0.156,0.704,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Iverson Latrell Molinar Jones,1,1,26.22,8.0,10.0,3.0,2.0,13.0,0.496,0.305,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Stefan Dzordzevic,1,1,11.72,8.0,6.0,6.0,1.0,5.0,0.427,0.683,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Dzordzije Jovanovic,1,1,14.25,6.0,7.0,0.0,1.0,4.0,0.281,0.421,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Oleksandr Kovliar,1,1,12.1,5.0,2.0,3.0,3.0,3.0,0.248,0.413,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Axel Bouteille,1,1,26.08,4.0,8.0,7.0,0.0,12.0,0.46,0.153,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Justin Edward Smith,1,1,15.17,0.0,4.0,1.0,0.0,2.0,0.132,0.0,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Emir Hadzibegovic,1,1,5.45,-2.0,0.0,0.0,0.0,0.0,0.0,-0.367,2026-10-02 20:30
-Regional,ABA,BUD,Budućnost VOLI,Marial Shayok,1,1,13.78,-4.0,0.0,2.0,0.0,5.0,0.363,-0.29,2026-10-02 20:30
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Z. Samar,2,2,21.98,19.5,15.5,4.0,4.0,8.5,0.387,0.887,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,C. Sengfelder,2,2,24.09,14.5,12.0,5.5,1.0,7.5,0.311,0.602,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,DJ Steward,2,2,23.08,14.0,17.5,3.5,2.0,15.0,0.65,0.606,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,C. Audige,2,2,19.96,13.5,16.0,2.5,1.5,10.0,0.501,0.676,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,B. Koprivica,2,2,15.73,11.5,11.5,5.5,0.5,7.5,0.477,0.731,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,D. Díez,2,2,17.54,8.0,3.5,6.0,1.0,3.5,0.2,0.456,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,S. Doumbouya,2,2,18.95,6.0,10.5,2.5,1.0,9.5,0.501,0.317,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,R. Lobaco,2,2,17.32,5.5,3.0,3.5,1.0,3.5,0.202,0.318,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,R. Guerrero,2,2,3.68,2.5,2.0,1.0,0.0,1.5,0.407,0.679,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,D.Radosavljevic,2,2,20.12,2.0,2.0,3.5,1.5,3.5,0.174,0.099,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,P. Almazán,2,2,3.85,-0.5,0.0,0.5,0.0,0.0,0.0,-0.13,2026-10-04 10:00
-Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,J. Taboada,2,2,13.71,-3.0,2.0,2.0,1.0,5.0,0.365,-0.219,2026-10-04 10:00
-Germany,BBL,CHE,NINERS Chemnitz,Nighael Ceaser,4,4,27.5,18.5,12.3,9.0,2.5,,,0.673,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Phlandrous Fleming Jr,4,4,29.3,16.8,14.5,4.0,6.3,,,0.573,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Stef Smith,4,4,32.0,14.3,18.3,2.5,3.8,,,0.447,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Benjamin Forrest Burnham,4,4,30.5,12.3,10.5,6.8,0.3,,,0.403,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Cobe Williams,3,3,27.7,10.0,13.3,2.0,3.0,,,0.361,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Urald King,3,3,25.0,8.7,9.3,4.0,0.3,,,0.348,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Jannis von Seckendorff,4,4,12.3,7.3,5.0,4.0,0.3,,,0.593,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Darion Atkins,2,2,20.5,5.0,3.5,3.0,0.5,,,0.244,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Mateo Seric,4,4,22.0,4.5,5.8,3.5,0.5,,,0.205,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Alexander Richardson,3,3,2.0,-0.3,0.0,0.3,0.0,,,-0.15,2026-10-04
-Germany,BBL,CHE,NINERS Chemnitz,Elias Roedl,4,4,8.3,-2.0,0.5,0.5,0.0,,,-0.241,2026-10-04
-Regional,ABA,COL,Cedevita Olimpija,Matthew Christopher Hurt,1,1,24.7,25.0,21.0,4.0,0.0,12.0,0.486,1.012,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Anthony Dewayne Cowan,1,1,28.57,23.0,18.0,3.0,3.0,6.0,0.21,0.805,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Urban Kroflic,1,1,11.87,18.0,14.0,1.0,0.0,4.0,0.337,1.517,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Noah Arthur Kirkwood,1,1,29.85,12.0,12.0,5.0,4.0,14.0,0.469,0.402,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,David Skara,1,1,21.22,7.0,5.0,4.0,0.0,3.0,0.141,0.33,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Rihards Lomazs,1,1,23.37,5.0,3.0,2.0,5.0,3.0,0.128,0.214,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Jayce Ryback Johnson,1,1,11.9,3.0,4.0,3.0,0.0,2.0,0.168,0.252,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Osayimwen Olugbenga Benson Osifo,1,1,13.18,2.0,2.0,2.0,1.0,3.0,0.228,0.152,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Jaka Blazic,1,1,12.88,0.0,5.0,1.0,1.0,6.0,0.466,0.0,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Rok Radovic,1,1,11.23,0.0,2.0,1.0,2.0,4.0,0.356,0.0,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Cameron Toussaint Selidji Houindo,1,1,9.0,0.0,3.0,3.0,0.0,4.0,0.444,0.0,2026-10-03 17:00
-Regional,ABA,COL,Cedevita Olimpija,Miha Cerkvenik,1,1,2.23,-1.0,0.0,0.0,0.0,1.0,0.448,-0.448,2026-10-03 17:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Christopher James Jones Jr,1,1,25.17,23.0,19.0,2.0,7.0,15.0,0.596,0.914,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Jared Butler,1,1,16.75,14.0,13.0,3.0,3.0,10.0,0.597,0.836,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,David Kramer,1,1,19.5,12.0,7.0,6.0,1.0,7.0,0.359,0.615,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Chima Moneke,1,1,23.63,11.0,7.0,8.0,0.0,6.0,0.254,0.465,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Jordan Nwora,1,1,15.9,11.0,11.0,2.0,1.0,8.0,0.503,0.692,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Ebuka Izundu,1,1,17.63,7.0,9.0,3.0,0.0,4.0,0.227,0.397,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Nikola Dzurisic,1,1,8.93,6.0,6.0,1.0,0.0,4.0,0.448,0.672,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Tyson Gregory Carter,1,1,22.37,5.0,7.0,1.0,2.0,8.0,0.358,0.224,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Vojin Medarevic,1,1,18.3,5.0,6.0,2.0,3.0,8.0,0.437,0.273,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Dejan Davidovac,1,1,17.97,3.0,2.0,6.0,0.0,3.0,0.167,0.167,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Stefan Miljenovic,1,1,11.38,1.0,2.0,0.0,0.0,2.0,0.176,0.088,2026-10-04 18:00
-Regional,ABA,CZV,Crvena zvezda Meridianbet,Patrick O Neal Baldwin Jr,1,1,2.47,-1.0,0.0,1.0,0.0,2.0,0.811,-0.405,2026-10-04 18:00
-Italy,LBA,DER,Bertram Derthona Tortona,Dante Maddox,2,2,26.0,18.0,19.0,3.0,2.0,11.0,0.423,0.692,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Justin Gorham,2,2,28.0,14.5,13.0,3.0,1.5,6.5,0.232,0.518,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Dominik Olejniczak,2,2,25.0,13.0,10.0,3.5,1.5,5.5,0.22,0.52,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Prentiss Hubb,2,2,25.5,10.5,10.5,1.5,5.5,11.0,0.431,0.412,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Aljami Durham,2,2,14.5,9.0,8.5,3.0,2.5,6.0,0.414,0.621,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Karim Jallow,2,2,22.5,7.5,6.5,2.0,1.5,3.5,0.156,0.333,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Amar Alibegovic,2,2,19.5,5.0,7.0,2.5,1.0,6.0,0.308,0.256,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Andrea Pecchia,2,2,18.5,5.0,2.5,2.0,1.5,1.5,0.081,0.27,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Giordano Bortolani,2,2,15.5,4.0,8.5,1.0,0.0,10.0,0.645,0.258,2026-10-04 10:00
-Italy,LBA,DER,Bertram Derthona Tortona,Giulio Gazzotti,2,2,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-04 10:00
-Regional,ABA,DUB,Dubai Basketball,Tornike Shengelia,1,1,19.95,20.0,11.0,2.0,3.0,5.0,0.251,1.003,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Kenan Kamenjas,1,1,15.35,19.0,11.0,8.0,0.0,5.0,0.326,1.238,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Davion Dee Lee O Neal Mintz,1,1,23.12,17.0,20.0,3.0,0.0,12.0,0.519,0.735,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Kosta Kondic,1,1,18.15,13.0,10.0,1.0,2.0,5.0,0.275,0.716,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Elie Franck Rey Okobo,1,1,10.0,9.0,8.0,1.0,2.0,5.0,0.5,0.9,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Mamadi Diakite,1,1,14.38,7.0,6.0,5.0,0.0,6.0,0.417,0.487,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Thomas Ryan Walkup,1,1,21.85,5.0,0.0,0.0,7.0,0.0,0.0,0.229,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Dwayne Lee Bacon Jr,1,1,9.68,4.0,5.0,1.0,1.0,4.0,0.413,0.413,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Filip Petrusev,1,1,20.32,1.0,5.0,2.0,1.0,6.0,0.295,0.049,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Jaron Samuel Blossomgame,1,1,10.0,1.0,3.0,4.0,0.0,4.0,0.4,0.1,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Klemen Prepelic,1,1,6.88,1.0,3.0,0.0,0.0,2.0,0.291,0.145,2026-10-04 20:00
-Regional,ABA,DUB,Dubai Basketball,Nemanja Dangubic,1,1,30.32,0.0,3.0,1.0,1.0,3.0,0.099,0.0,2026-10-04 20:00
-Turkey,BSL,EFS,Anadolu Efes,Dario Šarić,1,1,25.03,19.0,16.0,4.0,0.0,10.0,0.399,0.759,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Matthew Strazel,1,1,18.1,13.0,10.0,4.0,1.0,4.0,0.221,0.718,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Mike James,1,1,26.22,12.0,11.0,1.0,6.0,9.0,0.343,0.458,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Ercan Osmani,1,1,15.38,12.0,9.0,6.0,0.0,6.0,0.39,0.78,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Bruno Fernando,1,1,22.12,10.0,7.0,5.0,0.0,5.0,0.226,0.452,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Jordan Loyd,1,1,21.12,10.0,11.0,1.0,2.0,8.0,0.379,0.474,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,David Mutaf,1,1,17.42,9.0,9.0,5.0,1.0,9.0,0.517,0.517,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Daron Russell,1,1,18.73,7.0,9.0,1.0,3.0,8.0,0.427,0.374,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Santi Yusta,1,1,16.32,7.0,8.0,1.0,1.0,5.0,0.306,0.429,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Erkan Yılmaz,1,1,13.83,6.0,5.0,3.0,1.0,4.0,0.289,0.434,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Burak Yıldızlı,1,1,3.27,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-09-27 13:30
-Turkey,BSL,EFS,Anadolu Efes,Darius Karutaşu,1,1,2.47,-1.0,0.0,0.0,0.0,1.0,0.405,-0.405,2026-09-27 13:30
-Turkey,BSL,FBT,Fenerbahçe,Johnny Juzang,1,1,26.92,30.0,21.0,7.0,2.0,6.0,0.223,1.115,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Talen Horton-Tucker,1,1,21.63,27.0,22.0,5.0,3.0,10.0,0.462,1.248,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Onuralp Bitim,1,1,23.95,8.0,13.0,3.0,1.0,14.0,0.585,0.334,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Chris Silva,1,1,17.18,7.0,2.0,5.0,2.0,1.0,0.058,0.407,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Nicolò Melli,1,1,22.8,6.0,7.0,3.0,1.0,3.0,0.132,0.263,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Trent Forrest,1,1,21.7,5.0,7.0,4.0,1.0,7.0,0.323,0.23,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Will Clyburn,1,1,16.3,2.0,3.0,2.0,1.0,5.0,0.307,0.123,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Sertaç Şanlı,1,1,15.62,2.0,3.0,3.0,1.0,5.0,0.32,0.128,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Ignas Sargiunas,1,1,17.13,1.0,4.0,1.0,1.0,4.0,0.233,0.058,2026-10-04 08:30
-Turkey,BSL,FBT,Fenerbahçe,Shane Larkin,1,1,16.77,-3.0,3.0,1.0,0.0,6.0,0.358,-0.179,2026-10-04 08:30
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Antonio Blakeney,1,1,25.0,20.0,21.0,2.0,3.0,15.0,0.6,0.8,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Tai Odiase,2,2,21.5,19.5,11.0,7.0,0.5,4.0,0.186,0.907,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Ish Wainright,2,2,29.0,14.5,13.5,5.0,1.0,7.0,0.241,0.5,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Khadeen Carrington,2,2,25.5,9.5,10.5,3.0,2.5,11.5,0.451,0.373,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Eugene German,2,2,23.0,8.5,13.5,2.0,2.5,11.5,0.5,0.37,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Bruno Caboclo,2,2,17.0,8.0,4.5,6.0,1.0,4.5,0.265,0.471,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Itay Segev,1,1,11.0,7.0,3.0,4.0,0.0,1.0,0.091,0.636,2026-09-26 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Guy Palatin,2,2,16.5,4.0,5.0,1.0,1.5,4.5,0.273,0.242,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Max Heidegger,2,2,16.5,3.0,7.5,0.5,2.0,6.0,0.364,0.182,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Frederic Bourdillon,1,1,5.0,3.0,4.0,0.0,1.0,1.0,0.2,0.6,2026-09-26 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Bar Timor,2,2,16.5,2.0,2.5,2.5,1.0,4.5,0.273,0.121,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Oz Blayzer,2,2,7.5,-1.0,0.0,2.0,0.5,1.0,0.133,-0.133,2026-10-03 20:55
-Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Tomas Satoransky,1,1,13.0,-2.0,0.0,1.0,3.0,2.0,0.154,-0.154,2026-09-26 20:55
-France,Betclic Elite,JLB,Bourg-en-Bresse,Nathan Soliman,2,2,29.0,15.5,15.0,5.0,4.0,,,0.534,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Trey Woodbury,2,2,22.0,13.5,14.5,2.0,1.5,,,0.614,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Tyrese Samuel,2,2,20.0,11.5,9.0,4.5,2.0,,,0.575,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Lionel Gaudoux,2,2,23.5,10.0,9.5,7.5,0.0,,,0.426,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Assemian Moulare,2,2,29.5,9.0,17.5,1.0,3.5,,,0.305,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Kadin Shedrick,2,2,14.0,9.0,7.5,4.0,1.0,,,0.643,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Tyson Walker,1,1,9.0,9.0,7.0,1.0,2.0,,,1.0,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Keith Jordan,2,2,22.5,6.5,10.0,1.0,1.5,,,0.289,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Adrian Nelson,2,2,18.0,5.5,5.0,4.5,0.0,,,0.306,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Antony Labanca,2,2,23.5,4.5,4.5,1.0,1.5,,,0.191,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Leni Monnet,2,2,5.5,0.5,0.5,0.5,0.0,,,0.091,2026-10-03
-France,Betclic Elite,JLB,Bourg-en-Bresse,Morgan Selebangue,1,1,1.0,0.0,0.0,0.0,0.0,,,0.0,2026-10-03
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Kenneth Lofton Jr.,1,1,29.0,19.0,16.0,6.0,3.0,9.0,0.31,0.655,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Devontae Cacok,1,1,20.0,19.0,12.0,12.0,0.0,7.0,0.35,0.95,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Shake Milton,1,1,28.0,14.0,14.0,2.0,5.0,8.0,0.286,0.5,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,David Roddy,1,1,27.0,7.0,12.0,3.0,0.0,11.0,0.407,0.259,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Yovel Zoosman,1,1,27.0,5.0,4.0,2.0,1.0,5.0,0.185,0.185,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Jaleen Smith,1,1,23.0,4.0,5.0,4.0,4.0,6.0,0.261,0.174,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Ethan Burg,1,1,19.0,4.0,8.0,2.0,0.0,6.0,0.316,0.211,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Nimrod Levi,1,1,11.0,-1.0,0.0,3.0,0.0,1.0,0.091,-0.091,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Shahar Luberboim,1,1,1.0,-1.0,0.0,0.0,0.0,1.0,1.0,-1.0,2026-10-04 19:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Gabriel Chachashvili,1,1,15.0,-5.0,0.0,3.0,1.0,3.0,0.2,-0.333,2026-10-04 19:00
-Spain,ACB,KBA,Kosner Baskonia,C. Duarte,2,2,18.59,18.5,16.0,2.0,2.0,8.0,0.43,0.995,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,T. Sedekerskis,2,2,18.28,18.5,9.5,6.0,3.0,5.0,0.273,1.012,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,K. Faried,2,2,21.32,18.0,12.0,6.5,1.0,7.0,0.328,0.844,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,M. Santos,1,1,16.22,13.0,11.0,4.0,2.0,5.0,0.308,0.802,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,D. Baugh,2,2,19.27,11.5,7.5,1.5,5.0,6.0,0.311,0.597,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,AJ Lawson,2,2,20.44,11.0,11.0,1.5,2.5,9.0,0.44,0.538,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,C. Frisch,2,2,10.78,11.0,7.5,1.5,0.5,3.5,0.325,1.02,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,K. Simmons,2,2,17.61,9.5,9.5,1.5,3.0,6.0,0.341,0.54,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,DJ Stewart,2,2,18.21,7.0,5.0,3.5,1.5,3.5,0.192,0.384,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,M. Howard,1,1,13.42,7.0,8.0,1.0,0.0,4.0,0.298,0.522,2026-09-27 10:30
-Spain,ACB,KBA,Kosner Baskonia,R. Kurucs,2,2,18.06,6.5,8.5,1.5,1.0,5.5,0.305,0.36,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,M. Spagnolo,2,2,12.41,5.5,6.5,1.0,2.5,4.5,0.363,0.443,2026-10-04
-Spain,ACB,KBA,Kosner Baskonia,S. Joksimovic,2,2,10.2,3.5,5.5,1.0,1.0,3.5,0.343,0.343,2026-10-04
-Lithuania,LKL,LIE,Lietkabelis,A. Schumacher,1,1,27.37,22.0,21.0,0.0,3.0,15.0,0.548,0.804,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,K. Kennedy,1,1,21.02,11.0,11.0,3.0,0.0,8.0,0.381,0.523,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,I. Fevrier,1,1,24.85,8.0,11.0,2.0,2.0,10.0,0.402,0.322,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,G. Maldūnas,1,1,20.35,5.0,2.0,5.0,2.0,4.0,0.197,0.246,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,M. Valinskas,1,1,18.63,3.0,6.0,1.0,1.0,6.0,0.322,0.161,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,D. Baslyk,1,1,15.88,2.0,5.0,0.0,0.0,4.0,0.252,0.126,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,N. Radžius,1,1,12.63,2.0,3.0,1.0,0.0,3.0,0.237,0.158,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,O. Jaramaz,1,1,23.3,1.0,0.0,1.0,4.0,3.0,0.129,0.043,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,G. Nemeikša,1,1,9.52,1.0,2.0,0.0,0.0,1.0,0.105,0.105,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,M. Ilič,1,1,19.65,0.0,7.0,0.0,1.0,6.0,0.305,0.0,2026-10-04 16:50
-Lithuania,LKL,LIE,Lietkabelis,Ž. Šimonis,1,1,6.8,0.0,0.0,0.0,0.0,2.0,0.294,0.0,2026-10-04 16:50
-Spain,ACB,LLT,La Laguna Tenerife,M. Huertas,2,2,21.05,16.5,14.5,1.5,5.0,11.0,0.523,0.784,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,K. Guy,2,2,25.03,13.5,14.5,3.0,2.0,12.0,0.479,0.539,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,López-Arostegui,2,2,22.49,11.0,8.0,4.0,0.5,6.5,0.289,0.489,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,T. Abromaitis,2,2,20.04,10.5,7.0,8.0,0.0,7.5,0.374,0.524,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,J. Fernández,2,2,17.38,10.5,11.5,2.0,2.0,7.0,0.403,0.604,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,V. Hunter,1,1,19.08,9.0,5.0,3.0,2.0,4.0,0.21,0.472,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,E. Happ,2,2,18.12,9.0,10.5,3.0,1.5,9.0,0.497,0.497,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,B. Fitipaldo,2,2,17.57,3.0,4.0,0.5,1.5,4.0,0.228,0.171,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,G. Shermadini,2,2,12.21,2.5,2.5,2.0,0.5,2.5,0.205,0.205,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,A. Doornekamp,2,2,16.25,1.5,1.5,2.0,1.5,2.5,0.154,0.092,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,TJ Bamba,1,1,12.48,1.0,4.0,1.0,0.0,3.0,0.24,0.08,2026-09-27 11:00
-Spain,ACB,LLT,La Laguna Tenerife,H. Alderete,2,2,8.11,-0.5,0.0,0.5,0.5,0.5,0.062,-0.062,2026-10-03 17:30
-Spain,ACB,LLT,La Laguna Tenerife,A. Kurucs,2,2,5.97,-0.5,1.5,0.0,0.0,1.5,0.251,-0.084,2026-10-03 17:30
-Spain,ACB,MAN,Kids&Us Manresa,T. Allen,1,1,27.52,35.0,30.0,8.0,3.0,15.0,0.545,1.272,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,L. Kolenda,2,2,22.16,12.5,11.5,2.5,2.5,6.0,0.271,0.564,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,N. Ongenda,2,2,17.77,12.5,12.0,1.5,1.0,6.0,0.338,0.704,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,JD Notae,2,2,21.51,11.0,17.0,1.5,1.5,15.0,0.697,0.511,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,C. Agbo,2,2,22.16,8.0,10.5,2.0,0.5,6.0,0.271,0.361,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,P. Tamba,2,2,14.19,8.0,5.5,3.5,1.0,2.5,0.176,0.564,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,R. Villar,2,2,20.08,7.0,8.0,2.0,4.0,7.0,0.349,0.349,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,Y. Minchev,2,2,18.43,7.0,5.5,6.0,2.5,5.5,0.298,0.38,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,F. Bassas,2,2,21.11,4.5,2.5,1.5,5.5,5.5,0.261,0.213,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,L. Beaufort,2,2,9.04,2.0,3.5,0.0,0.0,2.0,0.221,0.221,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,E. Vila,2,2,13.27,1.0,1.5,3.5,0.5,3.0,0.226,0.075,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,M. Enabulele,2,2,3.8,0.0,0.0,0.5,0.0,0.0,0.0,0.0,2026-10-03 19:00
-Spain,ACB,MAN,Kids&Us Manresa,H. Benitez,1,1,5.45,-1.0,2.0,1.0,0.0,3.0,0.55,-0.183,2026-09-26
-Italy,LBA,MIL,Armani Olimpia Milano,Garrison Mathews,1,1,20.0,15.0,11.0,4.0,0.0,5.0,0.25,0.75,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Marko Guduric,1,1,27.0,12.0,14.0,3.0,3.0,10.0,0.37,0.444,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Leandro Bolmaro,1,1,25.0,12.0,11.0,5.0,2.0,7.0,0.28,0.48,2026-09-27 10:00
-Italy,LBA,MIL,Armani Olimpia Milano,Moses Wright,2,2,24.0,12.0,13.0,5.5,1.5,9.0,0.375,0.5,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Jason Burnell,2,2,19.5,12.0,10.0,5.5,1.5,7.5,0.385,0.615,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Darius Thompson,2,2,19.5,7.5,8.5,2.5,2.0,6.5,0.333,0.385,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Alec Peters,1,1,22.0,7.0,8.0,4.0,1.0,6.0,0.273,0.318,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Giampaolo Ricci,2,2,14.5,7.0,4.0,5.0,0.0,3.5,0.241,0.483,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Stefano Tonut,1,1,16.0,6.0,0.0,7.0,3.0,2.0,0.125,0.375,2026-09-27 10:00
-Italy,LBA,MIL,Armani Olimpia Milano,Devon Hall,2,2,25.5,5.5,4.5,2.0,3.5,5.5,0.216,0.216,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Ousmane Diop,2,2,13.5,5.0,6.0,4.5,1.5,5.0,0.37,0.37,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,R.J. Cole,1,1,24.0,4.0,11.0,0.0,1.0,8.0,0.333,0.167,2026-09-27 10:00
-Italy,LBA,MIL,Armani Olimpia Milano,Diego Flaccadori,2,2,13.5,4.0,4.0,1.0,1.5,5.0,0.37,0.296,2026-10-05 20:00
-Italy,LBA,MIL,Armani Olimpia Milano,Nicola Akele,1,1,5.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-09-27 10:00
-Italy,LBA,MIL,Armani Olimpia Milano,Baptiste Chauveau,1,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-05 20:00
-France,Betclic Elite,MSB,Le Mans,Carlos Stewart,2,2,29.0,24.0,29.0,2.0,3.0,,,0.828,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Melvin Ajinça,2,2,29.0,17.5,18.5,4.0,1.0,,,0.603,2026-10-04
-France,Betclic Elite,MSB,Le Mans,TaShawn Thomas,1,1,23.0,17.0,15.0,6.0,0.0,,,0.739,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Bastien Grasshoff,2,2,23.5,11.5,14.0,3.0,2.0,,,0.489,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Moses Wood,2,2,23.5,10.5,8.5,3.0,1.0,,,0.447,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Wilfried Yeguete,2,2,21.5,10.0,5.0,6.5,2.5,,,0.465,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Leopold Delaunay,2,2,18.5,7.0,6.0,3.0,4.5,,,0.378,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Lucas Dufeal,2,2,23.0,6.0,2.0,5.0,0.0,,,0.261,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Ugo Doumbia,2,2,11.5,5.5,5.0,1.0,1.0,,,0.478,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Swann Penda,2,2,11.0,5.0,3.5,3.0,0.5,,,0.455,2026-10-04
-France,Betclic Elite,MSB,Le Mans,Jordan James King,2,2,10.0,0.0,3.0,0.5,1.0,,,0.0,2026-10-04
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,"Gabriel ""Iffe"" Lundberg",1,1,29.0,18.0,14.0,2.0,4.0,9.0,0.31,0.621,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Roman Sorkin,2,2,18.0,18.0,12.0,2.0,2.0,5.0,0.278,1.0,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Daniel Theis,1,1,17.0,18.0,15.0,2.0,0.0,5.0,0.294,1.059,2026-09-27 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Bonzie Colson,1,1,20.0,17.0,14.0,3.0,0.0,7.0,0.35,0.85,2026-09-27 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Jaylen Hoard,1,1,29.0,16.0,13.0,6.0,1.0,8.0,0.276,0.552,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Oshae Brissett,1,1,22.0,13.0,17.0,2.0,0.0,12.0,0.545,0.591,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,John Dibartolomeo,1,1,18.0,12.0,13.0,0.0,0.0,4.0,0.222,0.667,2026-09-27 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Jimmy Clark III,2,2,19.0,11.5,9.0,1.5,4.0,7.0,0.368,0.605,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,T.J Leaf,2,2,19.0,11.5,8.0,2.5,3.0,5.0,0.263,0.605,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Amit Ebo,1,1,14.0,10.0,11.0,1.0,0.0,7.0,0.5,0.714,2026-09-27 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Keaton Wallace,2,2,19.5,7.5,9.0,3.0,1.5,7.5,0.385,0.385,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Yam Madar,2,2,19.0,7.0,7.0,1.0,3.0,5.5,0.289,0.368,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Will Rayman,2,2,19.5,5.5,3.5,4.5,2.0,2.5,0.128,0.282,2026-10-04 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Armando Bacot Jr.,1,1,22.0,3.0,3.0,3.0,1.0,6.0,0.273,0.136,2026-09-27 19:00
-Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Nitay Dodo,1,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-04 19:00
-Italy,LBA,NAP,Napoli Basketball,Jeff Dowtin,2,2,28.5,26.0,18.0,3.0,8.5,12.5,0.439,0.912,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,Markel Brown,2,2,22.0,20.5,14.5,4.5,1.0,5.5,0.25,0.932,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,Andrej Jakimovski,2,2,26.5,13.5,16.5,6.0,2.0,11.0,0.415,0.509,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,Guglielmo Caruso,2,2,20.5,13.0,13.5,4.0,0.0,6.0,0.293,0.634,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,John Petrucelli,2,2,20.0,8.0,8.5,0.5,1.5,5.5,0.275,0.4,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,Marco Spissu,2,2,17.5,7.0,6.5,1.0,5.5,4.0,0.229,0.4,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,Jack White,1,1,24.0,5.0,7.0,4.0,1.0,6.0,0.25,0.208,2026-09-27 18:15
-Italy,LBA,NAP,Napoli Basketball,Leonardo Faggian,2,2,13.5,5.0,6.5,1.5,1.0,5.5,0.407,0.37,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,Zac Seljaas,2,2,22.0,3.0,4.5,4.0,0.5,4.5,0.205,0.136,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,Kaleb Tarczewski,2,2,9.5,3.0,3.0,2.5,0.5,1.0,0.105,0.316,2026-10-05 20:00
-Italy,LBA,NAP,Napoli Basketball,Assane Sankare,2,2,8.0,-1.0,1.5,0.5,0.0,2.0,0.25,-0.125,2026-10-05 20:00
-Lithuania,LKL,NEP,Neptūnas,E. Fridriksson,1,1,25.73,18.0,17.0,0.0,6.0,9.0,0.35,0.699,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,D. Tarolis,1,1,17.93,9.0,4.0,4.0,0.0,2.0,0.112,0.502,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,M. Girdžiūnas,1,1,22.2,8.0,11.0,1.0,0.0,7.0,0.315,0.36,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,E. Tubutis,1,1,16.15,8.0,8.0,2.0,0.0,3.0,0.186,0.495,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,M. Echodas,1,1,21.82,7.0,7.0,7.0,0.0,7.0,0.321,0.321,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,H. Drell,1,1,23.75,6.0,10.0,3.0,0.0,7.0,0.295,0.253,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,S. Šarakauskas,1,1,4.53,5.0,5.0,1.0,1.0,2.0,0.441,1.103,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,K. Žemaitis,1,1,17.95,3.0,3.0,1.0,1.0,5.0,0.279,0.167,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,L. Kreišmontas,1,1,15.22,3.0,2.0,1.0,1.0,2.0,0.131,0.197,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,Y. Franke,1,1,14.53,-2.0,2.0,1.0,0.0,8.0,0.55,-0.138,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,R. Somerville,1,1,8.6,-2.0,0.0,1.0,0.0,1.0,0.116,-0.233,2026-09-20 16:30
-Lithuania,LKL,NEP,Neptūnas,A. Beručka,1,1,11.58,-3.0,0.0,0.0,0.0,0.0,0.0,-0.259,2026-09-20 16:30
-Greece,GBL,OLY,Olympiacos,Vezenkov Sasha,3,3,27.51,20.67,17.67,6.33,2.0,11.0,0.4,0.751,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Hall Donta,3,3,21.33,19.33,13.0,6.33,0.67,6.67,0.312,0.906,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Montero Jean Claudio,2,2,22.49,19.0,19.5,2.5,5.0,9.5,0.422,0.845,2026-09-27 20:00
-Greece,GBL,OLY,Olympiacos,Milutinov Nikola,1,1,21.48,16.0,10.0,5.0,1.0,4.0,0.186,0.745,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Ndiaye Mbaye,3,3,20.13,11.33,7.33,6.0,0.67,6.33,0.315,0.563,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Mcintyre Codi Miller,3,3,22.02,10.0,6.0,4.0,6.67,8.0,0.363,0.454,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Ward Τyson,3,3,16.35,7.0,4.33,4.0,0.67,4.0,0.245,0.428,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Fournier Evan,3,3,20.23,5.67,9.33,1.67,2.0,7.33,0.363,0.28,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Dorsey Tyler,3,3,19.53,5.33,11.0,0.67,1.0,9.33,0.478,0.273,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Papanikolaou Kostas,3,3,21.64,3.67,2.0,2.0,2.67,2.67,0.123,0.169,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Plotas Nikos,3,3,3.55,3.0,2.33,0.33,0.67,1.33,0.376,0.845,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Netzipoglou Omiros,3,3,3.43,0.67,0.67,0.0,0.0,0.67,0.194,0.194,2026-10-04 17:30
-Greece,GBL,OLY,Olympiacos,Karagiannidis Antonis,3,3,2.12,0.67,0.67,0.33,0.0,0.33,0.157,0.314,2026-10-04 17:30
-Greece,GBL,PAO,Panathinaikos AKTOR,Hayes-Davis Nigel,1,1,23.53,15.0,15.0,3.0,3.0,8.0,0.34,0.637,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Francisco Sylvain,2,2,21.5,14.5,16.0,1.5,6.0,9.0,0.419,0.674,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Hernangomez Juancho,1,1,24.8,14.0,10.0,6.0,2.0,8.0,0.323,0.565,2026-09-26 21:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Lessort Mathias,2,2,21.75,13.0,16.0,2.5,1.0,8.0,0.368,0.598,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Rogkavopoulos Nikos,1,1,17.77,13.0,8.0,9.0,1.0,5.0,0.281,0.732,2026-09-26 21:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Yabusele Guerschon,2,2,26.79,11.0,9.0,4.5,1.0,5.5,0.205,0.411,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Mitoglou Kostas,2,2,10.94,9.0,7.5,2.0,0.0,3.0,0.274,0.823,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Badio Brancou,2,2,13.16,8.0,8.5,0.5,1.0,4.0,0.304,0.608,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Moraitis Dimitris,2,2,15.14,7.5,5.0,0.0,6.0,3.0,0.198,0.495,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Bonga Isaac,2,2,19.39,7.0,3.5,6.0,0.0,4.0,0.206,0.361,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Kalaitzakis Panagiotis,2,2,16.41,7.0,5.5,1.5,0.5,2.5,0.152,0.427,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Mantzoukas Lefteris,2,2,21.87,4.5,5.0,1.5,0.0,4.0,0.183,0.206,2026-10-04 13:00
-Greece,GBL,PAO,Panathinaikos AKTOR,Varvaritis Iasonas,1,1,0.0,0.0,0.0,0.0,0.0,0.0,,,2026-09-26 21:00
-Regional,ABA,PAR,Partizan Mozzart Bet,Ethan Ivan Thompson,1,1,28.23,21.0,21.0,7.0,1.0,13.0,0.46,0.744,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Nikola Tanaskovic,1,1,22.12,20.0,14.0,6.0,2.0,6.0,0.271,0.904,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Joffrey Stephane Morgan Lauvergne,1,1,21.93,12.0,10.0,5.0,3.0,8.0,0.365,0.547,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Kyle Lindsay Allman,1,1,18.42,12.0,7.0,4.0,3.0,4.0,0.217,0.652,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Kevarrius Keshawn Hayes,1,1,14.1,12.0,6.0,8.0,1.0,2.0,0.142,0.851,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Alessandro Pajola,1,1,13.4,8.0,2.0,1.0,5.0,4.0,0.299,0.597,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Bandja Sy,1,1,20.68,7.0,8.0,2.0,0.0,6.0,0.29,0.338,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Luca Vildoza,1,1,7.2,3.0,5.0,0.0,0.0,3.0,0.417,0.417,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Mario Nakic,1,1,22.52,2.0,8.0,2.0,1.0,8.0,0.355,0.089,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Carlik Jones,1,1,16.55,0.0,2.0,0.0,5.0,5.0,0.302,0.0,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Tonye Frank Jekiri,1,1,0.43,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-05 18:30
-Regional,ABA,PAR,Partizan Mozzart Bet,Arijan Lakic,1,1,14.42,-3.0,0.0,2.0,2.0,3.0,0.208,-0.208,2026-10-05 18:30
-France,Betclic Elite,PBB,Paris Basketball,Nadir Hifi,2,2,26.08,25.0,28.0,2.0,5.5,18.5,0.709,0.959,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Tyson Etienne,1,1,22.82,20.0,23.0,2.0,2.0,15.0,0.657,0.876,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Jared Rhoden,1,1,23.63,17.0,15.0,3.0,2.0,9.0,0.381,0.719,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,T.J. Warren,1,1,19.32,13.0,14.0,6.0,1.0,14.0,0.725,0.673,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Allan Dokossi,2,2,18.9,13.0,5.0,8.5,2.5,3.0,0.159,0.688,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Terry Tarpey,2,2,18.55,12.0,4.5,6.5,2.0,3.0,0.162,0.647,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Sebastian Herrera,2,2,21.63,9.0,10.0,1.5,2.0,8.0,0.37,0.416,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Alize Johnson,2,2,15.33,6.5,5.0,6.0,2.0,6.0,0.391,0.424,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Léopold Cavaliere,2,2,22.57,5.0,4.0,3.5,0.0,3.5,0.155,0.222,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Daulton Hommes,1,1,16.42,5.0,7.0,1.0,1.0,5.0,0.305,0.305,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Joël Ayayi,2,2,8.82,4.0,3.0,1.5,1.0,1.5,0.17,0.454,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Mouhamed Faye,1,1,9.67,1.0,0.0,1.0,0.0,1.0,0.103,0.103,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Mãozinha Pereira,2,2,7.33,0.0,1.0,0.0,0.0,2.0,0.273,0.0,2026-10-04
-France,Betclic Elite,PBB,Paris Basketball,Frank Ntilikina,2,2,14.9,-1.5,0.5,1.5,1.0,3.0,0.201,-0.101,2026-10-04
-Greece,GBL,PBC,PAOK,Alexander Kyle,2,2,22.39,18.5,15.0,4.0,1.0,8.0,0.357,0.826,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Foster Marcus,2,2,26.1,16.5,15.0,2.0,5.5,10.0,0.383,0.632,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Osman Cedi,2,2,31.81,13.5,16.5,6.5,2.0,13.0,0.409,0.424,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Calathes Nick,2,2,29.34,11.5,9.0,2.0,6.0,8.5,0.29,0.392,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Moore Ben,2,2,19.55,11.5,7.0,5.5,1.5,4.5,0.23,0.588,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Persidis Nikos,2,2,18.02,7.5,5.0,4.0,0.5,4.5,0.25,0.416,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Hudgins Trevor,2,2,17.54,6.0,7.0,2.0,3.0,6.5,0.371,0.342,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Mitrou-Long Naz,2,2,17.07,5.0,7.0,2.5,0.5,7.5,0.439,0.293,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Tyree Breein,2,2,9.01,3.5,6.0,0.0,0.5,3.5,0.389,0.389,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Chougkaz Nikos,1,1,18.32,3.0,5.0,1.0,1.0,7.0,0.382,0.164,2026-09-26 21:00
-Greece,GBL,PBC,PAOK,Bazinas Thanasis,1,1,0.0,0.0,0.0,0.0,0.0,0.0,,,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Fillios Giorgos,2,2,0.0,0.0,0.0,0.0,0.0,0.0,,,2026-09-27 20:00
-Greece,GBL,PBC,PAOK,Kaklamanakis Dimitris,2,2,0.0,0.0,0.0,0.0,0.0,0.0,,,2026-09-27 20:00
-Italy,LBA,RMA,Maxima Roma,Miro Bilan,2,2,22.5,21.5,14.0,6.0,1.0,6.5,0.289,0.956,2026-10-04 18:15
-Italy,LBA,RMA,Maxima Roma,John Brown,2,2,26.0,19.0,10.0,9.0,2.0,6.0,0.231,0.731,2026-10-04 18:15
-Italy,LBA,RMA,Maxima Roma,Xavier Moon,1,1,28.0,15.0,13.0,4.0,8.0,11.0,0.393,0.536,2026-10-04 18:15
-Italy,LBA,RMA,Maxima Roma,Mirza Alibegovic,2,2,26.0,13.0,11.5,3.0,1.5,5.0,0.192,0.5,2026-10-04 18:15
-Italy,LBA,RMA,Maxima Roma,Brynton Lemar,2,2,19.5,9.5,13.0,0.5,1.0,9.0,0.462,0.487,2026-10-04 18:15
-Italy,LBA,RMA,Maxima Roma,Aaron Holiday,2,2,24.5,7.0,8.0,2.5,4.5,7.5,0.306,0.286,2026-10-04 18:15
-Italy,LBA,RMA,Maxima Roma,Federico Bonacini,1,1,11.0,6.0,5.0,1.0,2.0,2.0,0.182,0.545,2026-09-27 18:15
-Italy,LBA,RMA,Maxima Roma,Gora Camara,2,2,14.0,3.5,5.5,2.0,0.0,4.0,0.286,0.25,2026-10-04 18:15
-Italy,LBA,RMA,Maxima Roma,Hunter Tyson,1,1,8.0,2.0,5.0,1.0,0.0,4.0,0.5,0.25,2026-09-27 18:15
-Italy,LBA,RMA,Maxima Roma,Giovanni Veronesi,2,2,15.0,1.0,5.5,0.5,0.5,5.5,0.367,0.067,2026-10-04 18:15
-Italy,LBA,RMA,Maxima Roma,Carl Wheatle,2,2,17.5,-3.0,1.0,1.5,0.0,2.0,0.114,-0.171,2026-10-04 18:15
+Greece,GBL,OLY,Olympiacos,Mcintyre Codi Miller,4,4,21.2,7.0,4.5,3.0,5.75,6.25,0.295,0.33,2026-10-11 12:00
+Greece,GBL,OLY,Olympiacos,Ward Τyson,3,3,16.35,7.0,4.33,4.0,0.67,4.0,0.245,0.428,2026-10-04 16:30
+Greece,GBL,OLY,Olympiacos,Montero Jean Claudio,3,3,22.82,22.67,23.0,2.0,4.33,11.33,0.497,0.993,2026-10-11 12:00
+Greece,GBL,OLY,Olympiacos,Plotas Nikos,3,3,3.55,3.0,2.33,0.33,0.67,1.33,0.376,0.845,2026-10-04 16:30
+Greece,GBL,OLY,Olympiacos,Vezenkov Sasha,3,3,27.51,20.67,17.67,6.33,2.0,11.0,0.4,0.751,2026-10-04 16:30
+Greece,GBL,OLY,Olympiacos,Papanikolaou Kostas,4,4,21.23,5.75,3.5,2.75,2.5,3.5,0.165,0.271,2026-10-11 12:00
+Greece,GBL,OLY,Olympiacos,Netzipoglou Omiros,4,4,7.4,3.0,3.0,0.25,0.5,1.75,0.237,0.406,2026-10-11 12:00
+Greece,GBL,OLY,Olympiacos,Dorsey Tyler,3,3,19.53,5.33,11.0,0.67,1.0,9.33,0.478,0.273,2026-10-04 16:30
+Greece,GBL,OLY,Olympiacos,Ndiaye Mbaye,4,4,20.65,11.25,7.0,5.75,1.0,5.75,0.279,0.545,2026-10-11 12:00
+Greece,GBL,OLY,Olympiacos,Karagiannidis Antonis,3,3,2.12,0.67,0.67,0.33,0.0,0.33,0.157,0.314,2026-10-04 16:30
+Greece,GBL,OLY,Olympiacos,Hall Donta,4,4,20.27,17.0,11.0,5.25,0.75,5.5,0.271,0.839,2026-10-11 12:00
+Greece,GBL,OLY,Olympiacos,Fournier Evan,4,4,21.51,7.5,10.5,2.0,2.25,8.5,0.395,0.349,2026-10-11 12:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Kalaitzakis Panagiotis,3,3,17.88,8.33,6.67,2.33,1.0,3.33,0.186,0.466,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Francisco Sylvain,3,3,19.71,14.0,14.67,1.33,4.67,7.0,0.355,0.71,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Moraitis Dimitris,3,3,17.94,9.0,7.0,0.67,5.0,4.33,0.242,0.502,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Badio Brancou,3,3,15.2,8.0,8.0,0.67,2.0,4.67,0.307,0.526,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Varvaritis Iasonas,1,1,0.0,0.0,0.0,0.0,0.0,0.0,,,2026-09-26 20:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Rogkavopoulos Nikos,2,2,19.72,9.5,9.0,7.5,2.0,8.0,0.406,0.482,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Lessort Mathias,2,2,21.75,13.0,16.0,2.5,1.0,8.0,0.368,0.598,2026-10-04 12:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Yabusele Guerschon,2,2,26.79,11.0,9.0,4.5,1.0,5.5,0.205,0.411,2026-10-04 12:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Bonga Isaac,2,2,19.39,7.0,3.5,6.0,0.0,4.0,0.206,0.361,2026-10-04 12:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Hernangomez Juancho,2,2,22.62,9.5,7.0,4.0,1.5,6.0,0.265,0.42,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Mitoglou Kostas,3,3,13.36,12.33,8.33,4.67,0.33,4.33,0.324,0.923,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Mantzoukas Lefteris,3,3,21.96,2.67,4.33,1.33,0.67,4.67,0.213,0.121,2026-10-10 18:00
+Greece,GBL,PBC,PAOK,Mitrou-Long Naz,4,4,21.34,11.75,11.0,3.5,2.5,8.75,0.41,0.551,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Tyree Breein,3,3,13.19,5.33,9.33,0.67,0.67,5.67,0.429,0.404,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Osman Cedi,3,3,30.91,13.67,17.0,5.33,2.0,12.67,0.41,0.442,2026-10-03 14:00
+Greece,GBL,PBC,PAOK,Alexander Kyle,4,4,19.97,14.75,11.25,4.25,0.5,6.5,0.325,0.739,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Chougkaz Nikos,2,2,13.92,0.0,2.5,1.5,0.5,5.5,0.395,0.0,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Hudgins Trevor,4,4,17.48,8.25,8.5,2.0,3.0,5.75,0.329,0.472,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Kaklamanakis Dimitris,4,4,3.8,2.5,0.5,1.75,0.0,0.5,0.131,0.657,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Foster Marcus,4,4,23.85,10.0,12.25,1.75,3.5,10.0,0.419,0.419,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Persidis Nikos,4,4,16.44,6.25,4.25,3.25,0.75,3.5,0.213,0.38,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Fillios Giorgos,4,4,2.33,0.25,0.75,0.0,0.0,0.5,0.215,0.108,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Moore Ben,4,4,17.18,10.5,6.0,5.25,0.75,2.75,0.16,0.611,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Calathes Nick,3,3,27.72,13.0,10.0,2.33,6.33,8.67,0.313,0.469,2026-10-03 14:00
+Greece,GBL,PBC,PAOK,Bazinas Thanasis,1,1,0.0,0.0,0.0,0.0,0.0,0.0,,,2026-09-27 19:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Hayes-Davis Nigel,1,1,23.53,15.0,15.0,3.0,3.0,8.0,0.34,0.637,2026-10-04 12:00
+Greece,GBL,OLY,Olympiacos,Milutinov Nikola,2,2,20.74,15.0,7.0,7.5,1.5,3.0,0.145,0.723,2026-10-11 12:00
+Italy,LBA,DER,Bertram Derthona Tortona,Prentiss Hubb,4,4,23.5,10.25,12.75,2.25,4.5,11.0,0.468,0.436,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Justin Gorham,4,4,28.5,15.25,13.75,4.0,1.25,7.75,0.272,0.535,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Andrea Pecchia,4,4,17.25,3.25,1.25,2.5,1.25,1.25,0.072,0.188,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Amar Alibegovic,3,3,21.0,3.33,8.33,3.0,0.67,8.67,0.413,0.159,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Giordano Bortolani,4,4,17.5,7.75,11.75,2.0,0.25,8.5,0.486,0.443,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Dominik Olejniczak,4,4,24.5,11.75,10.0,3.75,1.25,5.75,0.235,0.48,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Dante Maddox,4,4,25.5,15.5,15.75,3.0,1.5,9.0,0.353,0.608,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Giulio Gazzotti,4,4,7.25,0.5,0.0,0.75,0.0,0.0,0.0,0.069,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Karim Jallow,4,4,23.75,9.5,7.5,3.5,2.25,4.5,0.189,0.4,2026-10-11 17:00
+Italy,LBA,DER,Bertram Derthona Tortona,Aljami Durham,4,4,16.5,7.25,7.75,2.5,2.25,5.5,0.333,0.439,2026-10-11 17:00
+Italy,LBA,ROM,BC Roma,Niccolò Mannion,3,3,27.0,26.0,18.0,3.67,8.67,10.67,0.395,0.963,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Paul Watson,3,3,17.33,8.67,12.0,1.67,1.0,6.33,0.365,0.5,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Corey Davis,3,3,21.67,13.67,11.0,2.0,4.0,7.67,0.354,0.631,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Giovanni Emejuru,3,3,13.67,2.0,2.67,4.33,0.0,3.33,0.244,0.146,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Trentyn Flowers,2,2,6.0,3.0,3.0,1.5,0.5,2.5,0.417,0.5,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Erik Stevenson,3,3,25.33,12.67,13.0,2.67,3.0,10.33,0.408,0.5,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Gerald Ayayi,3,3,22.67,12.67,10.33,4.33,2.33,7.33,0.324,0.559,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Arturs Strautins,3,3,28.0,10.33,12.67,5.67,1.67,10.33,0.369,0.369,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Marko Simonovic,3,3,24.33,15.33,14.33,6.67,0.67,9.33,0.384,0.63,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Andrea Mezzanotte,3,3,13.33,2.0,2.33,2.0,0.0,2.0,0.15,0.15,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Mike Iuzzolino,2,2,2.0,0.5,1.0,0.0,0.0,0.5,0.25,0.25,2026-10-04 16:00
+Italy,LBA,RMA,Maxima Roma,Miro Bilan,3,3,20.0,16.33,12.33,5.33,1.33,8.0,0.4,0.817,2026-10-11 18:15
+Italy,LBA,RMA,Maxima Roma,Aaron Holiday,3,3,27.33,12.33,12.0,2.67,5.67,9.33,0.341,0.451,2026-10-11 18:15
+Italy,LBA,RMA,Maxima Roma,Hunter Tyson,2,2,16.0,8.0,9.5,1.5,0.0,6.0,0.375,0.5,2026-10-11 18:15
+Italy,LBA,RMA,Maxima Roma,Mirza Alibegovic,3,3,27.67,15.33,13.67,4.0,1.67,6.67,0.241,0.554,2026-10-11 18:15
+Italy,LBA,RMA,Maxima Roma,Brynton Lemar,3,3,17.0,7.33,9.33,1.0,0.67,7.0,0.412,0.431,2026-10-11 18:15
+Italy,LBA,RMA,Maxima Roma,Giovanni Veronesi,3,3,14.33,2.33,4.67,1.0,0.67,4.33,0.302,0.163,2026-10-11 18:15
+Italy,LBA,RMA,Maxima Roma,Federico Bonacini,2,2,6.0,3.0,2.5,0.5,1.0,1.0,0.167,0.5,2026-10-11 18:15
+Italy,LBA,RMA,Maxima Roma,Carl Wheatle,3,3,17.33,-1.33,1.67,1.67,0.33,2.67,0.154,-0.077,2026-10-11 18:15
+Italy,LBA,RMA,Maxima Roma,Gora Camara,3,3,10.33,2.0,3.67,1.33,0.0,2.67,0.258,0.194,2026-10-11 18:15
 Italy,LBA,RMA,Maxima Roma,Matt Ryan,2,2,11.5,-3.5,2.0,0.5,0.0,5.0,0.435,-0.304,2026-10-04 18:15
-Spain,ACB,RMB,Real Madrid,T. Maledon,2,2,25.96,30.5,21.0,2.5,7.0,9.0,0.347,1.175,2026-10-04
-Spain,ACB,RMB,Real Madrid,Luwawu-Cabarrot,2,2,27.6,16.0,19.5,4.5,1.0,15.0,0.543,0.58,2026-10-04
-Spain,ACB,RMB,Real Madrid,F. Campazzo,1,1,20.8,15.0,15.0,2.0,5.0,10.0,0.481,0.721,2026-09-27
-Spain,ACB,RMB,Real Madrid,M. Jantunen,1,1,19.3,15.0,13.0,7.0,0.0,7.0,0.363,0.777,2026-10-04
-Spain,ACB,RMB,Real Madrid,A. Feliz,1,1,26.92,14.0,6.0,5.0,5.0,3.0,0.111,0.52,2026-10-04
-Spain,ACB,RMB,Real Madrid,J. Pradilla,2,2,20.29,11.0,7.5,5.0,1.0,5.0,0.246,0.542,2026-10-04
-Spain,ACB,RMB,Real Madrid,D. Jones,1,1,15.8,11.0,8.0,2.0,1.0,3.0,0.19,0.696,2026-09-27
-Spain,ACB,RMB,Real Madrid,W. Tavares,2,2,21.44,10.0,6.0,9.5,0.0,5.0,0.233,0.466,2026-10-04
-Spain,ACB,RMB,Real Madrid,C. Okeke,2,2,16.11,8.5,5.0,3.0,2.5,5.5,0.341,0.528,2026-10-04
-Spain,ACB,RMB,Real Madrid,G. Deck,1,1,23.92,8.0,9.0,8.0,0.0,9.0,0.376,0.334,2026-09-27
-Spain,ACB,RMB,Real Madrid,A. Abalde,1,1,15.27,8.0,9.0,1.0,0.0,5.0,0.328,0.524,2026-09-27
-Spain,ACB,RMB,Real Madrid,G. Procida,1,1,13.57,5.0,6.0,0.0,1.0,5.0,0.369,0.369,2026-10-04
-Spain,ACB,RMB,Real Madrid,M. Shulga,2,2,9.18,2.5,3.5,1.5,1.5,2.5,0.272,0.272,2026-10-04
-Spain,ACB,RMB,Real Madrid,N. Smith,1,1,18.55,2.0,10.0,2.0,1.0,11.0,0.593,0.108,2026-10-04
-Spain,ACB,RMB,Real Madrid,S. Llull,2,2,8.93,2.0,1.0,0.5,2.5,1.0,0.112,0.224,2026-10-04
-Spain,ACB,RMB,Real Madrid,O. Sarr,2,2,5.93,-2.5,0.0,0.5,0.0,1.0,0.169,-0.421,2026-10-04
-Italy,LBA,ROM,BC Roma,Niccolò Mannion,2,2,26.0,23.5,15.0,4.5,8.0,10.0,0.385,0.904,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Marko Simonovic,2,2,24.0,20.5,17.0,8.0,0.5,10.5,0.438,0.854,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Erik Stevenson,2,2,25.0,16.0,15.0,2.5,3.5,9.0,0.36,0.64,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Gerald Ayayi,2,2,26.5,14.5,12.0,3.5,3.0,7.5,0.283,0.547,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Corey Davis,2,2,20.5,13.5,10.5,1.5,5.0,7.5,0.366,0.659,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Arturs Strautins,2,2,27.0,9.0,12.0,6.0,2.5,10.5,0.389,0.333,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Paul Watson,2,2,17.0,8.5,13.0,1.5,1.0,7.0,0.412,0.5,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Trentyn Flowers,1,1,5.0,3.0,2.0,1.0,1.0,1.0,0.2,0.6,2026-09-27 18:00
-Italy,LBA,ROM,BC Roma,Riccardo Tavernelli,1,1,1.0,2.0,0.0,1.0,1.0,0.0,0.0,2.0,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Andrea Mezzanotte,2,2,14.0,1.5,2.5,2.0,0.0,2.5,0.179,0.107,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Giovanni Emejuru,2,2,13.5,1.5,2.0,3.0,0.0,1.5,0.111,0.111,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Mike Iuzzolino,2,2,2.0,0.5,1.0,0.0,0.0,0.5,0.25,0.25,2026-10-04 10:00
-Italy,LBA,ROM,BC Roma,Giannis Odzebe,1,1,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-04 10:00
-Germany,BBL,ROS,Rostock Seawolves,Artur Konontsuk,4,4,23.8,14.0,13.8,4.5,1.5,,,0.588,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Zach Copeland,4,4,19.8,12.0,10.0,4.3,3.3,,,0.606,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Bent Leuchten,4,4,15.8,11.8,7.3,5.8,0.5,,,0.747,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Johnathan Stove,4,4,24.3,10.8,11.5,4.5,2.0,,,0.444,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Robin Amaize,4,4,17.8,10.8,10.8,3.3,0.8,,,0.607,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,T.J. Crockett,4,4,23.3,10.5,13.3,3.3,3.8,,,0.451,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Deandre Lansdowne,4,4,17.0,7.3,6.5,3.0,2.0,,,0.429,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Owen Klassen,3,3,16.7,6.3,4.3,3.7,1.7,,,0.377,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Dominic Lockhart,4,4,16.0,6.0,4.5,2.5,1.5,,,0.375,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Todd Withers,4,4,19.5,4.0,6.8,1.5,0.5,,,0.205,2026-10-03
-Germany,BBL,ROS,Rostock Seawolves,Philipp Hartwich,3,3,10.7,2.0,0.7,1.0,1.7,,,0.187,2026-10-03
-Lithuania,LKL,SIA,Šiauliai,D. McKnight,1,1,22.68,16.0,8.0,4.0,6.0,7.0,0.309,0.705,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,C. Henderson,1,1,24.05,14.0,15.0,4.0,2.0,13.0,0.541,0.582,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,E. Reid,1,1,13.35,14.0,4.0,8.0,2.0,1.0,0.075,1.049,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,S. Jarumbauskas,1,1,21.75,7.0,7.0,3.0,1.0,4.0,0.184,0.322,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,T. Jogėla,1,1,19.7,5.0,9.0,1.0,2.0,6.0,0.305,0.254,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,M. Caffey,1,1,19.18,5.0,7.0,0.0,4.0,7.0,0.365,0.261,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,D. Romančenko,1,1,18.45,5.0,9.0,1.0,0.0,4.0,0.217,0.271,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,R. Čivilis,1,1,13.18,4.0,6.0,1.0,1.0,4.0,0.303,0.303,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,E. Venskus,1,1,14.35,3.0,6.0,0.0,0.0,5.0,0.348,0.209,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,M. Pacevičius,1,1,13.77,2.0,5.0,4.0,0.0,5.0,0.363,0.145,2026-09-27 16:50
-Lithuania,LKL,SIA,Šiauliai,K. Lukošiūnas,1,1,19.53,-1.0,6.0,1.0,0.0,5.0,0.256,-0.051,2026-09-27 16:50
-Germany,BBL,SKY,SKYLINERS Frankfurt,Race Thompson,2,2,21.0,19.0,13.0,9.0,1.5,,,0.905,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Judah Mintz,3,3,22.3,16.3,14.7,2.0,4.3,,,0.731,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Radii Caisin,3,3,20.7,11.3,10.0,2.3,0.3,,,0.546,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Isaiah Swope,3,3,21.0,10.7,15.7,1.3,2.7,,,0.51,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Nahiem Alleyne,3,3,17.0,9.7,8.7,2.0,1.3,,,0.571,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Till Pape,3,3,25.0,9.0,11.7,2.3,0.0,,,0.36,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,William Christmas,3,3,24.7,8.0,6.0,2.7,1.7,,,0.324,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Ryan Arcidiacono,3,3,16.3,8.0,6.3,2.7,3.0,,,0.491,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Thomas Klepeisz,3,3,17.0,6.3,4.7,1.7,1.3,,,0.371,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Roman Bedime,3,3,15.0,4.3,2.7,1.3,1.7,,,0.287,2026-10-04
-Germany,BBL,SKY,SKYLINERS Frankfurt,Jacob Knauf,2,2,9.0,2.5,1.0,1.5,0.0,,,0.278,2026-10-04
-Turkey,BSL,TOF,Tofas Bursa,Yigitcan Saybir,2,2,26.5,15.0,19.0,3.5,1.0,14.5,0.547,0.566,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Gabe Brown,2,2,26.0,13.5,10.0,4.0,1.0,7.0,0.269,0.519,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Jamuni McNeace,2,2,19.5,12.0,8.5,4.5,0.5,5.0,0.256,0.615,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Tre'shawn Thurman,1,1,18.0,12.0,7.0,6.0,1.0,2.0,0.111,0.667,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Bryce Jones,2,2,21.5,9.0,9.5,2.0,4.5,7.0,0.326,0.419,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Shavar Reynolds,2,2,23.0,8.5,8.5,1.5,4.0,8.0,0.348,0.37,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Terrell Carter,2,2,15.5,8.5,6.0,2.0,0.0,3.5,0.226,0.548,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Zach Nutall,2,2,25.0,8.0,14.0,2.5,1.5,11.0,0.44,0.32,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Sadik Kabaca,2,2,15.5,8.0,6.0,4.0,1.5,4.5,0.29,0.516,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Efe Postel,2,2,15.5,4.0,3.5,1.5,1.0,3.5,0.226,0.258,2026-10-03
-Turkey,BSL,TOF,Tofas Bursa,Leon Apaydin,2,2,4.5,-0.5,0.0,0.5,0.0,0.0,0.0,-0.111,2026-10-03
-Italy,LBA,TRE,Dolomiti Energia Trentino,Quincy Olivari,2,2,28.0,17.0,21.0,4.0,3.0,18.0,0.643,0.607,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Darius Brown,2,2,28.0,16.0,11.5,4.5,6.0,10.5,0.375,0.571,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Isaiah Bigelow,2,2,20.0,12.0,14.0,5.5,1.0,8.0,0.4,0.6,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Alessandro Bertini,2,2,19.0,7.5,6.5,5.0,0.5,5.0,0.263,0.395,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Jordan Bayehe,2,2,27.0,7.0,7.5,5.5,0.5,8.0,0.296,0.259,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Charles Brown,2,2,23.5,7.0,7.0,5.5,4.5,8.0,0.34,0.298,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Cheickh Niang,2,2,18.0,6.5,7.5,3.0,0.0,6.5,0.361,0.361,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Selom Mawugbe,2,2,19.0,5.5,5.5,4.5,1.0,3.0,0.158,0.289,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Toto Forray,2,2,7.0,2.5,1.5,0.0,1.5,1.0,0.143,0.357,2026-10-04 16:00
-Italy,LBA,TRE,Dolomiti Energia Trentino,Josè Alfred Medina Bouza,2,2,10.5,1.5,4.5,0.5,0.0,2.5,0.238,0.143,2026-10-04 16:00
-Turkey,BSL,TTA,Turk Telekom,Jerrick Harding,2,2,21.5,12.0,18.0,1.5,2.5,14.0,0.651,0.558,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Dogus Ozdemiroglu,2,2,26.5,10.5,9.0,5.0,4.5,7.0,0.264,0.396,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Ismael Bako,2,2,16.5,10.5,4.0,4.0,1.0,2.0,0.121,0.636,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Tony Taylor,1,1,17.0,9.0,7.0,3.0,3.0,4.0,0.235,0.529,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Ata Kahraman,2,2,15.0,9.0,7.5,1.5,2.0,6.0,0.4,0.6,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Kris Bankston,2,2,23.0,8.0,5.0,4.0,0.5,3.0,0.13,0.348,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Tim Schneider,2,2,19.0,7.5,6.0,4.0,0.5,5.5,0.289,0.395,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Anthony Lamb,2,2,26.0,7.0,6.0,2.5,3.5,6.5,0.25,0.269,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Shaquielle McKissic,1,1,21.0,7.0,10.0,2.0,2.0,8.0,0.381,0.333,2026-09-26
-Turkey,BSL,TTA,Turk Telekom,Goktug Bas,2,2,8.5,4.0,3.0,1.5,0.5,3.0,0.353,0.471,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Anil Alyanak,1,1,7.0,3.0,5.0,0.0,0.0,4.0,0.571,0.429,2026-09-26
-Turkey,BSL,TTA,Turk Telekom,Uros Trifunovic,2,2,20.0,1.5,5.0,1.0,0.5,7.0,0.35,0.075,2026-10-03
-Turkey,BSL,TTA,Turk Telekom,Emircan Kosut,1,1,3.0,1.0,2.0,0.0,0.0,2.0,0.667,0.333,2026-09-26
-Regional,ABA,UBT,U-BT Cluj-Napoca,Javonte Smart,1,1,31.0,27.0,17.0,7.0,8.0,12.0,0.387,0.871,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Uros Plavsic,1,1,27.32,24.0,15.0,6.0,5.0,8.0,0.293,0.879,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Jalyn Zacchae´us Mccreary,1,1,21.38,17.0,13.0,5.0,3.0,8.0,0.374,0.795,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Javon Anthony Bess,1,1,27.98,16.0,14.0,3.0,1.0,6.0,0.214,0.572,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Kristian Kullamäe,1,1,23.98,15.0,14.0,4.0,2.0,10.0,0.417,0.625,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Malcolm Alexander Hill,1,1,19.77,8.0,6.0,3.0,4.0,4.0,0.202,0.405,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Nicolae Bogdan Nicolescu,1,1,14.28,4.0,6.0,0.0,1.0,3.0,0.21,0.28,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Otis Antoine Livingston Jr,1,1,20.47,3.0,6.0,1.0,3.0,5.0,0.244,0.147,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Christian Angelo Bishop,1,1,10.12,0.0,4.0,3.0,0.0,4.0,0.395,0.0,2026-10-03 17:00
-Regional,ABA,UBT,U-BT Cluj-Napoca,Patrick Neal Richard Ii,1,1,3.72,-1.0,0.0,1.0,0.0,0.0,0.0,-0.269,2026-10-03 17:00
-Germany,BBL,ULM,ratiopharm Ulm,Michael Rataj,4,4,30.0,18.5,15.0,5.5,2.3,,,0.617,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Simisola Shittu,4,4,22.0,15.3,11.0,9.0,1.5,,,0.695,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Armel Traore,4,4,20.0,13.0,10.8,4.3,1.8,,,0.65,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Ibi Watson,4,4,32.3,12.5,13.0,2.8,3.3,,,0.387,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Adam Atamna,4,4,19.5,9.8,7.3,3.5,2.8,,,0.503,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Meissa Faye,4,4,20.3,8.3,8.5,3.0,1.8,,,0.409,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Jaylen Sims,4,4,26.3,7.3,9.5,3.5,2.0,,,0.278,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Marvin Heckel,4,4,10.3,2.5,1.3,0.8,1.3,,,0.243,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Dwayne Koroma,3,3,6.0,1.7,0.7,2.0,0.0,,,0.283,2026-10-03
-Germany,BBL,ULM,ratiopharm Ulm,Devin Schmidt,4,4,12.8,0.5,2.8,0.8,1.3,,,0.039,2026-10-03
-Italy,LBA,URV,Umana Reyer Venezia,Leonardo Candi,2,2,29.0,19.0,14.5,3.0,3.5,7.0,0.241,0.655,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Glynn Watson,2,2,25.5,18.0,14.0,3.5,4.5,7.5,0.294,0.706,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Louis Olinde,1,1,22.0,17.0,11.0,6.0,4.0,6.0,0.273,0.773,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Amedeo Tessitori,2,2,19.0,16.0,10.0,4.5,2.5,5.5,0.289,0.842,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Sasha Grant,2,2,16.5,11.0,7.5,3.0,1.0,4.0,0.242,0.667,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Jordan Parks,1,1,23.0,10.0,3.0,5.0,2.0,3.0,0.13,0.435,2026-09-27 18:00
-Italy,LBA,URV,Umana Reyer Venezia,Kyle Wiltjer,2,2,24.0,8.5,14.5,3.0,2.0,15.0,0.625,0.354,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Enoch Boakye,2,2,13.5,5.5,3.5,5.5,0.0,4.0,0.296,0.407,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Ky Bowman,2,2,22.0,5.0,4.0,4.0,2.0,5.5,0.25,0.227,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Erick Green,2,2,16.0,3.0,8.5,0.5,0.5,7.0,0.438,0.188,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Octavio Maretto,2,2,10.0,1.0,2.5,2.0,0.0,2.5,0.25,0.1,2026-10-05 20:00
-Italy,LBA,URV,Umana Reyer Venezia,Giovanni De Nicolao,1,1,4.0,0.0,0.0,0.0,0.0,1.0,0.25,0.0,2026-10-05 20:00
-Spain,ACB,VBC,Valencia Basket,TJ Shorts,2,2,21.18,19.0,17.0,3.0,5.5,12.5,0.59,0.897,2026-10-04
-Spain,ACB,VBC,Valencia Basket,N. Mirotic,2,2,17.34,15.5,15.5,5.0,0.5,10.5,0.605,0.894,2026-10-04
-Spain,ACB,VBC,Valencia Basket,K. Taylor,2,2,22.83,14.5,11.0,4.0,4.0,7.5,0.329,0.635,2026-10-04
-Spain,ACB,VBC,Valencia Basket,J. Puerto,2,2,12.56,13.0,12.5,1.5,0.0,5.5,0.438,1.035,2026-10-04
-Spain,ACB,VBC,Valencia Basket,N. Sako,2,2,17.24,11.0,5.5,5.0,0.5,2.5,0.145,0.638,2026-10-04
-Spain,ACB,VBC,Valencia Basket,A. Cárdenas,2,2,17.49,9.0,8.0,0.0,5.0,4.5,0.257,0.515,2026-10-04
-Spain,ACB,VBC,Valencia Basket,G. Corbalán,2,2,14.81,6.5,6.0,2.5,0.0,3.5,0.236,0.439,2026-10-04
-Spain,ACB,VBC,Valencia Basket,M. Saint-Supery,2,2,16.46,3.0,5.5,2.5,2.0,6.5,0.395,0.182,2026-10-04
-Spain,ACB,VBC,Valencia Basket,J. Rivero,2,2,14.44,3.0,3.5,4.0,0.5,4.5,0.312,0.208,2026-10-04
-Spain,ACB,VBC,Valencia Basket,A. Brooks,2,2,20.07,2.0,7.5,3.0,2.0,12.0,0.598,0.1,2026-10-04
-Spain,ACB,VBC,Valencia Basket,N. Reuvers,2,2,18.52,2.0,6.5,4.0,0.0,7.0,0.378,0.108,2026-10-04
-Spain,ACB,VBC,Valencia Basket,M. Gueye,2,2,7.06,-2.5,0.0,0.5,0.5,0.5,0.071,-0.354,2026-10-04
-Italy,LBA,VIR,Virtus Costa Bologna,Marcus Carr,2,2,23.0,26.5,16.0,3.5,9.5,10.5,0.457,1.152,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Derrick Alston,1,1,21.0,16.0,17.0,5.0,2.0,11.0,0.524,0.762,2026-09-27 19:00
-Italy,LBA,VIR,Virtus Costa Bologna,Bo Klintman,2,2,24.0,13.5,11.0,6.0,1.0,7.5,0.312,0.562,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Mouhamet Rassoul Diouf,2,2,18.0,13.5,6.0,5.5,1.0,4.0,0.222,0.75,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Kessler Edwards,2,2,21.5,12.5,8.5,6.0,0.5,6.0,0.279,0.581,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Wendell Moore,1,1,20.0,12.0,8.0,5.0,4.0,6.0,0.3,0.6,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Daniel Hackett,2,2,17.5,12.0,5.5,5.0,3.0,2.0,0.114,0.686,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Trent Frazier,2,2,21.5,11.0,11.5,0.0,3.0,7.0,0.326,0.512,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Tommaso Baldasso,2,2,19.5,7.5,9.5,4.0,1.0,9.5,0.487,0.385,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Aliou Diarra,2,2,15.5,6.0,6.0,2.5,0.0,2.5,0.161,0.387,2026-10-04 18:15
-Italy,LBA,VIR,Virtus Costa Bologna,Francesco Ferrari,2,2,9.0,5.0,6.0,0.5,1.0,3.5,0.389,0.556,2026-10-04 18:15
+Italy,LBA,RMA,Maxima Roma,John Brown,3,3,25.33,19.67,12.67,8.33,1.33,7.33,0.289,0.776,2026-10-11 18:15
+Italy,LBA,NAP,Napoli Basketball,Marco Spissu,3,4,18.75,9.0,7.75,0.75,4.5,4.5,0.24,0.48,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Zac Seljaas,3,4,25.75,5.25,6.75,5.75,0.75,6.5,0.252,0.204,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Jeff Dowtin,3,4,28.0,25.0,17.75,2.0,8.0,12.0,0.429,0.893,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Leonardo Faggian,3,4,14.5,4.75,5.75,1.5,1.0,4.5,0.31,0.328,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,John Petrucelli,3,4,17.0,5.25,6.75,0.5,1.0,5.0,0.294,0.309,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Assane Sankare,3,4,7.5,-1.75,0.75,0.5,0.0,2.0,0.267,-0.233,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Jack White,2,2,22.0,11.5,11.5,4.5,2.0,7.0,0.318,0.523,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Markel Brown,3,4,22.5,22.25,14.5,4.5,1.5,5.0,0.222,0.989,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Andrej Jakimovski,2,3,27.33,14.0,16.67,7.33,2.0,11.33,0.415,0.512,2026-10-03 20:30
+Italy,LBA,NAP,Napoli Basketball,Kaleb Tarczewski,3,4,10.25,1.75,2.5,3.0,0.25,1.5,0.146,0.171,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Guglielmo Caruso,3,4,18.25,10.0,12.25,3.0,0.0,6.0,0.329,0.548,2026-10-11 17:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Darius Brown,3,4,29.0,15.25,10.25,4.25,6.75,9.5,0.328,0.526,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Charles Brown,3,4,24.5,10.0,9.25,5.0,3.75,8.5,0.347,0.408,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Alessandro Bertini,2,3,18.33,8.0,6.67,5.0,0.67,5.0,0.273,0.436,2026-10-03 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Cheickh Niang,3,4,17.25,3.25,5.75,3.0,0.0,6.0,0.348,0.188,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Quincy Olivari,3,4,28.5,19.25,21.75,5.5,2.5,17.25,0.605,0.675,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Toto Forray,3,4,8.0,2.0,1.0,0.0,1.75,0.75,0.094,0.25,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Selom Mawugbe,3,4,22.25,7.25,5.0,5.5,0.75,2.5,0.112,0.326,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Isaiah Bigelow,3,4,19.0,12.75,13.75,5.5,0.75,7.0,0.368,0.671,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Jordan Bayehe,3,4,27.75,6.0,6.5,4.75,0.75,6.25,0.225,0.216,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Josè Alfred Medina Bouza,2,3,9.33,1.67,4.33,0.33,0.0,2.33,0.25,0.179,2026-10-03 20:00
+Italy,LBA,VIR,Virtus Costa Bologna,Trent Frazier,4,4,22.75,13.75,12.75,0.5,3.75,7.75,0.341,0.604,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Marcus Carr,3,3,22.67,22.33,15.0,3.0,7.67,10.67,0.471,0.985,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Davide Casarin,4,4,12.0,0.5,3.5,0.5,1.75,3.5,0.292,0.042,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Kessler Edwards,4,4,20.0,14.75,10.0,6.25,1.0,6.0,0.3,0.738,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Tommaso Baldasso,4,4,15.5,5.75,7.25,2.5,0.75,6.75,0.435,0.371,2026-10-11 19:00
 Italy,LBA,VIR,Virtus Costa Bologna,Matteo Baiocchi,1,1,1.0,1.0,1.0,0.0,0.0,0.0,0.0,1.0,2026-09-27 19:00
-Italy,LBA,VIR,Virtus Costa Bologna,Davide Casarin,2,2,9.5,-4.5,1.0,0.0,2.0,1.5,0.158,-0.474,2026-10-04 18:15
-Poland,PLK,WKS,Śląsk Wrocław,Anthony Hickey,1,0,28.0,,14.0,3.0,3.0,,0.0,,2026-10-04 17:30
-Poland,PLK,WKS,Śląsk Wrocław,Robinson,1,0,28.0,,9.0,10.0,4.0,,0.0,,2026-10-04 17:30
-Poland,PLK,WKS,Śląsk Wrocław,Isaih Moore,1,0,24.0,,14.0,3.0,1.0,,0.0,,2026-10-04 17:30
-Poland,PLK,WKS,Śląsk Wrocław,Malik Parsons,1,0,24.0,,8.0,1.0,1.0,,0.0,,2026-10-04 17:30
-Poland,PLK,WKS,Śląsk Wrocław,Paul Scruggs,1,0,18.0,,5.0,0.0,6.0,,0.0,,2026-10-04 17:30
-Poland,PLK,WKS,Śląsk Wrocław,Tymoteusz Sternicki,1,0,16.0,,7.0,1.0,0.0,,0.0,,2026-10-04 17:30
-Lithuania,LKL,ZAL,Žalgiris,J. Valančiūnas,3,3,16.81,19.67,13.67,5.0,1.33,6.33,0.377,1.17,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,M. Blaževič,4,4,18.12,15.75,10.25,4.5,2.0,5.25,0.29,0.869,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,N. Williams-Goss,2,2,17.38,15.0,6.5,2.5,7.0,4.0,0.23,0.863,2026-09-20 16:30
-Lithuania,LKL,ZAL,Žalgiris,D. Sirvydis,2,2,21.15,14.5,12.5,3.0,2.0,8.0,0.378,0.686,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,A. Butkevičius,4,4,18.59,13.75,7.0,3.75,1.5,3.0,0.161,0.74,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,Ą. Tubelis,2,2,13.92,11.5,8.5,3.5,1.5,6.5,0.467,0.826,2026-09-20 16:30
-Lithuania,LKL,ZAL,Žalgiris,M. Grigonis,4,4,17.67,10.75,9.5,1.5,2.25,4.0,0.226,0.608,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,E. Ulanovas,4,4,18.17,10.5,6.25,3.25,2.25,4.0,0.22,0.578,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,S. Brown,4,4,17.85,9.75,11.0,2.75,2.25,7.25,0.406,0.546,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,D. Sleva,4,4,15.93,8.75,8.0,3.25,1.5,4.75,0.298,0.549,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,K. Akobundu-Ehiogu,2,2,14.43,8.5,3.5,3.5,0.5,1.0,0.069,0.589,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,C. Edwards,4,4,19.63,7.5,11.75,0.5,2.25,9.25,0.471,0.382,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,D. Giedraitis,4,4,16.01,2.0,4.25,0.5,2.5,4.25,0.265,0.125,2026-10-04 16:50
-Lithuania,LKL,ZAL,Žalgiris,M. Lo,4,4,12.0,1.5,3.5,0.5,2.0,3.5,0.292,0.125,2026-10-04 16:50
+Italy,LBA,VIR,Virtus Costa Bologna,Derrick Alston,3,3,24.67,10.33,12.33,3.33,1.33,9.67,0.392,0.419,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Daniel Hackett,4,4,18.0,6.25,3.75,3.5,2.25,2.5,0.139,0.347,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Francesco Ferrari,4,4,9.75,4.0,4.25,1.25,0.75,3.0,0.308,0.41,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Aliou Diarra,4,4,16.25,8.75,7.25,5.0,0.0,4.0,0.246,0.538,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Bo Klintman,3,3,23.0,14.33,11.0,5.0,1.0,6.67,0.29,0.623,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Mouhamet Rassoul Diouf,4,4,17.75,9.5,5.0,4.5,0.75,3.25,0.183,0.535,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Wendell Moore,2,2,19.0,3.5,5.5,3.5,2.0,6.5,0.342,0.184,2026-10-04 18:15
+Italy,LBA,RMA,Maxima Roma,Xavier Moon,2,2,27.5,15.5,11.0,4.5,7.5,8.5,0.309,0.564,2026-10-11 18:15
+Italy,LBA,ROM,BC Roma,Riccardo Tavernelli,1,1,1.0,2.0,0.0,1.0,1.0,0.0,0.0,2.0,2026-10-04 16:00
+Italy,LBA,ROM,BC Roma,Giannis Odzebe,1,1,3.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-04 16:00
+Turkey,BSL,BKS,Bahçeşehir Koleji,Malachi Flynn,3,3,27.68,19.33,19.0,2.67,5.33,14.33,0.518,0.699,2026-10-10 12:00
+Turkey,BSL,FBT,Fenerbahçe,Talen Horton-Tucker,3,3,19.82,14.0,13.67,3.67,2.67,10.0,0.504,0.706,2026-10-04 14:30
+Turkey,BSL,BKS,Bahçeşehir Koleji,Marcquise Reed,3,3,16.88,9.0,10.0,0.67,2.67,7.33,0.434,0.533,2026-10-10 12:00
+Turkey,BSL,BKS,Bahçeşehir Koleji,Trevion Williams,3,3,26.06,23.67,13.33,10.33,2.67,8.0,0.307,0.908,2026-10-10 12:00
+Turkey,BSL,FBT,Fenerbahçe,Shavon Shields,2,2,25.13,16.5,11.5,6.5,2.0,7.0,0.279,0.656,2026-09-27 17:00
+Turkey,BSL,FBT,Fenerbahçe,Braxton Key,3,3,21.86,13.33,9.67,3.67,4.0,7.67,0.351,0.61,2026-10-10 19:30
+Turkey,BSL,BKS,Bahçeşehir Koleji,Tyler Cavanaugh,3,3,19.14,11.33,10.0,2.0,1.67,4.67,0.244,0.592,2026-10-10 12:00
+Turkey,BSL,FBT,Fenerbahçe,Trent Forrest,4,4,21.61,9.75,8.0,3.0,2.0,4.75,0.22,0.451,2026-10-10 19:30
+Turkey,BSL,BKS,Bahçeşehir Koleji,Furkan Haltali,3,3,13.54,10.67,6.0,4.67,1.0,3.67,0.271,0.788,2026-10-10 12:00
+Turkey,BSL,BKS,Bahçeşehir Koleji,Damien Inglis,3,3,20.86,10.33,9.0,4.67,2.0,7.0,0.336,0.495,2026-10-10 12:00
+Turkey,BSL,FBT,Fenerbahçe,Melih Mahmutoğlu,3,3,13.6,6.67,6.33,0.33,1.0,3.0,0.221,0.49,2026-10-10 19:30
+Turkey,BSL,FBT,Fenerbahçe,Nicolò Melli,3,3,22.21,7.33,6.67,4.67,1.0,5.67,0.255,0.33,2026-10-04 14:30
+Turkey,BSL,BKS,Bahçeşehir Koleji,Mateusz Ponitka,3,3,21.08,7.0,4.0,3.33,2.0,2.33,0.111,0.332,2026-10-10 12:00
+Turkey,BSL,BKS,Bahçeşehir Koleji,Aleksa Avramovic,2,2,16.93,3.5,8.0,0.0,2.0,8.5,0.502,0.207,2026-10-10 12:00
+Turkey,BSL,FBT,Fenerbahçe,Onuralp Bitim,4,4,16.48,2.5,5.25,1.75,1.0,6.5,0.395,0.152,2026-10-10 19:30
+Turkey,BSL,BKS,Bahçeşehir Koleji,Isiaha Mike,3,3,19.14,4.67,4.33,1.67,0.0,4.33,0.226,0.244,2026-10-10 12:00
+Turkey,BSL,FBT,Fenerbahçe,Sertaç Şanlı,4,4,19.07,9.0,6.75,4.25,0.75,5.0,0.262,0.472,2026-10-10 19:30
+Turkey,BSL,BKS,Bahçeşehir Koleji,Kenan Sipahi,3,3,19.14,5.67,7.33,0.67,2.33,6.33,0.331,0.296,2026-10-10 12:00
+Turkey,BSL,FBT,Fenerbahçe,Wade Baldwin,3,3,23.32,11.0,10.67,2.0,4.67,8.33,0.357,0.472,2026-10-10 19:30
+Turkey,BSL,FBT,Fenerbahçe,Chris Silva,3,3,13.36,5.33,2.67,3.67,0.67,1.33,0.1,0.399,2026-10-10 19:30
+Turkey,BSL,FBT,Fenerbahçe,Kadir Yancı,2,2,1.72,0.5,0.0,0.5,0.0,0.0,0.0,0.291,2026-09-27 17:00
+Turkey,BSL,EFS,Anadolu Efes,Dario Šarić,3,3,22.78,18.67,14.67,5.0,2.0,9.0,0.395,0.819,2026-10-11 14:30
+Turkey,BSL,BJK,Beşiktaş,Anthony Brown,4,4,21.61,8.75,8.25,3.0,1.5,6.0,0.278,0.405,2026-10-11 17:00
+Turkey,BSL,BJK,Beşiktaş,Ante Žižić,4,4,17.94,10.0,7.0,5.25,0.75,4.25,0.237,0.557,2026-10-11 17:00
+Turkey,BSL,BJK,Beşiktaş,David DeJulius,3,3,17.82,12.67,11.33,1.0,3.0,6.0,0.337,0.711,2026-10-11 17:00
+Turkey,BSL,EFS,Anadolu Efes,Mike James,1,1,26.22,12.0,11.0,1.0,6.0,9.0,0.343,0.458,2026-09-27 19:30
+Turkey,BSL,EFS,Anadolu Efes,Jordan Loyd,3,3,18.16,7.67,8.67,1.67,1.33,7.33,0.404,0.422,2026-10-11 14:30
+Turkey,BSL,EFS,Anadolu Efes,Matthew Strazel,3,3,24.31,11.33,10.33,3.67,5.0,8.33,0.343,0.466,2026-10-11 14:30
+Turkey,BSL,BJK,Beşiktaş,Berk Uğurlu,4,4,21.18,7.5,7.75,2.75,1.75,6.75,0.319,0.354,2026-10-11 17:00
+Turkey,BSL,BJK,Beşiktaş,Wenyen Gabriel,3,3,14.19,5.67,4.33,4.67,0.67,5.33,0.376,0.399,2026-10-11 17:00
+Turkey,BSL,EFS,Anadolu Efes,David Mutaf,3,3,18.39,3.0,5.0,2.33,0.67,6.67,0.362,0.163,2026-10-11 14:30
+Turkey,BSL,EFS,Anadolu Efes,Ercan Osmani,3,3,14.02,9.33,8.67,3.33,0.67,5.67,0.404,0.666,2026-10-11 14:30
+Turkey,BSL,EFS,Anadolu Efes,Daron Russell,2,2,16.79,6.5,9.0,0.5,2.5,7.0,0.417,0.387,2026-10-04 17:00
+Turkey,BSL,BJK,Beşiktaş,Furkan Korkmaz,4,4,19.61,6.25,5.0,4.25,1.5,6.25,0.319,0.319,2026-10-11 17:00
+Turkey,BSL,BJK,Beşiktaş,Conor Morgan,3,3,21.98,10.33,8.0,3.33,1.67,4.67,0.212,0.47,2026-10-11 17:00
+Turkey,BSL,EFS,Anadolu Efes,Santi Yusta,1,1,16.32,7.0,8.0,1.0,1.0,5.0,0.306,0.429,2026-09-27 19:30
+Turkey,BSL,BJK,Beşiktaş,James Metecan Birsen,4,4,13.62,5.25,6.0,3.25,1.25,5.25,0.385,0.385,2026-10-11 17:00
+Turkey,BSL,EFS,Anadolu Efes,Bruno Fernando,3,3,19.3,8.0,6.33,4.67,0.0,4.67,0.242,0.415,2026-10-11 14:30
+Turkey,BSL,EFS,Anadolu Efes,Erkan Yılmaz,3,3,16.01,9.67,8.0,2.67,1.0,5.33,0.333,0.604,2026-10-11 14:30
+Turkey,BSL,BJK,Beşiktaş,Jaylen Nowell,4,4,19.58,3.75,9.0,1.75,1.0,10.0,0.511,0.191,2026-10-11 17:00
+Turkey,BSL,EFS,Anadolu Efes,Darius Karutaşu,1,1,2.47,-1.0,0.0,0.0,0.0,1.0,0.405,-0.405,2026-09-27 19:30
+Turkey,BSL,BJK,Beşiktaş,Eugene Omoruyi,3,3,18.56,8.67,7.0,4.67,2.0,4.33,0.234,0.467,2026-10-05 18:00
+Turkey,BSL,BJK,Beşiktaş,Scottie Wilbekin,4,4,12.3,-0.25,2.5,0.75,1.25,5.5,0.447,-0.02,2026-10-11 17:00
+Turkey,BSL,EFS,Anadolu Efes,Burak Yıldızlı,1,1,3.27,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-09-27 19:30
+Turkey,BSL,FBT,Fenerbahçe,Johnny Juzang,2,2,24.29,20.0,16.0,5.5,1.5,7.5,0.309,0.823,2026-10-10 19:30
+Turkey,BSL,FBT,Fenerbahçe,Ignas Sargiunas,2,2,17.28,7.0,7.0,0.5,2.0,4.5,0.26,0.405,2026-10-10 19:30
+Turkey,BSL,FBT,Fenerbahçe,Will Clyburn,3,3,18.09,8.67,9.67,3.33,1.0,7.0,0.387,0.479,2026-10-10 19:30
+Turkey,BSL,FBT,Fenerbahçe,Shane Larkin,2,2,18.16,5.5,6.5,1.5,1.0,6.0,0.33,0.303,2026-10-10 19:30
+Turkey,BSL,EFS,Anadolu Efes,Collin Malcolm,2,2,26.22,15.0,10.0,4.5,3.5,9.0,0.343,0.572,2026-10-11 14:30
+Turkey,BSL,EFS,Anadolu Efes,Kai Jones,2,2,22.11,19.0,7.5,9.5,1.0,4.0,0.181,0.859,2026-10-11 14:30
+Turkey,BSL,BKS,Bahçeşehir Koleji,Ismet Akpinar,2,2,7.78,4.5,4.5,0.5,0.0,2.0,0.257,0.579,2026-10-10 12:00
+Turkey,BSL,BJK,Beşiktaş,Devon Dotson,3,3,21.49,4.0,5.0,1.33,2.0,4.67,0.217,0.186,2026-10-11 17:00
+Turkey,BSL,TOF,Tofas Bursa,Bryce Jones,2,2,21.5,9.0,9.5,2.0,4.5,7.0,0.326,0.419,2026-10-03 12:00
+Turkey,BSL,TOF,Tofas Bursa,Jamuni McNeace,3,3,16.48,9.33,6.33,4.0,0.33,3.67,0.223,0.566,2026-10-10 17:00
+Turkey,BSL,TOF,Tofas Bursa,Yigitcan Saybir,3,3,28.36,15.33,18.67,4.33,0.67,14.0,0.494,0.541,2026-10-10 17:00
+Turkey,BSL,TOF,Tofas Bursa,Gabe Brown,3,3,25.1,10.0,9.0,3.33,0.67,7.33,0.292,0.398,2026-10-10 17:00
+Turkey,BSL,TOF,Tofas Bursa,Terrell Carter,2,2,15.5,8.5,6.0,2.0,0.0,3.5,0.226,0.548,2026-10-03 12:00
+Turkey,BSL,TOF,Tofas Bursa,Zach Nutall,3,3,21.48,6.0,10.0,2.67,1.33,8.33,0.388,0.279,2026-10-10 17:00
+Turkey,BSL,TOF,Tofas Bursa,Shavar Reynolds,3,3,25.07,13.67,11.67,2.33,4.33,8.0,0.319,0.545,2026-10-10 17:00
+Turkey,BSL,TOF,Tofas Bursa,Efe Postel,3,3,11.69,4.0,3.67,1.67,0.67,3.0,0.257,0.342,2026-10-10 17:00
+Turkey,BSL,TOF,Tofas Bursa,Sadik Kabaca,3,3,14.56,6.33,4.67,2.67,2.0,4.0,0.275,0.435,2026-10-10 17:00
+Turkey,BSL,TOF,Tofas Bursa,Leon Apaydin,3,3,3.82,-0.33,0.0,0.33,0.0,0.0,0.0,-0.087,2026-10-10 17:00
+Turkey,BSL,TOF,Tofas Bursa,Tre'shawn Thurman,2,2,21.56,8.5,8.0,6.5,1.5,8.0,0.371,0.394,2026-10-10 17:00
+Turkey,BSL,TTA,Turk Telekom,Dogus Ozdemiroglu,3,3,28.04,14.0,10.67,5.67,5.33,9.0,0.321,0.499,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Tim Schneider,2,2,19.0,7.5,6.0,4.0,0.5,5.5,0.289,0.395,2026-10-03 14:30
+Turkey,BSL,TTA,Turk Telekom,Anthony Lamb,3,3,25.92,8.0,4.67,4.33,3.33,5.33,0.206,0.309,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Jerrick Harding,3,3,20.78,14.33,19.0,1.33,2.33,13.0,0.626,0.69,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Shaquielle McKissic,2,2,17.68,9.0,10.0,1.5,2.0,7.5,0.424,0.509,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Goktug Bas,3,3,9.61,3.67,2.0,1.67,0.67,2.33,0.243,0.382,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Kris Bankston,3,3,22.21,10.0,8.0,3.33,0.33,4.33,0.195,0.45,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Ata Kahraman,3,3,15.08,6.67,5.0,1.67,2.0,5.0,0.331,0.442,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Anil Alyanak,1,1,7.0,3.0,5.0,0.0,0.0,4.0,0.571,0.429,2026-09-26 12:00
+Turkey,BSL,TTA,Turk Telekom,Emircan Kosut,1,1,3.0,1.0,2.0,0.0,0.0,2.0,0.667,0.333,2026-09-26 12:00
+Turkey,BSL,TTA,Turk Telekom,Ismael Bako,3,3,17.04,12.33,6.33,4.33,0.67,2.67,0.156,0.724,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Uros Trifunovic,3,3,22.39,4.0,8.0,1.0,0.33,7.33,0.327,0.179,2026-10-11 17:00
+Turkey,BSL,TTA,Turk Telekom,Tony Taylor,2,2,16.7,7.0,4.5,2.0,3.0,3.0,0.18,0.419,2026-10-11 17:00
+Regional,ABA,BUD,Budućnost VOLI,Justin Edward Smith,2,2,21.77,14.0,11.0,5.0,0.5,7.0,0.322,0.643,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Marial Shayok,2,2,13.08,-1.5,3.0,1.5,0.5,6.0,0.459,-0.115,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Emir Hadzibegovic,2,2,11.56,3.0,1.5,3.0,1.5,1.5,0.13,0.26,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Iverson Latrell Molinar Jones,2,2,21.33,8.0,10.5,2.0,3.5,11.0,0.516,0.375,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Kevin Duane Ferrell Jr,1,1,27.57,18.0,17.0,0.0,5.0,11.0,0.399,0.653,2026-10-02 20:30
+Regional,ABA,BUD,Budućnost VOLI,Dzordzije Jovanovic,1,1,14.25,6.0,7.0,0.0,1.0,4.0,0.281,0.421,2026-10-02 20:30
+Regional,ABA,BUD,Budućnost VOLI,Juwan Morgan,1,1,22.1,23.0,11.0,13.0,2.0,4.0,0.181,1.041,2026-10-02 20:30
+Regional,ABA,BUD,Budućnost VOLI,Jerry Franck Boutsiele,2,2,16.02,10.0,6.0,3.0,0.0,2.0,0.125,0.624,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Stefan Dzordzevic,1,1,11.72,8.0,6.0,6.0,1.0,5.0,0.427,0.683,2026-10-02 20:30
+Regional,ABA,BUD,Budućnost VOLI,Oleksandr Kovliar,1,1,12.1,5.0,2.0,3.0,3.0,3.0,0.248,0.413,2026-10-02 20:30
+Regional,ABA,BUD,Budućnost VOLI,Axel Bouteille,2,2,22.43,4.5,8.0,5.5,0.0,10.5,0.468,0.201,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Anthony Dewayne Cowan,1,1,28.57,23.0,18.0,3.0,3.0,6.0,0.21,0.805,2026-10-03 17:00
+Regional,ABA,COL,Cedevita Olimpija,Rok Radovic,2,2,19.28,5.0,3.0,2.5,2.0,3.5,0.182,0.259,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Rihards Lomazs,2,2,26.06,6.0,8.0,1.5,3.0,6.0,0.23,0.23,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Cameron Toussaint Selidji Houindo,1,1,9.0,0.0,3.0,3.0,0.0,4.0,0.444,0.0,2026-10-03 17:00
+Regional,ABA,COL,Cedevita Olimpija,Jaka Blazic,2,2,9.68,0.5,3.5,1.0,0.5,4.5,0.465,0.052,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Osayimwen Olugbenga Benson Osifo,2,2,11.96,3.0,1.0,2.5,1.0,1.5,0.125,0.251,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Miha Cerkvenik,1,1,2.23,-1.0,0.0,0.0,0.0,1.0,0.448,-0.448,2026-10-03 17:00
+Regional,ABA,COL,Cedevita Olimpija,Matthew Christopher Hurt,2,2,26.82,24.5,22.5,4.5,0.0,14.5,0.541,0.913,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Noah Arthur Kirkwood,2,2,19.48,7.5,7.5,3.0,2.0,8.0,0.411,0.385,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Urban Kroflic,2,2,18.59,9.0,11.0,3.0,0.0,7.5,0.403,0.484,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,David Skara,2,2,19.98,3.0,4.0,4.0,0.0,4.0,0.2,0.15,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Jayce Ryback Johnson,2,2,16.06,10.0,4.5,8.0,0.0,2.0,0.125,0.623,2026-10-10 21:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Otis Antoine Livingston Jr,2,2,20.89,0.5,7.5,0.5,2.0,8.5,0.407,0.024,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Javonte Smart,2,2,28.66,21.0,17.5,4.0,7.0,12.5,0.436,0.733,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Jalyn Zacchae´us Mccreary,2,2,22.3,13.0,12.0,4.0,1.5,9.0,0.404,0.583,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Christian Angelo Bishop,2,2,16.26,1.5,3.0,3.5,1.0,5.0,0.308,0.092,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Javon Anthony Bess,2,2,25.59,15.0,12.0,4.0,1.0,4.5,0.176,0.586,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Malcolm Alexander Hill,2,2,16.47,6.0,5.0,2.5,2.5,3.0,0.182,0.364,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Uros Plavsic,2,2,26.25,21.0,12.0,8.0,4.0,7.0,0.267,0.8,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Nicolae Bogdan Nicolescu,2,2,11.38,1.5,3.0,0.0,0.5,2.0,0.176,0.132,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Patrick Neal Richard Ii,2,2,6.28,2.0,1.5,1.5,0.0,0.5,0.08,0.318,2026-10-11 12:00
+Regional,ABA,UBT,U-BT Cluj-Napoca,Kristian Kullamäe,2,2,25.95,17.5,16.5,5.5,1.5,12.0,0.462,0.674,2026-10-11 12:00
+Regional,ABA,BOS,Bosna BH Telecom,Shawn O Neal Pipes Jr,2,2,23.39,15.5,15.0,1.0,2.5,6.5,0.278,0.663,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Marcus Dane Domask,2,2,10.32,6.0,5.5,1.5,0.0,3.5,0.339,0.582,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Deandre Gholston,2,2,29.78,19.0,18.0,3.0,2.0,10.0,0.336,0.638,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Edin Atic,2,2,16.42,2.5,4.5,3.0,1.0,5.5,0.335,0.152,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Adin Vrabac,2,2,21.33,11.0,8.0,4.0,1.0,4.0,0.188,0.516,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Reginald Jordan Perry,2,2,26.22,22.0,21.0,7.0,1.0,14.5,0.553,0.839,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Gary Browne Ramirez,2,2,18.08,7.5,4.5,2.5,3.0,2.5,0.138,0.415,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Darko Talic,2,2,22.21,14.5,10.5,3.0,6.5,6.5,0.293,0.653,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Nikola Popovic,1,1,15.53,5.0,9.0,1.0,2.0,6.0,0.386,0.322,2026-10-03 19:00
+Regional,ABA,BOS,Bosna BH Telecom,Ryan Andrew Hawkins,2,2,18.67,5.0,3.5,2.5,0.5,3.0,0.161,0.268,2026-10-10 17:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Christopher James Jones Jr,2,2,25.54,22.0,16.0,1.5,8.0,11.0,0.431,0.861,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Stefan Miljenovic,2,2,9.73,2.0,2.0,1.0,0.5,2.0,0.205,0.205,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Jared Butler,1,1,16.75,14.0,13.0,3.0,3.0,10.0,0.597,0.836,2026-10-04 18:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Dejan Davidovac,2,2,17.75,6.0,2.5,5.0,1.0,3.5,0.197,0.338,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Tyson Gregory Carter,2,2,21.75,10.5,10.5,1.0,3.0,8.5,0.391,0.483,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Ebuka Izundu,2,2,12.33,8.5,7.5,3.0,0.5,3.5,0.284,0.689,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Nikola Dzurisic,1,1,8.93,6.0,6.0,1.0,0.0,4.0,0.448,0.672,2026-10-04 18:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Patrick O Neal Baldwin Jr,2,2,6.4,1.0,0.0,3.0,0.0,1.5,0.234,0.156,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Vojin Medarevic,1,1,18.3,5.0,6.0,2.0,3.0,8.0,0.437,0.273,2026-10-04 18:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Jordan Nwora,2,2,20.79,19.0,17.5,3.5,2.0,10.0,0.481,0.914,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,David Kramer,2,2,19.1,14.0,11.5,4.5,1.0,7.5,0.393,0.733,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Chima Moneke,1,1,23.63,11.0,7.0,8.0,0.0,6.0,0.254,0.465,2026-10-04 18:00
+Regional,ABA,DUB,Dubai Basketball,Elie Franck Rey Okobo,2,2,16.32,10.5,10.0,3.0,3.0,8.0,0.49,0.643,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Nemanja Dangubic,1,1,30.32,0.0,3.0,1.0,1.0,3.0,0.099,0.0,2026-10-04 20:00
+Regional,ABA,DUB,Dubai Basketball,Dwayne Lee Bacon Jr,2,2,17.13,6.5,8.0,1.5,3.0,8.5,0.496,0.38,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Jaron Samuel Blossomgame,2,2,14.65,3.5,4.5,3.0,0.0,3.5,0.239,0.239,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Davion Dee Lee O Neal Mintz,2,2,20.23,16.0,15.5,3.0,0.5,7.5,0.371,0.791,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Klemen Prepelic,1,1,6.88,1.0,3.0,0.0,0.0,2.0,0.291,0.145,2026-10-04 20:00
+Regional,ABA,DUB,Dubai Basketball,Kosta Kondic,2,2,16.87,9.5,7.5,1.5,2.0,5.0,0.296,0.563,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Mamadi Diakite,2,2,16.66,6.5,6.5,3.0,0.0,5.5,0.33,0.39,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Tornike Shengelia,2,2,18.08,14.0,8.5,1.5,2.5,4.0,0.221,0.774,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Filip Petrusev,2,2,20.12,8.5,6.0,4.0,2.0,4.5,0.224,0.423,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Kenan Kamenjas,2,2,10.0,9.5,6.0,4.5,0.0,3.0,0.3,0.95,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Thomas Ryan Walkup,1,1,21.85,5.0,0.0,0.0,7.0,0.0,0.0,0.229,2026-10-04 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Kyle Lindsay Allman,2,2,18.66,6.5,4.5,2.5,3.0,4.0,0.214,0.348,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Carlik Jones,1,1,16.55,0.0,2.0,0.0,5.0,5.0,0.302,0.0,2026-10-05 18:30
+Regional,ABA,PAR,Partizan Mozzart Bet,Luca Vildoza,2,2,13.95,12.5,10.0,2.5,3.0,6.5,0.466,0.896,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Ethan Ivan Thompson,2,2,25.09,15.0,14.5,5.0,2.0,11.0,0.438,0.598,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Mario Nakic,2,2,18.68,2.0,5.0,2.5,1.0,6.0,0.321,0.107,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Nikola Tanaskovic,2,2,18.95,17.0,14.0,3.5,1.0,6.0,0.317,0.897,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Kevarrius Keshawn Hayes,2,2,12.94,9.5,5.5,5.5,1.5,2.5,0.193,0.734,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Arijan Lakic,2,2,15.67,4.0,5.5,2.0,1.5,5.0,0.319,0.255,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Tonye Frank Jekiri,2,2,5.68,5.0,2.0,2.0,1.0,1.5,0.264,0.881,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Alessandro Pajola,2,2,15.18,11.0,2.0,2.0,8.5,3.5,0.231,0.725,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Joffrey Stephane Morgan Lauvergne,2,2,18.61,14.5,12.5,4.0,2.0,7.5,0.403,0.779,2026-10-11 20:00
+Regional,ABA,PAR,Partizan Mozzart Bet,Bandja Sy,2,2,19.96,10.5,11.5,2.0,0.0,5.5,0.276,0.526,2026-10-11 20:00
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Eugene German,3,3,24.33,13.67,15.67,2.67,3.0,12.33,0.507,0.562,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Khadeen Carrington,4,4,22.5,8.0,9.25,2.75,1.5,8.75,0.389,0.356,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Itay Segev,3,3,9.0,5.33,2.33,4.0,0.0,1.67,0.185,0.593,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Guy Palatin,4,4,16.25,3.0,3.25,2.5,1.75,3.75,0.231,0.185,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Bar Timor,4,4,17.25,4.75,4.5,2.75,1.75,4.5,0.261,0.275,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Ish Wainright,3,3,29.67,12.33,11.67,5.33,1.33,8.0,0.27,0.416,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Tomas Satoransky,1,1,13.0,-2.0,0.0,1.0,3.0,2.0,0.154,-0.154,2026-09-26 19:55
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Oz Blayzer,4,4,10.0,0.75,1.75,2.0,0.5,2.5,0.25,0.075,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Frederic Bourdillon,1,1,5.0,3.0,4.0,0.0,1.0,1.0,0.2,0.6,2026-09-26 19:55
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Tai Odiase,3,3,19.67,19.67,11.33,6.33,0.33,4.33,0.22,1.0,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Max Heidegger,4,4,14.25,6.25,8.5,0.25,1.5,5.5,0.386,0.439,2026-10-11 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Bruno Caboclo,2,2,17.0,8.0,4.5,6.0,1.0,4.5,0.265,0.471,2026-10-03 19:55
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Jimmy Clark III,3,3,18.67,13.67,11.33,1.33,5.67,8.33,0.446,0.732,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Amit Ebo,3,3,12.33,7.67,7.67,1.33,1.33,6.67,0.541,0.622,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Armando Bacot Jr.,3,3,18.33,8.0,6.67,3.0,1.33,5.33,0.291,0.436,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Roman Sorkin,4,4,19.75,18.0,12.25,3.25,2.0,5.75,0.291,0.911,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Will Rayman,4,4,18.75,7.25,7.25,3.25,1.0,4.5,0.24,0.387,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,John Dibartolomeo,3,3,18.33,11.67,11.0,1.33,1.33,4.67,0.255,0.636,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Keaton Wallace,4,4,22.75,9.75,10.5,3.0,2.75,8.25,0.363,0.429,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,T.J Leaf,4,4,18.75,14.5,10.5,3.0,2.0,6.0,0.32,0.773,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Daniel Theis,1,1,17.0,18.0,15.0,2.0,0.0,5.0,0.294,1.059,2026-09-27 18:00
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Yam Madar,4,4,15.5,11.5,9.25,1.25,3.25,5.75,0.371,0.742,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Bonzie Colson,3,3,20.67,15.67,12.0,3.67,0.67,6.67,0.323,0.758,2026-10-10 19:15
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Antonio Blakeney,2,2,21.0,9.0,11.5,1.5,2.0,10.0,0.476,0.429,2026-10-03 19:55
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,"Gabriel ""Iffe"" Lundberg",2,2,26.0,16.0,12.5,3.5,3.0,9.0,0.346,0.615,2026-10-04 18:00
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Jaylen Hoard,2,2,26.0,12.0,8.0,7.0,2.0,7.5,0.288,0.462,2026-10-04 18:00
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Nitay Dodo,3,3,3.33,-1.0,0.0,0.0,0.0,0.67,0.2,-0.3,2026-10-10 19:15
+Israel,IBSL,MTA,Maccabi Rapyd Tel Aviv,Oshae Brissett,1,1,22.0,13.0,17.0,2.0,0.0,12.0,0.545,0.591,2026-10-04 18:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Devontae Cacok,4,4,16.5,11.25,8.5,5.5,0.75,5.5,0.333,0.682,2026-10-11 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Kenneth Lofton Jr.,5,5,26.8,21.8,17.2,6.8,3.0,11.6,0.433,0.813,2026-10-11 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Jaleen Smith,5,5,25.4,11.0,10.4,3.2,4.0,8.2,0.323,0.433,2026-10-11 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Shahar Luberboim,5,5,1.6,-0.8,0.0,0.2,0.0,0.6,0.375,-0.5,2026-10-11 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Shake Milton,4,4,27.0,18.75,13.0,4.5,3.75,8.75,0.324,0.694,2026-10-04 18:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Nimrod Levi,5,5,15.4,4.8,6.2,3.8,0.2,5.2,0.338,0.312,2026-10-11 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,David Roddy,3,3,25.0,12.33,12.0,4.0,2.33,9.67,0.387,0.493,2026-10-04 18:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Gabriel Chachashvili,4,4,14.0,6.25,4.75,3.75,0.25,2.75,0.196,0.446,2026-10-04 18:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Ethan Burg,5,5,22.4,10.4,11.4,3.2,1.2,7.4,0.33,0.464,2026-10-11 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Yovel Zoosman,4,4,21.5,7.5,6.25,1.5,1.0,4.25,0.198,0.349,2026-10-11 19:55
+Germany,BBL,BAY,FC Bayern Munich,Oscar Da Silva,4,4,20.35,19.75,13.5,6.25,0.75,7.0,0.344,0.971,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Johannes Thiemann,3,3,15.32,10.0,8.67,3.67,2.0,4.0,0.261,0.653,2026-10-04 15:00
+Germany,BBL,BAY,FC Bayern Munich,Duane Washington,3,3,16.83,10.0,14.33,2.0,1.33,12.33,0.733,0.594,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Johannes Voigtmann,3,3,12.09,16.33,10.0,6.33,2.0,5.67,0.469,1.351,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Justinian Jessup,3,3,18.19,11.0,11.33,2.33,2.0,9.67,0.531,0.605,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Vladimir Lucic,3,3,16.07,10.0,4.33,4.0,3.67,3.67,0.228,0.622,2026-10-04 15:00
+Germany,BBL,BAY,FC Bayern Munich,Tobias Jensen,4,4,13.57,5.0,2.25,1.75,3.0,2.25,0.166,0.369,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Rokas Jokubaitis,2,2,14.96,8.0,8.5,1.0,3.0,6.5,0.435,0.535,2026-10-04 15:00
+Germany,BBL,BAY,FC Bayern Munich,Kamar Baldwin,4,4,16.47,10.5,8.0,1.75,2.75,5.75,0.349,0.638,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Niels Giffey,3,3,17.6,6.33,6.67,1.67,0.67,4.0,0.227,0.36,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Justus Hollatz,4,4,16.65,5.75,3.0,2.25,2.0,3.25,0.195,0.345,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Andreas Obst,4,4,19.2,9.0,10.25,1.0,2.5,8.0,0.417,0.469,2026-10-10 16:00
+Poland,PLK,WKS,Śląsk Wrocław,Anthony Hickey,2,1,28.8,21.0,15.5,3.5,3.5,13.0,0.451,0.729,2026-10-10 17:30
+Poland,PLK,WKS,Śląsk Wrocław,Isaih Moore,2,1,20.78,7.0,11.0,3.0,0.5,6.0,0.289,0.337,2026-10-10 17:30
+Poland,PLK,WKS,Śląsk Wrocław,Robinson,2,1,27.4,17.0,11.5,9.0,3.0,15.0,0.547,0.62,2026-10-10 17:30
+Poland,PLK,WKS,Śląsk Wrocław,Malik Parsons,2,1,21.16,4.0,6.5,2.0,1.0,4.0,0.189,0.189,2026-10-10 17:30
+Poland,PLK,WKS,Śląsk Wrocław,Tymoteusz Sternicki,2,1,13.54,4.0,3.5,2.5,1.5,3.0,0.222,0.295,2026-10-10 17:30
+Poland,PLK,WKS,Śląsk Wrocław,Paul Scruggs,2,1,23.36,19.0,9.5,3.0,4.0,9.0,0.385,0.813,2026-10-10 17:30
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Amir Coffey,1,1,27.0,4.0,6.0,2.0,1.0,7.0,0.259,0.148,2026-09-17 19:55
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Zach LeDay,1,1,22.0,3.0,8.0,2.0,0.0,7.0,0.318,0.136,2026-09-17 19:55
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Vasilije Micic,1,1,25.0,21.0,17.0,3.0,10.0,10.0,0.4,0.84,2026-09-17 19:55
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Dan Oturu,2,2,20.0,25.0,17.0,6.0,1.0,8.0,0.4,1.25,2026-10-11 17:30
+France,Betclic Elite,ASV,ASVEL,Patty Mills,3,3,21.25,9.0,10.33,2.0,1.33,8.33,0.392,0.424,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Jae Crowder,3,3,18.93,11.33,11.67,3.33,2.0,8.0,0.423,0.599,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Joel Bolomboy,4,4,24.36,13.0,6.5,6.25,2.0,4.0,0.164,0.534,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Tremont Waters,4,4,21.19,17.5,17.0,1.75,4.5,9.5,0.448,0.826,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Edwin Jackson,4,4,12.39,0.75,1.25,1.5,0.75,3.0,0.242,0.061,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Marc-Owen Fodzo Dada,4,4,17.3,7.75,8.25,3.5,2.25,5.25,0.303,0.448,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Tyty Washington,1,1,25.33,3.0,8.0,3.0,0.0,6.0,0.237,0.118,2026-09-19 16:00
+France,Betclic Elite,ASV,ASVEL,Bodian Massa,4,4,12.9,4.25,3.25,3.75,0.25,2.75,0.213,0.33,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Hugo Besson,4,4,21.47,8.75,9.25,1.75,4.25,6.75,0.314,0.408,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Yves Pons,4,4,14.46,4.75,4.0,2.25,0.25,2.0,0.138,0.329,2026-10-11 19:00
+Italy,LBA,VIR,Virtus Costa Bologna,Rasheed Bello,1,1,22.0,4.0,10.0,4.0,0.0,12.0,0.545,0.182,2026-09-19 19:45
+Germany,BBL,BAY,FC Bayern Munich,Austin Wiley,3,3,13.48,15.33,9.33,8.67,0.67,4.67,0.346,1.137,2026-10-10 16:00
+Germany,BBL,BAY,FC Bayern Munich,Miles Norris,3,3,18.85,12.0,9.0,4.67,1.0,6.67,0.354,0.637,2026-10-10 16:00
+Turkey,BSL,FBT,Fenerbahçe,Demircan Demir,1,1,0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-09-22 19:00
+Turkey,BSL,BJK,Beşiktaş,Daquan Jeffries,1,1,14.45,-1.0,4.0,0.0,0.0,5.0,0.346,-0.069,2026-09-22 19:00
+Germany,BBL,BAY,FC Bayern Munich,Marjon Beauchamp,2,2,19.36,8.0,8.5,4.5,1.5,8.5,0.439,0.413,2026-10-10 16:00
+France,Betclic Elite,ASV,ASVEL,Both Gach,3,3,22.12,11.0,11.0,3.67,1.0,7.33,0.331,0.497,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Nate Sestina,3,3,17.46,5.33,6.33,2.33,0.0,5.0,0.286,0.305,2026-10-11 19:00
+France,Betclic Elite,ASV,ASVEL,Myles Cale,1,1,11.95,1.0,4.0,2.0,0.0,4.0,0.335,0.084,2026-10-04 16:30
+France,Betclic Elite,ASV,ASVEL,David Lighty,1,1,6.77,1.0,2.0,0.0,0.0,1.0,0.148,0.148,2026-10-04 16:30
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Yotam Hanochi,4,4,8.5,2.0,3.5,1.0,0.25,3.5,0.412,0.235,2026-10-11 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Dusan Miletic,3,3,13.67,11.33,7.0,5.33,0.33,4.0,0.293,0.829,2026-10-11 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Roi Huber,4,4,13.0,4.5,3.0,1.75,2.75,3.0,0.231,0.346,2026-10-11 19:55
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Anthony Cowan Jr,1,1,27.68,14.0,16.0,0.0,6.0,10.0,0.361,0.506,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Cameron Toussaint Selidji Houindo,1,1,21.97,4.0,6.0,2.0,0.0,5.0,0.228,0.182,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Miha Cerkvenik,1,1,24.8,3.0,4.0,2.0,1.0,7.0,0.282,0.121,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Urban Kroflic,1,1,26.78,7.0,11.0,4.0,1.0,9.0,0.336,0.261,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Jayce Ryback Johnson,1,1,25.2,6.0,7.0,4.0,0.0,6.0,0.238,0.238,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Rok Radovic,1,1,27.62,4.0,2.0,4.0,1.0,4.0,0.145,0.145,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Derin Ustun,1,1,17.3,13.0,14.0,2.0,2.0,7.0,0.405,0.751,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Jaka Blazic,1,1,17.68,2.0,3.0,4.0,0.0,5.0,0.283,0.113,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Osayimwen Olugbenga Benson Osifo,1,1,7.62,4.0,4.0,1.0,0.0,0.0,0.0,0.525,2026-09-17 20:00
+Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Uros Stjepanovic,1,1,3.35,-2.0,0.0,0.0,0.0,2.0,0.597,-0.597,2026-09-17 20:00
+Germany,BBL,CHE,NINERS Chemnitz,Cobe Williams,3,3,27.5,10.33,13.33,2.0,3.0,10.67,0.388,0.376,2026-09-27 16:30
+Germany,BBL,CHE,NINERS Chemnitz,Benjamin Forrest Burnham,5,5,27.79,10.6,8.8,6.2,0.2,8.4,0.302,0.381,2026-10-10 16:00
+Germany,BBL,CHE,NINERS Chemnitz,Nighael Ceaser,5,5,26.94,18.4,11.8,8.8,2.8,8.6,0.319,0.683,2026-10-10 16:00
+Germany,BBL,CHE,NINERS Chemnitz,Elias Rodl,5,5,8.21,-1.8,0.4,0.6,0.0,3.0,0.365,-0.219,2026-10-10 16:00
+Germany,BBL,CHE,NINERS Chemnitz,Stef Smith,5,5,31.51,12.4,16.0,2.6,4.6,13.6,0.432,0.394,2026-10-10 16:00
+Germany,BBL,CHE,NINERS Chemnitz,Jannis von Seckendorff,5,5,12.46,7.6,5.6,3.6,0.2,3.4,0.273,0.61,2026-10-10 16:00
+Germany,BBL,CHE,NINERS Chemnitz,Mateo Seric,5,5,23.89,7.8,8.8,3.6,0.4,8.4,0.352,0.326,2026-10-10 16:00
+Germany,BBL,CHE,NINERS Chemnitz,Urald King,4,4,24.23,9.5,9.5,4.0,0.5,7.5,0.31,0.392,2026-10-10 16:00
+Germany,BBL,CHE,NINERS Chemnitz,Alexander Richardson,4,4,1.98,-0.25,0.0,0.25,0.0,0.0,0.0,-0.126,2026-10-10 16:00
+Germany,BBL,CHE,NINERS Chemnitz,Phlandrous Fleming Jr,5,5,29.2,16.6,15.0,3.4,6.6,11.6,0.397,0.568,2026-10-10 16:00
+United Kingdom,SLB,LDN,London Lions,Joel Scott,4,4,22.2,14.0,9.75,5.0,2.0,7.5,0.338,0.631,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Maxwell Lewis,4,4,18.93,9.0,6.5,3.75,1.25,6.25,0.33,0.475,2026-09-27 17:00
+United Kingdom,SLB,LDN,London Lions,Devante Jones,4,4,21.56,9.25,10.0,1.25,4.5,9.25,0.429,0.429,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Morayoninuoluwa Soluade,5,5,18.97,7.8,2.8,2.8,4.4,3.0,0.158,0.411,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Joshua O Garro,5,5,16.62,8.2,6.2,3.6,0.4,4.6,0.277,0.493,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Ethan Price,5,5,17.5,10.4,10.0,4.2,1.0,6.8,0.389,0.594,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Rai Aaryndeep,1,1,19.25,14.0,9.0,8.0,1.0,6.0,0.312,0.727,2026-09-18 20:30
+United Kingdom,SLB,LDN,London Lions,Tarik Phillip,4,4,18.75,4.75,6.75,4.0,1.5,7.75,0.413,0.253,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Landrius Horton,4,4,23.0,8.75,8.0,2.0,3.0,6.75,0.293,0.38,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Deane Williams,3,3,22.4,11.67,9.0,4.0,1.67,5.67,0.253,0.521,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Thomas Kennedy,5,5,18.38,14.6,11.0,5.2,2.0,7.2,0.392,0.794,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Keenan Evans,4,4,20.39,10.0,9.75,2.0,3.5,7.0,0.343,0.49,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Ade Adebayo,3,3,10.05,0.67,1.67,0.67,0.33,2.0,0.199,0.066,2026-09-27 17:00
+Germany,BBL,ULM,ratiopharm Ulm,Oluwasimisola Shittu,5,5,20.71,13.6,9.2,8.8,1.4,8.4,0.406,0.657,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Jaylen Sims,5,5,27.13,8.2,9.8,4.0,1.8,10.0,0.369,0.302,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Michael Rataj,5,5,30.14,18.6,16.4,5.4,2.0,11.6,0.385,0.617,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Ibi Watson Boye,5,5,32.33,14.0,13.6,2.4,3.4,11.0,0.34,0.433,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Adam Atamna,5,5,20.33,9.6,8.2,3.2,3.2,7.8,0.384,0.472,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Marvin Heckel,5,5,11.5,2.6,2.0,0.6,1.2,1.2,0.104,0.226,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Meissa Faye,5,5,21.38,9.6,9.0,3.2,1.8,7.0,0.327,0.449,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Devin Schmidt,5,5,11.53,0.4,2.2,0.6,1.0,3.0,0.26,0.035,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Dwayne Koroma,4,4,4.32,1.25,0.5,1.5,0.0,0.75,0.173,0.289,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Armel Traore,5,5,21.85,12.8,10.2,4.2,2.2,7.6,0.348,0.586,2026-10-10 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Lenny Liedtke,3,3,4.32,2.33,1.67,0.33,1.33,1.33,0.308,0.54,2026-10-10 20:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Ben Shungu,3,3,23.87,10.0,11.0,3.33,3.0,9.67,0.405,0.419,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Rolands Sulcs,4,4,18.7,7.5,8.75,2.5,2.0,6.25,0.334,0.401,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Kristians Feierbergs,2,2,17.88,5.5,4.0,3.5,1.5,4.5,0.252,0.308,2026-10-03 17:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Isaac Johnson,4,4,15.89,17.5,12.0,7.0,1.25,6.5,0.409,1.101,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Ivan Tkachenko,4,4,24.36,10.0,7.0,4.5,0.75,3.5,0.144,0.411,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Kristers Kikusts,3,3,11.38,2.67,2.0,2.33,0.67,2.0,0.176,0.234,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Martynas Varnas,4,4,18.79,10.25,10.0,3.5,1.5,6.5,0.346,0.546,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Ritvars Nikolajevs,2,2,7.6,4.5,4.5,2.5,0.0,3.5,0.461,0.592,2026-10-03 17:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Tomas Talcis,4,4,15.27,7.25,5.25,3.25,1.25,3.5,0.229,0.475,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Janis Berzins,4,4,15.07,7.0,3.5,3.5,2.25,2.75,0.182,0.464,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Tony Perkins,4,4,22.8,18.5,19.5,3.25,2.75,11.25,0.493,0.811,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Tyler Wahl,3,3,18.57,17.33,9.67,6.0,3.33,6.67,0.359,0.933,2026-10-03 17:00
+France,Betclic Elite,JLB,Bourg-en-Bresse,Jake Forrester,1,1,11.17,6.0,5.0,3.0,0.0,3.0,0.269,0.537,2026-09-25 20:00
+France,Betclic Elite,JLB,Bourg-en-Bresse,Abdoulaye N Doye,3,3,25.13,7.0,4.33,4.33,5.0,5.67,0.225,0.279,2026-10-11 16:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Justin Mckoy,3,3,29.28,5.33,5.33,2.67,1.67,4.33,0.148,0.182,2026-10-11 16:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Jaylen Hands,3,3,34.13,14.33,17.33,4.33,4.0,13.0,0.381,0.42,2026-10-11 16:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Samuel Alajiki,3,3,20.17,4.33,3.33,4.0,0.67,4.33,0.215,0.215,2026-10-11 16:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Tymu Chenery,3,3,14.54,9.33,10.0,2.67,0.33,6.67,0.458,0.642,2026-10-11 16:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Maxence Lemoine,3,3,31.18,10.33,13.67,2.0,2.33,10.67,0.342,0.331,2026-10-11 16:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,William Pfister,3,3,24.63,8.33,4.33,4.33,0.33,2.33,0.095,0.338,2026-10-11 16:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Neftali Difuidi,3,3,28.73,9.67,10.67,3.33,1.33,9.0,0.313,0.336,2026-10-11 16:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Benjamin Gregg,3,3,21.81,11.0,10.33,2.67,1.0,6.67,0.306,0.504,2026-10-11 16:30
+United Kingdom,SLB,LDN,London Lions,Emilis Zibuda,2,2,13.36,5.5,5.0,2.0,0.0,2.5,0.187,0.412,2026-10-02 20:30
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Klavs Cavars,1,1,23.25,13.0,6.0,7.0,1.0,5.0,0.215,0.559,2026-10-09 18:00
+Latvia/Estonia,Lat-Est BL,RIG,Rigas Zelli,Toms Skuja,2,2,20.42,10.0,11.0,2.0,2.5,6.5,0.318,0.49,2026-10-09 18:00
+Greece,GBL,PBC,PAOK,Raiquan Gray,1,1,30.48,8.0,12.0,1.0,1.0,8.0,0.262,0.262,2026-10-10 15:00
+Greece,GBL,PBC,PAOK,Athanasios Bazinas,2,2,14.25,6.0,4.0,1.5,1.5,2.5,0.175,0.421,2026-10-10 15:00
+Germany,BBL,CHE,NINERS Chemnitz,Darion Atkins,3,3,20.87,6.0,4.33,3.0,0.33,4.0,0.192,0.287,2026-10-10 16:00
+Greece,GBL,ARI,Aris Betsson,Elijah Mitrou Long,2,2,14.85,2.5,3.0,2.0,1.0,4.5,0.303,0.168,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Jeremiah Robinson,2,2,26.42,21.5,20.0,7.0,1.5,14.0,0.53,0.814,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Nenad Dimitrijevic,2,2,23.31,9.5,4.0,4.5,7.5,5.5,0.236,0.408,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Vasileios Charalampopoulos,2,2,16.91,6.5,2.5,4.0,1.5,1.5,0.089,0.384,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Khem Birch,2,2,15.22,8.5,4.5,5.5,1.5,4.0,0.263,0.559,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Vasileios Toliopoulos,2,2,20.14,4.0,7.0,1.0,2.0,6.0,0.298,0.199,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Eleftherios Bochoridis,1,1,9.48,2.0,0.0,1.0,2.0,0.0,0.0,0.211,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Matt Morgan,2,2,22.44,11.5,16.0,1.0,1.5,10.0,0.446,0.512,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Ej Liddell,2,2,18.31,12.0,10.0,3.5,1.0,7.0,0.382,0.655,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Kostas Antetokounmpo,2,2,11.33,7.5,6.0,2.5,0.5,3.5,0.309,0.662,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Thanasis Antetokounmpo,2,2,5.71,2.0,1.0,0.0,1.0,0.5,0.088,0.35,2026-10-10 16:30
+Greece,GBL,ARI,Aris Betsson,Adam Mokoka,2,2,20.62,-0.5,4.0,3.0,0.5,7.0,0.34,-0.024,2026-10-10 16:30
+Turkey,BSL,TOF,Tofas Bursa,Tyler Jones,1,1,32.27,7.0,10.0,3.0,5.0,10.0,0.31,0.217,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Alija Islamovic,1,1,11.65,2.0,5.0,0.0,0.0,2.0,0.172,0.172,2026-10-10 17:00
+Bulgaria,NBL,BLK,Balkan Botevgrad,Aleksandar Stoimenov,1,1,30.47,17.0,18.0,5.0,2.0,13.0,0.427,0.558,2026-10-10 17:00
+Bulgaria,NBL,BLK,Balkan Botevgrad,Konstantin Toshkov,1,1,21.22,19.0,10.0,6.0,6.0,9.0,0.424,0.896,2026-10-10 17:00
+Bulgaria,NBL,BLK,Balkan Botevgrad,Martin Sotirov,1,1,18.48,12.0,9.0,9.0,1.0,7.0,0.379,0.649,2026-10-10 17:00
+Bulgaria,NBL,BLK,Balkan Botevgrad,Darnell Edge,1,1,13.68,10.0,8.0,3.0,3.0,5.0,0.365,0.731,2026-10-10 17:00
+Bulgaria,NBL,BLK,Balkan Botevgrad,Pavlin Ivanov,1,1,21.4,17.0,14.0,3.0,2.0,7.0,0.327,0.794,2026-10-10 17:00
+Bulgaria,NBL,BLK,Balkan Botevgrad,Nikolay Grozev,1,1,19.53,10.0,10.0,2.0,1.0,8.0,0.41,0.512,2026-10-10 17:00
+Bulgaria,NBL,BLK,Balkan Botevgrad,Ivan Spirov,1,1,16.58,6.0,2.0,7.0,2.0,4.0,0.241,0.362,2026-10-10 17:00
+Poland,PLK,WKS,Śląsk Wrocław,John Egbunu,1,1,21.05,10.0,12.0,5.0,1.0,6.0,0.285,0.475,2026-10-10 17:30
+Poland,PLK,WKS,Śląsk Wrocław,Jakub Niziol,1,1,24.85,11.0,6.0,2.0,3.0,5.0,0.201,0.443,2026-10-10 17:30
+Poland,PLK,WKS,Śląsk Wrocław,Blazej Kulikowski,1,1,18.22,6.0,6.0,2.0,0.0,5.0,0.274,0.329,2026-10-10 17:30
+Poland,PLK,WKS,Śląsk Wrocław,Anthony Wrzeszcz,1,1,3.82,1.0,0.0,0.0,1.0,0.0,0.0,0.262,2026-10-10 17:30
+Greece,GBL,PAO,Panathinaikos AKTOR,Nigel Hayes,1,1,16.02,15.0,12.0,2.0,2.0,7.0,0.437,0.937,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Ioannis Kouzeloglou,1,1,8.17,7.0,4.0,3.0,0.0,2.0,0.245,0.857,2026-10-10 18:00
+Greece,GBL,PAO,Panathinaikos AKTOR,Moustapha Fall,1,1,13.57,8.0,2.0,4.0,0.0,1.0,0.074,0.59,2026-10-10 18:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Federico Cattapan,1,1,6.0,-2.0,4.0,1.0,0.0,5.0,0.833,-0.333,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Antonio Barra,1,1,4.0,-4.0,0.0,0.0,0.0,1.0,0.25,-1.0,2026-10-10 20:00
+Italy,LBA,TRE,Dolomiti Energia Trentino,Mansour Bayo,1,1,2.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-10 20:00
+France,Betclic Elite,JLB,Bourg-en-Bresse,Keith Jordan,3,3,23.1,4.0,8.33,1.0,1.33,6.67,0.289,0.173,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Tyrese Samuel,3,3,19.96,11.0,8.0,5.0,1.67,6.0,0.301,0.551,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Tyger Campbell,1,1,19.62,6.0,5.0,3.0,3.0,3.0,0.153,0.306,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Lionel Gaudoux,3,3,23.11,11.0,11.33,6.67,0.0,9.0,0.39,0.476,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Trey Woodbury,3,3,23.19,10.67,10.33,3.0,1.33,8.0,0.345,0.46,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Assemian Moulare,3,3,28.99,6.67,15.0,1.0,2.67,11.33,0.391,0.23,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Adrian Nelson,3,3,19.94,9.0,9.67,5.33,0.0,8.0,0.401,0.451,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Antony Labanca,3,3,19.18,2.33,3.0,0.67,1.0,3.0,0.156,0.122,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Nathan Soliman,3,3,24.47,12.67,12.33,4.33,3.33,6.0,0.245,0.518,2026-10-10 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Kadin Shedrick,3,3,13.18,8.67,6.33,3.33,1.0,2.0,0.152,0.657,2026-10-10 20:30
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Nick Weiler Babb,1,1,13.83,5.0,3.0,1.0,4.0,3.0,0.217,0.361,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Ognjen Dobric,1,1,11.2,4.0,7.0,0.0,0.0,4.0,0.357,0.357,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Nikola Durisic,1,1,17.9,3.0,4.0,1.0,3.0,3.0,0.168,0.168,2026-10-10 21:00
+Regional,ABA,CZV,Crvena zvezda Meridianbet,Semi Ojeleye,1,1,21.4,10.0,9.0,1.0,2.0,6.0,0.28,0.467,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Yogi Ferrell,1,1,29.18,5.0,9.0,1.0,6.0,9.0,0.308,0.171,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Dordije Jovanovic,1,1,25.63,12.0,11.0,2.0,1.0,7.0,0.273,0.468,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Stefan Djordjevic,1,1,18.68,20.0,16.0,9.0,0.0,10.0,0.535,1.07,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Fletcher Magee,1,1,16.82,6.0,9.0,2.0,0.0,7.0,0.416,0.357,2026-10-10 21:00
+Regional,ABA,BUD,Budućnost VOLI,Andrija Slavkovic,1,1,8.33,1.0,0.0,0.0,0.0,0.0,0.0,0.12,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Jordan Gainey,1,1,5.3,-2.0,0.0,1.0,0.0,3.0,0.566,-0.377,2026-10-10 21:00
+Regional,ABA,COL,Cedevita Olimpija,Anthony Cowan Jr,1,1,17.17,-1.0,7.0,0.0,1.0,6.0,0.35,-0.058,2026-10-10 21:00
+Greece,GBL,OLY,Olympiacos,Aleksandar Vezenkov,1,1,20.73,19.0,16.0,4.0,1.0,6.0,0.289,0.916,2026-10-11 12:00
+Greece,GBL,OLY,Olympiacos,George Papas,1,1,13.13,6.0,6.0,0.0,1.0,3.0,0.228,0.457,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Mckinley Wright,1,1,24.42,11.0,14.0,3.0,2.0,12.0,0.491,0.451,2026-10-11 12:00
+Regional,ABA,DUB,Dubai Basketball,Mfiondu Kabengele,1,1,16.42,13.0,12.0,3.0,1.0,9.0,0.548,0.792,2026-10-11 12:00
+Germany,BBL,SKY,SKYLINERS Frankfurt,Thomas Klepeisz,4,4,17.93,5.25,3.5,1.5,1.75,3.0,0.167,0.293,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Till Pape,4,4,23.52,9.0,10.5,3.25,0.0,6.5,0.276,0.383,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Judah Mintz,4,4,23.6,19.25,17.75,3.5,4.0,11.25,0.477,0.816,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,William Christmas,4,4,24.79,11.25,9.0,3.75,1.25,6.25,0.252,0.454,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Race Thompson,3,3,20.49,15.67,10.33,8.0,1.0,9.67,0.472,0.764,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Roman Bedime,4,4,15.5,5.25,4.25,2.0,1.25,3.25,0.21,0.339,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Jacob Knauf,3,3,8.78,2.0,1.0,1.0,0.0,0.0,0.0,0.228,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Radii Caisin,4,4,20.03,11.0,10.25,2.5,0.75,6.25,0.312,0.549,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Nahiem Alleyne,4,4,18.0,10.0,8.5,2.25,1.75,5.25,0.292,0.556,2026-10-11 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Isaiah Swope,4,4,21.03,7.25,12.5,1.0,2.5,11.0,0.523,0.345,2026-10-11 16:30
+Italy,LBA,NAP,Napoli Basketball,Emanuel Esposito,1,1,1.0,-1.0,0.0,0.0,0.0,1.0,1.0,-1.0,2026-10-11 17:00
+Italy,LBA,NAP,Napoli Basketball,Jahmi'us Ramsey,1,1,23.0,12.0,19.0,1.0,1.0,16.0,0.696,0.522,2026-10-11 17:00
+Israel,IBSL,HTA,Hapoel IBI Tel Aviv,Elijah Bryant,1,1,23.0,10.0,9.0,3.0,6.0,9.0,0.391,0.435,2026-10-11 17:30
+France,Betclic Elite,ASV,ASVEL,Juhann Begarin,1,1,20.53,3.0,4.0,3.0,1.0,4.0,0.195,0.146,2026-10-11 19:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Lorenzo Brown,1,1,24.0,11.0,5.0,2.0,5.0,6.0,0.25,0.458,2026-10-11 19:55
+Regional,ABA,PAR,Partizan Mozzart Bet,Lamar Stevens,1,1,11.7,2.0,4.0,1.0,0.0,4.0,0.342,0.171,2026-10-11 20:00
+Germany,BBL,ULM,ratiopharm Ulm,Nil Failenschmid Clavera,1,1,1.22,-1.0,0.0,0.0,0.0,1.0,0.822,-0.822,2026-09-20 16:30
+Germany,BBL,SKY,SKYLINERS Frankfurt,Ryan Arcidiacono,3,3,16.36,8.0,6.33,2.67,3.0,5.67,0.346,0.489,2026-10-04 15:00
+Germany,BBL,SKY,SKYLINERS Frankfurt,Jamie Edoka,2,2,2.31,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-04 15:00
+France,Betclic Elite,JLB,Bourg-en-Bresse,Leni Monnet,1,1,0.3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-09-26 18:30
+Germany,BBL,CHE,NINERS Chemnitz,Alfons Milatz,1,1,0.73,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-09-27 16:30
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Darnell Edge,1,1,31.63,27.0,26.0,3.0,5.0,17.0,0.537,0.854,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Aleksandar Stoimenov,1,1,20.48,9.0,12.0,0.0,1.0,8.0,0.391,0.439,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Javante Mccoy,1,1,22.9,32.0,28.0,4.0,5.0,18.0,0.786,1.397,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Ivan Spirov,1,1,20.08,13.0,8.0,5.0,0.0,3.0,0.149,0.647,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Alex Ducas,1,1,15.32,3.0,5.0,0.0,3.0,6.0,0.392,0.196,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Pavlin Ivanov,1,1,15.52,5.0,0.0,3.0,3.0,2.0,0.129,0.322,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,U. Kamka-Chomche,1,1,14.17,7.0,5.0,3.0,0.0,1.0,0.071,0.494,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Konstantin Toshkov,1,1,14.08,-3.0,0.0,1.0,0.0,4.0,0.284,-0.213,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Nikolay Grozev,1,1,12.12,-3.0,2.0,0.0,0.0,4.0,0.33,-0.248,2026-10-03 15:00
+Bulgaria,Super Cup,BLK,Balkan Botevgrad,Martin Sotirov,1,1,14.88,4.0,4.0,3.0,1.0,6.0,0.403,0.269,2026-10-03 15:00
+France,Betclic Elite,JLB,Bourg-en-Bresse,Tyson Walker,1,1,9.25,9.0,7.0,1.0,2.0,2.0,0.216,0.973,2026-10-03 20:30
+France,Betclic Elite,JLB,Bourg-en-Bresse,Morgan Selebangue,1,1,0.27,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-03 20:30
+Italy,LBA,URV,Umana Reyer Venezia,Octavio Maretto,5,5,11.8,1.8,2.0,1.6,1.4,2.6,0.22,0.153,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Leonardo Candi,5,5,27.0,14.8,10.8,2.2,3.2,6.0,0.222,0.548,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Ky Bowman,5,5,21.0,10.8,9.2,3.2,2.4,7.4,0.352,0.514,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Enoch Boakye,4,4,13.0,4.5,3.5,3.5,0.25,2.75,0.212,0.346,2026-10-04 17:30
+Italy,LBA,URV,Umana Reyer Venezia,Jordan Parks,4,4,22.25,6.0,7.5,5.0,1.25,6.75,0.303,0.27,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Glynn Watson,5,5,29.4,17.6,15.6,4.2,3.8,11.0,0.374,0.599,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Erick Green,3,3,18.0,4.0,10.0,0.67,0.67,8.0,0.444,0.222,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Kyle Wiltjer,5,5,23.6,14.2,16.6,2.0,1.2,11.6,0.492,0.602,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Sasha Grant,5,5,12.6,4.0,4.0,1.8,0.6,3.8,0.302,0.317,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Amedeo Tessitori,5,5,21.8,13.2,9.8,5.4,2.6,7.4,0.339,0.606,2026-10-11 19:00
+Italy,LBA,URV,Umana Reyer Venezia,Giovanni De Nicolao,3,3,6.0,1.33,1.0,0.67,0.33,0.67,0.111,0.222,2026-10-04 17:30
+Italy,LBA,URV,Umana Reyer Venezia,Louis Olinde,4,4,19.0,7.75,6.5,4.25,1.0,6.0,0.316,0.408,2026-10-11 19:00
+France,Betclic Elite,MSB,Le Mans,Carlos Stewart,3,3,25.29,18.0,23.0,2.0,2.67,17.0,0.672,0.712,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Bastien Grasshoff,3,3,21.2,9.67,11.0,2.67,2.67,7.33,0.346,0.456,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Jordan James King,3,3,13.89,6.67,8.33,1.33,3.33,7.0,0.504,0.48,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Melvin Ajinça,3,3,26.66,12.67,16.33,2.67,0.67,12.67,0.475,0.475,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Leopold Delaunay,3,3,17.58,8.0,5.67,3.67,3.67,5.67,0.322,0.455,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Ugo Doumbia,3,3,13.14,5.0,3.33,1.33,1.33,2.33,0.178,0.38,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Wilfried Yeguete,3,3,19.25,8.33,4.33,5.67,1.67,2.33,0.121,0.433,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Moses Wood,3,3,24.22,14.67,13.33,3.67,1.67,9.33,0.385,0.606,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Lucas Dufeal,3,3,22.83,10.0,5.33,5.0,0.33,3.67,0.161,0.438,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,TaShawn Thomas,2,2,20.1,11.5,9.5,4.0,0.0,6.0,0.299,0.572,2026-10-11 16:00
+France,Betclic Elite,MSB,Le Mans,Swann Penda,3,3,10.86,6.0,3.67,3.33,0.33,2.33,0.215,0.552,2026-10-11 16:00
+Spain,ACB,BAR,Barça,Kevin Punter,5,5,22.39,14.4,13.6,2.2,2.6,6.4,0.286,0.643,2026-10-11 19:00
+Spain,ACB,BAR,Barça,Umoja Gibson,5,5,14.26,-1.2,4.2,0.6,1.8,5.8,0.407,-0.084,2026-10-11 19:00
+Spain,ACB,BAR,Barça,Tyrese Martin,5,5,23.46,13.8,11.6,7.6,0.8,10.6,0.452,0.588,2026-10-11 19:00
+Spain,ACB,BAR,Barça,Stanley Umude,4,4,18.39,2.0,3.75,3.25,1.0,4.5,0.245,0.109,2026-10-04 19:00
+Spain,ACB,BAR,Barça,Justin Robinson,5,5,21.08,9.6,12.8,1.0,2.8,10.2,0.484,0.455,2026-10-11 19:00
+Spain,ACB,BAR,Barça,Dario Brizuela,5,5,16.98,4.4,7.6,1.4,1.0,6.8,0.4,0.259,2026-10-11 19:00
+Spain,ACB,BAR,Barça,Agustin Ubal,3,3,7.53,4.67,3.67,1.67,0.0,1.33,0.177,0.619,2026-10-11 19:00
+Spain,ACB,BAR,Barça,Olivier Nkamhoua,5,5,18.42,13.2,9.0,4.2,0.8,4.4,0.239,0.716,2026-10-11 19:00
+Spain,ACB,BAR,Barça,Juan Nunez,5,5,4.8,2.6,0.6,0.6,1.6,1.2,0.25,0.542,2026-10-11 19:00
+Spain,ACB,BAR,Barça,O. Balcerowski,4,4,13.88,13.25,10.0,3.75,0.5,4.0,0.288,0.954,2026-10-04 19:00
+Spain,ACB,BAR,Barça,Justin Minaya,4,4,8.94,3.5,1.75,1.5,0.5,1.5,0.168,0.391,2026-10-04 19:00
+Spain,ACB,BAR,Barça,Joel Parra,5,5,22.89,14.0,12.8,3.4,1.8,9.4,0.411,0.612,2026-10-11 19:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Chase Audige,3,3,20.18,8.33,13.0,1.67,1.0,9.67,0.479,0.413,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,DJ Steward,3,3,23.25,11.33,15.67,3.0,2.33,14.0,0.602,0.487,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Ziga Samar,3,3,21.43,14.33,11.67,3.0,4.0,7.33,0.342,0.669,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Balsa Koprivica,3,3,18.16,14.67,11.67,6.0,1.0,8.0,0.441,0.808,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Pablo Almazan,3,3,3.69,-0.33,0.0,0.33,0.0,0.0,0.0,-0.09,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Daniel Diez,3,3,17.0,9.33,5.33,5.67,1.0,4.0,0.235,0.549,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Ruben Guerrero,3,3,3.01,1.67,1.33,0.67,0.0,1.0,0.332,0.554,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Dusan Radosavljevic,3,3,20.83,8.33,5.0,5.33,2.0,4.33,0.208,0.4,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Chris Sengfelder,3,3,21.17,11.67,10.0,4.67,1.0,7.0,0.331,0.551,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Sekou Doumbouya,3,3,20.66,10.33,12.0,4.0,1.0,10.0,0.484,0.5,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Raul Lobaco,3,3,17.09,6.0,4.33,2.33,1.0,4.0,0.234,0.351,2026-10-11 18:00
+Spain,ACB,BUR,Recoletas Salud San Pablo Burgos,Joaquin Taboada,3,3,13.52,-0.67,2.67,1.67,1.0,4.0,0.296,-0.049,2026-10-11 18:00
+Spain,ACB,KBA,Kosner Baskonia,Markus Howard,2,2,15.26,2.0,4.0,1.5,0.5,3.5,0.229,0.131,2026-09-27 12:30
+Spain,ACB,KBA,Kosner Baskonia,AJ Lawson,4,4,20.82,11.0,11.75,2.0,1.75,8.25,0.396,0.528,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,Kobi Simmons,4,4,20.87,15.0,13.0,2.25,4.25,8.25,0.395,0.719,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,DJ Stewart,3,3,18.73,8.0,7.0,3.67,1.67,5.0,0.267,0.427,2026-10-04 19:00
+Spain,ACB,KBA,Kosner Baskonia,Chris Duarte,4,4,20.4,15.25,13.75,3.0,2.25,8.75,0.429,0.748,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,Stefan Joksimovic,4,4,8.87,3.25,4.25,1.25,0.75,2.75,0.31,0.367,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,Rodions Kurucs,4,4,19.8,9.25,9.0,3.0,1.5,5.25,0.265,0.467,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,Tadas Sedekerskis,4,4,16.69,15.5,8.0,5.75,2.5,4.5,0.27,0.929,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,Matteo Spagnolo,4,4,14.45,8.75,6.25,3.0,2.75,4.5,0.311,0.606,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,Damion Baugh,4,4,15.51,7.5,5.75,1.25,3.5,5.25,0.338,0.483,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,Clement Frisch,3,3,10.33,6.67,6.0,1.33,0.33,4.33,0.419,0.645,2026-10-04 19:00
+Spain,ACB,KBA,Kosner Baskonia,Kenneth Faried,4,4,21.56,13.75,9.5,6.5,1.0,6.25,0.29,0.638,2026-10-11 17:00
+Spain,ACB,VBC,Valencia Basket,TJ Shorts,4,4,21.92,21.25,17.5,3.25,5.5,11.75,0.536,0.97,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Kameron Taylor,4,4,23.63,16.0,12.25,4.0,3.5,8.25,0.349,0.677,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Josep Puerto,4,4,14.3,11.5,9.0,3.5,0.75,4.75,0.332,0.804,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Nathan Reuvers,4,4,17.56,5.25,9.0,3.5,0.25,7.5,0.427,0.299,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Mario Saint-supery,4,4,13.54,4.25,4.25,1.75,2.25,5.0,0.369,0.314,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Alvaro Cardenas,4,4,15.51,5.75,5.0,0.5,3.25,4.0,0.258,0.371,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Armoni Brooks,4,4,20.5,4.5,7.75,3.5,1.75,10.5,0.512,0.22,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Neal Sako,3,3,15.81,9.33,5.67,4.67,0.33,3.33,0.211,0.591,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Mo Gueye,3,3,7.47,-2.0,1.33,0.67,0.33,1.0,0.134,-0.268,2026-10-04 17:00
+Spain,ACB,VBC,Valencia Basket,Gonzalo Corbalan,3,3,12.32,4.67,4.33,2.67,0.0,3.0,0.243,0.379,2026-10-04 17:00
+Spain,ACB,VBC,Valencia Basket,Nikola Mirotic,3,3,18.12,11.33,13.67,4.0,0.67,11.33,0.625,0.625,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Jasiel Rivero,3,3,13.98,4.67,4.67,3.0,0.67,4.33,0.31,0.334,2026-10-11 19:00
+Spain,ACB,RMB,Real Madrid,Max Shulga,2,2,9.18,2.5,3.5,1.5,1.5,2.5,0.272,0.272,2026-10-04 12:30
+Spain,ACB,RMB,Real Madrid,Luwawu-Cabarrot,2,2,27.6,16.0,19.5,4.5,1.0,15.0,0.543,0.58,2026-10-04 12:30
+Spain,ACB,RMB,Real Madrid,Jaime Pradilla,3,3,19.49,12.33,8.33,6.33,1.0,4.67,0.239,0.633,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Alberto Abalde,2,2,15.58,11.0,8.0,3.0,1.5,5.0,0.321,0.706,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Facundo Campazzo,2,2,20.93,13.5,11.5,3.5,6.5,9.0,0.43,0.645,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Chuma Okeke,3,3,16.91,8.33,7.0,2.67,1.67,6.0,0.355,0.493,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Theo Maledon,3,3,21.76,24.33,17.33,2.0,5.67,7.33,0.337,1.118,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Gabriel Deck,1,1,23.92,8.0,9.0,8.0,0.0,9.0,0.376,0.334,2026-09-27 19:00
+Spain,ACB,RMB,Real Madrid,Walter Tavares,3,3,18.19,9.33,5.33,8.33,0.0,4.0,0.22,0.513,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Sergio Llull,3,3,9.92,3.33,3.0,0.33,2.33,3.33,0.336,0.336,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Damian Jones,1,1,15.8,11.0,8.0,2.0,1.0,3.0,0.19,0.696,2026-09-27 19:00
+Spain,ACB,RMB,Real Madrid,Olivier Sarr,3,3,8.52,5.33,5.33,1.67,0.67,2.33,0.274,0.626,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Nick Smith Jr,2,2,17.63,6.5,12.0,3.0,1.0,11.0,0.624,0.369,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Gabriele Procida,2,2,18.83,8.5,10.5,1.0,0.5,7.0,0.372,0.451,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Mikael Jantunen,2,2,18.76,13.5,11.0,5.0,0.5,4.5,0.24,0.72,2026-10-11 12:00
+Spain,ACB,RMB,Real Madrid,Andres Feliz,2,2,21.93,15.0,7.5,5.0,4.5,5.0,0.228,0.684,2026-10-11 12:00
+Spain,ACB,KBA,Kosner Baskonia,M. Santos,1,1,16.22,13.0,11.0,4.0,2.0,5.0,0.308,0.802,2026-10-04 19:00
+Spain,ACB,MAN,Kids&Us Manresa,Lukasz Kolenda,3,3,21.53,11.33,10.33,2.33,2.67,6.33,0.294,0.526,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,Hugo Benitez,2,2,11.92,4.5,5.0,1.0,2.5,5.0,0.42,0.378,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,Eric Vila,2,2,13.27,1.0,1.5,3.5,0.5,3.0,0.226,0.075,2026-10-03 21:00
+Spain,ACB,MAN,Kids&Us Manresa,Lucas Beaufort,2,2,9.04,2.0,3.5,0.0,0.0,2.0,0.221,0.221,2026-10-03 21:00
+Spain,ACB,MAN,Kids&Us Manresa,Ferran Bassas,3,3,18.21,2.33,1.67,1.67,3.67,4.33,0.238,0.128,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,Pablo Tamba,3,3,13.4,7.33,5.0,3.0,0.67,2.33,0.174,0.547,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,Chibuzo Agbo,3,3,21.59,9.33,11.0,1.67,0.67,5.67,0.262,0.432,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,JD Notae,3,3,19.04,8.67,13.0,1.0,1.67,11.67,0.613,0.455,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,Nick Ongenda,3,3,15.24,10.0,11.33,1.0,0.67,6.33,0.415,0.656,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,Michael Enabulele,2,2,3.8,0.0,0.0,0.5,0.0,0.0,0.0,0.0,2026-10-03 21:00
+Spain,ACB,MAN,Kids&Us Manresa,Rafa Villar,3,3,19.61,7.0,7.0,1.67,3.67,6.0,0.306,0.357,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,Yordan Minchev,3,3,19.41,8.67,8.0,5.67,1.67,7.33,0.378,0.447,2026-10-11 12:00
+Spain,ACB,LLT,La Laguna Tenerife,TJ Bamba,1,1,12.48,1.0,4.0,1.0,0.0,3.0,0.24,0.08,2026-09-27 13:00
+Spain,ACB,LLT,La Laguna Tenerife,Kyle Guy,3,3,25.97,14.33,14.67,3.67,2.67,12.0,0.462,0.552,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,Jaime Fernandez,3,3,16.33,9.67,10.0,2.33,1.67,6.0,0.367,0.592,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,Bruno Fitipaldo,3,3,18.71,7.33,6.67,1.67,1.33,4.0,0.214,0.392,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,López-Arostegui,2,2,22.49,11.0,8.0,4.0,0.5,6.5,0.289,0.489,2026-10-03 19:30
+Spain,ACB,LLT,La Laguna Tenerife,Marcelinho Huertas,3,3,21.59,18.33,16.0,1.0,5.0,10.0,0.463,0.849,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,Giorgi Shermadini,2,2,12.21,2.5,2.5,2.0,0.5,2.5,0.205,0.205,2026-10-03 19:30
+Spain,ACB,LLT,La Laguna Tenerife,Tim Abromaitis,3,3,19.11,7.67,6.33,6.33,0.0,6.67,0.349,0.401,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,Ethan Happ,3,3,15.28,7.67,7.67,3.33,1.33,6.67,0.436,0.502,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,Hector Alderete,3,3,8.24,2.0,1.33,1.0,0.33,1.0,0.121,0.243,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,Aaron Doornekamp,3,3,18.02,3.33,2.0,2.67,1.0,2.33,0.13,0.185,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,Arturs Kurucs,3,3,8.14,1.0,2.0,0.33,0.0,1.33,0.164,0.123,2026-10-11 12:30
+Spain,ACB,LLT,La Laguna Tenerife,Vince Hunter,2,2,21.08,10.0,10.5,3.0,1.0,7.0,0.332,0.474,2026-10-11 12:30
+Spain,ACB,MAN,Kids&Us Manresa,Timmy Allen,2,2,23.98,22.5,20.5,6.5,2.5,13.0,0.542,0.938,2026-10-11 12:00
+Lithuania,LKL,ZAL,Žalgiris,Edgaras Ulanovas,5,5,19.35,10.4,6.8,3.4,2.6,3.6,0.186,0.538,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Arnas Butkevicius,5,5,18.39,11.2,5.6,3.6,1.2,2.8,0.152,0.609,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Marius Grigonis,5,5,18.76,12.8,11.4,2.2,3.0,5.2,0.277,0.682,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Marek Blazevic,5,5,17.46,15.2,11.0,3.8,1.8,5.8,0.332,0.871,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Ą. Tubelis,2,2,13.92,11.5,8.5,3.5,1.5,6.5,0.467,0.826,2026-09-20 15:50
+Lithuania,LKL,ZAL,Žalgiris,Jonas Valanciunas,3,3,16.81,19.67,13.67,5.0,1.33,6.33,0.377,1.17,2026-10-04 15:50
+Lithuania,LKL,ZAL,Žalgiris,Dovydas Giedraitis,5,5,17.37,2.6,4.8,0.8,2.0,4.4,0.253,0.15,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Nigel Williams-Goss,2,2,17.38,15.0,6.5,2.5,7.0,4.0,0.23,0.863,2026-09-20 15:50
+Lithuania,LKL,ZAL,Žalgiris,Maodo Lo,5,5,12.37,3.6,4.8,1.0,2.4,4.6,0.372,0.291,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Dustin Sleva,5,5,16.06,8.0,7.0,3.8,1.2,4.4,0.274,0.498,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Sterling Brown,5,5,17.53,9.0,10.0,2.6,2.2,7.2,0.411,0.514,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Carsen Edwards,4,4,19.63,7.5,11.75,0.5,2.25,9.25,0.471,0.382,2026-10-04 15:50
+Lithuania,LKL,NEP,Neptūnas,Mindaugas Girdziunas,5,5,16.02,3.6,6.4,0.8,0.4,4.8,0.3,0.225,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,Martynas Echodas,5,5,23.87,16.0,12.2,7.2,1.4,8.8,0.369,0.67,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,Donatas Tarolis,5,5,19.19,7.4,6.2,3.2,1.2,4.4,0.229,0.386,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,Kristupas Zemaitis,5,5,21.67,7.8,5.2,2.6,3.6,5.8,0.268,0.36,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,Arnas Berucka,4,4,11.37,3.25,3.25,1.5,0.75,2.5,0.22,0.286,2026-10-03 16:00
+Lithuania,LKL,NEP,Neptūnas,Einaras Tubutis,5,5,18.82,10.2,3.6,6.2,1.2,3.0,0.159,0.542,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,Lukas Kreismontas,5,5,18.09,6.2,5.2,2.0,1.0,4.0,0.221,0.343,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,Yannick Franke,5,5,22.31,15.2,16.4,3.0,2.2,11.8,0.529,0.681,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,Elvar Fridriksson,5,5,18.98,12.4,10.6,1.6,4.6,6.6,0.348,0.653,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,Simas Sarakauskas,3,3,3.46,1.33,2.0,0.67,0.67,1.33,0.386,0.386,2026-10-03 16:00
+Lithuania,LKL,NEP,Neptūnas,Henri Drell,5,5,21.67,8.4,11.2,4.2,1.4,9.6,0.443,0.388,2026-10-10 15:50
+Lithuania,LKL,NEP,Neptūnas,R. Somerville,5,5,8.19,0.8,1.6,0.8,0.4,1.4,0.171,0.098,2026-10-10 15:50
+Lithuania,LKL,ZAL,Žalgiris,Deividas Sirvydis,3,3,22.75,12.67,11.0,2.67,2.0,7.0,0.308,0.557,2026-10-11 16:00
+Lithuania,LKL,ZAL,Žalgiris,Kaodirichi Akobundu-Ehiogu,3,3,14.44,7.67,3.0,3.0,0.33,1.0,0.069,0.531,2026-10-11 16:00
+Lithuania,LKL,SIA,Šiauliai,Tauras Jogela,5,5,17.57,7.8,9.0,3.2,1.0,7.8,0.444,0.444,2026-10-11 18:10
+Lithuania,LKL,SIA,Šiauliai,Martynas Pacevicius,5,5,21.54,10.4,8.8,5.8,0.6,4.8,0.223,0.483,2026-10-11 18:10
+Lithuania,LKL,SIA,Šiauliai,Erikas Venskus,5,5,13.56,4.2,3.2,1.8,1.4,3.2,0.236,0.31,2026-10-11 18:10
+Lithuania,LKL,SIA,Šiauliai,Simas Jarumbauskas,5,5,15.09,7.0,6.6,3.0,0.8,4.4,0.292,0.464,2026-10-11 18:10
+Lithuania,LKL,SIA,Šiauliai,Karolis Lukosiunas,5,5,17.16,0.6,3.0,0.6,0.6,3.0,0.175,0.035,2026-10-11 18:10
+Lithuania,LKL,SIA,Šiauliai,Dovydas Romancenko,5,5,19.5,8.0,8.6,1.6,1.2,4.8,0.246,0.41,2026-10-11 18:10
+Lithuania,LKL,SIA,Šiauliai,Cedric Henderson,4,4,26.16,9.75,11.25,4.5,1.75,10.0,0.382,0.373,2026-10-03 18:10
+Lithuania,LKL,SIA,Šiauliai,Dayvion Mcknight,5,5,24.45,13.2,8.8,4.4,5.2,6.2,0.254,0.54,2026-10-11 18:10
+Lithuania,LKL,SIA,Šiauliai,Rokas Civilis,2,2,7.5,3.0,4.0,0.5,0.5,2.5,0.333,0.4,2026-10-03 18:10
+Lithuania,LKL,SIA,Šiauliai,Elfton Reid,3,3,12.32,12.33,6.67,6.0,1.0,3.0,0.243,1.001,2026-09-27 15:50
+Lithuania,LKL,SIA,Šiauliai,Mike Caffey,5,5,16.41,8.8,6.6,0.6,3.4,4.4,0.268,0.536,2026-10-11 18:10
+Lithuania,LKL,LIE,Lietkabelis,Ž. Šimonis,4,4,10.02,3.0,2.5,1.0,0.75,2.5,0.249,0.299,2026-10-04 15:50
+Lithuania,LKL,LIE,Lietkabelis,Gabrielius Maldunas,5,5,19.31,8.2,3.8,4.8,1.2,3.2,0.166,0.425,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Marius Valinskas,5,5,15.91,6.2,7.6,1.4,1.0,4.4,0.276,0.39,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Gytis Nemeiksa,5,5,8.78,2.4,2.8,1.4,0.0,2.0,0.228,0.273,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Daniel Baslyk,5,5,24.14,8.6,8.0,3.6,0.8,5.6,0.232,0.356,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Nojus Radzius,5,5,15.17,4.6,4.6,1.8,1.0,3.8,0.251,0.303,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Milos Ilic,5,5,20.3,6.8,5.6,4.2,2.8,5.0,0.246,0.335,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Ivan Fevrier,3,3,27.1,14.0,12.67,4.0,1.33,8.33,0.308,0.517,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Keondre Kennedy,5,5,22.17,6.0,9.0,2.0,0.8,8.2,0.37,0.271,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Alexander Schumacher,5,5,24.55,10.6,13.6,2.6,3.2,13.8,0.562,0.432,2026-10-10 18:10
+Lithuania,LKL,LIE,Lietkabelis,Ognjen Jaramaz,5,5,25.4,10.0,11.2,2.2,2.0,8.6,0.339,0.394,2026-10-10 18:10
+Italy,LBA,MIL,Armani Olimpia Milano,Jason Burnell,3,3,19.33,14.33,13.0,5.0,2.33,8.67,0.448,0.741,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Cole R.J.,4,4,18.0,6.0,7.5,1.25,2.5,5.5,0.306,0.333,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Moses Wright,5,5,23.6,16.0,15.8,5.4,1.2,8.8,0.373,0.678,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Ousmane Diop,5,5,13.8,9.0,7.8,4.0,0.8,5.2,0.377,0.652,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Stefano Tonut,4,4,15.25,4.5,2.75,3.75,0.75,3.5,0.23,0.295,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Leandro Bolmaro,4,4,24.0,13.0,13.0,4.5,3.0,9.25,0.385,0.542,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Darius Thompson,5,5,18.2,6.8,5.8,2.0,3.6,4.4,0.242,0.374,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Giampaolo Ricci,5,5,16.2,6.2,6.0,4.0,0.2,5.0,0.309,0.383,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Diego Flaccadori,5,5,10.6,2.2,3.2,0.6,0.8,3.2,0.302,0.208,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Devon Hall,5,5,24.0,8.2,5.2,2.0,4.6,5.0,0.208,0.342,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Nicola Akele,4,4,5.75,3.5,2.75,1.5,0.0,1.25,0.217,0.609,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Baptiste Chauveau,1,1,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-10-05 20:45
+Italy,LBA,MIL,Armani Olimpia Milano,Marko Guduric,4,4,22.0,9.5,9.25,3.0,2.75,5.75,0.261,0.432,2026-10-11 16:00
+Italy,LBA,MIL,Armani Olimpia Milano,Garrison Mathews,1,1,20.0,15.0,11.0,4.0,0.0,5.0,0.25,0.75,2026-10-05 20:45
+Italy,LBA,MIL,Armani Olimpia Milano,Alec Peters,3,3,24.67,9.33,8.33,4.0,2.0,6.67,0.27,0.378,2026-10-05 20:45
+France,Betclic Elite,PBB,Paris Basketball,Warren T.J.,3,3,19.4,15.0,17.33,4.67,0.33,14.0,0.722,0.773,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Nadir Hifi,5,5,23.1,16.4,20.2,2.0,4.2,13.2,0.571,0.71,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Terry Tarpey,5,5,18.74,10.2,4.0,5.6,2.8,3.6,0.192,0.544,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Jared Rhoden,4,4,23.06,12.5,12.0,4.5,3.5,9.0,0.39,0.542,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Mouhamed Faye,4,4,15.52,10.5,5.0,7.0,0.0,2.75,0.177,0.677,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Léopold Cavaliere,5,5,20.7,8.0,5.8,4.4,0.6,4.0,0.193,0.387,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Sebastian Herrera,4,4,20.19,7.0,6.25,1.5,1.75,5.0,0.248,0.347,2026-10-04 18:50
+France,Betclic Elite,PBB,Paris Basketball,Tyson Etienne,4,4,20.67,14.25,18.25,1.75,2.5,10.25,0.496,0.69,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Allan Dokossi,5,5,18.21,13.6,6.4,6.8,2.8,3.4,0.187,0.747,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Alize Johnson,4,4,15.44,4.75,4.5,5.0,1.25,6.0,0.389,0.308,2026-10-11 16:30
+Spain,ACB,VBC,Valencia Basket,Dylan Osetkowski,2,2,24.16,3.0,4.0,4.0,0.5,6.0,0.248,0.124,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Omari Moore,2,2,14.74,3.0,4.5,4.0,1.0,7.0,0.475,0.204,2026-10-11 19:00
+Spain,ACB,VBC,Valencia Basket,Yankuba Sima,1,1,11.27,5.0,4.0,2.0,0.0,2.0,0.178,0.444,2026-09-19 21:00
+Spain,ACB,BAR,Barça,Josh Nebo,3,3,19.12,9.33,8.67,4.67,1.0,4.0,0.209,0.488,2026-10-11 19:00
+France,Betclic Elite,PBB,Paris Basketball,Daulton Hommes,2,2,18.38,6.5,8.0,1.5,0.5,4.5,0.245,0.354,2026-10-04 18:50
+France,Betclic Elite,PBB,Paris Basketball,D. Boungou-Colo,1,1,5.03,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2026-09-20 17:00
+France,Betclic Elite,PBB,Paris Basketball,Jeremy Morgan,1,1,21.38,-4.0,0.0,0.0,1.0,3.0,0.14,-0.187,2026-09-20 17:00
+France,Betclic Elite,PBB,Paris Basketball,Frank Ntilikina,2,2,14.89,-1.5,0.5,1.5,1.0,3.0,0.201,-0.101,2026-10-04 18:50
+France,Betclic Elite,PBB,Paris Basketball,Joël Ayayi,3,3,13.58,7.0,4.67,1.67,2.33,3.67,0.27,0.516,2026-10-11 16:30
+France,Betclic Elite,PBB,Paris Basketball,Joao Maozinha,3,3,8.37,1.67,2.0,0.33,0.33,2.33,0.279,0.199,2026-10-11 16:30
+Lithuania,LKL,SIA,Šiauliai,Selim Fofana,4,4,22.45,10.0,13.75,2.5,2.25,11.25,0.501,0.446,2026-10-11 18:10
+Germany,BBL,ROS,Rostock Seawolves,Artur Konontsuk,5,5,22.74,13.2,12.6,4.2,1.2,8.6,0.378,0.581,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Zach Copeland,5,5,19.48,12.2,11.2,3.4,3.4,8.0,0.411,0.626,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Crockett T.J.,5,5,22.4,11.6,14.2,2.6,3.8,10.6,0.473,0.518,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Owen Klassen,4,4,17.32,9.0,5.75,4.25,1.5,3.5,0.202,0.52,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Dominic Lockhart,5,5,16.59,5.8,4.4,2.6,1.2,3.4,0.205,0.35,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Todd Withers,5,5,19.74,5.2,7.0,2.0,0.8,6.0,0.304,0.263,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Elias Baggette,3,3,7.36,0.0,2.0,0.0,1.0,1.67,0.227,0.0,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Deandre Lansdowne,5,5,16.6,7.6,6.4,3.0,2.0,5.0,0.301,0.458,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Bent Leuchten,5,5,15.63,11.4,7.2,5.4,0.4,3.0,0.192,0.729,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Philipp Hartwich,4,4,9.22,1.75,0.5,1.0,1.25,0.75,0.081,0.19,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Robin Amaize,5,5,17.72,11.0,10.0,4.0,1.0,8.2,0.463,0.621,2026-10-10 18:30
+Germany,BBL,ROS,Rostock Seawolves,Johnathan Stove,5,5,23.22,9.6,10.8,3.8,1.8,9.0,0.388,0.413,2026-10-10 18:30
+Spain,ACB,MAN,Kids&Us Manresa,Gerard Fernandez,1,1,12.18,-1.0,1.0,1.0,0.0,3.0,0.246,-0.082,2026-10-11 12:00
+Spain,ACB,MAN,Kids&Us Manresa,Pierre Oriola,1,1,19.73,2.0,6.0,5.0,0.0,8.0,0.405,0.101,2026-10-11 12:00
+Spain,ACB,LLT,La Laguna Tenerife,Wesley Van Beck,1,1,21.73,3.0,4.0,1.0,1.0,5.0,0.23,0.138,2026-10-11 12:30
+Lithuania,LKL,ZAL,Žalgiris,Saben Lee,1,1,10.48,3.0,2.0,1.0,1.0,2.0,0.191,0.286,2026-10-11 16:00
+Spain,ACB,KBA,Kosner Baskonia,Marcio Santos,1,1,14.52,3.0,3.0,1.0,0.0,3.0,0.207,0.207,2026-10-11 17:00
+Spain,ACB,KBA,Kosner Baskonia,Stewart D.J.,1,1,15.68,4.0,7.0,0.0,1.0,9.0,0.574,0.255,2026-10-11 17:00
+Lithuania,LKL,SIA,Šiauliai,Kassim Nicholson,1,1,18.53,1.0,3.0,3.0,1.0,6.0,0.324,0.054,2026-10-11 18:10
+Spain,ACB,BAR,Barça,Aleksander Balcerowski,1,1,14.42,12.0,9.0,3.0,1.0,4.0,0.277,0.832,2026-10-11 19:00
+Spain,ACB,BAR,Barça,Tosan Evbuomwan,1,1,19.4,12.0,7.0,8.0,0.0,6.0,0.309,0.619,2026-10-11 19:00
