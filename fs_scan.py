@@ -12,11 +12,25 @@ COMPS={
  "ISR SuperLeague":"izrael/super-league","ISR SuperCup":"izrael/super-cup","ISR LeagueCup":"izrael/league-cup","ISR Cup":"izrael/israel-cup",
  "SRB Superleague":"srbija/superleague",
  "EUR ABA":"europa/admiralbet-aba-league","EUR ABA2":"europa/aba-league","EUR ABASuper":"europa/aba-supercup",
+ # EuroCup klubovi
+ "POL PLK":"poljska/basket-liga","POL SuperCup":"poljska/super-cup","POL Cup":"poljska/kup",
+ "GBR SLB":"ujedinjeno-kraljevstvo/slb","GBR SLBCup":"ujedinjeno-kraljevstvo/slb-cup",
+ "LAT-EST LEBL":"europa/latvian-estonian-league",
+ "BUL NBL":"bugarska/nbl","BUL SuperCup":"bugarska/super-cup","BUL Cup":"bugarska/bulgarian-cup",
+ "SLO Liga":"slovenija/liga-otp-banka","SLO Cup":"slovenija/slovenian-cup","SLO SuperCup":"slovenija/supercup",
+ "ROU Divizia":"rumunjska/divizia-a","ROU Cup":"rumunjska/romanian-cup","ROU SuperCup":"rumunjska/super-cup",
+ "MNE Prva":"crna-gora/prva-a-liga",
 }
 KEY={"ASV":["lyon-villeurbanne","asvel"],"BAR":["barcelona","barca"],"BAY":["bayern"],"BJK":["besiktas"],"CZV":["crvena-zvezda"],"DUB":["dubai"],
 "EFS":["anadolu-efes","efes"],"FBT":["fenerbahce"],"HTA":["hapoel-tel-aviv","hapoel-ibi"],"KBA":["baskonia"],"MIL":["olimpia-milano","armani","milan"],
 "MTA":["maccabi-tel-aviv","maccabi-rapyd"],"OLY":["olympiacos","olympiakos"],"PAO":["panathinaikos"],"PAR":["partizan"],"PBB":["paris"],"RMB":["real-madrid"],
 "VBC":["valencia"],"VIR":["virtus-bologna","virtus"],"ZAL":["zalgiris"]}
+# EuroCup klubovi (kodovi = fantasy EuroCup API). Redoslijed je bitan: EL kljucevi se provjeravaju prvi ('paris' prije 'aris').
+KEY.update({"ARI":["aris"],"BKS":["bahcesehir"],"BLK":["balkan"],"BOS":["kk-bosna"],"BUD":["buducnost"],"BUR":["burgos"],"CHE":["chemnitz"],
+ "COL":["cedevita"],"DER":["derthona"],"JLB":["jl-bourg","bourg"],"JLM":["hapoel-jerusalem","hapoel-midtown"],"LDN":["london-lions"],
+ "LIE":["lietkabelis"],"LLT":["tenerife"],"MAN":["manresa"],"MSB":["le-mans"],"NAP":["basket-napoli","napoli-basket"],"NEP":["neptunas"],
+ "PBC":["paok"],"RIG":["rigas-zelli"],"RMA":["maxima-roma"],"ROM":["bc-roma"],"ROS":["rostock"],"SIA":["siauliai"],"SKY":["frankfurt"],
+ "TOF":["tofas"],"TRE":["trento"],"TTA":["turk-telekom"],"UBT":["cluj"],"ULM":["ulm"],"URV":["venezia","reyer"],"WKS":["slask"]})
 def which(slug):
     s=(slug or "").lower()
     for ab,ks in KEY.items():

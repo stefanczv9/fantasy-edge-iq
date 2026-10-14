@@ -891,141 +891,141 @@
         "matches": [
           {
             "id": 11970,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-13T17:45:00.000000Z",
             "home_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
               "abbreviation": "FBT",
-              "score": null,
+              "score": 99,
               "is_valid": true
             },
             "away_team": {
               "id": 155,
               "name": "Zalgiris Kaunas",
               "abbreviation": "ZAL",
-              "score": null,
+              "score": 80,
               "is_valid": true
             }
           },
           {
             "id": 11965,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-13T18:00:00.000000Z",
             "home_team": {
               "id": 139,
               "name": "LDLC ASVEL Villeurbanne",
               "abbreviation": "ASV",
-              "score": null,
+              "score": 82,
               "is_valid": true
             },
             "away_team": {
               "id": 144,
               "name": "Crvena Zvezda Meridianbet Belgrade",
               "abbreviation": "CZV",
-              "score": null,
+              "score": 84,
               "is_valid": true
             }
           },
           {
             "id": 11966,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-13T18:30:00.000000Z",
             "home_team": {
               "id": 143,
               "name": "Kosner Baskonia Vitoria-Gasteiz",
               "abbreviation": "KBA",
-              "score": null,
+              "score": 79,
               "is_valid": true
             },
             "away_team": {
               "id": 311,
               "name": "Dubai Basketball",
               "abbreviation": "DUB",
-              "score": null,
+              "score": 93,
               "is_valid": true
             }
           },
           {
             "id": 11967,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-13T18:30:00.000000Z",
             "home_team": {
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
-              "score": null,
+              "score": 89,
               "is_valid": true
             },
             "away_team": {
               "id": 153,
               "name": "Real Madrid",
               "abbreviation": "RMB",
-              "score": null,
+              "score": 98,
               "is_valid": true
             }
           },
           {
             "id": 11968,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-13T18:30:00.000000Z",
             "home_team": {
               "id": 140,
               "name": "FC Barcelona",
               "abbreviation": "BAR",
-              "score": null,
+              "score": 90,
               "is_valid": true
             },
             "away_team": {
               "id": 148,
               "name": "Maccabi Rapyd Tel Aviv",
               "abbreviation": "MTA",
-              "score": null,
+              "score": 87,
               "is_valid": true
             }
           },
           {
             "id": 11971,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-13T18:30:00.000000Z",
             "home_team": {
               "id": 152,
               "name": "Partizan Mozzart Bet Belgrade",
               "abbreviation": "PAR",
-              "score": null,
+              "score": 55,
               "is_valid": true
             },
             "away_team": {
               "id": 151,
               "name": "Panathinaikos AKTOR Athens",
               "abbreviation": "PAO",
-              "score": null,
+              "score": 72,
               "is_valid": true
             }
           },
           {
             "id": 11969,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-13T19:00:00.000000Z",
             "home_team": {
               "id": 174,
               "name": "Valencia Basket",
               "abbreviation": "VBC",
-              "score": null,
+              "score": 97,
               "is_valid": true
             },
             "away_team": {
               "id": 149,
               "name": "Olympiacos Piraeus",
               "abbreviation": "OLY",
-              "score": null,
+              "score": 102,
               "is_valid": true
             }
           }

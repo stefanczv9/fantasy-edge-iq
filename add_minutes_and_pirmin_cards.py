@@ -8,6 +8,7 @@ Pravila (po dogovoru):
 - pirPerMinLeaders: pir_per_min_current != null, min_avg_current >= 10, gp_current > 0,
   nije povrijedjen, nije Head Coach.
 - Shane Larkin (i svako bez current minuta) ne smije se pojaviti ni u jednoj od te dvije liste.
+- usageLeaders ("Highest shot usage"): isto pravilo kao PIR/min (current sezona, min. 10 MIN/G, gp_current > 0, bez HC i povrijedjenih).
 
 Skripta je idempotentna: moze se pokrenuti vise puta bez dupliranja kartica/kolona.
 """
@@ -31,18 +32,21 @@ LANG = {
         "pir_label": "PIR/min",
         "card_title": "Most minutes per game",
         "card_note": "Current season only",
+        "usage_note": "Min 10 minutes per game, current season",
     },
     "sr-euroleague-dashboard.html": {
         "tab_label": "MIN/G",
         "pir_label": "PIR/min",
         "card_title": "Najvi\u0161e minuta po utakmici",
         "card_note": "Samo ova sezona",
+        "usage_note": "Min. 10 minuta po utakmici, ova sezona",
     },
     "el-euroleague-dashboard.html": {
         "tab_label": "\u039c\u0399\u039d/\u03b1\u03b3",
         "pir_label": "PIR/\u03bb\u03b5\u03c0\u03c4\u03cc",
         "card_title": "\u03a0\u03b5\u03c1\u03b9\u03c3\u03c3\u03cc\u03c4\u03b5\u03c1\u03b1 \u03bb\u03b5\u03c0\u03c4\u03ac \u03b1\u03bd\u03ac \u03b1\u03b3\u03ce\u03bd\u03b1",
         "card_note": "\u039c\u03cc\u03bd\u03bf \u03c4\u03c1\u03ad\u03c7\u03bf\u03c5\u03c3\u03b1 \u03c3\u03b5\u03b6\u03cc\u03bd",
+        "usage_note": "\u0395\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03bf 10 \u03bb\u03b5\u03c0\u03c4\u03ac \u03b1\u03bd\u03ac \u03b1\u03b3\u03ce\u03bd\u03b1, \u03c4\u03c1\u03ad\u03c7\u03bf\u03c5\u03c3\u03b1 \u03c3\u03b5\u03b6\u03cc\u03bd",
     },
 }
 
@@ -143,6 +147,18 @@ def patch_html(text: str, spec: dict) -> tuple[str, list[str]]:
         if pir_call in text:
             text = text.replace(pir_call, pir_call + "mini('minutesBox',DATA.minutesLeaders,'name','minutes_per_game','team_abbr');", 1)
 
+    # 5) "Highest shot usage": samo current sezona, min. 10 MIN/G (bez toga vode igraci sa 1-4 minute: 3 FGA u 3.85 min = 0.78/min)
+    old_usage = "mini('usageBox',DATA.usageLeaders,'name','fg_attempts_per_min_best','team_abbr');"
+    if old_usage in text:
+        text = text.replace(old_usage, "mini('usageBox',DATA.usageLeaders,'name','fg_attempts_per_min_current','team_abbr');", 1)
+        notes.append("usage kartica: current sezona")
+    if spec.get("usage_note") and spec["usage_note"] not in text:
+        text, n = re.subn(r'(<h3>[^<]*</h3>)(<div id="usageBox">)',
+                          lambda m: m.group(1) + '<div class="mut" style="font-size:12px;margin:-6px 0 8px">' + spec["usage_note"] + '</div>' + m.group(2),
+                          text, count=1)
+        if n:
+            notes.append("usage kartica: podnaslov")
+
     return text, notes
 
 
@@ -205,6 +221,10 @@ def main() -> None:
         pir_pool = [p for p in pool
                     if num(p.get("pir_per_min_current")) is not None
                     and (num(p.get("min_avg_current")) or 0) >= MIN_MINUTES_FOR_PIR_PER_MIN]
+        usage_pool = [p for p in players if keep(p) and (num(p.get("gp_current")) or 0) > 0
+                      and (num(p.get("min_avg_current")) or 0) >= MIN_MINUTES_FOR_PIR_PER_MIN
+                      and num(p.get("fg_attempts_per_min_current")) is not None]
+        data["usageLeaders"] = sorted(usage_pool, key=lambda p: num(p.get("fg_attempts_per_min_current")), reverse=True)[:TOP_N]
         data["minutesLeaders"] = sorted(pool, key=lambda p: minutes_per_game(p), reverse=True)[:TOP_N]
         data["pirPerMinLeaders"] = sorted(pir_pool, key=lambda p: num(p.get("pir_per_min_current")), reverse=True)[:TOP_N]
 

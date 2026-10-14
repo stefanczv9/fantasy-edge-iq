@@ -49,7 +49,10 @@ def acb_box(game_url):
     """game_url: https://live.acb.com/en/partidos/<slug>-<id>/estadisticas"""
     r=get(game_url)
     if r is None or r.status_code!=200: return None
-    s=BeautifulSoup(r.text,"lxml")
+    return acb_box_html(r.text)
+
+def acb_box_html(html):
+    s=BeautifulSoup(html,"lxml")
     title=s.title.get_text() if s.title else ""
     m=re.match(r"(.+?) vs (.+?) (\w{3} \d{1,2}, \d{4})",title)
     home_name,away_name=(m.group(1),m.group(2)) if m else (None,None)
@@ -74,6 +77,26 @@ def acb_box(game_url):
             if row["minutes"] is None and not any([row["pts"],row["reb"],row["ast"],row["stl"],row["tov"],row["pf"]]): continue
             players.append(row)
     return {"home_name":home_name,"away_name":away_name,"players":players,"meta":{"title":title}}
+
+def acb_index(lo=105681, hi=105800):
+    """live.acb.com otvara utakmicu i samo po ID-u (slug se ignorise). Skenira ID-eve i vraca
+    {id: (datum 'Mon DD, YYYY', home, away, home_pts, away_pts)} za odigrane utakmice."""
+    import concurrent.futures as cf, datetime
+    def one(i):
+        r=get(f"https://live.acb.com/en/partidos/x-{i}/estadisticas", retries=2)
+        if r is None or r.status_code!=200 or "no encontrado" in r.text.lower(): return None
+        b=acb_box_html(r.text)
+        if not b or not b["players"]: return None
+        hs=sum(p["pts"] for p in b["players"] if p["team"]=="H"); as_=sum(p["pts"] for p in b["players"] if p["team"]=="A")
+        if hs+as_==0: return None
+        m=re.match(r"(.+?) vs (.+?) (\w{3} \d{1,2}, \d{4})",b["meta"]["title"])
+        if not m: return None
+        return i,(m.group(3),m.group(1),m.group(2),hs,as_)
+    out={}
+    with cf.ThreadPoolExecutor(12) as ex:
+        for res in ex.map(one,range(lo,hi)):
+            if res: out[res[0]]=res[1]
+    return out
 
 def acb_supercopa_links():
     """Vraca [(url_estadisticas, home_slug_text)] sa acb.com/es/supercopa"""

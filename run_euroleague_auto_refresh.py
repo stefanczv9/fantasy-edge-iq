@@ -21,7 +21,7 @@ PIPELINE = [
     "update_active_profiles_prices.py",
     "create_euroleague_fantasy_dashboard.py",
     "patch_log_from_official_boxscore.py",
-    "create_fantasheet_style_dashboard.py",
+    "create_fantasheet_style_dashboard_fixed.py",
     "create_euroleague_advanced_context.py",
     "create_real_dvp_fix.py",
     "create_trilingual_dvp_pages.py",
@@ -45,6 +45,8 @@ def main() -> None:
     restore_support_files()
     for script in PIPELINE:
         path = ROOT / "scripts" / script
+        if not path.exists() and script.endswith("_fixed.py"):
+            path = ROOT / "scripts" / (script[: -len("_fixed.py")] + ".py")   # ako popravljeni korak nije uploadovan, koristi original
         if not path.exists():
             raise SystemExit(f"Missing required support script after restore: {path}")
         print(f"\n=== Running {script} ===", flush=True)

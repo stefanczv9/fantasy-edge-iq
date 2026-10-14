@@ -72,13 +72,30 @@ def build_version(stamp,min_gp,max_gp):
            'Dashboard: current prices/next opponents; overview card "Average PIR so far" uses pir_avg_current (current season, min. half of the games); Proj PIR stays a table column.',dvp]
     if (ROOT/"euroleague-shot-share.csv").exists():
         lines.append("Shot Share: euroleague-shot-share.csv + tab in EN/SR/EL dashboards (current season, FGA/G divided by team FGA/G).")
-    dom=ROOT/"euroleague-domestic-competitions.html"
-    if dom.exists():
+    def dom_info(fn):
+        f=ROOT/fn
+        if not f.exists(): return None
         try:
-            D,_,_=extract_data(dom.read_text(encoding="utf-8"))
-            lines.append(f"Domestic competitions: {len(D['games'])} completed games of 20 EuroLeague clubs in {len({g['country'] for g in D['games']})} countries, generated {D['generated']} (EN/SR/EL).")
+            D,_,_=extract_data(f.read_text(encoding="utf-8"))
+            return len(D["games"]),len({g["country"] for g in D["games"]}),D.get("generated")
+        except Exception: return None
+    el=dom_info("euroleague-domestic-competitions.html"); ec=dom_info("eurocup-domestic-competitions.html")
+    if el:
+        s=f"Domestic competitions: {el[0]} completed games of 20 EuroLeague clubs in {el[1]} countries, generated {el[2]} (EN/SR/EL)."
+        if ec: s+=f" EuroCup clubs: {ec[0]} completed games of 32 clubs in {ec[1]} countries, generated {ec[2]} (EN/SR/EL)."
+        lines.append(s)
+    dvp=ROOT/"eurocup-defense-vs-position.html"
+    if dvp.exists():
+        tx=dvp.read_text(encoding="utf-8"); m1=re.search(r"Generated: <b>([^<]+)</b>",tx); m2=re.search(r"Sample: ([^<]*?\(\d+ games\))",tx)
+        if m1: lines.append(f"EuroCup Defense vs Position (EN/SR/EL): real points only, {m2.group(1) if m2 else 'completed games'}, generated {m1.group(1)}.")
+    dash=ROOT/"eurocup-dashboard.html"
+    if dash.exists():
+        try:
+            ecdata,_,_=extract_data(dash.read_text(encoding="utf-8"))
+            ep=ecdata.get("players",[])
+            lines.append(f"EuroCup dashboard, full stats, projections, team context, next-five schedule and shot share (EN/SR/EL): {len(ep)} fantasy players; {sum(1 for x in ep if (x.get('gp_current') or 0)>0)} with official current-season stats; generated {ecdata.get('generated')}.")
         except Exception: pass
-    lines.append("No EuroCup site routes/files included.")
+    lines.append("Release scope: EuroLeague and EuroCup only. No home/build/routes/workflow files; BCL is a separate in-chat table, not a site section in this upload.")
     p.write_text("\n".join(lines)+"\n",encoding="utf-8")
 
 def main():

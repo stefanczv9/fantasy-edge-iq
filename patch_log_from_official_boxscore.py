@@ -72,6 +72,11 @@ def tokens(s) -> frozenset:
     return frozenset(core or ts)
 
 
+def squash(s) -> str:
+    """'Jalyn Mc Creary' == 'Jalyn Mccreary': ime bez razmaka i interpunkcije."""
+    return re.sub(r"[^a-z0-9]", "", norm_text(s))
+
+
 def surname(s) -> str:
     ts = [t for t in norm_text(s).split() if t not in SUFFIXES]
     return ts[-1] if ts else ""
@@ -100,6 +105,21 @@ def pair_players(log_players: list, off_players: list) -> tuple[list, list, list
             pairs.append((i, cand[0]))
         else:
             remaining.append(i)
+    # prolaz 1b: isto ime bez razmaka/interpunkcije ('Mc Creary' == 'Mccreary')
+    if remaining:
+        off_by_sq = {}
+        for j, off in enumerate(off_players):
+            if j not in used_off:
+                off_by_sq.setdefault(squash(off["full_name"]), []).append(j)
+        still = []
+        for i in remaining:
+            cand = [j for j in off_by_sq.get(squash(log_players[i]["name"]), []) if j not in used_off]
+            if cand and squash(log_players[i]["name"]):
+                used_off.add(cand[0])
+                pairs.append((i, cand[0]))
+            else:
+                still.append(i)
+        remaining = still
     # prolaz 2: jedinstveno prezime na obje strane
     if remaining:
         log_by_sur, off_by_sur = {}, {}
@@ -137,6 +157,37 @@ def pair_players(log_players: list, off_players: list) -> tuple[list, list, list
         used_off.add(j)
         pairs.append((i, j))
     remaining = [i for i in remaining if i not in taken_log]
+    # prolaz 4: ista statistika (isti igrac pod drugacije napisanim imenom, npr. 'Stefan Dordevic' / 'Stefan Djordjevic').
+    # Sprjecava da se igrac doda drugi put i da mu se poeni dupliraju.
+    cands = []
+    for i in remaining:
+        known = {k: float(v) for k, v in (log_players[i].get("stats") or {}).items() if v is not None and not pd.isna(v)}
+        if not known:
+            continue
+        for j, off in enumerate(off_players):
+            if j in used_off or off["minutes"] <= 0:
+                continue
+            hits, ok = 0, True
+            for src, dst in STAT_MAP.items():
+                if dst in known:
+                    ov = off["stats"].get(src)
+                    if ov is None or float(ov) != known[dst]:
+                        ok = False
+                        break
+                    hits += 1
+            if ok and hits >= 1:
+                cands.append((hits, i, j))
+    cands.sort(reverse=True)
+    taken_i, taken_j = set(), set()
+    for hits, i, j in cands:
+        if i in taken_i or j in taken_j or j in used_off:
+            continue
+        # jedna poklopljena vrijednost je dovoljna samo ako je jednoznacna na obje strane
+        if hits == 1 and (sum(1 for h, ii, jj in cands if ii == i) > 1 or sum(1 for h, ii, jj in cands if jj == j) > 1):
+            continue
+        taken_i.add(i); taken_j.add(j); used_off.add(j)
+        pairs.append((i, j))
+    remaining = [i for i in remaining if i not in taken_i]
     unmatched_off = [j for j in range(len(off_players)) if j not in used_off]
     return pairs, remaining, unmatched_off
 
@@ -170,6 +221,8 @@ def main() -> None:
         print("nema odigranih meceva u logu - preskacem patch")
         return
 
+    score_fix: dict = {}
+    overridden_total = 0
     filled_total = 0
     added_total = 0
     games_checked = 0
@@ -190,10 +243,17 @@ def main() -> None:
                      & (((codes["homescore"] == hs) & (codes["awayscore"] == as_))
                         | ((codes["homescore"] == as_) & (codes["awayscore"] == hs)))]
         if cand.empty:
+            # rezultat u fantasy API-ju moze odstupati od zvanicnog (npr. 60-101 vs 61-100): ista utakmica, isti datum,
+            # rezultat unutar +-2 po strani; stvarni izbor ide po poklapanju imena igraca (ispod)
+            tol = 2
+            cand = codes[(codes["date_norm"] == date)
+                         & ((((codes["homescore"] - hs).abs() <= tol) & ((codes["awayscore"] - as_).abs() <= tol))
+                            | (((codes["homescore"] - as_).abs() <= tol) & ((codes["awayscore"] - hs).abs() <= tol)))]
+        if cand.empty:
             continue
 
         log_names = [str(n) for n in g["name"]]
-        best_box, best_overlap = None, -1
+        best_box, best_overlap, best_row = None, -1, None
         for _, row in cand.iterrows():
             try:
                 box = gs.get_game_stats(SEASON, int(row["gameCode"]))
@@ -209,9 +269,15 @@ def main() -> None:
             overlap = sum(1 for n in names
                           if n and max((match_score(n, ln) for ln in log_names), default=0) >= 0.55)
             if overlap > best_overlap:
-                best_box, best_overlap = box, overlap
+                best_box, best_overlap, best_row = box, overlap, row
         if best_box is None:
             continue
+        if best_overlap < 6:      # premalo zajednickih igraca - nije ista utakmica
+            continue
+        hs_off, as_off = float(best_row["homescore"]), float(best_row["awayscore"])
+        if (hs_off, as_off) != (hs, as_) and (as_off, hs_off) != (hs, as_):
+            straight = abs(hs_off - hs) + abs(as_off - as_) <= abs(as_off - hs) + abs(hs_off - as_)
+            score_fix[match_id] = (hs_off, as_off) if straight else (as_off, hs_off)
 
         games_checked += 1
         box = best_box.iloc[0]
@@ -235,7 +301,8 @@ def main() -> None:
                         if str(r.get("team_abbr")) == team and str(r.get("position")) in POSITIONS]
             if not rows_idx:
                 continue
-            log_players = [{"idx": idx, "name": str(log.at[idx, "name"])} for idx in rows_idx]
+            log_players = [{"idx": idx, "name": str(log.at[idx, "name"]),
+                            "stats": {dst: log.at[idx, dst] for dst in STAT_MAP.values() if dst in log.columns}} for idx in rows_idx]
 
             off_players = []
             for entry in (box.get(side) or []):
@@ -269,6 +336,26 @@ def main() -> None:
                         log.at[idx, dst] = float(val)
                         filled_total += 1
 
+            # Ako zbir poena tima (fantasy log + igraci koji se dodaju) ne odgovara zvanicnom rezultatu, fantasy API ima
+            # zastarjele/pogresne vrijednosti za tu utakmicu: za spojene igrace uzima se zvanicna statistika.
+            off_score = float(best_row["homescore"] if is_home else best_row["awayscore"])
+            cur_sum = sum(float(log.at[ix, "pts"]) if pd.notna(log.at[ix, "pts"]) else 0.0 for ix in rows_idx)
+            add_pts = sum(float(off_players[j]["stats"].get("points") or 0) for j in unmatched_off
+                          if off_players[j]["minutes"] > 0 and off_players[j]["position"] in POSITIONS)
+            if abs(cur_sum + add_pts - off_score) > 0.1:
+                for i, j in pairs:
+                    off = off_players[j]
+                    if off["minutes"] <= 0:
+                        continue
+                    idx = log_players[i]["idx"]
+                    for src, dst in STAT_MAP.items():
+                        val = off["stats"].get(src)
+                        if val is None or dst not in log.columns:
+                            continue
+                        if pd.isna(log.at[idx, dst]) or float(log.at[idx, dst]) != float(val):
+                            log.at[idx, dst] = float(val)
+                            overridden_total += 1
+
             for j in unmatched_off:
                 off = off_players[j]
                 if off["minutes"] <= 0 or off["position"] not in POSITIONS:
@@ -294,6 +381,20 @@ def main() -> None:
 
     if new_rows:
         log = pd.concat([log, pd.DataFrame(new_rows)], ignore_index=True)
+    # zvanicni rezultat ima prednost nad fantasy API-jem
+    for mid, (nh, na) in score_fix.items():
+        m = log["match_id"] == mid
+        old_h = pd.to_numeric(log.loc[m, "home_score"], errors="coerce").dropna()
+        old_a = pd.to_numeric(log.loc[m, "away_score"], errors="coerce").dropna()
+        is_home = log["home_away"].astype(str) == "H"
+        log.loc[m, "home_score"] = nh
+        log.loc[m, "away_score"] = na
+        log.loc[m & is_home, "team_score"] = nh
+        log.loc[m & is_home, "opponent_score"] = na
+        log.loc[m & ~is_home, "team_score"] = na
+        log.loc[m & ~is_home, "opponent_score"] = nh
+        print(f"   napomena: utakmica {mid}: rezultat u fantasy API-ju ({old_h.iloc[0]:.0f}-{old_a.iloc[0]:.0f}) "
+              f"razlikuje se od zvanicnog ({nh:.0f}-{na:.0f}); uzet je zvanicni")
 
     # kontrola po timu
     for c in ("pts", "reb", "ast", "stl", "blk", "tov", "team_score"):
@@ -311,6 +412,8 @@ def main() -> None:
     log.to_csv(LOG_PATH, index=False)
     print(f"official box score patch: popunjeno {filled_total} vrijednosti, dodano {added_total} igraca, "
           f"provjereno {games_checked} utakmica")
+    if overridden_total:
+        print(f"   ispravljeno {overridden_total} vrijednosti koje se nisu slagale sa zvanicnim box scoreom (timski zbir nije odgovarao rezultatu)")
     if problems:
         print(f"   {len(problems)} timskih redova i dalje ne prolazi kontrolu (DvP ce ih preskociti):")
         for line in problems[:12]:

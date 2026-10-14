@@ -27,11 +27,19 @@ T={"en":dict(tab="Shot Share",h2="Player Shot Share",p="Share of the team's fiel
 
 def compute():
     pf=pd.read_csv(ROOT/"euroleague-players-full.csv")
-    d=pf[(pf["gp_current"].fillna(0)>0)&pf["fg_attempts_pg_current"].notna()&pf["team_fga_for_pg"].notna()&(pf["team_fga_for_pg"]>0)&(pf["min_avg_current"].fillna(0)>0)].copy()
+    # Team context blends current/prior seasons, but Shot Share MUST NOT use that denominator.
+    # Select the official CURRENT-season team FGA/G explicitly; never fall back to the blended context.
+    current=ROOT/"euroleague_fantasy_data"/"team_metrics_2026_current.csv"
+    if not current.exists(): raise FileNotFoundError("Current-season team FGA data required for Shot Share")
+    tm=pd.read_csv(current)
+    if not tm["team_abbr"].is_unique: raise ValueError("Duplicate current-season team FGA rows")
+    fmap=tm.set_index("team_abbr")["for_fga_pg"]
+    pf["shot_team_fga_current"]=pf["team_abbr"].map(fmap)
+    d=pf[(pf["gp_current"].fillna(0)>0)&pf["fg_attempts_pg_current"].notna()&pf["shot_team_fga_current"].notna()&(pf["shot_team_fga_current"]>0)&(pf["min_avg_current"].fillna(0)>0)].copy()
     if "is_head_coach" in d.columns: d=d[~d["is_head_coach"].fillna(False).astype(bool)]
     if "pos_short" in d.columns: d=d[d["pos_short"].astype(str).str.upper()!="HC"]
     d["player_fga_pg"]=d["fg_attempts_pg_current"].astype(float).round(2)
-    d["team_fga_pg"]=d["team_fga_for_pg"].astype(float).round(2)
+    d["team_fga_pg"]=d["shot_team_fga_current"].astype(float).round(2)
     d["shot_share_pct"]=(d["player_fga_pg"]/d["team_fga_pg"]*100).round(1)
     d=d.sort_values(["shot_share_pct","player_fga_pg"],ascending=[False,False],kind="mergesort")
     d["shot_share_rank"]=d["shot_share_pct"].rank(method="min",ascending=False).astype(int)
