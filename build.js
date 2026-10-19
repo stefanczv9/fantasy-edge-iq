@@ -121,9 +121,22 @@ try {
     const m = rel.match(/(?:^|\/)(euroleague|eurocup|premier-league)\/dashboard\/index\.html$/);
     if (!isHome && !m) continue;
     let html = fs.readFileSync(f, 'utf8');
-    const navA = `<a href="${isHome ? HUBS[0][1] : '/' + m[1] + '/players/'}" style="color:#7dd3fc;text-decoration:none;font-weight:600">${t.nav}</a>`;
-    const ni = html.indexOf('</nav>');
-    if (ni > 0 && !html.includes('player-profiles-nav')) { html = html.slice(0, ni) + `<span id="player-profiles-nav"></span>` + navA + html.slice(ni); n++; }
+    const chip = lang === 'sr' ? 'NOVO' : lang === 'el' ? '\u039d\u0395\u039f' : 'NEW';
+    const navA = `<a id="player-profiles-nav" href="${isHome ? HUBS[0][1] : '/' + m[1] + '/players/'}" style="background:linear-gradient(90deg,#0ea5e9,#22d3ee);color:#04121f;padding:6px 14px;border-radius:999px;font-weight:800;text-decoration:none;margin-left:8px;box-shadow:0 0 0 1px rgba(125,211,252,.45),0 4px 14px rgba(14,165,233,.35)">${t.nav} <span style="background:#facc15;color:#111827;border-radius:999px;padding:1px 7px;font-size:10px;font-weight:800;margin-left:4px">${chip}</span></a>`;
+    if (!html.includes('player-profiles-nav')) {
+      const navEnd = html.indexOf('</nav>');
+      if (navEnd > 0) {
+        const navSeg = html.slice(0, navEnd);
+        let ai = -1;
+        for (const key of ['defense-vs-position', 'premier-league']) {
+          const mm = navSeg.match(new RegExp('<a[^>]*href="[^"]*' + key + '[^"]*"[^>]*>[\\s\\S]*?</a>'));
+          if (mm) { ai = navSeg.indexOf(mm[0]) + mm[0].length; break; }
+        }
+        if (ai < 0) ai = navEnd;
+        html = html.slice(0, ai) + navA + html.slice(ai);
+        n++;
+      }
+    }
     if (isHome && !html.includes('id="player-profiles"')) {
       const cards = HUBS.map(([k, hub], j) => card(hub, t.c[j], t.s[j])).join('');
       const sec = `<section id="player-profiles" style="max-width:1100px;margin:40px auto;padding:0 22px"><h2 style="font-size:26px;margin:0 0 8px;color:#f1f5f9">${t.h2}</h2><p style="margin:0 0 18px;color:#94a3b8">${t.p}</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px">${cards}</div></section>`;
@@ -133,6 +146,103 @@ try {
     fs.writeFileSync(f, html);
   }
   console.log('player-links injected into', n, 'pages');
+})();
+
+// ---- 5) FAZA 2: countdown baner + cross-linkovi + (opciono) Telegram/Ko-fi iz feiq-config.json --
+(function phase2() {
+  let CFG = {};
+  try { CFG = JSON.parse(fs.readFileSync(path.join(root, 'feiq-config.json'), 'utf8')); } catch (e) {}
+  const L2 = {
+    '':  { lock: 'lineup lock', closes: 'closes in', wd: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'], next: 'Next →', dom: 'Domestic', ctaEL: 'Open Lineup IQ', ctaDash: 'Open dashboard', tgT: 'Picks & injury alerts before every round', tgP: 'Value picks, late price changes and a 2h-before-deadline reminder on Telegram — free, no email, no passwords.', tgB: 'Join the channel →' },
+    sr: { lock: 'zaključavanje postave', closes: 'zatvara se za', wd: ['ned','pon','uto','sri','čet','pet','sub'], next: 'Dalje →', dom: 'Domaća', ctaEL: 'Otvori Lineup IQ', ctaDash: 'Otvori dashboard', tgT: 'Pickovi i injury alertovi prije svakog kola', tgP: 'Vrijednosni pickovi, kasne promjene cijena i podsjetnik 2h prije deadline-a na Telegramu — besplatno, bez maila i šifri.', tgB: 'Pridruži se kanalu →' },
+    el: { lock: 'lock διαθεσιμότητας', closes: 'κλείνει σε', wd: ['Κυρ','Δευ','Τρι','Τετ','Πεμ','Παρ','Σαβ'], next: 'Επόμενο →', dom: 'Εγχώρια', ctaEL: 'Άνοιξε Lineup IQ', ctaDash: 'Άνοιξε το dashboard', tgT: 'Πικς και ειδοποιήσεις τραυματισμών πριν από κάθε γύρο', tgP: 'Πικς αξίας, αλλαγές τιμών και υπενθύμιση 2 ώρες πριν το deadline στο Telegram — δωρεάν, χωρίς email και κωδικούς.', tgB: 'Γίνε μέλος →' }
+  };
+  const csvOf = f => { try { return fs.readFileSync(path.join(root, f), 'utf8'); } catch (e) { return ''; } };
+  const minISO = csv => {
+    if (!csv) return null;
+    const lines = csv.split(/\r?\n/); if (lines.length < 2) return null;
+    const hdr = lines[0].split(',');
+    const ci = hdr.findIndex(h => /date|start/i.test(h)); if (ci < 0) return null;
+    let best = null;
+    for (let r = 1; r < lines.length; r++) {
+      const c = lines[r].split(',')[ci];
+      const m = c && c.match(/\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}/);
+      if (m && (!best || m[0] < best)) best = m[0];
+    }
+    return best;
+  };
+  // FPL deadline iz bootstrap-a
+  let fplIso = null, fplName = 'FPL';
+  try {
+    const b = JSON.parse(fs.readFileSync(path.join(root, 'fpl_fantasy_data', 'bootstrap_static.json'), 'utf8'));
+    const ev = (b.events || []).find(e => e.is_next) || (b.events || []).find(e => e.is_current);
+    if (ev && ev.deadline_time) { fplIso = ev.deadline_time; fplName = 'FPL ' + (ev.name || '').replace('Gameweek', 'GW'); }
+  } catch (e) {}
+  // EL: broj kola + datum iz next5 detalja
+  let elNum = '';
+  try { elNum = ' MD' + (JSON.parse(fs.readFileSync(path.join(root, 'euroleague_fantasy_data', 'league_config.json'), 'utf8')).current_matchday || {}).number; } catch (e) {}
+  const elIso = minISO(csvOf('euroleague_fantasy_data/team_next5_schedule_detail.csv'));
+  const ecIso = minISO(csvOf('eurocup_fantasy_data/team_next5_schedule_detail.csv'));
+  const fmt = (iso, lang) => {
+    const d = new Date(iso.replace(' ', 'T') + (/[Zz]|[+-]\d{2}:?\d{2}$/.test(iso) ? '' : 'Z'));
+    const ce = new Date(d.getTime() + 2 * 3600000);
+    const t = L2[lang].wd[ce.getUTCDay()];
+    const dd = String(ce.getUTCDate()).padStart(2, '0'), mm = String(ce.getUTCMonth() + 1).padStart(2, '0');
+    const hh = String(ce.getUTCHours()).padStart(2, '0'), mi = String(ce.getUTCMinutes()).padStart(2, '0');
+    return `${t} ${dd}.${mm}. ${hh}:${mi}`;
+  };
+  const SCRIPT = `<script>(function(){var el=document.getElementById('lock-banner');if(!el)return;var dl=new Date(el.getAttribute('data-deadline'));function u(){var ms=dl-new Date();if(ms<=0){el.remove();return;}var d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60;var c=el.querySelector('.cd');if(c)c.textContent=d+'d '+String(h).padStart(2,'0')+'h '+String(m).padStart(2,'0')+'m';}u();setInterval(u,30000);})();</script>`;
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+  let nb = 0, nx = 0, ntg = 0, nk = 0;
+  for (const f of walk(pub)) {
+    if (!f.endsWith('.html')) continue;
+    const rel = path.relative(pub, f).split(path.sep).join('/');
+    const lang = rel.startsWith('sr/') ? 'sr' : rel.startsWith('el/') ? 'el' : '';
+    const t = L2[lang];
+    const pfx = lang ? '/' + lang : '';
+    const sec = rel.includes('eurocup') ? 'eurocup' : rel.includes('premier-league') ? 'premier-league' : rel.includes('euroleague') ? 'euroleague' : null;
+    const isCore = /(dashboard|defense-vs-position|domestic-competitions|players)\/index\.html$/.test(rel) || ['index.html','sr/index.html','el/index.html'].includes(rel);
+    if (!isCore) continue;
+    let html = fs.readFileSync(f, 'utf8');
+    // countdown baner
+    const iso = !sec ? elIso : sec === 'euroleague' ? elIso : sec === 'eurocup' ? ecIso : fplIso;
+    const comp = !sec ? 'EuroLeague' + elNum : sec === 'euroleague' ? 'EuroLeague' + elNum : sec === 'eurocup' ? (lang === 'sr' ? 'EuroCup sljedeće kolo' : lang === 'el' ? 'EuroCup επόμενος γύρος' : 'EuroCup next round') : fplName;
+    if (iso && !html.includes('lock-banner')) {
+      let ni = html.indexOf('<nav');
+      if (ni < 0) { const bi = html.indexOf('<body'); ni = bi > 0 ? html.indexOf('>', bi) + 1 : -1; }
+      if (ni > 0) {
+        const cta = sec === 'euroleague' ? pfx + '/euroleague/team-analyzer' : pfx + '/' + (sec || 'euroleague');
+        const ban = `<div id="lock-banner" data-deadline="${iso.replace(' ', 'T')}Z" style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 16px;background:linear-gradient(90deg,#7c3aed,#db2777);color:#fff;font-size:13.5px;font-weight:600"><span>⏰ ${comp} ${t.lock}: ${fmt(iso, lang)} CEST</span><span>${t.closes} <b class="cd" style="font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(0,0,0,.35);padding:2px 9px;border-radius:7px">…</b></span><a href="${cta}" style="background:#fff;color:#7c3aed;padding:4px 13px;border-radius:999px;font-weight:800;text-decoration:none;font-size:12.5px">${sec === 'euroleague' || !sec ? t.ctaEL : t.ctaDash}</a></div>` + SCRIPT;
+        html = html.slice(0, ni) + ban + html.slice(ni); nb++;
+      }
+    }
+    // cross-link traka
+    if (sec && !html.includes('xlinks-strip')) {
+      const chips = [];
+      chips.push([pfx + '/' + sec + '/players/', lang === 'sr' ? 'Igrači' : lang === 'el' ? 'Παίκτες' : 'Players']);
+      if (!rel.includes('defense-vs-position')) chips.push([pfx + '/' + sec + '/defense-vs-position', 'Defense vs Position']);
+      if (!rel.includes('domestic-competitions')) chips.push([pfx + '/' + sec + '/domestic-competitions', t.dom]);
+      for (const [k, lab] of [['euroleague', 'EuroLeague Fantasy'], ['eurocup', 'EuroCup Fantasy'], ['premier-league', 'FPL']]) if (k !== sec) chips.push([pfx + '/' + k, lab]);
+      const strip = `<div id="xlinks-strip" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:8px 22px 20px"><span style="color:#64748b;font-size:12.5px">${t.next}</span>` + chips.map(([h, l]) => `<a href="${h}" style="border:1px solid rgba(125,211,252,.4);color:#7dd3fc;padding:6px 14px;border-radius:999px;font-size:13px;text-decoration:none;font-weight:600">${l}</a>`).join('') + `</div>`;
+      const fi = html.search(/<footer/i);
+      if (fi > 0) html = html.slice(0, fi) + strip + html.slice(fi); else html = html.replace('</body>', strip + '</body>');
+      nx++;
+    }
+    // Telegram capture (samo ako je upisan u config)
+    if (CFG.telegram_url && !html.includes('tg-capture')) {
+      const tg = `<div id="tg-capture" style="margin:26px 22px;padding:22px 24px;border-radius:16px;background:linear-gradient(120deg,rgba(34,211,238,.14),rgba(167,139,250,.14));border:1px solid rgba(125,211,252,.35);display:flex;gap:18px;align-items:center;flex-wrap:wrap"><div style="font-size:32px">📣</div><div><strong style="display:block;font-size:17px;color:#f1f5f9;margin-bottom:4px">${t.tgT}</strong><span style="color:#94a3b8;font-size:13.5px">${t.tgP}</span></div><a href="${CFG.telegram_url}" style="margin-left:auto;background:#22d3ee;color:#083344;padding:10px 20px;border-radius:999px;font-weight:800;text-decoration:none;font-size:14px">${t.tgB}</a></div>`;
+      const fi = html.search(/<footer/i);
+      if (fi > 0) html = html.slice(0, fi) + tg + html.slice(fi);
+      ntg++;
+    }
+    // Ko-fi plutajuce dugme (samo ako je upisano u config)
+    if (CFG.kofi_url && !html.includes('kofi-float')) {
+      html = html.replace('</body>', `<a id="kofi-float" href="${CFG.kofi_url}" style="position:fixed;right:18px;bottom:16px;background:#ff5e5b;color:#fff;padding:10px 18px;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 8px 24px rgba(255,94,91,.4);font-size:14px;z-index:99">☕ Ko-fi</a></body>`);
+      nk++;
+    }
+    fs.writeFileSync(f, html);
+  }
+  console.log(`faza2: baneri ${nb} | cross-link ${nx} | telegram ${ntg} | kofi ${nk}`);
 })();
 
 // ---- provjera --------------------------------------------------------------------------------
