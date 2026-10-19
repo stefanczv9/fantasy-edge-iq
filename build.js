@@ -98,6 +98,13 @@ try {
   fail('SEO player pages generator: ' + (e && e.message ? e.message : e));
 }
 
+// ---- 3b) FAZA 3: auto Round X preview clanak + social pack ------------------------------------
+try {
+  require('./build_round_preview.js').run(root, pub);
+} catch (e) {
+  console.log('round preview skip: ' + (e && e.message ? e.message : e));
+}
+
 // ---- 4) vidljivi linkovi ka profilnim stranicama (nav + sekcija na pocetnim) -------------------
 (function injectPlayerLinks() {
   const HUBS = [['euroleague', '/euroleague/players/'], ['eurocup', '/eurocup/players/'], ['premier-league', '/premier-league/players/']];
@@ -205,14 +212,19 @@ try {
     if (!isCore) continue;
     let html = fs.readFileSync(f, 'utf8');
     // countdown baner
-    const iso = !sec ? elIso : sec === 'euroleague' ? elIso : sec === 'eurocup' ? ecIso : fplIso;
-    const comp = !sec ? 'EuroLeague' + elNum : sec === 'euroleague' ? 'EuroLeague' + elNum : sec === 'eurocup' ? (lang === 'sr' ? 'EuroCup sljedeće kolo' : lang === 'el' ? 'EuroCup επόμενος γύρος' : 'EuroCup next round') : fplName;
+    const nowB = Date.now();
+    const fut = x => x && new Date(x.replace(' ', 'T') + (/[Zz]|[+-]\d{2}:?\d{2}$/.test(x) ? '' : 'Z')).getTime() > nowB;
+    const ALLD = [['euroleague', elIso], ['eurocup', ecIso], ['premier-league', fplIso]];
+    const own = !sec ? elIso : (ALLD.find(a => a[0] === sec) || [null, null])[1];
+    let iso = null, useSec = null;
+    if (fut(own)) { iso = own; useSec = sec || 'euroleague'; } else { const nx = ALLD.find(a => fut(a[1])); if (nx) { iso = nx[1]; useSec = nx[0]; } }
+    const comp = useSec === 'eurocup' ? (lang === 'sr' ? 'EuroCup sljedeće kolo' : lang === 'el' ? 'EuroCup επόμενος γύρος' : 'EuroCup next round') : useSec === 'premier-league' ? fplName : 'EuroLeague' + elNum;
     if (iso && !html.includes('lock-banner')) {
       let ni = html.indexOf('<nav');
       if (ni < 0) { const bi = html.indexOf('<body'); ni = bi > 0 ? html.indexOf('>', bi) + 1 : -1; }
       if (ni > 0) {
-        const cta = sec === 'euroleague' ? pfx + '/euroleague/team-analyzer' : pfx + '/' + (sec || 'euroleague');
-        const ban = `<div id="lock-banner" data-deadline="${iso.replace(' ', 'T')}Z" style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 16px;background:linear-gradient(90deg,#7c3aed,#db2777);color:#fff;font-size:13.5px;font-weight:600"><span>⏰ ${comp} ${t.lock}: ${fmt(iso, lang)} CEST</span><span>${t.closes} <b class="cd" style="font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(0,0,0,.35);padding:2px 9px;border-radius:7px">…</b></span><a href="${cta}" style="background:#fff;color:#7c3aed;padding:4px 13px;border-radius:999px;font-weight:800;text-decoration:none;font-size:12.5px">${sec === 'euroleague' || !sec ? t.ctaEL : t.ctaDash}</a></div>` + SCRIPT;
+        const cta = useSec === 'euroleague' ? pfx + '/euroleague/team-analyzer' : pfx + '/' + useSec;
+        const ban = `<div id="lock-banner" data-deadline="${iso.replace(' ', 'T')}Z" style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 16px;background:linear-gradient(90deg,#7c3aed,#db2777);color:#fff;font-size:13.5px;font-weight:600"><span>⏰ ${comp} ${t.lock}: ${fmt(iso, lang)} CEST</span><span>${t.closes} <b class="cd" style="font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(0,0,0,.35);padding:2px 9px;border-radius:7px">…</b></span><a href="${cta}" style="background:#fff;color:#7c3aed;padding:4px 13px;border-radius:999px;font-weight:800;text-decoration:none;font-size:12.5px">${useSec === 'euroleague' ? t.ctaEL : t.ctaDash}</a></div>` + SCRIPT;
         html = html.slice(0, ni) + ban + html.slice(ni); nb++;
       }
     }
@@ -220,6 +232,7 @@ try {
     if (sec && !html.includes('xlinks-strip')) {
       const chips = [];
       chips.push([pfx + '/' + sec + '/players/', lang === 'sr' ? 'Igrači' : lang === 'el' ? 'Παίκτες' : 'Players']);
+      if (sec === 'euroleague') { try { const NN = (JSON.parse(fs.readFileSync(path.join(root, 'euroleague_fantasy_data', 'league_config.json'), 'utf8')).current_matchday || {}).number; if (NN) chips.push([pfx + '/euroleague/round-' + NN + '-preview/', (lang === 'sr' ? 'Kolo ' : lang === 'el' ? 'Γύρος ' : 'Round ') + NN + ' preview']); } catch (e) {} }
       if (!rel.includes('defense-vs-position')) chips.push([pfx + '/' + sec + '/defense-vs-position', 'Defense vs Position']);
       if (!rel.includes('domestic-competitions')) chips.push([pfx + '/' + sec + '/domestic-competitions', t.dom]);
       for (const [k, lab] of [['euroleague', 'EuroLeague Fantasy'], ['eurocup', 'EuroCup Fantasy'], ['premier-league', 'FPL']]) if (k !== sec) chips.push([pfx + '/' + k, lab]);
