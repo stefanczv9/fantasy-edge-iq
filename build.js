@@ -135,6 +135,10 @@ try {
     const m = rel.match(/(?:^|\/)(euroleague|eurocup|premier-league)\/(?:dashboard\/)?index\.html$/);
     if (!isHome && !m) continue;
     let html = fs.readFileSync(f, 'utf8');
+    if (NP && /round2-value-insight" href=/.test(html)) {
+      const lab = lang === 'sr' ? ('Kolo ' + NP + ' preview — pickovi, startovi, zamke') : lang === 'el' ? ('Γύρος ' + NP + ' preview — value picks') : ('Round ' + NP + ' preview — value picks, starts & traps');
+      html = html.replace(/<a class="round2-value-insight"[^>]*>[^<]*<\/a>/, `<a class="round2-value-insight" href="${lang ? '/' + lang : ''}/euroleague/round-${NP}-preview/" style="background:linear-gradient(90deg,#f59e0b,#facc15);color:#111827;border-color:rgba(250,204,21,.55)">📰 ${lab}</a>`);
+    }
     const chip = lang === 'sr' ? 'NOVO' : lang === 'el' ? '\u039d\u0395\u039f' : 'NEW';
     const navA = `<a id="player-profiles-nav" href="${isHome ? HUBS[0][1] : '/' + m[1] + '/players/'}" style="background:linear-gradient(90deg,#0ea5e9,#22d3ee);color:#04121f;padding:6px 14px;border-radius:999px;font-weight:800;text-decoration:none;margin-left:8px;box-shadow:0 0 0 1px rgba(125,211,252,.45),0 4px 14px rgba(14,165,233,.35)">${t.nav} <span style="background:#facc15;color:#111827;border-radius:999px;padding:1px 7px;font-size:10px;font-weight:800;margin-left:4px">${chip}</span></a>`;
     if (!html.includes('player-profiles-nav')) {
@@ -154,8 +158,9 @@ try {
     if (isHome && NP && !html.includes('round-preview-cta')) {
       const rp = RPL[lang];
       const cta = `<div id="round-preview-cta" style="max-width:1100px;margin:26px auto 0;padding:18px 22px;border-radius:14px;background:linear-gradient(120deg,rgba(14,165,233,.12),rgba(250,204,21,.10));border:1px solid rgba(250,204,21,.45);display:flex;gap:14px;align-items:center;flex-wrap:wrap"><span style="font-size:26px">📰</span><div><strong style="color:#fde68a;font-size:16px">${rp[0]}</strong><span style="display:block;color:#94a3b8;font-size:13px;margin-top:2px">${rp[1]}</span></div><a href="${lang ? '/' + lang : ''}/euroleague/round-${NP}-preview/" style="margin-left:auto;background:#facc15;color:#111827;padding:9px 18px;border-radius:999px;font-weight:800;text-decoration:none;font-size:14px">${rp[2]}</a></div>`;
+      const nv = html.indexOf('</nav>');
       const ri = html.indexOf('<section id="player-profiles"');
-      const at = ri > 0 ? ri : html.search(/<footer/i);
+      const at = nv > 0 ? nv + 6 : (ri > 0 ? ri : html.search(/<footer/i));
       if (at > 0) { html = html.slice(0, at) + cta + html.slice(at); }
     }
     if (isHome && !html.includes('id="player-profiles"')) {
