@@ -91,6 +91,13 @@ for (const page of ['methodology', 'about', 'privacy', 'terms', 'disclaimer']) {
 let made = 0, skipped = [];
 for (const [src, dst] of ROUTES) { if (copy(src, dst)) made++; else skipped.push(src); }
 
+// ---- 3) SEO profilne stranice (igraci/timovi/hubovi) + prosireni sitemap u public/ -----------
+try {
+  require('./build_player_pages.js').run(root, pub);
+} catch (e) {
+  fail('SEO player pages generator: ' + (e && e.message ? e.message : e));
+}
+
 // ---- provjera --------------------------------------------------------------------------------
 for (const must of ['index.html', 'euroleague/dashboard/index.html', 'sr/index.html', 'el/index.html']) {
   if (!fs.existsSync(path.join(pub, must))) fail(`public/${must} nije napravljen`);

@@ -40,6 +40,25 @@ STA JE POPRAVLJENO U SKRIPTAMA (trajno, u ovom paketu):
     tabela verifikovanih aliasa (CURRENT_NAME_ALIASES) u create_fantasheet_style_dashboard.py
     i u payload runner-a; audit sada 268/268 igraca, 0 odstupanja.
 
+
+NOVO U OVOM PAKETU — SEO MASINA (faza 1):
+  - build.js + build_player_pages.js: Vercel build sada SAM generise 1.665 profilnih
+    stranica iz tvojih CSV podataka:
+      /euroleague/players/  + 365 stranica igraca + 20 timova
+      /premier-league/players/ + 668 stranica + 20 klubova
+      /eurocup/players/ + 557 stranica + 32 tima
+    Svaka stranica: cijena, promjena, minute, PIR/PPG, projekcije, popularnost,
+    next-5 raspored sa FDR, JSON-LD schema, canonical, meta opis (engleski).
+  - sitemap.xml u public/ automatski dobija svih 1.665 URL-ova (ukupno 1.694).
+  - NISTA ne uploadujes rucno za ovo: dovoljno je da build.js i build_player_pages.js
+    stignu u repo (jesu u ovom zipu) — Vercel ih pokrece pri svakom deploy-u.
+
+POSLE UPLOAD-A (SEO):
+  - Otvori Google Search Console (search.google.com/search-console) -> dodaj sajt
+    (Domain ili URL prefix) -> Sitemaps -> posalji: https://www.fantasyedgeiq.com/sitemap.xml
+    (Ako vec imas GSC povezan, samo sacekaj dan-dva da Google obidje nove stranice.)
+  - Provjeri npr. /euroleague/players/sasha-vezenkov i /euroleague/players/ (hub sa pretragom).
+
 NAPOMENE:
   - NEMOJ uploadovati public/ folder — Vercel ga sam regenerise.
   - FPL GW7 se zavrsava veceras/sutra (ponedjeljak). Za konacne GW7 brojke prije
