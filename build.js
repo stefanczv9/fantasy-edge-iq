@@ -181,6 +181,21 @@ try {
   // FPL deadline iz bootstrap-a
   let fplIso = null, fplName = 'FPL';
   try {
+    const fx = csvOf('fpl_fixtures.csv');
+    if (fx) {
+      const L = fx.split(/\r?\n/); const H = L[0].split(',');
+      const ie = H.indexOf('event'), ik = H.indexOf('kickoff_utc'), ist = H.indexOf('started');
+      let be = null, bk = null;
+      for (let r = 1; r < L.length; r++) {
+        const c = L[r].split(',');
+        if (ist >= 0 && /^(true|1)$/i.test((c[ist] || '').trim())) continue;
+        const k = (c[ik] || '').match(/\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}/);
+        if (k && (!bk || k[0] < bk)) { bk = k[0]; be = (c[ie] || '').trim(); }
+      }
+      if (bk) { fplIso = bk; fplName = 'FPL GW ' + be; }
+    }
+  } catch (e) {}
+  try {
     const b = JSON.parse(fs.readFileSync(path.join(root, 'fpl_fantasy_data', 'bootstrap_static.json'), 'utf8'));
     const ev = (b.events || []).find(e => e.is_next) || (b.events || []).find(e => e.is_current);
     if (ev && ev.deadline_time) { fplIso = ev.deadline_time; fplName = 'FPL ' + (ev.name || '').replace('Gameweek', 'GW'); }
@@ -188,8 +203,14 @@ try {
   // EL: broj kola + datum iz next5 detalja
   let elNum = '';
   try { elNum = ' MD' + (JSON.parse(fs.readFileSync(path.join(root, 'euroleague_fantasy_data', 'league_config.json'), 'utf8')).current_matchday || {}).number; } catch (e) {}
-  const elIso = minISO(csvOf('euroleague_fantasy_data/team_next5_schedule_detail.csv'));
-  const ecIso = minISO(csvOf('eurocup_fantasy_data/team_next5_schedule_detail.csv'));
+  const elCsv = csvOf('euroleague-next5-schedule.csv') || csvOf('euroleague_fantasy_data/team_next5_schedule_detail.csv');
+  const ecCsv = csvOf('eurocup-next5-schedule.csv') || csvOf('eurocup_fantasy_data/team_next5_schedule_detail.csv');
+  const elIso = minISO(elCsv);
+  const ecIso = minISO(ecCsv);
+  try {
+    const mds = elCsv.split(/\r?\n/).slice(1).map(l => parseInt(l.split(',')[1], 10)).filter(v => isFinite(v));
+    if (mds.length) elNum = ' MD' + Math.min(...mds);
+  } catch (e) {}
   const fmt = (iso, lang) => {
     const d = new Date(iso.replace(' ', 'T') + (/[Zz]|[+-]\d{2}:?\d{2}$/.test(iso) ? '' : 'Z'));
     const ce = new Date(d.getTime() + 2 * 3600000);

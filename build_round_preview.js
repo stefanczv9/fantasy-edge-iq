@@ -21,8 +21,11 @@ function run(root, pub) {
   let N = null;
   try { N = (JSON.parse(fs.readFileSync(path.join(root, 'euroleague_fantasy_data', 'league_config.json'), 'utf8')).current_matchday || {}).number; } catch (e) {}
   if (!N) { console.log('round preview: nema matchday podatka, preskacem'); return null; }
-  const P = csv(path.join(root, 'euroleague_fantasy_data', 'fantasheet_style_table.csv'));
-  const S = csv(path.join(root, 'euroleague_fantasy_data', 'team_next5_schedule_detail.csv'));
+  let P = csv(path.join(root, 'euroleague-players-full.csv'));
+  if (!P.length) P = csv(path.join(root, 'euroleague_fantasy_data', 'fantasheet_style_table.csv'));
+  let S = csv(path.join(root, 'euroleague-next5-schedule.csv'));
+  if (!S.length) S = csv(path.join(root, 'euroleague_fantasy_data', 'team_next5_schedule_detail.csv'));
+  if (S.length && S[0].matchday) { const mds = S.map(r => parseInt(r.matchday, 10)).filter(v => isFinite(v)); if (mds.length) N = Math.min(...mds); }
   if (!P.length) { console.log('round preview: nema tabele, preskacem'); return null; }
   const fdrCol = (Object.keys(S[0] || {}).find(k => k.startsWith('fdr')) || 'fdr_');
   // FDR po timu: naredci mec (matchday >= N) + FDR sledeceg meca
