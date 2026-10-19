@@ -86,7 +86,7 @@ function run(root, pub) {
 <h2 style="font-size:20px;color:#f1f5f9;margin:26px 0 4px">4) ${t.hn}</h2><table style="width:100%;border-collapse:collapse;font-size:14px;margin:10px 0 6px"><tr><th style="text-align:left;color:#7dd3fc;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c1}</th><th style="text-align:left;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c2}</th><th style="text-align:left;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c6}</th><th style="text-align:right;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">FDR next 5</th></tr>${picks.map(r => `<tr><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12)"><a href="/${lang ? lang + '/' : ''}euroleague/players/${slugify(r.name)}" style="color:#e2e8f0;text-decoration:none;font-weight:600">${esc(r.name)}</a></td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.team)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.next)} ${fdrChip(r.nfdr)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#dbe4ee;font-weight:700">${r.f5 == null ? '–' : num(r.f5, 1)}</td></tr>`).join('')}</table>
 <p style="color:#64748b;font-size:12.5px;margin:6px 0 0">${lang === 'sr' ? 'FDR next 5 = prosjek težine narednih 5 utakmica tima (niže = lakše).' : 'FDR next 5 = average difficulty of the team next five games (lower = easier).'}</p>
 <h2 style="font-size:20px;color:#f1f5f9;margin:30px 0 4px">📣 ${t.pack}</h2><p style="color:#94a3b8;font-size:13.5px;margin:0 0 10px">${t.packP}</p>
-<div style="display:flex;gap:10px;flex-wrap:wrap">${['post-en.txt', 'post-sr.txt', 'story.svg'].map(f => `<a href="/social/md${N}-preview/${f}" style="border:1px solid rgba(125,211,252,.4);color:#7dd3fc;padding:7px 14px;border-radius:999px;font-size:13px;text-decoration:none;font-weight:600">${f}</a>`).join('')}</div>
+${copyBox('post-en.txt', post(''))}${copyBox('post-sr.txt', post('sr'))}<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><a href="/social/md${N}-preview/story.svg" style="border:1px solid rgba(125,211,252,.4);color:#7dd3fc;padding:7px 14px;border-radius:999px;font-size:13px;text-decoration:none;font-weight:600">⬇ story.svg (IG 1080×1920)</a><span style="color:#64748b;font-size:12px">tekstovi ostaju i kao fajlovi: /social/md${N}-preview/post-en.txt · post-sr.txt</span></div>
 <h2 style="font-size:18px;color:#f1f5f9;margin:30px 0 8px">${t.rel}</h2><div style="display:flex;gap:10px;flex-wrap:wrap">${t.relL.map((l, i) => `<a href="${relH[lang][i]}" style="border:1px solid rgba(148,163,184,.35);color:#cbd5e1;padding:7px 14px;border-radius:999px;font-size:13px;text-decoration:none">${l}</a>`).join('')}</div>
 </div>`;
     return `<!doctype html><html lang="${lang || 'en'}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,18 +97,19 @@ function run(root, pub) {
 <style>body{margin:0;background:#0b1220;color:#e2e8f0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}a:hover{text-decoration:underline!important}</style>
 </head><body>${body}</body></html>`; };
 
-  const write = (rel, content) => { const d = path.join(pub, rel); fs.mkdirSync(d, { recursive: true }); fs.writeFileSync(path.join(d, 'index.html'), content); };
-  write(url.slice(1), page(''));
-  write('sr' + url, page('sr'));
-  // social pack
-  const sp = path.join(pub, 'social', `md${N}-preview`);
-  fs.mkdirSync(sp, { recursive: true });
   const post = lang => { const lines = [];
     lines.push(lang ? `EL Fantasy MD${N} — vrijednosna tabla 🏀` : `MD${N} value board 🏀 (EuroLeague Fantasy)`);
     picks.slice(0, 3).forEach((r, i) => lines.push(`${i + 1}) ${r.name} ${r.team} ${num(r.price)} → proj ${num(r.proj)} PIR (value ${num(r.val, 2)})`));
     lines.push(lang ? `Kompletan preview + FDR narednih 5: ${SITE}/sr${url}` : `Full preview + next-5 FDR: ${SITE}${url}`);
     lines.push(lang ? '#EuroLeague #EuroLeagueFantasy #fantasy' : '#EuroLeague #EuroLeagueFantasy #fantasy');
     return lines.join('\n') + '\n'; };
+  const copyBox = (label, txt) => `<div style="margin:10px 0 18px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px"><strong style="color:#bbf7d0;font-size:13px">${label}</strong><button onclick="navigator.clipboard.writeText(this.parentNode.nextElementSibling.innerText);this.textContent='\u2713 kopirano';setTimeout(()=>this.textContent='Kopiraj / Copy',1600)" style="background:#22d3ee;color:#083344;border:0;border-radius:999px;padding:6px 14px;font-weight:800;cursor:pointer;font-size:12px">Kopiraj / Copy</button></div><pre style="margin:0;background:#0d1526;border:1px solid rgba(148,163,184,.25);border-radius:12px;padding:14px 16px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;color:#a5f3fc;white-space:pre-wrap;line-height:1.55">${esc(txt)}</pre></div>`;
+  const write = (rel, content) => { const d = path.join(pub, rel); fs.mkdirSync(d, { recursive: true }); fs.writeFileSync(path.join(d, 'index.html'), content); };
+  write(url.slice(1), page(''));
+  write('sr' + url, page('sr'));
+  // social pack
+  const sp = path.join(pub, 'social', `md${N}-preview`);
+  fs.mkdirSync(sp, { recursive: true });
   fs.writeFileSync(path.join(sp, 'post-en.txt'), post(''));
   fs.writeFileSync(path.join(sp, 'post-sr.txt'), post('sr'));
   const tp = picks[0];

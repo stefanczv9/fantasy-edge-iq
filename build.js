@@ -117,6 +117,13 @@ try {
            c: ['\u03a0\u03b1\u03af\u03ba\u03c4\u03b5\u03c2 EuroLeague', '\u03a0\u03b1\u03af\u03ba\u03c4\u03b5\u03c2 EuroCup', '\u03a0\u03b1\u03af\u03ba\u03c4\u03b5\u03c2 FPL'], s: ['\u03c0\u03c1\u03bf\u03c6\u03af\u03bb \u03c0\u03b1\u03b9\u03ba\u03c4\u03ce\u03bd \u03ba\u03b1\u03b9 \u03bf\u03bc\u03ac\u03b4\u03c9\u03bd', '\u03c0\u03c1\u03bf\u03c6\u03af\u03bb \u03c0\u03b1\u03b9\u03ba\u03c4\u03ce\u03bd \u03ba\u03b1\u03b9 \u03bf\u03bc\u03ac\u03b4\u03c9\u03bd', '\u03c0\u03c1\u03bf\u03c6\u03af\u03bb \u03c0\u03b1\u03b9\u03ba\u03c4\u03ce\u03bd \u03ba\u03b1\u03b9 \u03bf\u03bc\u03ac\u03b4\u03c9\u03bd'] }
   };
   const card = (hub, title, sub) => `<a href="${hub}" style="display:block;padding:16px 18px;border:1px solid rgba(148,163,184,.25);border-radius:12px;background:rgba(15,23,42,.55);color:#e2e8f0;text-decoration:none"><strong style="display:block;color:#7dd3fc;margin-bottom:6px">${title}</strong><span style="color:#94a3b8;font-size:14px">${sub}</span></a>`;
+  let NP = null;
+  try { const L = fs.readFileSync(path.join(root, 'euroleague-next5-schedule.csv'), 'utf8').split(/\r?\n/); const mds = L.slice(1).map(l => parseInt(l.split(',')[1], 10)).filter(v => isFinite(v)); if (mds.length) NP = Math.min(...mds); } catch (e) {}
+  const RPL = {
+    '':  ['Round ' + NP + ' preview is live', 'Value picks, must-starts and traps — auto-generated from the latest data.', 'Read the preview →'],
+    sr: ['Kolo ' + NP + ' preview je uživo', 'Vrijednosni pickovi, obavezni startovi i zamke — automatski iz najsvježijih podataka.', 'Pročitaj preview →'],
+    el: ['Γύρος ' + NP + ' preview', 'Πικς αξίας, εκκινήσεις και παγίδες — αυτόματα από τα τελευταία δεδομένα.', 'Διάβασε →']
+  };
   const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
   let n = 0;
   for (const f of walk(pub)) {
@@ -125,7 +132,7 @@ try {
     const lang = rel.startsWith('sr/') ? 'sr' : rel.startsWith('el/') ? 'el' : '';
     const t = T[lang];
     const isHome = ['index.html', 'sr/index.html', 'el/index.html'].includes(rel);
-    const m = rel.match(/(?:^|\/)(euroleague|eurocup|premier-league)\/dashboard\/index\.html$/);
+    const m = rel.match(/(?:^|\/)(euroleague|eurocup|premier-league)\/(?:dashboard\/)?index\.html$/);
     if (!isHome && !m) continue;
     let html = fs.readFileSync(f, 'utf8');
     const chip = lang === 'sr' ? 'NOVO' : lang === 'el' ? '\u039d\u0395\u039f' : 'NEW';
@@ -143,6 +150,13 @@ try {
         html = html.slice(0, ai) + navA + html.slice(ai);
         n++;
       }
+    }
+    if (isHome && NP && !html.includes('round-preview-cta')) {
+      const rp = RPL[lang];
+      const cta = `<div id="round-preview-cta" style="max-width:1100px;margin:26px auto 0;padding:18px 22px;border-radius:14px;background:linear-gradient(120deg,rgba(14,165,233,.12),rgba(250,204,21,.10));border:1px solid rgba(250,204,21,.45);display:flex;gap:14px;align-items:center;flex-wrap:wrap"><span style="font-size:26px">📰</span><div><strong style="color:#fde68a;font-size:16px">${rp[0]}</strong><span style="display:block;color:#94a3b8;font-size:13px;margin-top:2px">${rp[1]}</span></div><a href="${lang ? '/' + lang : ''}/euroleague/round-${NP}-preview/" style="margin-left:auto;background:#facc15;color:#111827;padding:9px 18px;border-radius:999px;font-weight:800;text-decoration:none;font-size:14px">${rp[2]}</a></div>`;
+      const ri = html.indexOf('<section id="player-profiles"');
+      const at = ri > 0 ? ri : html.search(/<footer/i);
+      if (at > 0) { html = html.slice(0, at) + cta + html.slice(at); }
     }
     if (isHome && !html.includes('id="player-profiles"')) {
       const cards = HUBS.map(([k, hub], j) => card(hub, t.c[j], t.s[j])).join('');
@@ -229,7 +243,7 @@ try {
     const t = L2[lang];
     const pfx = lang ? '/' + lang : '';
     const sec = rel.includes('eurocup') ? 'eurocup' : rel.includes('premier-league') ? 'premier-league' : rel.includes('euroleague') ? 'euroleague' : null;
-    const isCore = /(dashboard|defense-vs-position|domestic-competitions|players)\/index\.html$/.test(rel) || ['index.html','sr/index.html','el/index.html'].includes(rel);
+    const isCore = /(dashboard|defense-vs-position|domestic-competitions|players)\/index\.html$/.test(rel) || ['index.html','sr/index.html','el/index.html'].includes(rel) || /^(?:sr\/|el\/)?(?:euroleague|eurocup|premier-league)\/index\.html$/.test(rel);
     if (!isCore) continue;
     let html = fs.readFileSync(f, 'utf8');
     // countdown baner
