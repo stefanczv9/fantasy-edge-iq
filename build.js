@@ -137,7 +137,7 @@ try {
     let html = fs.readFileSync(f, 'utf8');
     if (NP && /round2-value-insight" href=/.test(html)) {
       const lab = lang === 'sr' ? ('Kolo ' + NP + ' preview — pickovi, startovi, zamke') : lang === 'el' ? ('Γύρος ' + NP + ' preview — value picks') : ('Round ' + NP + ' preview — value picks, starts & traps');
-      html = html.replace(/<a class="round2-value-insight"[^>]*>[^<]*<\/a>/, `<a class="round2-value-insight" href="${lang ? '/' + lang : ''}/euroleague/round-${NP}-preview/" style="background:linear-gradient(90deg,#f59e0b,#facc15);color:#111827;border-color:rgba(250,204,21,.55)">📰 ${lab}</a>`);
+      html = html.replace(/<a class="round2-value-insight"[^>]*>[^<]*<\/a>/, `<a class="round2-value-insight" href="${lang === 'sr' ? '/sr' : ''}/euroleague/round-${NP}-preview/" style="background:linear-gradient(90deg,#f59e0b,#facc15);color:#111827;border-color:rgba(250,204,21,.55)">📰 ${lab}</a>`);
     }
     const chip = lang === 'sr' ? 'NOVO' : lang === 'el' ? '\u039d\u0395\u039f' : 'NEW';
     const navA = `<a id="player-profiles-nav" href="${isHome ? HUBS[0][1] : '/' + m[1] + '/players/'}" style="background:linear-gradient(90deg,#0ea5e9,#22d3ee);color:#04121f;padding:6px 14px;border-radius:999px;font-weight:800;text-decoration:none;margin-left:8px;box-shadow:0 0 0 1px rgba(125,211,252,.45),0 4px 14px rgba(14,165,233,.35)">${t.nav} <span style="background:#facc15;color:#111827;border-radius:999px;padding:1px 7px;font-size:10px;font-weight:800;margin-left:4px">${chip}</span></a>`;
@@ -157,7 +157,7 @@ try {
     }
     if (isHome && NP && !html.includes('round-preview-cta')) {
       const rp = RPL[lang];
-      const cta = `<div id="round-preview-cta" style="max-width:1100px;margin:26px auto 0;padding:18px 22px;border-radius:14px;background:linear-gradient(120deg,rgba(14,165,233,.12),rgba(250,204,21,.10));border:1px solid rgba(250,204,21,.45);display:flex;gap:14px;align-items:center;flex-wrap:wrap"><span style="font-size:26px">📰</span><div><strong style="color:#fde68a;font-size:16px">${rp[0]}</strong><span style="display:block;color:#94a3b8;font-size:13px;margin-top:2px">${rp[1]}</span></div><a href="${lang ? '/' + lang : ''}/euroleague/round-${NP}-preview/" style="margin-left:auto;background:#facc15;color:#111827;padding:9px 18px;border-radius:999px;font-weight:800;text-decoration:none;font-size:14px">${rp[2]}</a></div>`;
+      const cta = `<div id="round-preview-cta" style="max-width:1100px;margin:26px auto 0;padding:18px 22px;border-radius:14px;background:linear-gradient(120deg,rgba(14,165,233,.12),rgba(250,204,21,.10));border:1px solid rgba(250,204,21,.45);display:flex;gap:14px;align-items:center;flex-wrap:wrap"><span style="font-size:26px">📰</span><div><strong style="color:#fde68a;font-size:16px">${rp[0]}</strong><span style="display:block;color:#94a3b8;font-size:13px;margin-top:2px">${rp[1]}</span></div><a href="${lang === 'sr' ? '/sr' : ''}/euroleague/round-${NP}-preview/" style="margin-left:auto;background:#facc15;color:#111827;padding:9px 18px;border-radius:999px;font-weight:800;text-decoration:none;font-size:14px">${rp[2]}</a></div>`;
       const nv = html.indexOf('</nav>');
       const ri = html.indexOf('<section id="player-profiles"');
       const at = nv > 0 ? nv + 6 : (ri > 0 ? ri : html.search(/<footer/i));
@@ -249,6 +249,8 @@ try {
     const pfx = lang ? '/' + lang : '';
     const sec = rel.includes('eurocup') ? 'eurocup' : rel.includes('premier-league') ? 'premier-league' : rel.includes('euroleague') ? 'euroleague' : null;
     const isCore = /(dashboard|defense-vs-position|domestic-competitions|players)\/index\.html$/.test(rel) || ['index.html','sr/index.html','el/index.html'].includes(rel) || /^(?:sr\/|el\/)?(?:euroleague|eurocup|premier-league)\/index\.html$/.test(rel);
+    // html lang atribut mora odgovarati jeziku putanje (team-analyzer kopije su EN)
+    if (lang) { const h0 = fs.readFileSync(f, 'utf8'); if (h0.includes('<html lang="en"')) fs.writeFileSync(f, h0.replace('<html lang="en"', '<html lang="' + lang + '"')); }
     if (!isCore) continue;
     let html = fs.readFileSync(f, 'utf8');
     // countdown baner
@@ -271,10 +273,10 @@ try {
     // cross-link traka
     if (sec && !html.includes('xlinks-strip')) {
       const chips = [];
-      chips.push([pfx + '/' + sec + '/players/', lang === 'sr' ? 'Igrači' : lang === 'el' ? 'Παίκτες' : 'Players']);
-      if (sec === 'euroleague') { try { const NN = (JSON.parse(fs.readFileSync(path.join(root, 'euroleague_fantasy_data', 'league_config.json'), 'utf8')).current_matchday || {}).number; if (NN) chips.push([pfx + '/euroleague/round-' + NN + '-preview/', (lang === 'sr' ? 'Kolo ' : lang === 'el' ? 'Γύρος ' : 'Round ') + NN + ' preview']); } catch (e) {} }
-      if (!rel.includes('defense-vs-position')) chips.push([pfx + '/' + sec + '/defense-vs-position', 'Defense vs Position']);
-      if (!rel.includes('domestic-competitions')) chips.push([pfx + '/' + sec + '/domestic-competitions', t.dom]);
+      chips.push(['/' + sec + '/players/', lang === 'sr' ? 'Igrači' : lang === 'el' ? 'Παίκτες' : 'Players']);
+      if (sec === 'euroleague') { let NN = null; try { const L2x = fs.readFileSync(path.join(root, 'euroleague-next5-schedule.csv'), 'utf8').split(/\r?\n/); const mds2 = L2x.slice(1).map(l => parseInt(l.split(',')[1], 10)).filter(v => isFinite(v)); if (mds2.length) NN = Math.min(...mds2); } catch (e) {} if (!NN) { try { NN = (JSON.parse(fs.readFileSync(path.join(root, 'euroleague_fantasy_data', 'league_config.json'), 'utf8')).current_matchday || {}).number; } catch (e) {} } if (NN) chips.push([(lang === 'sr' ? '/sr' : '') + '/euroleague/round-' + NN + '-preview/', (lang === 'sr' ? 'Kolo ' : lang === 'el' ? 'Γύρος ' : 'Round ') + NN + ' preview']); }
+      if (sec !== 'premier-league' && !rel.includes('defense-vs-position')) chips.push([pfx + '/' + sec + '/defense-vs-position', 'Defense vs Position']);
+      if (sec !== 'premier-league' && !rel.includes('domestic-competitions')) chips.push([pfx + '/' + sec + '/domestic-competitions', t.dom]);
       for (const [k, lab] of [['euroleague', 'EuroLeague Fantasy'], ['eurocup', 'EuroCup Fantasy'], ['premier-league', 'FPL']]) if (k !== sec) chips.push([pfx + '/' + k, lab]);
       const strip = `<div id="xlinks-strip" style="display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:8px 22px 20px"><span style="color:#64748b;font-size:12.5px">${t.next}</span>` + chips.map(([h, l]) => `<a href="${h}" style="border:1px solid rgba(125,211,252,.4);color:#7dd3fc;padding:6px 14px;border-radius:999px;font-size:13px;text-decoration:none;font-weight:600">${l}</a>`).join('') + `</div>`;
       const fi = html.search(/<footer/i);
