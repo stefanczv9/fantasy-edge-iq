@@ -12,6 +12,14 @@
     "name": "Sukhmail Mathon"
   },
   {
+    "team": "CHE",
+    "name": "Ryan Mikesell"
+  },
+  {
+    "team": "JLB",
+    "name": "Johnny Berhanemeskel"
+  },
+  {
     "team": "JLB",
     "name": "Tyger Campbell"
   },
@@ -22,5 +30,9 @@
   {
     "team": "ROM",
     "name": "Kelly Olynyk"
+  },
+  {
+    "team": "TRE",
+    "name": "Markuss Jahovics"
   }
 ]

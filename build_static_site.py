@@ -3,6 +3,7 @@ import html
 import math
 from pathlib import Path
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import numpy as np
@@ -192,7 +193,7 @@ def make_euro_team_analyzer():
     players = players[[c for c in cols if c in players.columns]].copy()
     if 'option_score_next5' in players.columns:
         players = players.sort_values(['option_score_next5','proj_pir_est'], ascending=[False, False], na_position='last')
-    generated = datetime.now().strftime('%Y-%m-%d %H:%M CET')
+    generated = datetime.now(ZoneInfo('Europe/Zagreb')).strftime('%Y-%m-%d %H:%M %Z')
     data = {'generated': generated, 'players': clean_records(players)}
     html_doc = f'''<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -233,7 +234,7 @@ def make_euro_dashboard():
     easy = (schedule_summary.merge(team_names, on='team_abbr', how='left')
             .sort_values('next5_fdr_1_easy_5_hard', ascending=True, na_position='last')
             .head(12))
-    generated = datetime.now().strftime('%Y-%m-%d %H:%M CET')
+    generated = datetime.now(ZoneInfo('Europe/Zagreb')).strftime('%Y-%m-%d %H:%M %Z')
 
     pcols_main = ['name','team_abbr','pos_short','price','option_score_next5','next_period_rating','next5_fdr_1_easy_5_hard','next5_opponents','proj_pir_est','form_pir','value_pir_per_credit','fantasy_pts_current_md','min_avg_best','pir_avg_current','pir_25_26','fg_attempts_pg_best','fg_pct_best','fg_attempts_per_min_best','reb_avg_current','ast_avg_current','stl_avg_current','tov_avg_current','team_pace_possessions_pg','team_fga_for_pg','team_pir_allowed_pg','is_injured','started_from_bench','popularity_pct']
     pcols_main = [c for c in pcols_main if c in players.columns]
@@ -405,7 +406,7 @@ def make_euro_defense_vs_position():
     agg.to_csv(OUT / 'euroleague-defense-vs-position.csv', index=False)
 
     data = {
-        'generated': datetime.now().strftime('%Y-%m-%d %H:%M CET'),
+        'generated': datetime.now(ZoneInfo('Europe/Zagreb')).strftime('%Y-%m-%d %H:%M %Z'),
         'summary': clean_records(agg),
         'matchlog': clean_records(match_df),
     }

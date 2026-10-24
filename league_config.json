@@ -1,5 +1,5 @@
 {
-  "status_id": 3,
+  "status_id": 1,
   "maintenance": false,
   "players_list_limitations_enabled": false,
   "denied_free_agent_trade_creation_offset": 180,
@@ -8,18 +8,18 @@
   "current_players_list_id": 49,
   "allows_head_to_head_tournaments": true,
   "current_matchday": {
-    "id": 1532,
-    "number": 5,
+    "id": 1535,
+    "number": 8,
     "num_rounds": 2
   },
   "current_round": {
-    "id": 2534,
-    "number": 2,
-    "started_at": "2026-10-14T15:59:00.000000Z"
+    "id": 2540,
+    "number": 1,
+    "started_at": "2026-10-27T15:59:00.000000Z"
   },
   "previous_matchday": {
-    "id": 1531,
-    "number": 4
+    "id": 1534,
+    "number": 7
   },
   "current_bracket": null,
   "teams": [
@@ -30,7 +30,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/EFS.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/EFS.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/EFS.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     },
@@ -41,7 +41,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/MIL.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/MIL.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/MIL.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#F0F0F0",
       "number_border_color": null
     },
@@ -52,7 +52,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/BJK.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/BJK.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/BJK.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#040503",
       "number_border_color": null
     },
@@ -63,7 +63,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/CZV.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/CZV.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/CZV.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#997838",
       "number_border_color": "#E7E7E7"
     },
@@ -74,7 +74,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/DUB.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/DUB.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/DUB.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#231F30",
       "number_border_color": null
     },
@@ -85,7 +85,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/BAR.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/BAR.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/BAR.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#F4AA00",
       "number_border_color": null
     },
@@ -96,7 +96,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/BAY.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/BAY.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/BAY.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     },
@@ -107,7 +107,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/FBT.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/FBT.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/FBT.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#08243A",
       "number_border_color": "#FEED4F"
     },
@@ -118,7 +118,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/HTA.png?v=6",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/HTA.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/HTA.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     },
@@ -129,7 +129,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/KBA.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/KBA.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/KBA.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     },
@@ -140,7 +140,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/ASV.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/ASV.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/ASV.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     },
@@ -151,7 +151,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/MTA.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/MTA.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/MTA.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#313799",
       "number_border_color": null
     },
@@ -162,7 +162,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/OLY.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/OLY.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/OLY.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": "#B61029"
     },
@@ -173,7 +173,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/PAO.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/PAO.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/PAO.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#F4EFDA",
       "number_border_color": null
     },
@@ -184,7 +184,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/PBB.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/PBB.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/PBB.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     },
@@ -195,7 +195,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/PAR.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/PAR.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/PAR.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     },
@@ -206,7 +206,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/RMB.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/RMB.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/RMB.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#213B36",
       "number_border_color": null
     },
@@ -217,7 +217,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/VBC.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/VBC.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/VBC.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#14181B",
       "number_border_color": null
     },
@@ -228,7 +228,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/VIR.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/VIR.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/VIR.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     },
@@ -239,7 +239,7 @@
       "player_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/players/euroleague/ZAL.png?v=5",
       "coach_jersey_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/jerseys/coaches/euroleague/ZAL.png",
       "logo_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/images/logos/teams/euroleague/ZAL.png",
-      "font_url": null,
+      "font_url": "https://fantaking-assets.dunkest.com/euroleague-fantasy-challenge/fonts/numbers/jersey_m54.ttf",
       "number_color": "#FFFFFF",
       "number_border_color": null
     }
@@ -543,7 +543,7 @@
   ],
   "predictions": null,
   "match_predictor": {
-    "starts_at": "2026-10-13T17:45:00.000000Z",
+    "starts_at": "2026-10-27T16:00:00.000000Z",
     "configs": {
       "add_matchups": true,
       "predictions": [

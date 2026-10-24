@@ -1037,61 +1037,61 @@
         "matches": [
           {
             "id": 11972,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-14T16:00:00.000000Z",
             "home_team": {
               "id": 165,
               "name": "Hapoel IBI Tel Aviv",
               "abbreviation": "HTA",
-              "score": null,
+              "score": 100,
               "is_valid": true
             },
             "away_team": {
               "id": 158,
               "name": "Besiktas Istanbul",
               "abbreviation": "BJK",
-              "score": null,
+              "score": 82,
               "is_valid": true
             }
           },
           {
             "id": 11973,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-14T17:30:00.000000Z",
             "home_team": {
               "id": 146,
               "name": "Anadolu Efes Istanbul",
               "abbreviation": "EFS",
-              "score": null,
+              "score": 93,
               "is_valid": true
             },
             "away_team": {
               "id": 141,
               "name": "FC Bayern Munich",
               "abbreviation": "BAY",
-              "score": null,
+              "score": 101,
               "is_valid": true
             }
           },
           {
             "id": 11974,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-14T18:45:00.000000Z",
             "home_team": {
               "id": 150,
               "name": "Paris Basketball",
               "abbreviation": "PBB",
-              "score": null,
+              "score": 94,
               "is_valid": true
             },
             "away_team": {
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": null,
+              "score": 96,
               "is_valid": true
             }
           }
@@ -1110,81 +1110,81 @@
         "matches": [
           {
             "id": 11978,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-15T17:45:00.000000Z",
             "home_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
               "abbreviation": "FBT",
-              "score": null,
+              "score": 74,
               "is_valid": true
             },
             "away_team": {
               "id": 152,
               "name": "Partizan Mozzart Bet Belgrade",
               "abbreviation": "PAR",
-              "score": null,
+              "score": 65,
               "is_valid": true
             }
           },
           {
             "id": 11975,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-15T18:30:00.000000Z",
             "home_team": {
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
-              "score": null,
+              "score": 97,
               "is_valid": true
             },
             "away_team": {
               "id": 311,
               "name": "Dubai Basketball",
               "abbreviation": "DUB",
-              "score": null,
+              "score": 101,
               "is_valid": true
             }
           },
           {
             "id": 11976,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-15T18:30:00.000000Z",
             "home_team": {
               "id": 174,
               "name": "Valencia Basket",
               "abbreviation": "VBC",
-              "score": null,
+              "score": 88,
               "is_valid": true
             },
             "away_team": {
               "id": 148,
               "name": "Maccabi Rapyd Tel Aviv",
               "abbreviation": "MTA",
-              "score": null,
+              "score": 91,
               "is_valid": true
             }
           },
           {
             "id": 11977,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-15T19:00:00.000000Z",
             "home_team": {
               "id": 153,
               "name": "Real Madrid",
               "abbreviation": "RMB",
-              "score": null,
+              "score": 111,
               "is_valid": true
             },
             "away_team": {
               "id": 139,
               "name": "LDLC ASVEL Villeurbanne",
               "abbreviation": "ASV",
-              "score": null,
+              "score": 92,
               "is_valid": true
             }
           }
@@ -1196,121 +1196,121 @@
         "matches": [
           {
             "id": 11979,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-16T17:00:00.000000Z",
             "home_team": {
               "id": 158,
               "name": "Besiktas Istanbul",
               "abbreviation": "BJK",
-              "score": null,
+              "score": 95,
               "is_valid": true
             },
             "away_team": {
               "id": 141,
               "name": "FC Bayern Munich",
               "abbreviation": "BAY",
-              "score": null,
+              "score": 87,
               "is_valid": true
             }
           },
           {
             "id": 11981,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-16T17:00:00.000000Z",
             "home_team": {
               "id": 155,
               "name": "Zalgiris Kaunas",
               "abbreviation": "ZAL",
-              "score": null,
+              "score": 70,
               "is_valid": true
             },
             "away_team": {
               "id": 146,
               "name": "Anadolu Efes Istanbul",
               "abbreviation": "EFS",
-              "score": null,
+              "score": 85,
               "is_valid": true
             }
           },
           {
             "id": 11980,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-16T18:00:00.000000Z",
             "home_team": {
               "id": 144,
               "name": "Crvena Zvezda Meridianbet Belgrade",
               "abbreviation": "CZV",
-              "score": null,
+              "score": 90,
               "is_valid": true
             },
             "away_team": {
               "id": 150,
               "name": "Paris Basketball",
               "abbreviation": "PBB",
-              "score": null,
+              "score": 81,
               "is_valid": true
             }
           },
           {
             "id": 11984,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-16T18:15:00.000000Z",
             "home_team": {
               "id": 151,
               "name": "Panathinaikos AKTOR Athens",
               "abbreviation": "PAO",
-              "score": null,
+              "score": 81,
               "is_valid": true
             },
             "away_team": {
               "id": 165,
               "name": "Hapoel IBI Tel Aviv",
               "abbreviation": "HTA",
-              "score": null,
+              "score": 91,
               "is_valid": true
             }
           },
           {
             "id": 11982,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-16T18:30:00.000000Z",
             "home_team": {
               "id": 140,
               "name": "FC Barcelona",
               "abbreviation": "BAR",
-              "score": null,
+              "score": 100,
               "is_valid": true
             },
             "away_team": {
               "id": 149,
               "name": "Olympiacos Piraeus",
               "abbreviation": "OLY",
-              "score": null,
+              "score": 105,
               "is_valid": true
             }
           },
           {
             "id": 11983,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-16T18:30:00.000000Z",
             "home_team": {
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": null,
+              "score": 86,
               "is_valid": true
             },
             "away_team": {
               "id": 143,
               "name": "Kosner Baskonia Vitoria-Gasteiz",
               "abbreviation": "KBA",
-              "score": null,
+              "score": 78,
               "is_valid": true
             }
           }
@@ -1329,21 +1329,21 @@
         "matches": [
           {
             "id": 11985,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-21T16:00:00.000000Z",
             "home_team": {
               "id": 165,
               "name": "Hapoel IBI Tel Aviv",
               "abbreviation": "HTA",
-              "score": null,
+              "score": 90,
               "is_valid": true
             },
             "away_team": {
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": null,
+              "score": 81,
               "is_valid": true
             }
           }
@@ -1355,121 +1355,121 @@
         "matches": [
           {
             "id": 11988,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-22T17:30:00.000000Z",
             "home_team": {
               "id": 146,
               "name": "Anadolu Efes Istanbul",
               "abbreviation": "EFS",
-              "score": null,
+              "score": 89,
               "is_valid": true
             },
             "away_team": {
               "id": 158,
               "name": "Besiktas Istanbul",
               "abbreviation": "BJK",
-              "score": null,
+              "score": 80,
               "is_valid": true
             }
           },
           {
             "id": 11989,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-22T18:00:00.000000Z",
             "home_team": {
               "id": 141,
               "name": "FC Bayern Munich",
               "abbreviation": "BAY",
-              "score": null,
+              "score": 91,
               "is_valid": true
             },
             "away_team": {
               "id": 311,
               "name": "Dubai Basketball",
               "abbreviation": "DUB",
-              "score": null,
+              "score": 107,
               "is_valid": true
             }
           },
           {
             "id": 11986,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-22T18:05:00.000000Z",
             "home_team": {
               "id": 148,
               "name": "Maccabi Rapyd Tel Aviv",
               "abbreviation": "MTA",
-              "score": null,
+              "score": 99,
               "is_valid": true
             },
             "away_team": {
               "id": 153,
               "name": "Real Madrid",
               "abbreviation": "RMB",
-              "score": null,
+              "score": 113,
               "is_valid": true
             }
           },
           {
             "id": 11991,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-22T18:15:00.000000Z",
             "home_team": {
               "id": 151,
               "name": "Panathinaikos AKTOR Athens",
               "abbreviation": "PAO",
-              "score": null,
+              "score": 85,
               "is_valid": true
             },
             "away_team": {
               "id": 143,
               "name": "Kosner Baskonia Vitoria-Gasteiz",
               "abbreviation": "KBA",
-              "score": null,
+              "score": 79,
               "is_valid": true
             }
           },
           {
             "id": 11987,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-22T18:30:00.000000Z",
             "home_team": {
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
-              "score": null,
+              "score": 81,
               "is_valid": true
             },
             "away_team": {
               "id": 140,
               "name": "FC Barcelona",
               "abbreviation": "BAR",
-              "score": null,
+              "score": 89,
               "is_valid": true
             }
           },
           {
             "id": 11990,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-22T18:45:00.000000Z",
             "home_team": {
               "id": 152,
               "name": "Partizan Mozzart Bet Belgrade",
               "abbreviation": "PAR",
-              "score": null,
+              "score": 85,
               "is_valid": true
             },
             "away_team": {
               "id": 144,
               "name": "Crvena Zvezda Meridianbet Belgrade",
               "abbreviation": "CZV",
-              "score": null,
+              "score": 82,
               "is_valid": true
             }
           }
@@ -1481,61 +1481,61 @@
         "matches": [
           {
             "id": 11992,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-23T17:00:00.000000Z",
             "home_team": {
               "id": 155,
               "name": "Zalgiris Kaunas",
               "abbreviation": "ZAL",
-              "score": null,
+              "score": 105,
               "is_valid": true
             },
             "away_team": {
               "id": 139,
               "name": "LDLC ASVEL Villeurbanne",
               "abbreviation": "ASV",
-              "score": null,
+              "score": 85,
               "is_valid": true
             }
           },
           {
             "id": 11994,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-23T18:15:00.000000Z",
             "home_team": {
               "id": 149,
               "name": "Olympiacos Piraeus",
               "abbreviation": "OLY",
-              "score": null,
+              "score": 61,
               "is_valid": true
             },
             "away_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
               "abbreviation": "FBT",
-              "score": null,
+              "score": 64,
               "is_valid": true
             }
           },
           {
             "id": 11993,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-10-23T18:45:00.000000Z",
             "home_team": {
               "id": 150,
               "name": "Paris Basketball",
               "abbreviation": "PBB",
-              "score": null,
+              "score": 93,
               "is_valid": true
             },
             "away_team": {
               "id": 174,
               "name": "Valencia Basket",
               "abbreviation": "VBC",
-              "score": null,
+              "score": 104,
               "is_valid": true
             }
           }
@@ -1593,6 +1593,26 @@
             }
           },
           {
+            "id": 11998,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2026-10-27T19:00:00.000000Z",
+            "home_team": {
+              "id": 141,
+              "name": "FC Bayern Munich",
+              "abbreviation": "BAY",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 140,
+              "name": "FC Barcelona",
+              "abbreviation": "BAR",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
             "id": 12000,
             "status": "scheduled",
             "ot": false,
@@ -1608,26 +1628,6 @@
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
-              "score": null,
-              "is_valid": true
-            }
-          },
-          {
-            "id": 11998,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2026-10-27T19:30:00.000000Z",
-            "home_team": {
-              "id": 141,
-              "name": "FC Bayern Munich",
-              "abbreviation": "BAY",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 140,
-              "name": "FC Barcelona",
-              "abbreviation": "BAR",
               "score": null,
               "is_valid": true
             }
@@ -1679,6 +1679,26 @@
         "number": 2,
         "matches": [
           {
+            "id": 12003,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2026-10-28T17:30:00.000000Z",
+            "home_team": {
+              "id": 158,
+              "name": "Besiktas Istanbul",
+              "abbreviation": "BJK",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 149,
+              "name": "Olympiacos Piraeus",
+              "abbreviation": "OLY",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
             "id": 12001,
             "status": "scheduled",
             "ot": false,
@@ -1694,26 +1714,6 @@
               "id": 146,
               "name": "Anadolu Efes Istanbul",
               "abbreviation": "EFS",
-              "score": null,
-              "is_valid": true
-            }
-          },
-          {
-            "id": 12003,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2026-10-28T18:30:00.000000Z",
-            "home_team": {
-              "id": 158,
-              "name": "Besiktas Istanbul",
-              "abbreviation": "BJK",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 149,
-              "name": "Olympiacos Piraeus",
-              "abbreviation": "OLY",
               "score": null,
               "is_valid": true
             }
@@ -1991,26 +1991,6 @@
         "number": 1,
         "matches": [
           {
-            "id": 12016,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2026-11-04T17:45:00.000000Z",
-            "home_team": {
-              "id": 147,
-              "name": "Fenerbahce Tarfin Istanbul",
-              "abbreviation": "FBT",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 143,
-              "name": "Kosner Baskonia Vitoria-Gasteiz",
-              "abbreviation": "KBA",
-              "score": null,
-              "is_valid": true
-            }
-          },
-          {
             "id": 12015,
             "status": "scheduled",
             "ot": false,
@@ -2029,6 +2009,26 @@
               "score": null,
               "is_valid": true
             }
+          },
+          {
+            "id": 12016,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2026-11-05T18:00:00.000000Z",
+            "home_team": {
+              "id": 147,
+              "name": "Fenerbahce Tarfin Istanbul",
+              "abbreviation": "FBT",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 143,
+              "name": "Kosner Baskonia Vitoria-Gasteiz",
+              "abbreviation": "KBA",
+              "score": null,
+              "is_valid": true
+            }
           }
         ]
       },
@@ -2040,7 +2040,7 @@
             "id": 12019,
             "status": "scheduled",
             "ot": false,
-            "started_at": "2026-11-05T17:30:00.000000Z",
+            "started_at": "2026-11-05T17:15:00.000000Z",
             "home_team": {
               "id": 146,
               "name": "Anadolu Efes Istanbul",

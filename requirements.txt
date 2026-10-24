@@ -7,6 +7,3 @@ openpyxl
 xlsxwriter
 euroleague-api
 pillow
-
-beautifulsoup4
-lxml

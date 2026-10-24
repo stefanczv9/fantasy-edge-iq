@@ -1,10 +1,10 @@
 {
-  "generated": "2026-10-14 12:13 CEST",
-  "games": 37,
-  "matchdays": 3,
+  "generated": "2026-10-24 15:15 CEST",
+  "games": 64,
+  "matchdays": 4,
   "round_in_progress": true,
   "players": 557,
-  "players_with_minutes": 372,
-  "dvp_defense_rows": 74,
+  "players_with_minutes": 388,
+  "dvp_defense_rows": 128,
   "dvp_all_valid": true
 }
