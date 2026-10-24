@@ -1,0 +1,114 @@
+name: FEIQ auto-refresh
+
+# Automatski refresh poslije odigranih utakmica:
+# - 00:30 CEST (22:30 UTC): poslije vecernjih EL/EC utakmica (uto-cet)
+# - 09:00 CET  (08:00 UTC): FPL (petak/ponedjeljak) + domaca takmicenja (vikend) + catch-all
+# Commit na main pokrece Vercel deploy automatski.
+on:
+  schedule:
+    - cron: '30 22 * * *'
+    - cron: '0 8 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: feiq-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Dependencies
+        run: |
+          pip install -r scripts/requirements.txt
+          pip install beautifulsoup4 lxml
+
+      - name: FPL fetch (fantasy.premierleague.com)
+        run: python scripts/fpl_fetch.py
+
+      - name: FPL CSV + dashboard rebuild
+        run: python scripts/fpl_build_dashboard.py
+
+      - name: FPL dashboard (build_static_site)
+        run: python scripts/build_static_site.py
+
+      - name: Restore zasticene stranice (build_static ih ne smije dirati)
+        run: |
+          for f in index.html sr-index.html el-index.html \
+            euroleague-dashboard.html sr-euroleague-dashboard.html el-euroleague-dashboard.html \
+            euroleague-team-analyzer.html \
+            euroleague-defense-vs-position.html sr-euroleague-defense-vs-position.html el-euroleague-defense-vs-position.html \
+            euroleague-domestic-competitions.html sr-euroleague-domestic-competitions.html el-euroleague-domestic-competitions.html \
+            eurocup-dashboard.html sr-eurocup-dashboard.html el-eurocup-dashboard.html \
+            eurocup-defense-vs-position.html sr-eurocup-defense-vs-position.html el-eurocup-defense-vs-position.html \
+            eurocup-domestic-competitions.html sr-eurocup-domestic-competitions.html el-eurocup-domestic-competitions.html \
+            about.html privacy.html terms.html disclaimer.html methodology.html \
+            sr-about.html sr-privacy.html sr-terms.html sr-disclaimer.html sr-methodology.html \
+            el-about.html el-privacy.html el-terms.html el-disclaimer.html el-methodology.html \
+            sitemap.xml robots.txt package.json vercel.json scripts/build.js README_DEPLOY.md \
+            favicon.svg site.webmanifest og-image.png apple-touch-icon.png; do
+            git checkout -- "$f" 2>/dev/null || true
+          done
+
+      - name: Stamp-fix build_static (payload runner-a ga moze vratiti)
+        run: |
+          python - <<'PYEOF'
+          from pathlib import Path
+          p = Path('scripts/build_static_site.py'); s = p.read_text()
+          old = "datetime.now().strftime('%Y-%m-%d %H:%M CET')"
+          if old in s:
+              s = s.replace(old, "datetime.now(ZoneInfo('Europe/Zagreb')).strftime('%Y-%m-%d %H:%M %Z')")
+              if 'from zoneinfo import ZoneInfo' not in s:
+                  s = s.replace('from datetime import datetime', 'from datetime import datetime\nfrom zoneinfo import ZoneInfo', 1)
+              p.write_text(s); print('stamp fix applied')
+          else:
+              print('stamp fix vec prisutan')
+          PYEOF
+
+      - name: EuroLeague pipeline (fantaking + official box scores)
+        run: python scripts/run_euroleague_auto_refresh.py
+
+      - name: EuroCup fantasy log refresh
+        run: python scripts/eurocup/eurocup_dvp.py --no-pages
+
+      - name: EuroCup refresh
+        run: python scripts/eurocup/refresh_eurocup.py
+
+      - name: Domaca takmicenja (tolerise pad izvora)
+        continue-on-error: true
+        run: |
+          python scripts/domestic/update_domestic.py
+          python scripts/domestic/build_pages.py el ec
+
+      - name: Audit (ne blokira deploy)
+        continue-on-error: true
+        run: |
+          node build.js
+          (python -m http.server 3005 --bind 127.0.0.1 --directory public &) ; sleep 3
+          python scripts/site_audit.py http://127.0.0.1:3005 || true
+
+      - name: Commit i push (Vercel deploy-uje sam)
+        run: |
+          git config user.name "feiq-refresh-bot"
+          git config user.email "feiq-refresh-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nema promjena - preskacem commit."
+          else
+            git commit -m "FEIQ auto-refresh $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
