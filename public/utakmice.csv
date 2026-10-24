@@ -36,33 +36,33 @@ match_id,matchday,matchday_id,status,start_utc,start_local,home_abbr,away_abbr,h
 12340,3,1570,played,2026-10-13T16:00:00.000000Z,2026-10-13 18:00,BKS,MAN,Bahcesehir College Istanbul,Kids&Us Manresa,100.0,88.0,47.0,official EuroCup final
 12338,3,1570,played,2026-10-13T18:00:00.000000Z,2026-10-13 20:00,TRE,CHE,Dolomiti Energia Trento,NINERS Chemnitz,80.0,88.0,44.0,official EuroCup final
 12341,3,1570,played,2026-10-13T18:00:00.000000Z,2026-10-13 20:00,ROM,BLK,Roma Basketball,Balkan Botevgrad,77.0,72.0,48.0,official EuroCup final
-12348,3,1570,scheduled,2026-10-14T15:30:00.000000Z,2026-10-14 17:30,SIA,UBT,Siauliai Basketball,U-BT Cluj-Napoca,,,,fantasy
-12343,3,1570,scheduled,2026-10-14T16:00:00.000000Z,2026-10-14 18:00,RIG,COL,Riga Zelli,Cedevita Olimpija Ljubljana,,,,fantasy
-12351,3,1570,scheduled,2026-10-14T16:30:00.000000Z,2026-10-14 18:30,ULM,BOS,Ratiopharm Ulm,Bosna BH Telecom Sarajevo,,,,fantasy
-12345,3,1570,scheduled,2026-10-14T17:00:00.000000Z,2026-10-14 19:00,ARI,DER,Aris Thessaloniki,Baglietto Derthona Tortona,,,,fantasy
-12349,3,1570,scheduled,2026-10-14T17:00:00.000000Z,2026-10-14 19:00,WKS,NAP,Slask Wroclaw,Napoli Basketball,,,,fantasy
-12350,3,1570,scheduled,2026-10-14T17:00:00.000000Z,2026-10-14 19:00,TOF,BUD,Tofas Bursa,Buducnost VOLI Podgorica,,,,fantasy
-12344,3,1570,scheduled,2026-10-14T18:00:00.000000Z,2026-10-14 20:00,MSB,ROS,Le Mans Sarthe Basket,Rostock Seawolves,,,,fantasy
-12342,3,1570,scheduled,2026-10-14T18:30:00.000000Z,2026-10-14 20:30,BUR,JLM,Recoletas Salud San Pablo Burgos,Hapoel Midtown Jerusalem,,,,fantasy
-12346,3,1570,scheduled,2026-10-14T19:00:00.000000Z,2026-10-14 21:00,LLT,RMA,La Laguna Tenerife,Maxima Roma,,,,fantasy
-12347,3,1570,scheduled,2026-10-14T19:00:00.000000Z,2026-10-14 21:00,URV,TTA,Umana Reyer Venice,Turk Telekom Ankara,,,,fantasy
-12352,3,1570,scheduled,2026-10-15T18:30:00.000000Z,2026-10-15 20:30,LDN,SKY,London Lions,Skyliners Frankfurt,,,,fantasy
-12357,4,1571,scheduled,2026-10-20T16:00:00.000000Z,2026-10-20 18:00,BLK,LIE,Balkan Botevgrad,Lietkabelis Panevezys,,,,fantasy
-12354,4,1571,scheduled,2026-10-20T16:30:00.000000Z,2026-10-20 18:30,TTA,SIA,Turk Telekom Ankara,Siauliai Basketball,,,,fantasy
-12355,4,1571,scheduled,2026-10-20T17:00:00.000000Z,2026-10-20 19:00,BUD,NEP,Buducnost VOLI Podgorica,Neptunas Klaipeda,,,,fantasy
-12353,4,1571,scheduled,2026-10-20T18:00:00.000000Z,2026-10-20 20:00,ROS,ARI,Rostock Seawolves,Aris Thessaloniki,,,,fantasy
-12356,4,1571,scheduled,2026-10-20T18:00:00.000000Z,2026-10-20 20:00,NAP,TOF,Napoli Basketball,Tofas Bursa,,,,fantasy
-12358,4,1571,scheduled,2026-10-20T18:30:00.000000Z,2026-10-20 20:30,MAN,ROM,Kids&Us Manresa,Roma Basketball,,,,fantasy
-12363,4,1571,scheduled,2026-10-21T16:00:00.000000Z,2026-10-21 18:00,UBT,LDN,U-BT Cluj-Napoca,London Lions,,,,fantasy
-12360,4,1571,scheduled,2026-10-21T16:30:00.000000Z,2026-10-21 18:30,COL,MSB,Cedevita Olimpija Ljubljana,Le Mans Sarthe Basket,,,,fantasy
-12359,4,1571,scheduled,2026-10-21T17:00:00.000000Z,2026-10-21 19:00,DER,BUR,Baglietto Derthona Tortona,Recoletas Salud San Pablo Burgos,,,,fantasy
-12365,4,1571,scheduled,2026-10-21T17:00:00.000000Z,2026-10-21 19:00,CHE,WKS,NINERS Chemnitz,Slask Wroclaw,,,,fantasy
-12368,4,1571,scheduled,2026-10-21T17:00:00.000000Z,2026-10-21 19:00,PBC,ULM,PAOK Thessaloniki,Ratiopharm Ulm,,,,fantasy
-12362,4,1571,scheduled,2026-10-21T17:30:00.000000Z,2026-10-21 19:30,SKY,LLT,Skyliners Frankfurt,La Laguna Tenerife,,,,fantasy
-12366,4,1571,scheduled,2026-10-21T17:30:00.000000Z,2026-10-21 19:30,JLB,TRE,Cosea JL Bourg-en-Bresse,Dolomiti Energia Trento,,,,fantasy
-12367,4,1571,scheduled,2026-10-21T17:30:00.000000Z,2026-10-21 19:30,BOS,BKS,Bosna BH Telecom Sarajevo,Bahcesehir College Istanbul,,,,fantasy
-12361,4,1571,scheduled,2026-10-21T18:00:00.000000Z,2026-10-21 20:00,JLM,RIG,Hapoel Midtown Jerusalem,Riga Zelli,,,,fantasy
-12364,4,1571,scheduled,2026-10-21T19:00:00.000000Z,2026-10-21 21:00,RMA,URV,Maxima Roma,Umana Reyer Venice,,,,fantasy
+12348,3,1570,played,2026-10-14T15:30:00.000000Z,2026-10-14 17:30,SIA,UBT,Siauliai Basketball,U-BT Cluj-Napoca,75.0,94.0,39.0,official EuroCup final
+12343,3,1570,played,2026-10-14T16:00:00.000000Z,2026-10-14 18:00,RIG,COL,Riga Zelli,Cedevita Olimpija Ljubljana,89.0,79.0,34.0,official EuroCup final
+12351,3,1570,played,2026-10-14T16:30:00.000000Z,2026-10-14 18:30,ULM,BOS,Ratiopharm Ulm,Bosna BH Telecom Sarajevo,102.0,93.0,46.0,official EuroCup final
+12345,3,1570,played,2026-10-14T17:00:00.000000Z,2026-10-14 19:00,ARI,DER,Aris Thessaloniki,Baglietto Derthona Tortona,88.0,68.0,36.0,official EuroCup final
+12349,3,1570,played,2026-10-14T17:00:00.000000Z,2026-10-14 19:00,WKS,NAP,Slask Wroclaw,Napoli Basketball,82.0,86.0,41.0,official EuroCup final
+12350,3,1570,played,2026-10-14T17:00:00.000000Z,2026-10-14 19:00,TOF,BUD,Tofas Bursa,Buducnost VOLI Podgorica,90.0,85.0,42.0,official EuroCup final
+12344,3,1570,played,2026-10-14T18:00:00.000000Z,2026-10-14 20:00,MSB,ROS,Le Mans Sarthe Basket,Rostock Seawolves,82.0,70.0,35.0,official EuroCup final
+12342,3,1570,played,2026-10-14T18:30:00.000000Z,2026-10-14 20:30,BUR,JLM,Recoletas Salud San Pablo Burgos,Hapoel Midtown Jerusalem,84.0,85.0,33.0,official EuroCup final
+12346,3,1570,played,2026-10-14T19:00:00.000000Z,2026-10-14 21:00,LLT,RMA,La Laguna Tenerife,Maxima Roma,96.0,71.0,37.0,official EuroCup final
+12347,3,1570,played,2026-10-14T19:00:00.000000Z,2026-10-14 21:00,URV,TTA,Umana Reyer Venice,Turk Telekom Ankara,75.0,65.0,38.0,official EuroCup final
+12352,3,1570,played,2026-10-15T18:30:00.000000Z,2026-10-15 20:30,LDN,SKY,London Lions,Skyliners Frankfurt,76.0,81.0,40.0,official EuroCup final
+12357,4,1571,played,2026-10-20T16:00:00.000000Z,2026-10-20 18:00,BLK,LIE,Balkan Botevgrad,Lietkabelis Panevezys,57.0,64.0,61.0,official EuroCup final
+12354,4,1571,played,2026-10-20T16:30:00.000000Z,2026-10-20 18:30,TTA,SIA,Turk Telekom Ankara,Siauliai Basketball,84.0,94.0,55.0,official EuroCup final
+12355,4,1571,played,2026-10-20T17:00:00.000000Z,2026-10-20 19:00,BUD,NEP,Buducnost VOLI Podgorica,Neptunas Klaipeda,104.0,89.0,59.0,official EuroCup final
+12353,4,1571,played,2026-10-20T18:00:00.000000Z,2026-10-20 20:00,ROS,ARI,Rostock Seawolves,Aris Thessaloniki,79.0,110.0,50.0,official EuroCup final
+12358,4,1571,played,2026-10-20T18:30:00.000000Z,2026-10-20 20:30,MAN,ROM,Kids&Us Manresa,Roma Basketball,108.0,88.0,62.0,official EuroCup final
+12363,4,1571,played,2026-10-21T16:00:00.000000Z,2026-10-21 18:00,UBT,LDN,U-BT Cluj-Napoca,London Lions,72.0,89.0,54.0,official EuroCup final
+12360,4,1571,played,2026-10-21T16:30:00.000000Z,2026-10-21 18:30,COL,MSB,Cedevita Olimpija Ljubljana,Le Mans Sarthe Basket,66.0,84.0,51.0,official EuroCup final
+12359,4,1571,played,2026-10-21T17:00:00.000000Z,2026-10-21 19:00,DER,BUR,Baglietto Derthona Tortona,Recoletas Salud San Pablo Burgos,89.0,79.0,49.0,official EuroCup final
+12365,4,1571,played,2026-10-21T17:00:00.000000Z,2026-10-21 19:00,CHE,WKS,NINERS Chemnitz,Slask Wroclaw,95.0,67.0,57.0,official EuroCup final
+12368,4,1571,played,2026-10-21T17:00:00.000000Z,2026-10-21 19:00,PBC,ULM,PAOK Thessaloniki,Ratiopharm Ulm,87.0,78.0,64.0,official EuroCup final
+12362,4,1571,played,2026-10-21T17:30:00.000000Z,2026-10-21 19:30,SKY,LLT,Skyliners Frankfurt,La Laguna Tenerife,94.0,104.0,53.0,official EuroCup final
+12366,4,1571,played,2026-10-21T17:30:00.000000Z,2026-10-21 19:30,JLB,TRE,Cosea JL Bourg-en-Bresse,Dolomiti Energia Trento,90.0,79.0,58.0,official EuroCup final
+12367,4,1571,played,2026-10-21T17:30:00.000000Z,2026-10-21 19:30,BOS,BKS,Bosna BH Telecom Sarajevo,Bahcesehir College Istanbul,86.0,77.0,63.0,official EuroCup final
+12356,4,1571,played,2026-10-21T18:00:00.000000Z,2026-10-21 20:00,NAP,TOF,Napoli Basketball,Tofas Bursa,105.0,101.0,60.0,official EuroCup final
+12361,4,1571,played,2026-10-21T18:00:00.000000Z,2026-10-21 20:00,JLM,RIG,Hapoel Midtown Jerusalem,Riga Zelli,100.0,64.0,52.0,official EuroCup final
+12364,4,1571,played,2026-10-21T18:30:00.000000Z,2026-10-21 20:30,RMA,URV,Maxima Roma,Umana Reyer Venice,90.0,79.0,56.0,official EuroCup final
 12372,5,1572,scheduled,2026-10-27T16:00:00.000000Z,2026-10-27 17:00,BKS,PBC,Bahcesehir College Istanbul,PAOK Thessaloniki,,,,fantasy
 12371,5,1572,scheduled,2026-10-27T17:00:00.000000Z,2026-10-27 18:00,LIE,ULM,Lietkabelis Panevezys,Ratiopharm Ulm,,,,fantasy
 12374,5,1572,scheduled,2026-10-27T17:00:00.000000Z,2026-10-27 18:00,BLK,MAN,Balkan Botevgrad,Kids&Us Manresa,,,,fantasy
@@ -72,7 +72,7 @@ match_id,matchday,matchday_id,status,start_utc,start_local,home_abbr,away_abbr,h
 12380,5,1572,scheduled,2026-10-28T16:30:00.000000Z,2026-10-28 17:30,SIA,RMA,Siauliai Basketball,Maxima Roma,,,,fantasy
 12383,5,1572,scheduled,2026-10-28T17:00:00.000000Z,2026-10-28 18:00,NEP,NAP,Neptunas Klaipeda,Napoli Basketball,,,,fantasy
 12377,5,1572,scheduled,2026-10-28T17:30:00.000000Z,2026-10-28 18:30,ARI,COL,Aris Thessaloniki,Cedevita Olimpija Ljubljana,,,,fantasy
-12382,5,1572,scheduled,2026-10-28T18:00:00.000000Z,2026-10-28 19:00,WKS,TOF,Slask Wroclaw,Tofas Bursa,,,,fantasy
+12382,5,1572,scheduled,2026-10-28T17:30:00.000000Z,2026-10-28 18:30,WKS,TOF,Slask Wroclaw,Tofas Bursa,,,,fantasy
 12384,5,1572,scheduled,2026-10-28T18:00:00.000000Z,2026-10-28 19:00,CHE,JLB,NINERS Chemnitz,Cosea JL Bourg-en-Bresse,,,,fantasy
 12378,5,1572,scheduled,2026-10-28T18:30:00.000000Z,2026-10-28 19:30,DER,ROS,Baglietto Derthona Tortona,Rostock Seawolves,,,,fantasy
 12376,5,1572,scheduled,2026-10-28T19:00:00.000000Z,2026-10-28 20:00,MSB,JLM,Le Mans Sarthe Basket,Hapoel Midtown Jerusalem,,,,fantasy
