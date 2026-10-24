@@ -251,6 +251,8 @@ try {
     const isCore = /(dashboard|defense-vs-position|domestic-competitions|players)\/index\.html$/.test(rel) || ['index.html','sr/index.html','el/index.html'].includes(rel) || /^(?:sr\/|el\/)?(?:euroleague|eurocup|premier-league)\/index\.html$/.test(rel);
     // html lang atribut mora odgovarati jeziku putanje (team-analyzer kopije su EN)
     if (lang) { const h0 = fs.readFileSync(f, 'utf8'); if (h0.includes('<html lang="en"')) fs.writeFileSync(f, h0.replace('<html lang="en"', '<html lang="' + lang + '"')); }
+    // html lang atribut mora odgovarati jeziku putanje (team-analyzer kopije su EN)
+    if (lang) { const h0 = fs.readFileSync(f, 'utf8'); if (h0.includes('<html lang="en"')) fs.writeFileSync(f, h0.replace('<html lang="en"', '<html lang="' + lang + '"')); }
     if (!isCore) continue;
     let html = fs.readFileSync(f, 'utf8');
     // countdown baner
