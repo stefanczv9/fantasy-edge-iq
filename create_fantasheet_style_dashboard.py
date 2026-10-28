@@ -25,6 +25,14 @@ def norm_name(s):
     return s
 
 
+# Verified official-feed nickname variants of the same fantasy players (not fuzzy guesses).
+# The official stats feed can list shortened/nickname first names; fantasy uses full legal names.
+CURRENT_NAME_ALIASES = {
+    'pj dozier': 'perry dozier',
+    'olek balcerowski': 'aleksander balcerowski',
+}
+
+
 def official_name_to_full(n):
     n = str(n or '')
     if ',' in n:
@@ -112,6 +120,7 @@ def fetch_official_traditional(season, current=False):
     df = df.copy()
     df['official_name_full'] = df['player.name'].map(official_name_to_full)
     df['official_norm'] = df['official_name_full'].map(norm_name)
+    df['official_norm'] = df['official_norm'].map(lambda s: CURRENT_NAME_ALIASES.get(s, s))
     df['team_abbr_official'] = df.get('player.team.tvCodes')
     gp = df['gamesPlayed'].replace({0: pd.NA})
     per_cols = {
