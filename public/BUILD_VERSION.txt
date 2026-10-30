@@ -1,7 +1,7 @@
 Fantasy Edge IQ EuroLeague auto-refresh
-Generated: 2026-10-30 00:50 CET
+Generated: 2026-10-30 23:09 CET
 Dashboard: current prices/next opponents; overview card "Average PIR so far" uses pir_avg_current (current season, min. half of the games); Proj PIR stays a table column.
-DvP: real-points-only by Guard/Forward/Center; Sample: 83 completed games, Matchdays 1–9.
+DvP: real-points-only by Guard/Forward/Center; Sample: 90 completed games, Matchdays 1–9.
 Shot Share: euroleague-shot-share.csv + tab in EN/SR/EL dashboards (current season, FGA/G divided by team FGA/G).
 Domestic competitions: 88 completed games of 20 EuroLeague clubs in 9 countries, generated 2026-10-24 15:16 CEST (EN/SR/EL). EuroCup clubs: 138 completed games of 32 clubs in 14 countries, generated 2026-10-24 15:16 CEST (EN/SR/EL).
 EuroCup Defense vs Position (EN/SR/EL): real points only, EuroCup rounds 1-5 (80 games), generated 2026-10-30 00:28 CET.
