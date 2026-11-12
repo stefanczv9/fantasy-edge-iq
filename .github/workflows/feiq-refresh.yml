@@ -24,6 +24,34 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # ---------------------------------------------------------------------------------
+      # Skriptovi su u ovom repou ostali u KORIJENU, a pipeline ih trazi u scripts/.
+      # Ovaj korak ih kopira na ocekivane putanje prije pokretanja (bez rucnog uploada).
+      # ---------------------------------------------------------------------------------
+      - name: Prepare scripts layout
+        run: |
+          set -e
+          mkdir -p scripts/eurocup scripts/domestic
+          for f in fpl_fetch.py fpl_build_dashboard.py build_static_site.py site_audit.py \
+                   patch_log_from_official_boxscore.py add_minutes_and_pirmin_cards.py \
+                   add_shot_share_section.py patch_average_pir_card.py \
+                   run_euroleague_auto_refresh.py; do
+            if [ -f "$f" ]; then cp -f "$f" scripts/; echo "root -> scripts/$f"; fi
+          done
+          for f in refresh_eurocup.py eurocup_dvp.py audit_eurocup.py; do
+            if [ -f "$f" ]; then cp -f "$f" scripts/eurocup/; echo "root -> scripts/eurocup/$f"; fi
+          done
+          for f in update_domestic.py build_pages.py sources.py fs_scan.py fs_box.py; do
+            if [ -f "$f" ]; then cp -f "$f" scripts/domestic/; echo "root -> scripts/domestic/$f"; fi
+          done
+          echo "--- provjera:"
+          for f in scripts/fpl_fetch.py scripts/fpl_build_dashboard.py scripts/build_static_site.py \
+                   scripts/run_euroleague_auto_refresh.py scripts/eurocup/refresh_eurocup.py \
+                   scripts/eurocup/eurocup_dvp.py scripts/domestic/update_domestic.py; do
+            [ -f "$f" ] && echo "OK  $f" || echo "MISSING  $f"
+          done
+          python -c "import ast,sys;[ast.parse(open(p).read()) for p in __import__('pathlib').Path('scripts').rglob('*.py')];print('python syntax OK')"
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
