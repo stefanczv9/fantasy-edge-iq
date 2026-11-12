@@ -1,0 +1,1116 @@
+import json
+import html
+import math
+from pathlib import Path
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
+import pandas as pd
+import numpy as np
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT
+FLAT = ROOT
+EURO_DATA = ROOT / 'euroleague_fantasy_data'
+FPL_DATA = ROOT / 'fpl_fantasy_data'
+TODAY = '2026-09-25'
+SITE = 'https://www.fantasyedgeiq.com'
+
+OUT.mkdir(exist_ok=True)
+
+
+def clean_records(df: pd.DataFrame):
+    def conv(v):
+        try:
+            if pd.isna(v):
+                return None
+        except Exception:
+            pass
+        if isinstance(v, (np.integer,)):
+            return int(v)
+        if isinstance(v, (np.floating, float)):
+            if math.isnan(float(v)) or math.isinf(float(v)):
+                return None
+            return round(float(v), 4)
+        if isinstance(v, (np.bool_, bool)):
+            return bool(v)
+        return v
+    return [{k: conv(v) for k, v in row.items()} for row in df.to_dict(orient='records')]
+
+
+def json_dumps(obj):
+    return json.dumps(obj, ensure_ascii=False, separators=(',', ':'), allow_nan=False)
+
+
+def copy_if_exists(src, dst=None):
+    src = Path(src)
+    if dst is None:
+        dst = OUT / src.name
+    else:
+        dst = OUT / dst
+    if src.exists():
+        dst.write_bytes(src.read_bytes())
+
+
+def make_homepage():
+    html_doc = f'''<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantasy Edge IQ — EuroLeague Fantasy & FPL Analytics</title>
+  <meta name="description" content="Fantasy Edge IQ is a free beta fantasy analytics platform for EuroLeague Fantasy and Fantasy Premier League managers. Compare player value, minutes, fixture difficulty, injuries, price changes, usage, pace and matchup context before every deadline.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="{SITE}/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fantasy Edge IQ">
+  <meta property="og:title" content="Fantasy Edge IQ — EuroLeague Fantasy & FPL Analytics">
+  <meta property="og:description" content="Free beta fantasy dashboards for EuroLeague Fantasy and Fantasy Premier League: player value, fixture runs, injuries, price changes, pace, usage and matchup context.">
+  <meta property="og:url" content="{SITE}/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fantasy Edge IQ — EuroLeague Fantasy & FPL Analytics">
+  <meta name="twitter:description" content="Free beta fantasy analytics for EuroLeague Fantasy and FPL managers before every lock.">
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"WebSite","name":"Fantasy Edge IQ","url":"{SITE}/","description":"Fantasy analytics platform for EuroLeague Fantasy and Fantasy Premier League managers.","potentialAction":{{"@type":"SearchAction","target":"{SITE}/euroleague?search={{search_term_string}}","query-input":"required name=search_term_string"}}}}</script>
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Fantasy Edge IQ","applicationCategory":"SportsApplication","operatingSystem":"Web","url":"{SITE}/","offers":{{"@type":"Offer","price":"0","priceCurrency":"EUR"}},"description":"Free beta fantasy analytics dashboards for EuroLeague Fantasy and Fantasy Premier League."}}</script>
+  <style>
+    :root{{--bg:#07101d;--bg2:#0d1b2f;--card:#111f34;--card2:#162b49;--txt:#eef6ff;--mut:#9fb1c9;--line:rgba(255,255,255,.11);--blue:#5bbcff;--green:#22c55e;--yellow:#ffd166;--red:#fb7185}}
+    *{{box-sizing:border-box}} body{{margin:0;background:radial-gradient(circle at 18% 0%,#1c4f7d 0,#0b1a2e 36%,#07101d 72%);color:var(--txt);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}} a{{color:inherit;text-decoration:none}} .wrap{{max-width:1180px;margin:0 auto;padding:0 22px}} .nav{{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:18px}} .logo{{font-weight:950;font-size:23px;letter-spacing:-.04em}} .logo span{{color:var(--blue)}} .links{{display:flex;gap:18px;align-items:center;color:var(--mut);font-size:14px}} .links a:hover{{color:#fff}} .btn{{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#58c2ff,#22c55e);color:#06111f;font-weight:850;border-radius:14px;padding:12px 16px;border:0;box-shadow:0 12px 35px rgba(34,197,94,.14)}} .ghost{{border:1px solid var(--line);background:rgba(255,255,255,.045);color:var(--txt);box-shadow:none}} .hero{{padding:74px 0 48px}} .badge{{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(91,188,255,.35);background:rgba(91,188,255,.11);border-radius:999px;padding:7px 12px;color:#d8f1ff;font-size:13px;font-weight:800}} h1{{font-size:clamp(40px,6.2vw,76px);line-height:.96;margin:18px 0 18px;letter-spacing:-.065em;max-width:980px}} .lead{{font-size:20px;color:var(--mut);max-width:860px}} .trustbar{{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px;max-width:960px}} .trustbar div{{background:rgba(255,255,255,.055);border:1px solid var(--line);border-radius:18px;padding:14px 16px}} .trustbar b{{display:block;color:#fff;font-size:15px}} .trustbar span{{display:block;color:var(--mut);font-size:13px;margin-top:3px}} .cta{{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}} .grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px;margin:28px 0}} .card{{background:linear-gradient(180deg,rgba(17,31,52,.92),rgba(12,24,42,.92));border:1px solid var(--line);border-radius:24px;padding:25px;box-shadow:0 24px 80px rgba(0,0,0,.24)}} .card h2{{margin:0 0 10px;font-size:27px;letter-spacing:-.035em}} .card p,.mut{{color:var(--mut)}} .features{{display:grid;gap:10px;margin:18px 0}} .features div{{display:flex;gap:9px;color:#e4f0ff}} .check{{color:var(--green);font-weight:950}} .section{{padding:38px 0}} .section h2{{font-size:36px;letter-spacing:-.045em;margin:0 0 10px}} .metrics{{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:16px}} .metric{{padding:18px;border-radius:18px;background:rgba(255,255,255,.05);border:1px solid var(--line)}} .metric b{{display:block;font-size:29px;letter-spacing:-.04em}} .steps{{counter-reset:s;display:grid;gap:12px}} .step{{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:18px;padding:16px}} .step:before{{counter-increment:s;content:counter(s);display:grid;place-items:center;min-width:32px;height:32px;border-radius:50%;background:rgba(91,188,255,.16);color:#9adeff;font-weight:900}} .faq{{display:grid;gap:12px}} details{{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:18px;padding:16px}} summary{{cursor:pointer;font-weight:850}} .footer{{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:13px;margin-top:40px}} @media(max-width:760px){{.links{{display:none}}.hero{{padding-top:38px}}.trustbar{{grid-template-columns:1fr}}h1{{font-size:clamp(38px,11vw,54px)}}.lead{{font-size:18px}}.btn{{width:100%;justify-content:center}}}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="/">Fantasy Edge <span>IQ</span></a>
+      <div class="links">
+        <a href="/euroleague">EuroLeague Fantasy</a>
+        <a href="/premier-league">FPL</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/about">About</a>
+        <a href="/sr">SR</a>
+        <a href="/el">EL</a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="badge">Free public beta · EuroLeague Fantasy + Fantasy Premier League</div>
+        <h1>Free fantasy analytics for sharper decisions before every lock.</h1>
+        <p class="lead">Fantasy Edge IQ turns public fantasy data into practical decision tools: player value, minutes, usage, fixture difficulty, injuries, price changes, team pace and matchup context for EuroLeague Fantasy and FPL managers. No payment or fantasy-platform password required during beta.</p>
+        <div class="cta">
+          <a class="btn" href="/euroleague">Open EuroLeague dashboard</a>
+          <a class="btn ghost" href="/premier-league">Open FPL dashboard</a>
+        </div>
+        <div class="trustbar" aria-label="Beta trust notes">
+          <div><b>Free during beta</b><span>Use the tools while the models are tested and improved.</span></div>
+          <div><b>No passwords</b><span>FPL Team ID lookup uses public FPL data only.</span></div>
+          <div><b>Independent project</b><span>Not affiliated with EuroLeague, Premier League or FPL.</span></div>
+        </div>
+      </section>
+
+      <section class="grid" aria-label="Fantasy tools">
+        <article class="card">
+          <h2>EuroLeague Fantasy tools</h2>
+          <p>Find players with strong value, stable minutes, favorable next-five schedules, high shot volume and positive team environments.</p>
+          <div class="features">
+            <div><span class="check">✓</span> Next 5 fixture difficulty and matchup ease</div>
+            <div><span class="check">✓</span> Team pace, FGA, rebounds allowed and PIR allowed</div>
+            <div><span class="check">✓</span> Full player table with prices, minutes, PIR, shooting, rebounds, assists and model components</div>
+            <div><span class="check">✓</span> Player option score for short-term decisions</div>
+          </div>
+          <div class="cta" style="margin-top:18px"><a class="btn" href="/euroleague/dashboard">Launch EuroLeague</a><a class="btn ghost" href="/euroleague/team-analyzer">Lineup IQ</a></div>
+        </article>
+        <article class="card">
+          <h2>Fantasy Premier League tools</h2>
+          <p>Track players, fixtures, injuries, ownership, transfers, price movement, recent form and expected points in one free beta dashboard.</p>
+          <div class="features">
+            <div><span class="check">✓</span> FPL player rankings and value metrics</div>
+            <div><span class="check">✓</span> Price changes, transfers in/out and ownership</div>
+            <div><span class="check">✓</span> Injury and news status</div>
+            <div><span class="check">✓</span> Upcoming fixtures and next opponents</div>
+          </div>
+          <div class="cta" style="margin-top:18px"><a class="btn" href="/premier-league/dashboard">Launch FPL</a><a class="btn ghost" href="/premier-league/team-analyzer">Team Analyzer</a></div>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>What Fantasy Edge IQ tracks</h2>
+        <p class="mut">The goal is not to replace your judgment. The goal is to give you faster context before deadlines, transfers and captaincy decisions.</p>
+        <div class="metrics">
+          <div class="metric"><b>365+</b><span class="mut">EuroLeague fantasy player profiles monitored</span></div>
+          <div class="metric"><b>650+</b><span class="mut">FPL players and public fixture data</span></div>
+          <div class="metric"><b>Next 5</b><span class="mut">fixture run and matchup difficulty focus</span></div>
+          <div class="metric"><b>No login</b><span class="mut">public-data tools; no fantasy password required</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>How to use it</h2>
+        <div class="steps">
+          <div class="step"><div><strong>Start with value and minutes.</strong><br><span class="mut">Filter by team or position and identify players with strong production per price and reliable playing time.</span></div></div>
+          <div class="step"><div><strong>Check schedule context.</strong><br><span class="mut">Use next-five difficulty, opponent pace and defensive environment to avoid buying into a bad fixture run.</span></div></div>
+          <div class="step"><div><strong>Confirm risk.</strong><br><span class="mut">Look at injury flags, bench indicators, price movement, popularity and form before making the transfer.</span></div></div>
+        </div>
+      </section>
+
+      <section class="section faq">
+        <h2>FAQ</h2>
+        <details open><summary>Is Fantasy Edge IQ free?</summary><p class="mut">Yes. The platform is free during the public beta while the models are tested and improved. If paid Pro features launch later, they will be announced clearly before any charge exists.</p></details>
+        <details><summary>Is this affiliated with EuroLeague, Premier League or FPL?</summary><p class="mut">No. Fantasy Edge IQ is an independent analytics project and is not affiliated with Euroleague Basketball, the Premier League or Fantasy Premier League.</p></details>
+        <details><summary>Does the dashboard give guaranteed picks?</summary><p class="mut">No model can guarantee fantasy outcomes. The dashboards provide context, rankings and risk indicators so managers can make better decisions.</p></details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>Fantasy Edge IQ is an independent fantasy analytics project. It is not affiliated with Euroleague Basketball, Premier League or Fantasy Premier League.</div>
+      <div style="margin-top:8px"><a href="/about">About</a> · <a href="/methodology">Methodology</a> · <a href="/sr">Srpski</a> · <a href="/el">Ελληνικά</a> · <a href="/disclaimer">Disclaimer</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></div>
+    </footer>
+  </div>
+</body>
+</html>
+'''
+    (OUT / 'index.html').write_text(html_doc, encoding='utf-8')
+
+
+def euro_label(c):
+    labels = {
+        'name':'Player','team_abbr':'Team','pos_short':'Pos','price':'Price','price_base':'Base price','price_change':'Price Δ',
+        'proj_pir_est':'Proj PIR','form_pir':'Form PIR','value_pir_per_credit':'PIR / Cr','fantasy_pts_current_md':'Fantasy pts','value_fantasy_per_credit':'Fantasy / Cr',
+        'gp_current':'GP current','min_avg_best':'MIN avg','min_avg_source':'MIN source','min_avg_current':'MIN current','pts_avg_current':'PTS current','pir_avg_current':'PIR current','pir_25_26':'PIR 25-26','min_avg_25_26':'MIN 25-26',
+        'floor_est':'Floor','ceiling_est':'Ceiling','price_gap_est':'Price gap','fg_made_pg_best':'FGM/G','fg_attempts_pg_best':'FGA/G','fg_pct_best':'FG%','fg_attempts_per_min_best':'FGA/min','fg_attempts_per40_best':'FGA/40','shooting_source':'Shot source',
+        'fg_made_pg_current':'FGM/G current','fg_attempts_pg_current':'FGA/G current','fg_pct_current':'FG% current','fg_attempts_per_min_current':'FGA/min current','fg_attempts_per40_current':'FGA/40 current',
+        '2p_current':'2P','2p_pct_current':'2P%','3p_current':'3P','3p_pct_current':'3P%','ft_current':'FT','ft_pct_current':'FT%','two_pa_per_min_best':'2PA/min','three_pa_per_min_best':'3PA/min','fta_per_min_best':'FTA/min',
+        'reb_avg_current':'REB','oreb_avg_current':'OREB','dreb_avg_current':'DREB','pf_avg_current':'PF','fd_avg_current':'FD','stl_avg_current':'STL','tov_avg_current':'TOV','ast_avg_current':'AST','blk_avg_current':'BLK','blka_avg_current':'BLKA',
+        'next_opponent':'Next opp','next_start_local':'Next tip','match_status':'Match status','opponent_abbr':'Opp','home_away':'H/A','is_injured':'Injured','started_from_bench':'Bench','popularity_pct':'Popularity %','player_id':'Player ID',
+        'team_pace_possessions_pg':'Team pace','team_fga_for_pg':'Team FGA','team_fga_allowed_pg':'Team FGA allowed','team_oreb_allowed_pg':'OREB allowed','team_dreb_allowed_pg':'DREB allowed','team_pir_allowed_pg':'PIR allowed','team_defense_weakness_score':'Weakness+',
+        'next5_count':'Next5 games','next5_opponents':'Next5 opps','next5_ease_score':'Next5 ease','next5_fdr_1_easy_5_hard':'Next5 FDR','proj_score_component':'Proj comp','value_score_component':'Value comp','minutes_score_component':'Minutes comp','usage_score_component':'Usage comp','price_gap_score_component':'Gap comp','form_score_component':'Form comp','schedule_score_component':'Schedule comp','option_score_next5':'Option score','next_period_rating':'Rating'
+    }
+    return labels.get(c, c.replace('_',' ').title())
+
+
+def make_euro_team_analyzer():
+    players = pd.read_csv(EURO_DATA / 'fantasheet_style_table_context.csv')
+    cols = ['name','team_abbr','pos_short','price','option_score_next5','next_period_rating','next5_fdr_1_easy_5_hard','next5_opponents','proj_pir_est','form_pir','value_pir_per_credit','min_avg_best','fg_attempts_pg_best','fg_attempts_per_min_best','pir_avg_current','pir_25_26','is_injured','started_from_bench','popularity_pct','player_id']
+    players = players[[c for c in cols if c in players.columns]].copy()
+    if 'option_score_next5' in players.columns:
+        players = players.sort_values(['option_score_next5','proj_pir_est'], ascending=[False, False], na_position='last')
+    generated = datetime.now(ZoneInfo('Europe/Zagreb')).strftime('%Y-%m-%d %H:%M %Z')
+    data = {'generated': generated, 'players': clean_records(players)}
+    html_doc = f'''<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EuroLeague Lineup IQ — Fantasy Edge IQ</title>
+<meta name="description" content="EuroLeague Fantasy transfer analyzer. Select your current squad and get simple sell candidates, replacement options and captain shortlist based on next-five schedule, minutes, value and option score.">
+<link rel="canonical" href="{SITE}/euroleague/team-analyzer"><meta name="robots" content="index,follow">
+<style>
+:root{{--bg:#07101d;--panel:#0f2139;--panel2:#132b4a;--line:rgba(255,255,255,.11);--txt:#eef6ff;--mut:#a9bad2;--blue:#5bbcff;--green:#22c55e;--yellow:#ffd166;--red:#fb7185}}*{{box-sizing:border-box}}body{{margin:0;background:linear-gradient(135deg,#07101d,#0f2946 60%,#07101d);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;font-size:14px}}a{{color:#8ed6ff;text-decoration:none}}header{{padding:24px 24px 18px;border-bottom:1px solid var(--line);background:rgba(7,16,29,.86);position:sticky;top:0;z-index:5;backdrop-filter:blur(8px)}}.nav{{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:18px}}.brand{{font-weight:950;font-size:19px}}.brand span{{color:var(--blue)}}.links{{display:flex;gap:14px;color:var(--mut);font-size:13px}}h1{{margin:0 0 8px;font-size:clamp(28px,4vw,46px);letter-spacing:-.05em}}.sub{{color:var(--mut);font-size:16px;max-width:980px;line-height:1.45}}main{{padding:22px 24px 60px;max-width:1350px;margin:0 auto}}.layout{{display:grid;grid-template-columns:minmax(320px,1fr) minmax(360px,520px);gap:16px;align-items:start}}.box{{background:rgba(15,33,57,.88);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 18px 60px rgba(0,0,0,.22)}}.box h2,.box h3{{margin:0 0 10px}}.mut{{color:var(--mut)}}.toolbar{{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}}input,select{{background:#0a192c;border:1px solid rgba(255,255,255,.13);color:var(--txt);border-radius:12px;padding:10px 12px}}button,.btn{{background:#14345a;color:#fff;border:1px solid rgba(91,188,255,.28);border-radius:12px;padding:9px 12px;font-weight:850;cursor:pointer}}button:hover,.btn:hover{{border-color:#7bd3ff}}.primary{{background:linear-gradient(135deg,#1588d2,#22c55e);color:#06111f;border:0}}.danger{{background:#3a1825;border-color:rgba(251,113,133,.35)}}.tablewrap{{overflow:auto;max-height:62vh;border:1px solid var(--line);border-radius:14px;background:#0a192c}}table{{border-collapse:collapse;width:100%;font-size:12px}}th,td{{padding:8px 9px;border-bottom:1px solid rgba(255,255,255,.08);white-space:nowrap;text-align:left}}th{{position:sticky;top:0;background:#193b63;z-index:2}}tr:hover td{{background:rgba(91,188,255,.08)}}.cards{{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}}.metric{{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:14px;padding:12px}}.metric b{{display:block;font-size:24px}}.squad{{display:grid;gap:8px;max-height:360px;overflow:auto;padding-right:4px}}.chip{{display:flex;justify-content:space-between;gap:12px;align-items:center;background:#0a192c;border:1px solid var(--line);border-radius:14px;padding:9px 10px}}.chip small{{color:var(--mut)}}.good{{color:#86efac;font-weight:900}}.warn{{color:#fde68a;font-weight:900}}.bad{{color:#fda4af;font-weight:900}}.ideas{{display:grid;gap:10px}}.idea{{background:#0a192c;border:1px solid var(--line);border-radius:14px;padding:12px;line-height:1.45}}.idea b{{color:#fff}}.note{{background:rgba(255,209,102,.08);border:1px solid rgba(255,209,102,.25);border-radius:16px;padding:13px;color:#ffe8a3;margin:0 0 14px;line-height:1.45}}@media(max-width:980px){{.layout{{grid-template-columns:1fr}}.links{{display:none}}}}
+</style></head><body><header><div class="nav"><a class="brand" href="/">Fantasy Edge <span>IQ</span></a><nav class="links"><a href="/euroleague">EuroLeague dashboard</a><a href="/premier-league">FPL</a><a href="/methodology">Methodology</a></nav></div><h1>EuroLeague Lineup IQ</h1><div class="sub">Select your squad, set bank credits and get budget-safe transfer ideas. <b>EuroLeague numbers only.</b></div></header><main>
+<div class="note">No login required. Suggestions only show same-position moves that fit your bank.</div>
+<div class="layout"><section class="box"><h2>Player pool</h2><div class="toolbar"><input id="search" placeholder="Search player or team..." oninput="renderPool()"><select id="team" onchange="renderPool()"><option value="">All teams</option></select><select id="pos" onchange="renderPool()"><option value="">All positions</option></select></div><div class="tablewrap"><table id="pool"></table></div></section>
+<aside class="box"><h2>Your squad</h2><div class="toolbar"><input id="bank" type="number" value="0" min="0" step="0.1" style="width:130px" onchange="analyze()"><label class="mut">bank credits</label><select id="style" onchange="analyze()"><option value="balanced">Balanced</option><option value="safe">Safe</option><option value="aggressive">Aggressive</option></select></div><div id="squad" class="squad"></div><div class="toolbar"><button class="primary" onclick="analyze()">Generate suggestions</button><button onclick="saveSquad()">Save</button><button onclick="loadSquad()">Load</button><button class="danger" onclick="clearSquad()">Clear</button></div><div id="summary"></div></aside></div>
+<section class="box" style="margin-top:16px"><h2>Transfer IQ suggestions</h2><div id="ideas" class="ideas"><p class="mut">Add your players to generate suggestions.</p></div></section>
+</main><script>const DATA={json_dumps(data)};let selected=[];function n(v){{v=Number(v);return Number.isFinite(v)?v:null}}function fmt(v,d=1){{let x=n(v);return x==null?'–':x.toFixed(d)}}function byId(id){{return DATA.players.find(p=>String(p.player_id)===String(id))}}function scoreClass(x){{x=n(x)||0;return x>=80?'good':x>=65?'warn':'bad'}}function playerLine(p){{return `${{p.name}} <small>${{p.team_abbr}} · ${{p.pos_short}} · ${{fmt(p.price)}} cr · <span class='${{scoreClass(p.option_score_next5)}}'>${{fmt(p.option_score_next5)}}</span></small>`}}function init(){{let teams=[...new Set(DATA.players.map(p=>p.team_abbr).filter(Boolean))].sort();let poss=[...new Set(DATA.players.map(p=>p.pos_short).filter(Boolean))].sort();teams.forEach(x=>team.innerHTML+=`<option>${{x}}</option>`);poss.forEach(x=>pos.innerHTML+=`<option>${{x}}</option>`);renderPool();loadSquad(false)}}function filterPool(){{let q=search.value.toLowerCase(),t=team.value,p=pos.value,sel=new Set(selected.map(String));return DATA.players.filter(r=>!sel.has(String(r.player_id))&&(!q||Object.values(r).join(' ').toLowerCase().includes(q))&&(!t||r.team_abbr===t)&&(!p||r.pos_short===p)).slice(0,160)}}function renderPool(){{let rows=filterPool();pool.innerHTML='<thead><tr><th>Player</th><th>Pos</th><th>Price</th><th>Score</th><th>FDR5</th><th></th></tr></thead><tbody>'+rows.map(p=>`<tr><td>${{p.name}} <span class='mut'>${{p.team_abbr}}</span></td><td>${{p.pos_short}}</td><td>${{fmt(p.price)}}</td><td class='${{scoreClass(p.option_score_next5)}}'>${{fmt(p.option_score_next5)}}</td><td>${{fmt(p.next5_fdr_1_easy_5_hard,2)}}</td><td><button onclick="addPlayer('${{p.player_id}}')">Add</button></td></tr>`).join('')+'</tbody>'}}function renderSquad(){{let rows=selected.map(byId).filter(Boolean);squad.innerHTML=rows.length?rows.map(p=>`<div class='chip'><div>${{playerLine(p)}}</div><button class='danger' onclick="removePlayer('${{p.player_id}}')">×</button></div>`).join(''):'<p class="mut">No players selected yet.</p>';renderPool()}}function addPlayer(id){{if(!selected.map(String).includes(String(id)))selected.push(String(id));renderSquad();analyze()}}function removePlayer(id){{selected=selected.filter(x=>String(x)!==String(id));renderSquad();analyze()}}function clearSquad(){{selected=[];localStorage.removeItem('feiq_euro_squad');renderSquad();analyze()}}function saveSquad(){{localStorage.setItem('feiq_euro_squad',JSON.stringify(selected));alert('Squad saved in this browser.')}}function loadSquad(show=true){{try{{selected=JSON.parse(localStorage.getItem('feiq_euro_squad')||'[]')}}catch(e){{selected=[]}}renderSquad();analyze();if(show)alert('Squad loaded.')}}function sellScore(p){{let sc=100-(n(p.option_score_next5)||50); if(p.is_injured)sc+=35; if(p.started_from_bench)sc+=8; let f=n(p.next5_fdr_1_easy_5_hard)||3; if(f>3.2)sc+=(f-3.2)*10; let mins=n(p.min_avg_best)||0; if(mins&&mins<15)sc+=8; let val=n(p.value_pir_per_credit)||0; if(val&&val<0.8)sc+=8; return sc}}function whySell(p){{let r=[];if(p.is_injured)r.push('injury flag');if(p.started_from_bench)r.push('bench risk');if((n(p.next5_fdr_1_easy_5_hard)||0)>3.2)r.push('hard next-five run');if((n(p.value_pir_per_credit)||9)<0.9)r.push('weak value');if((n(p.min_avg_best)||99)<15)r.push('low minutes');if(!r.length)r.push('lower option score than available alternatives');return r.join(', ')}}function candidates(out,bankVal,styleVal){{bankVal=n(bankVal)||0;let outPrice=n(out.price)||0,available=outPrice+bankVal,selectedSet=new Set(selected.map(String));let same=DATA.players.filter(p=>{{let inPrice=n(p.price);return !selectedSet.has(String(p.player_id))&&p.pos_short===out.pos_short&&(!p.is_injured)&&inPrice!==null&&inPrice<=available+0.001}});let current=n(out.option_score_next5)||0;return same.map(p=>{{let inPrice=n(p.price)||0;let gain=(n(p.option_score_next5)||0)-current;let priceDiff=inPrice-outPrice;let bankLeft=bankVal-priceDiff;let fdrBonus=3-(n(p.next5_fdr_1_easy_5_hard)||3);let riskPenalty=p.started_from_bench?4:0;let styleAdj=styleVal==='safe'?(n(p.min_avg_best)||0)*0.12:styleVal==='aggressive'?(n(p.fg_attempts_per_min_best)||0)*8:0;return {{p,gain,rank:gain+fdrBonus*2+styleAdj-riskPenalty,priceDiff,bankLeft,outPrice,inPrice}}}}).filter(x=>x.gain>0&&x.bankLeft>=-0.001).sort((a,b)=>b.rank-a.rank).slice(0,5)}}function analyze(){{let rows=selected.map(byId).filter(Boolean);if(!rows.length){{summary.innerHTML='';ideas.innerHTML='<p class="mut">Add your players to generate suggestions.</p>';return}}let avg=rows.reduce((s,p)=>s+(n(p.option_score_next5)||0),0)/rows.length;let price=rows.reduce((s,p)=>s+(n(p.price)||0),0);let inj=rows.filter(p=>p.is_injured).length;let hard=rows.filter(p=>(n(p.next5_fdr_1_easy_5_hard)||0)>3.3).length;summary.innerHTML=`<div class='cards'><div class='metric'><b>${{fmt(avg)}}</b><span class='mut'>avg option score</span></div><div class='metric'><b>${{fmt(price)}}</b><span class='mut'>squad credits</span></div><div class='metric'><b class='${{inj?'bad':'good'}}'>${{inj}}</b><span class='mut'>injury flags</span></div><div class='metric'><b class='${{hard?'warn':'good'}}'>${{hard}}</b><span class='mut'>hard FDR players</span></div></div>`;let bankEl=document.getElementById('bank'),styleEl=document.getElementById('style');let bankVal=Math.max(0,n(bankEl.value)||0), styleVal=styleEl.value;bankEl.value=bankVal;let sells=rows.map(p=>({{p,s:sellScore(p)}})).sort((a,b)=>b.s-a.s).slice(0,3);let html='';html+=`<div class='idea'><h3>Priority sells</h3>${{sells.map(x=>`<div style='margin:8px 0'><b>${{x.p.name}}</b> <span class='mut'>${{x.p.team_abbr}} · ${{x.p.pos_short}}</span><br><span class='bad'>Sell pressure ${{fmt(x.s,0)}}</span> — ${{whySell(x.p)}}</div>`).join('')}}</div>`;let moves=[];for(let x of sells){{for(let c of candidates(x.p,bankVal,styleVal))moves.push({{out:x.p,...c}})}}moves.sort((a,b)=>b.rank-a.rank);html+=`<div class='idea'><h3>Best 1-transfer ideas</h3>${{moves.slice(0,6).map(m=>`<div style='margin:10px 0'><b>OUT:</b> ${{m.out.name}} <span class='mut'>${{m.out.team_abbr}} · ${{fmt(m.outPrice)}} cr</span> → <b>IN:</b> ${{m.p.name}} <span class='mut'>${{m.p.team_abbr}} · ${{fmt(m.inPrice)}} cr</span><br><span class='good'>+${{fmt(m.gain)}} option score</span> · ${{m.priceDiff>0?'uses '+fmt(m.priceDiff)+' cr bank':'frees '+fmt(-m.priceDiff)+' cr'}} · bank after ${{fmt(m.bankLeft)}} cr · FDR5 ${{fmt(m.p.next5_fdr_1_easy_5_hard,2)}}</div>`).join('')||'<p class="mut">No affordable same-position upgrades with current bank.</p>'}}</div>`;let capt=rows.slice().sort((a,b)=>(n(b.option_score_next5)||0)-(n(a.option_score_next5)||0)).slice(0,4);html+=`<div class='idea'><h3>Captain / star shortlist</h3>${{capt.map((p,i)=>`<div>${{i+1}}. <b>${{p.name}}</b> <span class='mut'>${{p.team_abbr}} · score ${{fmt(p.option_score_next5)}} · projected PIR ${{fmt(p.proj_pir_est)}}</span></div>`).join('')}}</div>`;ideas.innerHTML=html}}init();</script></body></html>'''
+    (OUT / 'euroleague-team-analyzer.html').write_text(html_doc, encoding='utf-8')
+
+
+def make_euro_dashboard():
+    players = pd.read_csv(EURO_DATA / 'fantasheet_style_table_context.csv')
+    teams = pd.read_csv(EURO_DATA / 'team_context.csv')
+    schedule = pd.read_csv(EURO_DATA / 'team_next5_schedule_detail.csv')
+    # Sort players for default display.
+    if 'option_score_next5' in players.columns:
+        players = players.sort_values(['option_score_next5','proj_pir_est'], ascending=[False, False], na_position='last')
+    # Exports
+    players.to_csv(OUT / 'euroleague-players-full.csv', index=False)
+    teams.to_csv(OUT / 'euroleague-team-context.csv', index=False)
+    schedule.to_csv(OUT / 'euroleague-next5-schedule.csv', index=False)
+
+    top_options = players.head(12).copy()
+    value = players.sort_values('value_pir_per_credit', ascending=False, na_position='last').head(12)
+    usage = players.sort_values('fg_attempts_per_min_best', ascending=False, na_position='last').head(12)
+    pace = teams.sort_values('pace_possessions_pg', ascending=False, na_position='last').head(8)
+    # Overview card should show the clubs/teams with the easiest next-five runs,
+    # not individual players from those clubs.
+    schedule_summary = pd.read_csv(EURO_DATA / 'team_next5_schedule_summary.csv')
+    team_names = teams[['team_abbr', 'team_name']].drop_duplicates() if 'team_name' in teams.columns else pd.DataFrame({'team_abbr': [], 'team_name': []})
+    easy = (schedule_summary.merge(team_names, on='team_abbr', how='left')
+            .sort_values('next5_fdr_1_easy_5_hard', ascending=True, na_position='last')
+            .head(12))
+    generated = datetime.now(ZoneInfo('Europe/Zagreb')).strftime('%Y-%m-%d %H:%M %Z')
+
+    pcols_main = ['name','team_abbr','pos_short','price','option_score_next5','next_period_rating','next5_fdr_1_easy_5_hard','next5_opponents','proj_pir_est','form_pir','value_pir_per_credit','fantasy_pts_current_md','min_avg_best','pir_avg_current','pir_25_26','fg_attempts_pg_best','fg_pct_best','fg_attempts_per_min_best','reb_avg_current','ast_avg_current','stl_avg_current','tov_avg_current','team_pace_possessions_pg','team_fga_for_pg','team_pir_allowed_pg','is_injured','started_from_bench','popularity_pct']
+    pcols_main = [c for c in pcols_main if c in players.columns]
+    pcols_full = list(players.columns)
+    tcols = list(teams.columns)
+    scols = list(schedule.columns)
+    labels = {c: euro_label(c) for c in set(pcols_full + tcols + scols)}
+    data = {
+        'generated': generated,
+        'players': clean_records(players),
+        'teams': clean_records(teams),
+        'schedule': clean_records(schedule),
+        'topOptions': clean_records(top_options),
+        'valueLeaders': clean_records(value),
+        'usageLeaders': clean_records(usage),
+        'paceLeaders': clean_records(pace),
+        'easyRuns': clean_records(easy),
+        'pcolsMain': pcols_main,
+        'pcolsFull': pcols_full,
+        'tcols': tcols,
+        'scols': scols,
+        'labels': labels,
+    }
+
+    html_doc = f'''<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EuroLeague Fantasy Advanced Dashboard — Fantasy Edge IQ</title>
+<meta name="description" content="EuroLeague Fantasy advanced dashboard with full player statistics, prices, PIR, minutes, shooting volume, rebounds, assists, next-five fixture difficulty, team pace and matchup context.">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<link rel="canonical" href="{SITE}/euroleague">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Fantasy Edge IQ"><meta property="og:title" content="EuroLeague Fantasy Advanced Dashboard"><meta property="og:description" content="Full EuroLeague Fantasy table with player value, schedule difficulty, team context, shooting usage and option scores."><meta property="og:url" content="{SITE}/euroleague">
+<style>
+:root{{--bg:#08111f;--panel:#0e2038;--panel2:#132b4a;--line:rgba(255,255,255,.1);--txt:#eef6ff;--mut:#aabbd2;--blue:#5bbcff;--green:#22c55e;--yellow:#ffd166;--red:#fb7185}}
+*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;font-size:14px}}a{{color:#8ed6ff;text-decoration:none}}header{{padding:24px;background:linear-gradient(135deg,#07101d,#122b49);border-bottom:1px solid var(--line)}}.topnav{{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:20px}}.brand{{font-weight:950;font-size:18px}}.brand span{{color:var(--blue)}}.navlinks{{display:flex;gap:14px;color:var(--mut);font-size:13px}}h1{{margin:0 0 8px;font-size:clamp(26px,4vw,44px);letter-spacing:-.05em}}.sub{{color:var(--mut);font-size:16px;max-width:1050px}}main{{padding:22px 24px 46px}}.tabs{{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}}button,.btn{{background:#143052;color:#fff;border:1px solid rgba(91,188,255,.24);border-radius:12px;padding:10px 13px;font-weight:800;cursor:pointer}}button.active{{background:#0d75bd;border-color:#7bd3ff}}.btn{{display:inline-block}}.filters{{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0 16px}}input,select{{background:#0b1b30;border:1px solid rgba(255,255,255,.12);color:#eef6ff;border-radius:12px;padding:10px 12px}}.panel{{display:none}}.panel.active{{display:block}}.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:16px 0 22px}}.card{{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 16px 50px rgba(0,0,0,.18)}}.card h3{{margin:0 0 12px;font-size:16px}}.row{{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.07)}}.row:last-child{{border-bottom:0}}.row span{{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}.row b{{color:#fff}}.tablewrap{{overflow:auto;max-height:72vh;border:1px solid var(--line);border-radius:16px;background:#0b1b30}}table{{border-collapse:separate;border-spacing:0;min-width:100%;font-size:12px}}th,td{{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.08);white-space:nowrap;text-align:left}}th{{position:sticky;top:0;background:#193b63;color:#fff;z-index:3;cursor:pointer}}td:first-child,th:first-child{{position:sticky;left:0;background:inherit;z-index:2}}th:first-child{{z-index:4;background:#193b63}}tr:nth-child(even) td{{background:rgba(255,255,255,.018)}}tr:hover td{{background:rgba(91,188,255,.08)}}.pill{{display:inline-flex;border-radius:999px;padding:3px 8px;background:rgba(91,188,255,.12);border:1px solid rgba(91,188,255,.25)}}.bad{{color:#fecdd3}}.good{{color:#86efac}}.mut{{color:var(--mut)}}.downloads{{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}}.note{{background:rgba(255,209,102,.08);border:1px solid rgba(255,209,102,.25);border-radius:16px;padding:14px;color:#ffe8a3;margin:14px 0}}.method{{max-width:1050px;line-height:1.65;color:#d7e7fa}}.method li{{margin:7px 0}}@media(max-width:760px){{.navlinks{{display:none}}main,header{{padding-left:14px;padding-right:14px}}}}
+</style></head><body><header><div class="topnav"><a class="brand" href="/">Fantasy Edge <span>IQ</span></a><nav class="navlinks"><a href="/">Home</a><a href="/euroleague/team-analyzer">Lineup IQ</a><a href="/euroleague/defense-vs-position">Defense vs Position</a><a href="/premier-league">FPL</a><a href="/methodology">Methodology</a><a href="/about">About</a></nav></div><h1>EuroLeague Fantasy Advanced Dashboard</h1><div class="sub">Full player table, player option score, next-five schedule difficulty, team pace, shot/rebound environments and matchup context. Generated: <b id="gen"></b></div></header><main>
+<div class="tabs"><button class="tab active" data-tab="overview">Overview</button><button class="tab" data-tab="players">Player Options</button><button class="tab" data-tab="fullstats">Full Player Stats</button><button class="tab" data-tab="teams">Team Context</button><button class="tab" data-tab="schedule">Next 5 Schedule</button><button class="tab" data-tab="method">Method</button></div>
+<section id="overview" class="panel active"><div class="note">Tip: The full EuroLeague table is now included under <b>Full Player Stats</b>. Use horizontal scroll for all columns or download the CSV.</div><div class="cards"><div class="card"><h3>Top option scores</h3><div id="topOptions"></div></div><div class="card"><h3>Best value PIR / credit</h3><div id="valueBox"></div></div><div class="card"><h3>Highest shot usage</h3><div id="usageBox"></div></div><div class="card"><h3>Easiest team next-five runs</h3><div id="easyBox"></div></div><div class="card"><h3>Fastest team environments</h3><div id="paceBox"></div></div></div></section>
+<section id="players" class="panel"><h2>Player Options</h2><p class="mut">Decision-focused view with price, model score, schedule, projection, minutes, shooting, box-score context and risk flags.</p><div class="downloads"><a class="btn" href="/euroleague-players-full.csv">Download full player CSV</a><a class="btn" href="/euroleague-team-context.csv">Download team CSV</a><a class="btn" href="/euroleague-next5-schedule.csv">Download schedule CSV</a></div><div class="filters"><input id="pq" placeholder="Search player/team..." oninput="renderCurrent()"><select id="teamFilter" onchange="renderCurrent()"><option value="">All teams</option></select><select id="posFilter" onchange="renderCurrent()"><option value="">All positions</option></select><label class="pill"><input id="hideInj" type="checkbox" checked onchange="renderCurrent()"> hide injured</label></div><div class="tablewrap"><table id="playersTable"></table></div></section>
+<section id="fullstats" class="panel"><h2>Full Player Stats</h2><p class="mut">Every available EuroLeague column from our current data table: fantasy prices, PIR, minutes, shooting, rebounds, assists, schedule, team context and model components.</p><div class="downloads"><a class="btn" href="/euroleague-players-full.csv">Download full player CSV</a></div><div class="filters"><input id="fq" placeholder="Search full table..." oninput="renderCurrent()"><select id="fullTeamFilter" onchange="renderCurrent()"><option value="">All teams</option></select><select id="fullPosFilter" onchange="renderCurrent()"><option value="">All positions</option></select><label class="pill"><input id="fullHideInj" type="checkbox" checked onchange="renderCurrent()"> hide injured</label></div><div class="tablewrap"><table id="fullTable"></table></div></section>
+<section id="teams" class="panel"><h2>Team Context</h2><p class="mut">Team pace, FGA environment, rebounds allowed, PIR allowed and defensive matchup score.</p><div class="downloads"><a class="btn" href="/euroleague-team-context.csv">Download team CSV</a></div><div class="filters"><input id="tq" placeholder="Search team..." oninput="renderTeams()"></div><div class="tablewrap"><table id="teamsTable"></table></div></section>
+<section id="schedule" class="panel"><h2>Next 5 Schedule</h2><p class="mut">Upcoming fixture-level matchup context by team. FDR scale: 1 easy, 5 hard.</p><div class="downloads"><a class="btn" href="/euroleague-next5-schedule.csv">Download schedule CSV</a></div><div class="filters"><input id="sq" placeholder="Search schedule..." oninput="renderSchedule()"></div><div class="tablewrap"><table id="scheduleTable"></table></div></section>
+<section id="method" class="panel method"><h2>Method</h2><ul><li><b>Team pace</b>: estimated as FGA + 0.44 × FTA - OREB + TOV, blended with opponent possessions where available.</li><li><b>Next-five difficulty</b>: uses opponent pace, PIR allowed, points allowed, FGA allowed and rebounds allowed. Lower FDR is easier.</li><li><b>Option score</b>: combines projected PIR, value, minutes, shooting usage, price gap, form, schedule and risk penalties.</li><li><b>Full stats tab</b>: includes all 81 columns currently generated by the model, not only the short decision view.</li></ul><p class="mut">All metrics are beta estimates and should support, not replace, your own fantasy judgment.</p></section>
+</main><script>const DATA={json_dumps(data)};
+const numCols=new Set(['price','price_base','price_change','proj_pir_est','form_pir','value_pir_per_credit','fantasy_pts_current_md','value_fantasy_per_credit','gp_current','min_avg_best','min_avg_current','pts_avg_current','pir_avg_current','pir_25_26','min_avg_25_26','floor_est','ceiling_est','price_gap_est','fg_made_pg_best','fg_attempts_pg_best','fg_pct_best','fg_attempts_per_min_best','fg_attempts_per40_best','fg_made_pg_current','fg_attempts_pg_current','fg_pct_current','fg_attempts_per_min_current','fg_attempts_per40_current','reb_avg_current','oreb_avg_current','dreb_avg_current','pf_avg_current','fd_avg_current','stl_avg_current','tov_avg_current','ast_avg_current','blk_avg_current','blka_avg_current','popularity_pct','team_pace_possessions_pg','team_fga_for_pg','team_fga_allowed_pg','team_oreb_allowed_pg','team_dreb_allowed_pg','team_pir_allowed_pg','team_defense_weakness_score','next5_count','next5_ease_score','next5_fdr_1_easy_5_hard','option_score_next5','pace_possessions_pg','for_fga_pg','allowed_fga_pg','allowed_oreb_pg','allowed_dreb_pg','allowed_pir_pg','team_defense_fdr_1_easy_5_hard','fdr_1_easy_5_hard']);
+let sortState={{}};function label(c){{return DATA.labels[c]||c}}function fmt(c,v){{if(v===null||v===undefined||Number.isNaN(v))return ''; if(typeof v==='boolean')return v?'Yes':'No'; if(numCols.has(c)&&!isNaN(Number(v))){{let n=Number(v);return Math.abs(n)>=100?String(Math.round(n*10)/10):String(Math.round(n*100)/100)}} return String(v)}}function ftext(r,q){{if(!q)return true;q=q.toLowerCase();return Object.values(r).some(v=>String(v??'').toLowerCase().includes(q))}}function cmp(a,b,c,dir){{let av=a[c],bv=b[c];let an=Number(av),bn=Number(bv);let res;if(av==null&&bv==null)res=0;else if(av==null)res=1;else if(bv==null)res=-1;else if(!Number.isNaN(an)&&!Number.isNaN(bn))res=an-bn;else res=String(av).localeCompare(String(bv));return dir==='asc'?res:-res}}function table(id,rows,cols,key){{let st=sortState[key]; if(st)rows=[...rows].sort((a,b)=>cmp(a,b,st.c,st.d));let h='<thead><tr>'+cols.map(c=>`<th onclick="setSort('${{key}}','${{c}}')">${{label(c)}}${{st&&st.c===c?(st.d==='asc'?' ↑':' ↓'):''}}</th>`).join('')+'</tr></thead>';let b='<tbody>'+rows.map(r=>'<tr>'+cols.map(c=>`<td>${{fmt(c,r[c])}}</td>`).join('')+'</tr>').join('')+'</tbody>';document.getElementById(id).innerHTML=h+b}}function setSort(k,c){{let s=sortState[k];sortState[k]={{c,d:s&&s.c===c&&s.d==='desc'?'asc':'desc'}};renderCurrent()}}function filtered(q,team,pos,hide){{return DATA.players.filter(r=>ftext(r,q)&&(!team||r.team_abbr===team)&&(!pos||r.pos_short===pos)&&(!hide||!r.is_injured))}}function renderPlayers(){{table('playersTable',filtered(pq.value,teamFilter.value,posFilter.value,hideInj.checked),DATA.pcolsMain,'players')}}function renderFull(){{table('fullTable',filtered(fq.value,fullTeamFilter.value,fullPosFilter.value,fullHideInj.checked),DATA.pcolsFull,'full')}}function renderTeams(){{table('teamsTable',DATA.teams.filter(r=>ftext(r,tq.value)),DATA.tcols,'teams')}}function renderSchedule(){{table('scheduleTable',DATA.schedule.filter(r=>ftext(r,sq.value)),DATA.scols,'schedule')}}function renderCurrent(){{let id=document.querySelector('.panel.active').id;if(id==='players')renderPlayers(); if(id==='fullstats')renderFull(); if(id==='teams')renderTeams(); if(id==='schedule')renderSchedule()}}function mini(el,rows,main,sub,extra){{document.getElementById(el).innerHTML=rows.map(r=>`<div class='row'><span>${{r[main]||''}}${{extra?` <span class='mut'>${{r[extra]||''}}</span>`:''}}</span><b>${{fmt(sub,r[sub])}}</b></div>`).join('')}}function init(){{gen.textContent=DATA.generated;let teams=[...new Set(DATA.players.map(r=>r.team_abbr).filter(Boolean))].sort();let poss=[...new Set(DATA.players.map(r=>r.pos_short).filter(Boolean))].sort();for(let x of teams){{teamFilter.innerHTML+=`<option>${{x}}</option>`;fullTeamFilter.innerHTML+=`<option>${{x}}</option>`}}for(let x of poss){{posFilter.innerHTML+=`<option>${{x}}</option>`;fullPosFilter.innerHTML+=`<option>${{x}}</option>`}}document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{{document.querySelectorAll('.tab,.panel').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById(b.dataset.tab).classList.add('active');renderCurrent()}});mini('topOptions',DATA.topOptions,'name','option_score_next5','team_abbr');mini('valueBox',DATA.valueLeaders,'name','value_pir_per_credit','team_abbr');mini('usageBox',DATA.usageLeaders,'name','fg_attempts_per_min_best','team_abbr');mini('easyBox',DATA.easyRuns,'team_abbr','next5_fdr_1_easy_5_hard','team_name');mini('paceBox',DATA.paceLeaders,'team_abbr','pace_possessions_pg','team_name');sortState.players={{c:'option_score_next5',d:'desc'}};sortState.full={{c:'option_score_next5',d:'desc'}};renderPlayers()}}init();</script></body></html>'''
+    (OUT / 'euroleague-dashboard.html').write_text(html_doc, encoding='utf-8')
+
+
+
+def make_euro_defense_vs_position():
+    # Build validated EuroLeague Defense vs Position (DvP) stats.
+    log_path = EURO_DATA / 'fantasy_poeni_log.csv'
+    if not log_path.exists():
+        return
+    log = pd.read_csv(log_path)
+    need = {'match_id','match_status','opponent_abbr','team_abbr','team_score','position','pts','fantasy_pts'}
+    if not need.issubset(set(log.columns)):
+        return
+    positions = [('Guard','guard'), ('Forward','forward'), ('Center','center')]
+    stat_cols = ['pts','fantasy_pts','reb','ast','stl','blk','tov']
+    for c in stat_cols:
+        if c not in log.columns:
+            log[c] = 0
+        log[c] = pd.to_numeric(log[c], errors='coerce').fillna(0)
+    log['team_score'] = pd.to_numeric(log['team_score'], errors='coerce')
+    log = log[(log['match_status'] == 'played') & log['opponent_abbr'].notna() & log['team_abbr'].notna()]
+    log = log[log['position'].isin([p[0] for p in positions])]
+    if log.empty:
+        return
+
+    match_rows = []
+    meta_cols = [c for c in ['home_abbr','away_abbr','start_local','team_score','opponent_score'] if c in log.columns]
+    for (match_id, defense, offense), g in log.groupby(['match_id','opponent_abbr','team_abbr'], dropna=True):
+        row = {'match_id': int(match_id), 'team_abbr': defense, 'opponent_abbr': offense}
+        for c in meta_cols:
+            row[c] = g[c].iloc[0]
+        row['box_score_pts_allowed'] = float(g['team_score'].iloc[0]) if pd.notna(g['team_score'].iloc[0]) else None
+        for pos, key in positions:
+            pg = g[g['position'] == pos]
+            row[f'{key}_pts_allowed'] = float(pg['pts'].sum())
+            row[f'{key}_fantasy_allowed'] = float(pg['fantasy_pts'].sum())
+            row[f'{key}_reb_allowed'] = float(pg['reb'].sum())
+            row[f'{key}_ast_allowed'] = float(pg['ast'].sum())
+            row[f'{key}_stl_allowed'] = float(pg['stl'].sum())
+            row[f'{key}_blk_allowed'] = float(pg['blk'].sum())
+            row[f'{key}_tov_forced'] = float(pg['tov'].sum())
+        row['position_pts_allowed'] = sum(row[f'{key}_pts_allowed'] for _, key in positions)
+        if row['box_score_pts_allowed'] is not None:
+            row['validation_diff'] = row['position_pts_allowed'] - row['box_score_pts_allowed']
+            row['validation_ok'] = abs(row['validation_diff']) <= 0.1
+        else:
+            row['validation_diff'] = None
+            row['validation_ok'] = False
+        match_rows.append(row)
+    match_df = pd.DataFrame(match_rows)
+    if match_df.empty:
+        return
+    match_df = match_df.sort_values(['match_id','team_abbr'])
+    match_df.to_csv(OUT / 'euroleague-defense-vs-position-matchlog.csv', index=False)
+
+    valid = match_df[match_df['validation_ok'] == True].copy()
+    if valid.empty:
+        valid = match_df.copy()
+    agg = valid.groupby('team_abbr').agg(
+        games_sample=('match_id','nunique'),
+        box_score_pts_allowed_total=('box_score_pts_allowed','sum'),
+        position_pts_allowed_total=('position_pts_allowed','sum'),
+        validation_diff_total=('validation_diff','sum'),
+    ).reset_index()
+    for _, key in positions:
+        for metric in ['pts_allowed','fantasy_allowed','reb_allowed','ast_allowed','stl_allowed','blk_allowed','tov_forced']:
+            col = f'{key}_{metric}'
+            if col in valid.columns:
+                sums = valid.groupby('team_abbr')[col].sum().reset_index(name=col + '_total')
+                agg = agg.merge(sums, on='team_abbr', how='left')
+                agg[col + '_pg'] = agg[col + '_total'] / agg['games_sample'].replace(0, np.nan)
+    agg['box_score_pts_allowed_pg'] = agg['box_score_pts_allowed_total'] / agg['games_sample'].replace(0, np.nan)
+    agg['position_pts_allowed_pg'] = agg['position_pts_allowed_total'] / agg['games_sample'].replace(0, np.nan)
+    agg['validation_diff_pg'] = agg['validation_diff_total'] / agg['games_sample'].replace(0, np.nan)
+    agg['validation_ok'] = agg['validation_diff_total'].abs() <= 0.1
+    agg['sample_confidence'] = np.select(
+        [agg['games_sample'] < 2, agg['games_sample'] < 5, agg['games_sample'] < 10],
+        ['very low', 'low', 'medium'],
+        default='high'
+    )
+
+    team_name = None
+    for p in [EURO_DATA / 'team_context.csv', OUT / 'euroleague-team-context.csv']:
+        if p.exists():
+            tmp = pd.read_csv(p)
+            if {'team_abbr','team_name'}.issubset(tmp.columns):
+                team_name = tmp[['team_abbr','team_name']].drop_duplicates()
+                break
+    if team_name is not None:
+        agg = agg.merge(team_name, on='team_abbr', how='left')
+    else:
+        agg['team_name'] = agg['team_abbr']
+
+    def fdr_from_allowed(series):
+        s = pd.to_numeric(series, errors='coerce')
+        if s.notna().sum() < 2 or float(s.max()) == float(s.min()):
+            return pd.Series([3.0] * len(s), index=s.index)
+        # More allowed = easier matchup = lower FDR.
+        return 1 + 4 * ((s.max() - s) / (s.max() - s.min()))
+
+    for _, key in positions:
+        fcol = f'{key}_fantasy_allowed_pg'
+        if fcol in agg.columns:
+            agg[f'{key}_matchup_fdr_1_easy_5_hard'] = fdr_from_allowed(agg[fcol]).round(2)
+            agg[f'{key}_matchup_grade'] = pd.cut(
+                agg[f'{key}_matchup_fdr_1_easy_5_hard'],
+                bins=[0, 2.25, 3.75, 5.01],
+                labels=['Easy', 'Neutral', 'Hard'],
+                include_lowest=True
+            ).astype(str)
+
+    ordered = ['team_abbr','team_name','games_sample','sample_confidence','validation_ok','validation_diff_total','validation_diff_pg','box_score_pts_allowed_pg','position_pts_allowed_pg']
+    for _, key in positions:
+        ordered += [
+            f'{key}_pts_allowed_pg', f'{key}_fantasy_allowed_pg', f'{key}_matchup_fdr_1_easy_5_hard', f'{key}_matchup_grade',
+            f'{key}_reb_allowed_pg', f'{key}_ast_allowed_pg', f'{key}_stl_allowed_pg', f'{key}_blk_allowed_pg', f'{key}_tov_forced_pg'
+        ]
+    ordered = [c for c in ordered if c in agg.columns]
+    agg = agg[ordered].sort_values(['guard_fantasy_allowed_pg','team_abbr'], ascending=[False, True], na_position='last')
+    for c in agg.columns:
+        if c not in ['team_abbr','team_name','sample_confidence','validation_ok','guard_matchup_grade','forward_matchup_grade','center_matchup_grade']:
+            if pd.api.types.is_numeric_dtype(agg[c]):
+                agg[c] = agg[c].round(2)
+    agg.to_csv(OUT / 'euroleague-defense-vs-position.csv', index=False)
+
+    data = {
+        'generated': datetime.now(ZoneInfo('Europe/Zagreb')).strftime('%Y-%m-%d %H:%M %Z'),
+        'summary': clean_records(agg),
+        'matchlog': clean_records(match_df),
+    }
+    cols = ['team_abbr','team_name','games_sample','sample_confidence','validation_ok','validation_diff_pg','box_score_pts_allowed_pg',
+            'guard_pts_allowed_pg','forward_pts_allowed_pg','center_pts_allowed_pg',
+            'guard_fantasy_allowed_pg','forward_fantasy_allowed_pg','center_fantasy_allowed_pg',
+            'guard_matchup_fdr_1_easy_5_hard','forward_matchup_fdr_1_easy_5_hard','center_matchup_fdr_1_easy_5_hard']
+    labels = {
+        'team_abbr':'Team','team_name':'Club','games_sample':'Games','sample_confidence':'Sample','validation_ok':'Validated','validation_diff_pg':'Diff/G','box_score_pts_allowed_pg':'Box PTS allowed/G',
+        'guard_pts_allowed_pg':'Real PTS vs Guards/G','forward_pts_allowed_pg':'Real PTS vs Forwards/G','center_pts_allowed_pg':'Real PTS vs Centers/G',
+        'guard_fantasy_allowed_pg':'Fantasy PTS vs Guards/G','forward_fantasy_allowed_pg':'Fantasy PTS vs Forwards/G','center_fantasy_allowed_pg':'Fantasy PTS vs Centers/G',
+        'guard_matchup_fdr_1_easy_5_hard':'Guard FDR','forward_matchup_fdr_1_easy_5_hard':'Forward FDR','center_matchup_fdr_1_easy_5_hard':'Center FDR'
+    }
+    html_doc = f"""<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">
+<title>EuroLeague Defense vs Position - Fantasy Edge IQ</title>
+<meta name=\"description\" content=\"Validated EuroLeague Fantasy defense vs position table: real points allowed and fantasy points allowed to guards, forwards and centers.\">
+<link rel=\"canonical\" href=\"{SITE}/euroleague/defense-vs-position\"><meta name=\"robots\" content=\"index,follow\">
+<style>:root{{--bg:#08111f;--panel:#0e2038;--line:rgba(255,255,255,.1);--txt:#eef6ff;--mut:#aabbd2;--blue:#5bbcff;--green:#22c55e;--yellow:#ffd166;--red:#fb7185}}*{{box-sizing:border-box}}body{{margin:0;background:radial-gradient(circle at top left,#173a63,#08111f 58%);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;font-size:14px;line-height:1.55}}a{{color:#8ed6ff;text-decoration:none}}header,main{{max-width:1220px;margin:0 auto;padding:24px}}.topnav{{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:24px}}.brand{{font-weight:950;font-size:19px;color:#fff}}.brand span{{color:var(--blue)}}.navlinks{{display:flex;gap:14px;color:var(--mut);font-size:13px}}h1{{margin:0 0 10px;font-size:clamp(32px,5vw,56px);letter-spacing:-.055em;line-height:1}}.sub{{color:var(--mut);font-size:17px;max-width:980px}}.note{{background:rgba(255,209,102,.08);border:1px solid rgba(255,209,102,.25);border-radius:16px;padding:14px;color:#ffe8a3;margin:18px 0}}.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:18px 0}}.card{{background:rgba(14,32,56,.9);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 16px 50px rgba(0,0,0,.18)}}.card h3{{margin:0 0 12px}}.row{{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.07)}}.row:last-child{{border-bottom:0}}.row span{{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}.row b{{color:#fff}}.downloads{{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}}.btn,button{{display:inline-flex;background:#143052;color:#fff;border:1px solid rgba(91,188,255,.24);border-radius:12px;padding:10px 13px;font-weight:850;cursor:pointer}}input{{background:#0b1b30;border:1px solid rgba(255,255,255,.12);color:#eef6ff;border-radius:12px;padding:10px 12px;min-width:260px}}.tablewrap{{overflow:auto;max-height:72vh;border:1px solid var(--line);border-radius:16px;background:#0b1b30}}table{{border-collapse:separate;border-spacing:0;min-width:1100px;width:100%;font-size:12px}}th,td{{padding:9px 10px;border-bottom:1px solid rgba(255,255,255,.08);white-space:nowrap;text-align:left}}th{{position:sticky;top:0;background:#193b63;color:#fff;z-index:3;cursor:pointer}}td:first-child,th:first-child{{position:sticky;left:0;background:#0b1b30;z-index:2}}th:first-child{{z-index:4;background:#193b63}}.good{{color:#86efac;font-weight:900}}.warn{{color:#fde68a;font-weight:900}}.bad{{color:#fda4af;font-weight:900}}.mut{{color:var(--mut)}}@media(max-width:760px){{header,main{{padding-left:14px;padding-right:14px}}.navlinks{{display:none}}input{{width:100%;min-width:0}}}}</style></head><body><header><div class=\"topnav\"><a class=\"brand\" href=\"/\">Fantasy Edge <span>IQ</span></a><nav class=\"navlinks\"><a href=\"/euroleague\">Dashboard</a><a href=\"/euroleague/team-analyzer\">Lineup IQ</a><a href=\"/methodology\">Methodology</a></nav></div><h1>EuroLeague Defense vs Position</h1><div class=\"sub\">Validated matchup table for guards, forwards and centers. Real points allowed are checked against official box scores; fantasy points are labelled separately.</div></header><main><div class=\"note\"><b>Early sample / beta:</b> this table uses played games currently available in the fantasy log. Real PTS by position must match the box-score total before the row is marked validated. Fantasy PTS can be higher than real points because it includes rebounds, assists, steals, turnovers, missed shots and other fantasy scoring components.</div><div class=\"downloads\"><a class=\"btn\" href=\"/euroleague-defense-vs-position.csv\">Download DvP CSV</a><a class=\"btn\" href=\"/euroleague-defense-vs-position-matchlog.csv\">Download validation matchlog</a><a class=\"btn\" href=\"/euroleague\">Back to EuroLeague dashboard</a></div><section class=\"cards\"><div class=\"card\"><h3>Most fantasy allowed vs Guards</h3><div id=\"guardBox\"></div></div><div class=\"card\"><h3>Most fantasy allowed vs Forwards</h3><div id=\"forwardBox\"></div></div><div class=\"card\"><h3>Most fantasy allowed vs Centers</h3><div id=\"centerBox\"></div></div></section><div class=\"downloads\"><input id=\"q\" placeholder=\"Search team...\" oninput=\"render()\"></div><div class=\"tablewrap\"><table id=\"tbl\"></table></div></main><script>const DATA={json_dumps(data)};const COLS={json_dumps(cols)};const LABELS={json_dumps(labels)};let sort={{c:'guard_fantasy_allowed_pg',d:'desc'}};function fmt(v){{if(v===null||v===undefined)return ''; if(typeof v==='boolean')return v?'Yes':'No'; let n=Number(v); if(Number.isFinite(n))return Math.abs(n)>=100?String(Math.round(n*10)/10):String(Math.round(n*100)/100); return String(v)}}function cls(c,v){{if(c.includes('fdr')){{let n=Number(v);return n<=2.25?'good':n>=3.75?'bad':'warn'}} if(c==='validation_ok')return v?'good':'bad'; return ''}}function cmp(a,b,c){{let av=a[c],bv=b[c],an=Number(av),bn=Number(bv),r;if(av==null&&bv==null)r=0;else if(av==null)r=1;else if(bv==null)r=-1;else if(Number.isFinite(an)&&Number.isFinite(bn))r=an-bn;else r=String(av).localeCompare(String(bv));return sort.d==='asc'?r:-r}}function setSort(c){{sort={{c,d:sort.c===c&&sort.d==='desc'?'asc':'desc'}};render()}}function render(){{let rows=DATA.summary.filter(r=>!q.value||Object.values(r).join(' ').toLowerCase().includes(q.value.toLowerCase())).sort((a,b)=>cmp(a,b,sort.c));tbl.innerHTML='<thead><tr>'+COLS.map(c=>`<th onclick=\"setSort('${{c}}')\">${{LABELS[c]||c}}${{sort.c===c?(sort.d==='asc'?' ↑':' ↓'):''}}</th>`).join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+COLS.map(c=>`<td class=\"${{cls(c,r[c])}}\">${{fmt(r[c])}}</td>`).join('')+'</tr>').join('')+'</tbody>'}}function mini(id,col){{let rows=[...DATA.summary].sort((a,b)=>(Number(b[col])||0)-(Number(a[col])||0)).slice(0,6);document.getElementById(id).innerHTML=rows.map(r=>`<div class='row'><span>${{r.team_abbr}} <span class='mut'>${{r.team_name||''}}</span></span><b>${{fmt(r[col])}}</b></div>`).join('')}}mini('guardBox','guard_fantasy_allowed_pg');mini('forwardBox','forward_fantasy_allowed_pg');mini('centerBox','center_fantasy_allowed_pg');render();</script></body></html>"""
+    (OUT / 'euroleague-defense-vs-position.html').write_text(html_doc, encoding='utf-8')
+
+
+def make_fpl_team_analyzer():
+    # Static frontend for FPL Transfer IQ. Uses /api/fpl-team-analyzer serverless proxy.
+    html_doc = f'''<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FPL Transfer IQ — Fantasy Edge IQ</title>
+<meta name="description" content="Analyze your Fantasy Premier League team by team ID. Get a compact team summary, transfer-out risks, affordable replacements and captain shortlist.">
+<link rel="canonical" href="{SITE}/premier-league/team-analyzer"><meta name="robots" content="index,follow">
+<style>
+:root{{--bg:#07101d;--panel:#0f2139;--line:rgba(255,255,255,.11);--txt:#eef6ff;--mut:#a9bad2;--blue:#5bbcff;--green:#22c55e;--yellow:#ffd166;--red:#fb7185}}*{{box-sizing:border-box}}body{{margin:0;background:linear-gradient(135deg,#07101d,#0e2744 60%,#07101d);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;font-size:14px}}a{{color:#8ed6ff;text-decoration:none}}header{{padding:24px;border-bottom:1px solid var(--line);background:rgba(7,16,29,.9)}}.nav{{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:18px}}.brand{{font-weight:950;font-size:19px}}.brand span{{color:var(--blue)}}.links{{display:flex;gap:14px;color:var(--mut);font-size:13px}}h1{{margin:0 0 8px;font-size:clamp(30px,4vw,48px);letter-spacing:-.05em}}.sub{{color:var(--mut);font-size:16px;max-width:900px;line-height:1.45}}main{{padding:22px 24px 60px;max-width:1180px;margin:0 auto}}.box{{background:rgba(15,33,57,.88);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 18px 60px rgba(0,0,0,.22);margin-bottom:14px}}.toolbar{{display:flex;gap:10px;flex-wrap:wrap;align-items:end}}label{{display:grid;gap:5px;color:var(--mut)}}input,select{{background:#0a192c;border:1px solid rgba(255,255,255,.13);color:var(--txt);border-radius:12px;padding:10px 12px;min-width:130px}}button,.btn{{background:#14345a;color:#fff;border:1px solid rgba(91,188,255,.28);border-radius:12px;padding:10px 13px;font-weight:850;cursor:pointer}}button:hover,.btn:hover{{border-color:#7bd3ff}}.primary{{background:linear-gradient(135deg,#1588d2,#22c55e);color:#06111f;border:0}}.mut{{color:var(--mut)}}.note{{background:rgba(255,209,102,.08);border:1px solid rgba(255,209,102,.25);border-radius:16px;padding:13px;color:#ffe8a3;line-height:1.45}}.cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;margin:12px 0}}.metric{{background:rgba(255,255,255,.045);border:1px solid var(--line);border-radius:14px;padding:12px}}.metric b{{display:block;font-size:25px}}.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}}.item{{background:#0a192c;border:1px solid var(--line);border-radius:14px;padding:12px;line-height:1.45;margin:8px 0}}.good{{color:#86efac;font-weight:900}}.warn{{color:#fde68a;font-weight:900}}.bad{{color:#fda4af;font-weight:900}}.tablewrap{{overflow:auto;border:1px solid var(--line);border-radius:14px;background:#0a192c;max-height:520px}}table{{border-collapse:collapse;width:100%;font-size:12px}}th,td{{padding:8px 9px;border-bottom:1px solid rgba(255,255,255,.08);white-space:nowrap;text-align:left}}th{{position:sticky;top:0;background:#193b63;z-index:2}}@media(max-width:760px){{.links{{display:none}}main,header{{padding-left:14px;padding-right:14px}}input{{width:100%}}}}
+</style></head><body><header><div class="nav"><a class="brand" href="/">Fantasy Edge <span>IQ</span></a><nav class="links"><a href="/premier-league">FPL dashboard</a><a href="/euroleague">EuroLeague</a><a href="/methodology">Methodology</a></nav></div><h1>FPL Transfer IQ</h1><div class="sub">Enter your FPL team ID to get a compact transfer check: risks, affordable upgrades and captain shortlist.</div></header><main>
+<section class="box"><div class="toolbar"><label>FPL Team ID<input id="teamId" placeholder="e.g. 123456" inputmode="numeric"></label><label>Bank override £m<input id="bank" type="number" min="0" step="0.1" placeholder="optional"></label><label>Free transfers<select id="ft"><option>1</option><option>2</option><option>3</option></select></label><label>Style<select id="style"><option value="balanced">Balanced</option><option value="safe">Safe</option><option value="aggressive">Aggressive</option></select></label><button class="primary" onclick="analyze()">Analyze team</button></div><p class="mut">Uses the latest publicly available FPL squad. Private transfers made before the next deadline may not be visible.</p></section>
+<section id="status" class="note">Paste your team ID and click Analyze team.</section>
+<section id="results" style="display:none"><div id="summary" class="box"></div><div class="grid"><div class="box"><h2>Priority sells</h2><div id="sells"></div></div><div class="box"><h2>Best 1-transfer ideas</h2><div id="moves"></div></div><div class="box"><h2>Captain shortlist</h2><div id="caps"></div></div></div><div class="box"><h2>Your squad</h2><div class="tablewrap"><table id="squad"></table></div></div></section>
+</main><script>
+function esc(s){{return String(s??'').replace(/[&<>"']/g,m=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[m]))}}
+function fmt(v,d=1){{v=Number(v);return Number.isFinite(v)?v.toFixed(d):'–'}}
+function cls(v){{v=Number(v)||0;return v>=6?'good':v>=4?'warn':'bad'}}
+function item(html){{return `<div class="item">${{html}}</div>`}}
+async function analyze(){{let id=teamId.value.trim();if(!/^\d+$/.test(id)){{status.textContent='Enter a valid numeric FPL Team ID.';return}}results.style.display='none';status.textContent='Analyzing team...';let qs=new URLSearchParams({{teamId:id,ft:ft.value,style:style.value}});if(bank.value!=='')qs.set('bank',bank.value);try{{let r=await fetch('/api/fpl-team-analyzer?'+qs.toString());let data=await r.json();if(!r.ok||!data.ok)throw new Error(data.error||'Analyzer failed');render(data);status.textContent=`Analyzed team ${{data.teamId}} · Gameweek ${{data.event}} · generated ${{data.generated}}`;results.style.display='block'}}catch(e){{status.textContent='Error: '+e.message}}}}
+function render(d){{let s=d.summary;summary.innerHTML=`<h2>${{esc(d.manager?.name||'FPL team')}}</h2><div class="cards"><div class="metric"><b>${{fmt(s.startingProjection)}}</b><span class="mut">starting XI projection</span></div><div class="metric"><b>${{fmt(s.bank)}}</b><span class="mut">bank £m used</span></div><div class="metric"><b class="${{s.injuryFlags?'bad':'good'}}">${{s.injuryFlags}}</b><span class="mut">injury/news flags</span></div><div class="metric"><b class="${{s.hardFixturePlayers?'warn':'good'}}">${{s.hardFixturePlayers}}</b><span class="mut">hard fixture players</span></div></div>${{d.warnings?.length?'<p class="warn">'+d.warnings.map(esc).join(' · ')+'</p>':''}}`;
+sells.innerHTML=d.sellCandidates.length?d.sellCandidates.map(x=>item(`<b>${{esc(x.player.web_name)}}</b> <span class="mut">${{x.player.team_short}} · ${{x.player.pos}} · £${{fmt(x.player.price)}}m</span><br><span class="bad">Sell pressure ${{fmt(x.sellPressure,0)}}</span> — ${{esc(x.reason)}}`)).join(''):'<p class="mut">No urgent sells found.</p>';
+moves.innerHTML=d.transferIdeas.length?d.transferIdeas.map(m=>item(`<b>OUT:</b> ${{esc(m.out.web_name)}} <span class="mut">${{m.out.team_short}} · £${{fmt(m.out.price)}}m</span><br><b>IN:</b> ${{esc(m.in.web_name)}} <span class="mut">${{m.in.team_short}} · £${{fmt(m.in.price)}}m</span><br><span class="good">+${{fmt(m.gain)}} projected pts</span> · ${{m.priceDiff>0?'uses £'+fmt(m.priceDiff)+'m bank':'frees £'+fmt(-m.priceDiff)+'m'}} · bank after £${{fmt(m.bankAfter)}}m`)).join(''):'<p class="mut">No affordable same-position upgrade found with current bank.</p>';
+caps.innerHTML=d.captaincy.map((p,i)=>item(`${{i+1}}. <b>${{esc(p.web_name)}}</b> <span class="mut">${{p.team_short}} · ${{p.pos}} · projection ${{fmt(p.projection)}} · FDR5 ${{fmt(p.fdr_next5,2)}}</span>`)).join('');
+squad.innerHTML='<thead><tr><th>Player</th><th>Pos</th><th>Team</th><th>£m</th><th>Proj</th><th>FDR5</th><th>Status</th><th>News</th></tr></thead><tbody>'+d.squad.map(p=>`<tr><td>${{esc(p.web_name)}}</td><td>${{p.pos}}</td><td>${{p.team_short}}</td><td>${{fmt(p.price)}}</td><td class="${{cls(p.projection)}}">${{fmt(p.projection)}}</td><td>${{fmt(p.fdr_next5,2)}}</td><td>${{p.status==='a'?'OK':esc(p.status)}}</td><td>${{esc(p.news||'')}}</td></tr>`).join('')+'</tbody>'}}
+</script></body></html>'''
+    (OUT / 'premier-league-team-analyzer.html').write_text(html_doc, encoding='utf-8')
+
+
+def make_fpl_api_function():
+    api_dir = OUT / 'api'
+    api_dir.mkdir(exist_ok=True)
+    js = r'''const BASE = 'https://fantasy.premierleague.com/api';
+const headers = { 'user-agent': 'Fantasy Edge IQ beta analyzer', 'accept': 'application/json' };
+async function getJson(path) { const res = await fetch(BASE + path, { headers }); if (!res.ok) throw new Error(`${path} returned ${res.status}`); return await res.json(); }
+function num(v, d=null) { const n = Number(v); if (!Number.isFinite(n)) return d; return n; }
+function price(e) { return num(e.now_cost, 0) / 10; }
+function posName(t) { return ({1:'GKP',2:'DEF',3:'MID',4:'FWD'})[t] || String(t); }
+function currentEvent(events) { return events.find(e => e.is_current)?.id || events.find(e => e.is_next)?.id || events.filter(e => e.finished).slice(-1)[0]?.id || 1; }
+async function getPicks(teamId, preferredEvent, events) { const start = preferredEvent || currentEvent(events); const tries = []; for (let e = start; e >= Math.max(1, start - 4); e--) tries.push(e); for (const e of tries) { try { return { event: e, picks: await getJson(`/entry/${teamId}/event/${e}/picks/`) }; } catch (err) {} } throw new Error('Could not load public picks for this team ID'); }
+function nextFixtures(teamId, fixtures, teams, n=5) { return fixtures.filter(f => !f.finished && (f.team_h === teamId || f.team_a === teamId)).sort((a,b) => String(a.kickoff_time||'').localeCompare(String(b.kickoff_time||''))).slice(0,n).map(f => { const home = f.team_h === teamId; const oppId = home ? f.team_a : f.team_h; const opp = teams.find(t => t.id === oppId)?.short_name || String(oppId); const diff = home ? f.team_h_difficulty : f.team_a_difficulty; return { opp, ha: home ? 'H' : 'A', difficulty: num(diff, 3) }; }); }
+function enrich(e, maps, fixtures) { const team = maps.teams.get(e.team) || {}; const nf = nextFixtures(e.team, fixtures, [...maps.teams.values()], 5); const fdr = nf.length ? nf.reduce((s,x)=>s+x.difficulty,0)/nf.length : 3; let base = num(e.ep_next, null); if (base === null || base <= 0) base = num(e.form, 0); if (base <= 0) base = num(e.points_per_game, 0); let projection = base + (3 - fdr) * 0.35; if (e.status !== 'a') projection *= ((num(e.chance_of_playing_next_round, 0) || 0) / 100); projection = Math.max(0, projection); return { id: e.id, web_name: e.web_name, full_name: `${e.first_name||''} ${e.second_name||''}`.trim(), team_short: team.short_name || '', team_name: team.name || '', pos: posName(e.element_type), element_type: e.element_type, price: price(e), form: num(e.form,0), ep_next: num(e.ep_next,0), points_per_game: num(e.points_per_game,0), total_points: num(e.total_points,0), selected_by_percent: num(e.selected_by_percent,0), transfers_in_event: num(e.transfers_in_event,0), transfers_out_event: num(e.transfers_out_event,0), status: e.status, news: e.news || '', chance_next: e.chance_of_playing_next_round, minutes: num(e.minutes,0), starts: num(e.starts,0), fdr_next5: Math.round(fdr*100)/100, next5: nf.map(x => `${x.opp}(${x.ha},${x.difficulty})`).join(' · '), projection: Math.round(projection*10)/10, value: price(e) ? projection / price(e) : 0 }; }
+function reasonSell(p) { const r=[]; if (p.status !== 'a' || p.news) r.push('injury/news risk'); if (p.fdr_next5 >= 3.6) r.push('hard fixture run'); if (p.projection < 3.5) r.push('low projection'); if (p.price >= 7.5 && p.value < 0.55) r.push('weak value for price'); if (!r.length) r.push('lower projection than available alternatives'); return r.join(', '); }
+function sellPressure(p) { let s = Math.max(0, 7 - p.projection) * 8; if (p.status !== 'a' || p.news) s += 28; if (p.fdr_next5 >= 3.6) s += 10; if (p.price >= 7.5 && p.value < 0.55) s += 10; s += Math.min(8, (p.transfers_out_event || 0) / 100000); return Math.round(s); }
+module.exports = async (req, res) => { try { const teamId = String(req.query.teamId || '').trim(); if (!/^\d+$/.test(teamId)) return res.status(400).json({ ok:false, error:'Invalid FPL Team ID' }); const [bootstrap, fixtures, entry] = await Promise.all([ getJson('/bootstrap-static/'), getJson('/fixtures/'), getJson(`/entry/${teamId}/`) ]); const preferred = req.query.event ? Number(req.query.event) : currentEvent(bootstrap.events); const { event, picks } = await getPicks(teamId, preferred, bootstrap.events); const teamMap = new Map(bootstrap.teams.map(t => [t.id, t])); const maps = { teams: teamMap }; const enriched = bootstrap.elements.map(e => enrich(e, maps, fixtures)); const byId = new Map(enriched.map(p => [p.id, p])); const selectedIds = new Set((picks.picks || []).map(p => p.element)); const squad = (picks.picks || []).map(pk => ({ ...byId.get(pk.element), pick_position: pk.position, multiplier: pk.multiplier })).filter(p => p.id); const starting = squad.filter(p => (p.multiplier || 0) > 0 || (p.pick_position || 99) <= 11); const endpointBank = picks.entry_history && Number.isFinite(Number(picks.entry_history.bank)) ? Number(picks.entry_history.bank)/10 : 0; const bank = Number.isFinite(Number(req.query.bank)) ? Math.max(0, Number(req.query.bank)) : endpointBank; const style = String(req.query.style || 'balanced'); const sells = squad.map(p => ({ player:p, sellPressure:sellPressure(p), reason:reasonSell(p) })).sort((a,b)=>b.sellPressure-a.sellPressure).slice(0,4); const ideas=[]; for (const s of sells) { const out = s.player; for (const cand of enriched) { if (selectedIds.has(cand.id)) continue; if (cand.element_type !== out.element_type) continue; if (cand.status !== 'a') continue; const priceDiff = Math.round((cand.price - out.price)*10)/10; const bankAfter = Math.round((bank - priceDiff)*10)/10; if (bankAfter < -0.001) continue; const gain = Math.round((cand.projection - out.projection)*10)/10; if (gain <= 0.2) continue; let rank = gain * 10 + cand.value * 2 + (3 - cand.fdr_next5) * 1.5; if (style === 'safe') rank += cand.minutes / 900; if (style === 'aggressive') rank += cand.form * 0.5; ideas.push({ out, in:cand, gain, priceDiff, bankAfter, rank }); } } ideas.sort((a,b)=>b.rank-a.rank); const captaincy = starting.slice().sort((a,b)=>b.projection-a.projection).slice(0,5); const warnings=[]; const injuryFlags = squad.filter(p => p.status !== 'a' || p.news).length; const hardFixturePlayers = squad.filter(p => p.fdr_next5 >= 3.6).length; if (injuryFlags) warnings.push(`${injuryFlags} player(s) have injury/news flags`); if (hardFixturePlayers) warnings.push(`${hardFixturePlayers} player(s) have difficult next-five fixtures`); const startingProjection = starting.reduce((sum,p)=>sum+p.projection*(p.multiplier || 1),0); res.setHeader('Cache-Control','s-maxage=300, stale-while-revalidate=600'); return res.status(200).json({ ok:true, teamId, event, generated:new Date().toISOString().slice(0,16).replace('T',' '), manager:{ name:entry.name, player_name:[entry.player_first_name, entry.player_last_name].filter(Boolean).join(' ') }, summary:{ bank, startingProjection:Math.round(startingProjection*10)/10, injuryFlags, hardFixturePlayers }, squad, sellCandidates:sells, transferIdeas:ideas.slice(0,8), captaincy, warnings }); } catch (err) { return res.status(500).json({ ok:false, error:err.message || 'Analyzer failed' }); } };
+'''
+    (api_dir / 'fpl-team-analyzer.js').write_text(js, encoding='utf-8')
+
+
+def english_fpl_html(s: str) -> str:
+    """Clean visible FPL dashboard text for the international English site."""
+    import re
+    replacements = {
+        '<html lang="sr">': '<html lang="en">',
+        '<title>Fantazi Premijer Liga — pro dashboard</title>': '<title>Fantasy Premier League Dashboard — Fantasy Edge IQ</title>',
+        '<h1>Fantazi Premijer Liga — Pro dashboard</h1>': '<h1>Fantasy Premier League — Advanced Dashboard</h1>',
+        'Dashboard za FPL: cijene, forma, value, minute, raspored, transferi i povrede. Generisano:': 'FPL dashboard: prices, form, value, minutes, fixtures, transfers and injuries. Generated:',
+        'trenutni GW': 'current GW',
+        'prosek PTS': 'average PTS',
+        'najviše PTS': 'highest PTS',
+        'sledeći deadline': 'next deadline',
+        'igrača u bazi': 'players in database',
+        'data-tab="players">Igrači</button>': 'data-tab="players">Players</button>',
+        'data-tab="fixtures">Utakmice</button>': 'data-tab="fixtures">Fixtures</button>',
+        'data-tab="injuries">Povrede</button>': 'data-tab="injuries">Injuries</button>',
+        'data-tab="transfers">Transferi/Cijene</button>': 'data-tab="transfers">Transfers / Prices</button>',
+        '<button class="tab" data-tab="business">Paid verzija</button>': '',
+        '<main><div class="tabs">': '<main><div class="tabs"><button onclick="location.href=\'/premier-league/team-analyzer\'">Team Analyzer</button>',
+        'Igrač kola': 'Player of the Gameweek',
+        'Najveće vlasništvo': 'Highest ownership',
+        'Najviše kupovan': 'Most bought',
+        'Najviše kapiten': 'Most captained',
+        'Promjene cijena · GW': 'Price changes · GW',
+        'Transferi in': 'Transfers in',
+        'Povrede/news': 'Injuries/news',
+        'placeholder="Pretraga igrača..."': 'placeholder="Search players..."',
+        'Svi klubovi': 'All clubs',
+        'Sve pozicije': 'All positions',
+        'sakrij bez minuta': 'hide players with no minutes',
+        'sakrij povrijeđene/suspendovane': 'hide injured/suspended',
+        '<b>Value</b> = points per game / cijena. Dodatno imaš Form, EP next, min.avg, last3/last5 minute i FDR narednih 5 kola.': '<b>Value</b> = points per game divided by price. The table also includes form, expected points, average minutes, last 3/5 minute trends and next-five FDR.',
+        'placeholder="Pretraga utakmica..."': 'placeholder="Search fixtures..."',
+        'Sva kola': 'All gameweeks',
+        'Najviše kupovani': 'Most bought',
+        'Najviše prodavani': 'Most sold',
+        'Promjene cijena': 'Price changes',
+        "web_name:'Igrač'": "web_name:'Player'",
+        "full_name:'Ime'": "full_name:'Name'",
+        "team_short:'Klub'": "team_short:'Club'",
+        "transfers_in_event:'Kupovina'": "transfers_in_event:'Transfers in'",
+        "transfers_out_event:'Prodaja'": "transfers_out_event:'Transfers out'",
+        "transfers_balance_event:'Balans'": "transfers_balance_event:'Transfer balance'",
+        "kickoff_local:'Vrijeme'": "kickoff_local:'Time'",
+        "result:'Rez'": "result:'Score'",
+        "winner:'Pobj'": "winner:'Winner'",
+        "if(typeof x==='boolean')return x?'DA':'NE';": "if(typeof x==='boolean')return x?'YES':'NO';",
+    }
+    for old, new in replacements.items():
+        s = s.replace(old, new)
+    s = re.sub(r'<div class="note">Ovo je prototip.*?</div>', '', s)
+    s = re.sub(r'<section id="business" class="panel">.*?</section>', '', s)
+    return s
+
+
+def add_meta_to_fpl():
+    src = (ROOT / 'fpl_fantasy_dashboard.html') if (ROOT / 'fpl_fantasy_dashboard.html').exists() else (FLAT / 'premier-league-dashboard.html')
+    if not src.exists():
+        return
+    s = english_fpl_html(src.read_text(encoding='utf-8'))
+    # Replace or enrich head after charset/title. Keep original body/dashboard intact.
+    if '<link rel="canonical"' not in s:
+        insert = f'''\n<meta name="description" content="Fantasy Premier League dashboard with FPL players, prices, ownership, transfers, injuries, value, form, minutes, expected points and upcoming fixtures.">\n<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">\n<link rel="canonical" href="{SITE}/premier-league">\n<meta property="og:type" content="website"><meta property="og:site_name" content="Fantasy Edge IQ"><meta property="og:title" content="Fantasy Premier League Dashboard — Fantasy Edge IQ"><meta property="og:description" content="Free FPL beta dashboard with value, fixtures, injuries, price changes and transfer trends."><meta property="og:url" content="{SITE}/premier-league">'''
+        s = s.replace('<meta name="viewport" content="width=device-width, initial-scale=1">', '<meta name="viewport" content="width=device-width, initial-scale=1">' + insert, 1)
+        s = s.replace('<meta name="viewport" content="width=device-width,initial-scale=1">', '<meta name="viewport" content="width=device-width,initial-scale=1">' + insert, 1)
+    (OUT / 'premier-league-dashboard.html').write_text(s, encoding='utf-8')
+
+
+def make_simple_pages():
+    pages = {
+        'about.html': ('About Fantasy Edge IQ', 'Fantasy Edge IQ is an independent fantasy analytics beta for managers who want clearer data before every lock. We currently cover EuroLeague Fantasy and Fantasy Premier League with free dashboards during beta.'),
+        'methodology.html': ('Methodology', 'EuroLeague models combine projected PIR, value, minutes, shooting usage, next-five fixture difficulty, team pace and matchup context. FPL models use public player, fixture and element history data including price, ownership, form, minutes, transfers, news and expected points.'),
+        'privacy.html': ('Privacy', 'Fantasy Edge IQ is a beta analytics website. We do not sell personal data. This policy will be expanded before a public commercial launch.'),
+        'terms.html': ('Terms', 'Fantasy Edge IQ provides fantasy analytics for informational purposes only. Use the data as decision support, not as guaranteed advice.'),
+        'disclaimer.html': ('Disclaimer', 'Fantasy Edge IQ is an independent project. It is not affiliated with Euroleague Basketball, Premier League or Fantasy Premier League. Fantasy outcomes are uncertain and all models are beta estimates.'),
+    }
+    for fn,(title,body) in pages.items():
+        slug = fn.replace('.html','')
+        desc = body[:155]
+        doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)} — Fantasy Edge IQ</title><meta name="description" content="{html.escape(desc)}"><link rel="canonical" href="{SITE}/{slug}"><meta name="robots" content="index,follow"><style>body{{margin:0;background:#07101d;color:#eef6ff;font-family:system-ui,Segoe UI,Arial,sans-serif;line-height:1.6}}.wrap{{max-width:930px;margin:0 auto;padding:42px 22px}}a{{color:#5bbcff}}.card{{background:#111f34;border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px;margin-top:18px}}.mut{{color:#9fb1c9}}</style></head><body><main class="wrap"><a href="/">← Home</a><h1>{html.escape(title)}</h1><div class="card"><p>{html.escape(body)}</p></div><p class="mut">Last updated: {TODAY}</p></main></body></html>'''
+        (OUT / fn).write_text(doc, encoding='utf-8')
+
+
+def write_trust_pages():
+    pages = {'about.html': {'title': 'About Fantasy Edge IQ',
+                'desc': 'Fantasy Edge IQ is an independent fantasy analytics beta for EuroLeague Fantasy and Fantasy '
+                        'Premier League managers.',
+                'body': '<p>Fantasy Edge IQ is an independent fantasy analytics beta built for managers who want '
+                        'faster context before every fantasy deadline.</p>\n'
+                        '<p>The platform currently covers two games:</p>\n'
+                        '<ul><li><b>EuroLeague Fantasy</b> — player value, next-five schedule, team pace, shooting '
+                        'usage and Lineup IQ transfer checks.</li><li><b>Fantasy Premier League</b> — prices, form, '
+                        'injuries, fixtures, transfers and FPL Transfer IQ by Team ID.</li></ul>\n'
+                        '<p>The goal is simple: turn public fantasy and sports data into clear decision support. The '
+                        'tools are free during beta while we test the models and improve the product.</p>\n'
+                        '<p>Fantasy Edge IQ is not affiliated with Euroleague Basketball, the Premier League or '
+                        'Fantasy Premier League.</p>'},
+ 'methodology.html': {'title': 'Methodology',
+                      'desc': 'How Fantasy Edge IQ builds EuroLeague and FPL fantasy analytics, projections and '
+                              'transfer indicators.',
+                      'body': '<p>Fantasy Edge IQ uses public fantasy and sports data to build practical '
+                              'decision-support indicators. The models are beta estimates, not guarantees.</p>\n'
+                              '<h2>EuroLeague Fantasy</h2>\n'
+                              '<ul><li><b>Team pace</b>: estimated as FGA + 0.44 × FTA - OREB + TOV, blended with '
+                              'opponent possessions where available.</li><li><b>Next-five difficulty</b>: built from '
+                              'opponent pace, PIR allowed, points allowed, FGA allowed and rebounds allowed. Lower FDR '
+                              'is easier.</li><li><b>Option score</b>: combines projected PIR, value, minutes, '
+                              'shooting usage, price gap, form, schedule context and risk penalties.</li><li><b>Lineup '
+                              'IQ</b>: compares your selected players with same-position affordable replacements using '
+                              'price, bank, schedule and option score.</li></ul>\n'
+                              '<h2>Fantasy Premier League</h2>\n'
+                              '<ul><li>FPL dashboards use public player, fixture, price, ownership, transfer, '
+                              'injury/news, minutes and expected-points data.</li><li>FPL Transfer IQ analyzes the '
+                              'latest publicly available squad for a Team ID and suggests affordable same-position '
+                              'ideas.</li><li>Transfer suggestions consider price, bank, projection, next-five fixture '
+                              'difficulty, player status/news and a simple minutes/security score.</li></ul>\n'
+                              '<h2>Domestic league data</h2>\n'
+                              '<p>Domestic league form may be added later as a separate context layer. It will not be '
+                              'mixed directly into EuroLeague numbers.</p>'},
+ 'privacy.html': {'title': 'Privacy Policy',
+                  'desc': 'Privacy policy for Fantasy Edge IQ beta.',
+                  'body': '<p>Fantasy Edge IQ is a beta analytics website. We aim to collect as little personal '
+                          'information as possible.</p>\n'
+                          '<h2>What we process</h2>\n'
+                          '<ul><li>When you use FPL Transfer IQ, the Team ID you enter is sent to our API so the tool '
+                          'can request public FPL data.</li><li>EuroLeague Lineup IQ stores selected players locally '
+                          'in your browser if you click save.</li><li>Analytics may collect anonymous usage '
+                          'information such as page views, device type and country-level traffic once analytics is '
+                          'enabled.</li></ul>\n'
+                          '<h2>What we do not ask for</h2>\n'
+                          '<ul><li>We do not ask for your FPL password.</li><li>We do not ask for your EuroLeague '
+                          'Fantasy password.</li><li>We do not sell personal data.</li></ul>\n'
+                          '<p>This policy will be updated if accounts, payments or advanced feedback tools are added '
+                          'later.</p>'},
+ 'terms.html': {'title': 'Terms of Use',
+                'desc': 'Terms of use for Fantasy Edge IQ beta tools and fantasy analytics dashboards.',
+                'body': '<p>By using Fantasy Edge IQ, you agree that the tools are provided for informational and '
+                        'entertainment purposes only.</p>\n'
+                        '<h2>No guarantees</h2>\n'
+                        '<p>Fantasy outcomes are uncertain. Projections, rankings, option scores and transfer '
+                        'suggestions may be wrong or become outdated quickly.</p>\n'
+                        '<h2>Independent project</h2>\n'
+                        '<p>Fantasy Edge IQ is not affiliated with Euroleague Basketball, the Premier League or '
+                        'Fantasy Premier League.</p>\n'
+                        '<h2>Beta status</h2>\n'
+                        '<p>The site is in beta. Features can change, break or be removed while the product is being '
+                        'tested.</p>\n'
+                        '<h2>Responsible use</h2>\n'
+                        '<p>Use the data as decision support, not as a replacement for your own judgment.</p>'},
+ 'disclaimer.html': {'title': 'Disclaimer',
+                     'desc': 'Fantasy Edge IQ disclaimer: independent beta analytics, not affiliated with EuroLeague, '
+                             'Premier League or FPL.',
+                     'body': '<p>Fantasy Edge IQ is an independent fantasy analytics beta. It is not affiliated with '
+                             'Euroleague Basketball, the Premier League, Fantasy Premier League or their official '
+                             'partners.</p>\n'
+                             '<p>All projections, scores, rankings and transfer suggestions are beta estimates. They '
+                             'can be inaccurate, incomplete or outdated.</p>\n'
+                             '<p>Public data sources can change without notice, and player injuries, rotations, prices '
+                             'and fixtures can change quickly. Always verify important decisions in official fantasy '
+                             'platforms before lock/deadline.</p>\n'
+                             '<p>No content on Fantasy Edge IQ should be treated as guaranteed advice.</p>'}}
+    nav = '<a href="/">Home</a><a href="/euroleague">EuroLeague</a><a href="/premier-league">FPL</a><a href="/methodology">Methodology</a><a href="/about">About</a><a href="/sr">SR</a><a href="/el">EL</a>'
+    template = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} - Fantasy Edge IQ</title><meta name="description" content="{desc}"><link rel="canonical" href="{site}/{slug}"><meta name="robots" content="index,follow"><script defer src="/_vercel/insights/script.js"></script><style>:root{--bg:#07101d;--card:#111f34;--txt:#eef6ff;--mut:#9fb1c9;--line:rgba(255,255,255,.1);--blue:#5bbcff}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#173a63,#07101d 58%);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;line-height:1.65}.wrap{max-width:980px;margin:0 auto;padding:34px 22px 60px}nav{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}a{color:#80d4ff;text-decoration:none}h1{font-size:clamp(34px,5vw,56px);line-height:1;letter-spacing:-.05em;margin:0 0 16px}h2{margin-top:26px}.card{background:rgba(17,31,52,.9);border:1px solid var(--line);border-radius:22px;padding:26px;margin-top:18px}.mut{color:var(--mut)}li{margin:7px 0}footer{margin-top:30px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}</style></head><body><main class="wrap"><nav>{nav}</nav><h1>{title}</h1><section class="card">{body}</section><footer>Last updated: {today}. Fantasy Edge IQ is an independent fantasy analytics project and is not affiliated with Euroleague Basketball, the Premier League or Fantasy Premier League. Analytics are beta estimates, not guarantees.</footer></main></body></html>"""
+    for fn, page in pages.items():
+        slug = fn.replace('.html','')
+        doc = (template
+               .replace('{title}', html.escape(page['title']))
+               .replace('{desc}', html.escape(page['desc']))
+               .replace('{site}', SITE)
+               .replace('{slug}', slug)
+               .replace('{nav}', nav)
+               .replace('{body}', page['body'])
+               .replace('{today}', TODAY))
+        (OUT / fn).write_text(doc, encoding='utf-8')
+
+
+def add_vercel_analytics():
+    snippet = '<script defer src="/_vercel/insights/script.js"></script>'
+    for path in OUT.glob('*.html'):
+        text = path.read_text(encoding='utf-8')
+        if '/_vercel/insights/script.js' in text:
+            continue
+        if '</head>' in text:
+            path.write_text(text.replace('</head>', snippet + '</head>', 1), encoding='utf-8')
+
+
+def make_brand_assets():
+    """Create first-party brand assets used for browser tabs and social link previews."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except Exception as exc:
+        print('Brand asset generation skipped:', exc)
+        return
+
+    font_bold = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+    font_regular = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+
+    def get_font(size, bold=False):
+        try:
+            return ImageFont.truetype(font_bold if bold else font_regular, size)
+        except Exception:
+            return ImageFont.load_default()
+
+    # Social preview image: 1200x630, the recommended Open Graph size.
+    W, H = 1200, 630
+    img = Image.new('RGB', (W, H), '#07101d')
+    pix = img.load()
+    for y in range(H):
+        for x in range(W):
+            r1 = max(0, 1 - math.sqrt(((x - 180) / W) ** 2 * 2.2 + ((y - 40) / H) ** 2 * 3.1))
+            r2 = max(0, 1 - math.sqrt(((x - 1040) / W) ** 2 * 3.0 + ((y - 560) / H) ** 2 * 3.0))
+            pix[x, y] = (int(7 + 28 * r1 + 5 * r2), int(16 + 70 * r1 + 34 * r2), int(29 + 112 * r1 + 60 * r2))
+    d = ImageDraw.Draw(img, 'RGBA')
+    for x in range(0, W, 60):
+        d.line([(x, 0), (x, H)], fill=(255, 255, 255, 12), width=1)
+    for y in range(0, H, 60):
+        d.line([(0, y), (W, y)], fill=(255, 255, 255, 10), width=1)
+    d.ellipse((730, -165, 1330, 440), fill=(34, 197, 94, 30))
+    d.ellipse((-160, 310, 430, 850), fill=(91, 188, 255, 26))
+    d.rounded_rectangle((68, 74, 1132, 556), radius=42, fill=(13, 27, 47, 222), outline=(255, 255, 255, 34), width=2)
+    d.rounded_rectangle((96, 104, 294, 112), radius=4, fill=(91, 188, 255, 255))
+    d.rounded_rectangle((306, 104, 410, 112), radius=4, fill=(34, 197, 94, 230))
+    d.rounded_rectangle((96, 134, 180, 218), radius=22, fill=(91, 188, 255, 35), outline=(91, 188, 255, 125), width=2)
+    d.line((116, 196, 150, 154, 168, 176), fill=(34, 197, 94, 255), width=8, joint='curve')
+    brand_font = get_font(50, True)
+    d.text((204, 128), 'Fantasy Edge', font=brand_font, fill=(238, 246, 255, 255))
+    edge_w = d.textlength('Fantasy Edge', font=brand_font)
+    d.text((204 + edge_w + 14, 128), 'IQ', font=brand_font, fill=(91, 188, 255, 255))
+    d.text((96, 245), 'EuroLeague + FPL', font=get_font(66, True), fill=(255, 255, 255, 255))
+    d.text((96, 318), 'Fantasy Analytics', font=get_font(66, True), fill=(255, 255, 255, 255))
+    subtitle = 'Public-data dashboards for value, fixtures, injuries, pace, usage and transfer decisions before every deadline.'
+    words = subtitle.split()
+    lines, cur = [], ''
+    for word in words:
+        test = (cur + ' ' + word).strip()
+        if d.textlength(test, font=get_font(27)) > 940:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = test
+    if cur:
+        lines.append(cur)
+    y = 404
+    for line in lines[:2]:
+        d.text((96, y), line, font=get_font(27), fill=(185, 203, 226, 255))
+        y += 38
+    badges = ['Free beta', 'Transfer IQ', 'Fixture runs', 'Value models']
+    x, y = 96, 489
+    for badge in badges:
+        bf = get_font(22, True)
+        tw = d.textlength(badge, font=bf)
+        pad = 22
+        d.rounded_rectangle((x, y, x + tw + pad * 2, y + 48), radius=24, fill=(255, 255, 255, 18), outline=(255, 255, 255, 42), width=1)
+        d.text((x + pad, y + 10), badge, font=bf, fill=(224, 241, 255, 255))
+        x += tw + pad * 2 + 14
+    d.text((820, 150), 'fantasyedgeiq.com', font=get_font(24, True), fill=(128, 212, 255, 255))
+    img.save(OUT / 'og-image.png', optimize=True)
+
+    # Browser/mobile icon.
+    S = 180
+    icon = Image.new('RGB', (S, S), '#07101d')
+    pix = icon.load()
+    for y in range(S):
+        for x in range(S):
+            r = max(0, 1 - math.sqrt(((x - 35) / S) ** 2 * 3 + ((y - 25) / S) ** 2 * 3))
+            pix[x, y] = (int(7 + 38 * r), int(16 + 78 * r), int(29 + 126 * r))
+    di = ImageDraw.Draw(icon, 'RGBA')
+    di.rounded_rectangle((18, 18, 162, 162), radius=36, fill=(255, 255, 255, 16), outline=(91, 188, 255, 150), width=3)
+    di.line((46, 124, 84, 62, 112, 94, 136, 48), fill=(34, 197, 94, 255), width=13, joint='curve')
+    di.text((43, 105), 'IQ', font=get_font(42, True), fill=(238, 246, 255, 255))
+    icon.save(OUT / 'apple-touch-icon.png', optimize=True)
+
+    favicon = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5bbcff"/><stop offset="1" stop-color="#22c55e"/></linearGradient></defs>
+  <rect width="64" height="64" rx="15" fill="#07101d"/>
+  <path d="M14 45 27 20l10 15 13-22" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="16" y="54" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" fill="#eef6ff">IQ</text>
+</svg>
+"""
+    (OUT / 'favicon.svg').write_text(favicon, encoding='utf-8')
+    manifest = {
+        'name': 'Fantasy Edge IQ',
+        'short_name': 'Edge IQ',
+        'start_url': '/',
+        'display': 'standalone',
+        'background_color': '#07101d',
+        'theme_color': '#07101d',
+        'icons': [{'src': '/apple-touch-icon.png', 'sizes': '180x180', 'type': 'image/png'}]
+    }
+    (OUT / 'site.webmanifest').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
+
+
+def add_brand_meta():
+    """Inject favicon, web manifest, theme color and social preview image tags into every HTML page."""
+    tags = [
+        '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
+        '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+        '<link rel="manifest" href="/site.webmanifest">',
+        '<meta name="theme-color" content="#07101d">',
+        f'<meta property="og:image" content="{SITE}/og-image.png">',
+        '<meta property="og:image:width" content="1200">',
+        '<meta property="og:image:height" content="630">',
+        '<meta property="og:image:alt" content="Fantasy Edge IQ fantasy analytics dashboard preview">',
+        '<meta name="twitter:card" content="summary_large_image">',
+        f'<meta name="twitter:image" content="{SITE}/og-image.png">',
+    ]
+    markers = [
+        'rel="icon"',
+        'rel="apple-touch-icon"',
+        'rel="manifest"',
+        'name="theme-color"',
+        'property="og:image"',
+        'property="og:image:width"',
+        'property="og:image:height"',
+        'property="og:image:alt"',
+        'name="twitter:card"',
+        'name="twitter:image"',
+    ]
+    for path in OUT.glob('*.html'):
+        text = path.read_text(encoding='utf-8')
+        missing = [tag for tag, marker in zip(tags, markers) if marker not in text]
+        if missing and '</head>' in text:
+            text = text.replace('</head>', ''.join(missing) + '</head>', 1)
+            path.write_text(text, encoding='utf-8')
+
+
+def add_mobile_qa_polish():
+    # Improve mobile usability for dashboards, analyzers and large stat tables.
+    css = """<style id=\"mobile-qa-polish\">
+.tablewrap{position:relative;scrollbar-color:#5bbcff #0b1b30}
+button,.btn,input,select{min-height:44px}
+@media(max-width:760px){
+  header,main{padding-left:14px!important;padding-right:14px!important}
+  .navlinks,.links{display:none!important}
+  h1{font-size:clamp(28px,9vw,42px)!important;line-height:1.05!important}
+  .sub,.lead{font-size:15px!important;line-height:1.5!important}
+  .tabs{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto!important;gap:8px!important;padding-bottom:6px;-webkit-overflow-scrolling:touch}
+  .tabs button,.tabs .btn{flex:0 0 auto;white-space:nowrap}
+  .filters,.toolbar{display:grid!important;grid-template-columns:1fr!important;gap:10px!important;align-items:stretch!important}
+  label{width:100%}
+  input,select{width:100%;max-width:100%;font-size:16px!important}
+  button,.btn{max-width:100%;font-size:16px!important;justify-content:center;text-align:center}
+  .toolbar button,.toolbar .btn,.filters button,.filters .btn,.cta>.btn{width:100%}
+  .tabs button,.tabs .btn{width:auto!important}
+  .layout,.grid{grid-template-columns:1fr!important}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+  .card,.box,.metric,.note{border-radius:16px!important}
+  .tablewrap{max-height:68vh!important;overflow:auto!important;-webkit-overflow-scrolling:touch!important;border-radius:14px!important}
+  .tablewrap:before{content:'Swipe sideways to see all columns';display:block;position:sticky;left:0;top:0;z-index:6;background:#0b1b30;color:#9fd8ff;border-bottom:1px solid rgba(255,255,255,.1);padding:8px 10px;font-size:12px;font-weight:800;letter-spacing:.01em}
+  table{min-width:760px;font-size:12px!important}
+  th,td{padding:8px 9px!important}
+  .tablewrap table th:first-child,.tablewrap table td:first-child{position:sticky!important;left:0;z-index:3;background:#0b1b30;box-shadow:1px 0 0 rgba(255,255,255,.08)}
+  .tablewrap table th:first-child{z-index:7;background:#193b63!important}
+}
+@media(max-width:480px){
+  .cards{grid-template-columns:1fr!important}
+  table{font-size:11px!important;min-width:720px}
+  th,td{padding:7px 8px!important}
+  .metric b,.card b{font-size:22px!important}
+}
+</style>"""
+    for path in OUT.glob('*.html'):
+        text = path.read_text(encoding='utf-8')
+        if 'id="mobile-qa-polish"' in text:
+            continue
+        if '</head>' in text:
+            path.write_text(text.replace('</head>', css + '</head>', 1), encoding='utf-8')
+
+
+
+def make_i18n_pages():
+    localized = {'sr': {'lang_name': 'Srpski',
+        'nav': [('Početna', '/sr'),
+                ('EuroLeague', '/sr/euroleague'),
+                ('FPL', '/sr/premier-league'),
+                ('Metodologija', '/sr/methodology'),
+                ('O nama', '/sr/about')],
+        'updated': 'Ažurirano',
+        'footer': 'Fantasy Edge IQ je nezavisan fantasy analytics projekat. Nije povezan sa Euroleague Basketball, Premier League ili Fantasy Premier League.',
+        'pages': {'home': {'title': 'Besplatna fantasy analitika za EuroLeague Fantasy i FPL',
+                           'desc': 'Fantasy Edge IQ na srpskom: besplatna javna beta fantasy analytics platforma za EuroLeague Fantasy i FPL menadžere.',
+                           'body': '<p class="badge">Besplatna javna beta · javni podaci · bez lozinke</p><p class="lead">Fantasy Edge IQ pretvara javne '
+                                   'fantasy podatke u praktične alate za odluke prije svakog deadline-a: vrijednost igrača, minute, formu, težinu rasporeda, '
+                                   'povrede, promjene cijena, tempo ekipe i matchup kontekst.</p><div class="cta"><a class="btn" '
+                                   'href="/sr/euroleague">EuroLeague alati</a><a class="btn ghost" href="/sr/premier-league">FPL alati</a></div><div '
+                                   'class="grid"><div class="card"><h2>Besplatno tokom beta faze</h2><p>Alati su otvoreni dok testiramo modele i skupljamo '
+                                   'feedback.</p></div><div class="card"><h2>Bez lozinki</h2><p>FPL Team ID koristi se samo za čitanje javno dostupnih FPL '
+                                   'podataka.</p></div><div class="card"><h2>Nezavisan projekat</h2><p>Nismo povezani sa Euroleague Basketball, Premier League '
+                                   'ili Fantasy Premier League.</p></div></div>'},
+                  'euroleague': {'title': 'EuroLeague Fantasy alati',
+                                 'desc': 'EuroLeague Fantasy analitika: vrijednost igrača, projektovani PIR, raspored, tempo, matchup kontekst i Lineup IQ.',
+                                 'body': '<p class="lead">EuroLeague dio je fokusiran na odluke prije kola: koga kupiti, koga pratiti, koji timovi imaju lakši '
+                                         'raspored i gdje postoji matchup prednost.</p><div class="grid"><div '
+                                         'class="card"><h2>Dashboard</h2><ul><li>vrijednost igrača i cijene</li><li>projektovani PIR i option '
+                                         'score</li><li>šut, FGA, procenti i FGA po minuti</li><li>next-five težina rasporeda</li><li>tempo ekipe, FGA '
+                                         'okruženje i skokovi dozvoljeni</li></ul><p><a class="btn" href="/euroleague/dashboard">Otvori EuroLeague '
+                                         'dashboard</a></p></div><div class="card"><h2>Lineup IQ</h2><p>Ručno izaberi svoj tim i banku, zatim uporedi dostupne '
+                                         'zamjene po poziciji koje budžet stvarno dozvoljava.</p><p><a class="btn" href="/euroleague/team-analyzer">Otvori '
+                                         'Lineup IQ</a></p></div></div><p class="note">Glavni analytics dashboard za sada ostaje na engleskom interfejsu zbog '
+                                         'globalne publike, ali ova stranica objašnjava alat na srpskom.</p>'},
+                  'premier-league': {'title': 'Fantasy Premier League alati',
+                                     'desc': 'FPL analitika: igrači, cijene, povrede, fixture context, transfer trendovi i Team Analyzer.',
+                                     'body': '<p class="lead">FPL dio koristi javne FPL podatke za pregled igrača, cijena, vlasništva, transfera, povreda, '
+                                             'forme i očekivanih poena.</p><div class="grid"><div class="card"><h2>FPL dashboard</h2><ul><li>cijene i value '
+                                             'metrike</li><li>ownership i transfer trendovi</li><li>status/povrede i vijesti</li><li>raspored i naredni '
+                                             'protivnici</li></ul><p><a class="btn" href="/premier-league/dashboard">Otvori FPL dashboard</a></p></div><div '
+                                             'class="card"><h2>FPL Team Analyzer</h2><p>Unesi javni FPL Team ID i provjeri rizike u timu, fixture kontekst i '
+                                             'moguće povoljne zamjene.</p><p><a class="btn" href="/premier-league/team-analyzer">Otvori Team '
+                                             'Analyzer</a></p></div></div><p class="note">Ne tražimo FPL password. Team ID se koristi samo za javni FPL '
+                                             'lookup.</p>'},
+                  'about': {'title': 'O Fantasy Edge IQ',
+                            'desc': 'Fantasy Edge IQ je nezavisan fantasy analytics beta projekat za EuroLeague Fantasy i FPL menadžere.',
+                            'body': '<p>Fantasy Edge IQ je nezavisan fantasy analytics beta projekat za menadžere koji žele brži kontekst prije '
+                                    'deadline-a.</p><p>Trenutno pokrivamo EuroLeague Fantasy i Fantasy Premier League. Cilj je da javne fantasy i sportske '
+                                    'podatke pretvorimo u jasne signale za odluke: vrijednost, minute, raspored, povrede, tempo, matchup i transfer '
+                                    'ideje.</p><p>Alati su besplatni tokom beta faze. Projekat nije povezan sa Euroleague Basketball, Premier League ili '
+                                    'Fantasy Premier League.</p>'},
+                  'methodology': {'title': 'Metodologija',
+                                  'desc': 'Kako Fantasy Edge IQ računa fantasy indikatore, projekcije i transfer signale.',
+                                  'body': '<p>Fantasy Edge IQ koristi javne fantasy i sportske podatke za praktične indikatore. Modeli su beta procjene, ne '
+                                          'garancije.</p><h2>EuroLeague Fantasy</h2><ul><li>Tempo ekipe se procjenjuje kroz FGA, FTA, ofanzivne skokove i '
+                                          'izgubljene lopte.</li><li>Next-five težina rasporeda koristi protivnički tempo, dozvoljeni PIR, poene, FGA i '
+                                          'skokove.</li><li>Option score kombinuje projektovani PIR, vrijednost, minute, šut/usage, raspored i '
+                                          'rizik.</li><li>Lineup IQ poredi igrače sa dostupnim zamjenama iste pozicije i realnim '
+                                          'budžetom.</li></ul><h2>FPL</h2><ul><li>Koriste se javni podaci o igračima, cijenama, ownershipu, povredama, '
+                                          'transferima, rasporedu i očekivanim poenima.</li><li>Team Analyzer koristi javni FPL Team ID i predlaže dostupne '
+                                          'same-position ideje.</li></ul>'},
+                  'privacy': {'title': 'Privatnost',
+                              'desc': 'Politika privatnosti za Fantasy Edge IQ beta sajt.',
+                              'body': '<p>Fantasy Edge IQ nastoji da prikuplja što manje ličnih podataka.</p><ul><li>FPL Team ID koji unesete koristi se za '
+                                      'lookup javnih FPL podataka.</li><li>EuroLeague Lineup IQ može čuvati izabrane igrače lokalno u vašem '
+                                      'browseru.</li><li>Analytics može mjeriti anonimne posjete, stranice i osnovne informacije o uređaju.</li></ul><p>Ne '
+                                      'tražimo FPL password, EuroLeague Fantasy password i ne prodajemo lične podatke.</p>'},
+                  'terms': {'title': 'Uslovi korištenja',
+                            'desc': 'Uslovi korištenja za Fantasy Edge IQ beta alate.',
+                            'body': '<p>Korištenjem Fantasy Edge IQ prihvatate da su alati informativni i namijenjeni za fantasy odluke i '
+                                    'zabavu.</p><p>Fantasy rezultat nije siguran. Projekcije, score-ovi i transfer prijedlozi mogu biti pogrešni ili brzo '
+                                    'zastarjeti.</p><p>Sajt je u beta fazi, pa se funkcije mogu mijenjati, uklanjati ili povremeno ne raditi.</p>'},
+                  'disclaimer': {'title': 'Disclaimer',
+                                 'desc': 'Fantasy Edge IQ disclaimer: nezavisan beta analytics projekat, bez garancija.',
+                                 'body': '<p>Fantasy Edge IQ je nezavisan fantasy analytics beta projekat. Nije povezan sa Euroleague Basketball, Premier '
+                                         'League, Fantasy Premier League ili njihovim partnerima.</p><p>Sve projekcije, rangiranja, score-ovi i transfer ideje '
+                                         'su beta procjene. Nisu garantovani savjeti.</p><p>Uvijek provjerite važne odluke na zvaničnim fantasy platformama '
+                                         'prije deadline-a.</p>'}}},
+ 'el': {'lang_name': 'Ελληνικά',
+        'nav': [('Αρχική', '/el'),
+                ('EuroLeague', '/el/euroleague'),
+                ('FPL', '/el/premier-league'),
+                ('Μεθοδολογία', '/el/methodology'),
+                ('Σχετικά', '/el/about')],
+        'updated': 'Τελευταία ενημέρωση',
+        'footer': 'Το Fantasy Edge IQ είναι ανεξάρτητο fantasy analytics project. Δεν συνδέεται με Euroleague Basketball, Premier League ή Fantasy Premier '
+                  'League.',
+        'pages': {'home': {'title': 'Δωρεάν fantasy analytics για EuroLeague Fantasy και FPL',
+                           'desc': 'Fantasy Edge IQ στα ελληνικά: δωρεάν δημόσια beta πλατφόρμα analytics για EuroLeague Fantasy και FPL managers.',
+                           'body': '<p class="badge">Δωρεάν public beta · δημόσια δεδομένα · χωρίς κωδικό</p><p class="lead">Το Fantasy Edge IQ μετατρέπει '
+                                   'δημόσια fantasy δεδομένα σε πρακτικά εργαλεία αποφάσεων πριν από κάθε deadline: αξία παικτών, λεπτά συμμετοχής, φόρμα, '
+                                   'δυσκολία προγράμματος, τραυματισμούς, μεταβολές τιμών, ρυθμό ομάδας και matchup context.</p><div class="cta"><a '
+                                   'class="btn" href="/el/euroleague">EuroLeague εργαλεία</a><a class="btn ghost" href="/el/premier-league">FPL '
+                                   'εργαλεία</a></div><div class="grid"><div class="card"><h2>Δωρεάν στη beta</h2><p>Τα εργαλεία είναι ανοιχτά όσο δοκιμάζουμε '
+                                   'τα μοντέλα και συλλέγουμε feedback.</p></div><div class="card"><h2>Χωρίς κωδικούς</h2><p>Το FPL Team ID χρησιμοποιείται '
+                                   'μόνο για αναζήτηση δημόσιων FPL δεδομένων.</p></div><div class="card"><h2>Ανεξάρτητο project</h2><p>Δεν συνδέεται με '
+                                   'Euroleague Basketball, Premier League ή Fantasy Premier League.</p></div></div>'},
+                  'euroleague': {'title': 'EuroLeague Fantasy εργαλεία',
+                                 'desc': 'EuroLeague Fantasy analytics: αξία παικτών, projected PIR, πρόγραμμα, ρυθμός, matchup context και Lineup IQ.',
+                                 'body': '<p class="lead">Το EuroLeague κομμάτι είναι φτιαγμένο για αποφάσεις πριν από κάθε γύρο: ποιους παίκτες να αγοράσεις, '
+                                         'ποιους να παρακολουθήσεις, ποιες ομάδες έχουν ευκολότερο πρόγραμμα και πού υπάρχει matchup πλεονέκτημα.</p><div '
+                                         'class="grid"><div class="card"><h2>Dashboard</h2><ul><li>αξία παικτών και τιμές</li><li>projected PIR και option '
+                                         'score</li><li>σουτ, FGA, ποσοστά και FGA ανά λεπτό</li><li>δυσκολία επόμενων πέντε αγώνων</li><li>ρυθμός ομάδας, FGA '
+                                         'περιβάλλον και rebounds allowed</li></ul><p><a class="btn" href="/euroleague/dashboard">Άνοιγμα EuroLeague '
+                                         'dashboard</a></p></div><div class="card"><h2>Lineup IQ</h2><p>Διάλεξε χειροκίνητα την ομάδα και το bank σου και '
+                                         'σύγκρινε διαθέσιμες αλλαγές ίδιας θέσης που επιτρέπει πραγματικά το budget.</p><p><a class="btn" '
+                                         'href="/euroleague/team-analyzer">Άνοιγμα Lineup IQ</a></p></div></div><p class="note">Το βασικό analytics dashboard '
+                                         'παραμένει προς το παρόν στα αγγλικά για το διεθνές κοινό, αλλά αυτή η σελίδα εξηγεί το εργαλείο στα ελληνικά.</p>'},
+                  'premier-league': {'title': 'Fantasy Premier League εργαλεία',
+                                     'desc': 'FPL analytics: παίκτες, τιμές, τραυματισμοί, fixtures, transfer trends και Team Analyzer.',
+                                     'body': '<p class="lead">Το FPL κομμάτι χρησιμοποιεί δημόσια FPL δεδομένα για παίκτες, τιμές, ownership, transfers, '
+                                             'τραυματισμούς, φόρμα και expected points.</p><div class="grid"><div class="card"><h2>FPL '
+                                             'dashboard</h2><ul><li>τιμές και value metrics</li><li>ownership και transfer trends</li><li>status/τραυματισμοί '
+                                             'και news</li><li>πρόγραμμα και επόμενοι αντίπαλοι</li></ul><p><a class="btn" '
+                                             'href="/premier-league/dashboard">Άνοιγμα FPL dashboard</a></p></div><div class="card"><h2>FPL Team '
+                                             'Analyzer</h2><p>Βάλε το δημόσιο FPL Team ID σου και δες ρίσκα στην ομάδα, fixture context και πιθανές προσιτές '
+                                             'αλλαγές.</p><p><a class="btn" href="/premier-league/team-analyzer">Άνοιγμα Team Analyzer</a></p></div></div><p '
+                                             'class="note">Δεν ζητάμε FPL password. Το Team ID χρησιμοποιείται μόνο για δημόσια FPL δεδομένα.</p>'},
+                  'about': {'title': 'Σχετικά με το Fantasy Edge IQ',
+                            'desc': 'Το Fantasy Edge IQ είναι ανεξάρτητο beta project για EuroLeague Fantasy και FPL managers.',
+                            'body': '<p>Το Fantasy Edge IQ είναι ανεξάρτητο fantasy analytics beta project για managers που θέλουν πιο γρήγορο context πριν '
+                                    'από κάθε deadline.</p><p>Καλύπτουμε EuroLeague Fantasy και Fantasy Premier League. Στόχος είναι να μετατρέπουμε δημόσια '
+                                    'fantasy και sports δεδομένα σε καθαρά signals: αξία, λεπτά, πρόγραμμα, τραυματισμούς, ρυθμό, matchup και transfer '
+                                    'ideas.</p><p>Τα εργαλεία είναι δωρεάν στη beta. Το project δεν συνδέεται με Euroleague Basketball, Premier League ή '
+                                    'Fantasy Premier League.</p>'},
+                  'methodology': {'title': 'Μεθοδολογία',
+                                  'desc': 'Πώς το Fantasy Edge IQ υπολογίζει fantasy indicators, projections και transfer signals.',
+                                  'body': '<p>Το Fantasy Edge IQ χρησιμοποιεί δημόσια fantasy και sports δεδομένα για πρακτικούς δείκτες αποφάσεων. Τα μοντέλα '
+                                          'είναι beta estimates, όχι εγγυήσεις.</p><h2>EuroLeague Fantasy</h2><ul><li>Ο ρυθμός ομάδας εκτιμάται με FGA, FTA, '
+                                          'επιθετικά rebounds και turnovers.</li><li>Η δυσκολία των επόμενων πέντε αγώνων χρησιμοποιεί αντίπαλο ρυθμό, PIR '
+                                          'allowed, πόντους, FGA και rebounds allowed.</li><li>Το option score συνδυάζει projected PIR, value, λεπτά, shooting '
+                                          'usage, πρόγραμμα και ρίσκο.</li><li>Το Lineup IQ συγκρίνει παίκτες με διαθέσιμες αλλαγές ίδιας θέσης και πραγματικό '
+                                          'budget.</li></ul><h2>FPL</h2><ul><li>Χρησιμοποιούνται δημόσια δεδομένα παικτών, τιμών, ownership, τραυματισμών, '
+                                          'transfers, fixtures και expected points.</li><li>Το Team Analyzer χρησιμοποιεί δημόσιο FPL Team ID και προτείνει '
+                                          'προσιτές same-position ιδέες.</li></ul>'},
+                  'privacy': {'title': 'Απόρρητο',
+                              'desc': 'Πολιτική απορρήτου για το Fantasy Edge IQ beta site.',
+                              'body': '<p>Το Fantasy Edge IQ προσπαθεί να συλλέγει όσο το δυνατόν λιγότερα προσωπικά δεδομένα.</p><ul><li>Το FPL Team ID που '
+                                      'εισάγεις χρησιμοποιείται για αναζήτηση δημόσιων FPL δεδομένων.</li><li>Το EuroLeague Lineup IQ μπορεί να αποθηκεύει '
+                                      'επιλεγμένους παίκτες τοπικά στον browser σου.</li><li>Analytics μπορεί να μετρά ανώνυμα page views, συσκευές και βασική '
+                                      'χρήση.</li></ul><p>Δεν ζητάμε FPL password, EuroLeague Fantasy password και δεν πουλάμε προσωπικά δεδομένα.</p>'},
+                  'terms': {'title': 'Όροι χρήσης',
+                            'desc': 'Όροι χρήσης για τα beta εργαλεία του Fantasy Edge IQ.',
+                            'body': '<p>Χρησιμοποιώντας το Fantasy Edge IQ αποδέχεσαι ότι τα εργαλεία παρέχονται για ενημερωτικούς και ψυχαγωγικούς '
+                                    'σκοπούς.</p><p>Τα fantasy αποτελέσματα είναι αβέβαια. Projections, scores και transfer suggestions μπορεί να είναι λάθος '
+                                    'ή να γίνουν γρήγορα παλιά.</p><p>Το site είναι σε beta, οπότε features μπορεί να αλλάξουν, να αφαιρεθούν ή να μη '
+                                    'λειτουργούν προσωρινά.</p>'},
+                  'disclaimer': {'title': 'Disclaimer',
+                                 'desc': 'Fantasy Edge IQ disclaimer: ανεξάρτητο beta analytics project, χωρίς εγγυήσεις.',
+                                 'body': '<p>Το Fantasy Edge IQ είναι ανεξάρτητο fantasy analytics beta project. Δεν συνδέεται με Euroleague Basketball, '
+                                         'Premier League, Fantasy Premier League ή τους επίσημους συνεργάτες τους.</p><p>Όλα τα projections, rankings, scores '
+                                         'και transfer ideas είναι beta estimates. Δεν αποτελούν εγγυημένες συμβουλές.</p><p>Πάντα να ελέγχεις σημαντικές '
+                                         'αποφάσεις στις επίσημες fantasy πλατφόρμες πριν από το deadline.</p>'}}}}
+    route_map = {'home': '', 'euroleague': 'euroleague', 'premier-league': 'premier-league', 'about': 'about', 'methodology': 'methodology', 'privacy': 'privacy', 'terms': 'terms', 'disclaimer': 'disclaimer'}
+    css = ':root{--bg:#07101d;--card:#111f34;--txt:#eef6ff;--mut:#9fb1c9;--line:rgba(255,255,255,.11);--blue:#5bbcff;--green:#22c55e}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top left,#173a63,#07101d 58%);color:var(--txt);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;line-height:1.65}.wrap{max-width:1080px;margin:0 auto;padding:32px 22px 62px}nav{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:34px}a{color:#80d4ff;text-decoration:none}.brand{font-weight:950;color:#fff;margin-right:8px}.brand span{color:var(--blue)}.lang{margin-left:auto;display:flex;gap:8px}.lang a{border:1px solid var(--line);border-radius:999px;padding:5px 9px;font-size:12px;color:#cfefff}h1{font-size:clamp(34px,5.5vw,64px);line-height:1;letter-spacing:-.055em;margin:0 0 18px;max-width:950px}h2{margin-top:0}.lead{font-size:19px;color:var(--mut);max-width:900px}.badge{display:inline-flex;border:1px solid rgba(91,188,255,.35);background:rgba(91,188,255,.11);border-radius:999px;padding:7px 12px;color:#d8f1ff;font-size:13px;font-weight:850}.cta{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}.btn{display:inline-flex;background:linear-gradient(135deg,#58c2ff,#22c55e);color:#06111f;font-weight:900;border-radius:14px;padding:11px 15px}.ghost{background:rgba(255,255,255,.05);border:1px solid var(--line);color:#eef6ff}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:22px}.card{background:rgba(17,31,52,.9);border:1px solid var(--line);border-radius:22px;padding:22px}.note{background:rgba(255,209,102,.08);border:1px solid rgba(255,209,102,.25);color:#ffe8a3;border-radius:16px;padding:13px;margin-top:18px}li{margin:7px 0}footer{margin-top:32px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}@media(max-width:760px){.lang{margin-left:0;width:100%}.cta .btn{width:100%;justify-content:center}}'
+    for lang, cfg in localized.items():
+        for key, page in cfg['pages'].items():
+            route = route_map[key]
+            slug = lang if key == 'home' else lang + '/' + route
+            filename = (lang + '-index.html') if key == 'home' else (lang + '-' + key + '.html')
+            canonical = SITE + ('/' + slug if slug else '/')
+            en_route = route
+            alt_en = SITE + ('/' + en_route if en_route else '/')
+            alt_sr = SITE + ('/sr' if key == 'home' else '/sr/' + route)
+            alt_el = SITE + ('/el' if key == 'home' else '/el/' + route)
+            nav_links = ''.join('<a href="' + href + '">' + html.escape(label) + '</a>' for label, href in cfg['nav'])
+            lang_switch = '<div class="lang"><a href="' + alt_en.replace(SITE, '') + '">EN</a><a href="' + alt_sr.replace(SITE, '') + '">SR</a><a href="' + alt_el.replace(SITE, '') + '">EL</a></div>'
+            nav = '<a class="brand" href="/' + lang + '">Fantasy Edge <span>IQ</span></a>' + nav_links + lang_switch
+            doc = '<!doctype html><html lang="' + lang + '"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + html.escape(page['title']) + ' - Fantasy Edge IQ</title><meta name="description" content="' + html.escape(page['desc']) + '"><link rel="canonical" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + alt_en + '"><link rel="alternate" hreflang="sr" href="' + alt_sr + '"><link rel="alternate" hreflang="el" href="' + alt_el + '"><link rel="alternate" hreflang="x-default" href="' + alt_en + '"><meta name="robots" content="index,follow"><script defer src="/_vercel/insights/script.js"></script><style>' + css + '</style></head><body><main class="wrap"><nav>' + nav + '</nav><h1>' + html.escape(page['title']) + '</h1><section>' + page['body'] + '</section><footer>' + cfg['updated'] + ': ' + TODAY + '. ' + cfg['footer'] + '</footer></main></body></html>'
+            (OUT / filename).write_text(doc, encoding='utf-8')
+
+
+def add_i18n_hreflang_to_english():
+    alternates = {
+        'index.html': ('', 'sr', 'el'),
+        'euroleague-dashboard.html': ('euroleague', 'sr/euroleague', 'el/euroleague'),
+        'premier-league-dashboard.html': ('premier-league', 'sr/premier-league', 'el/premier-league'),
+        'about.html': ('about', 'sr/about', 'el/about'),
+        'methodology.html': ('methodology', 'sr/methodology', 'el/methodology'),
+        'privacy.html': ('privacy', 'sr/privacy', 'el/privacy'),
+        'terms.html': ('terms', 'sr/terms', 'el/terms'),
+        'disclaimer.html': ('disclaimer', 'sr/disclaimer', 'el/disclaimer'),
+    }
+    for fn, (en, sr, el) in alternates.items():
+        path = OUT / fn
+        if not path.exists():
+            continue
+        text = path.read_text(encoding='utf-8')
+        if 'hreflang="sr"' in text:
+            continue
+        en_url = SITE + ('/' + en if en else '/')
+        sr_url = SITE + '/' + sr
+        el_url = SITE + '/' + el
+        tags = f'<link rel="alternate" hreflang="en" href="{en_url}"><link rel="alternate" hreflang="sr" href="{sr_url}"><link rel="alternate" hreflang="el" href="{el_url}"><link rel="alternate" hreflang="x-default" href="{en_url}">'
+        if '</head>' in text:
+            path.write_text(text.replace('</head>', tags + '</head>', 1), encoding='utf-8')
+
+
+def make_robots_sitemap_package():
+    urls = ['','euroleague','euroleague/dashboard','euroleague/team-analyzer','euroleague/defense-vs-position','premier-league','premier-league/dashboard','premier-league/team-analyzer','methodology','about','privacy','terms','disclaimer','sr','sr/euroleague','sr/premier-league','sr/about','sr/methodology','sr/privacy','sr/terms','sr/disclaimer','el','el/euroleague','el/premier-league','el/about','el/methodology','el/privacy','el/terms','el/disclaimer']
+    (OUT / 'robots.txt').write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n", encoding='utf-8')
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    for u in urls:
+        loc = SITE + ('/' + u if u else '/')
+        priority = '1.0' if u=='' else ('0.9' if u in ['euroleague','premier-league'] else '0.7')
+        sitemap += f"  <url><loc>{loc}</loc><lastmod>{TODAY}</lastmod><changefreq>daily</changefreq><priority>{priority}</priority></url>\n"
+    sitemap += '</urlset>\n'
+    (OUT / 'sitemap.xml').write_text(sitemap, encoding='utf-8')
+    package = {
+        'name':'fantasy-edge-iq','version':'0.2.0','private':True,
+        'description':'Fantasy Edge IQ free beta dashboards for EuroLeague Fantasy and Fantasy Premier League.',
+        'scripts':{
+            'build':'node scripts/build.js',
+            'dev':'python3 -m http.server 3000'
+        }
+    }
+    (OUT / 'package.json').write_text(json.dumps(package, indent=2), encoding='utf-8')
+    build_dir = OUT / 'scripts'
+    build_dir.mkdir(exist_ok=True)
+    (build_dir / 'build.js').write_text("const fs = require('fs');\nconst path = require('path');\n\nconst root = process.cwd();\nconst pub = path.join(root, 'public');\nfs.rmSync(pub, { recursive: true, force: true });\nfs.mkdirSync(pub, { recursive: true });\n\nfunction ensureDir(p) { fs.mkdirSync(path.dirname(p), { recursive: true }); }\nfunction copyIfExists(src, dst) {\n  const from = path.join(root, src);\n  const to = path.join(pub, dst);\n  if (!fs.existsSync(from)) {\n    console.log(`skip missing ${src}`);\n    return;\n  }\n  ensureDir(to);\n  fs.copyFileSync(from, to);\n  console.log(`${src} -> public/${dst}`);\n}\n\n// Copy root static assets. Vercel will serve index.html at / and all direct assets.\nfor (const file of fs.readdirSync(root)) {\n  if (!fs.statSync(path.join(root, file)).isFile()) continue;\n  if (/\\.(html|csv|xml|txt|png|svg|webmanifest)$/i.test(file)) {\n    copyIfExists(file, file);\n  }\n}\ntry { fs.rmSync(path.join(pub, 'pricing.html'), { force: true }); } catch (_) {}\n\nconst routes = [\n  ['euroleague-dashboard.html', 'euroleague/index.html'],\n  ['euroleague-dashboard.html', 'euroleague/dashboard/index.html'],\n  ['euroleague-team-analyzer.html', 'euroleague/team-analyzer/index.html'],\n  ['euroleague-defense-vs-position.html', 'euroleague/defense-vs-position/index.html'],\n  ['premier-league-dashboard.html', 'premier-league/index.html'],\n  ['premier-league-dashboard.html', 'premier-league/dashboard/index.html'],\n  ['premier-league-team-analyzer.html', 'premier-league/team-analyzer/index.html'],\n  ['methodology.html', 'methodology/index.html'],\n  ['about.html', 'about/index.html'],\n  ['privacy.html', 'privacy/index.html'],\n  ['terms.html', 'terms/index.html'],\n  ['disclaimer.html', 'disclaimer/index.html'],\n  ['sr-index.html', 'sr/index.html'],\n  ['sr-euroleague.html', 'sr/euroleague/index.html'],\n  ['sr-premier-league.html', 'sr/premier-league/index.html'],\n  ['sr-about.html', 'sr/about/index.html'],\n  ['sr-methodology.html', 'sr/methodology/index.html'],\n  ['sr-privacy.html', 'sr/privacy/index.html'],\n  ['sr-terms.html', 'sr/terms/index.html'],\n  ['sr-disclaimer.html', 'sr/disclaimer/index.html'],\n  ['el-index.html', 'el/index.html'],\n  ['el-euroleague.html', 'el/euroleague/index.html'],\n  ['el-premier-league.html', 'el/premier-league/index.html'],\n  ['el-about.html', 'el/about/index.html'],\n  ['el-methodology.html', 'el/methodology/index.html'],\n  ['el-privacy.html', 'el/privacy/index.html'],\n  ['el-terms.html', 'el/terms/index.html'],\n  ['el-disclaimer.html', 'el/disclaimer/index.html'],\n];\nfor (const [src, dst] of routes) copyIfExists(src, dst);\nconsole.log('Build finished.');\n", encoding='utf-8')
+    vercel = {
+        'cleanUrls': True,
+        'trailingSlash': False,
+        'redirects': [
+            {'source': '/pricing', 'destination': '/', 'permanent': True},
+            {'source': '/pricing.html', 'destination': '/', 'permanent': True}
+        ],
+        'headers': [{'source':'/(.*)','headers':[{'key':'X-Content-Type-Options','value':'nosniff'},{'key':'Referrer-Policy','value':'strict-origin-when-cross-origin'}]}]
+    }
+    (OUT / 'vercel.json').write_text(json.dumps(vercel, indent=2), encoding='utf-8')
+    readme = '''# Fantasy Edge IQ v2 upload package
+
+Upload all files in this folder to the GitHub repository root and commit.
+
+This version includes:
+- stronger homepage copy and SEO metadata
+- robots.txt and sitemap.xml
+- enhanced EuroLeague dashboard with a Full Player Stats tab
+- CSV downloads for EuroLeague full player table, team context and next-five schedule
+- package.json build script that creates the public output and clean route folders for Vercel
+
+After commit, Vercel will automatically redeploy.
+'''
+    (OUT / 'README_DEPLOY.md').write_text(readme, encoding='utf-8')
+
+
+def main():
+    # Do not delete repository files; overwrite known site outputs only.
+    make_homepage()
+    make_euro_dashboard()
+    make_euro_defense_vs_position()
+    make_euro_team_analyzer()
+    add_meta_to_fpl()
+    make_fpl_team_analyzer()
+    make_fpl_api_function()
+    make_simple_pages()
+    write_trust_pages()
+    make_i18n_pages()
+    add_vercel_analytics()
+    make_robots_sitemap_package()
+    make_brand_assets()
+    add_brand_meta()
+    add_i18n_hreflang_to_english()
+    add_mobile_qa_polish()
+    # Optional FPL exports for download/SEO freshness
+    for name in ['fpl_players.csv','fpl_fixtures.csv','fpl_player_history.csv','fpl_upcoming_player_fixtures.csv']:
+        src = FPL_DATA / name
+        if src.exists(): copy_if_exists(src)
+    print('Wrote', OUT)
+
+if __name__ == '__main__':
+    main()
