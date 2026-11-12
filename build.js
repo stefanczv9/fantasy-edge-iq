@@ -136,8 +136,13 @@ try {
     if (!isHome && !m) continue;
     let html = fs.readFileSync(f, 'utf8');
     if (NP && /round2-value-insight" href=/.test(html)) {
+      const sec = isHome ? null : m[1];
       const lab = lang === 'sr' ? ('Kolo ' + NP + ' preview — pickovi, startovi, zamke') : lang === 'el' ? ('Γύρος ' + NP + ' preview — value picks') : ('Round ' + NP + ' preview — value picks, starts & traps');
-      html = html.replace(/<a class="round2-value-insight"[^>]*>[^<]*<\/a>/, `<a class="round2-value-insight" href="${lang === 'sr' ? '/sr' : ''}/euroleague/round-${NP}-preview/" style="background:linear-gradient(90deg,#f59e0b,#facc15);color:#111827;border-color:rgba(250,204,21,.55)">📰 ${lab}</a>`);
+      // EuroCup ne dobija svoj preview -> chip vodi na EuroCup DvP (postoji), ne na EuroLeague preview
+      const chipHtml = sec === 'eurocup'
+        ? `<a class="round2-value-insight" href="${lang === 'sr' ? '/sr' : lang === 'el' ? '/el' : ''}/eurocup/defense-vs-position" style="background:linear-gradient(90deg,#f59e0b,#facc15);color:#111827;border-color:rgba(250,204,21,.55)">📊 ${lang === 'sr' ? 'EuroCup — odbrana po pozicijama' : lang === 'el' ? 'EuroCup — άμυνα ανά θέση' : 'EuroCup — defense vs position'}</a>`
+        : `<a class="round2-value-insight" href="${lang === 'sr' ? '/sr' : ''}/euroleague/round-${NP}-preview/" style="background:linear-gradient(90deg,#f59e0b,#facc15);color:#111827;border-color:rgba(250,204,21,.55)">📰 ${lab}</a>`;
+      html = html.replace(/<a class="round2-value-insight"[^>]*>[^<]*<\/a>/, chipHtml);
     }
     const chip = lang === 'sr' ? 'NOVO' : lang === 'el' ? '\u039d\u0395\u039f' : 'NEW';
     const navA = `<a id="player-profiles-nav" href="${isHome ? HUBS[0][1] : '/' + m[1] + '/players/'}" style="background:linear-gradient(90deg,#0ea5e9,#22d3ee);color:#04121f;padding:6px 14px;border-radius:999px;font-weight:800;text-decoration:none;margin-left:8px;box-shadow:0 0 0 1px rgba(125,211,252,.45),0 4px 14px rgba(14,165,233,.35)">${t.nav} <span style="background:#facc15;color:#111827;border-radius:999px;padding:1px 7px;font-size:10px;font-weight:800;margin-left:4px">${chip}</span></a>`;
@@ -230,15 +235,33 @@ try {
     const mds = elCsv.split(/\r?\n/).slice(1).map(l => parseInt(l.split(',')[1], 10)).filter(v => isFinite(v));
     if (mds.length) elNum = ' MD' + Math.min(...mds);
   } catch (e) {}
-  const fmt = (iso, lang) => {
+  // Vrijeme se prikazuje u Europe/Zagreb (CET/CEST se mijenja sezonski) — ranije je bio
+  // fiksni +2h i oznaka "CEST", pa je zimi sat bio pogresan za 1h.
+  const LOC = { '': 'en-GB', sr: 'sr-Latn-RS', el: 'el-GR' };
+  const tzParts = (iso, lang) => {
     const d = new Date(iso.replace(' ', 'T') + (/[Zz]|[+-]\d{2}:?\d{2}$/.test(iso) ? '' : 'Z'));
-    const ce = new Date(d.getTime() + 2 * 3600000);
-    const t = L2[lang].wd[ce.getUTCDay()];
-    const dd = String(ce.getUTCDate()).padStart(2, '0'), mm = String(ce.getUTCMonth() + 1).padStart(2, '0');
-    const hh = String(ce.getUTCHours()).padStart(2, '0'), mi = String(ce.getUTCMinutes()).padStart(2, '0');
-    return `${t} ${dd}.${mm}. ${hh}:${mi}`;
+    const parts = new Intl.DateTimeFormat(LOC[lang] || 'en-GB', {
+      timeZone: 'Europe/Zagreb', weekday: 'short', day: '2-digit', month: '2-digit',
+      hour: '2-digit', minute: '2-digit', hour12: false, timeZoneName: 'short'
+    }).formatToParts(d).reduce((a, x) => (a[x.type] = x.value, a), {});
+    return { d, parts };
   };
+  const fmt = (iso, lang) => {
+    const { parts: p } = tzParts(iso, lang);
+    return `${p.weekday} ${p.day}.${p.month}. ${p.hour}:${p.minute}`;
+  };
+  const tzLabel = (iso) => (tzParts(iso, '').parts.timeZoneName || 'CET').replace('GMT+1', 'CET').replace('GMT+2', 'CEST');
   const SCRIPT = `<script>(function(){var el=document.getElementById('lock-banner');if(!el)return;var dl=new Date(el.getAttribute('data-deadline'));function u(){var ms=dl-new Date();if(ms<=0){el.remove();return;}var d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60;var c=el.querySelector('.cd');if(c)c.textContent=d+'d '+String(h).padStart(2,'0')+'h '+String(m).padStart(2,'0')+'m';}u();setInterval(u,30000);})();</script>`;
+  // ---- uklanjanje blokova koje je prethodni build ubacio (idempotentnost) --------------------
+  // Bez ovoga se stari baner / cross-link traka / chipovi zadrzavaju u root HTML-u i build ih
+  // nikad ne zamijeni -> sajt trajno prikazuje staro kolo (MD8) i 404 preview linkove.
+  const stripInjected = (html) => html
+    .replace(/<div id="lock-banner"[\s\S]*?setInterval\(u,30000\);\}\)\(\);\s*<\/script>/g, '')
+    .replace(/<div id="lock-banner"[\s\S]*?<\/div>/g, '')
+    .replace(/<div id="xlinks-strip"[\s\S]*?<\/div>/g, '')
+    .replace(/<div id="tg-capture"[\s\S]*?<\/div>\s*<\/div>/g, '')
+    .replace(/<a id="kofi-float"[\s\S]*?<\/a>/g, '');
+
   const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
   let nb = 0, nx = 0, ntg = 0, nk = 0;
   for (const f of walk(pub)) {
@@ -254,8 +277,22 @@ try {
     // html lang atribut mora odgovarati jeziku putanje (team-analyzer kopije su EN)
     if (lang) { const h0 = fs.readFileSync(f, 'utf8'); if (h0.includes('<html lang="en"')) fs.writeFileSync(f, h0.replace('<html lang="en"', '<html lang="' + lang + '"')); }
     if (!isCore) continue;
-    let html = fs.readFileSync(f, 'utf8');
-    // countdown baner
+    let html = stripInjected(fs.readFileSync(f, 'utf8'));
+    // ---- stale round-preview linkovi ---------------------------------------------------------
+    // 1) EuroLeague: uvijek na aktuelno kolo (round-X-preview se generise iz podataka)
+    if (elNum) {
+      const np = elNum.replace(' MD', '');
+      if (np) html = html.replace(/href="((?:\/(?:sr|el))?)\/euroleague\/round-\d+-preview\/"/g,
+        (m0, p0) => `href="${p0}/euroleague/round-${np}-preview/"`);
+    }
+    // 2) EuroCup preview se ne generise -> vodi na postojecu DvP stranicu umjesto 404
+    html = html.replace(/<a([^>]*?)href="((?:\/(?:sr|el))?)\/eurocup\/round-\d+-preview\/"([^>]*)>([^<]*)<\/a>/g,
+      (m0, pre, p0, post, txt) => {
+        const label = /^(?:📰\s*)?(?:Kolo|Γύρος|Round)\s*\d+\s*preview[^A-Za-zČĆŽŠĐ]*/i.test(txt)
+          ? (lang === 'sr' ? '📊 EuroCup — odbrana po pozicijama' : lang === 'el' ? '📊 EuroCup — άμυνα ανά θέση' : '📊 EuroCup — defense vs position')
+          : txt;
+        return `<a${pre}href="${p0}/eurocup/defense-vs-position"${post}>${label}</a>`;
+      });
     const nowB = Date.now();
     const fut = x => x && new Date(x.replace(' ', 'T') + (/[Zz]|[+-]\d{2}:?\d{2}$/.test(x) ? '' : 'Z')).getTime() > nowB;
     const ALLD = [['euroleague', elIso], ['eurocup', ecIso], ['premier-league', fplIso]];
@@ -268,7 +305,7 @@ try {
       if (ni < 0) { const bi = html.indexOf('<body'); ni = bi > 0 ? html.indexOf('>', bi) + 1 : -1; }
       if (ni > 0) {
         const cta = useSec === 'euroleague' ? pfx + '/euroleague/team-analyzer' : pfx + '/' + useSec;
-        const ban = `<div id="lock-banner" data-deadline="${iso.replace(' ', 'T')}Z" style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 16px;background:linear-gradient(90deg,#7c3aed,#db2777);color:#fff;font-size:13.5px;font-weight:600"><span>⏰ ${comp} ${t.lock}: ${fmt(iso, lang)} CEST</span><span>${t.closes} <b class="cd" style="font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(0,0,0,.35);padding:2px 9px;border-radius:7px">…</b></span><a href="${cta}" style="background:#fff;color:#7c3aed;padding:4px 13px;border-radius:999px;font-weight:800;text-decoration:none;font-size:12.5px">${useSec === 'euroleague' ? t.ctaEL : t.ctaDash}</a></div>` + SCRIPT;
+        const ban = `<div id="lock-banner" data-deadline="${iso.replace(' ', 'T')}Z" style="display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;padding:9px 16px;background:linear-gradient(90deg,#7c3aed,#db2777);color:#fff;font-size:13.5px;font-weight:600"><span>⏰ ${comp} ${t.lock}: ${fmt(iso, lang)} ${tzLabel(iso)}</span><span>${t.closes} <b class="cd" style="font-family:ui-monospace,Menlo,Consolas,monospace;background:rgba(0,0,0,.35);padding:2px 9px;border-radius:7px">…</b></span><a href="${cta}" style="background:#fff;color:#7c3aed;padding:4px 13px;border-radius:999px;font-weight:800;text-decoration:none;font-size:12.5px">${useSec === 'euroleague' ? t.ctaEL : t.ctaDash}</a></div>` + SCRIPT;
         html = html.slice(0, ni) + ban + html.slice(ni); nb++;
       }
     }
@@ -300,6 +337,46 @@ try {
     fs.writeFileSync(f, html);
   }
   console.log(`faza2: baneri ${nb} | cross-link ${nx} | telegram ${ntg} | kofi ${nk}`);
+})();
+
+// ---- FAZA 5: hreflang (EN / SR / EL + x-default) ----------------------------------------------
+// Sajt ima tri jezika ali nijedan <link rel="alternate" hreflang> -> Google ih tretira kao
+// nepovezane duplikate. Ovde se za svaku stranicu povezuju sve postojece jezicke verzije.
+(function injectHreflang() {
+  const LANGS = [['', 'en'], ['sr/', 'sr'], ['el/', 'el']];
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+  const urlOf = (rel) => {
+    let u = rel.split(path.sep).join('/');
+    if (u.endsWith('index.html')) u = u.slice(0, -'index.html'.length);
+    u = u.replace(/\/$/, '');
+    return '/' + u;
+  };
+  let n = 0;
+  for (const f of walk(pub)) {
+    if (!f.endsWith('.html')) continue;
+    const rel = path.relative(pub, f);
+    const relUrl = urlOf(rel);
+    const langPref = relUrl.startsWith('/sr/') ? 'sr/' : relUrl.startsWith('/el/') ? 'el/' : '';
+    const base = langPref ? relUrl.slice(langPref.length + 1) : relUrl.slice(1); // bez prefiksa jezika
+    const alts = [];
+    for (const [pfx, code] of LANGS) {
+      const cand = path.join(pub, pfx + base + (base ? '/index.html' : 'index.html'));
+      const candBare = path.join(pub, pfx + base);
+      const exists = (base === '' && fs.existsSync(path.join(pub, pfx, 'index.html'))) ||
+                     fs.existsSync(cand) || (fs.existsSync(candBare) && fs.statSync(candBare).isFile());
+      if (exists) alts.push([code, '/' + pfx + base]);
+    }
+    if (alts.length < 2) continue;
+    let html = fs.readFileSync(f, 'utf8');
+    html = html.replace(/\s*<link[^>]+rel="alternate"[^>]*hreflang="[^"]*"[^>]*>/gi, '');
+    const tags = alts.map(([code, u]) => `<link rel="alternate" hreflang="${code}" href="https://www.fantasyedgeiq.com${u || '/'}">`).join('')
+      + `<link rel="alternate" hreflang="x-default" href="https://www.fantasyedgeiq.com${(alts.find(a => a[0] === 'en') || alts[0])[1] || '/'}">`;
+    if (html.includes('</head>')) html = html.replace('</head>', tags + '</head>');
+    else html = tags + html;
+    fs.writeFileSync(f, html);
+    n++;
+  }
+  console.log(`faza5: hreflang na ${n} stranica`);
 })();
 
 // ---- provjera --------------------------------------------------------------------------------

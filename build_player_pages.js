@@ -379,6 +379,16 @@ function run(root, pub) {
     let sm = fs.readFileSync(base, 'utf8');
     const add = urls.map(([u, pr, cf]) => `<url><loc>${SITE}${u}</loc><lastmod>${stamp}</lastmod><changefreq>${cf}</changefreq><priority>${pr}</priority></url>`).join('\n');
     sm = sm.replace('</urlset>', add + '</urlset>');
+    // dedupe: svaki <loc> se pojavljuje tacno jednom (baza + generisane rute se preklapaju)
+    const seenLoc = new Set();
+    const entries = sm.match(/<url>[\s\S]*?<\/url>/g) || [];
+    const uniq = entries.filter(e => {
+      const m = e.match(/<loc>([^<]*)<\/loc>/);
+      const u = m ? m[1] : e;
+      if (seenLoc.has(u)) return false;
+      seenLoc.add(u); return true;
+    });
+    sm = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + uniq.join('\n') + '\n</urlset>\n';
     fs.writeFileSync(path.join(pub, 'sitemap.xml'), sm, 'utf8');
   }
   console.log(`player pages: EL ${nEL} | FPL ${buildFPLCount(nFPL)} | EC ${nEC} | sitemap +${urls.length} URL`);

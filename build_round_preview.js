@@ -8,6 +8,24 @@ const slugify = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const num = (v, d = 1) => { const n = parseFloat(v); return isFinite(n) ? n.toFixed(d) : '–'; };
 
+// Slug mapa mora biti IDENTICNA onoj iz build_player_pages.js (dedupe + '-<player_id>' sufiks),
+// inace preview linkuje na /players/<ime> koji ne postoji (404).
+function playerSlugMap(root, comp) {
+  const files = comp === 'eurocup' ? ['eurocup-players-full.csv'] : ['euroleague-players-full.csv', 'euroleague_fantasy_data/fantasheet_style_table.csv'];
+  let rows = [];
+  for (const f of files) { rows = csv(path.join(root, f)); if (rows.length) break; }
+  const seen = new Set(), map = {};
+  rows.forEach(p => {
+    const name = p.name || p.full_name || '';
+    if (!name) return;
+    let s = slugify(name);
+    if (seen.has(s)) s = s + '-' + (p.player_id || '');
+    seen.add(s);
+    map[name] = s;
+  });
+  return { map, fallback: (n) => (map[n] || slugify(n)) };
+}
+
 function csv(file) {
   try {
     const lines = fs.readFileSync(file, 'utf8').split(/\r?\n/).filter(l => l.trim());
@@ -27,6 +45,7 @@ function run(root, pub) {
   if (!S.length) S = csv(path.join(root, 'euroleague_fantasy_data', 'team_next5_schedule_detail.csv'));
   if (S.length && S[0].matchday) { const mds = S.map(r => parseInt(r.matchday, 10)).filter(v => isFinite(v)); if (mds.length) N = Math.min(...mds); }
   if (!P.length) { console.log('round preview: nema tabele, preskacem'); return null; }
+  const pSlug = playerSlugMap(root, 'euroleague').fallback;   // isti slugovi kao /euroleague/players/*
   const fdrCol = (Object.keys(S[0] || {}).find(k => k.startsWith('fdr')) || 'fdr_');
   // FDR po timu: naredci mec (matchday >= N) + FDR sledeceg meca
   const teamFdr = {}, teamNext = {};
@@ -72,7 +91,7 @@ function run(root, pub) {
   };
   const relH = { '': ['/euroleague/players/', '/euroleague/dashboard', '/euroleague/defense-vs-position', '/euroleague/team-analyzer'], sr: ['/euroleague/players/', '/sr/euroleague/dashboard', '/sr/euroleague/defense-vs-position', '/sr/euroleague/team-analyzer'] };
 
-  const table = (list, lang) => { const t = T[lang]; return `<table style="width:100%;border-collapse:collapse;font-size:14px;margin:10px 0 6px"><tr>${[t.c1, t.c2, t.c3, t.c4, t.c5, t.c6].map((h, i) => `<th style="text-align:${i > 1 && i < 5 ? 'right' : 'left'};color:#7dd3fc;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${h}</th>`).join('')}</tr>` + list.map(r => `<tr><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12)"><a href="/euroleague/players/${slugify(r.name)}" style="color:#e2e8f0;text-decoration:none;font-weight:600">${esc(r.name)}</a></td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.team)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#dbe4ee">${num(r.price)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#dbe4ee">${num(r.proj)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#4ade80;font-weight:700">${num(r.val, 2)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.next)} ${fdrChip(r.nfdr)}</td></tr>`).join('') + '</table>'; };
+  const table = (list, lang) => { const t = T[lang]; return `<table style="width:100%;border-collapse:collapse;font-size:14px;margin:10px 0 6px"><tr>${[t.c1, t.c2, t.c3, t.c4, t.c5, t.c6].map((h, i) => `<th style="text-align:${i > 1 && i < 5 ? 'right' : 'left'};color:#7dd3fc;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${h}</th>`).join('')}</tr>` + list.map(r => `<tr><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12)"><a href="/euroleague/players/${pSlug(r.name)}" style="color:#e2e8f0;text-decoration:none;font-weight:600">${esc(r.name)}</a></td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.team)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#dbe4ee">${num(r.price)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#dbe4ee">${num(r.proj)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#4ade80;font-weight:700">${num(r.val, 2)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.next)} ${fdrChip(r.nfdr)}</td></tr>`).join('') + '</table>'; };
 
   const page = lang => { const t = T[lang]; const pfx = lang ? '/' + lang : '';
     const body = `<div style="max-width:860px;margin:0 auto;padding:26px 20px 60px">
@@ -83,7 +102,7 @@ function run(root, pub) {
 <h2 style="font-size:20px;color:#f1f5f9;margin:26px 0 4px">1) ${t.hp}</h2><p style="color:#64748b;font-size:12.5px;margin:0 0 6px">${t.noteP}</p>${table(picks, lang)}
 <h2 style="font-size:20px;color:#f1f5f9;margin:26px 0 4px">2) ${t.hs}</h2>${table(starts, lang)}
 <h2 style="font-size:20px;color:#f1f5f9;margin:26px 0 4px">3) ${t.ht}</h2><p style="color:#64748b;font-size:12.5px;margin:0 0 6px">${t.noteT}</p>${traps.length ? table(traps, lang) : '<p style="color:#64748b;font-size:13.5px">—</p>'}
-<h2 style="font-size:20px;color:#f1f5f9;margin:26px 0 4px">4) ${t.hn}</h2><table style="width:100%;border-collapse:collapse;font-size:14px;margin:10px 0 6px"><tr><th style="text-align:left;color:#7dd3fc;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c1}</th><th style="text-align:left;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c2}</th><th style="text-align:left;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c6}</th><th style="text-align:right;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">FDR next 5</th></tr>${picks.map(r => `<tr><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12)"><a href="/euroleague/players/${slugify(r.name)}" style="color:#e2e8f0;text-decoration:none;font-weight:600">${esc(r.name)}</a></td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.team)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.next)} ${fdrChip(r.nfdr)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#dbe4ee;font-weight:700">${r.f5 == null ? '–' : num(r.f5, 1)}</td></tr>`).join('')}</table>
+<h2 style="font-size:20px;color:#f1f5f9;margin:26px 0 4px">4) ${t.hn}</h2><table style="width:100%;border-collapse:collapse;font-size:14px;margin:10px 0 6px"><tr><th style="text-align:left;color:#7dd3fc;font-size:11px;letter-spacing:.05em;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c1}</th><th style="text-align:left;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c2}</th><th style="text-align:left;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">${t.c6}</th><th style="text-align:right;color:#7dd3fc;font-size:11px;text-transform:uppercase;padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.25)">FDR next 5</th></tr>${picks.map(r => `<tr><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12)"><a href="/euroleague/players/${pSlug(r.name)}" style="color:#e2e8f0;text-decoration:none;font-weight:600">${esc(r.name)}</a></td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.team)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);color:#94a3b8">${esc(r.next)} ${fdrChip(r.nfdr)}</td><td style="padding:9px 10px;border-bottom:1px solid rgba(148,163,184,.12);text-align:right;color:#dbe4ee;font-weight:700">${r.f5 == null ? '–' : num(r.f5, 1)}</td></tr>`).join('')}</table>
 <p style="color:#64748b;font-size:12.5px;margin:6px 0 0">${lang === 'sr' ? 'FDR next 5 = prosjek težine narednih 5 utakmica tima (niže = lakše).' : 'FDR next 5 = average difficulty of the team next five games (lower = easier).'}</p>
 <h2 style="font-size:20px;color:#f1f5f9;margin:30px 0 4px">📣 ${t.pack}</h2><p style="color:#94a3b8;font-size:13.5px;margin:0 0 10px">${t.packP}</p>
 ${copyBox('post-en.txt', post(''))}${copyBox('post-sr.txt', post('sr'))}<div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><a href="/social/md${N}-preview/story.svg" style="border:1px solid rgba(125,211,252,.4);color:#7dd3fc;padding:7px 14px;border-radius:999px;font-size:13px;text-decoration:none;font-weight:600">⬇ story.svg (IG 1080×1920)</a><span style="color:#64748b;font-size:12px">tekstovi ostaju i kao fajlovi: /social/md${N}-preview/post-en.txt · post-sr.txt</span></div>
