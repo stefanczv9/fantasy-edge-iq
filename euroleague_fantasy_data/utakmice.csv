@@ -101,11 +101,11 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1537,10,2546,3,12023,played,False,2026-11-06T19:45:00.000000Z,2026-11-06 20:45,152,Partizan Mozzart Bet Belgrade,PAR,88.0,148,Maccabi Rapyd Tel Aviv,MTA,67.0,PAR,88-67
 1538,11,2547,1,12025,played,True,2026-11-11T19:45:00.000000Z,2026-11-11 20:45,150,Paris Basketball,PBB,111.0,147,Fenerbahce Tarfin Istanbul,FBT,109.0,PBB,111-109
 1538,11,2547,1,12026,played,False,2026-11-11T19:45:00.000000Z,2026-11-11 20:45,152,Partizan Mozzart Bet Belgrade,PAR,80.0,143,Kosner Baskonia Vitoria-Gasteiz,KBA,66.0,PAR,80-66
-1538,11,2548,2,12027,scheduled,False,2026-11-12T19:05:00.000000Z,2026-11-12 20:05,148,Maccabi Rapyd Tel Aviv,MTA,,165,Hapoel IBI Tel Aviv,HTA,,,
-1538,11,2548,2,12031,scheduled,False,2026-11-12T19:15:00.000000Z,2026-11-12 20:15,149,Olympiacos Piraeus,OLY,,311,Dubai Basketball,DUB,,,
-1538,11,2548,2,12028,scheduled,False,2026-11-12T19:30:00.000000Z,2026-11-12 20:30,145,Armani Olimpia Milan,MIL,,155,Zalgiris Kaunas,ZAL,,,
-1538,11,2548,2,12029,scheduled,False,2026-11-12T19:30:00.000000Z,2026-11-12 20:30,174,Valencia Basket,VBC,,141,FC Bayern Munich,BAY,,,
-1538,11,2548,2,12030,scheduled,False,2026-11-12T20:00:00.000000Z,2026-11-12 21:00,153,Real Madrid,RMB,,144,Crvena Zvezda Meridianbet Belgrade,CZV,,,
+1538,11,2548,2,12027,played,False,2026-11-12T19:05:00.000000Z,2026-11-12 20:05,148,Maccabi Rapyd Tel Aviv,MTA,80.0,165,Hapoel IBI Tel Aviv,HTA,73.0,MTA,80-73
+1538,11,2548,2,12031,played,False,2026-11-12T19:15:00.000000Z,2026-11-12 20:15,149,Olympiacos Piraeus,OLY,101.0,311,Dubai Basketball,DUB,72.0,OLY,101-72
+1538,11,2548,2,12028,played,False,2026-11-12T19:30:00.000000Z,2026-11-12 20:30,145,Armani Olimpia Milan,MIL,83.0,155,Zalgiris Kaunas,ZAL,86.0,ZAL,83-86
+1538,11,2548,2,12029,played,False,2026-11-12T19:30:00.000000Z,2026-11-12 20:30,174,Valencia Basket,VBC,102.0,141,FC Bayern Munich,BAY,87.0,VBC,102-87
+1538,11,2548,2,12030,played,False,2026-11-12T20:00:00.000000Z,2026-11-12 21:00,153,Real Madrid,RMB,105.0,144,Crvena Zvezda Meridianbet Belgrade,CZV,84.0,RMB,105-84
 1538,11,2549,3,12033,scheduled,False,2026-11-13T17:30:00.000000Z,2026-11-13 18:30,146,Anadolu Efes Istanbul,EFS,,154,Virtus Bologna,VIR,,,
 1538,11,2549,3,12034,scheduled,False,2026-11-13T19:15:00.000000Z,2026-11-13 20:15,151,Panathinaikos AKTOR Athens,PAO,,140,FC Barcelona,BAR,,,
 1538,11,2549,3,12032,scheduled,False,2026-11-13T19:30:00.000000Z,2026-11-13 20:30,139,LDLC ASVEL Villeurbanne,ASV,,158,Besiktas Istanbul,BJK,,,
