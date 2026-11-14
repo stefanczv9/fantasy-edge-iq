@@ -1,9 +1,9 @@
 Fantasy Edge IQ EuroLeague auto-refresh
-Generated: 2026-11-14 03:35 CET
+Generated: 2026-11-14 15:58 CET
 Dashboard: current prices/next opponents; overview card "Average PIR so far" uses pir_avg_current (current season, min. half of the games); Proj PIR stays a table column.
 DvP: real-points-only by Guard/Forward/Center; Sample: 110 completed games, Matchdays 1–11.
 Shot Share: euroleague-shot-share.csv + tab in EN/SR/EL dashboards (current season, FGA/G divided by team FGA/G).
-Domestic competitions: 148 completed games of 20 EuroLeague clubs in 9 countries, generated 2026-11-13 17:11 CET (EN/SR/EL). EuroCup clubs: 228 completed games of 32 clubs in 14 countries, generated 2026-11-13 17:11 CET (EN/SR/EL).
-EuroCup Defense vs Position (EN/SR/EL): real points only, EuroCup rounds 1-7 (112 games), generated 2026-11-13 17:11 CET.
-EuroCup dashboard, full stats, projections, team context, next-five schedule and shot share (EN/SR/EL): 559 fantasy players; 415 with official current-season stats; generated 2026-11-13 17:11 CET.
+Domestic competitions: 148 completed games of 20 EuroLeague clubs in 9 countries, generated 2026-11-14 03:39 CET (EN/SR/EL). EuroCup clubs: 230 completed games of 32 clubs in 14 countries, generated 2026-11-14 03:39 CET (EN/SR/EL).
+EuroCup Defense vs Position (EN/SR/EL): real points only, EuroCup rounds 1-7 (112 games), generated 2026-11-14 03:38 CET.
+EuroCup dashboard, full stats, projections, team context, next-five schedule and shot share (EN/SR/EL): 559 fantasy players; 415 with official current-season stats; generated 2026-11-14 03:38 CET.
 Release scope: EuroLeague and EuroCup only. No home/build/routes/workflow files; BCL is a separate in-chat table, not a site section in this upload.
