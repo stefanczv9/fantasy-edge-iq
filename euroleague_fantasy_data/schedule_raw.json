@@ -2369,61 +2369,61 @@
         "matches": [
           {
             "id": 12033,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-13T17:30:00.000000Z",
             "home_team": {
               "id": 146,
               "name": "Anadolu Efes Istanbul",
               "abbreviation": "EFS",
-              "score": null,
+              "score": 103,
               "is_valid": true
             },
             "away_team": {
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": null,
+              "score": 91,
               "is_valid": true
             }
           },
           {
             "id": 12034,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-13T19:15:00.000000Z",
             "home_team": {
               "id": 151,
               "name": "Panathinaikos AKTOR Athens",
               "abbreviation": "PAO",
-              "score": null,
+              "score": 74,
               "is_valid": true
             },
             "away_team": {
               "id": 140,
               "name": "FC Barcelona",
               "abbreviation": "BAR",
-              "score": null,
+              "score": 76,
               "is_valid": true
             }
           },
           {
             "id": 12032,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-13T19:30:00.000000Z",
             "home_team": {
               "id": 139,
               "name": "LDLC ASVEL Villeurbanne",
               "abbreviation": "ASV",
-              "score": null,
+              "score": 91,
               "is_valid": true
             },
             "away_team": {
               "id": 158,
               "name": "Besiktas Istanbul",
               "abbreviation": "BJK",
-              "score": null,
+              "score": 95,
               "is_valid": true
             }
           }
