@@ -3536,10 +3536,30 @@
         "number": 1,
         "matches": [
           {
+            "id": 12093,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2026-12-15T17:15:00.000000Z",
+            "home_team": {
+              "id": 146,
+              "name": "Anadolu Efes Istanbul",
+              "abbreviation": "EFS",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 152,
+              "name": "Partizan Mozzart Bet Belgrade",
+              "abbreviation": "PAR",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
             "id": 12088,
             "status": "scheduled",
             "ot": false,
-            "started_at": "2026-12-15T17:45:00.000000Z",
+            "started_at": "2026-12-15T19:15:00.000000Z",
             "home_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
@@ -3720,26 +3740,6 @@
               "score": null,
               "is_valid": true
             }
-          },
-          {
-            "id": 12093,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2026-12-16T19:45:00.000000Z",
-            "home_team": {
-              "id": 152,
-              "name": "Partizan Mozzart Bet Belgrade",
-              "abbreviation": "PAR",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 146,
-              "name": "Anadolu Efes Istanbul",
-              "abbreviation": "EFS",
-              "score": null,
-              "is_valid": true
-            }
           }
         ]
       }
@@ -3754,26 +3754,6 @@
         "id": 2562,
         "number": 1,
         "matches": [
-          {
-            "id": 12097,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2026-12-17T17:45:00.000000Z",
-            "home_team": {
-              "id": 147,
-              "name": "Fenerbahce Tarfin Istanbul",
-              "abbreviation": "FBT",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 148,
-              "name": "Maccabi Rapyd Tel Aviv",
-              "abbreviation": "MTA",
-              "score": null,
-              "is_valid": true
-            }
-          },
           {
             "id": 12095,
             "status": "scheduled",
@@ -3810,6 +3790,26 @@
               "id": 311,
               "name": "Dubai Basketball",
               "abbreviation": "DUB",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
+            "id": 12097,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2026-12-17T19:00:00.000000Z",
+            "home_team": {
+              "id": 147,
+              "name": "Fenerbahce Tarfin Istanbul",
+              "abbreviation": "FBT",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 148,
+              "name": "Maccabi Rapyd Tel Aviv",
+              "abbreviation": "MTA",
               "score": null,
               "is_valid": true
             }
@@ -6614,26 +6614,6 @@
         "number": 1,
         "matches": [
           {
-            "id": 12226,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2027-03-11T17:30:00.000000Z",
-            "home_team": {
-              "id": 146,
-              "name": "Anadolu Efes Istanbul",
-              "abbreviation": "EFS",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 152,
-              "name": "Partizan Mozzart Bet Belgrade",
-              "abbreviation": "PAR",
-              "score": null,
-              "is_valid": true
-            }
-          },
-          {
             "id": 12227,
             "status": "scheduled",
             "ot": false,
@@ -6669,6 +6649,26 @@
               "id": 139,
               "name": "LDLC ASVEL Villeurbanne",
               "abbreviation": "ASV",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
+            "id": 12226,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2027-03-11T19:45:00.000000Z",
+            "home_team": {
+              "id": 152,
+              "name": "Partizan Mozzart Bet Belgrade",
+              "abbreviation": "PAR",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 146,
+              "name": "Anadolu Efes Istanbul",
+              "abbreviation": "EFS",
               "score": null,
               "is_valid": true
             }

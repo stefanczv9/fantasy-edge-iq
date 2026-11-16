@@ -1002,7 +1002,7 @@ player_id,matchday_id,matchday,match_id,match_status,start_utc,start_local,home_
 8367.0,1571,4,12364,played,2026-10-21T18:30:00.000000Z,2026-10-21 20:30,RMA,URV,90,79,A,RMA,Maxima Roma,79,90,16.0,opponent,20.0,1.0,4.0,2.0,2.0,,1.0,4.0,6.0,,0.0,,,,,,,,,Glynn Watson,Guard,URV,12.6
 8367.0,1572,5,12379,played,2026-10-28T20:00:00.000000Z,2026-10-28 21:00,LLT,URV,82,80,A,LLT,La Laguna Tenerife,80,82,8.0,opponent,13.0,3.0,2.0,1.0,2.0,,2.0,3.0,8.0,,0.0,,,,,,,,,Glynn Watson,Guard,URV,12.6
 8367.0,1573,6,12397,played,2026-11-04T19:00:00.000000Z,2026-11-04 20:00,URV,SIA,98,77,H,SIA,Siauliai Basketball,98,77,12.1,opponent,11.0,2.0,4.0,0.0,0.0,,1.0,1.0,6.0,,0.0,,,,,,,,,Glynn Watson,Guard,URV,12.6
-8367.0,1574,7,12402,played,2026-11-10T19:30:00.000000Z,2026-11-10 20:30,LDN,URV,80,76,A,LDN,London Lions,76,80,4.0,opponent,4.0,5.0,3.0,,1.0,,1.0,2.0,6.0,,,,,,,,,,,Glynn Watson,Guard,URV,12.6
+8367.0,1574,7,12402,played,2026-11-10T19:30:00.000000Z,2026-11-10 20:30,LDN,URV,80,76,A,LDN,London Lions,76,80,4.0,opponent,4.0,5.0,3.0,0.0,1.0,,1.0,2.0,6.0,,0.0,,,,,,,,,Glynn Watson,Guard,URV,12.6
 8568.0,1568,1,12316,played,2026-09-30T18:00:00.000000Z,2026-09-30 20:00,NAP,JLB,84,76,H,JLB,Cosea JL Bourg-en-Bresse,84,76,0.0,opponent,,,,,,,,,,,,,,,,,,,,Leonardo Tote,Center,NAP,9.0
 8568.0,1569,2,12328,played,2026-10-06T17:00:00.000000Z,2026-10-06 19:00,BUD,NAP,75,93,A,BUD,Buducnost VOLI Podgorica,93,75,0.0,opponent,,,,,,,,,,,,,,,,,,,,Leonardo Tote,Center,NAP,9.0
 8568.0,1570,3,12349,played,2026-10-14T17:00:00.000000Z,2026-10-14 19:00,WKS,NAP,82,86,A,WKS,Slask Wroclaw,86,82,0.0,opponent,,,,,,,,,,,,,,,,,,,,Leonardo Tote,Center,NAP,9.0
@@ -1759,13 +1759,13 @@ player_id,matchday_id,matchday,match_id,match_status,start_utc,start_local,home_
 11259.0,1572,5,12379,played,2026-10-28T20:00:00.000000Z,2026-10-28 21:00,LLT,URV,82,80,H,URV,Umana Reyer Venice,82,80,0.0,opponent,,,,,,,,,,,,,,,,,,,,Giorgi Shermadini,Center,LLT,13.0
 11259.0,1573,6,12394,played,2026-11-05T20:00:00.000000Z,2026-11-05 21:00,LLT,UBT,113,73,H,UBT,U-BT Cluj-Napoca,113,73,28.6,opponent,21.0,5.0,1.0,0.0,1.0,2.0,7.0,2.0,2.0,1.0,0.0,,,,,,,,,Giorgi Shermadini,Center,LLT,13.0
 11259.0,1574,7,12412,played,2026-11-11T16:30:00.000000Z,2026-11-11 17:30,SIA,LLT,71,86,A,SIA,Siauliai Basketball,86,71,16.5,opponent,13.0,4.0,1.0,0.0,1.0,,4.0,2.0,3.0,1.0,0.0,,,,,,,,,Giorgi Shermadini,Center,LLT,13.0
-11260.0,1568,1,12312,played,2026-09-30T19:00:00.000000Z,2026-09-30 21:00,LLT,TTA,82,75,H,TTA,Turk Telekom Ankara,82,75,13.2,opponent,13.0,2.0,4.0,0.0,5.0,,1.0,2.0,1.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
-11260.0,1569,2,12323,played,2026-10-06T18:30:00.000000Z,2026-10-06 20:30,LDN,LLT,89,77,A,LDN,London Lions,77,89,1.0,opponent,2.0,1.0,6.0,0.0,2.0,1.0,2.0,4.0,3.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
-11260.0,1570,3,12346,played,2026-10-14T19:00:00.000000Z,2026-10-14 21:00,LLT,RMA,96,71,H,RMA,Maxima Roma,96,71,11.0,opponent,6.0,1.0,9.0,2.0,2.0,1.0,1.0,1.0,5.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
-11260.0,1571,4,12362,played,2026-10-21T17:30:00.000000Z,2026-10-21 19:30,SKY,LLT,94,104,A,SKY,Skyliners Frankfurt,104,94,5.5,opponent,7.0,2.0,5.0,0.0,4.0,,2.0,2.0,5.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
-11260.0,1572,5,12379,played,2026-10-28T20:00:00.000000Z,2026-10-28 21:00,LLT,URV,82,80,H,URV,Umana Reyer Venice,82,80,4.4,opponent,8.0,2.0,3.0,0.0,2.0,,,2.0,5.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
-11260.0,1573,6,12394,played,2026-11-05T20:00:00.000000Z,2026-11-05 21:00,LLT,UBT,113,73,H,UBT,U-BT Cluj-Napoca,113,73,14.3,opponent,12.0,1.0,3.0,1.0,2.0,,2.0,1.0,3.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
-11260.0,1574,7,12412,played,2026-11-11T16:30:00.000000Z,2026-11-11 17:30,SIA,LLT,71,86,A,SIA,Siauliai Basketball,86,71,0.0,opponent,,,,,,,,,,,,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
+11260.0,1568,1,12312,played,2026-09-30T19:00:00.000000Z,2026-09-30 21:00,LLT,TTA,82,75,H,TTA,Turk Telekom Ankara,82,75,13.2,inactive,13.0,2.0,4.0,0.0,5.0,,1.0,2.0,1.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
+11260.0,1569,2,12323,played,2026-10-06T18:30:00.000000Z,2026-10-06 20:30,LDN,LLT,89,77,A,LDN,London Lions,77,89,1.0,inactive,2.0,1.0,6.0,0.0,2.0,1.0,2.0,4.0,3.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
+11260.0,1570,3,12346,played,2026-10-14T19:00:00.000000Z,2026-10-14 21:00,LLT,RMA,96,71,H,RMA,Maxima Roma,96,71,11.0,inactive,6.0,1.0,9.0,2.0,2.0,1.0,1.0,1.0,5.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
+11260.0,1571,4,12362,played,2026-10-21T17:30:00.000000Z,2026-10-21 19:30,SKY,LLT,94,104,A,SKY,Skyliners Frankfurt,104,94,5.5,inactive,7.0,2.0,5.0,0.0,4.0,,2.0,2.0,5.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
+11260.0,1572,5,12379,played,2026-10-28T20:00:00.000000Z,2026-10-28 21:00,LLT,URV,82,80,H,URV,Umana Reyer Venice,82,80,4.4,inactive,8.0,2.0,3.0,0.0,2.0,,,2.0,5.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
+11260.0,1573,6,12394,played,2026-11-05T20:00:00.000000Z,2026-11-05 21:00,LLT,UBT,113,73,H,UBT,U-BT Cluj-Napoca,113,73,14.3,inactive,12.0,1.0,3.0,1.0,2.0,,2.0,1.0,3.0,,0.0,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
+11260.0,1574,7,12412,played,2026-11-11T16:30:00.000000Z,2026-11-11 17:30,SIA,LLT,71,86,A,SIA,Siauliai Basketball,86,71,0.0,inactive,,,,,,,,,,,,,,,,,,,,Marcelinho Huertas,Guard,LLT,10.3
 11261.0,1568,1,12312,played,2026-09-30T19:00:00.000000Z,2026-09-30 21:00,LLT,TTA,82,75,H,TTA,Turk Telekom Ankara,82,75,6.6,opponent,3.0,3.0,4.0,1.0,0.0,,1.0,,6.0,,0.0,,,,,,,,,Kyle Guy,Guard,LLT,11.1
 11261.0,1569,2,12323,played,2026-10-06T18:30:00.000000Z,2026-10-06 20:30,LDN,LLT,89,77,A,LDN,London Lions,77,89,0.0,opponent,9.0,0.0,3.0,1.0,3.0,,1.0,1.0,9.0,1.0,0.0,,,,,,,,,Kyle Guy,Guard,LLT,11.1
 11261.0,1570,3,12346,played,2026-10-14T19:00:00.000000Z,2026-10-14 21:00,LLT,RMA,96,71,H,RMA,Maxima Roma,96,71,5.5,opponent,10.0,1.0,2.0,2.0,3.0,,1.0,3.0,5.0,,0.0,,,,,,,,,Kyle Guy,Guard,LLT,11.1
