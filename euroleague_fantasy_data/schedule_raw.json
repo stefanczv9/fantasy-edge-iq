@@ -2442,41 +2442,41 @@
         "matches": [
           {
             "id": 12035,
-            "status": "scheduled",
+            "status": "playing",
             "ot": false,
             "started_at": "2026-11-17T16:00:00.000000Z",
             "home_team": {
               "id": 311,
               "name": "Dubai Basketball",
               "abbreviation": "DUB",
-              "score": null,
+              "score": 59,
               "is_valid": true
             },
             "away_team": {
               "id": 146,
               "name": "Anadolu Efes Istanbul",
               "abbreviation": "EFS",
-              "score": null,
+              "score": 53,
               "is_valid": true
             }
           },
           {
             "id": 12037,
-            "status": "scheduled",
+            "status": "playing",
             "ot": false,
             "started_at": "2026-11-17T17:00:00.000000Z",
             "home_team": {
               "id": 148,
               "name": "Maccabi Rapyd Tel Aviv",
               "abbreviation": "MTA",
-              "score": null,
+              "score": 32,
               "is_valid": true
             },
             "away_team": {
               "id": 149,
               "name": "Olympiacos Piraeus",
               "abbreviation": "OLY",
-              "score": null,
+              "score": 41,
               "is_valid": true
             }
           },

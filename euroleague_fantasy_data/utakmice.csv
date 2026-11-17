@@ -109,8 +109,8 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1538,11,2549,3,12033,played,False,2026-11-13T17:30:00.000000Z,2026-11-13 18:30,146,Anadolu Efes Istanbul,EFS,103.0,154,Virtus Bologna,VIR,91.0,EFS,103-91
 1538,11,2549,3,12034,played,False,2026-11-13T19:15:00.000000Z,2026-11-13 20:15,151,Panathinaikos AKTOR Athens,PAO,74.0,140,FC Barcelona,BAR,76.0,BAR,74-76
 1538,11,2549,3,12032,played,False,2026-11-13T19:30:00.000000Z,2026-11-13 20:30,139,LDLC ASVEL Villeurbanne,ASV,91.0,158,Besiktas Istanbul,BJK,95.0,BJK,91-95
-1539,12,2550,1,12035,scheduled,False,2026-11-17T16:00:00.000000Z,2026-11-17 17:00,311,Dubai Basketball,DUB,,146,Anadolu Efes Istanbul,EFS,,,
-1539,12,2550,1,12037,scheduled,False,2026-11-17T17:00:00.000000Z,2026-11-17 18:00,148,Maccabi Rapyd Tel Aviv,MTA,,149,Olympiacos Piraeus,OLY,,,
+1539,12,2550,1,12035,playing,False,2026-11-17T16:00:00.000000Z,2026-11-17 17:00,311,Dubai Basketball,DUB,59.0,146,Anadolu Efes Istanbul,EFS,53.0,DUB,59-53
+1539,12,2550,1,12037,playing,False,2026-11-17T17:00:00.000000Z,2026-11-17 18:00,148,Maccabi Rapyd Tel Aviv,MTA,32.0,149,Olympiacos Piraeus,OLY,41.0,OLY,32-41
 1539,12,2550,1,12036,scheduled,False,2026-11-17T18:00:00.000000Z,2026-11-17 19:00,155,Zalgiris Kaunas,ZAL,,141,FC Bayern Munich,BAY,,,
 1539,12,2550,1,12041,scheduled,False,2026-11-17T18:00:00.000000Z,2026-11-17 19:00,147,Fenerbahce Tarfin Istanbul,FBT,,139,LDLC ASVEL Villeurbanne,ASV,,,
 1539,12,2550,1,12038,scheduled,False,2026-11-17T19:30:00.000000Z,2026-11-17 20:30,143,Kosner Baskonia Vitoria-Gasteiz,KBA,,165,Hapoel IBI Tel Aviv,HTA,,,
