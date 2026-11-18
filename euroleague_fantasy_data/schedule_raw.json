@@ -2628,21 +2628,21 @@
         "matches": [
           {
             "id": 12044,
-            "status": "scheduled",
+            "status": "playing",
             "ot": false,
             "started_at": "2026-11-18T17:00:00.000000Z",
             "home_team": {
               "id": 158,
               "name": "Besiktas Istanbul",
               "abbreviation": "BJK",
-              "score": null,
+              "score": 10,
               "is_valid": true
             },
             "away_team": {
               "id": 153,
               "name": "Real Madrid",
               "abbreviation": "RMB",
-              "score": null,
+              "score": 2,
               "is_valid": true
             }
           }

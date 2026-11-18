@@ -116,8 +116,8 @@ match_id,matchday,matchday_id,status,start_utc,start_local,home_abbr,away_abbr,h
 12417,8,1575,played,2026-11-17T19:00:00.000000Z,2026-11-17 20:00,ROS,JLM,Rostock Seawolves,Hapoel Midtown Jerusalem,80.0,91.0,114.0,official EuroCup final
 12420,8,1575,played,2026-11-17T19:00:00.000000Z,2026-11-17 20:00,ROM,BKS,Roma Basketball,Bahcesehir College Istanbul,70.0,92.0,128.0,official EuroCup final
 12418,8,1575,played,2026-11-17T19:30:00.000000Z,2026-11-17 20:30,LDN,SIA,London Lions,Siauliai Basketball,68.0,55.0,120.0,official EuroCup final
-12422,8,1575,scheduled,2026-11-18T16:30:00.000000Z,2026-11-18 17:30,DER,RIG,Baglietto Derthona Tortona,Riga Zelli,,,,fantasy
-12425,8,1575,scheduled,2026-11-18T17:00:00.000000Z,2026-11-18 18:00,UBT,RMA,U-BT Cluj-Napoca,Maxima Roma,,,,fantasy
+12422,8,1575,playing,2026-11-18T16:30:00.000000Z,2026-11-18 17:30,DER,RIG,Baglietto Derthona Tortona,Riga Zelli,40.0,47.0,,fantasy
+12425,8,1575,playing,2026-11-18T17:00:00.000000Z,2026-11-18 18:00,UBT,RMA,U-BT Cluj-Napoca,Maxima Roma,11.0,14.0,,fantasy
 12421,8,1575,scheduled,2026-11-18T17:30:00.000000Z,2026-11-18 18:30,COL,BUR,Cedevita Olimpija Ljubljana,Recoletas Salud San Pablo Burgos,,,,fantasy
 12423,8,1575,scheduled,2026-11-18T18:00:00.000000Z,2026-11-18 19:00,ARI,MSB,Aris Thessaloniki,Le Mans Sarthe Basket,,,,fantasy
 12427,8,1575,scheduled,2026-11-18T18:00:00.000000Z,2026-11-18 19:00,BUD,WKS,Buducnost VOLI Podgorica,Slask Wroclaw,,,,fantasy

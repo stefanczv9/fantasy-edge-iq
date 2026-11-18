@@ -118,7 +118,7 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1539,12,2550,1,12040,played,False,2026-11-17T19:30:00.000000Z,2026-11-17 20:30,140,FC Barcelona,BAR,86.0,150,Paris Basketball,PBB,89.0,PBB,86-89
 1539,12,2550,1,12042,played,False,2026-11-17T19:45:00.000000Z,2026-11-17 20:45,152,Partizan Mozzart Bet Belgrade,PAR,64.0,174,Valencia Basket,VBC,76.0,VBC,64-76
 1539,12,2550,1,12043,played,False,2026-11-17T20:00:00.000000Z,2026-11-17 21:00,154,Virtus Bologna,VIR,84.0,151,Panathinaikos AKTOR Athens,PAO,79.0,VIR,84-79
-1539,12,2551,2,12044,scheduled,False,2026-11-18T17:00:00.000000Z,2026-11-18 18:00,158,Besiktas Istanbul,BJK,,153,Real Madrid,RMB,,,
+1539,12,2551,2,12044,playing,False,2026-11-18T17:00:00.000000Z,2026-11-18 18:00,158,Besiktas Istanbul,BJK,10.0,153,Real Madrid,RMB,2.0,BJK,10-2
 1540,13,2552,1,12046,scheduled,False,2026-11-19T17:15:00.000000Z,2026-11-19 18:15,148,Maccabi Rapyd Tel Aviv,MTA,,311,Dubai Basketball,DUB,,,
 1540,13,2552,1,12045,scheduled,False,2026-11-19T18:00:00.000000Z,2026-11-19 19:00,155,Zalgiris Kaunas,ZAL,,151,Panathinaikos AKTOR Athens,PAO,,,
 1540,13,2552,1,12048,scheduled,False,2026-11-19T19:00:00.000000Z,2026-11-19 20:00,141,FC Bayern Munich,BAY,,143,Kosner Baskonia Vitoria-Gasteiz,KBA,,,
