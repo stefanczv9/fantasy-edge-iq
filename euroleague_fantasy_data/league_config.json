@@ -1,8 +1,8 @@
 {
-  "status_id": 2,
+  "status_id": 5,
   "standings_calculations": {
-    "updated_at": "2026-11-18T08:20:54.000000Z",
-    "is_outdated": true
+    "updated_at": "2026-11-18T21:53:52.000000Z",
+    "is_outdated": false
   },
   "maintenance": false,
   "players_list_limitations_enabled": false,

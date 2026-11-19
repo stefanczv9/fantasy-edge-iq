@@ -32,6 +32,10 @@
     "name": "Tyger Campbell"
   },
   {
+    "team": "LDN",
+    "name": "Dominykas Grunkis"
+  },
+  {
     "team": "LIE",
     "name": "Bandja Sy"
   },
@@ -45,11 +49,11 @@
   },
   {
     "team": "MAN",
-    "name": "Isaiah Mobley"
+    "name": "Luka Scuka"
   },
   {
     "team": "MAN",
-    "name": "Luka Scuka"
+    "name": "Isaiah Mobley"
   },
   {
     "team": "MSB",
@@ -74,6 +78,14 @@
   {
     "team": "TRE",
     "name": "Markuss Jahovics"
+  },
+  {
+    "team": "UBT",
+    "name": "Leland Walker"
+  },
+  {
+    "team": "ULM",
+    "name": "Filip Stanic"
   },
   {
     "team": "WKS",
