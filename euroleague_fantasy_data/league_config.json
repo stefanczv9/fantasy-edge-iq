@@ -1,8 +1,8 @@
 {
-  "status_id": 5,
+  "status_id": 2,
   "standings_calculations": {
     "updated_at": "2026-11-18T21:53:52.000000Z",
-    "is_outdated": false
+    "is_outdated": true
   },
   "maintenance": false,
   "players_list_limitations_enabled": false,
@@ -12,18 +12,18 @@
   "current_players_list_id": 49,
   "allows_head_to_head_tournaments": true,
   "current_matchday": {
-    "id": 1539,
-    "number": 12,
+    "id": 1540,
+    "number": 13,
     "num_rounds": 2
   },
   "current_round": {
-    "id": 2551,
-    "number": 2,
-    "started_at": "2026-11-18T16:59:00.000000Z"
+    "id": 2552,
+    "number": 1,
+    "started_at": "2026-11-19T17:14:00.000000Z"
   },
   "previous_matchday": {
-    "id": 1538,
-    "number": 11
+    "id": 1539,
+    "number": 12
   },
   "current_bracket": null,
   "teams": [
@@ -547,7 +547,7 @@
   ],
   "predictions": null,
   "match_predictor": {
-    "starts_at": "2026-11-17T16:00:00.000000Z",
+    "starts_at": "2026-11-19T17:15:00.000000Z",
     "configs": {
       "add_matchups": true,
       "predictions": [

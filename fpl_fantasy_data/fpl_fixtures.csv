@@ -199,36 +199,36 @@ fixture_id,event,kickoff_utc,kickoff_local,started,finished,minutes,home_team,ho
 196,20,2027-01-06T19:30:00Z,2027-01-06 20:30,False,False,0,Ipswich Town,IPS,Coventry City,COV,,,,,2,2
 197,20,2027-01-06T20:15:00Z,2027-01-06 21:15,False,False,0,Leeds,LEE,Man City,MCI,,,,,4,3
 198,20,2027-01-07T20:00:00Z,2027-01-07 21:00,False,False,0,Man Utd,MUN,Newcastle,NEW,,,,,3,3
-201,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Aston Villa,AVL,Man Utd,MUN,,,,,3,3
-202,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Bournemouth,BOU,Ipswich Town,IPS,,,,,2,4
-203,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Brentford,BRE,Brighton,BHA,,,,,4,4
+205,21,2027-01-16T12:30:00Z,2027-01-16 13:30,False,False,0,Coventry City,COV,Everton,EVE,,,,,3,2
 204,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Chelsea,CHE,Sunderland,SUN,,,,,2,4
-205,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Coventry City,COV,Everton,EVE,,,,,3,2
 206,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Hull City,HUL,Arsenal,ARS,,,,,4,2
 207,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Liverpool,LIV,Crystal Palace,CRY,,,,,2,4
 208,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Man City,MCI,Nott'm Forest,NFO,,,,,3,5
 209,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Newcastle,NEW,Fulham,FUL,,,,,2,3
-210,21,2027-01-16T15:00:00Z,2027-01-16 16:00,False,False,0,Spurs,TOT,Leeds,LEE,,,,,3,3
-211,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Arsenal,ARS,Newcastle,NEW,,,,,3,5
-212,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Brighton,BHA,Man City,MCI,,,,,4,4
-213,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Crystal Palace,CRY,Spurs,TOT,,,,,3,2
-214,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Everton,EVE,Brentford,BRE,,,,,3,3
+201,21,2027-01-16T17:30:00Z,2027-01-16 18:30,False,False,0,Aston Villa,AVL,Man Utd,MUN,,,,,3,3
+202,21,2027-01-17T14:00:00Z,2027-01-17 15:00,False,False,0,Bournemouth,BOU,Ipswich Town,IPS,,,,,2,4
+210,21,2027-01-17T16:30:00Z,2027-01-17 17:30,False,False,0,Spurs,TOT,Leeds,LEE,,,,,3,3
+203,21,2027-01-18T20:00:00Z,2027-01-18 21:00,False,False,0,Brentford,BRE,Brighton,BHA,,,,,4,4
 215,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Fulham,FUL,Aston Villa,AVL,,,,,3,3
 216,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Ipswich Town,IPS,Hull City,HUL,,,,,2,2
-217,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Leeds,LEE,Chelsea,CHE,,,,,4,3
-218,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Man Utd,MUN,Liverpool,LIV,,,,,4,3
-219,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Nott'm Forest,NFO,Bournemouth,BOU,,,,,3,2
-220,22,2027-01-23T15:00:00Z,2027-01-23 16:00,False,False,0,Sunderland,SUN,Coventry City,COV,,,,,2,3
+211,22,2027-01-23T17:30:00Z,2027-01-23 18:30,False,False,0,Arsenal,ARS,Newcastle,NEW,,,,,3,5
+212,22,2027-01-23T20:00:00Z,2027-01-23 21:00,False,False,0,Brighton,BHA,Man City,MCI,,,,,4,4
+213,22,2027-01-24T14:00:00Z,2027-01-24 15:00,False,False,0,Crystal Palace,CRY,Spurs,TOT,,,,,3,2
+214,22,2027-01-24T14:00:00Z,2027-01-24 15:00,False,False,0,Everton,EVE,Brentford,BRE,,,,,3,3
+219,22,2027-01-24T14:00:00Z,2027-01-24 15:00,False,False,0,Nott'm Forest,NFO,Bournemouth,BOU,,,,,3,2
+220,22,2027-01-24T14:00:00Z,2027-01-24 15:00,False,False,0,Sunderland,SUN,Coventry City,COV,,,,,2,3
+218,22,2027-01-24T16:30:00Z,2027-01-24 17:30,False,False,0,Man Utd,MUN,Liverpool,LIV,,,,,4,3
+217,22,2027-01-25T20:00:00Z,2027-01-25 21:00,False,False,0,Leeds,LEE,Chelsea,CHE,,,,,4,3
+227,23,2027-01-30T12:30:00Z,2027-01-30 13:30,False,False,0,Liverpool,LIV,Everton,EVE,,,,,3,4
 221,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Aston Villa,AVL,Ipswich Town,IPS,,,,,2,3
-222,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Bournemouth,BOU,Fulham,FUL,,,,,2,4
-223,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Brentford,BRE,Man Utd,MUN,,,,,3,4
-224,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Chelsea,CHE,Nott'm Forest,NFO,,,,,3,4
-225,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Coventry City,COV,Leeds,LEE,,,,,3,2
-226,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Hull City,HUL,Crystal Palace,CRY,,,,,2,2
-227,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Liverpool,LIV,Everton,EVE,,,,,3,4
-228,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Man City,MCI,Arsenal,ARS,,,,,4,5
 229,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Newcastle,NEW,Brighton,BHA,,,,,4,3
-230,23,2027-01-30T15:00:00Z,2027-01-30 16:00,False,False,0,Spurs,TOT,Sunderland,SUN,,,,,2,3
+224,23,2027-01-30T17:30:00Z,2027-01-30 18:30,False,False,0,Chelsea,CHE,Nott'm Forest,NFO,,,,,3,4
+222,23,2027-01-31T14:00:00Z,2027-01-31 15:00,False,False,0,Bournemouth,BOU,Fulham,FUL,,,,,2,4
+225,23,2027-01-31T14:00:00Z,2027-01-31 15:00,False,False,0,Coventry City,COV,Leeds,LEE,,,,,3,2
+226,23,2027-01-31T14:00:00Z,2027-01-31 15:00,False,False,0,Hull City,HUL,Crystal Palace,CRY,,,,,2,2
+230,23,2027-01-31T14:00:00Z,2027-01-31 15:00,False,False,0,Spurs,TOT,Sunderland,SUN,,,,,2,3
+228,23,2027-01-31T16:30:00Z,2027-01-31 17:30,False,False,0,Man City,MCI,Arsenal,ARS,,,,,4,5
+223,23,2027-02-01T20:00:00Z,2027-02-01 21:00,False,False,0,Brentford,BRE,Man Utd,MUN,,,,,3,4
 231,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Arsenal,ARS,Liverpool,LIV,,,,,4,5
 232,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Brighton,BHA,Hull City,HUL,,,,,2,4
 233,24,2027-02-06T15:00:00Z,2027-02-06 16:00,False,False,0,Crystal Palace,CRY,Coventry City,COV,,,,,2,2
