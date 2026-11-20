@@ -2661,121 +2661,121 @@
         "matches": [
           {
             "id": 12046,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-19T17:15:00.000000Z",
             "home_team": {
               "id": 148,
               "name": "Maccabi Rapyd Tel Aviv",
               "abbreviation": "MTA",
-              "score": null,
+              "score": 74,
               "is_valid": true
             },
             "away_team": {
               "id": 311,
               "name": "Dubai Basketball",
               "abbreviation": "DUB",
-              "score": null,
+              "score": 80,
               "is_valid": true
             }
           },
           {
             "id": 12045,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-19T18:00:00.000000Z",
             "home_team": {
               "id": 155,
               "name": "Zalgiris Kaunas",
               "abbreviation": "ZAL",
-              "score": null,
+              "score": 72,
               "is_valid": true
             },
             "away_team": {
               "id": 151,
               "name": "Panathinaikos AKTOR Athens",
               "abbreviation": "PAO",
-              "score": null,
+              "score": 87,
               "is_valid": true
             }
           },
           {
             "id": 12048,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-19T19:00:00.000000Z",
             "home_team": {
               "id": 141,
               "name": "FC Bayern Munich",
               "abbreviation": "BAY",
-              "score": null,
+              "score": 100,
               "is_valid": true
             },
             "away_team": {
               "id": 143,
               "name": "Kosner Baskonia Vitoria-Gasteiz",
               "abbreviation": "KBA",
-              "score": null,
+              "score": 81,
               "is_valid": true
             }
           },
           {
             "id": 12047,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-19T19:30:00.000000Z",
             "home_team": {
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
-              "score": null,
+              "score": 78,
               "is_valid": true
             },
             "away_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
               "abbreviation": "FBT",
-              "score": null,
+              "score": 70,
               "is_valid": true
             }
           },
           {
             "id": 12050,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-19T19:45:00.000000Z",
             "home_team": {
               "id": 150,
               "name": "Paris Basketball",
               "abbreviation": "PBB",
-              "score": null,
+              "score": 97,
               "is_valid": true
             },
             "away_team": {
               "id": 165,
               "name": "Hapoel IBI Tel Aviv",
               "abbreviation": "HTA",
-              "score": null,
+              "score": 96,
               "is_valid": true
             }
           },
           {
             "id": 12049,
-            "status": "scheduled",
+            "status": "playing",
             "ot": false,
             "started_at": "2026-11-19T20:00:00.000000Z",
             "home_team": {
               "id": 174,
               "name": "Valencia Basket",
               "abbreviation": "VBC",
-              "score": null,
+              "score": 92,
               "is_valid": true
             },
             "away_team": {
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": null,
+              "score": 86,
               "is_valid": true
             }
           }
