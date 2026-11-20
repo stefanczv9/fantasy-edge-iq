@@ -262,7 +262,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "32",
@@ -331,7 +331,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "30",
@@ -364,8 +364,8 @@
     "total_plus": -2.200000000000001,
     "popularity": 0.01,
     "is_on_fire": false,
-    "is_injured": false,
-    "started_from_bench": true
+    "is_injured": true,
+    "started_from_bench": false
   },
   {
     "id": 3785,
@@ -431,7 +431,7 @@
     "quotation": 12.4,
     "avg_fantasy_pts": 12.38,
     "total_plus": -1.4000000000000004,
-    "popularity": 0.02,
+    "popularity": 0.019,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -500,7 +500,7 @@
     "quotation": 13.9,
     "avg_fantasy_pts": 15.98,
     "total_plus": 0.9000000000000004,
-    "popularity": 0.104,
+    "popularity": 0.105,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -963,7 +963,7 @@
     "popularity": 0.034,
     "is_on_fire": false,
     "is_injured": false,
-    "started_from_bench": true
+    "started_from_bench": false
   },
   {
     "id": 3825,
@@ -1006,7 +1006,7 @@
     "quotation": 6.6,
     "avg_fantasy_pts": 4.4,
     "total_plus": -1,
-    "popularity": 0.006,
+    "popularity": 0.007,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -1121,7 +1121,7 @@
     "quotation": 16.3,
     "avg_fantasy_pts": 21.17,
     "total_plus": 1.8000000000000007,
-    "popularity": 0.09,
+    "popularity": 0.091,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": false
@@ -1228,7 +1228,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "12",
@@ -1259,7 +1259,7 @@
     "quotation": 13.2,
     "avg_fantasy_pts": 13.69,
     "total_plus": 0.1999999999999993,
-    "popularity": 0.038,
+    "popularity": 0.039,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -1351,7 +1351,7 @@
     "quotation": 9.9,
     "avg_fantasy_pts": 15.8,
     "total_plus": 3.7,
-    "popularity": 0.317,
+    "popularity": 0.316,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": false
@@ -1918,7 +1918,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "33",
@@ -2010,7 +2010,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "41",
@@ -3053,7 +3053,7 @@
     "quotation": 4,
     "avg_fantasy_pts": 1.42,
     "total_plus": 0,
-    "popularity": 0.218,
+    "popularity": 0.217,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -3306,7 +3306,7 @@
     "quotation": 6.2,
     "avg_fantasy_pts": 8.67,
     "total_plus": 1.7000000000000002,
-    "popularity": 0.174,
+    "popularity": 0.173,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -3574,7 +3574,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "11",
@@ -3896,7 +3896,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "9",
@@ -3942,7 +3942,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": null,
@@ -3965,7 +3965,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "6",
@@ -3996,7 +3996,7 @@
     "quotation": 5.4,
     "avg_fantasy_pts": 19,
     "total_plus": 0.2999999999999998,
-    "popularity": 0.192,
+    "popularity": 0.193,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -4310,7 +4310,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "1",
@@ -4356,7 +4356,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "21",
@@ -5146,7 +5146,7 @@
     "quotation": 7.8,
     "avg_fantasy_pts": 3.06,
     "total_plus": -2.8,
-    "popularity": 0.001,
+    "popularity": 0.002,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -5171,8 +5171,8 @@
     "total_plus": 0.8000000000000007,
     "popularity": 0.036,
     "is_on_fire": false,
-    "is_injured": false,
-    "started_from_bench": true
+    "is_injured": true,
+    "started_from_bench": false
   },
   {
     "id": 7210,
@@ -5744,7 +5744,7 @@
     "quotation": 4,
     "avg_fantasy_pts": 0,
     "total_plus": 0,
-    "popularity": 0.003,
+    "popularity": 0.004,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -6472,7 +6472,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "20",
@@ -6794,7 +6794,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "5",
@@ -6817,7 +6817,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "24",
@@ -6840,7 +6840,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "44",
@@ -7747,7 +7747,7 @@
     "total_plus": -1.299999999999999,
     "popularity": 0.007,
     "is_on_fire": false,
-    "is_injured": false,
+    "is_injured": true,
     "started_from_bench": false
   },
   {
@@ -7929,7 +7929,7 @@
     "quotation": 4,
     "avg_fantasy_pts": 2.74,
     "total_plus": -0.7000000000000002,
-    "popularity": 0.083,
+    "popularity": 0.082,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -8136,7 +8136,7 @@
     "quotation": 17.7,
     "avg_fantasy_pts": 22.46,
     "total_plus": 1.6999999999999993,
-    "popularity": 0.189,
+    "popularity": 0.188,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": false
@@ -8197,7 +8197,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "2",
@@ -8243,7 +8243,7 @@
     },
     "team": {
       "id": 158,
-      "name": "Besiktas Istanbul",
+      "name": "Besiktas Fuzul Istanbul",
       "abbreviation": "BJK"
     },
     "jersey": "10",
@@ -8389,7 +8389,7 @@
     "quotation": 4,
     "avg_fantasy_pts": 0,
     "total_plus": 0,
-    "popularity": 0.038,
+    "popularity": 0.039,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true

@@ -160,7 +160,7 @@
             "started_at": "2026-09-25T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 94,
               "is_valid": true
@@ -406,7 +406,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 109,
               "is_valid": true
@@ -538,7 +538,7 @@
             "started_at": "2026-10-02T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 82,
               "is_valid": true
@@ -850,7 +850,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 92,
               "is_valid": true
@@ -1049,7 +1049,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 82,
               "is_valid": true
@@ -1201,7 +1201,7 @@
             "started_at": "2026-10-16T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 95,
               "is_valid": true
@@ -1367,7 +1367,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 80,
               "is_valid": true
@@ -1685,7 +1685,7 @@
             "started_at": "2026-10-28T17:30:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 73,
               "is_valid": true
@@ -1971,7 +1971,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 103,
               "is_valid": true
@@ -2129,7 +2129,7 @@
             "started_at": "2026-11-06T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 67,
               "is_valid": true
@@ -2421,7 +2421,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 95,
               "is_valid": true
@@ -2633,7 +2633,7 @@
             "started_at": "2026-11-18T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": 83,
               "is_valid": true
@@ -2761,7 +2761,7 @@
           },
           {
             "id": 12049,
-            "status": "playing",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-19T20:00:00.000000Z",
             "home_team": {
@@ -2775,7 +2775,7 @@
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": 86,
+              "score": 87,
               "is_valid": true
             }
           }
@@ -2859,7 +2859,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -2885,7 +2885,7 @@
             "started_at": "2026-11-24T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -3230,7 +3230,7 @@
             "started_at": "2026-12-04T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -3456,7 +3456,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -3688,7 +3688,7 @@
             "started_at": "2026-12-16T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -3914,7 +3914,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -3980,7 +3980,7 @@
             "started_at": "2026-12-22T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -4352,7 +4352,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -4425,7 +4425,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -4809,7 +4809,7 @@
             "started_at": "2027-01-13T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -4988,7 +4988,7 @@
             "started_at": "2027-01-15T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -5108,7 +5108,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -5300,7 +5300,7 @@
             "started_at": "2027-01-28T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -5606,7 +5606,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -5785,7 +5785,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -6003,7 +6003,7 @@
             "started_at": "2027-02-11T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -6189,7 +6189,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -6401,7 +6401,7 @@
             "started_at": "2027-03-09T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -6793,7 +6793,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -6965,7 +6965,7 @@
             "started_at": "2027-03-19T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -7251,7 +7251,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -7470,7 +7470,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -7589,7 +7589,7 @@
             },
             "away_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -7721,7 +7721,7 @@
             "started_at": "2027-04-06T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -8086,7 +8086,7 @@
             "started_at": "2027-04-09T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true
@@ -8305,7 +8305,7 @@
             "started_at": "2027-04-16T17:00:00.000000Z",
             "home_team": {
               "id": 158,
-              "name": "Besiktas Istanbul",
+              "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
               "score": null,
               "is_valid": true

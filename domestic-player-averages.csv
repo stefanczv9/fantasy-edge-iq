@@ -167,25 +167,12 @@ Regional,ABA,BUD,Budućnost VOLI,Jerry Boutsiele,7,7,17.09,8.29,3.71,3.71,1.29,2
 Regional,ABA,BUD,Budućnost VOLI,Stefan Dzordzevic,1,1,11.72,8.0,6.0,6.0,1.0,5.0,0.427,0.683,2026-10-02 20:30
 Regional,ABA,BUD,Budućnost VOLI,Oleksandr Kovliar,6,6,28.27,13.67,10.33,2.5,5.67,7.17,0.253,0.483,2026-11-14 18:00
 Regional,ABA,BUD,Budućnost VOLI,Axel Bouteille,6,6,20.11,6.33,7.17,4.5,0.17,7.83,0.39,0.315,2026-11-14 18:00
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Devontae Cacok,7,7,18.33,14.43,8.57,6.0,2.0,5.43,0.296,0.787,2026-11-14 19:55
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Kenneth Lofton Jr.,9,9,24.67,17.33,14.0,6.22,2.78,10.33,0.419,0.703,2026-11-14 19:55
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Jaleen Smith,9,9,26.5,11.11,9.67,2.67,3.67,8.0,0.302,0.419,2026-11-14 19:55
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Shahar Luberboim,6,6,1.5,-0.67,0.0,0.17,0.0,0.5,0.333,-0.444,2026-10-17 19:15
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Shake Milton,9,9,25.0,16.11,12.56,3.89,3.22,7.67,0.307,0.644,2026-11-14 19:55
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Nimrod Levi,10,10,16.11,4.1,6.2,3.1,0.3,5.1,0.317,0.254,2026-11-14 19:55
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,David Roddy,7,7,25.5,9.57,10.14,3.86,2.43,9.71,0.381,0.375,2026-11-08 19:15
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Gabriel Chachashvili,8,8,11.14,3.25,2.88,2.5,0.38,2.25,0.202,0.292,2026-11-14 19:55
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Ethan Burg,10,10,18.0,7.2,7.1,2.7,1.3,5.2,0.289,0.4,2026-11-14 19:55
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Yovel Zoosman,9,9,23.75,10.11,6.89,2.78,1.44,4.44,0.187,0.426,2026-11-14 19:55
 Poland,PLK,WKS,Śląsk Wrocław,Anthony Hickey,7,6,27.39,19.5,14.57,3.0,5.0,10.83,0.396,0.712,2026-11-14 19:30
 Poland,PLK,WKS,Śląsk Wrocław,Isaih Moore,5,4,20.42,8.5,8.6,3.4,0.4,5.5,0.269,0.416,2026-11-01 17:30
 Poland,PLK,WKS,Śląsk Wrocław,Robinson,6,5,25.06,20.4,15.0,6.33,3.0,10.4,0.415,0.814,2026-11-14 19:30
 Poland,PLK,WKS,Śląsk Wrocław,Malik Parsons,6,5,22.17,7.8,9.0,2.17,1.17,7.0,0.316,0.352,2026-11-14 19:30
 Poland,PLK,WKS,Śląsk Wrocław,Tymoteusz Sternicki,7,6,15.18,8.5,5.14,3.14,1.86,3.83,0.253,0.56,2026-11-14 19:30
 Poland,PLK,WKS,Śląsk Wrocław,Paul Scruggs,7,6,22.33,12.83,7.29,3.29,5.29,5.5,0.246,0.575,2026-11-14 19:30
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Yotam Hanochi,8,8,9.71,3.38,4.0,1.25,0.38,3.25,0.335,0.347,2026-11-14 19:55
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Dusan Miletic,6,6,16.8,16.0,7.67,6.0,1.83,4.67,0.278,0.952,2026-11-08 19:15
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Roi Huber,8,8,12.57,4.88,2.75,1.75,2.5,2.38,0.189,0.388,2026-11-08 19:15
 Lithuania,LKL,SIA,Šiauliai,Selim Fofana,9,9,24.24,10.22,12.22,2.44,3.22,10.56,0.436,0.422,2026-11-14 15:50
 Germany,BBL,ULM,ratiopharm Ulm,Oluwasimisola Shittu,6,6,20.11,12.33,9.0,7.83,1.17,8.17,0.406,0.613,2026-10-25 18:00
 Germany,BBL,ULM,ratiopharm Ulm,Jaylen Sims,8,8,26.81,11.38,12.12,3.75,2.75,10.0,0.373,0.424,2026-11-14 18:30
@@ -245,7 +232,6 @@ Regional,ABA,BUD,Budućnost VOLI,Fletcher Magee,6,6,21.5,13.17,12.33,2.67,2.5,7.
 Regional,ABA,BUD,Budućnost VOLI,Andrija Slavkovic,1,1,8.33,1.0,0.0,0.0,0.0,0.0,0.0,0.12,2026-10-10 21:00
 Spain,ACB,LLT,La Laguna Tenerife,Wesley Van Beck,7,7,20.07,12.14,11.0,2.86,1.0,4.86,0.242,0.605,2026-11-14 19:30
 Lithuania,LKL,SIA,Šiauliai,Kassim Nicholson,6,6,17.98,4.83,5.0,3.0,0.83,5.33,0.297,0.269,2026-11-14 15:50
-Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Lorenzo Brown,3,3,26.33,13.33,8.0,3.67,5.0,7.0,0.266,0.506,2026-11-14 19:55
 Germany,BBL,ULM,ratiopharm Ulm,Nil Failenschmid,1,1,1.22,-1.0,0.0,0.0,0.0,1.0,0.822,-0.822,2026-09-20 16:30
 France,Betclic Elite,JLB,Bourg-en-Bresse,Leni Monnet,2,2,6.71,1.5,1.5,2.0,0.0,2.5,0.373,0.224,2026-11-08 16:30
 France,Betclic Elite,JLB,Bourg-en-Bresse,Tyson Walker,2,2,16.73,4.5,9.0,1.0,2.0,8.0,0.478,0.269,2026-11-14 18:30
@@ -877,3 +863,17 @@ Spain,ACB,KBA,Kosner Baskonia,Kenan Kamenjas,1,1,23.8,23.0,15.0,8.0,2.0,10.0,0.4
 Italy,LBA,TRE,Dolomiti Energia Trentino,Andres Forray,1,1,8.0,0.0,2.0,1.0,0.0,0.0,0.0,0.0,2026-11-15 19:00
 France,Betclic Elite,ASV,ASVEL,Yohan Bassoumba,1,1,1.27,0.0,1.0,0.0,0.0,0.0,0.0,0.0,2026-11-15 19:00
 France,Betclic Elite,ASV,ASVEL,Mathis Dossou-yovo,1,1,18.07,11.0,8.0,8.0,2.0,2.0,0.111,0.609,2026-11-15 19:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Devontae Cacok,7,7,18.33,14.43,8.57,6.0,2.0,5.43,0.296,0.787,2026-11-14 19:55
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Kenneth Lofton Jr.,10,10,24.4,16.8,13.2,6.1,3.2,9.8,0.402,0.689,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Jaleen Smith,10,10,25.89,10.9,9.6,2.6,3.4,7.8,0.301,0.421,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Shahar Luberboim,6,6,1.5,-0.67,0.0,0.17,0.0,0.5,0.333,-0.444,2026-10-17 19:15
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Shake Milton,10,10,24.56,16.1,12.2,3.5,3.3,7.2,0.293,0.656,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Nimrod Levi,11,11,16.1,4.64,6.55,3.09,0.45,5.18,0.322,0.288,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,David Roddy,8,8,24.71,10.88,11.38,3.62,2.25,9.75,0.395,0.44,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Gabriel Chachashvili,9,9,11.62,3.44,2.78,2.56,0.78,2.44,0.21,0.296,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Ethan Burg,11,11,18.1,6.55,6.82,2.73,1.36,5.73,0.316,0.362,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Yovel Zoosman,10,10,23.33,10.4,7.1,3.0,1.4,4.2,0.18,0.446,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Yotam Hanochi,9,9,10.0,4.11,4.33,1.33,0.44,3.22,0.322,0.411,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Dusan Miletic,7,7,16.5,15.14,7.71,6.0,1.71,5.0,0.303,0.918,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Roi Huber,9,9,13.38,5.11,3.33,1.78,2.67,3.0,0.224,0.382,2026-11-20 12:00
+Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Lorenzo Brown,3,3,26.33,13.33,8.0,3.67,5.0,7.0,0.266,0.506,2026-11-14 19:55
