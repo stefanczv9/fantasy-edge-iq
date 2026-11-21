@@ -125,10 +125,10 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1540,13,2552,1,12047,played,False,2026-11-19T19:30:00.000000Z,2026-11-19 20:30,145,Armani Olimpia Milan,MIL,78.0,147,Fenerbahce Tarfin Istanbul,FBT,70.0,MIL,78-70
 1540,13,2552,1,12050,played,False,2026-11-19T19:45:00.000000Z,2026-11-19 20:45,150,Paris Basketball,PBB,97.0,165,Hapoel IBI Tel Aviv,HTA,96.0,PBB,97-96
 1540,13,2552,1,12049,played,False,2026-11-19T20:00:00.000000Z,2026-11-19 21:00,174,Valencia Basket,VBC,92.0,154,Virtus Bologna,VIR,87.0,VBC,92-87
-1540,13,2553,2,12051,scheduled,False,2026-11-20T17:30:00.000000Z,2026-11-20 18:30,146,Anadolu Efes Istanbul,EFS,,139,LDLC ASVEL Villeurbanne,ASV,,,
-1540,13,2553,2,12054,scheduled,False,2026-11-20T19:15:00.000000Z,2026-11-20 20:15,149,Olympiacos Piraeus,OLY,,153,Real Madrid,RMB,,,
-1540,13,2553,2,12052,scheduled,False,2026-11-20T19:30:00.000000Z,2026-11-20 20:30,140,FC Barcelona,BAR,,144,Crvena Zvezda Meridianbet Belgrade,CZV,,,
-1540,13,2553,2,12053,scheduled,False,2026-11-20T19:45:00.000000Z,2026-11-20 20:45,152,Partizan Mozzart Bet Belgrade,PAR,,158,Besiktas Fuzul Istanbul,BJK,,,
+1540,13,2553,2,12051,played,False,2026-11-20T17:30:00.000000Z,2026-11-20 18:30,146,Anadolu Efes Istanbul,EFS,107.0,139,LDLC ASVEL Villeurbanne,ASV,81.0,EFS,107-81
+1540,13,2553,2,12054,played,False,2026-11-20T19:15:00.000000Z,2026-11-20 20:15,149,Olympiacos Piraeus,OLY,92.0,153,Real Madrid,RMB,76.0,OLY,92-76
+1540,13,2553,2,12052,played,True,2026-11-20T19:30:00.000000Z,2026-11-20 20:30,140,FC Barcelona,BAR,100.0,144,Crvena Zvezda Meridianbet Belgrade,CZV,103.0,CZV,100-103
+1540,13,2553,2,12053,played,True,2026-11-20T19:45:00.000000Z,2026-11-20 20:45,152,Partizan Mozzart Bet Belgrade,PAR,91.0,158,Besiktas Fuzul Istanbul,BJK,87.0,PAR,91-87
 1541,14,2554,1,12056,scheduled,False,2026-11-24T17:00:00.000000Z,2026-11-24 18:00,158,Besiktas Fuzul Istanbul,BJK,,150,Paris Basketball,PBB,,,
 1541,14,2554,1,12055,scheduled,False,2026-11-24T18:00:00.000000Z,2026-11-24 19:00,144,Crvena Zvezda Meridianbet Belgrade,CZV,,154,Virtus Bologna,VIR,,,
 1541,14,2554,1,12058,scheduled,False,2026-11-24T19:00:00.000000Z,2026-11-24 20:00,141,FC Bayern Munich,BAY,,148,Maccabi Rapyd Tel Aviv,MTA,,,

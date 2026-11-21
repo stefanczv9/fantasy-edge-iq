@@ -22,22 +22,6 @@ Bulgaria,NBL,BLK,Balkan Botevgrad,U. Kamka-Chomche,4,4,13.78,12.0,6.25,5.5,0.5,3
 Bulgaria,NBL,BLK,Balkan Botevgrad,Dimitar Dimitrov,4,4,15.35,5.5,5.5,2.0,0.75,3.0,0.195,0.358,2026-11-07 17:00
 Bulgaria,NBL,BLK,Balkan Botevgrad,Gael Bonilla,3,3,27.47,15.33,10.33,7.0,1.67,9.33,0.34,0.558,2026-11-07 17:00
 Bulgaria,NBL,BLK,Balkan Botevgrad,Javante Mccoy,2,2,24.71,19.0,14.5,4.5,4.5,12.0,0.486,0.769,2026-11-07 17:00
-United Kingdom,SLB,LDN,London Lions,Joel Scott,9,9,23.18,13.67,10.0,4.33,2.11,6.78,0.292,0.59,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Maxwell Lewis,9,9,18.82,11.78,10.33,3.56,1.67,6.89,0.366,0.626,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Devante Jones,8,8,17.82,10.25,8.75,1.25,3.12,6.12,0.344,0.575,2026-11-06 20:00
-United Kingdom,SLB,LDN,London Lions,Morayoninuoluwa Soluade,5,5,18.97,7.8,2.8,2.8,4.4,3.0,0.158,0.411,2026-10-02 20:30
-United Kingdom,SLB,LDN,London Lions,Joshua O'garro,10,10,18.44,9.1,5.9,3.6,1.0,4.0,0.217,0.493,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Ethan Price,10,10,17.63,10.5,9.0,3.8,1.2,5.6,0.318,0.596,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Rai Aaryndeep,1,1,19.25,14.0,9.0,8.0,1.0,6.0,0.312,0.727,2026-09-18 20:30
-United Kingdom,SLB,LDN,London Lions,Tarik Phillip,7,7,19.85,6.0,7.43,3.43,2.29,7.71,0.389,0.302,2026-11-06 20:00
-United Kingdom,SLB,LDN,London Lions,Landrius Horton,9,9,23.25,11.33,9.44,1.89,3.11,5.89,0.253,0.488,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Deane Williams,8,8,22.63,9.0,8.0,3.88,1.62,5.5,0.243,0.398,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Thomas Kennedy,10,10,17.88,14.3,11.1,4.4,1.9,7.4,0.414,0.8,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Keenan Evans,4,4,20.39,10.0,9.75,2.0,3.5,7.0,0.343,0.49,2026-10-02 20:30
-United Kingdom,SLB,LDN,London Lions,Ade Adebayo,4,4,10.3,2.25,3.0,1.25,0.5,3.0,0.291,0.219,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Emilis Zibuda,5,5,11.64,3.2,3.0,1.8,0.2,2.0,0.172,0.275,2026-11-13 20:30
-United Kingdom,SLB,LDN,London Lions,Aaryn Rai,3,3,17.81,5.33,1.0,3.33,2.0,2.33,0.131,0.299,2026-10-30 20:00
-United Kingdom,SLB,LDN,London Lions,Mo Soluade,3,3,19.68,2.0,1.67,1.0,2.0,2.33,0.119,0.102,2026-10-30 20:00
 Turkey,BSL,TOF,Tofas Bursa,Bryce Jones,7,7,26.69,15.71,15.14,3.0,4.86,10.0,0.375,0.589,2026-11-14 13:30
 Turkey,BSL,TOF,Tofas Bursa,Jamuni McNeace,7,7,17.68,8.57,5.0,4.86,0.43,3.86,0.218,0.485,2026-11-14 13:30
 Turkey,BSL,TOF,Tofas Bursa,Yigitcan Saybir,4,4,27.39,12.25,14.5,4.25,1.0,11.5,0.42,0.447,2026-10-17 17:00
@@ -504,16 +488,6 @@ Regional,ABA,COL,Cedevita Olimpija,Noah Kirkwood,5,5,22.2,8.2,8.0,2.8,1.6,7.4,0.
 Regional,ABA,COL,Cedevita Olimpija,Urban Kroflic,7,7,21.88,10.29,10.86,2.71,1.86,7.43,0.34,0.47,2026-11-15 18:30
 Regional,ABA,COL,Cedevita Olimpija,David Skara,7,7,19.92,10.57,7.86,4.29,1.43,4.29,0.215,0.531,2026-11-15 18:30
 Regional,ABA,COL,Cedevita Olimpija,Jayce Johnson,6,6,14.97,8.0,4.33,5.17,0.67,2.5,0.167,0.534,2026-11-15 18:30
-Regional,ABA,BOS,Bosna BH Telecom,Shawn O Neal Pipes Jr,6,6,21.64,11.17,12.83,2.0,1.5,7.17,0.331,0.516,2026-11-15 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Marcus Domask,6,6,10.4,7.17,5.0,2.0,1.17,3.17,0.305,0.689,2026-11-08 11:00
-Regional,ABA,BOS,Bosna BH Telecom,Deandre Gholston,7,7,26.12,10.29,12.43,2.0,1.14,8.57,0.328,0.394,2026-11-15 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Edin Atic,7,7,19.5,9.14,6.43,4.14,3.71,5.71,0.293,0.469,2026-11-15 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Adin Vrabac,7,7,16.97,6.43,4.14,2.29,1.29,2.86,0.168,0.379,2026-11-15 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Reginald Jordan Perry,2,2,26.22,22.0,21.0,7.0,1.0,14.5,0.553,0.839,2026-10-10 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Gary Browne Ramirez,7,7,18.35,9.43,6.86,3.0,2.29,4.57,0.249,0.514,2026-11-15 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Darko Talic,7,7,21.12,10.29,7.57,2.29,4.29,5.0,0.237,0.487,2026-11-15 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Nikola Popovic,4,4,16.18,10.75,9.25,3.75,2.75,6.0,0.371,0.664,2026-11-15 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Ryan Hawkins,7,7,19.29,7.14,6.29,2.43,0.43,4.71,0.244,0.37,2026-11-15 17:00
 Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Anthony Cowan,1,1,27.68,14.0,16.0,0.0,6.0,10.0,0.361,0.506,2026-09-17 20:00
 Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Cameron Houindo,1,1,21.97,4.0,6.0,2.0,0.0,5.0,0.228,0.182,2026-09-17 20:00
 Slovenia,Liga OTP banka,COL,Cedevita Olimpija,Miha Cerkvenik,1,1,24.8,3.0,4.0,2.0,1.0,7.0,0.282,0.121,2026-09-17 20:00
@@ -547,7 +521,6 @@ Greece,GBL,ARI,Aris Betsson,Ej Liddell,6,6,21.79,15.17,12.83,5.5,1.17,8.83,0.405
 Greece,GBL,ARI,Aris Betsson,Kostas Antetokounmpo,6,6,11.67,6.17,4.33,3.0,0.67,3.33,0.286,0.528,2026-11-07 14:00
 Greece,GBL,ARI,Aris Betsson,Thanasis Antetokounmpo,7,7,8.04,3.57,1.43,1.43,0.71,1.29,0.16,0.444,2026-11-15 16:30
 Greece,GBL,ARI,Aris Betsson,Adam Mokoka,7,7,21.44,5.86,4.86,2.29,2.14,4.71,0.22,0.273,2026-11-15 16:30
-Regional,ABA,BOS,Bosna BH Telecom,Alija Islamovic,3,3,5.86,1.0,1.67,0.33,0.0,0.67,0.114,0.171,2026-11-15 17:00
 Germany,BBL,ROS,Rostock Seawolves,Artur Konontsuk,9,9,24.48,13.78,12.56,4.78,1.56,9.11,0.372,0.563,2026-11-15 15:00
 Germany,BBL,ROS,Rostock Seawolves,Zach Copeland,8,8,21.72,13.5,13.12,3.12,3.88,8.38,0.386,0.622,2026-11-07 18:30
 Germany,BBL,ROS,Rostock Seawolves,Crockett T.J.,7,7,24.47,10.71,12.86,2.71,3.29,9.29,0.379,0.438,2026-11-01 15:00
@@ -564,17 +537,6 @@ Italy,LBA,TRE,Dolomiti Energia Trentino,Federico Cattapan,4,4,2.75,-0.5,1.5,0.25
 Italy,LBA,TRE,Dolomiti Energia Trentino,Antonio Barra,1,1,4.0,-4.0,0.0,0.0,0.0,1.0,0.25,-1.0,2026-10-10 20:00
 Italy,LBA,TRE,Dolomiti Energia Trentino,Mansour Bayo,2,2,2.5,-0.5,0.0,0.0,0.0,0.5,0.2,-0.2,2026-11-15 19:00
 Regional,ABA,COL,Cedevita Olimpija,Jordan Gainey,6,6,21.17,6.83,8.83,1.67,1.5,8.5,0.401,0.323,2026-11-15 18:30
-France,Betclic Elite,MSB,Le Mans,Carlos Stewart,8,8,24.02,19.12,21.25,2.25,2.12,12.62,0.526,0.796,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,Bastien Grasshoff,8,8,20.33,9.0,9.88,2.5,2.75,7.25,0.357,0.443,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,Jordan King,8,8,15.4,10.75,12.38,0.75,3.12,7.25,0.471,0.698,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,Melvin Ajinca,7,7,25.21,11.29,12.57,2.71,1.71,9.14,0.363,0.448,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,Leopold Delaunay,7,7,17.93,9.29,5.86,4.29,3.14,4.57,0.255,0.518,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,Ugo Doumbia,8,8,14.11,9.38,5.25,2.75,1.75,2.5,0.177,0.665,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,Wilfried Yeguete,5,5,16.25,6.2,3.4,4.0,1.4,2.0,0.123,0.382,2026-10-24 18:00
-France,Betclic Elite,MSB,Le Mans,Moses Wood,8,8,23.63,13.12,12.38,2.88,1.75,7.5,0.317,0.555,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,Lucas Dufeal,8,8,21.4,14.12,8.38,4.88,2.0,3.75,0.175,0.66,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,TaShawn Thomas,7,7,19.61,8.57,4.0,4.0,1.57,2.71,0.138,0.437,2026-11-15 19:00
-France,Betclic Elite,MSB,Le Mans,Swann Penda,8,8,12.6,8.0,5.62,3.12,0.88,2.75,0.218,0.635,2026-11-15 19:00
 Germany,BBL,SKY,SKYLINERS Frankfurt,Thomas Klepeisz,7,7,19.16,4.57,2.86,1.86,1.57,3.0,0.157,0.239,2026-11-15 15:00
 Germany,BBL,SKY,SKYLINERS Frankfurt,Till Pape,7,7,24.97,15.43,13.14,4.43,2.0,7.43,0.298,0.618,2026-11-15 15:00
 Germany,BBL,SKY,SKYLINERS Frankfurt,Judah Mintz,7,7,23.91,18.57,17.57,3.43,3.71,11.29,0.472,0.777,2026-11-15 15:00
@@ -593,13 +555,10 @@ Germany,BBL,CHE,NINERS Chemnitz,Alfons Milatz,2,2,1.14,1.5,1.5,0.0,0.0,0.5,0.438
 Greece,GBL,ARI,Aris Betsson,Elija Mitrou-Long,4,4,21.71,10.25,8.75,4.25,2.5,8.5,0.391,0.472,2026-11-15 16:30
 Greece,GBL,ARI,Aris Betsson,Chrysostomos Chatzilamprou,3,3,4.34,1.67,1.0,1.0,0.33,1.0,0.23,0.384,2026-11-07 14:00
 Regional,ABA,COL,Cedevita Olimpija,Osayi Osifo,4,4,10.99,5.0,4.25,1.75,1.0,2.25,0.205,0.455,2026-11-07 17:00
-Regional,ABA,BOS,Bosna BH Telecom,Reggie Perry,5,5,26.98,22.0,17.2,9.0,2.8,12.2,0.452,0.815,2026-11-15 17:00
-Regional,ABA,BOS,Bosna BH Telecom,James Banks,5,5,9.19,5.4,2.6,2.8,0.6,1.6,0.174,0.588,2026-11-15 17:00
 Italy,LBA,DER,Bertram Derthona Tortona,Paul Eboua,5,5,15.2,8.8,5.4,3.4,0.6,2.2,0.145,0.579,2026-11-15 17:30
 Greece,GBL,ARI,Aris Betsson,Stefan Jovic,2,2,13.85,3.5,3.0,0.5,2.5,3.5,0.253,0.253,2026-11-07 14:00
 Greece,GBL,ARI,Aris Betsson,Stylianos Poulianitis,2,2,5.04,-0.5,0.0,0.0,0.5,1.0,0.198,-0.099,2026-11-07 14:00
 Regional,ABA,COL,Cedevita Olimpija,Derin Can Ustun,2,2,4.48,2.0,2.0,0.0,0.5,1.5,0.335,0.446,2026-11-15 18:30
-France,Betclic Elite,MSB,Le Mans,Madiba Diaby Cisse,2,2,4.12,3.0,1.5,1.5,0.0,0.5,0.121,0.729,2026-11-15 19:00
 Italy,LBA,TRE,Dolomiti Energia Trentino,Vittorio Triggiani,1,1,0.0,0.0,0.0,0.0,0.0,0.0,,,2026-11-01 16:00
 Italy,LBA,RMA,Maxima Roma,Francesco Carnevale,1,1,1.0,-1.0,0.0,0.0,0.0,1.0,1.0,-1.0,2026-11-01 16:00
 Italy,LBA,NAP,Napoli Basketball,Leonardo Tote,3,3,7.67,4.0,5.33,0.0,1.33,3.0,0.391,0.522,2026-11-15 17:00
@@ -618,11 +577,8 @@ Greece,GBL,ARI,Aris Betsson,Or Cornelius,1,1,,6.0,2.0,1.0,1.0,0.0,,,2026-10-24 1
 Germany,BBL,CHE,NINERS Chemnitz,Stefan Smith,2,2,,14.0,12.5,0.5,0.5,4.0,,,2026-10-31 20:00
 Germany,BBL,CHE,NINERS Chemnitz,Ben Burnham,4,4,27.89,22.25,16.75,4.0,4.0,7.25,0.26,0.798,2026-11-15 18:00
 Germany,BBL,CHE,NINERS Chemnitz,Ryan Mikesell,3,3,24.23,12.0,10.33,1.67,2.67,6.0,0.248,0.495,2026-11-07 20:00
-Regional,ABA,BOS,Bosna BH Telecom,Shawn Pipes,1,1,,18.0,15.0,0.0,1.0,3.0,,,2026-10-30 20:30
 Regional,ABA,COL,Cedevita Olimpija,Matt Hurt,3,3,24.87,12.67,14.33,2.0,0.67,8.67,0.349,0.509,2026-11-15 18:30
 Lithuania,LKL,NEP,Neptūnas,Elvar Már Friðriksson,1,1,,4.0,0.0,0.0,1.0,5.0,,,2026-10-31 15:50
-France,Betclic Elite,MSB,Le Mans,Leopold Delauney,1,1,,21.0,10.0,2.0,3.0,0.0,,,2026-10-31 18:00
-France,Betclic Elite,MSB,Le Mans,Nathan Kuta,3,3,9.89,6.0,3.67,2.0,0.67,1.33,0.135,0.607,2026-11-15 19:00
 Germany,BBL,CHE,NINERS Chemnitz,Luca Kellig,1,1,,-2.0,-1.0,0.0,0.0,1.0,,,2026-10-31 20:00
 Greece,GBL,ARI,Aris Betsson,Elijah Mitrou-Long,1,1,,12.0,5.0,1.0,1.0,2.0,,,2026-11-01 16:00
 Greece,GBL,ARI,Aris Betsson,Vassilis Toliopoulos,1,1,,15.0,14.0,0.0,0.0,2.0,,,2026-11-01 16:00
@@ -877,3 +833,49 @@ Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Yotam Hanochi,9,9,10.0,4.11,4.33,1.33,0
 Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Dusan Miletic,7,7,16.5,15.14,7.71,6.0,1.71,5.0,0.303,0.918,2026-11-20 12:00
 Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Roi Huber,9,9,13.38,5.11,3.33,1.78,2.67,3.0,0.224,0.382,2026-11-20 12:00
 Israel,IBSL,JLM,Hapoel Midtown Jerusalem,Lorenzo Brown,3,3,26.33,13.33,8.0,3.67,5.0,7.0,0.266,0.506,2026-11-14 19:55
+Regional,ABA,BOS,Bosna BH Telecom,Shawn O Neal Pipes Jr,7,7,20.66,10.57,12.71,1.71,1.43,6.71,0.325,0.512,2026-11-20 20:00
+Regional,ABA,BOS,Bosna BH Telecom,Marcus Domask,6,6,10.4,7.17,5.0,2.0,1.17,3.17,0.305,0.689,2026-11-08 11:00
+Regional,ABA,BOS,Bosna BH Telecom,Deandre Gholston,8,8,26.23,9.88,12.12,2.38,1.25,9.0,0.343,0.376,2026-11-20 20:00
+Regional,ABA,BOS,Bosna BH Telecom,Edin Atic,8,8,19.63,8.5,5.88,4.12,3.38,5.5,0.28,0.433,2026-11-20 20:00
+Regional,ABA,BOS,Bosna BH Telecom,Adin Vrabac,8,8,17.15,6.12,4.0,2.5,1.12,2.75,0.16,0.357,2026-11-20 20:00
+Regional,ABA,BOS,Bosna BH Telecom,Reginald Jordan Perry,2,2,26.22,22.0,21.0,7.0,1.0,14.5,0.553,0.839,2026-10-10 17:00
+Regional,ABA,BOS,Bosna BH Telecom,Gary Browne Ramirez,8,8,18.14,9.5,6.75,3.12,2.62,4.62,0.255,0.524,2026-11-20 20:00
+Regional,ABA,BOS,Bosna BH Telecom,Darko Talic,8,8,21.4,9.0,7.12,2.25,4.0,5.25,0.245,0.421,2026-11-20 20:00
+Regional,ABA,BOS,Bosna BH Telecom,Nikola Popovic,5,5,18.74,12.0,9.0,4.4,2.8,6.0,0.32,0.64,2026-11-20 20:00
+Regional,ABA,BOS,Bosna BH Telecom,Ryan Hawkins,8,8,18.94,6.12,5.75,2.25,0.38,4.75,0.251,0.323,2026-11-20 20:00
+United Kingdom,SLB,LDN,London Lions,Joel Scott,10,10,22.43,13.0,10.4,4.0,1.9,6.9,0.308,0.58,2026-11-20 20:30
+United Kingdom,SLB,LDN,London Lions,Maxwell Lewis,10,10,19.02,11.8,10.6,3.3,1.8,7.1,0.373,0.62,2026-11-20 20:30
+United Kingdom,SLB,LDN,London Lions,Devante Jones,8,8,17.82,10.25,8.75,1.25,3.12,6.12,0.344,0.575,2026-11-06 20:00
+United Kingdom,SLB,LDN,London Lions,Morayoninuoluwa Soluade,5,5,18.97,7.8,2.8,2.8,4.4,3.0,0.158,0.411,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Joshua O'garro,11,11,19.47,9.09,6.36,3.64,1.0,4.64,0.238,0.467,2026-11-20 20:30
+United Kingdom,SLB,LDN,London Lions,Ethan Price,11,11,18.51,9.73,8.36,3.82,1.09,5.45,0.295,0.526,2026-11-20 20:30
+United Kingdom,SLB,LDN,London Lions,Rai Aaryndeep,1,1,19.25,14.0,9.0,8.0,1.0,6.0,0.312,0.727,2026-09-18 20:30
+United Kingdom,SLB,LDN,London Lions,Tarik Phillip,7,7,19.85,6.0,7.43,3.43,2.29,7.71,0.389,0.302,2026-11-06 20:00
+United Kingdom,SLB,LDN,London Lions,Landrius Horton,9,9,23.25,11.33,9.44,1.89,3.11,5.89,0.253,0.488,2026-11-13 20:30
+United Kingdom,SLB,LDN,London Lions,Deane Williams,8,8,22.63,9.0,8.0,3.88,1.62,5.5,0.243,0.398,2026-11-13 20:30
+United Kingdom,SLB,LDN,London Lions,Thomas Kennedy,11,11,18.4,14.45,11.09,4.73,1.91,7.64,0.415,0.786,2026-11-20 20:30
+United Kingdom,SLB,LDN,London Lions,Keenan Evans,4,4,20.39,10.0,9.75,2.0,3.5,7.0,0.343,0.49,2026-10-02 20:30
+United Kingdom,SLB,LDN,London Lions,Ade Adebayo,5,5,12.03,2.0,2.4,1.4,0.4,2.8,0.233,0.166,2026-11-20 20:30
+United Kingdom,SLB,LDN,London Lions,Emilis Zibuda,6,6,12.41,3.5,3.0,2.0,0.33,2.17,0.175,0.282,2026-11-20 20:30
+Regional,ABA,BOS,Bosna BH Telecom,Alija Islamovic,3,3,5.86,1.0,1.67,0.33,0.0,0.67,0.114,0.171,2026-11-15 17:00
+France,Betclic Elite,MSB,Le Mans,Carlos Stewart,9,9,24.11,18.67,20.78,2.0,2.22,12.33,0.512,0.774,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,Bastien Grasshoff,9,9,19.66,8.11,9.11,2.33,2.56,7.0,0.356,0.412,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,Jordan King,9,9,15.36,9.11,11.0,0.67,2.78,6.67,0.434,0.593,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,Melvin Ajinca,8,8,23.94,9.62,11.0,2.62,1.5,8.5,0.355,0.402,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,Leopold Delaunay,8,8,18.31,9.25,5.88,4.25,3.5,5.25,0.287,0.505,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,Ugo Doumbia,9,9,14.31,9.44,6.33,2.67,1.89,3.22,0.225,0.66,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,Wilfried Yeguete,5,5,16.25,6.2,3.4,4.0,1.4,2.0,0.123,0.382,2026-10-24 18:00
+France,Betclic Elite,MSB,Le Mans,Moses Wood,9,9,23.48,13.33,12.33,2.89,1.67,7.22,0.308,0.568,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,Lucas Dufeal,9,9,21.23,14.56,8.78,4.67,1.89,4.22,0.199,0.686,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,TaShawn Thomas,8,8,19.2,8.12,4.25,3.75,1.5,2.88,0.15,0.423,2026-11-20 20:30
+France,Betclic Elite,MSB,Le Mans,Swann Penda,9,9,13.74,7.89,5.67,3.44,0.89,3.11,0.226,0.574,2026-11-20 20:30
+Regional,ABA,BOS,Bosna BH Telecom,Reggie Perry,6,6,27.23,21.83,18.0,8.33,2.33,12.0,0.441,0.802,2026-11-20 20:00
+Regional,ABA,BOS,Bosna BH Telecom,James Banks,6,6,9.0,5.67,2.83,2.67,0.5,1.67,0.185,0.63,2026-11-20 20:00
+United Kingdom,SLB,LDN,London Lions,Aaryn Rai,3,3,17.81,5.33,1.0,3.33,2.0,2.33,0.131,0.299,2026-10-30 20:00
+United Kingdom,SLB,LDN,London Lions,Mo Soluade,3,3,19.68,2.0,1.67,1.0,2.0,2.33,0.119,0.102,2026-10-30 20:00
+France,Betclic Elite,MSB,Le Mans,Madiba Diaby Cisse,2,2,4.12,3.0,1.5,1.5,0.0,0.5,0.121,0.729,2026-11-15 19:00
+Regional,ABA,BOS,Bosna BH Telecom,Shawn Pipes,1,1,,18.0,15.0,0.0,1.0,3.0,,,2026-10-30 20:30
+France,Betclic Elite,MSB,Le Mans,Leopold Delauney,1,1,,21.0,10.0,2.0,3.0,0.0,,,2026-10-31 18:00
+France,Betclic Elite,MSB,Le Mans,Nathan Kuta,4,4,10.4,4.5,2.75,1.75,0.75,1.0,0.096,0.433,2026-11-20 20:30
+United Kingdom,SLB,LDN,London Lions,Jaden Shackelford,1,1,24.3,15.0,17.0,2.0,2.0,9.0,0.37,0.617,2026-11-20 20:30
+United Kingdom,SLB,LDN,London Lions,Dominykas Grunkis,1,1,25.2,10.0,12.0,2.0,4.0,5.0,0.198,0.397,2026-11-20 20:30
