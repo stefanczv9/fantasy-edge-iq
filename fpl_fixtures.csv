@@ -100,12 +100,12 @@ fixture_id,event,kickoff_utc,kickoff_local,started,finished,minutes,home_team,ho
 100,10,2026-11-08T14:00:00Z,2026-11-08 15:00,True,True,90,Sunderland,SUN,Chelsea,CHE,1.0,0.0,1-0,SUN,4,3
 98,10,2026-11-08T16:30:00Z,2026-11-08 17:30,True,True,90,Man Utd,MUN,Aston Villa,AVL,4.0,4.0,4-4,,3,3
 108,11,2026-11-21T12:30:00Z,2026-11-21 13:30,True,False,90,Man City,MCI,Fulham,FUL,1.0,1.0,,,2,5
-101,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,45,Aston Villa,AVL,Sunderland,SUN,0.0,0.0,,,2,3
-102,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,45,Bournemouth,BOU,Nott'm Forest,NFO,2.0,0.0,,,3,4
-104,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,45,Chelsea,CHE,Leeds,LEE,1.0,1.0,,,3,4
-105,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,45,Coventry City,COV,Crystal Palace,CRY,2.0,2.0,,,2,2
-110,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,45,Spurs,TOT,Ipswich Town,IPS,1.0,0.0,,,2,3
-109,11,2026-11-21T17:30:00Z,2026-11-21 18:30,False,False,0,Newcastle,NEW,Arsenal,ARS,,,,,4,3
+101,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,90,Aston Villa,AVL,Sunderland,SUN,0.0,0.0,,,2,3
+102,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,90,Bournemouth,BOU,Nott'm Forest,NFO,2.0,0.0,,,3,4
+104,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,90,Chelsea,CHE,Leeds,LEE,1.0,4.0,,,3,4
+105,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,90,Coventry City,COV,Crystal Palace,CRY,3.0,2.0,,,2,2
+110,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,90,Spurs,TOT,Ipswich Town,IPS,2.0,0.0,,,2,3
+109,11,2026-11-21T17:30:00Z,2026-11-21 18:30,True,False,90,Newcastle,NEW,Arsenal,ARS,2.0,2.0,,,4,3
 106,11,2026-11-22T14:00:00Z,2026-11-22 15:00,False,False,0,Hull City,HUL,Brighton,BHA,,,,,4,2
 107,11,2026-11-22T16:30:00Z,2026-11-22 17:30,False,False,0,Liverpool,LIV,Man Utd,MUN,,,,,3,4
 103,11,2026-11-23T20:00:00Z,2026-11-23 21:00,False,False,0,Brentford,BRE,Everton,EVE,,,,,3,4
