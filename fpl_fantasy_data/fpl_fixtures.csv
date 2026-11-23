@@ -107,7 +107,7 @@ fixture_id,event,kickoff_utc,kickoff_local,started,finished,minutes,home_team,ho
 110,11,2026-11-21T15:00:00Z,2026-11-21 16:00,True,False,90,Spurs,TOT,Ipswich Town,IPS,2.0,0.0,,,2,3
 109,11,2026-11-21T17:30:00Z,2026-11-21 18:30,True,False,90,Newcastle,NEW,Arsenal,ARS,2.0,2.0,,,4,3
 106,11,2026-11-22T14:00:00Z,2026-11-22 15:00,True,False,90,Hull City,HUL,Brighton,BHA,2.0,0.0,,,4,2
-107,11,2026-11-22T16:30:00Z,2026-11-22 17:30,False,False,0,Liverpool,LIV,Man Utd,MUN,,,,,3,4
+107,11,2026-11-22T16:30:00Z,2026-11-22 17:30,True,False,90,Liverpool,LIV,Man Utd,MUN,4.0,0.0,,,3,4
 103,11,2026-11-23T20:00:00Z,2026-11-23 21:00,False,False,0,Brentford,BRE,Everton,EVE,,,,,3,4
 119,12,2026-11-27T20:00:00Z,2026-11-27 21:00,False,False,0,Nott'm Forest,NFO,Chelsea,CHE,,,,,4,2
 117,12,2026-11-28T15:00:00Z,2026-11-28 16:00,False,False,0,Leeds,LEE,Coventry City,COV,,,,,2,3
