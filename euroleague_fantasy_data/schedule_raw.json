@@ -3224,6 +3224,26 @@
         "number": 2,
         "matches": [
           {
+            "id": 12072,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2026-12-03T20:00:00.000000Z",
+            "home_team": {
+              "id": 143,
+              "name": "Kosner Baskonia Vitoria-Gasteiz",
+              "abbreviation": "KBA",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 148,
+              "name": "Maccabi Rapyd Tel Aviv",
+              "abbreviation": "MTA",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
             "id": 12070,
             "status": "scheduled",
             "ot": false,
@@ -3279,26 +3299,6 @@
               "id": 139,
               "name": "LDLC ASVEL Villeurbanne",
               "abbreviation": "ASV",
-              "score": null,
-              "is_valid": true
-            }
-          },
-          {
-            "id": 12072,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2026-12-04T19:30:00.000000Z",
-            "home_team": {
-              "id": 143,
-              "name": "Kosner Baskonia Vitoria-Gasteiz",
-              "abbreviation": "KBA",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 148,
-              "name": "Maccabi Rapyd Tel Aviv",
-              "abbreviation": "MTA",
               "score": null,
               "is_valid": true
             }
@@ -3536,6 +3536,26 @@
         "number": 1,
         "matches": [
           {
+            "id": 12085,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2026-12-15T17:00:00.000000Z",
+            "home_team": {
+              "id": 148,
+              "name": "Maccabi Rapyd Tel Aviv",
+              "abbreviation": "MTA",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 155,
+              "name": "Zalgiris Kaunas",
+              "abbreviation": "ZAL",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
             "id": 12093,
             "status": "scheduled",
             "ot": false,
@@ -3651,26 +3671,6 @@
               "id": 141,
               "name": "FC Bayern Munich",
               "abbreviation": "BAY",
-              "score": null,
-              "is_valid": true
-            }
-          },
-          {
-            "id": 12085,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2026-12-15T20:00:00.000000Z",
-            "home_team": {
-              "id": 148,
-              "name": "Maccabi Rapyd Tel Aviv",
-              "abbreviation": "MTA",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 155,
-              "name": "Zalgiris Kaunas",
-              "abbreviation": "ZAL",
               "score": null,
               "is_valid": true
             }
@@ -4216,7 +4216,7 @@
             "id": 12115,
             "status": "scheduled",
             "ot": false,
-            "started_at": "2026-12-29T18:00:00.000000Z",
+            "started_at": "2026-12-29T19:00:00.000000Z",
             "home_team": {
               "id": 165,
               "name": "Hapoel IBI Tel Aviv",
@@ -5002,26 +5002,6 @@
             }
           },
           {
-            "id": 12154,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2027-01-15T19:15:00.000000Z",
-            "home_team": {
-              "id": 149,
-              "name": "Olympiacos Piraeus",
-              "abbreviation": "OLY",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 150,
-              "name": "Paris Basketball",
-              "abbreviation": "PBB",
-              "score": null,
-              "is_valid": true
-            }
-          },
-          {
             "id": 12152,
             "status": "scheduled",
             "ot": false,
@@ -5057,6 +5037,26 @@
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
               "abbreviation": "FBT",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
+            "id": 12154,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2027-01-26T19:15:00.000000Z",
+            "home_team": {
+              "id": 149,
+              "name": "Olympiacos Piraeus",
+              "abbreviation": "OLY",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 150,
+              "name": "Paris Basketball",
+              "abbreviation": "PBB",
               "score": null,
               "is_valid": true
             }
@@ -7738,7 +7738,7 @@
             "id": 12280,
             "status": "scheduled",
             "ot": false,
-            "started_at": "2027-04-06T17:45:00.000000Z",
+            "started_at": "2027-04-06T17:30:00.000000Z",
             "home_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
@@ -7835,26 +7835,6 @@
             }
           },
           {
-            "id": 12281,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2027-04-06T18:45:00.000000Z",
-            "home_team": {
-              "id": 150,
-              "name": "Paris Basketball",
-              "abbreviation": "PBB",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 146,
-              "name": "Anadolu Efes Istanbul",
-              "abbreviation": "EFS",
-              "score": null,
-              "is_valid": true
-            }
-          },
-          {
             "id": 12282,
             "status": "scheduled",
             "ot": false,
@@ -7870,6 +7850,26 @@
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
+            "id": 12281,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2027-04-06T19:00:00.000000Z",
+            "home_team": {
+              "id": 150,
+              "name": "Paris Basketball",
+              "abbreviation": "PBB",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 146,
+              "name": "Anadolu Efes Istanbul",
+              "abbreviation": "EFS",
               "score": null,
               "is_valid": true
             }
