@@ -2880,81 +2880,81 @@
         "matches": [
           {
             "id": 12056,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-24T17:00:00.000000Z",
             "home_team": {
               "id": 158,
               "name": "Besiktas Fuzul Istanbul",
               "abbreviation": "BJK",
-              "score": null,
+              "score": 76,
               "is_valid": true
             },
             "away_team": {
               "id": 150,
               "name": "Paris Basketball",
               "abbreviation": "PBB",
-              "score": null,
+              "score": 88,
               "is_valid": true
             }
           },
           {
             "id": 12055,
-            "status": "scheduled",
+            "status": "playing",
             "ot": false,
             "started_at": "2026-11-24T18:00:00.000000Z",
             "home_team": {
               "id": 144,
               "name": "Crvena Zvezda Meridianbet Belgrade",
               "abbreviation": "CZV",
-              "score": null,
+              "score": 57,
               "is_valid": true
             },
             "away_team": {
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": null,
+              "score": 74,
               "is_valid": true
             }
           },
           {
             "id": 12058,
-            "status": "scheduled",
+            "status": "playing",
             "ot": false,
             "started_at": "2026-11-24T19:00:00.000000Z",
             "home_team": {
               "id": 141,
               "name": "FC Bayern Munich",
               "abbreviation": "BAY",
-              "score": null,
+              "score": 24,
               "is_valid": true
             },
             "away_team": {
               "id": 148,
               "name": "Maccabi Rapyd Tel Aviv",
               "abbreviation": "MTA",
-              "score": null,
+              "score": 28,
               "is_valid": true
             }
           },
           {
             "id": 12059,
-            "status": "scheduled",
+            "status": "playing",
             "ot": false,
             "started_at": "2026-11-24T19:30:00.000000Z",
             "home_team": {
               "id": 174,
               "name": "Valencia Basket",
               "abbreviation": "VBC",
-              "score": null,
+              "score": 0,
               "is_valid": true
             },
             "away_team": {
               "id": 151,
               "name": "Panathinaikos AKTOR Athens",
               "abbreviation": "PAO",
-              "score": null,
+              "score": 0,
               "is_valid": true
             }
           },
