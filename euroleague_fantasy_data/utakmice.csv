@@ -130,11 +130,11 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1540,13,2553,2,12052,played,True,2026-11-20T19:30:00.000000Z,2026-11-20 20:30,140,FC Barcelona,BAR,100.0,144,Crvena Zvezda Meridianbet Belgrade,CZV,103.0,CZV,100-103
 1540,13,2553,2,12053,played,True,2026-11-20T19:45:00.000000Z,2026-11-20 20:45,152,Partizan Mozzart Bet Belgrade,PAR,91.0,158,Besiktas Fuzul Istanbul,BJK,87.0,PAR,91-87
 1541,14,2554,1,12056,played,False,2026-11-24T17:00:00.000000Z,2026-11-24 18:00,158,Besiktas Fuzul Istanbul,BJK,76.0,150,Paris Basketball,PBB,88.0,PBB,76-88
-1541,14,2554,1,12055,playing,False,2026-11-24T18:00:00.000000Z,2026-11-24 19:00,144,Crvena Zvezda Meridianbet Belgrade,CZV,57.0,154,Virtus Bologna,VIR,74.0,VIR,57-74
-1541,14,2554,1,12058,playing,False,2026-11-24T19:00:00.000000Z,2026-11-24 20:00,141,FC Bayern Munich,BAY,24.0,148,Maccabi Rapyd Tel Aviv,MTA,28.0,MTA,24-28
-1541,14,2554,1,12059,playing,False,2026-11-24T19:30:00.000000Z,2026-11-24 20:30,174,Valencia Basket,VBC,0.0,151,Panathinaikos AKTOR Athens,PAO,0.0,TIE,0-0
-1541,14,2554,1,12060,scheduled,False,2026-11-24T19:45:00.000000Z,2026-11-24 20:45,139,LDLC ASVEL Villeurbanne,ASV,,145,Armani Olimpia Milan,MIL,,,
-1541,14,2554,1,12057,scheduled,False,2026-11-24T20:00:00.000000Z,2026-11-24 21:00,140,FC Barcelona,BAR,,147,Fenerbahce Tarfin Istanbul,FBT,,,
+1541,14,2554,1,12055,played,False,2026-11-24T18:00:00.000000Z,2026-11-24 19:00,144,Crvena Zvezda Meridianbet Belgrade,CZV,84.0,154,Virtus Bologna,VIR,108.0,VIR,84-108
+1541,14,2554,1,12058,played,False,2026-11-24T19:00:00.000000Z,2026-11-24 20:00,141,FC Bayern Munich,BAY,79.0,148,Maccabi Rapyd Tel Aviv,MTA,87.0,MTA,79-87
+1541,14,2554,1,12059,played,False,2026-11-24T19:30:00.000000Z,2026-11-24 20:30,174,Valencia Basket,VBC,83.0,151,Panathinaikos AKTOR Athens,PAO,86.0,PAO,83-86
+1541,14,2554,1,12060,played,False,2026-11-24T19:45:00.000000Z,2026-11-24 20:45,139,LDLC ASVEL Villeurbanne,ASV,91.0,145,Armani Olimpia Milan,MIL,95.0,MIL,91-95
+1541,14,2554,1,12057,played,False,2026-11-24T20:00:00.000000Z,2026-11-24 21:00,140,FC Barcelona,BAR,77.0,147,Fenerbahce Tarfin Istanbul,FBT,83.0,FBT,77-83
 1541,14,2555,2,12061,scheduled,False,2026-11-25T16:00:00.000000Z,2026-11-25 17:00,311,Dubai Basketball,DUB,,152,Partizan Mozzart Bet Belgrade,PAR,,,
 1541,14,2555,2,12064,scheduled,False,2026-11-25T19:15:00.000000Z,2026-11-25 20:15,149,Olympiacos Piraeus,OLY,,165,Hapoel IBI Tel Aviv,HTA,,,
 1541,14,2555,2,12062,scheduled,False,2026-11-25T19:30:00.000000Z,2026-11-25 20:30,143,Kosner Baskonia Vitoria-Gasteiz,KBA,,146,Anadolu Efes Istanbul,EFS,,,

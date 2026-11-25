@@ -1,8 +1,8 @@
 {
-  "status_id": 2,
+  "status_id": 3,
   "standings_calculations": {
-    "updated_at": "2026-11-21T00:13:03.000000Z",
-    "is_outdated": true
+    "updated_at": "2026-11-25T01:01:01.000000Z",
+    "is_outdated": false
   },
   "maintenance": false,
   "players_list_limitations_enabled": false,
@@ -17,9 +17,9 @@
     "num_rounds": 2
   },
   "current_round": {
-    "id": 2554,
-    "number": 1,
-    "started_at": "2026-11-24T16:59:00.000000Z"
+    "id": 2555,
+    "number": 2,
+    "started_at": "2026-11-25T15:59:00.000000Z"
   },
   "previous_matchday": {
     "id": 1540,

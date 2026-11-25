@@ -2900,101 +2900,101 @@
           },
           {
             "id": 12055,
-            "status": "playing",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-24T18:00:00.000000Z",
             "home_team": {
               "id": 144,
               "name": "Crvena Zvezda Meridianbet Belgrade",
               "abbreviation": "CZV",
-              "score": 57,
+              "score": 84,
               "is_valid": true
             },
             "away_team": {
               "id": 154,
               "name": "Virtus Bologna",
               "abbreviation": "VIR",
-              "score": 74,
+              "score": 108,
               "is_valid": true
             }
           },
           {
             "id": 12058,
-            "status": "playing",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-24T19:00:00.000000Z",
             "home_team": {
               "id": 141,
               "name": "FC Bayern Munich",
               "abbreviation": "BAY",
-              "score": 24,
+              "score": 79,
               "is_valid": true
             },
             "away_team": {
               "id": 148,
               "name": "Maccabi Rapyd Tel Aviv",
               "abbreviation": "MTA",
-              "score": 28,
+              "score": 87,
               "is_valid": true
             }
           },
           {
             "id": 12059,
-            "status": "playing",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-24T19:30:00.000000Z",
             "home_team": {
               "id": 174,
               "name": "Valencia Basket",
               "abbreviation": "VBC",
-              "score": 0,
+              "score": 83,
               "is_valid": true
             },
             "away_team": {
               "id": 151,
               "name": "Panathinaikos AKTOR Athens",
               "abbreviation": "PAO",
-              "score": 0,
+              "score": 86,
               "is_valid": true
             }
           },
           {
             "id": 12060,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-24T19:45:00.000000Z",
             "home_team": {
               "id": 139,
               "name": "LDLC ASVEL Villeurbanne",
               "abbreviation": "ASV",
-              "score": null,
+              "score": 91,
               "is_valid": true
             },
             "away_team": {
               "id": 145,
               "name": "Armani Olimpia Milan",
               "abbreviation": "MIL",
-              "score": null,
+              "score": 95,
               "is_valid": true
             }
           },
           {
             "id": 12057,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-24T20:00:00.000000Z",
             "home_team": {
               "id": 140,
               "name": "FC Barcelona",
               "abbreviation": "BAR",
-              "score": null,
+              "score": 77,
               "is_valid": true
             },
             "away_team": {
               "id": 147,
               "name": "Fenerbahce Tarfin Istanbul",
               "abbreviation": "FBT",
-              "score": null,
+              "score": 83,
               "is_valid": true
             }
           }
