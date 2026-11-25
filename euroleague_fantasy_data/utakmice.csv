@@ -135,7 +135,7 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1541,14,2554,1,12059,played,False,2026-11-24T19:30:00.000000Z,2026-11-24 20:30,174,Valencia Basket,VBC,83.0,151,Panathinaikos AKTOR Athens,PAO,86.0,PAO,83-86
 1541,14,2554,1,12060,played,False,2026-11-24T19:45:00.000000Z,2026-11-24 20:45,139,LDLC ASVEL Villeurbanne,ASV,91.0,145,Armani Olimpia Milan,MIL,95.0,MIL,91-95
 1541,14,2554,1,12057,played,False,2026-11-24T20:00:00.000000Z,2026-11-24 21:00,140,FC Barcelona,BAR,77.0,147,Fenerbahce Tarfin Istanbul,FBT,83.0,FBT,77-83
-1541,14,2555,2,12061,scheduled,False,2026-11-25T16:00:00.000000Z,2026-11-25 17:00,311,Dubai Basketball,DUB,,152,Partizan Mozzart Bet Belgrade,PAR,,,
+1541,14,2555,2,12061,played,False,2026-11-25T16:00:00.000000Z,2026-11-25 17:00,311,Dubai Basketball,DUB,71.0,152,Partizan Mozzart Bet Belgrade,PAR,84.0,PAR,71-84
 1541,14,2555,2,12064,scheduled,False,2026-11-25T19:15:00.000000Z,2026-11-25 20:15,149,Olympiacos Piraeus,OLY,,165,Hapoel IBI Tel Aviv,HTA,,,
 1541,14,2555,2,12062,scheduled,False,2026-11-25T19:30:00.000000Z,2026-11-25 20:30,143,Kosner Baskonia Vitoria-Gasteiz,KBA,,146,Anadolu Efes Istanbul,EFS,,,
 1541,14,2555,2,12063,scheduled,False,2026-11-25T19:45:00.000000Z,2026-11-25 20:45,153,Real Madrid,RMB,,155,Zalgiris Kaunas,ZAL,,,

@@ -3006,21 +3006,21 @@
         "matches": [
           {
             "id": 12061,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-25T16:00:00.000000Z",
             "home_team": {
               "id": 311,
               "name": "Dubai Basketball",
               "abbreviation": "DUB",
-              "score": null,
+              "score": 71,
               "is_valid": true
             },
             "away_team": {
               "id": 152,
               "name": "Partizan Mozzart Bet Belgrade",
               "abbreviation": "PAR",
-              "score": null,
+              "score": 84,
               "is_valid": true
             }
           },
