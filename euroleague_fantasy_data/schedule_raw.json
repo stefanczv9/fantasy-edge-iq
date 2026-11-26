@@ -3198,6 +3198,26 @@
             }
           },
           {
+            "id": 12072,
+            "status": "scheduled",
+            "ot": false,
+            "started_at": "2026-12-03T20:00:00.000000Z",
+            "home_team": {
+              "id": 143,
+              "name": "Kosner Baskonia Vitoria-Gasteiz",
+              "abbreviation": "KBA",
+              "score": null,
+              "is_valid": true
+            },
+            "away_team": {
+              "id": 148,
+              "name": "Maccabi Rapyd Tel Aviv",
+              "abbreviation": "MTA",
+              "score": null,
+              "is_valid": true
+            }
+          },
+          {
             "id": 12073,
             "status": "scheduled",
             "ot": false,
@@ -3223,26 +3243,6 @@
         "id": 2557,
         "number": 2,
         "matches": [
-          {
-            "id": 12072,
-            "status": "scheduled",
-            "ot": false,
-            "started_at": "2026-12-03T20:00:00.000000Z",
-            "home_team": {
-              "id": 143,
-              "name": "Kosner Baskonia Vitoria-Gasteiz",
-              "abbreviation": "KBA",
-              "score": null,
-              "is_valid": true
-            },
-            "away_team": {
-              "id": 148,
-              "name": "Maccabi Rapyd Tel Aviv",
-              "abbreviation": "MTA",
-              "score": null,
-              "is_valid": true
-            }
-          },
           {
             "id": 12070,
             "status": "scheduled",
