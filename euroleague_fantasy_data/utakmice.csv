@@ -136,9 +136,9 @@ matchday_id,matchday,round_id,round,match_id,status,ot,start_utc,start_local,hom
 1541,14,2554,1,12060,played,False,2026-11-24T19:45:00.000000Z,2026-11-24 20:45,139,LDLC ASVEL Villeurbanne,ASV,91.0,145,Armani Olimpia Milan,MIL,95.0,MIL,91-95
 1541,14,2554,1,12057,played,False,2026-11-24T20:00:00.000000Z,2026-11-24 21:00,140,FC Barcelona,BAR,77.0,147,Fenerbahce Tarfin Istanbul,FBT,83.0,FBT,77-83
 1541,14,2555,2,12061,played,False,2026-11-25T16:00:00.000000Z,2026-11-25 17:00,311,Dubai Basketball,DUB,71.0,152,Partizan Mozzart Bet Belgrade,PAR,84.0,PAR,71-84
-1541,14,2555,2,12064,scheduled,False,2026-11-25T19:15:00.000000Z,2026-11-25 20:15,149,Olympiacos Piraeus,OLY,,165,Hapoel IBI Tel Aviv,HTA,,,
-1541,14,2555,2,12062,scheduled,False,2026-11-25T19:30:00.000000Z,2026-11-25 20:30,143,Kosner Baskonia Vitoria-Gasteiz,KBA,,146,Anadolu Efes Istanbul,EFS,,,
-1541,14,2555,2,12063,scheduled,False,2026-11-25T19:45:00.000000Z,2026-11-25 20:45,153,Real Madrid,RMB,,155,Zalgiris Kaunas,ZAL,,,
+1541,14,2555,2,12064,played,False,2026-11-25T19:15:00.000000Z,2026-11-25 20:15,149,Olympiacos Piraeus,OLY,104.0,165,Hapoel IBI Tel Aviv,HTA,79.0,OLY,104-79
+1541,14,2555,2,12062,played,False,2026-11-25T19:30:00.000000Z,2026-11-25 20:30,143,Kosner Baskonia Vitoria-Gasteiz,KBA,86.0,146,Anadolu Efes Istanbul,EFS,81.0,KBA,86-81
+1541,14,2555,2,12063,played,False,2026-11-25T19:45:00.000000Z,2026-11-25 20:45,153,Real Madrid,RMB,108.0,155,Zalgiris Kaunas,ZAL,93.0,RMB,108-93
 1542,15,2556,1,12066,scheduled,False,2026-12-03T17:30:00.000000Z,2026-12-03 18:30,146,Anadolu Efes Istanbul,EFS,,174,Valencia Basket,VBC,,,
 1542,15,2556,1,12068,scheduled,False,2026-12-03T17:45:00.000000Z,2026-12-03 18:45,147,Fenerbahce Tarfin Istanbul,FBT,,144,Crvena Zvezda Meridianbet Belgrade,CZV,,,
 1542,15,2556,1,12065,scheduled,False,2026-12-03T18:45:00.000000Z,2026-12-03 19:45,165,Hapoel IBI Tel Aviv,HTA,,145,Armani Olimpia Milan,MIL,,,

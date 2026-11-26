@@ -3026,61 +3026,61 @@
           },
           {
             "id": 12064,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-25T19:15:00.000000Z",
             "home_team": {
               "id": 149,
               "name": "Olympiacos Piraeus",
               "abbreviation": "OLY",
-              "score": null,
+              "score": 104,
               "is_valid": true
             },
             "away_team": {
               "id": 165,
               "name": "Hapoel IBI Tel Aviv",
               "abbreviation": "HTA",
-              "score": null,
+              "score": 79,
               "is_valid": true
             }
           },
           {
             "id": 12062,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-25T19:30:00.000000Z",
             "home_team": {
               "id": 143,
               "name": "Kosner Baskonia Vitoria-Gasteiz",
               "abbreviation": "KBA",
-              "score": null,
+              "score": 86,
               "is_valid": true
             },
             "away_team": {
               "id": 146,
               "name": "Anadolu Efes Istanbul",
               "abbreviation": "EFS",
-              "score": null,
+              "score": 81,
               "is_valid": true
             }
           },
           {
             "id": 12063,
-            "status": "scheduled",
+            "status": "played",
             "ot": false,
             "started_at": "2026-11-25T19:45:00.000000Z",
             "home_team": {
               "id": 153,
               "name": "Real Madrid",
               "abbreviation": "RMB",
-              "score": null,
+              "score": 108,
               "is_valid": true
             },
             "away_team": {
               "id": 155,
               "name": "Zalgiris Kaunas",
               "abbreviation": "ZAL",
-              "score": null,
+              "score": 93,
               "is_valid": true
             }
           }
