@@ -40,7 +40,7 @@
     "quotation": 20.1,
     "avg_fantasy_pts": 25.74,
     "total_plus": 3.1000000000000014,
-    "popularity": 0.516,
+    "popularity": 0.517,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": false
@@ -63,7 +63,7 @@
     "quotation": 11.9,
     "avg_fantasy_pts": 10.15,
     "total_plus": -1.5999999999999996,
-    "popularity": 0.009,
+    "popularity": 0.01,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -247,7 +247,7 @@
     "quotation": 12.8,
     "avg_fantasy_pts": 14.26,
     "total_plus": 0.40000000000000036,
-    "popularity": 0.027,
+    "popularity": 0.028,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -362,7 +362,7 @@
     "quotation": 12.5,
     "avg_fantasy_pts": 8.86,
     "total_plus": -2.8000000000000007,
-    "popularity": 0.009,
+    "popularity": 0.01,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -454,7 +454,7 @@
     "quotation": 15.3,
     "avg_fantasy_pts": 18.51,
     "total_plus": 1.700000000000001,
-    "popularity": 0.206,
+    "popularity": 0.208,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": false
@@ -477,7 +477,7 @@
     "quotation": 11.1,
     "avg_fantasy_pts": 12.2,
     "total_plus": 0.9000000000000004,
-    "popularity": 0.028,
+    "popularity": 0.027,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -684,7 +684,7 @@
     "quotation": 14.9,
     "avg_fantasy_pts": 18.98,
     "total_plus": 0.3000000000000007,
-    "popularity": 0.155,
+    "popularity": 0.154,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -707,7 +707,7 @@
     "quotation": 10.8,
     "avg_fantasy_pts": 13.1,
     "total_plus": 0.7000000000000011,
-    "popularity": 0.102,
+    "popularity": 0.1,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": true
@@ -1029,7 +1029,7 @@
     "quotation": 5.9,
     "avg_fantasy_pts": 3.45,
     "total_plus": -1.5999999999999996,
-    "popularity": 0.004,
+    "popularity": 0.005,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -1167,7 +1167,7 @@
     "quotation": 5.9,
     "avg_fantasy_pts": 7.66,
     "total_plus": 0.40000000000000036,
-    "popularity": 0.063,
+    "popularity": 0.062,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -1190,7 +1190,7 @@
     "quotation": 10.2,
     "avg_fantasy_pts": 13.55,
     "total_plus": 2.0999999999999996,
-    "popularity": 0.17,
+    "popularity": 0.168,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -1236,7 +1236,7 @@
     "quotation": 9.5,
     "avg_fantasy_pts": 12.74,
     "total_plus": 2,
-    "popularity": 0.086,
+    "popularity": 0.085,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -1259,7 +1259,7 @@
     "quotation": 15.1,
     "avg_fantasy_pts": 17.31,
     "total_plus": 1.0999999999999996,
-    "popularity": 0.134,
+    "popularity": 0.135,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": false
@@ -1328,7 +1328,7 @@
     "quotation": 13.9,
     "avg_fantasy_pts": 22.03,
     "total_plus": 4.1,
-    "popularity": 0.298,
+    "popularity": 0.3,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": false
@@ -1351,7 +1351,7 @@
     "quotation": 10.1,
     "avg_fantasy_pts": 15.41,
     "total_plus": 3.8999999999999995,
-    "popularity": 0.164,
+    "popularity": 0.165,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -1581,7 +1581,7 @@
     "quotation": 4,
     "avg_fantasy_pts": 3.82,
     "total_plus": -0.2999999999999998,
-    "popularity": 0.13,
+    "popularity": 0.131,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -1811,7 +1811,7 @@
     "quotation": 10.7,
     "avg_fantasy_pts": 13.22,
     "total_plus": 1.8999999999999986,
-    "popularity": 0.023,
+    "popularity": 0.024,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": false
@@ -1834,7 +1834,7 @@
     "quotation": 10.6,
     "avg_fantasy_pts": 11.43,
     "total_plus": 0.5999999999999996,
-    "popularity": 0.061,
+    "popularity": 0.064,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -1995,7 +1995,7 @@
     "quotation": 8.4,
     "avg_fantasy_pts": 7.5,
     "total_plus": -0.5999999999999996,
-    "popularity": 0.051,
+    "popularity": 0.052,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -2064,7 +2064,7 @@
     "quotation": 17,
     "avg_fantasy_pts": 20.95,
     "total_plus": 1.5,
-    "popularity": 0.071,
+    "popularity": 0.07,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -2202,7 +2202,7 @@
     "quotation": 8.8,
     "avg_fantasy_pts": 12.3,
     "total_plus": 1.5000000000000009,
-    "popularity": 0.031,
+    "popularity": 0.032,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -2317,7 +2317,7 @@
     "quotation": 8,
     "avg_fantasy_pts": 10.71,
     "total_plus": 1.7000000000000002,
-    "popularity": 0.051,
+    "popularity": 0.052,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -2340,7 +2340,7 @@
     "quotation": 6.2,
     "avg_fantasy_pts": 2.5,
     "total_plus": -1.2999999999999998,
-    "popularity": 0.086,
+    "popularity": 0.081,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -2363,7 +2363,7 @@
     "quotation": 4.7,
     "avg_fantasy_pts": -1.07,
     "total_plus": -2.3,
-    "popularity": 0.043,
+    "popularity": 0.041,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -2524,7 +2524,7 @@
     "quotation": 4.7,
     "avg_fantasy_pts": 9.92,
     "total_plus": 0.20000000000000018,
-    "popularity": 0.084,
+    "popularity": 0.086,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -2547,7 +2547,7 @@
     "quotation": 6.1,
     "avg_fantasy_pts": 3.93,
     "total_plus": -0.9000000000000004,
-    "popularity": 0.179,
+    "popularity": 0.174,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -2616,7 +2616,7 @@
     "quotation": 6.6,
     "avg_fantasy_pts": 6.79,
     "total_plus": 0.09999999999999964,
-    "popularity": 0.071,
+    "popularity": 0.072,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -2754,7 +2754,7 @@
     "quotation": 4.2,
     "avg_fantasy_pts": -6.43,
     "total_plus": -0.7999999999999998,
-    "popularity": 0.013,
+    "popularity": 0.014,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -2777,7 +2777,7 @@
     "quotation": 8.2,
     "avg_fantasy_pts": 10.39,
     "total_plus": 0.8999999999999995,
-    "popularity": 0.052,
+    "popularity": 0.051,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -2823,7 +2823,7 @@
     "quotation": 4.2,
     "avg_fantasy_pts": -3.93,
     "total_plus": -2.3,
-    "popularity": 0.041,
+    "popularity": 0.042,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -2869,7 +2869,7 @@
     "quotation": 7.6,
     "avg_fantasy_pts": 8.52,
     "total_plus": 0.2999999999999998,
-    "popularity": 0.028,
+    "popularity": 0.029,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -2892,7 +2892,7 @@
     "quotation": 4.5,
     "avg_fantasy_pts": 1.43,
     "total_plus": -0.5,
-    "popularity": 0.027,
+    "popularity": 0.028,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -3007,7 +3007,7 @@
     "quotation": 4.2,
     "avg_fantasy_pts": -2.86,
     "total_plus": -0.7999999999999998,
-    "popularity": 0.057,
+    "popularity": 0.055,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -3076,7 +3076,7 @@
     "quotation": 4.1,
     "avg_fantasy_pts": 5.75,
     "total_plus": -0.40000000000000036,
-    "popularity": 0.066,
+    "popularity": 0.067,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -3145,7 +3145,7 @@
     "quotation": 8.1,
     "avg_fantasy_pts": 9.06,
     "total_plus": 0.09999999999999964,
-    "popularity": 0.057,
+    "popularity": 0.056,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -3191,7 +3191,7 @@
     "quotation": 5,
     "avg_fantasy_pts": 6.91,
     "total_plus": 0.5999999999999996,
-    "popularity": 0.135,
+    "popularity": 0.134,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -3352,7 +3352,7 @@
     "quotation": 11.7,
     "avg_fantasy_pts": 14.21,
     "total_plus": 1.3999999999999986,
-    "popularity": 0.106,
+    "popularity": 0.104,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -3398,7 +3398,7 @@
     "quotation": 5.2,
     "avg_fantasy_pts": 3.21,
     "total_plus": 0.20000000000000018,
-    "popularity": 0.054,
+    "popularity": 0.058,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -3996,7 +3996,7 @@
     "quotation": 6.2,
     "avg_fantasy_pts": 16.5,
     "total_plus": 0.2999999999999998,
-    "popularity": 0.305,
+    "popularity": 0.303,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -4249,7 +4249,7 @@
     "quotation": 6.7,
     "avg_fantasy_pts": 2.5,
     "total_plus": -1.7999999999999998,
-    "popularity": 0.038,
+    "popularity": 0.04,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -4433,7 +4433,7 @@
     "quotation": 15.9,
     "avg_fantasy_pts": 19.01,
     "total_plus": 1.3000000000000007,
-    "popularity": 0.076,
+    "popularity": 0.075,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -4502,7 +4502,7 @@
     "quotation": 7.5,
     "avg_fantasy_pts": 8.8,
     "total_plus": 0,
-    "popularity": 0.031,
+    "popularity": 0.03,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -4594,7 +4594,7 @@
     "quotation": 8.3,
     "avg_fantasy_pts": 11.07,
     "total_plus": 1.3000000000000007,
-    "popularity": 0.034,
+    "popularity": 0.035,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -4709,7 +4709,7 @@
     "quotation": 10.4,
     "avg_fantasy_pts": 12.7,
     "total_plus": 1,
-    "popularity": 0.1,
+    "popularity": 0.103,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -4778,7 +4778,7 @@
     "quotation": 4.3,
     "avg_fantasy_pts": 4.35,
     "total_plus": -0.7000000000000002,
-    "popularity": 0.02,
+    "popularity": 0.019,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -4847,7 +4847,7 @@
     "quotation": 9.9,
     "avg_fantasy_pts": 11.22,
     "total_plus": 0.3000000000000007,
-    "popularity": 0.01,
+    "popularity": 0.011,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -5100,7 +5100,7 @@
     "quotation": 12.7,
     "avg_fantasy_pts": 14.35,
     "total_plus": 0.5,
-    "popularity": 0.042,
+    "popularity": 0.041,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -5284,7 +5284,7 @@
     "quotation": 8.5,
     "avg_fantasy_pts": 10.9,
     "total_plus": 1.7000000000000002,
-    "popularity": 0.173,
+    "popularity": 0.169,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -5606,7 +5606,7 @@
     "quotation": 7.6,
     "avg_fantasy_pts": 5.71,
     "total_plus": -0.40000000000000036,
-    "popularity": 0.032,
+    "popularity": 0.031,
     "is_on_fire": null,
     "is_injured": false,
     "started_from_bench": true
@@ -6089,7 +6089,7 @@
     "quotation": 12.1,
     "avg_fantasy_pts": 20.15,
     "total_plus": 5.6,
-    "popularity": 0.279,
+    "popularity": 0.283,
     "is_on_fire": true,
     "is_injured": false,
     "started_from_bench": true
@@ -6204,7 +6204,7 @@
     "quotation": 4,
     "avg_fantasy_pts": 2.4,
     "total_plus": -0.20000000000000018,
-    "popularity": 0.013,
+    "popularity": 0.014,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -6227,7 +6227,7 @@
     "quotation": 4.7,
     "avg_fantasy_pts": 4.36,
     "total_plus": 0.7000000000000002,
-    "popularity": 0.125,
+    "popularity": 0.126,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -6388,7 +6388,7 @@
     "quotation": 10.6,
     "avg_fantasy_pts": 13.9,
     "total_plus": 1.0999999999999996,
-    "popularity": 0.007,
+    "popularity": 0.006,
     "is_on_fire": false,
     "is_injured": true,
     "started_from_bench": false
@@ -6572,7 +6572,7 @@
     "quotation": 7.2,
     "avg_fantasy_pts": 7.22,
     "total_plus": 0.20000000000000018,
-    "popularity": 0.054,
+    "popularity": 0.057,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -6710,7 +6710,7 @@
     "quotation": 14.5,
     "avg_fantasy_pts": 15.69,
     "total_plus": 0,
-    "popularity": 0.053,
+    "popularity": 0.052,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -7101,7 +7101,7 @@
     "quotation": 11.4,
     "avg_fantasy_pts": 13.42,
     "total_plus": 0.8000000000000007,
-    "popularity": 0.039,
+    "popularity": 0.038,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
@@ -7952,7 +7952,7 @@
     "quotation": 4.4,
     "avg_fantasy_pts": 4.61,
     "total_plus": -0.09999999999999964,
-    "popularity": 0.043,
+    "popularity": 0.044,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": true
@@ -8205,7 +8205,7 @@
     "quotation": 7,
     "avg_fantasy_pts": 6.32,
     "total_plus": -1.1999999999999993,
-    "popularity": 0.034,
+    "popularity": 0.033,
     "is_on_fire": false,
     "is_injured": false,
     "started_from_bench": false
