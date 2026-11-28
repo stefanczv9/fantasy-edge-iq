@@ -728,7 +728,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,27,G.Jesus,ARS,NFO,H,2027-05-15 16:00
 364,2645558,9,,1,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,3,27,G.Jesus,ARS,EVE,A,2027-05-23 16:00
 371,2645565,1,,5,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,4,27,G.Jesus,ARS,BHA,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,28,Martinez,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,28,Martinez,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,28,Martinez,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,28,Martinez,CHE,MCI,A,2026-12-12 18:30
@@ -1052,7 +1051,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 352,2645546,2,,17,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,39,Nedeljkovic,AVL,NEW,H,2027-05-15 16:00
 367,2645561,15,,2,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,5,39,Nedeljkovic,AVL,MCI,A,2027-05-23 16:00
 372,2645566,2,,19,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,39,Nedeljkovic,AVL,TOT,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,40,Rogers,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,40,Rogers,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,40,Rogers,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,40,Rogers,CHE,MCI,A,2026-12-12 18:30
@@ -2699,7 +2697,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 358,2645552,14,,4,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,4,100,Carvalho,BRE,LIV,A,2027-05-15 16:00
 362,2645556,4,,11,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,100,Carvalho,BRE,HUL,H,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,4,100,Carvalho,BRE,CHE,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,101,Henderson,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,101,Henderson,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,101,Henderson,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,101,Henderson,CHE,MCI,A,2026-12-12 18:30
@@ -3644,7 +3641,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 355,2645549,8,,5,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,2,135,Yohanna,BHA,CRY,A,2027-05-15 16:00
 363,2645557,5,,14,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,4,135,Yohanna,BHA,LIV,H,2027-05-23 16:00
 371,2645565,1,,5,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,5,135,Yohanna,BHA,ARS,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,136,Welbeck,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,136,Welbeck,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,136,Welbeck,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,136,Welbeck,CHE,MCI,A,2026-12-12 18:30
@@ -3752,7 +3748,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 355,2645549,8,,5,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,2,139,Ferguson,BHA,CRY,A,2027-05-15 16:00
 363,2645557,5,,14,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,4,139,Ferguson,BHA,LIV,H,2027-05-23 16:00
 371,2645565,1,,5,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,5,139,Ferguson,BHA,ARS,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,140,Sánchez,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,140,Sánchez,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,140,Sánchez,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,140,Sánchez,CHE,MCI,A,2026-12-12 18:30
@@ -3779,7 +3774,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,140,Sánchez,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,140,Sánchez,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,140,Sánchez,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,141,Jörgensen,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,141,Jörgensen,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,141,Jörgensen,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,141,Jörgensen,CHE,MCI,A,2026-12-12 18:30
@@ -3806,7 +3800,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,141,Jörgensen,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,141,Jörgensen,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,141,Jörgensen,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,142,James,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,142,James,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,142,James,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,142,James,CHE,MCI,A,2026-12-12 18:30
@@ -3833,7 +3826,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,142,James,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,142,James,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,142,James,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,143,Chalobah,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,143,Chalobah,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,143,Chalobah,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,143,Chalobah,CHE,MCI,A,2026-12-12 18:30
@@ -3860,7 +3852,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,143,Chalobah,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,143,Chalobah,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,143,Chalobah,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,144,Gusto,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,144,Gusto,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,144,Gusto,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,144,Gusto,CHE,MCI,A,2026-12-12 18:30
@@ -3887,7 +3878,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,144,Gusto,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,144,Gusto,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,144,Gusto,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,145,Fofana,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,145,Fofana,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,145,Fofana,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,145,Fofana,CHE,MCI,A,2026-12-12 18:30
@@ -3914,7 +3904,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,145,Fofana,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,145,Fofana,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,145,Fofana,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,146,B.Badiashile,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,146,B.Badiashile,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,146,B.Badiashile,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,146,B.Badiashile,CHE,MCI,A,2026-12-12 18:30
@@ -3968,7 +3957,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 354,2645548,7,,19,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,2,147,Tosin,TOT,COV,A,2027-05-15 16:00
 370,2645564,19,,16,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,3,147,Tosin,TOT,MUN,H,2027-05-23 16:00
 372,2645566,2,,19,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,3,147,Tosin,TOT,AVL,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,148,Hato,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,148,Hato,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,148,Hato,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,148,Hato,CHE,MCI,A,2026-12-12 18:30
@@ -3995,7 +3983,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,148,Hato,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,148,Hato,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,148,Hato,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,149,Colwill,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,149,Colwill,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,149,Colwill,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,149,Colwill,CHE,MCI,A,2026-12-12 18:30
@@ -4022,7 +4009,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,149,Colwill,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,149,Colwill,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,149,Colwill,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,150,M.Sarr,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,150,M.Sarr,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,150,M.Sarr,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,150,M.Sarr,CHE,MCI,A,2026-12-12 18:30
@@ -4049,7 +4035,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,150,M.Sarr,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,150,M.Sarr,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,150,M.Sarr,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,151,Acheampong,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,151,Acheampong,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,151,Acheampong,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,151,Acheampong,CHE,MCI,A,2026-12-12 18:30
@@ -4076,7 +4061,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,151,Acheampong,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,151,Acheampong,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,151,Acheampong,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,152,Palestra,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,152,Palestra,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,152,Palestra,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,152,Palestra,CHE,MCI,A,2026-12-12 18:30
@@ -4130,7 +4114,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 355,2645549,8,,5,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,4,153,Disasi,CRY,BHA,H,2027-05-15 16:00
 368,2645562,17,,8,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,3,153,Disasi,CRY,NEW,A,2027-05-23 16:00
 375,2645569,8,,13,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,153,Disasi,CRY,LEE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,154,Palmer,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,154,Palmer,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,154,Palmer,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,154,Palmer,CHE,MCI,A,2026-12-12 18:30
@@ -4184,7 +4167,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 357,2645551,12,,15,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,2,155,Enzo,MCI,IPS,A,2027-05-15 16:00
 367,2645561,15,,2,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,3,155,Enzo,MCI,AVL,H,2027-05-23 16:00
 380,2645574,20,,15,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,3,155,Enzo,MCI,SUN,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,156,Neto,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,156,Neto,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,156,Neto,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,156,Neto,CHE,MCI,A,2026-12-12 18:30
@@ -4211,7 +4193,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,156,Neto,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,156,Neto,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,156,Neto,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,157,Estêvão,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,157,Estêvão,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,157,Estêvão,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,157,Estêvão,CHE,MCI,A,2026-12-12 18:30
@@ -4238,7 +4219,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,157,Estêvão,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,157,Estêvão,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,157,Estêvão,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,158,Gittens,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,158,Gittens,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,158,Gittens,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,158,Gittens,CHE,MCI,A,2026-12-12 18:30
@@ -4265,7 +4245,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,158,Gittens,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,158,Gittens,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,158,Gittens,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,159,Caicedo,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,159,Caicedo,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,159,Caicedo,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,159,Caicedo,CHE,MCI,A,2026-12-12 18:30
@@ -4319,7 +4298,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 352,2645546,2,,17,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,160,Garnacho,AVL,NEW,H,2027-05-15 16:00
 367,2645561,15,,2,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,5,160,Garnacho,AVL,MCI,A,2027-05-23 16:00
 372,2645566,2,,19,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,160,Garnacho,AVL,TOT,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,161,Lavia,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,161,Lavia,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,161,Lavia,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,161,Lavia,CHE,MCI,A,2026-12-12 18:30
@@ -4373,7 +4351,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 359,2645553,16,,13,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,162,Andrey Santos,MUN,LEE,H,2027-05-15 16:00
 370,2645564,19,,16,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,3,162,Andrey Santos,MUN,TOT,A,2027-05-23 16:00
 379,2645573,16,,10,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,2,162,Andrey Santos,MUN,FUL,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,163,D.Essugo,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,163,D.Essugo,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,163,D.Essugo,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,163,D.Essugo,CHE,MCI,A,2026-12-12 18:30
@@ -4400,7 +4377,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,163,D.Essugo,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,163,D.Essugo,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,163,D.Essugo,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,164,Quenda,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,164,Quenda,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,164,Quenda,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,164,Quenda,CHE,MCI,A,2026-12-12 18:30
@@ -4427,7 +4403,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,164,Quenda,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,164,Quenda,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,164,Quenda,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,165,João Pedro,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,165,João Pedro,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,165,João Pedro,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,165,João Pedro,CHE,MCI,A,2026-12-12 18:30
@@ -4481,7 +4456,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 352,2645546,2,,17,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,166,N.Jackson,AVL,NEW,H,2027-05-15 16:00
 367,2645561,15,,2,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,5,166,N.Jackson,AVL,MCI,A,2027-05-23 16:00
 372,2645566,2,,19,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,166,N.Jackson,AVL,TOT,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,167,Delap,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,167,Delap,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,167,Delap,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,167,Delap,NFO,SUN,A,2026-12-13 15:00
@@ -4508,7 +4482,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,167,Delap,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,167,Delap,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,167,Delap,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,168,Marc Guiu,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,168,Marc Guiu,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,168,Marc Guiu,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,168,Marc Guiu,CHE,MCI,A,2026-12-12 18:30
@@ -4535,7 +4508,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,168,Marc Guiu,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,168,Marc Guiu,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,168,Marc Guiu,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,169,Mheuka,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,169,Mheuka,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,169,Mheuka,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,169,Mheuka,CHE,MCI,A,2026-12-12 18:30
@@ -4562,7 +4534,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,169,Mheuka,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,169,Mheuka,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,169,Mheuka,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,170,Emegha,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,170,Emegha,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,170,Emegha,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,170,Emegha,CHE,MCI,A,2026-12-12 18:30
@@ -5372,7 +5343,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 355,2645549,8,,5,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,4,199,Benitez,CRY,BHA,H,2027-05-15 16:00
 368,2645562,17,,8,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,3,199,Benitez,CRY,NEW,A,2027-05-23 16:00
 375,2645569,8,,13,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,199,Benitez,CRY,LEE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,200,Lacroix,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,200,Lacroix,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,200,Lacroix,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,200,Lacroix,CHE,MCI,A,2026-12-12 18:30
@@ -5399,7 +5369,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,200,Lacroix,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,200,Lacroix,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,200,Lacroix,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,201,Muñoz,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,201,Muñoz,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,201,Muñoz,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,201,Muñoz,NFO,SUN,A,2026-12-13 15:00
@@ -12581,7 +12550,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 352,2645546,2,,17,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,3,466,Neave,NEW,AVL,A,2027-05-15 16:00
 368,2645562,17,,8,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,466,Neave,NEW,CRY,H,2027-05-23 16:00
 376,2645570,11,,17,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,466,Neave,NEW,HUL,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,467,Sels,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,467,Sels,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,467,Sels,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,467,Sels,NFO,SUN,A,2026-12-13 15:00
@@ -12608,7 +12576,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,467,Sels,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,467,Sels,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,467,Sels,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,468,John,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,468,John,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,468,John,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,468,John,NFO,SUN,A,2026-12-13 15:00
@@ -12635,7 +12602,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,468,John,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,468,John,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,468,John,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,469,N.Williams,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,469,N.Williams,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,469,N.Williams,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,469,N.Williams,NFO,SUN,A,2026-12-13 15:00
@@ -12662,7 +12628,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,469,N.Williams,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,469,N.Williams,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,469,N.Williams,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,470,Morato,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,470,Morato,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,470,Morato,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,470,Morato,NFO,SUN,A,2026-12-13 15:00
@@ -12689,7 +12654,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,470,Morato,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,470,Morato,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,470,Morato,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,471,Milenković,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,471,Milenković,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,471,Milenković,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,471,Milenković,NFO,SUN,A,2026-12-13 15:00
@@ -12716,7 +12680,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,471,Milenković,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,471,Milenković,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,471,Milenković,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,472,Murillo,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,472,Murillo,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,472,Murillo,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,472,Murillo,NFO,SUN,A,2026-12-13 15:00
@@ -12743,7 +12706,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,472,Murillo,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,472,Murillo,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,472,Murillo,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,473,Aina,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,473,Aina,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,473,Aina,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,473,Aina,NFO,SUN,A,2026-12-13 15:00
@@ -12770,7 +12732,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,473,Aina,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,473,Aina,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,473,Aina,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,474,Jair Cunha,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,474,Jair Cunha,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,474,Jair Cunha,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,474,Jair Cunha,NFO,SUN,A,2026-12-13 15:00
@@ -12797,7 +12758,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,474,Jair Cunha,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,474,Jair Cunha,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,474,Jair Cunha,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,475,Savona,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,475,Savona,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,475,Savona,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,475,Savona,NFO,SUN,A,2026-12-13 15:00
@@ -12824,7 +12784,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,475,Savona,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,475,Savona,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,475,Savona,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,476,O.Richards,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,476,O.Richards,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,476,O.Richards,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,476,O.Richards,NFO,SUN,A,2026-12-13 15:00
@@ -12851,7 +12810,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,476,O.Richards,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,476,O.Richards,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,476,O.Richards,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,477,Abbott,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,477,Abbott,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,477,Abbott,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,477,Abbott,NFO,SUN,A,2026-12-13 15:00
@@ -12878,7 +12836,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,477,Abbott,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,477,Abbott,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,477,Abbott,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,478,Netz,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,478,Netz,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,478,Netz,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,478,Netz,NFO,SUN,A,2026-12-13 15:00
@@ -12905,7 +12862,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,478,Netz,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,478,Netz,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,478,Netz,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,479,Bindon,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,479,Bindon,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,479,Bindon,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,479,Bindon,NFO,SUN,A,2026-12-13 15:00
@@ -12932,7 +12888,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,479,Bindon,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,479,Bindon,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,479,Bindon,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,480,Gibbs-White,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,480,Gibbs-White,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,480,Gibbs-White,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,480,Gibbs-White,NFO,SUN,A,2026-12-13 15:00
@@ -12986,7 +12941,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 357,2645551,12,,15,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,2,481,Anderson,MCI,IPS,A,2027-05-15 16:00
 367,2645561,15,,2,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,3,481,Anderson,MCI,AVL,H,2027-05-23 16:00
 380,2645574,20,,15,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,3,481,Anderson,MCI,SUN,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,482,Hudson-Odoi,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,482,Hudson-Odoi,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,482,Hudson-Odoi,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,482,Hudson-Odoi,NFO,SUN,A,2026-12-13 15:00
@@ -13013,7 +12967,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,482,Hudson-Odoi,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,482,Hudson-Odoi,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,482,Hudson-Odoi,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,483,Ndoye,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,483,Ndoye,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,483,Ndoye,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,483,Ndoye,NFO,SUN,A,2026-12-13 15:00
@@ -13040,7 +12993,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,483,Ndoye,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,483,Ndoye,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,483,Ndoye,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,484,Hutchinson,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,484,Hutchinson,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,484,Hutchinson,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,484,Hutchinson,NFO,SUN,A,2026-12-13 15:00
@@ -13067,7 +13019,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,484,Hutchinson,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,484,Hutchinson,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,484,Hutchinson,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,485,Bakwa,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,485,Bakwa,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,485,Bakwa,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,485,Bakwa,NFO,SUN,A,2026-12-13 15:00
@@ -13094,7 +13045,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,485,Bakwa,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,485,Bakwa,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,485,Bakwa,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,486,McAtee,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,486,McAtee,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,486,McAtee,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,486,McAtee,NFO,SUN,A,2026-12-13 15:00
@@ -13121,7 +13071,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,486,McAtee,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,486,McAtee,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,486,McAtee,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,487,Dominguez,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,487,Dominguez,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,487,Dominguez,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,487,Dominguez,NFO,SUN,A,2026-12-13 15:00
@@ -13148,7 +13097,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,487,Dominguez,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,487,Dominguez,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,487,Dominguez,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,488,I.Sangaré,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,488,I.Sangaré,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,488,I.Sangaré,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,488,I.Sangaré,NFO,SUN,A,2026-12-13 15:00
@@ -13175,7 +13123,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,488,I.Sangaré,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,488,I.Sangaré,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,488,I.Sangaré,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,489,Yates,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,489,Yates,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,489,Yates,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,489,Yates,NFO,SUN,A,2026-12-13 15:00
@@ -13202,7 +13149,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,489,Yates,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,489,Yates,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,489,Yates,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,490,Wood,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,490,Wood,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,490,Wood,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,490,Wood,NFO,SUN,A,2026-12-13 15:00
@@ -13229,7 +13175,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,5,490,Wood,NFO,ARS,A,2027-05-15 16:00
 369,2645563,18,,12,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,490,Wood,NFO,IPS,H,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,490,Wood,NFO,COV,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,491,Igor Jesus,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,491,Igor Jesus,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,491,Igor Jesus,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,491,Igor Jesus,NFO,SUN,A,2026-12-13 15:00
@@ -13283,7 +13228,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 354,2645548,7,,19,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,492,Awoniyi,COV,TOT,H,2027-05-15 16:00
 365,2645559,10,,7,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,3,492,Awoniyi,COV,FUL,A,2027-05-23 16:00
 374,2645568,7,,18,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,492,Awoniyi,COV,NFO,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,493,Kalimuendo,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,493,Kalimuendo,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,493,Kalimuendo,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,493,Kalimuendo,NFO,SUN,A,2026-12-13 15:00
@@ -15038,7 +14982,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 351,2645545,1,,18,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,557,Tzolis,ARS,NFO,H,2027-05-15 16:00
 364,2645558,9,,1,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,3,557,Tzolis,ARS,EVE,A,2027-05-23 16:00
 371,2645565,1,,5,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,4,557,Tzolis,ARS,BHA,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,558,Schlager,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,558,Schlager,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,558,Schlager,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,558,Schlager,NFO,SUN,A,2026-12-13 15:00
@@ -15092,7 +15035,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 352,2645546,2,,17,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,3,559,Bamba,NEW,AVL,A,2027-05-15 16:00
 368,2645562,17,,8,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,559,Bamba,NEW,CRY,H,2027-05-23 16:00
 376,2645570,11,,17,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,559,Bamba,NEW,HUL,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,560,Penders,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,560,Penders,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,560,Penders,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,560,Penders,CHE,MCI,A,2026-12-12 18:30
@@ -15119,7 +15061,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,560,Penders,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,560,Penders,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,560,Penders,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,561,Anselmino,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,561,Anselmino,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,561,Anselmino,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,561,Anselmino,CHE,MCI,A,2026-12-12 18:30
@@ -15308,7 +15249,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 352,2645546,2,,17,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,3,567,Horníček,NEW,AVL,A,2027-05-15 16:00
 368,2645562,17,,8,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,567,Horníček,NEW,CRY,H,2027-05-23 16:00
 376,2645570,11,,17,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,2,567,Horníček,NEW,HUL,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,568,Barco,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,568,Barco,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,568,Barco,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,568,Barco,CHE,MCI,A,2026-12-12 18:30
@@ -15659,7 +15599,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 356,2645550,11,,10,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,2,580,Charles,FUL,HUL,A,2027-05-15 16:00
 365,2645559,10,,7,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,580,Charles,FUL,COV,H,2027-05-23 16:00
 379,2645573,16,,10,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,3,580,Charles,FUL,MUN,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,581,Diomande,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,581,Diomande,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,581,Diomande,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,581,Diomande,NFO,SUN,A,2026-12-13 15:00
@@ -15713,7 +15652,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 352,2645546,2,,17,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,582,Madjo,AVL,NEW,H,2027-05-15 16:00
 367,2645561,15,,2,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,5,582,Madjo,AVL,MCI,A,2027-05-23 16:00
 372,2645566,2,,19,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,582,Madjo,AVL,TOT,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,583,Chavarria,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,583,Chavarria,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,583,Chavarria,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,583,Chavarria,CHE,MCI,A,2026-12-12 18:30
@@ -15902,7 +15840,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 356,2645550,11,,10,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,2,589,Gourna-Douath,HUL,FUL,H,2027-05-15 16:00
 362,2645556,4,,11,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,589,Gourna-Douath,HUL,BRE,A,2027-05-23 16:00
 376,2645570,11,,17,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,589,Gourna-Douath,HUL,NEW,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,True,4,590,Benda,NFO,CHE,H,2026-11-27 21:00
 126,2645320,11,,18,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,False,2,590,Benda,NFO,HUL,A,2026-12-02 20:30
 139,2645333,18,,5,,14,False,0,False,2026-12-05T17:30:00Z,Gameweek 14,True,4,590,Benda,NFO,BHA,H,2026-12-05 18:30
 150,2645344,20,,18,,15,False,0,False,2026-12-13T14:00:00Z,Gameweek 15,False,3,590,Benda,NFO,SUN,A,2026-12-13 15:00
@@ -17846,7 +17783,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 358,2645552,14,,4,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,False,4,661,Balcombe,BRE,LIV,A,2027-05-15 16:00
 362,2645556,4,,11,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,True,2,661,Balcombe,BRE,HUL,H,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,False,4,661,Balcombe,BRE,CHE,A,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,662,Nicoll-Jazuli,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,662,Nicoll-Jazuli,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,662,Nicoll-Jazuli,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,662,Nicoll-Jazuli,CHE,MCI,A,2026-12-12 18:30
@@ -18035,7 +17971,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 360,2645554,20,,3,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,668,Tutierov,SUN,BOU,H,2027-05-15 16:00
 366,2645560,13,,20,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,3,668,Tutierov,SUN,LEE,A,2027-05-23 16:00
 380,2645574,20,,15,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,4,668,Tutierov,SUN,MCI,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,669,Sharman-Lowe,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,669,Sharman-Lowe,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,669,Sharman-Lowe,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,669,Sharman-Lowe,CHE,MCI,A,2026-12-12 18:30
@@ -18062,7 +17997,6 @@ id,code,team_h,team_h_score,team_a,team_a_score,event,finished,minutes,provision
 353,2645547,6,,9,,36,False,0,False,2027-05-15T14:00:00Z,Gameweek 36,True,3,669,Sharman-Lowe,CHE,EVE,H,2027-05-15 16:00
 361,2645555,3,,6,,37,False,0,False,2027-05-23T14:00:00Z,Gameweek 37,False,4,669,Sharman-Lowe,CHE,BOU,A,2027-05-23 16:00
 373,2645567,6,,4,,38,False,0,False,2027-05-30T15:00:00Z,Gameweek 38,True,3,669,Sharman-Lowe,CHE,BRE,H,2027-05-30 17:00
-119,2645313,18,,6,,12,False,0,False,2026-11-27T20:00:00Z,Gameweek 12,False,2,670,Subuloye,CHE,NFO,A,2026-11-27 21:00
 124,2645318,6,,8,,13,False,0,False,2026-12-02T19:30:00Z,Gameweek 13,True,2,670,Subuloye,CHE,CRY,H,2026-12-02 20:30
 134,2645328,6,,14,,14,False,0,False,2026-12-05T12:30:00Z,Gameweek 14,True,4,670,Subuloye,CHE,LIV,H,2026-12-05 13:30
 149,2645343,15,,6,,15,False,0,False,2026-12-12T17:30:00Z,Gameweek 15,False,5,670,Subuloye,CHE,MCI,A,2026-12-12 18:30

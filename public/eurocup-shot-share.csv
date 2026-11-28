@@ -2,17 +2,17 @@ shot_share_rank,name,team_abbr,pos_short,price,player_fga_pg,team_fga_pg,shot_sh
 1,Javante Mccoy,BLK,G,12.2,16.17,61.4,26.3,28.7,0.709,16.9,20.33,20.33,20.0,0.564,22.56,,1.67,3.38,"BKS(A,FDR 4.6) · ROM(H,FDR 1.7) · LIE(A,FDR 3.8) · MAN(A,FDR 3.6) · BOS(H,FDR 3.3)",False,True,4.8
 2,Cedric Henderson,SIA,F,10.8,13.2,60.1,22.0,25.7,0.553,15.6,14.2,14.2,16.6,0.514,20.56,,1.31,2.57,"SKY(H,FDR 1.3) · UBT(A,FDR 2.3) · TTA(H,FDR 3.6) · RMA(A,FDR 2.6) · URV(H,FDR 3.1)",False,False,1.7
 3,Tj Crockett,ROS,G,11.7,14.0,65.3,21.4,24.9,0.533,13.8,13.25,13.25,16.0,0.563,22.51,,1.13,2.56,"RIG(A,FDR 2.7) · MSB(H,FDR 2.2) · ARI(A,FDR 3.1) · DER(H,FDR 2.4) · BUR(H,FDR 2.4)",False,False,0.5
-4,Javonte Smart,UBT,G,11.7,13.5,63.7,21.2,29.1,0.481,13.2,14.0,14.0,15.62,0.464,18.55,,1.2,3.28,"URV(A,FDR 3.4) · SIA(H,FDR 2.8) · LDN(A,FDR 4.6) · SKY(H,FDR 1.3) · LLT(H,FDR 4.3)",False,False,5.1
+4,Javonte Smart,UBT,G,11.7,13.5,63.7,21.2,29.1,0.481,13.2,14.0,14.0,15.62,0.464,18.55,,1.2,3.28,"URV(A,FDR 3.4) · SIA(H,FDR 2.8) · LDN(A,FDR 4.6) · SKY(H,FDR 1.3) · LLT(H,FDR 4.3)",False,False,5.0
 5,Timmy Allen,MAN,F,10.9,13.75,65.3,21.1,27.5,0.736,20.4,20.25,20.25,22.5,0.5,19.98,,1.86,3.07,"ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9) · BLK(H,FDR 3.5) · LIE(H,FDR 3.5)",False,False,3.4
 6,Quincy Olivari,TRE,G,10.7,14.38,68.9,20.9,29.0,0.423,12.9,12.25,12.25,15.0,0.496,19.85,,1.14,2.69,"WKS(A,FDR 2.1) · CHE(A,FDR 2.5) · JLB(H,FDR 2.5) · BUD(A,FDR 3.4) · NAP(H,FDR 2.8)",False,False,1.4
 7,Breein Tyree,PBC,G,12.8,12.75,61.5,20.7,21.9,0.787,17.4,17.25,17.25,19.38,0.582,23.26,,1.35,3.03,"BOS(H,FDR 3.3) · LIE(H,FDR 3.5) · ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9)",False,False,13.4
 7,Reggie Perry,BOS,F,13.8,12.25,59.3,20.7,23.8,0.715,16.3,17.0,17.0,16.38,0.515,20.61,,1.23,3.22,"PBC(A,FDR 4.3) · ULM(H,FDR 1.8) · BKS(A,FDR 4.6) · ROM(H,FDR 1.7) · BLK(A,FDR 3.7)",False,False,4.8
-9,Cedi Osman,PBC,F,16.8,12.33,61.5,20.0,31.2,0.79,8.7,24.67,24.67,22.17,0.395,15.79,,1.47,3.03,"BOS(H,FDR 3.3) · LIE(H,FDR 3.5) · ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9)",True,False,26.6
+9,Cedi Osman,PBC,F,16.8,12.33,61.5,20.0,31.2,0.79,8.7,24.67,24.67,22.17,0.395,15.79,,1.47,3.03,"BOS(H,FDR 3.3) · LIE(H,FDR 3.5) · ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9)",True,False,26.5
 9,Devin Robinson,WKS,F,14.2,12.57,63.0,20.0,29.0,0.626,20.2,18.14,18.14,16.86,0.434,17.37,,1.28,2.48,"TRE(H,FDR 1.4) · NAP(A,FDR 3.1) · CHE(H,FDR 2.3) · TOF(A,FDR 2.9) · JLB(A,FDR 2.8)",False,False,2.5
 11,Henri Drell,NEP,F,8.5,12.62,63.5,19.9,27.6,0.436,11.7,12.0,12.0,15.88,0.458,18.33,,1.41,2.78,"CHE(H,FDR 2.3) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2) · NAP(A,FDR 3.1) · TOF(H,FDR 2.6)",False,True,3.3
 12,Jerrick Harding,TTA,G,14.5,11.88,60.5,19.6,26.1,0.579,15.1,15.12,15.12,16.88,0.455,18.18,,1.04,2.93,"RMA(A,FDR 2.6) · URV(H,FDR 3.1) · SIA(A,FDR 3.1) · LDN(H,FDR 4.4) · SKY(A,FDR 1.5)",False,False,1.5
 13,Darnelle Edge,BLK,G,9.8,12.0,61.4,19.5,30.9,0.378,10.3,11.67,11.67,12.33,0.389,15.55,,1.19,3.38,"BKS(A,FDR 4.6) · ROM(H,FDR 1.7) · LIE(A,FDR 3.8) · MAN(A,FDR 3.6) · BOS(H,FDR 3.3)",False,True,0.3
-13,Kenny Lofton Jr,JLM,F,16.2,12.38,63.6,19.5,24.0,0.934,21.1,22.38,22.38,20.25,0.516,20.66,,1.38,2.81,"COL(H,FDR 3.6) · BUR(H,FDR 2.4) · RIG(A,FDR 2.7) · MSB(H,FDR 2.2) · ARI(A,FDR 3.1)",False,False,34.7
+13,Kenny Lofton Jr,JLM,F,16.2,12.38,63.6,19.5,24.0,0.934,21.1,22.38,22.38,20.25,0.516,20.66,,1.38,2.81,"COL(H,FDR 3.6) · BUR(H,FDR 2.4) · RIG(A,FDR 2.7) · MSB(H,FDR 2.2) · ARI(A,FDR 3.1)",False,False,34.8
 15,Dj Steward,BUR,G,12.4,12.17,63.7,19.1,23.3,0.708,5.7,16.5,16.5,17.0,0.522,20.88,,1.33,2.92,"ARI(H,FDR 2.9) · JLM(A,FDR 4.6) · DER(H,FDR 2.4) · RIG(A,FDR 2.7) · ROS(A,FDR 2.0)",True,False,1.2
 16,JD Notae,MAN,G,9.8,12.38,65.3,19.0,21.5,0.522,11.8,11.25,11.25,13.75,0.575,22.99,,1.15,3.07,"ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9) · BLK(H,FDR 3.5) · LIE(H,FDR 3.5)",False,False,0.9
 17,Niccolo Mannion,ROM,G,14.7,11.5,62.1,18.5,27.4,0.78,21.2,21.38,21.38,18.12,0.419,16.78,,1.45,3.69,"LIE(A,FDR 3.8) · BLK(A,FDR 3.7) · MAN(H,FDR 3.4) · BOS(A,FDR 3.5) · PBC(H,FDR 4.0)",False,False,23.3
@@ -52,13 +52,13 @@ shot_share_rank,name,team_abbr,pos_short,price,player_fga_pg,team_fga_pg,shot_sh
 50,Kristian Kullamae,UBT,G,7.5,9.75,63.7,15.3,21.5,0.291,5.4,6.25,6.25,9.12,0.454,18.16,,0.83,3.28,"URV(A,FDR 3.4) · SIA(H,FDR 2.8) · LDN(A,FDR 4.6) · SKY(H,FDR 1.3) · LLT(H,FDR 4.3)",False,True,0.7
 52,Jeff Dowtin Jr.,NAP,G,11.9,9.62,63.400000000000006,15.2,25.7,0.54,14.1,13.88,13.88,13.88,0.374,14.97,,1.17,2.29,"BUD(H,FDR 3.2) · WKS(H,FDR 1.9) · TOF(A,FDR 2.9) · NEP(H,FDR 1.8) · TRE(A,FDR 1.7)",False,False,2.6
 53,Elvar Fridriksson,NEP,G,10.6,9.62,63.5,15.1,26.0,0.53,14.7,13.75,13.75,12.62,0.371,14.84,,1.3,2.78,"CHE(H,FDR 2.3) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2) · NAP(A,FDR 3.1) · TOF(H,FDR 2.6)",False,False,3.5
-54,Matt Ryan,RMA,F,11.1,10.0,67.0,14.9,25.8,0.696,14.7,18.0,18.0,16.0,0.387,15.47,,1.62,3.75,"TTA(H,FDR 3.6) · LLT(H,FDR 4.3) · URV(A,FDR 3.4) · SIA(H,FDR 2.8) · LDN(A,FDR 4.6)",False,True,0.9
+54,Matt Ryan,RMA,F,11.1,10.0,67.0,14.9,25.8,0.696,14.7,18.0,18.0,16.0,0.387,15.47,,1.62,3.75,"TTA(H,FDR 3.6) · LLT(H,FDR 4.3) · URV(A,FDR 3.4) · SIA(H,FDR 2.8) · LDN(A,FDR 4.6)",False,True,1.0
 55,Ognjen Jaramaz,LIE,G,7.8,8.88,60.0,14.8,25.0,0.22,5.9,5.5,5.5,7.62,0.355,14.19,,0.71,3.03,"ROM(H,FDR 1.7) · PBC(A,FDR 4.3) · BLK(H,FDR 3.5) · ULM(A,FDR 2.1) · MAN(A,FDR 3.6)",False,False,1.8
 56,Jaylen Sims,ULM,G,12.0,9.75,66.5,14.7,25.7,0.545,14.4,14.0,14.0,12.88,0.38,15.19,,1.17,3.81,"MAN(H,FDR 3.4) · BOS(A,FDR 3.5) · PBC(H,FDR 4.0) · LIE(H,FDR 3.5) · BKS(A,FDR 4.6)",False,False,2.5
 57,Yannick Franke,NEP,G,11.2,9.25,63.5,14.6,27.4,0.571,16.7,15.62,15.62,15.75,0.338,13.53,,1.39,2.78,"CHE(H,FDR 2.3) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2) · NAP(A,FDR 3.1) · TOF(H,FDR 2.6)",False,False,3.4
 58,Aaron Holiday,RMA,G,12.0,9.71,67.0,14.5,24.3,0.522,12.6,12.71,12.71,12.14,0.399,15.96,,1.06,3.75,"TTA(H,FDR 3.6) · LLT(H,FDR 4.3) · URV(A,FDR 3.4) · SIA(H,FDR 2.8) · LDN(A,FDR 4.6)",False,False,1.2
 58,Ibi Watson,ULM,F,10.8,9.62,66.5,14.5,28.4,0.383,10.9,10.88,10.88,11.75,0.339,13.56,,1.01,3.81,"MAN(H,FDR 3.4) · BOS(A,FDR 3.5) · PBC(H,FDR 4.0) · LIE(H,FDR 3.5) · BKS(A,FDR 4.6)",False,False,0.7
-58,Michael Rataj,ULM,F,8.3,9.62,66.5,14.5,25.8,0.47,11.1,12.12,12.12,13.25,0.373,14.93,,1.46,3.81,"MAN(H,FDR 3.4) · BOS(A,FDR 3.5) · PBC(H,FDR 4.0) · LIE(H,FDR 3.5) · BKS(A,FDR 4.6)",False,True,6.9
+58,Michael Rataj,ULM,F,8.3,9.62,66.5,14.5,25.8,0.47,11.1,12.12,12.12,13.25,0.373,14.93,,1.46,3.81,"MAN(H,FDR 3.4) · BOS(A,FDR 3.5) · PBC(H,FDR 4.0) · LIE(H,FDR 3.5) · BKS(A,FDR 4.6)",False,True,7.0
 58,PJ Pipes,BOS,G,11.2,8.62,59.3,14.5,24.8,0.601,14.2,14.88,14.88,13.38,0.348,13.94,,1.33,3.22,"PBC(A,FDR 4.3) · ULM(H,FDR 1.8) · BKS(A,FDR 4.6) · ROM(H,FDR 1.7) · BLK(A,FDR 3.7)",False,False,1.7
 62,Hugo Benitez,MAN,G,11.2,9.4,65.3,14.4,22.5,0.729,15.7,16.4,16.4,13.4,0.418,16.72,,1.46,3.07,"ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9) · BLK(H,FDR 3.5) · LIE(H,FDR 3.5)",False,True,2.2
 63,Axel Bouteille,BUD,F,11.9,9.38,65.9,14.2,21.4,0.567,12.0,12.12,12.12,11.75,0.438,17.54,,1.02,2.34,"NAP(A,FDR 3.1) · TOF(H,FDR 2.6) · NEP(A,FDR 2.1) · TRE(H,FDR 1.4) · CHE(A,FDR 2.5)",False,False,1.7
@@ -74,7 +74,7 @@ shot_share_rank,name,team_abbr,pos_short,price,player_fga_pg,team_fga_pg,shot_sh
 72,Tre'shawn Thurman,TOF,F,11.2,9.0,66.0,13.6,22.8,0.555,13.1,12.62,12.62,10.75,0.396,15.83,,1.13,2.55,"JLB(H,FDR 2.5) · BUD(A,FDR 3.4) · NAP(H,FDR 2.8) · WKS(H,FDR 1.9) · NEP(A,FDR 2.1)",False,False,3.3
 74,Justin Gorham,DER,F,10.5,8.88,65.69999999999999,13.5,26.7,0.524,13.6,14.0,14.0,12.25,0.332,13.29,,1.33,2.72,"MSB(A,FDR 2.4) · ARI(H,FDR 2.9) · BUR(A,FDR 2.7) · ROS(A,FDR 2.0) · COL(H,FDR 3.6)",False,False,3.3
 74,Justin Smith,BUD,F,10.6,8.88,65.9,13.5,22.5,0.484,10.7,10.88,10.88,10.75,0.394,15.77,,1.03,2.34,"NAP(A,FDR 3.1) · TOF(H,FDR 2.6) · NEP(A,FDR 2.1) · TRE(H,FDR 1.4) · CHE(A,FDR 2.5)",False,False,1.0
-74,Keondre Kennedy,LIE,F,10.1,8.12,60.0,13.5,25.2,0.472,12.8,11.88,11.88,12.88,0.323,12.9,,1.18,3.03,"ROM(H,FDR 1.7) · PBC(A,FDR 4.3) · BLK(H,FDR 3.5) · ULM(A,FDR 2.1) · MAN(A,FDR 3.6)",False,False,0.6
+74,Keondre Kennedy,LIE,F,10.1,8.12,60.0,13.5,25.2,0.472,12.8,11.88,11.88,12.88,0.323,12.9,,1.18,3.03,"ROM(H,FDR 1.7) · PBC(A,FDR 4.3) · BLK(H,FDR 3.5) · ULM(A,FDR 2.1) · MAN(A,FDR 3.6)",False,False,0.7
 77,Phlandrous Fleming,CHE,G,11.3,9.0,67.0,13.4,23.9,0.471,11.9,11.25,11.25,11.5,0.376,15.06,,1.0,2.32,"NEP(A,FDR 2.1) · TRE(H,FDR 1.4) · WKS(A,FDR 2.1) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2)",False,False,0.4
 78,Jordan Gainey,COL,G,8.1,8.67,65.2,13.3,19.4,0.369,5.9,7.17,7.17,9.17,0.446,17.86,,0.89,3.0,"JLM(A,FDR 4.6) · RIG(H,FDR 2.5) · MSB(A,FDR 2.4) · ARI(H,FDR 2.9) · DER(A,FDR 2.6)",False,True,0.2
 79,Anthony Lamb,TTA,F,10.5,8.0,60.5,13.2,23.5,0.298,2.5,7.0,7.0,8.17,0.34,13.62,,0.67,2.93,"RMA(A,FDR 2.6) · URV(H,FDR 3.1) · SIA(A,FDR 3.1) · LDN(H,FDR 4.4) · SKY(A,FDR 1.5)",True,False,0.6
@@ -249,7 +249,7 @@ shot_share_rank,name,team_abbr,pos_short,price,player_fga_pg,team_fga_pg,shot_sh
 245,Stefan Djordjevic,BUD,C,10.5,4.57,65.9,6.9,11.0,0.611,5.7,6.71,6.71,6.14,0.416,16.65,,0.64,2.34,"NAP(A,FDR 3.1) · TOF(H,FDR 2.6) · NEP(A,FDR 2.1) · TRE(H,FDR 1.4) · CHE(A,FDR 2.5)",False,False,0.9
 249,Marial Shayok,BUD,F,8.5,4.5,65.9,6.8,12.4,0.382,5.0,4.75,4.75,5.5,0.362,14.49,,0.56,2.34,"NAP(A,FDR 3.1) · TOF(H,FDR 2.6) · NEP(A,FDR 2.1) · TRE(H,FDR 1.4) · CHE(A,FDR 2.5)",False,True,0.5
 249,Radii Caisin,SKY,F,5.4,4.5,66.0,6.8,20.3,0.321,5.7,6.5,6.5,6.0,0.222,8.88,,1.2,3.58,"SIA(A,FDR 3.1) · LDN(H,FDR 4.4) · LLT(A,FDR 4.6) · UBT(A,FDR 2.3) · TTA(H,FDR 3.6)",False,True,3.0
-251,Arnas Berucka,NEP,G,5.5,4.25,63.5,6.7,14.4,0.484,6.3,7.0,7.0,8.25,0.294,11.77,,1.27,2.78,"CHE(H,FDR 2.3) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2) · NAP(A,FDR 3.1) · TOF(H,FDR 2.6)",False,True,1.0
+251,Arnas Berucka,NEP,G,5.5,4.25,63.5,6.7,14.4,0.484,6.3,7.0,7.0,8.25,0.294,11.77,,1.27,2.78,"CHE(H,FDR 2.3) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2) · NAP(A,FDR 3.1) · TOF(H,FDR 2.6)",False,True,1.1
 251,Ethan Happ,LLT,F,10.4,4.2,62.8,6.7,14.4,0.722,8.1,10.4,10.4,8.0,0.292,11.66,,1.0,2.76,"LDN(H,FDR 4.4) · RMA(A,FDR 2.6) · SKY(H,FDR 1.3) · URV(A,FDR 3.4) · UBT(A,FDR 2.3)",False,True,0.5
 251,Toms Skuja,RIG,G,8.5,4.33,64.4,6.7,14.2,0.223,3.1,3.17,3.17,4.67,0.305,12.18,,0.37,2.98,"ROS(H,FDR 1.8) · COL(A,FDR 3.9) · JLM(H,FDR 4.4) · BUR(H,FDR 2.4) · MSB(A,FDR 2.4)",False,False,0.2
 254,Bruno Fitipaldo,LLT,G,7.4,4.14,62.8,6.6,20.1,0.348,6.4,7.0,7.0,4.43,0.206,8.25,,0.95,2.76,"LDN(H,FDR 4.4) · RMA(A,FDR 2.6) · SKY(H,FDR 1.3) · URV(A,FDR 3.4) · UBT(A,FDR 2.3)",False,False,0.7
@@ -269,13 +269,13 @@ shot_share_rank,name,team_abbr,pos_short,price,player_fga_pg,team_fga_pg,shot_sh
 267,Balsa Koprivica,BUR,C,8.8,3.86,63.7,6.1,15.3,0.57,6.7,8.71,8.71,6.0,0.252,10.09,,0.99,2.92,"ARI(H,FDR 2.9) · JLM(A,FDR 4.6) · DER(H,FDR 2.4) · RIG(A,FDR 2.7) · ROS(A,FDR 2.0)",False,True,1.9
 267,Kristupas Zemaitis,NEP,G,6.6,3.88,63.5,6.1,15.8,0.381,5.6,6.0,6.0,3.25,0.246,9.84,,0.91,2.78,"CHE(H,FDR 2.3) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2) · NAP(A,FDR 3.1) · TOF(H,FDR 2.6)",False,True,0.9
 267,Ryan Arcidiacono,SKY,G,7.4,4.0,66.0,6.1,14.8,0.338,4.1,5.0,5.0,4.25,0.271,10.83,,0.68,3.58,"SIA(A,FDR 3.1) · LDN(H,FDR 4.4) · LLT(A,FDR 4.6) · UBT(A,FDR 2.3) · TTA(H,FDR 3.6)",False,True,0.2
-271,Giovanni De Nicolao,URV,G,4.5,4.0,67.1,6.0,11.2,0.628,6.3,7.0,7.0,5.17,0.359,14.35,,1.56,3.12,"UBT(H,FDR 2.0) · TTA(A,FDR 3.9) · RMA(H,FDR 2.3) · LLT(H,FDR 4.3) · SIA(A,FDR 3.1)",False,True,11.7
+271,Giovanni De Nicolao,URV,G,4.5,4.0,67.1,6.0,11.2,0.628,6.3,7.0,7.0,5.17,0.359,14.35,,1.56,3.12,"UBT(H,FDR 2.0) · TTA(A,FDR 3.9) · RMA(H,FDR 2.3) · LLT(H,FDR 4.3) · SIA(A,FDR 3.1)",False,True,11.6
 271,Lucas Fischer,ULM,G,4.2,4.0,66.5,6.0,13.0,0.153,2.3,2.0,2.0,4.5,0.307,12.27,,0.48,3.81,"MAN(H,FDR 3.4) · BOS(A,FDR 3.5) · PBC(H,FDR 4.0) · LIE(H,FDR 3.5) · BKS(A,FDR 4.6)",False,True,0.7
 271,Tashawn Thomas,MSB,F,8.9,4.0,67.0,6.0,16.1,0.373,5.6,6.0,6.0,6.33,0.249,9.96,,0.67,3.02,"DER(H,FDR 2.4) · ROS(A,FDR 2.0) · COL(H,FDR 3.6) · JLM(A,FDR 4.6) · RIG(H,FDR 2.5)",False,False,0.3
 271,Ziga Samar,BUR,G,6.4,3.8,63.7,6.0,20.8,0.23,1.7,4.8,4.8,3.6,0.182,7.29,,0.75,2.92,"ARI(H,FDR 2.9) · JLM(A,FDR 4.6) · DER(H,FDR 2.4) · RIG(A,FDR 2.7) · ROS(A,FDR 2.0)",True,False,0.3
 275,Darko Talic,BOS,G,8.5,3.5,59.3,5.9,22.5,0.355,7.7,8.0,8.0,5.5,0.155,6.22,,0.94,3.22,"PBC(A,FDR 4.3) · ULM(H,FDR 1.8) · BKS(A,FDR 4.6) · ROM(H,FDR 1.7) · BLK(A,FDR 3.7)",False,False,0.6
 276,Nimrod Levi,JLM,F,5.2,3.71,63.6,5.8,14.6,0.412,4.6,6.0,6.0,6.86,0.255,10.19,,1.15,2.81,"COL(H,FDR 3.6) · BUR(H,FDR 2.4) · RIG(A,FDR 2.7) · MSB(H,FDR 2.2) · ARI(A,FDR 3.1)",False,True,5.6
-276,Paul Eboua,DER,C,8.0,3.8,65.69999999999999,5.8,20.6,0.466,8.1,9.6,9.6,5.4,0.185,7.38,,1.2,2.72,"MSB(A,FDR 2.4) · ARI(H,FDR 2.9) · BUR(A,FDR 2.7) · ROS(A,FDR 2.0) · COL(H,FDR 3.6)",False,True,0.9
+276,Paul Eboua,DER,C,8.0,3.8,65.69999999999999,5.8,20.6,0.466,8.1,9.6,9.6,5.4,0.185,7.38,,1.2,2.72,"MSB(A,FDR 2.4) · ARI(H,FDR 2.9) · BUR(A,FDR 2.7) · ROS(A,FDR 2.0) · COL(H,FDR 3.6)",False,True,1.0
 276,Pavlin Ivanov,BLK,G,5.3,3.57,61.4,5.8,16.3,0.21,2.7,3.43,3.43,4.86,0.219,8.75,,0.65,3.38,"BKS(A,FDR 4.6) · ROM(H,FDR 1.7) · LIE(A,FDR 3.8) · MAN(A,FDR 3.6) · BOS(H,FDR 3.3)",False,True,0.4
 279,Eric Vila,MAN,F,4.7,3.71,65.3,5.7,17.9,0.279,4.7,5.0,5.0,4.43,0.207,8.3,,1.06,3.07,"ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9) · BLK(H,FDR 3.5) · LIE(H,FDR 3.5)",False,True,2.7
 279,Kyle Alexander,PBC,C,13.1,3.5,61.5,5.7,18.0,0.745,12.9,13.38,13.38,7.12,0.195,7.79,,1.02,3.03,"BOS(H,FDR 3.3) · LIE(H,FDR 3.5) · ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9)",False,False,8.0
@@ -325,7 +325,7 @@ shot_share_rank,name,team_abbr,pos_short,price,player_fga_pg,team_fga_pg,shot_sh
 324,Dimitar Dimitrov,BLK,F,7.0,2.5,61.4,4.1,16.9,0.059,2.3,1.0,1.0,2.5,0.148,5.91,,0.14,3.38,"BKS(A,FDR 4.6) · ROM(H,FDR 1.7) · LIE(A,FDR 3.8) · MAN(A,FDR 3.6) · BOS(H,FDR 3.3)",False,False,0.2
 324,Martin Sotirov,BLK,G,5.7,2.5,61.4,4.1,7.1,0.259,1.2,1.83,1.83,2.5,0.354,14.15,,0.32,3.38,"BKS(A,FDR 4.6) · ROM(H,FDR 1.7) · LIE(A,FDR 3.8) · MAN(A,FDR 3.6) · BOS(H,FDR 3.3)",False,True,0.2
 326,Aaron Doornekamp,LLT,F,6.7,2.5,62.8,4.0,15.3,0.359,4.3,5.5,5.5,3.88,0.163,6.52,,0.82,2.76,"LDN(H,FDR 4.4) · RMA(A,FDR 2.6) · SKY(H,FDR 1.3) · URV(A,FDR 3.4) · UBT(A,FDR 2.3)",False,True,1.0
-326,Furkan Haltali,BKS,C,4.3,2.57,63.6,4.0,12.8,0.345,3.7,4.43,4.43,3.57,0.2,8.01,,1.03,3.3,"BLK(H,FDR 3.5) · MAN(A,FDR 3.6) · BOS(H,FDR 3.3) · PBC(A,FDR 4.3) · ULM(H,FDR 1.8)",False,True,11.2
+326,Furkan Haltali,BKS,C,4.3,2.57,63.6,4.0,12.8,0.345,3.7,4.43,4.43,3.57,0.2,8.01,,1.03,3.3,"BLK(H,FDR 3.5) · MAN(A,FDR 3.6) · BOS(H,FDR 3.3) · PBC(A,FDR 4.3) · ULM(H,FDR 1.8)",False,True,11.3
 326,Jerry Boutsiele,BUD,C,9.8,2.62,65.9,4.0,20.6,0.46,8.3,9.5,9.5,4.38,0.127,5.09,,0.97,2.34,"NAP(A,FDR 3.1) · TOF(H,FDR 2.6) · NEP(A,FDR 2.1) · TRE(H,FDR 1.4) · CHE(A,FDR 2.5)",False,True,1.2
 329,Emir Hadzibegovic,BUD,F,5.2,2.6,65.9,3.9,10.5,0.133,1.1,1.4,1.4,1.8,0.247,9.88,,0.27,2.34,"NAP(A,FDR 3.1) · TOF(H,FDR 2.6) · NEP(A,FDR 2.1) · TRE(H,FDR 1.4) · CHE(A,FDR 2.5)",False,True,0.8
 329,Lukas Kreismontas,NEP,F,6.9,2.5,63.5,3.9,12.5,0.071,0.8,0.88,0.88,1.88,0.2,8.01,,0.13,2.78,"CHE(H,FDR 2.3) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2) · NAP(A,FDR 3.1) · TOF(H,FDR 2.6)",False,True,0.2
@@ -397,7 +397,7 @@ shot_share_rank,name,team_abbr,pos_short,price,player_fga_pg,team_fga_pg,shot_sh
 396,Simas Sarakauskas,NEP,G,4.0,0.67,63.5,1.1,2.8,-0.594,1.0,-1.67,-1.67,0.0,0.237,9.49,,-0.42,2.78,"CHE(H,FDR 2.3) · JLB(A,FDR 2.8) · BUD(H,FDR 3.2) · NAP(A,FDR 3.1) · TOF(H,FDR 2.6)",False,True,0.3
 397,Leni Monnet,JLB,G,4.0,0.67,65.1,1.0,4.2,0.317,2.1,1.33,1.33,0.67,0.159,6.35,,0.33,2.1,"TOF(A,FDR 2.9) · NEP(H,FDR 1.8) · TRE(A,FDR 1.7) · CHE(H,FDR 2.3) · WKS(H,FDR 1.9)",False,True,0.3
 397,Nikos Persidis,PBC,G,4.4,0.6,61.5,1.0,6.1,-0.23,-1.0,-1.4,-1.4,0.0,0.099,3.95,,-0.32,3.03,"BOS(H,FDR 3.3) · LIE(H,FDR 3.5) · ULM(A,FDR 2.1) · BKS(H,FDR 4.4) · ROM(A,FDR 1.9)",False,True,1.8
-399,Emirhan Serbest,TOF,C,4.0,0.5,66.0,0.8,3.0,0.0,2.5,0.0,0.0,0.0,0.167,6.67,,0.0,2.55,"JLB(H,FDR 2.5) · BUD(A,FDR 3.4) · NAP(H,FDR 2.8) · WKS(H,FDR 1.9) · NEP(A,FDR 2.1)",False,True,6.3
+399,Emirhan Serbest,TOF,C,4.0,0.5,66.0,0.8,3.0,0.0,2.5,0.0,0.0,0.0,0.167,6.67,,0.0,2.55,"JLB(H,FDR 2.5) · BUD(A,FDR 3.4) · NAP(H,FDR 2.8) · WKS(H,FDR 1.9) · NEP(A,FDR 2.1)",False,True,6.2
 399,Yotam Hanochi,JLM,C,6.0,0.5,63.6,0.8,7.5,0.133,4.0,1.0,1.0,0.0,0.067,2.66,,0.17,2.81,"COL(H,FDR 3.6) · BUR(H,FDR 2.4) · RIG(A,FDR 2.7) · MSB(H,FDR 2.2) · ARI(A,FDR 3.1)",False,True,0.1
 401,Federico Cattapan,TRE,G,4.0,0.5,68.9,0.7,3.3,-0.227,0.4,-0.75,-0.75,0.0,0.152,6.07,,-0.19,2.69,"WKS(A,FDR 2.1) · CHE(A,FDR 2.5) · JLB(H,FDR 2.5) · BUD(A,FDR 3.4) · NAP(H,FDR 2.8)",False,True,0.4
 402,Elefterios Bochoridis,ARI,F,4.2,0.33,62.8,0.5,5.2,0.129,2.0,0.67,0.67,0.0,0.064,2.56,,0.16,3.07,"BUR(A,FDR 2.7) · DER(A,FDR 2.6) · ROS(H,FDR 1.8) · COL(A,FDR 3.9) · JLM(H,FDR 4.4)",False,True,2.9
